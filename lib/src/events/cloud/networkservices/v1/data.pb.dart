@@ -1,20 +1,21 @@
+// This is a generated file - do not edit.
 //
-//  Generated code. Do not modify.
-//  source: google/events/cloud/networkservices/v1/data.proto
-//
+// Generated from google/events/cloud/networkservices/v1/data.proto.
+
 // @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
-// ignore_for_file: constant_identifier_names, library_prefixes
-// ignore_for_file: non_constant_identifier_names, prefer_final_fields
-// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
+// ignore_for_file: constant_identifier_names
+// ignore_for_file: curly_braces_in_flow_control_structures
+// ignore_for_file: deprecated_member_use_from_same_package, library_prefixes
+// ignore_for_file: non_constant_identifier_names
 
 import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/duration.pb.dart' as $0;
-import '../../../../protobuf/timestamp.pb.dart' as $2;
+import '../../../../protobuf/duration.pb.dart' as $1;
+import '../../../../protobuf/timestamp.pb.dart' as $0;
 import 'data.pbenum.dart';
 
 export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
@@ -26,19 +27,19 @@ class TrafficPortSelector extends $pb.GeneratedMessage {
   factory TrafficPortSelector({
     $core.Iterable<$core.String>? ports,
   }) {
-    final $result = create();
-    if (ports != null) {
-      $result.ports.addAll(ports);
-    }
-    return $result;
+    final result = create();
+    if (ports != null) result.ports.addAll(ports);
+    return result;
   }
-  TrafficPortSelector._() : super();
-  factory TrafficPortSelector.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory TrafficPortSelector.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  TrafficPortSelector._();
+
+  factory TrafficPortSelector.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory TrafficPortSelector.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'TrafficPortSelector',
@@ -49,19 +50,19 @@ class TrafficPortSelector extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  TrafficPortSelector clone() => TrafficPortSelector()..mergeFromMessage(this);
+  TrafficPortSelector clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TrafficPortSelector copyWith(void Function(TrafficPortSelector) updates) =>
       super.copyWith((message) => updates(message as TrafficPortSelector))
           as TrafficPortSelector;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static TrafficPortSelector create() => TrafficPortSelector._();
+  @$core.override
   TrafficPortSelector createEmptyInstance() => create();
-  static $pb.PbList<TrafficPortSelector> createRepeated() =>
-      $pb.PbList<TrafficPortSelector>();
   @$core.pragma('dart2js:noInline')
   static TrafficPortSelector getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<TrafficPortSelector>(create);
@@ -82,24 +83,22 @@ class EndpointMatcher_MetadataLabelMatcher_MetadataLabels
     $core.String? labelName,
     $core.String? labelValue,
   }) {
-    final $result = create();
-    if (labelName != null) {
-      $result.labelName = labelName;
-    }
-    if (labelValue != null) {
-      $result.labelValue = labelValue;
-    }
-    return $result;
+    final result = create();
+    if (labelName != null) result.labelName = labelName;
+    if (labelValue != null) result.labelValue = labelValue;
+    return result;
   }
-  EndpointMatcher_MetadataLabelMatcher_MetadataLabels._() : super();
+
+  EndpointMatcher_MetadataLabelMatcher_MetadataLabels._();
+
   factory EndpointMatcher_MetadataLabelMatcher_MetadataLabels.fromBuffer(
-          $core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
+          $core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
   factory EndpointMatcher_MetadataLabelMatcher_MetadataLabels.fromJson(
-          $core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+          $core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames
@@ -113,9 +112,7 @@ class EndpointMatcher_MetadataLabelMatcher_MetadataLabels
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  EndpointMatcher_MetadataLabelMatcher_MetadataLabels clone() =>
-      EndpointMatcher_MetadataLabelMatcher_MetadataLabels()
-        ..mergeFromMessage(this);
+  EndpointMatcher_MetadataLabelMatcher_MetadataLabels clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   EndpointMatcher_MetadataLabelMatcher_MetadataLabels copyWith(
           void Function(EndpointMatcher_MetadataLabelMatcher_MetadataLabels)
@@ -124,16 +121,15 @@ class EndpointMatcher_MetadataLabelMatcher_MetadataLabels
               message as EndpointMatcher_MetadataLabelMatcher_MetadataLabels))
           as EndpointMatcher_MetadataLabelMatcher_MetadataLabels;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static EndpointMatcher_MetadataLabelMatcher_MetadataLabels create() =>
       EndpointMatcher_MetadataLabelMatcher_MetadataLabels._();
+  @$core.override
   EndpointMatcher_MetadataLabelMatcher_MetadataLabels createEmptyInstance() =>
       create();
-  static $pb.PbList<EndpointMatcher_MetadataLabelMatcher_MetadataLabels>
-      createRepeated() =>
-          $pb.PbList<EndpointMatcher_MetadataLabelMatcher_MetadataLabels>();
   @$core.pragma('dart2js:noInline')
   static EndpointMatcher_MetadataLabelMatcher_MetadataLabels getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
@@ -144,10 +140,7 @@ class EndpointMatcher_MetadataLabelMatcher_MetadataLabels
   @$pb.TagNumber(1)
   $core.String get labelName => $_getSZ(0);
   @$pb.TagNumber(1)
-  set labelName($core.String v) {
-    $_setString(0, v);
-  }
-
+  set labelName($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasLabelName() => $_has(0);
   @$pb.TagNumber(1)
@@ -158,10 +151,7 @@ class EndpointMatcher_MetadataLabelMatcher_MetadataLabels
   @$pb.TagNumber(2)
   $core.String get labelValue => $_getSZ(1);
   @$pb.TagNumber(2)
-  set labelValue($core.String v) {
-    $_setString(1, v);
-  }
-
+  set labelValue($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasLabelValue() => $_has(1);
   @$pb.TagNumber(2)
@@ -176,47 +166,40 @@ class EndpointMatcher_MetadataLabelMatcher extends $pb.GeneratedMessage {
     $core.Iterable<EndpointMatcher_MetadataLabelMatcher_MetadataLabels>?
         metadataLabels,
   }) {
-    final $result = create();
-    if (metadataLabelMatchCriteria != null) {
-      $result.metadataLabelMatchCriteria = metadataLabelMatchCriteria;
-    }
-    if (metadataLabels != null) {
-      $result.metadataLabels.addAll(metadataLabels);
-    }
-    return $result;
+    final result = create();
+    if (metadataLabelMatchCriteria != null)
+      result.metadataLabelMatchCriteria = metadataLabelMatchCriteria;
+    if (metadataLabels != null) result.metadataLabels.addAll(metadataLabels);
+    return result;
   }
-  EndpointMatcher_MetadataLabelMatcher._() : super();
+
+  EndpointMatcher_MetadataLabelMatcher._();
+
   factory EndpointMatcher_MetadataLabelMatcher.fromBuffer(
-          $core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory EndpointMatcher_MetadataLabelMatcher.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+          $core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory EndpointMatcher_MetadataLabelMatcher.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'EndpointMatcher.MetadataLabelMatcher',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.networkservices.v1'),
       createEmptyInstance: create)
-    ..e<EndpointMatcher_MetadataLabelMatcher_MetadataLabelMatchCriteria>(1,
-        _omitFieldNames ? '' : 'metadataLabelMatchCriteria', $pb.PbFieldType.OE,
-        defaultOrMaker:
-            EndpointMatcher_MetadataLabelMatcher_MetadataLabelMatchCriteria
-                .METADATA_LABEL_MATCH_CRITERIA_UNSPECIFIED,
-        valueOf: EndpointMatcher_MetadataLabelMatcher_MetadataLabelMatchCriteria
-            .valueOf,
+    ..aE<EndpointMatcher_MetadataLabelMatcher_MetadataLabelMatchCriteria>(
+        1, _omitFieldNames ? '' : 'metadataLabelMatchCriteria',
         enumValues:
             EndpointMatcher_MetadataLabelMatcher_MetadataLabelMatchCriteria
                 .values)
-    ..pc<EndpointMatcher_MetadataLabelMatcher_MetadataLabels>(
-        2, _omitFieldNames ? '' : 'metadataLabels', $pb.PbFieldType.PM,
+    ..pPM<EndpointMatcher_MetadataLabelMatcher_MetadataLabels>(
+        2, _omitFieldNames ? '' : 'metadataLabels',
         subBuilder: EndpointMatcher_MetadataLabelMatcher_MetadataLabels.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  EndpointMatcher_MetadataLabelMatcher clone() =>
-      EndpointMatcher_MetadataLabelMatcher()..mergeFromMessage(this);
+  EndpointMatcher_MetadataLabelMatcher clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   EndpointMatcher_MetadataLabelMatcher copyWith(
           void Function(EndpointMatcher_MetadataLabelMatcher) updates) =>
@@ -224,14 +207,14 @@ class EndpointMatcher_MetadataLabelMatcher extends $pb.GeneratedMessage {
               updates(message as EndpointMatcher_MetadataLabelMatcher))
           as EndpointMatcher_MetadataLabelMatcher;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static EndpointMatcher_MetadataLabelMatcher create() =>
       EndpointMatcher_MetadataLabelMatcher._();
+  @$core.override
   EndpointMatcher_MetadataLabelMatcher createEmptyInstance() => create();
-  static $pb.PbList<EndpointMatcher_MetadataLabelMatcher> createRepeated() =>
-      $pb.PbList<EndpointMatcher_MetadataLabelMatcher>();
   @$core.pragma('dart2js:noInline')
   static EndpointMatcher_MetadataLabelMatcher getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
@@ -269,10 +252,9 @@ class EndpointMatcher_MetadataLabelMatcher extends $pb.GeneratedMessage {
       get metadataLabelMatchCriteria => $_getN(0);
   @$pb.TagNumber(1)
   set metadataLabelMatchCriteria(
-      EndpointMatcher_MetadataLabelMatcher_MetadataLabelMatchCriteria v) {
-    $_setField(1, v);
-  }
-
+          EndpointMatcher_MetadataLabelMatcher_MetadataLabelMatchCriteria
+              value) =>
+      $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasMetadataLabelMatchCriteria() => $_has(0);
   @$pb.TagNumber(1)
@@ -296,19 +278,20 @@ class EndpointMatcher extends $pb.GeneratedMessage {
   factory EndpointMatcher({
     EndpointMatcher_MetadataLabelMatcher? metadataLabelMatcher,
   }) {
-    final $result = create();
-    if (metadataLabelMatcher != null) {
-      $result.metadataLabelMatcher = metadataLabelMatcher;
-    }
-    return $result;
+    final result = create();
+    if (metadataLabelMatcher != null)
+      result.metadataLabelMatcher = metadataLabelMatcher;
+    return result;
   }
-  EndpointMatcher._() : super();
-  factory EndpointMatcher.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory EndpointMatcher.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  EndpointMatcher._();
+
+  factory EndpointMatcher.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory EndpointMatcher.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static const $core.Map<$core.int, EndpointMatcher_MatcherType>
       _EndpointMatcher_MatcherTypeByTag = {
@@ -327,36 +310,36 @@ class EndpointMatcher extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  EndpointMatcher clone() => EndpointMatcher()..mergeFromMessage(this);
+  EndpointMatcher clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   EndpointMatcher copyWith(void Function(EndpointMatcher) updates) =>
       super.copyWith((message) => updates(message as EndpointMatcher))
           as EndpointMatcher;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static EndpointMatcher create() => EndpointMatcher._();
+  @$core.override
   EndpointMatcher createEmptyInstance() => create();
-  static $pb.PbList<EndpointMatcher> createRepeated() =>
-      $pb.PbList<EndpointMatcher>();
   @$core.pragma('dart2js:noInline')
   static EndpointMatcher getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<EndpointMatcher>(create);
   static EndpointMatcher? _defaultInstance;
 
+  @$pb.TagNumber(1)
   EndpointMatcher_MatcherType whichMatcherType() =>
       _EndpointMatcher_MatcherTypeByTag[$_whichOneof(0)]!;
+  @$pb.TagNumber(1)
   void clearMatcherType() => $_clearField($_whichOneof(0));
 
   /// The matcher is based on node metadata presented by xDS clients.
   @$pb.TagNumber(1)
   EndpointMatcher_MetadataLabelMatcher get metadataLabelMatcher => $_getN(0);
   @$pb.TagNumber(1)
-  set metadataLabelMatcher(EndpointMatcher_MetadataLabelMatcher v) {
-    $_setField(1, v);
-  }
-
+  set metadataLabelMatcher(EndpointMatcher_MetadataLabelMatcher value) =>
+      $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasMetadataLabelMatcher() => $_has(0);
   @$pb.TagNumber(1)
@@ -373,8 +356,8 @@ class EndpointMatcher extends $pb.GeneratedMessage {
 class EndpointPolicy extends $pb.GeneratedMessage {
   factory EndpointPolicy({
     $core.String? name,
-    $2.Timestamp? createTime,
-    $2.Timestamp? updateTime,
+    $0.Timestamp? createTime,
+    $0.Timestamp? updateTime,
     $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     EndpointPolicy_EndpointPolicyType? type,
     $core.String? authorizationPolicy,
@@ -384,49 +367,31 @@ class EndpointPolicy extends $pb.GeneratedMessage {
     $core.String? serverTlsPolicy,
     $core.String? clientTlsPolicy,
   }) {
-    final $result = create();
-    if (name != null) {
-      $result.name = name;
-    }
-    if (createTime != null) {
-      $result.createTime = createTime;
-    }
-    if (updateTime != null) {
-      $result.updateTime = updateTime;
-    }
-    if (labels != null) {
-      $result.labels.addEntries(labels);
-    }
-    if (type != null) {
-      $result.type = type;
-    }
-    if (authorizationPolicy != null) {
-      $result.authorizationPolicy = authorizationPolicy;
-    }
-    if (endpointMatcher != null) {
-      $result.endpointMatcher = endpointMatcher;
-    }
-    if (trafficPortSelector != null) {
-      $result.trafficPortSelector = trafficPortSelector;
-    }
-    if (description != null) {
-      $result.description = description;
-    }
-    if (serverTlsPolicy != null) {
-      $result.serverTlsPolicy = serverTlsPolicy;
-    }
-    if (clientTlsPolicy != null) {
-      $result.clientTlsPolicy = clientTlsPolicy;
-    }
-    return $result;
+    final result = create();
+    if (name != null) result.name = name;
+    if (createTime != null) result.createTime = createTime;
+    if (updateTime != null) result.updateTime = updateTime;
+    if (labels != null) result.labels.addEntries(labels);
+    if (type != null) result.type = type;
+    if (authorizationPolicy != null)
+      result.authorizationPolicy = authorizationPolicy;
+    if (endpointMatcher != null) result.endpointMatcher = endpointMatcher;
+    if (trafficPortSelector != null)
+      result.trafficPortSelector = trafficPortSelector;
+    if (description != null) result.description = description;
+    if (serverTlsPolicy != null) result.serverTlsPolicy = serverTlsPolicy;
+    if (clientTlsPolicy != null) result.clientTlsPolicy = clientTlsPolicy;
+    return result;
   }
-  EndpointPolicy._() : super();
-  factory EndpointPolicy.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory EndpointPolicy.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  EndpointPolicy._();
+
+  factory EndpointPolicy.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory EndpointPolicy.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'EndpointPolicy',
@@ -434,21 +399,17 @@ class EndpointPolicy extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.events.cloud.networkservices.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$2.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(3, _omitFieldNames ? '' : 'updateTime',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$0.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(3, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $0.Timestamp.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels',
         entryClassName: 'EndpointPolicy.LabelsEntry',
         keyFieldType: $pb.PbFieldType.OS,
         valueFieldType: $pb.PbFieldType.OS,
         packageName:
             const $pb.PackageName('google.events.cloud.networkservices.v1'))
-    ..e<EndpointPolicy_EndpointPolicyType>(
-        5, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE,
-        defaultOrMaker:
-            EndpointPolicy_EndpointPolicyType.ENDPOINT_POLICY_TYPE_UNSPECIFIED,
-        valueOf: EndpointPolicy_EndpointPolicyType.valueOf,
+    ..aE<EndpointPolicy_EndpointPolicyType>(5, _omitFieldNames ? '' : 'type',
         enumValues: EndpointPolicy_EndpointPolicyType.values)
     ..aOS(7, _omitFieldNames ? '' : 'authorizationPolicy')
     ..aOM<EndpointMatcher>(9, _omitFieldNames ? '' : 'endpointMatcher',
@@ -461,19 +422,19 @@ class EndpointPolicy extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  EndpointPolicy clone() => EndpointPolicy()..mergeFromMessage(this);
+  EndpointPolicy clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   EndpointPolicy copyWith(void Function(EndpointPolicy) updates) =>
       super.copyWith((message) => updates(message as EndpointPolicy))
           as EndpointPolicy;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static EndpointPolicy create() => EndpointPolicy._();
+  @$core.override
   EndpointPolicy createEmptyInstance() => create();
-  static $pb.PbList<EndpointPolicy> createRepeated() =>
-      $pb.PbList<EndpointPolicy>();
   @$core.pragma('dart2js:noInline')
   static EndpointPolicy getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<EndpointPolicy>(create);
@@ -484,10 +445,7 @@ class EndpointPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) {
-    $_setString(0, v);
-  }
-
+  set name($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -495,33 +453,27 @@ class EndpointPolicy extends $pb.GeneratedMessage {
 
   /// Output only. The timestamp when the resource was created.
   @$pb.TagNumber(2)
-  $2.Timestamp get createTime => $_getN(1);
+  $0.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($2.Timestamp v) {
-    $_setField(2, v);
-  }
-
+  set createTime($0.Timestamp value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => $_clearField(2);
   @$pb.TagNumber(2)
-  $2.Timestamp ensureCreateTime() => $_ensure(1);
+  $0.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. The timestamp when the resource was updated.
   @$pb.TagNumber(3)
-  $2.Timestamp get updateTime => $_getN(2);
+  $0.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($2.Timestamp v) {
-    $_setField(3, v);
-  }
-
+  set updateTime($0.Timestamp value) => $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => $_clearField(3);
   @$pb.TagNumber(3)
-  $2.Timestamp ensureUpdateTime() => $_ensure(2);
+  $0.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Optional. Set of label tags associated with the EndpointPolicy resource.
   @$pb.TagNumber(4)
@@ -532,10 +484,7 @@ class EndpointPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   EndpointPolicy_EndpointPolicyType get type => $_getN(4);
   @$pb.TagNumber(5)
-  set type(EndpointPolicy_EndpointPolicyType v) {
-    $_setField(5, v);
-  }
-
+  set type(EndpointPolicy_EndpointPolicyType value) => $_setField(5, value);
   @$pb.TagNumber(5)
   $core.bool hasType() => $_has(4);
   @$pb.TagNumber(5)
@@ -549,10 +498,7 @@ class EndpointPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get authorizationPolicy => $_getSZ(5);
   @$pb.TagNumber(7)
-  set authorizationPolicy($core.String v) {
-    $_setString(5, v);
-  }
-
+  set authorizationPolicy($core.String value) => $_setString(5, value);
   @$pb.TagNumber(7)
   $core.bool hasAuthorizationPolicy() => $_has(5);
   @$pb.TagNumber(7)
@@ -563,10 +509,7 @@ class EndpointPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   EndpointMatcher get endpointMatcher => $_getN(6);
   @$pb.TagNumber(9)
-  set endpointMatcher(EndpointMatcher v) {
-    $_setField(9, v);
-  }
-
+  set endpointMatcher(EndpointMatcher value) => $_setField(9, value);
   @$pb.TagNumber(9)
   $core.bool hasEndpointMatcher() => $_has(6);
   @$pb.TagNumber(9)
@@ -579,10 +522,7 @@ class EndpointPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   TrafficPortSelector get trafficPortSelector => $_getN(7);
   @$pb.TagNumber(10)
-  set trafficPortSelector(TrafficPortSelector v) {
-    $_setField(10, v);
-  }
-
+  set trafficPortSelector(TrafficPortSelector value) => $_setField(10, value);
   @$pb.TagNumber(10)
   $core.bool hasTrafficPortSelector() => $_has(7);
   @$pb.TagNumber(10)
@@ -595,10 +535,7 @@ class EndpointPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.String get description => $_getSZ(8);
   @$pb.TagNumber(11)
-  set description($core.String v) {
-    $_setString(8, v);
-  }
-
+  set description($core.String value) => $_setString(8, value);
   @$pb.TagNumber(11)
   $core.bool hasDescription() => $_has(8);
   @$pb.TagNumber(11)
@@ -611,10 +548,7 @@ class EndpointPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.String get serverTlsPolicy => $_getSZ(9);
   @$pb.TagNumber(12)
-  set serverTlsPolicy($core.String v) {
-    $_setString(9, v);
-  }
-
+  set serverTlsPolicy($core.String value) => $_setString(9, value);
   @$pb.TagNumber(12)
   $core.bool hasServerTlsPolicy() => $_has(9);
   @$pb.TagNumber(12)
@@ -631,10 +565,7 @@ class EndpointPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   $core.String get clientTlsPolicy => $_getSZ(10);
   @$pb.TagNumber(13)
-  set clientTlsPolicy($core.String v) {
-    $_setString(10, v);
-  }
-
+  set clientTlsPolicy($core.String value) => $_setString(10, value);
   @$pb.TagNumber(13)
   $core.bool hasClientTlsPolicy() => $_has(10);
   @$pb.TagNumber(13)
@@ -648,8 +579,8 @@ class EndpointPolicy extends $pb.GeneratedMessage {
 class Gateway extends $pb.GeneratedMessage {
   factory Gateway({
     $core.String? name,
-    $2.Timestamp? createTime,
-    $2.Timestamp? updateTime,
+    $0.Timestamp? createTime,
+    $0.Timestamp? updateTime,
     $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.String? description,
     Gateway_Type? type,
@@ -663,61 +594,34 @@ class Gateway extends $pb.GeneratedMessage {
     $core.String? subnetwork,
     $core.String? gatewaySecurityPolicy,
   }) {
-    final $result = create();
-    if (name != null) {
-      $result.name = name;
-    }
-    if (createTime != null) {
-      $result.createTime = createTime;
-    }
-    if (updateTime != null) {
-      $result.updateTime = updateTime;
-    }
-    if (labels != null) {
-      $result.labels.addEntries(labels);
-    }
-    if (description != null) {
-      $result.description = description;
-    }
-    if (type != null) {
-      $result.type = type;
-    }
-    if (addresses != null) {
-      $result.addresses.addAll(addresses);
-    }
-    if (scope != null) {
-      $result.scope = scope;
-    }
-    if (serverTlsPolicy != null) {
-      $result.serverTlsPolicy = serverTlsPolicy;
-    }
-    if (ports != null) {
-      $result.ports.addAll(ports);
-    }
-    if (selfLink != null) {
-      $result.selfLink = selfLink;
-    }
-    if (certificateUrls != null) {
-      $result.certificateUrls.addAll(certificateUrls);
-    }
-    if (network != null) {
-      $result.network = network;
-    }
-    if (subnetwork != null) {
-      $result.subnetwork = subnetwork;
-    }
-    if (gatewaySecurityPolicy != null) {
-      $result.gatewaySecurityPolicy = gatewaySecurityPolicy;
-    }
-    return $result;
+    final result = create();
+    if (name != null) result.name = name;
+    if (createTime != null) result.createTime = createTime;
+    if (updateTime != null) result.updateTime = updateTime;
+    if (labels != null) result.labels.addEntries(labels);
+    if (description != null) result.description = description;
+    if (type != null) result.type = type;
+    if (addresses != null) result.addresses.addAll(addresses);
+    if (scope != null) result.scope = scope;
+    if (serverTlsPolicy != null) result.serverTlsPolicy = serverTlsPolicy;
+    if (ports != null) result.ports.addAll(ports);
+    if (selfLink != null) result.selfLink = selfLink;
+    if (certificateUrls != null) result.certificateUrls.addAll(certificateUrls);
+    if (network != null) result.network = network;
+    if (subnetwork != null) result.subnetwork = subnetwork;
+    if (gatewaySecurityPolicy != null)
+      result.gatewaySecurityPolicy = gatewaySecurityPolicy;
+    return result;
   }
-  Gateway._() : super();
-  factory Gateway.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Gateway.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  Gateway._();
+
+  factory Gateway.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory Gateway.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'Gateway',
@@ -725,10 +629,10 @@ class Gateway extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.events.cloud.networkservices.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$2.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(3, _omitFieldNames ? '' : 'updateTime',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$0.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(3, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $0.Timestamp.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels',
         entryClassName: 'Gateway.LabelsEntry',
         keyFieldType: $pb.PbFieldType.OS,
@@ -736,9 +640,7 @@ class Gateway extends $pb.GeneratedMessage {
         packageName:
             const $pb.PackageName('google.events.cloud.networkservices.v1'))
     ..aOS(5, _omitFieldNames ? '' : 'description')
-    ..e<Gateway_Type>(6, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE,
-        defaultOrMaker: Gateway_Type.TYPE_UNSPECIFIED,
-        valueOf: Gateway_Type.valueOf,
+    ..aE<Gateway_Type>(6, _omitFieldNames ? '' : 'type',
         enumValues: Gateway_Type.values)
     ..pPS(7, _omitFieldNames ? '' : 'addresses')
     ..aOS(8, _omitFieldNames ? '' : 'scope')
@@ -752,17 +654,18 @@ class Gateway extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  Gateway clone() => Gateway()..mergeFromMessage(this);
+  Gateway clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Gateway copyWith(void Function(Gateway) updates) =>
       super.copyWith((message) => updates(message as Gateway)) as Gateway;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Gateway create() => Gateway._();
+  @$core.override
   Gateway createEmptyInstance() => create();
-  static $pb.PbList<Gateway> createRepeated() => $pb.PbList<Gateway>();
   @$core.pragma('dart2js:noInline')
   static Gateway getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Gateway>(create);
@@ -773,10 +676,7 @@ class Gateway extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) {
-    $_setString(0, v);
-  }
-
+  set name($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -784,33 +684,27 @@ class Gateway extends $pb.GeneratedMessage {
 
   /// Output only. The timestamp when the resource was created.
   @$pb.TagNumber(2)
-  $2.Timestamp get createTime => $_getN(1);
+  $0.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($2.Timestamp v) {
-    $_setField(2, v);
-  }
-
+  set createTime($0.Timestamp value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => $_clearField(2);
   @$pb.TagNumber(2)
-  $2.Timestamp ensureCreateTime() => $_ensure(1);
+  $0.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. The timestamp when the resource was updated.
   @$pb.TagNumber(3)
-  $2.Timestamp get updateTime => $_getN(2);
+  $0.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($2.Timestamp v) {
-    $_setField(3, v);
-  }
-
+  set updateTime($0.Timestamp value) => $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => $_clearField(3);
   @$pb.TagNumber(3)
-  $2.Timestamp ensureUpdateTime() => $_ensure(2);
+  $0.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Optional. Set of label tags associated with the Gateway resource.
   @$pb.TagNumber(4)
@@ -821,10 +715,7 @@ class Gateway extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get description => $_getSZ(4);
   @$pb.TagNumber(5)
-  set description($core.String v) {
-    $_setString(4, v);
-  }
-
+  set description($core.String value) => $_setString(4, value);
   @$pb.TagNumber(5)
   $core.bool hasDescription() => $_has(4);
   @$pb.TagNumber(5)
@@ -835,10 +726,7 @@ class Gateway extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   Gateway_Type get type => $_getN(5);
   @$pb.TagNumber(6)
-  set type(Gateway_Type v) {
-    $_setField(6, v);
-  }
-
+  set type(Gateway_Type value) => $_setField(6, value);
   @$pb.TagNumber(6)
   $core.bool hasType() => $_has(5);
   @$pb.TagNumber(6)
@@ -864,10 +752,7 @@ class Gateway extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.String get scope => $_getSZ(7);
   @$pb.TagNumber(8)
-  set scope($core.String v) {
-    $_setString(7, v);
-  }
-
+  set scope($core.String value) => $_setString(7, value);
   @$pb.TagNumber(8)
   $core.bool hasScope() => $_has(7);
   @$pb.TagNumber(8)
@@ -878,10 +763,7 @@ class Gateway extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.String get serverTlsPolicy => $_getSZ(8);
   @$pb.TagNumber(9)
-  set serverTlsPolicy($core.String v) {
-    $_setString(8, v);
-  }
-
+  set serverTlsPolicy($core.String value) => $_setString(8, value);
   @$pb.TagNumber(9)
   $core.bool hasServerTlsPolicy() => $_has(8);
   @$pb.TagNumber(9)
@@ -899,10 +781,7 @@ class Gateway extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   $core.String get selfLink => $_getSZ(10);
   @$pb.TagNumber(13)
-  set selfLink($core.String v) {
-    $_setString(10, v);
-  }
-
+  set selfLink($core.String value) => $_setString(10, value);
   @$pb.TagNumber(13)
   $core.bool hasSelfLink() => $_has(10);
   @$pb.TagNumber(13)
@@ -922,10 +801,7 @@ class Gateway extends $pb.GeneratedMessage {
   @$pb.TagNumber(16)
   $core.String get network => $_getSZ(12);
   @$pb.TagNumber(16)
-  set network($core.String v) {
-    $_setString(12, v);
-  }
-
+  set network($core.String value) => $_setString(12, value);
   @$pb.TagNumber(16)
   $core.bool hasNetwork() => $_has(12);
   @$pb.TagNumber(16)
@@ -939,10 +815,7 @@ class Gateway extends $pb.GeneratedMessage {
   @$pb.TagNumber(17)
   $core.String get subnetwork => $_getSZ(13);
   @$pb.TagNumber(17)
-  set subnetwork($core.String v) {
-    $_setString(13, v);
-  }
-
+  set subnetwork($core.String value) => $_setString(13, value);
   @$pb.TagNumber(17)
   $core.bool hasSubnetwork() => $_has(13);
   @$pb.TagNumber(17)
@@ -959,10 +832,7 @@ class Gateway extends $pb.GeneratedMessage {
   @$pb.TagNumber(18)
   $core.String get gatewaySecurityPolicy => $_getSZ(14);
   @$pb.TagNumber(18)
-  set gatewaySecurityPolicy($core.String v) {
-    $_setString(14, v);
-  }
-
+  set gatewaySecurityPolicy($core.String value) => $_setString(14, value);
   @$pb.TagNumber(18)
   $core.bool hasGatewaySecurityPolicy() => $_has(14);
   @$pb.TagNumber(18)
@@ -977,38 +847,29 @@ class GrpcRoute_MethodMatch extends $pb.GeneratedMessage {
     $core.String? grpcMethod,
     $core.bool? caseSensitive,
   }) {
-    final $result = create();
-    if (type != null) {
-      $result.type = type;
-    }
-    if (grpcService != null) {
-      $result.grpcService = grpcService;
-    }
-    if (grpcMethod != null) {
-      $result.grpcMethod = grpcMethod;
-    }
-    if (caseSensitive != null) {
-      $result.caseSensitive = caseSensitive;
-    }
-    return $result;
+    final result = create();
+    if (type != null) result.type = type;
+    if (grpcService != null) result.grpcService = grpcService;
+    if (grpcMethod != null) result.grpcMethod = grpcMethod;
+    if (caseSensitive != null) result.caseSensitive = caseSensitive;
+    return result;
   }
-  GrpcRoute_MethodMatch._() : super();
-  factory GrpcRoute_MethodMatch.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory GrpcRoute_MethodMatch.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  GrpcRoute_MethodMatch._();
+
+  factory GrpcRoute_MethodMatch.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory GrpcRoute_MethodMatch.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'GrpcRoute.MethodMatch',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.networkservices.v1'),
       createEmptyInstance: create)
-    ..e<GrpcRoute_MethodMatch_Type>(
-        1, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE,
-        defaultOrMaker: GrpcRoute_MethodMatch_Type.TYPE_UNSPECIFIED,
-        valueOf: GrpcRoute_MethodMatch_Type.valueOf,
+    ..aE<GrpcRoute_MethodMatch_Type>(1, _omitFieldNames ? '' : 'type',
         enumValues: GrpcRoute_MethodMatch_Type.values)
     ..aOS(2, _omitFieldNames ? '' : 'grpcService')
     ..aOS(3, _omitFieldNames ? '' : 'grpcMethod')
@@ -1016,21 +877,20 @@ class GrpcRoute_MethodMatch extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  GrpcRoute_MethodMatch clone() =>
-      GrpcRoute_MethodMatch()..mergeFromMessage(this);
+  GrpcRoute_MethodMatch clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   GrpcRoute_MethodMatch copyWith(
           void Function(GrpcRoute_MethodMatch) updates) =>
       super.copyWith((message) => updates(message as GrpcRoute_MethodMatch))
           as GrpcRoute_MethodMatch;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GrpcRoute_MethodMatch create() => GrpcRoute_MethodMatch._();
+  @$core.override
   GrpcRoute_MethodMatch createEmptyInstance() => create();
-  static $pb.PbList<GrpcRoute_MethodMatch> createRepeated() =>
-      $pb.PbList<GrpcRoute_MethodMatch>();
   @$core.pragma('dart2js:noInline')
   static GrpcRoute_MethodMatch getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<GrpcRoute_MethodMatch>(create);
@@ -1041,10 +901,7 @@ class GrpcRoute_MethodMatch extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   GrpcRoute_MethodMatch_Type get type => $_getN(0);
   @$pb.TagNumber(1)
-  set type(GrpcRoute_MethodMatch_Type v) {
-    $_setField(1, v);
-  }
-
+  set type(GrpcRoute_MethodMatch_Type value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasType() => $_has(0);
   @$pb.TagNumber(1)
@@ -1055,10 +912,7 @@ class GrpcRoute_MethodMatch extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get grpcService => $_getSZ(1);
   @$pb.TagNumber(2)
-  set grpcService($core.String v) {
-    $_setString(1, v);
-  }
-
+  set grpcService($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasGrpcService() => $_has(1);
   @$pb.TagNumber(2)
@@ -1069,10 +923,7 @@ class GrpcRoute_MethodMatch extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get grpcMethod => $_getSZ(2);
   @$pb.TagNumber(3)
-  set grpcMethod($core.String v) {
-    $_setString(2, v);
-  }
-
+  set grpcMethod($core.String value) => $_setString(2, value);
   @$pb.TagNumber(3)
   $core.bool hasGrpcMethod() => $_has(2);
   @$pb.TagNumber(3)
@@ -1084,10 +935,7 @@ class GrpcRoute_MethodMatch extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool get caseSensitive => $_getBF(3);
   @$pb.TagNumber(4)
-  set caseSensitive($core.bool v) {
-    $_setBool(3, v);
-  }
-
+  set caseSensitive($core.bool value) => $_setBool(3, value);
   @$pb.TagNumber(4)
   $core.bool hasCaseSensitive() => $_has(3);
   @$pb.TagNumber(4)
@@ -1101,56 +949,48 @@ class GrpcRoute_HeaderMatch extends $pb.GeneratedMessage {
     $core.String? key,
     $core.String? value,
   }) {
-    final $result = create();
-    if (type != null) {
-      $result.type = type;
-    }
-    if (key != null) {
-      $result.key = key;
-    }
-    if (value != null) {
-      $result.value = value;
-    }
-    return $result;
+    final result = create();
+    if (type != null) result.type = type;
+    if (key != null) result.key = key;
+    if (value != null) result.value = value;
+    return result;
   }
-  GrpcRoute_HeaderMatch._() : super();
-  factory GrpcRoute_HeaderMatch.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory GrpcRoute_HeaderMatch.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  GrpcRoute_HeaderMatch._();
+
+  factory GrpcRoute_HeaderMatch.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory GrpcRoute_HeaderMatch.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'GrpcRoute.HeaderMatch',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.networkservices.v1'),
       createEmptyInstance: create)
-    ..e<GrpcRoute_HeaderMatch_Type>(
-        1, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE,
-        defaultOrMaker: GrpcRoute_HeaderMatch_Type.TYPE_UNSPECIFIED,
-        valueOf: GrpcRoute_HeaderMatch_Type.valueOf,
+    ..aE<GrpcRoute_HeaderMatch_Type>(1, _omitFieldNames ? '' : 'type',
         enumValues: GrpcRoute_HeaderMatch_Type.values)
     ..aOS(2, _omitFieldNames ? '' : 'key')
     ..aOS(3, _omitFieldNames ? '' : 'value')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  GrpcRoute_HeaderMatch clone() =>
-      GrpcRoute_HeaderMatch()..mergeFromMessage(this);
+  GrpcRoute_HeaderMatch clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   GrpcRoute_HeaderMatch copyWith(
           void Function(GrpcRoute_HeaderMatch) updates) =>
       super.copyWith((message) => updates(message as GrpcRoute_HeaderMatch))
           as GrpcRoute_HeaderMatch;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GrpcRoute_HeaderMatch create() => GrpcRoute_HeaderMatch._();
+  @$core.override
   GrpcRoute_HeaderMatch createEmptyInstance() => create();
-  static $pb.PbList<GrpcRoute_HeaderMatch> createRepeated() =>
-      $pb.PbList<GrpcRoute_HeaderMatch>();
   @$core.pragma('dart2js:noInline')
   static GrpcRoute_HeaderMatch getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<GrpcRoute_HeaderMatch>(create);
@@ -1161,10 +1001,7 @@ class GrpcRoute_HeaderMatch extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   GrpcRoute_HeaderMatch_Type get type => $_getN(0);
   @$pb.TagNumber(1)
-  set type(GrpcRoute_HeaderMatch_Type v) {
-    $_setField(1, v);
-  }
-
+  set type(GrpcRoute_HeaderMatch_Type value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasType() => $_has(0);
   @$pb.TagNumber(1)
@@ -1174,10 +1011,7 @@ class GrpcRoute_HeaderMatch extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get key => $_getSZ(1);
   @$pb.TagNumber(2)
-  set key($core.String v) {
-    $_setString(1, v);
-  }
-
+  set key($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasKey() => $_has(1);
   @$pb.TagNumber(2)
@@ -1187,10 +1021,7 @@ class GrpcRoute_HeaderMatch extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get value => $_getSZ(2);
   @$pb.TagNumber(3)
-  set value($core.String v) {
-    $_setString(2, v);
-  }
-
+  set value($core.String value) => $_setString(2, value);
   @$pb.TagNumber(3)
   $core.bool hasValue() => $_has(2);
   @$pb.TagNumber(3)
@@ -1204,22 +1035,20 @@ class GrpcRoute_RouteMatch extends $pb.GeneratedMessage {
     GrpcRoute_MethodMatch? method,
     $core.Iterable<GrpcRoute_HeaderMatch>? headers,
   }) {
-    final $result = create();
-    if (method != null) {
-      $result.method = method;
-    }
-    if (headers != null) {
-      $result.headers.addAll(headers);
-    }
-    return $result;
+    final result = create();
+    if (method != null) result.method = method;
+    if (headers != null) result.headers.addAll(headers);
+    return result;
   }
-  GrpcRoute_RouteMatch._() : super();
-  factory GrpcRoute_RouteMatch.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory GrpcRoute_RouteMatch.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  GrpcRoute_RouteMatch._();
+
+  factory GrpcRoute_RouteMatch.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory GrpcRoute_RouteMatch.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'GrpcRoute.RouteMatch',
@@ -1228,26 +1057,24 @@ class GrpcRoute_RouteMatch extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOM<GrpcRoute_MethodMatch>(1, _omitFieldNames ? '' : 'method',
         subBuilder: GrpcRoute_MethodMatch.create)
-    ..pc<GrpcRoute_HeaderMatch>(
-        2, _omitFieldNames ? '' : 'headers', $pb.PbFieldType.PM,
+    ..pPM<GrpcRoute_HeaderMatch>(2, _omitFieldNames ? '' : 'headers',
         subBuilder: GrpcRoute_HeaderMatch.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  GrpcRoute_RouteMatch clone() =>
-      GrpcRoute_RouteMatch()..mergeFromMessage(this);
+  GrpcRoute_RouteMatch clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   GrpcRoute_RouteMatch copyWith(void Function(GrpcRoute_RouteMatch) updates) =>
       super.copyWith((message) => updates(message as GrpcRoute_RouteMatch))
           as GrpcRoute_RouteMatch;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GrpcRoute_RouteMatch create() => GrpcRoute_RouteMatch._();
+  @$core.override
   GrpcRoute_RouteMatch createEmptyInstance() => create();
-  static $pb.PbList<GrpcRoute_RouteMatch> createRepeated() =>
-      $pb.PbList<GrpcRoute_RouteMatch>();
   @$core.pragma('dart2js:noInline')
   static GrpcRoute_RouteMatch getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<GrpcRoute_RouteMatch>(create);
@@ -1258,10 +1085,7 @@ class GrpcRoute_RouteMatch extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   GrpcRoute_MethodMatch get method => $_getN(0);
   @$pb.TagNumber(1)
-  set method(GrpcRoute_MethodMatch v) {
-    $_setField(1, v);
-  }
-
+  set method(GrpcRoute_MethodMatch value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasMethod() => $_has(0);
   @$pb.TagNumber(1)
@@ -1282,22 +1106,20 @@ class GrpcRoute_Destination extends $pb.GeneratedMessage {
     $core.String? serviceName,
     $core.int? weight,
   }) {
-    final $result = create();
-    if (serviceName != null) {
-      $result.serviceName = serviceName;
-    }
-    if (weight != null) {
-      $result.weight = weight;
-    }
-    return $result;
+    final result = create();
+    if (serviceName != null) result.serviceName = serviceName;
+    if (weight != null) result.weight = weight;
+    return result;
   }
-  GrpcRoute_Destination._() : super();
-  factory GrpcRoute_Destination.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory GrpcRoute_Destination.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  GrpcRoute_Destination._();
+
+  factory GrpcRoute_Destination.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory GrpcRoute_Destination.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static const $core.Map<$core.int, GrpcRoute_Destination_DestinationType>
       _GrpcRoute_Destination_DestinationTypeByTag = {
@@ -1311,32 +1133,33 @@ class GrpcRoute_Destination extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..oo(0, [1])
     ..aOS(1, _omitFieldNames ? '' : 'serviceName')
-    ..a<$core.int>(2, _omitFieldNames ? '' : 'weight', $pb.PbFieldType.O3)
+    ..aI(2, _omitFieldNames ? '' : 'weight')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  GrpcRoute_Destination clone() =>
-      GrpcRoute_Destination()..mergeFromMessage(this);
+  GrpcRoute_Destination clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   GrpcRoute_Destination copyWith(
           void Function(GrpcRoute_Destination) updates) =>
       super.copyWith((message) => updates(message as GrpcRoute_Destination))
           as GrpcRoute_Destination;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GrpcRoute_Destination create() => GrpcRoute_Destination._();
+  @$core.override
   GrpcRoute_Destination createEmptyInstance() => create();
-  static $pb.PbList<GrpcRoute_Destination> createRepeated() =>
-      $pb.PbList<GrpcRoute_Destination>();
   @$core.pragma('dart2js:noInline')
   static GrpcRoute_Destination getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<GrpcRoute_Destination>(create);
   static GrpcRoute_Destination? _defaultInstance;
 
+  @$pb.TagNumber(1)
   GrpcRoute_Destination_DestinationType whichDestinationType() =>
       _GrpcRoute_Destination_DestinationTypeByTag[$_whichOneof(0)]!;
+  @$pb.TagNumber(1)
   void clearDestinationType() => $_clearField($_whichOneof(0));
 
   /// Required. The URL of a destination service to which to route traffic.
@@ -1344,10 +1167,7 @@ class GrpcRoute_Destination extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get serviceName => $_getSZ(0);
   @$pb.TagNumber(1)
-  set serviceName($core.String v) {
-    $_setString(0, v);
-  }
-
+  set serviceName($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasServiceName() => $_has(0);
   @$pb.TagNumber(1)
@@ -1370,10 +1190,7 @@ class GrpcRoute_Destination extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get weight => $_getIZ(1);
   @$pb.TagNumber(2)
-  set weight($core.int v) {
-    $_setSignedInt32(1, v);
-  }
-
+  set weight($core.int value) => $_setSignedInt32(1, value);
   @$pb.TagNumber(2)
   $core.bool hasWeight() => $_has(1);
   @$pb.TagNumber(2)
@@ -1384,40 +1201,37 @@ class GrpcRoute_Destination extends $pb.GeneratedMessage {
 /// injection before being sent to a destination.
 class GrpcRoute_FaultInjectionPolicy_Delay extends $pb.GeneratedMessage {
   factory GrpcRoute_FaultInjectionPolicy_Delay({
-    $0.Duration? fixedDelay,
+    $1.Duration? fixedDelay,
     $core.int? percentage,
   }) {
-    final $result = create();
-    if (fixedDelay != null) {
-      $result.fixedDelay = fixedDelay;
-    }
-    if (percentage != null) {
-      $result.percentage = percentage;
-    }
-    return $result;
+    final result = create();
+    if (fixedDelay != null) result.fixedDelay = fixedDelay;
+    if (percentage != null) result.percentage = percentage;
+    return result;
   }
-  GrpcRoute_FaultInjectionPolicy_Delay._() : super();
+
+  GrpcRoute_FaultInjectionPolicy_Delay._();
+
   factory GrpcRoute_FaultInjectionPolicy_Delay.fromBuffer(
-          $core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory GrpcRoute_FaultInjectionPolicy_Delay.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+          $core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory GrpcRoute_FaultInjectionPolicy_Delay.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'GrpcRoute.FaultInjectionPolicy.Delay',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.networkservices.v1'),
       createEmptyInstance: create)
-    ..aOM<$0.Duration>(1, _omitFieldNames ? '' : 'fixedDelay',
-        subBuilder: $0.Duration.create)
-    ..a<$core.int>(2, _omitFieldNames ? '' : 'percentage', $pb.PbFieldType.O3)
+    ..aOM<$1.Duration>(1, _omitFieldNames ? '' : 'fixedDelay',
+        subBuilder: $1.Duration.create)
+    ..aI(2, _omitFieldNames ? '' : 'percentage')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  GrpcRoute_FaultInjectionPolicy_Delay clone() =>
-      GrpcRoute_FaultInjectionPolicy_Delay()..mergeFromMessage(this);
+  GrpcRoute_FaultInjectionPolicy_Delay clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   GrpcRoute_FaultInjectionPolicy_Delay copyWith(
           void Function(GrpcRoute_FaultInjectionPolicy_Delay) updates) =>
@@ -1425,14 +1239,14 @@ class GrpcRoute_FaultInjectionPolicy_Delay extends $pb.GeneratedMessage {
               updates(message as GrpcRoute_FaultInjectionPolicy_Delay))
           as GrpcRoute_FaultInjectionPolicy_Delay;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GrpcRoute_FaultInjectionPolicy_Delay create() =>
       GrpcRoute_FaultInjectionPolicy_Delay._();
+  @$core.override
   GrpcRoute_FaultInjectionPolicy_Delay createEmptyInstance() => create();
-  static $pb.PbList<GrpcRoute_FaultInjectionPolicy_Delay> createRepeated() =>
-      $pb.PbList<GrpcRoute_FaultInjectionPolicy_Delay>();
   @$core.pragma('dart2js:noInline')
   static GrpcRoute_FaultInjectionPolicy_Delay getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
@@ -1441,18 +1255,15 @@ class GrpcRoute_FaultInjectionPolicy_Delay extends $pb.GeneratedMessage {
 
   /// Specify a fixed delay before forwarding the request.
   @$pb.TagNumber(1)
-  $0.Duration get fixedDelay => $_getN(0);
+  $1.Duration get fixedDelay => $_getN(0);
   @$pb.TagNumber(1)
-  set fixedDelay($0.Duration v) {
-    $_setField(1, v);
-  }
-
+  set fixedDelay($1.Duration value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasFixedDelay() => $_has(0);
   @$pb.TagNumber(1)
   void clearFixedDelay() => $_clearField(1);
   @$pb.TagNumber(1)
-  $0.Duration ensureFixedDelay() => $_ensure(0);
+  $1.Duration ensureFixedDelay() => $_ensure(0);
 
   /// The percentage of traffic on which delay will be injected.
   ///
@@ -1460,10 +1271,7 @@ class GrpcRoute_FaultInjectionPolicy_Delay extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get percentage => $_getIZ(1);
   @$pb.TagNumber(2)
-  set percentage($core.int v) {
-    $_setSignedInt32(1, v);
-  }
-
+  set percentage($core.int value) => $_setSignedInt32(1, value);
   @$pb.TagNumber(2)
   $core.bool hasPercentage() => $_has(1);
   @$pb.TagNumber(2)
@@ -1477,36 +1285,33 @@ class GrpcRoute_FaultInjectionPolicy_Abort extends $pb.GeneratedMessage {
     $core.int? httpStatus,
     $core.int? percentage,
   }) {
-    final $result = create();
-    if (httpStatus != null) {
-      $result.httpStatus = httpStatus;
-    }
-    if (percentage != null) {
-      $result.percentage = percentage;
-    }
-    return $result;
+    final result = create();
+    if (httpStatus != null) result.httpStatus = httpStatus;
+    if (percentage != null) result.percentage = percentage;
+    return result;
   }
-  GrpcRoute_FaultInjectionPolicy_Abort._() : super();
+
+  GrpcRoute_FaultInjectionPolicy_Abort._();
+
   factory GrpcRoute_FaultInjectionPolicy_Abort.fromBuffer(
-          $core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory GrpcRoute_FaultInjectionPolicy_Abort.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+          $core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory GrpcRoute_FaultInjectionPolicy_Abort.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'GrpcRoute.FaultInjectionPolicy.Abort',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.networkservices.v1'),
       createEmptyInstance: create)
-    ..a<$core.int>(1, _omitFieldNames ? '' : 'httpStatus', $pb.PbFieldType.O3)
-    ..a<$core.int>(2, _omitFieldNames ? '' : 'percentage', $pb.PbFieldType.O3)
+    ..aI(1, _omitFieldNames ? '' : 'httpStatus')
+    ..aI(2, _omitFieldNames ? '' : 'percentage')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  GrpcRoute_FaultInjectionPolicy_Abort clone() =>
-      GrpcRoute_FaultInjectionPolicy_Abort()..mergeFromMessage(this);
+  GrpcRoute_FaultInjectionPolicy_Abort clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   GrpcRoute_FaultInjectionPolicy_Abort copyWith(
           void Function(GrpcRoute_FaultInjectionPolicy_Abort) updates) =>
@@ -1514,14 +1319,14 @@ class GrpcRoute_FaultInjectionPolicy_Abort extends $pb.GeneratedMessage {
               updates(message as GrpcRoute_FaultInjectionPolicy_Abort))
           as GrpcRoute_FaultInjectionPolicy_Abort;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GrpcRoute_FaultInjectionPolicy_Abort create() =>
       GrpcRoute_FaultInjectionPolicy_Abort._();
+  @$core.override
   GrpcRoute_FaultInjectionPolicy_Abort createEmptyInstance() => create();
-  static $pb.PbList<GrpcRoute_FaultInjectionPolicy_Abort> createRepeated() =>
-      $pb.PbList<GrpcRoute_FaultInjectionPolicy_Abort>();
   @$core.pragma('dart2js:noInline')
   static GrpcRoute_FaultInjectionPolicy_Abort getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
@@ -1534,10 +1339,7 @@ class GrpcRoute_FaultInjectionPolicy_Abort extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.int get httpStatus => $_getIZ(0);
   @$pb.TagNumber(1)
-  set httpStatus($core.int v) {
-    $_setSignedInt32(0, v);
-  }
-
+  set httpStatus($core.int value) => $_setSignedInt32(0, value);
   @$pb.TagNumber(1)
   $core.bool hasHttpStatus() => $_has(0);
   @$pb.TagNumber(1)
@@ -1549,10 +1351,7 @@ class GrpcRoute_FaultInjectionPolicy_Abort extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get percentage => $_getIZ(1);
   @$pb.TagNumber(2)
-  set percentage($core.int v) {
-    $_setSignedInt32(1, v);
-  }
-
+  set percentage($core.int value) => $_setSignedInt32(1, value);
   @$pb.TagNumber(2)
   $core.bool hasPercentage() => $_has(1);
   @$pb.TagNumber(2)
@@ -1570,22 +1369,20 @@ class GrpcRoute_FaultInjectionPolicy extends $pb.GeneratedMessage {
     GrpcRoute_FaultInjectionPolicy_Delay? delay,
     GrpcRoute_FaultInjectionPolicy_Abort? abort,
   }) {
-    final $result = create();
-    if (delay != null) {
-      $result.delay = delay;
-    }
-    if (abort != null) {
-      $result.abort = abort;
-    }
-    return $result;
+    final result = create();
+    if (delay != null) result.delay = delay;
+    if (abort != null) result.abort = abort;
+    return result;
   }
-  GrpcRoute_FaultInjectionPolicy._() : super();
-  factory GrpcRoute_FaultInjectionPolicy.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory GrpcRoute_FaultInjectionPolicy.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  GrpcRoute_FaultInjectionPolicy._();
+
+  factory GrpcRoute_FaultInjectionPolicy.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory GrpcRoute_FaultInjectionPolicy.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'GrpcRoute.FaultInjectionPolicy',
@@ -1601,8 +1398,7 @@ class GrpcRoute_FaultInjectionPolicy extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  GrpcRoute_FaultInjectionPolicy clone() =>
-      GrpcRoute_FaultInjectionPolicy()..mergeFromMessage(this);
+  GrpcRoute_FaultInjectionPolicy clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   GrpcRoute_FaultInjectionPolicy copyWith(
           void Function(GrpcRoute_FaultInjectionPolicy) updates) =>
@@ -1610,14 +1406,14 @@ class GrpcRoute_FaultInjectionPolicy extends $pb.GeneratedMessage {
               (message) => updates(message as GrpcRoute_FaultInjectionPolicy))
           as GrpcRoute_FaultInjectionPolicy;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GrpcRoute_FaultInjectionPolicy create() =>
       GrpcRoute_FaultInjectionPolicy._();
+  @$core.override
   GrpcRoute_FaultInjectionPolicy createEmptyInstance() => create();
-  static $pb.PbList<GrpcRoute_FaultInjectionPolicy> createRepeated() =>
-      $pb.PbList<GrpcRoute_FaultInjectionPolicy>();
   @$core.pragma('dart2js:noInline')
   static GrpcRoute_FaultInjectionPolicy getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<GrpcRoute_FaultInjectionPolicy>(create);
@@ -1627,10 +1423,7 @@ class GrpcRoute_FaultInjectionPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   GrpcRoute_FaultInjectionPolicy_Delay get delay => $_getN(0);
   @$pb.TagNumber(1)
-  set delay(GrpcRoute_FaultInjectionPolicy_Delay v) {
-    $_setField(1, v);
-  }
-
+  set delay(GrpcRoute_FaultInjectionPolicy_Delay value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasDelay() => $_has(0);
   @$pb.TagNumber(1)
@@ -1642,10 +1435,7 @@ class GrpcRoute_FaultInjectionPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   GrpcRoute_FaultInjectionPolicy_Abort get abort => $_getN(1);
   @$pb.TagNumber(2)
-  set abort(GrpcRoute_FaultInjectionPolicy_Abort v) {
-    $_setField(2, v);
-  }
-
+  set abort(GrpcRoute_FaultInjectionPolicy_Abort value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasAbort() => $_has(1);
   @$pb.TagNumber(2)
@@ -1660,22 +1450,20 @@ class GrpcRoute_RetryPolicy extends $pb.GeneratedMessage {
     $core.Iterable<$core.String>? retryConditions,
     $core.int? numRetries,
   }) {
-    final $result = create();
-    if (retryConditions != null) {
-      $result.retryConditions.addAll(retryConditions);
-    }
-    if (numRetries != null) {
-      $result.numRetries = numRetries;
-    }
-    return $result;
+    final result = create();
+    if (retryConditions != null) result.retryConditions.addAll(retryConditions);
+    if (numRetries != null) result.numRetries = numRetries;
+    return result;
   }
-  GrpcRoute_RetryPolicy._() : super();
-  factory GrpcRoute_RetryPolicy.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory GrpcRoute_RetryPolicy.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  GrpcRoute_RetryPolicy._();
+
+  factory GrpcRoute_RetryPolicy.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory GrpcRoute_RetryPolicy.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'GrpcRoute.RetryPolicy',
@@ -1683,25 +1471,24 @@ class GrpcRoute_RetryPolicy extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.events.cloud.networkservices.v1'),
       createEmptyInstance: create)
     ..pPS(1, _omitFieldNames ? '' : 'retryConditions')
-    ..a<$core.int>(2, _omitFieldNames ? '' : 'numRetries', $pb.PbFieldType.OU3)
+    ..aI(2, _omitFieldNames ? '' : 'numRetries', fieldType: $pb.PbFieldType.OU3)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  GrpcRoute_RetryPolicy clone() =>
-      GrpcRoute_RetryPolicy()..mergeFromMessage(this);
+  GrpcRoute_RetryPolicy clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   GrpcRoute_RetryPolicy copyWith(
           void Function(GrpcRoute_RetryPolicy) updates) =>
       super.copyWith((message) => updates(message as GrpcRoute_RetryPolicy))
           as GrpcRoute_RetryPolicy;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GrpcRoute_RetryPolicy create() => GrpcRoute_RetryPolicy._();
+  @$core.override
   GrpcRoute_RetryPolicy createEmptyInstance() => create();
-  static $pb.PbList<GrpcRoute_RetryPolicy> createRepeated() =>
-      $pb.PbList<GrpcRoute_RetryPolicy>();
   @$core.pragma('dart2js:noInline')
   static GrpcRoute_RetryPolicy getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<GrpcRoute_RetryPolicy>(create);
@@ -1731,10 +1518,7 @@ class GrpcRoute_RetryPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get numRetries => $_getIZ(1);
   @$pb.TagNumber(2)
-  set numRetries($core.int v) {
-    $_setUnsignedInt32(1, v);
-  }
-
+  set numRetries($core.int value) => $_setUnsignedInt32(1, value);
   @$pb.TagNumber(2)
   $core.bool hasNumRetries() => $_has(1);
   @$pb.TagNumber(2)
@@ -1746,65 +1530,58 @@ class GrpcRoute_RouteAction extends $pb.GeneratedMessage {
   factory GrpcRoute_RouteAction({
     $core.Iterable<GrpcRoute_Destination>? destinations,
     GrpcRoute_FaultInjectionPolicy? faultInjectionPolicy,
-    $0.Duration? timeout,
+    $1.Duration? timeout,
     GrpcRoute_RetryPolicy? retryPolicy,
   }) {
-    final $result = create();
-    if (destinations != null) {
-      $result.destinations.addAll(destinations);
-    }
-    if (faultInjectionPolicy != null) {
-      $result.faultInjectionPolicy = faultInjectionPolicy;
-    }
-    if (timeout != null) {
-      $result.timeout = timeout;
-    }
-    if (retryPolicy != null) {
-      $result.retryPolicy = retryPolicy;
-    }
-    return $result;
+    final result = create();
+    if (destinations != null) result.destinations.addAll(destinations);
+    if (faultInjectionPolicy != null)
+      result.faultInjectionPolicy = faultInjectionPolicy;
+    if (timeout != null) result.timeout = timeout;
+    if (retryPolicy != null) result.retryPolicy = retryPolicy;
+    return result;
   }
-  GrpcRoute_RouteAction._() : super();
-  factory GrpcRoute_RouteAction.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory GrpcRoute_RouteAction.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  GrpcRoute_RouteAction._();
+
+  factory GrpcRoute_RouteAction.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory GrpcRoute_RouteAction.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'GrpcRoute.RouteAction',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.networkservices.v1'),
       createEmptyInstance: create)
-    ..pc<GrpcRoute_Destination>(
-        1, _omitFieldNames ? '' : 'destinations', $pb.PbFieldType.PM,
+    ..pPM<GrpcRoute_Destination>(1, _omitFieldNames ? '' : 'destinations',
         subBuilder: GrpcRoute_Destination.create)
     ..aOM<GrpcRoute_FaultInjectionPolicy>(
         3, _omitFieldNames ? '' : 'faultInjectionPolicy',
         subBuilder: GrpcRoute_FaultInjectionPolicy.create)
-    ..aOM<$0.Duration>(7, _omitFieldNames ? '' : 'timeout',
-        subBuilder: $0.Duration.create)
+    ..aOM<$1.Duration>(7, _omitFieldNames ? '' : 'timeout',
+        subBuilder: $1.Duration.create)
     ..aOM<GrpcRoute_RetryPolicy>(8, _omitFieldNames ? '' : 'retryPolicy',
         subBuilder: GrpcRoute_RetryPolicy.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  GrpcRoute_RouteAction clone() =>
-      GrpcRoute_RouteAction()..mergeFromMessage(this);
+  GrpcRoute_RouteAction clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   GrpcRoute_RouteAction copyWith(
           void Function(GrpcRoute_RouteAction) updates) =>
       super.copyWith((message) => updates(message as GrpcRoute_RouteAction))
           as GrpcRoute_RouteAction;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GrpcRoute_RouteAction create() => GrpcRoute_RouteAction._();
+  @$core.override
   GrpcRoute_RouteAction createEmptyInstance() => create();
-  static $pb.PbList<GrpcRoute_RouteAction> createRepeated() =>
-      $pb.PbList<GrpcRoute_RouteAction>();
   @$core.pragma('dart2js:noInline')
   static GrpcRoute_RouteAction getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<GrpcRoute_RouteAction>(create);
@@ -1828,10 +1605,8 @@ class GrpcRoute_RouteAction extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   GrpcRoute_FaultInjectionPolicy get faultInjectionPolicy => $_getN(1);
   @$pb.TagNumber(3)
-  set faultInjectionPolicy(GrpcRoute_FaultInjectionPolicy v) {
-    $_setField(3, v);
-  }
-
+  set faultInjectionPolicy(GrpcRoute_FaultInjectionPolicy value) =>
+      $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasFaultInjectionPolicy() => $_has(1);
   @$pb.TagNumber(3)
@@ -1844,27 +1619,21 @@ class GrpcRoute_RouteAction extends $pb.GeneratedMessage {
   /// up until the response has been completely processed. Timeout includes all
   /// retries.
   @$pb.TagNumber(7)
-  $0.Duration get timeout => $_getN(2);
+  $1.Duration get timeout => $_getN(2);
   @$pb.TagNumber(7)
-  set timeout($0.Duration v) {
-    $_setField(7, v);
-  }
-
+  set timeout($1.Duration value) => $_setField(7, value);
   @$pb.TagNumber(7)
   $core.bool hasTimeout() => $_has(2);
   @$pb.TagNumber(7)
   void clearTimeout() => $_clearField(7);
   @$pb.TagNumber(7)
-  $0.Duration ensureTimeout() => $_ensure(2);
+  $1.Duration ensureTimeout() => $_ensure(2);
 
   /// Optional. Specifies the retry policy associated with this route.
   @$pb.TagNumber(8)
   GrpcRoute_RetryPolicy get retryPolicy => $_getN(3);
   @$pb.TagNumber(8)
-  set retryPolicy(GrpcRoute_RetryPolicy v) {
-    $_setField(8, v);
-  }
-
+  set retryPolicy(GrpcRoute_RetryPolicy value) => $_setField(8, value);
   @$pb.TagNumber(8)
   $core.bool hasRetryPolicy() => $_has(3);
   @$pb.TagNumber(8)
@@ -1879,49 +1648,46 @@ class GrpcRoute_RouteRule extends $pb.GeneratedMessage {
     $core.Iterable<GrpcRoute_RouteMatch>? matches,
     GrpcRoute_RouteAction? action,
   }) {
-    final $result = create();
-    if (matches != null) {
-      $result.matches.addAll(matches);
-    }
-    if (action != null) {
-      $result.action = action;
-    }
-    return $result;
+    final result = create();
+    if (matches != null) result.matches.addAll(matches);
+    if (action != null) result.action = action;
+    return result;
   }
-  GrpcRoute_RouteRule._() : super();
-  factory GrpcRoute_RouteRule.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory GrpcRoute_RouteRule.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  GrpcRoute_RouteRule._();
+
+  factory GrpcRoute_RouteRule.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory GrpcRoute_RouteRule.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'GrpcRoute.RouteRule',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.networkservices.v1'),
       createEmptyInstance: create)
-    ..pc<GrpcRoute_RouteMatch>(
-        1, _omitFieldNames ? '' : 'matches', $pb.PbFieldType.PM,
+    ..pPM<GrpcRoute_RouteMatch>(1, _omitFieldNames ? '' : 'matches',
         subBuilder: GrpcRoute_RouteMatch.create)
     ..aOM<GrpcRoute_RouteAction>(2, _omitFieldNames ? '' : 'action',
         subBuilder: GrpcRoute_RouteAction.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  GrpcRoute_RouteRule clone() => GrpcRoute_RouteRule()..mergeFromMessage(this);
+  GrpcRoute_RouteRule clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   GrpcRoute_RouteRule copyWith(void Function(GrpcRoute_RouteRule) updates) =>
       super.copyWith((message) => updates(message as GrpcRoute_RouteRule))
           as GrpcRoute_RouteRule;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GrpcRoute_RouteRule create() => GrpcRoute_RouteRule._();
+  @$core.override
   GrpcRoute_RouteRule createEmptyInstance() => create();
-  static $pb.PbList<GrpcRoute_RouteRule> createRepeated() =>
-      $pb.PbList<GrpcRoute_RouteRule>();
   @$core.pragma('dart2js:noInline')
   static GrpcRoute_RouteRule getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<GrpcRoute_RouteRule>(create);
@@ -1939,10 +1705,7 @@ class GrpcRoute_RouteRule extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   GrpcRoute_RouteAction get action => $_getN(1);
   @$pb.TagNumber(2)
-  set action(GrpcRoute_RouteAction v) {
-    $_setField(2, v);
-  }
-
+  set action(GrpcRoute_RouteAction value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasAction() => $_has(1);
   @$pb.TagNumber(2)
@@ -1956,8 +1719,8 @@ class GrpcRoute_RouteRule extends $pb.GeneratedMessage {
 class GrpcRoute extends $pb.GeneratedMessage {
   factory GrpcRoute({
     $core.String? name,
-    $2.Timestamp? createTime,
-    $2.Timestamp? updateTime,
+    $0.Timestamp? createTime,
+    $0.Timestamp? updateTime,
     $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.String? description,
     $core.Iterable<$core.String>? hostnames,
@@ -1966,46 +1729,28 @@ class GrpcRoute extends $pb.GeneratedMessage {
     $core.Iterable<$core.String>? gateways,
     $core.String? selfLink,
   }) {
-    final $result = create();
-    if (name != null) {
-      $result.name = name;
-    }
-    if (createTime != null) {
-      $result.createTime = createTime;
-    }
-    if (updateTime != null) {
-      $result.updateTime = updateTime;
-    }
-    if (labels != null) {
-      $result.labels.addEntries(labels);
-    }
-    if (description != null) {
-      $result.description = description;
-    }
-    if (hostnames != null) {
-      $result.hostnames.addAll(hostnames);
-    }
-    if (rules != null) {
-      $result.rules.addAll(rules);
-    }
-    if (meshes != null) {
-      $result.meshes.addAll(meshes);
-    }
-    if (gateways != null) {
-      $result.gateways.addAll(gateways);
-    }
-    if (selfLink != null) {
-      $result.selfLink = selfLink;
-    }
-    return $result;
+    final result = create();
+    if (name != null) result.name = name;
+    if (createTime != null) result.createTime = createTime;
+    if (updateTime != null) result.updateTime = updateTime;
+    if (labels != null) result.labels.addEntries(labels);
+    if (description != null) result.description = description;
+    if (hostnames != null) result.hostnames.addAll(hostnames);
+    if (rules != null) result.rules.addAll(rules);
+    if (meshes != null) result.meshes.addAll(meshes);
+    if (gateways != null) result.gateways.addAll(gateways);
+    if (selfLink != null) result.selfLink = selfLink;
+    return result;
   }
-  GrpcRoute._() : super();
-  factory GrpcRoute.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory GrpcRoute.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  GrpcRoute._();
+
+  factory GrpcRoute.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory GrpcRoute.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'GrpcRoute',
@@ -2013,10 +1758,10 @@ class GrpcRoute extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.events.cloud.networkservices.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$2.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(3, _omitFieldNames ? '' : 'updateTime',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$0.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(3, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $0.Timestamp.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels',
         entryClassName: 'GrpcRoute.LabelsEntry',
         keyFieldType: $pb.PbFieldType.OS,
@@ -2025,8 +1770,7 @@ class GrpcRoute extends $pb.GeneratedMessage {
             const $pb.PackageName('google.events.cloud.networkservices.v1'))
     ..aOS(5, _omitFieldNames ? '' : 'description')
     ..pPS(6, _omitFieldNames ? '' : 'hostnames')
-    ..pc<GrpcRoute_RouteRule>(
-        7, _omitFieldNames ? '' : 'rules', $pb.PbFieldType.PM,
+    ..pPM<GrpcRoute_RouteRule>(7, _omitFieldNames ? '' : 'rules',
         subBuilder: GrpcRoute_RouteRule.create)
     ..pPS(9, _omitFieldNames ? '' : 'meshes')
     ..pPS(10, _omitFieldNames ? '' : 'gateways')
@@ -2034,17 +1778,18 @@ class GrpcRoute extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  GrpcRoute clone() => GrpcRoute()..mergeFromMessage(this);
+  GrpcRoute clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   GrpcRoute copyWith(void Function(GrpcRoute) updates) =>
       super.copyWith((message) => updates(message as GrpcRoute)) as GrpcRoute;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GrpcRoute create() => GrpcRoute._();
+  @$core.override
   GrpcRoute createEmptyInstance() => create();
-  static $pb.PbList<GrpcRoute> createRepeated() => $pb.PbList<GrpcRoute>();
   @$core.pragma('dart2js:noInline')
   static GrpcRoute getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GrpcRoute>(create);
@@ -2055,10 +1800,7 @@ class GrpcRoute extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) {
-    $_setString(0, v);
-  }
-
+  set name($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -2066,33 +1808,27 @@ class GrpcRoute extends $pb.GeneratedMessage {
 
   /// Output only. The timestamp when the resource was created.
   @$pb.TagNumber(2)
-  $2.Timestamp get createTime => $_getN(1);
+  $0.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($2.Timestamp v) {
-    $_setField(2, v);
-  }
-
+  set createTime($0.Timestamp value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => $_clearField(2);
   @$pb.TagNumber(2)
-  $2.Timestamp ensureCreateTime() => $_ensure(1);
+  $0.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. The timestamp when the resource was updated.
   @$pb.TagNumber(3)
-  $2.Timestamp get updateTime => $_getN(2);
+  $0.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($2.Timestamp v) {
-    $_setField(3, v);
-  }
-
+  set updateTime($0.Timestamp value) => $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => $_clearField(3);
   @$pb.TagNumber(3)
-  $2.Timestamp ensureUpdateTime() => $_ensure(2);
+  $0.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Optional. Set of label tags associated with the GrpcRoute resource.
   @$pb.TagNumber(4)
@@ -2103,10 +1839,7 @@ class GrpcRoute extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get description => $_getSZ(4);
   @$pb.TagNumber(5)
-  set description($core.String v) {
-    $_setString(4, v);
-  }
-
+  set description($core.String value) => $_setString(4, value);
   @$pb.TagNumber(5)
   $core.bool hasDescription() => $_has(4);
   @$pb.TagNumber(5)
@@ -2175,10 +1908,7 @@ class GrpcRoute extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.String get selfLink => $_getSZ(9);
   @$pb.TagNumber(12)
-  set selfLink($core.String v) {
-    $_setString(9, v);
-  }
-
+  set selfLink($core.String value) => $_setString(9, value);
   @$pb.TagNumber(12)
   $core.bool hasSelfLink() => $_has(9);
   @$pb.TagNumber(12)
@@ -2191,35 +1921,33 @@ class HttpRoute_HeaderMatch_IntegerRange extends $pb.GeneratedMessage {
     $core.int? start,
     $core.int? end,
   }) {
-    final $result = create();
-    if (start != null) {
-      $result.start = start;
-    }
-    if (end != null) {
-      $result.end = end;
-    }
-    return $result;
+    final result = create();
+    if (start != null) result.start = start;
+    if (end != null) result.end = end;
+    return result;
   }
-  HttpRoute_HeaderMatch_IntegerRange._() : super();
-  factory HttpRoute_HeaderMatch_IntegerRange.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory HttpRoute_HeaderMatch_IntegerRange.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  HttpRoute_HeaderMatch_IntegerRange._();
+
+  factory HttpRoute_HeaderMatch_IntegerRange.fromBuffer(
+          $core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory HttpRoute_HeaderMatch_IntegerRange.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'HttpRoute.HeaderMatch.IntegerRange',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.networkservices.v1'),
       createEmptyInstance: create)
-    ..a<$core.int>(1, _omitFieldNames ? '' : 'start', $pb.PbFieldType.O3)
-    ..a<$core.int>(2, _omitFieldNames ? '' : 'end', $pb.PbFieldType.O3)
+    ..aI(1, _omitFieldNames ? '' : 'start')
+    ..aI(2, _omitFieldNames ? '' : 'end')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  HttpRoute_HeaderMatch_IntegerRange clone() =>
-      HttpRoute_HeaderMatch_IntegerRange()..mergeFromMessage(this);
+  HttpRoute_HeaderMatch_IntegerRange clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HttpRoute_HeaderMatch_IntegerRange copyWith(
           void Function(HttpRoute_HeaderMatch_IntegerRange) updates) =>
@@ -2227,14 +1955,14 @@ class HttpRoute_HeaderMatch_IntegerRange extends $pb.GeneratedMessage {
               updates(message as HttpRoute_HeaderMatch_IntegerRange))
           as HttpRoute_HeaderMatch_IntegerRange;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static HttpRoute_HeaderMatch_IntegerRange create() =>
       HttpRoute_HeaderMatch_IntegerRange._();
+  @$core.override
   HttpRoute_HeaderMatch_IntegerRange createEmptyInstance() => create();
-  static $pb.PbList<HttpRoute_HeaderMatch_IntegerRange> createRepeated() =>
-      $pb.PbList<HttpRoute_HeaderMatch_IntegerRange>();
   @$core.pragma('dart2js:noInline')
   static HttpRoute_HeaderMatch_IntegerRange getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<HttpRoute_HeaderMatch_IntegerRange>(
@@ -2245,10 +1973,7 @@ class HttpRoute_HeaderMatch_IntegerRange extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.int get start => $_getIZ(0);
   @$pb.TagNumber(1)
-  set start($core.int v) {
-    $_setSignedInt32(0, v);
-  }
-
+  set start($core.int value) => $_setSignedInt32(0, value);
   @$pb.TagNumber(1)
   $core.bool hasStart() => $_has(0);
   @$pb.TagNumber(1)
@@ -2258,10 +1983,7 @@ class HttpRoute_HeaderMatch_IntegerRange extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get end => $_getIZ(1);
   @$pb.TagNumber(2)
-  set end($core.int v) {
-    $_setSignedInt32(1, v);
-  }
-
+  set end($core.int value) => $_setSignedInt32(1, value);
   @$pb.TagNumber(2)
   $core.bool hasEnd() => $_has(1);
   @$pb.TagNumber(2)
@@ -2290,40 +2012,26 @@ class HttpRoute_HeaderMatch extends $pb.GeneratedMessage {
     HttpRoute_HeaderMatch_IntegerRange? rangeMatch,
     $core.bool? invertMatch,
   }) {
-    final $result = create();
-    if (header != null) {
-      $result.header = header;
-    }
-    if (exactMatch != null) {
-      $result.exactMatch = exactMatch;
-    }
-    if (regexMatch != null) {
-      $result.regexMatch = regexMatch;
-    }
-    if (prefixMatch != null) {
-      $result.prefixMatch = prefixMatch;
-    }
-    if (presentMatch != null) {
-      $result.presentMatch = presentMatch;
-    }
-    if (suffixMatch != null) {
-      $result.suffixMatch = suffixMatch;
-    }
-    if (rangeMatch != null) {
-      $result.rangeMatch = rangeMatch;
-    }
-    if (invertMatch != null) {
-      $result.invertMatch = invertMatch;
-    }
-    return $result;
+    final result = create();
+    if (header != null) result.header = header;
+    if (exactMatch != null) result.exactMatch = exactMatch;
+    if (regexMatch != null) result.regexMatch = regexMatch;
+    if (prefixMatch != null) result.prefixMatch = prefixMatch;
+    if (presentMatch != null) result.presentMatch = presentMatch;
+    if (suffixMatch != null) result.suffixMatch = suffixMatch;
+    if (rangeMatch != null) result.rangeMatch = rangeMatch;
+    if (invertMatch != null) result.invertMatch = invertMatch;
+    return result;
   }
-  HttpRoute_HeaderMatch._() : super();
-  factory HttpRoute_HeaderMatch.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory HttpRoute_HeaderMatch.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  HttpRoute_HeaderMatch._();
+
+  factory HttpRoute_HeaderMatch.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory HttpRoute_HeaderMatch.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static const $core.Map<$core.int, HttpRoute_HeaderMatch_MatchType>
       _HttpRoute_HeaderMatch_MatchTypeByTag = {
@@ -2354,38 +2062,46 @@ class HttpRoute_HeaderMatch extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  HttpRoute_HeaderMatch clone() =>
-      HttpRoute_HeaderMatch()..mergeFromMessage(this);
+  HttpRoute_HeaderMatch clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HttpRoute_HeaderMatch copyWith(
           void Function(HttpRoute_HeaderMatch) updates) =>
       super.copyWith((message) => updates(message as HttpRoute_HeaderMatch))
           as HttpRoute_HeaderMatch;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static HttpRoute_HeaderMatch create() => HttpRoute_HeaderMatch._();
+  @$core.override
   HttpRoute_HeaderMatch createEmptyInstance() => create();
-  static $pb.PbList<HttpRoute_HeaderMatch> createRepeated() =>
-      $pb.PbList<HttpRoute_HeaderMatch>();
   @$core.pragma('dart2js:noInline')
   static HttpRoute_HeaderMatch getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<HttpRoute_HeaderMatch>(create);
   static HttpRoute_HeaderMatch? _defaultInstance;
 
+  @$pb.TagNumber(2)
+  @$pb.TagNumber(3)
+  @$pb.TagNumber(4)
+  @$pb.TagNumber(5)
+  @$pb.TagNumber(6)
+  @$pb.TagNumber(7)
   HttpRoute_HeaderMatch_MatchType whichMatchType() =>
       _HttpRoute_HeaderMatch_MatchTypeByTag[$_whichOneof(0)]!;
+  @$pb.TagNumber(2)
+  @$pb.TagNumber(3)
+  @$pb.TagNumber(4)
+  @$pb.TagNumber(5)
+  @$pb.TagNumber(6)
+  @$pb.TagNumber(7)
   void clearMatchType() => $_clearField($_whichOneof(0));
 
   /// The name of the HTTP header to match against.
   @$pb.TagNumber(1)
   $core.String get header => $_getSZ(0);
   @$pb.TagNumber(1)
-  set header($core.String v) {
-    $_setString(0, v);
-  }
-
+  set header($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasHeader() => $_has(0);
   @$pb.TagNumber(1)
@@ -2396,10 +2112,7 @@ class HttpRoute_HeaderMatch extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get exactMatch => $_getSZ(1);
   @$pb.TagNumber(2)
-  set exactMatch($core.String v) {
-    $_setString(1, v);
-  }
-
+  set exactMatch($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasExactMatch() => $_has(1);
   @$pb.TagNumber(2)
@@ -2411,10 +2124,7 @@ class HttpRoute_HeaderMatch extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get regexMatch => $_getSZ(2);
   @$pb.TagNumber(3)
-  set regexMatch($core.String v) {
-    $_setString(2, v);
-  }
-
+  set regexMatch($core.String value) => $_setString(2, value);
   @$pb.TagNumber(3)
   $core.bool hasRegexMatch() => $_has(2);
   @$pb.TagNumber(3)
@@ -2424,10 +2134,7 @@ class HttpRoute_HeaderMatch extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get prefixMatch => $_getSZ(3);
   @$pb.TagNumber(4)
-  set prefixMatch($core.String v) {
-    $_setString(3, v);
-  }
-
+  set prefixMatch($core.String value) => $_setString(3, value);
   @$pb.TagNumber(4)
   $core.bool hasPrefixMatch() => $_has(3);
   @$pb.TagNumber(4)
@@ -2438,10 +2145,7 @@ class HttpRoute_HeaderMatch extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool get presentMatch => $_getBF(4);
   @$pb.TagNumber(5)
-  set presentMatch($core.bool v) {
-    $_setBool(4, v);
-  }
-
+  set presentMatch($core.bool value) => $_setBool(4, value);
   @$pb.TagNumber(5)
   $core.bool hasPresentMatch() => $_has(4);
   @$pb.TagNumber(5)
@@ -2451,10 +2155,7 @@ class HttpRoute_HeaderMatch extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get suffixMatch => $_getSZ(5);
   @$pb.TagNumber(6)
-  set suffixMatch($core.String v) {
-    $_setString(5, v);
-  }
-
+  set suffixMatch($core.String value) => $_setString(5, value);
   @$pb.TagNumber(6)
   $core.bool hasSuffixMatch() => $_has(5);
   @$pb.TagNumber(6)
@@ -2465,10 +2166,8 @@ class HttpRoute_HeaderMatch extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   HttpRoute_HeaderMatch_IntegerRange get rangeMatch => $_getN(6);
   @$pb.TagNumber(7)
-  set rangeMatch(HttpRoute_HeaderMatch_IntegerRange v) {
-    $_setField(7, v);
-  }
-
+  set rangeMatch(HttpRoute_HeaderMatch_IntegerRange value) =>
+      $_setField(7, value);
   @$pb.TagNumber(7)
   $core.bool hasRangeMatch() => $_has(6);
   @$pb.TagNumber(7)
@@ -2481,10 +2180,7 @@ class HttpRoute_HeaderMatch extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.bool get invertMatch => $_getBF(7);
   @$pb.TagNumber(8)
-  set invertMatch($core.bool v) {
-    $_setBool(7, v);
-  }
-
+  set invertMatch($core.bool value) => $_setBool(7, value);
   @$pb.TagNumber(8)
   $core.bool hasInvertMatch() => $_has(7);
   @$pb.TagNumber(8)
@@ -2506,28 +2202,22 @@ class HttpRoute_QueryParameterMatch extends $pb.GeneratedMessage {
     $core.String? regexMatch,
     $core.bool? presentMatch,
   }) {
-    final $result = create();
-    if (queryParameter != null) {
-      $result.queryParameter = queryParameter;
-    }
-    if (exactMatch != null) {
-      $result.exactMatch = exactMatch;
-    }
-    if (regexMatch != null) {
-      $result.regexMatch = regexMatch;
-    }
-    if (presentMatch != null) {
-      $result.presentMatch = presentMatch;
-    }
-    return $result;
+    final result = create();
+    if (queryParameter != null) result.queryParameter = queryParameter;
+    if (exactMatch != null) result.exactMatch = exactMatch;
+    if (regexMatch != null) result.regexMatch = regexMatch;
+    if (presentMatch != null) result.presentMatch = presentMatch;
+    return result;
   }
-  HttpRoute_QueryParameterMatch._() : super();
-  factory HttpRoute_QueryParameterMatch.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory HttpRoute_QueryParameterMatch.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  HttpRoute_QueryParameterMatch._();
+
+  factory HttpRoute_QueryParameterMatch.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory HttpRoute_QueryParameterMatch.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static const $core.Map<$core.int, HttpRoute_QueryParameterMatch_MatchType>
       _HttpRoute_QueryParameterMatch_MatchTypeByTag = {
@@ -2549,8 +2239,7 @@ class HttpRoute_QueryParameterMatch extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  HttpRoute_QueryParameterMatch clone() =>
-      HttpRoute_QueryParameterMatch()..mergeFromMessage(this);
+  HttpRoute_QueryParameterMatch clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HttpRoute_QueryParameterMatch copyWith(
           void Function(HttpRoute_QueryParameterMatch) updates) =>
@@ -2558,31 +2247,34 @@ class HttpRoute_QueryParameterMatch extends $pb.GeneratedMessage {
               (message) => updates(message as HttpRoute_QueryParameterMatch))
           as HttpRoute_QueryParameterMatch;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static HttpRoute_QueryParameterMatch create() =>
       HttpRoute_QueryParameterMatch._();
+  @$core.override
   HttpRoute_QueryParameterMatch createEmptyInstance() => create();
-  static $pb.PbList<HttpRoute_QueryParameterMatch> createRepeated() =>
-      $pb.PbList<HttpRoute_QueryParameterMatch>();
   @$core.pragma('dart2js:noInline')
   static HttpRoute_QueryParameterMatch getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<HttpRoute_QueryParameterMatch>(create);
   static HttpRoute_QueryParameterMatch? _defaultInstance;
 
+  @$pb.TagNumber(2)
+  @$pb.TagNumber(3)
+  @$pb.TagNumber(4)
   HttpRoute_QueryParameterMatch_MatchType whichMatchType() =>
       _HttpRoute_QueryParameterMatch_MatchTypeByTag[$_whichOneof(0)]!;
+  @$pb.TagNumber(2)
+  @$pb.TagNumber(3)
+  @$pb.TagNumber(4)
   void clearMatchType() => $_clearField($_whichOneof(0));
 
   /// The name of the query parameter to match.
   @$pb.TagNumber(1)
   $core.String get queryParameter => $_getSZ(0);
   @$pb.TagNumber(1)
-  set queryParameter($core.String v) {
-    $_setString(0, v);
-  }
-
+  set queryParameter($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasQueryParameter() => $_has(0);
   @$pb.TagNumber(1)
@@ -2595,10 +2287,7 @@ class HttpRoute_QueryParameterMatch extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get exactMatch => $_getSZ(1);
   @$pb.TagNumber(2)
-  set exactMatch($core.String v) {
-    $_setString(1, v);
-  }
-
+  set exactMatch($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasExactMatch() => $_has(1);
   @$pb.TagNumber(2)
@@ -2612,10 +2301,7 @@ class HttpRoute_QueryParameterMatch extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get regexMatch => $_getSZ(2);
   @$pb.TagNumber(3)
-  set regexMatch($core.String v) {
-    $_setString(2, v);
-  }
-
+  set regexMatch($core.String value) => $_setString(2, value);
   @$pb.TagNumber(3)
   $core.bool hasRegexMatch() => $_has(2);
   @$pb.TagNumber(3)
@@ -2629,10 +2315,7 @@ class HttpRoute_QueryParameterMatch extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool get presentMatch => $_getBF(3);
   @$pb.TagNumber(4)
-  set presentMatch($core.bool v) {
-    $_setBool(3, v);
-  }
-
+  set presentMatch($core.bool value) => $_setBool(3, value);
   @$pb.TagNumber(4)
   $core.bool hasPresentMatch() => $_has(3);
   @$pb.TagNumber(4)
@@ -2658,34 +2341,24 @@ class HttpRoute_RouteMatch extends $pb.GeneratedMessage {
     $core.Iterable<HttpRoute_HeaderMatch>? headers,
     $core.Iterable<HttpRoute_QueryParameterMatch>? queryParameters,
   }) {
-    final $result = create();
-    if (fullPathMatch != null) {
-      $result.fullPathMatch = fullPathMatch;
-    }
-    if (prefixMatch != null) {
-      $result.prefixMatch = prefixMatch;
-    }
-    if (regexMatch != null) {
-      $result.regexMatch = regexMatch;
-    }
-    if (ignoreCase != null) {
-      $result.ignoreCase = ignoreCase;
-    }
-    if (headers != null) {
-      $result.headers.addAll(headers);
-    }
-    if (queryParameters != null) {
-      $result.queryParameters.addAll(queryParameters);
-    }
-    return $result;
+    final result = create();
+    if (fullPathMatch != null) result.fullPathMatch = fullPathMatch;
+    if (prefixMatch != null) result.prefixMatch = prefixMatch;
+    if (regexMatch != null) result.regexMatch = regexMatch;
+    if (ignoreCase != null) result.ignoreCase = ignoreCase;
+    if (headers != null) result.headers.addAll(headers);
+    if (queryParameters != null) result.queryParameters.addAll(queryParameters);
+    return result;
   }
-  HttpRoute_RouteMatch._() : super();
-  factory HttpRoute_RouteMatch.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory HttpRoute_RouteMatch.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  HttpRoute_RouteMatch._();
+
+  factory HttpRoute_RouteMatch.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory HttpRoute_RouteMatch.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static const $core.Map<$core.int, HttpRoute_RouteMatch_PathMatch>
       _HttpRoute_RouteMatch_PathMatchByTag = {
@@ -2704,36 +2377,40 @@ class HttpRoute_RouteMatch extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'prefixMatch')
     ..aOS(3, _omitFieldNames ? '' : 'regexMatch')
     ..aOB(4, _omitFieldNames ? '' : 'ignoreCase')
-    ..pc<HttpRoute_HeaderMatch>(
-        5, _omitFieldNames ? '' : 'headers', $pb.PbFieldType.PM,
+    ..pPM<HttpRoute_HeaderMatch>(5, _omitFieldNames ? '' : 'headers',
         subBuilder: HttpRoute_HeaderMatch.create)
-    ..pc<HttpRoute_QueryParameterMatch>(
-        6, _omitFieldNames ? '' : 'queryParameters', $pb.PbFieldType.PM,
+    ..pPM<HttpRoute_QueryParameterMatch>(
+        6, _omitFieldNames ? '' : 'queryParameters',
         subBuilder: HttpRoute_QueryParameterMatch.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  HttpRoute_RouteMatch clone() =>
-      HttpRoute_RouteMatch()..mergeFromMessage(this);
+  HttpRoute_RouteMatch clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HttpRoute_RouteMatch copyWith(void Function(HttpRoute_RouteMatch) updates) =>
       super.copyWith((message) => updates(message as HttpRoute_RouteMatch))
           as HttpRoute_RouteMatch;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static HttpRoute_RouteMatch create() => HttpRoute_RouteMatch._();
+  @$core.override
   HttpRoute_RouteMatch createEmptyInstance() => create();
-  static $pb.PbList<HttpRoute_RouteMatch> createRepeated() =>
-      $pb.PbList<HttpRoute_RouteMatch>();
   @$core.pragma('dart2js:noInline')
   static HttpRoute_RouteMatch getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<HttpRoute_RouteMatch>(create);
   static HttpRoute_RouteMatch? _defaultInstance;
 
+  @$pb.TagNumber(1)
+  @$pb.TagNumber(2)
+  @$pb.TagNumber(3)
   HttpRoute_RouteMatch_PathMatch whichPathMatch() =>
       _HttpRoute_RouteMatch_PathMatchByTag[$_whichOneof(0)]!;
+  @$pb.TagNumber(1)
+  @$pb.TagNumber(2)
+  @$pb.TagNumber(3)
   void clearPathMatch() => $_clearField($_whichOneof(0));
 
   /// The HTTP request path value should exactly match this value.
@@ -2743,10 +2420,7 @@ class HttpRoute_RouteMatch extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get fullPathMatch => $_getSZ(0);
   @$pb.TagNumber(1)
-  set fullPathMatch($core.String v) {
-    $_setString(0, v);
-  }
-
+  set fullPathMatch($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasFullPathMatch() => $_has(0);
   @$pb.TagNumber(1)
@@ -2760,10 +2434,7 @@ class HttpRoute_RouteMatch extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get prefixMatch => $_getSZ(1);
   @$pb.TagNumber(2)
-  set prefixMatch($core.String v) {
-    $_setString(1, v);
-  }
-
+  set prefixMatch($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasPrefixMatch() => $_has(1);
   @$pb.TagNumber(2)
@@ -2779,10 +2450,7 @@ class HttpRoute_RouteMatch extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get regexMatch => $_getSZ(2);
   @$pb.TagNumber(3)
-  set regexMatch($core.String v) {
-    $_setString(2, v);
-  }
-
+  set regexMatch($core.String value) => $_setString(2, value);
   @$pb.TagNumber(3)
   $core.bool hasRegexMatch() => $_has(2);
   @$pb.TagNumber(3)
@@ -2793,10 +2461,7 @@ class HttpRoute_RouteMatch extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool get ignoreCase => $_getBF(3);
   @$pb.TagNumber(4)
-  set ignoreCase($core.bool v) {
-    $_setBool(3, v);
-  }
-
+  set ignoreCase($core.bool value) => $_setBool(3, value);
   @$pb.TagNumber(4)
   $core.bool hasIgnoreCase() => $_has(3);
   @$pb.TagNumber(4)
@@ -2819,22 +2484,20 @@ class HttpRoute_Destination extends $pb.GeneratedMessage {
     $core.String? serviceName,
     $core.int? weight,
   }) {
-    final $result = create();
-    if (serviceName != null) {
-      $result.serviceName = serviceName;
-    }
-    if (weight != null) {
-      $result.weight = weight;
-    }
-    return $result;
+    final result = create();
+    if (serviceName != null) result.serviceName = serviceName;
+    if (weight != null) result.weight = weight;
+    return result;
   }
-  HttpRoute_Destination._() : super();
-  factory HttpRoute_Destination.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory HttpRoute_Destination.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  HttpRoute_Destination._();
+
+  factory HttpRoute_Destination.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory HttpRoute_Destination.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'HttpRoute.Destination',
@@ -2842,25 +2505,24 @@ class HttpRoute_Destination extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.events.cloud.networkservices.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'serviceName')
-    ..a<$core.int>(2, _omitFieldNames ? '' : 'weight', $pb.PbFieldType.O3)
+    ..aI(2, _omitFieldNames ? '' : 'weight')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  HttpRoute_Destination clone() =>
-      HttpRoute_Destination()..mergeFromMessage(this);
+  HttpRoute_Destination clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HttpRoute_Destination copyWith(
           void Function(HttpRoute_Destination) updates) =>
       super.copyWith((message) => updates(message as HttpRoute_Destination))
           as HttpRoute_Destination;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static HttpRoute_Destination create() => HttpRoute_Destination._();
+  @$core.override
   HttpRoute_Destination createEmptyInstance() => create();
-  static $pb.PbList<HttpRoute_Destination> createRepeated() =>
-      $pb.PbList<HttpRoute_Destination>();
   @$core.pragma('dart2js:noInline')
   static HttpRoute_Destination getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<HttpRoute_Destination>(create);
@@ -2870,10 +2532,7 @@ class HttpRoute_Destination extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get serviceName => $_getSZ(0);
   @$pb.TagNumber(1)
-  set serviceName($core.String v) {
-    $_setString(0, v);
-  }
-
+  set serviceName($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasServiceName() => $_has(0);
   @$pb.TagNumber(1)
@@ -2896,10 +2555,7 @@ class HttpRoute_Destination extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get weight => $_getIZ(1);
   @$pb.TagNumber(2)
-  set weight($core.int v) {
-    $_setSignedInt32(1, v);
-  }
-
+  set weight($core.int value) => $_setSignedInt32(1, value);
   @$pb.TagNumber(2)
   $core.bool hasWeight() => $_has(1);
   @$pb.TagNumber(2)
@@ -2917,37 +2573,25 @@ class HttpRoute_Redirect extends $pb.GeneratedMessage {
     $core.bool? stripQuery,
     $core.int? portRedirect,
   }) {
-    final $result = create();
-    if (hostRedirect != null) {
-      $result.hostRedirect = hostRedirect;
-    }
-    if (pathRedirect != null) {
-      $result.pathRedirect = pathRedirect;
-    }
-    if (prefixRewrite != null) {
-      $result.prefixRewrite = prefixRewrite;
-    }
-    if (responseCode != null) {
-      $result.responseCode = responseCode;
-    }
-    if (httpsRedirect != null) {
-      $result.httpsRedirect = httpsRedirect;
-    }
-    if (stripQuery != null) {
-      $result.stripQuery = stripQuery;
-    }
-    if (portRedirect != null) {
-      $result.portRedirect = portRedirect;
-    }
-    return $result;
+    final result = create();
+    if (hostRedirect != null) result.hostRedirect = hostRedirect;
+    if (pathRedirect != null) result.pathRedirect = pathRedirect;
+    if (prefixRewrite != null) result.prefixRewrite = prefixRewrite;
+    if (responseCode != null) result.responseCode = responseCode;
+    if (httpsRedirect != null) result.httpsRedirect = httpsRedirect;
+    if (stripQuery != null) result.stripQuery = stripQuery;
+    if (portRedirect != null) result.portRedirect = portRedirect;
+    return result;
   }
-  HttpRoute_Redirect._() : super();
-  factory HttpRoute_Redirect.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory HttpRoute_Redirect.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  HttpRoute_Redirect._();
+
+  factory HttpRoute_Redirect.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory HttpRoute_Redirect.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'HttpRoute.Redirect',
@@ -2957,31 +2601,28 @@ class HttpRoute_Redirect extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'hostRedirect')
     ..aOS(2, _omitFieldNames ? '' : 'pathRedirect')
     ..aOS(3, _omitFieldNames ? '' : 'prefixRewrite')
-    ..e<HttpRoute_Redirect_ResponseCode>(
-        4, _omitFieldNames ? '' : 'responseCode', $pb.PbFieldType.OE,
-        defaultOrMaker:
-            HttpRoute_Redirect_ResponseCode.RESPONSE_CODE_UNSPECIFIED,
-        valueOf: HttpRoute_Redirect_ResponseCode.valueOf,
+    ..aE<HttpRoute_Redirect_ResponseCode>(
+        4, _omitFieldNames ? '' : 'responseCode',
         enumValues: HttpRoute_Redirect_ResponseCode.values)
     ..aOB(5, _omitFieldNames ? '' : 'httpsRedirect')
     ..aOB(6, _omitFieldNames ? '' : 'stripQuery')
-    ..a<$core.int>(7, _omitFieldNames ? '' : 'portRedirect', $pb.PbFieldType.O3)
+    ..aI(7, _omitFieldNames ? '' : 'portRedirect')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  HttpRoute_Redirect clone() => HttpRoute_Redirect()..mergeFromMessage(this);
+  HttpRoute_Redirect clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HttpRoute_Redirect copyWith(void Function(HttpRoute_Redirect) updates) =>
       super.copyWith((message) => updates(message as HttpRoute_Redirect))
           as HttpRoute_Redirect;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static HttpRoute_Redirect create() => HttpRoute_Redirect._();
+  @$core.override
   HttpRoute_Redirect createEmptyInstance() => create();
-  static $pb.PbList<HttpRoute_Redirect> createRepeated() =>
-      $pb.PbList<HttpRoute_Redirect>();
   @$core.pragma('dart2js:noInline')
   static HttpRoute_Redirect getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<HttpRoute_Redirect>(create);
@@ -2992,10 +2633,7 @@ class HttpRoute_Redirect extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get hostRedirect => $_getSZ(0);
   @$pb.TagNumber(1)
-  set hostRedirect($core.String v) {
-    $_setString(0, v);
-  }
-
+  set hostRedirect($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasHostRedirect() => $_has(0);
   @$pb.TagNumber(1)
@@ -3009,10 +2647,7 @@ class HttpRoute_Redirect extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get pathRedirect => $_getSZ(1);
   @$pb.TagNumber(2)
-  set pathRedirect($core.String v) {
-    $_setString(1, v);
-  }
-
+  set pathRedirect($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasPathRedirect() => $_has(1);
   @$pb.TagNumber(2)
@@ -3024,10 +2659,7 @@ class HttpRoute_Redirect extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get prefixRewrite => $_getSZ(2);
   @$pb.TagNumber(3)
-  set prefixRewrite($core.String v) {
-    $_setString(2, v);
-  }
-
+  set prefixRewrite($core.String value) => $_setString(2, value);
   @$pb.TagNumber(3)
   $core.bool hasPrefixRewrite() => $_has(2);
   @$pb.TagNumber(3)
@@ -3037,10 +2669,8 @@ class HttpRoute_Redirect extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   HttpRoute_Redirect_ResponseCode get responseCode => $_getN(3);
   @$pb.TagNumber(4)
-  set responseCode(HttpRoute_Redirect_ResponseCode v) {
-    $_setField(4, v);
-  }
-
+  set responseCode(HttpRoute_Redirect_ResponseCode value) =>
+      $_setField(4, value);
   @$pb.TagNumber(4)
   $core.bool hasResponseCode() => $_has(3);
   @$pb.TagNumber(4)
@@ -3054,10 +2684,7 @@ class HttpRoute_Redirect extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool get httpsRedirect => $_getBF(4);
   @$pb.TagNumber(5)
-  set httpsRedirect($core.bool v) {
-    $_setBool(4, v);
-  }
-
+  set httpsRedirect($core.bool value) => $_setBool(4, value);
   @$pb.TagNumber(5)
   $core.bool hasHttpsRedirect() => $_has(4);
   @$pb.TagNumber(5)
@@ -3071,10 +2698,7 @@ class HttpRoute_Redirect extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool get stripQuery => $_getBF(5);
   @$pb.TagNumber(6)
-  set stripQuery($core.bool v) {
-    $_setBool(5, v);
-  }
-
+  set stripQuery($core.bool value) => $_setBool(5, value);
   @$pb.TagNumber(6)
   $core.bool hasStripQuery() => $_has(5);
   @$pb.TagNumber(6)
@@ -3085,10 +2709,7 @@ class HttpRoute_Redirect extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.int get portRedirect => $_getIZ(6);
   @$pb.TagNumber(7)
-  set portRedirect($core.int v) {
-    $_setSignedInt32(6, v);
-  }
-
+  set portRedirect($core.int value) => $_setSignedInt32(6, value);
   @$pb.TagNumber(7)
   $core.bool hasPortRedirect() => $_has(6);
   @$pb.TagNumber(7)
@@ -3099,40 +2720,37 @@ class HttpRoute_Redirect extends $pb.GeneratedMessage {
 /// injection before being sent to a destination.
 class HttpRoute_FaultInjectionPolicy_Delay extends $pb.GeneratedMessage {
   factory HttpRoute_FaultInjectionPolicy_Delay({
-    $0.Duration? fixedDelay,
+    $1.Duration? fixedDelay,
     $core.int? percentage,
   }) {
-    final $result = create();
-    if (fixedDelay != null) {
-      $result.fixedDelay = fixedDelay;
-    }
-    if (percentage != null) {
-      $result.percentage = percentage;
-    }
-    return $result;
+    final result = create();
+    if (fixedDelay != null) result.fixedDelay = fixedDelay;
+    if (percentage != null) result.percentage = percentage;
+    return result;
   }
-  HttpRoute_FaultInjectionPolicy_Delay._() : super();
+
+  HttpRoute_FaultInjectionPolicy_Delay._();
+
   factory HttpRoute_FaultInjectionPolicy_Delay.fromBuffer(
-          $core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory HttpRoute_FaultInjectionPolicy_Delay.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+          $core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory HttpRoute_FaultInjectionPolicy_Delay.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'HttpRoute.FaultInjectionPolicy.Delay',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.networkservices.v1'),
       createEmptyInstance: create)
-    ..aOM<$0.Duration>(1, _omitFieldNames ? '' : 'fixedDelay',
-        subBuilder: $0.Duration.create)
-    ..a<$core.int>(2, _omitFieldNames ? '' : 'percentage', $pb.PbFieldType.O3)
+    ..aOM<$1.Duration>(1, _omitFieldNames ? '' : 'fixedDelay',
+        subBuilder: $1.Duration.create)
+    ..aI(2, _omitFieldNames ? '' : 'percentage')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  HttpRoute_FaultInjectionPolicy_Delay clone() =>
-      HttpRoute_FaultInjectionPolicy_Delay()..mergeFromMessage(this);
+  HttpRoute_FaultInjectionPolicy_Delay clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HttpRoute_FaultInjectionPolicy_Delay copyWith(
           void Function(HttpRoute_FaultInjectionPolicy_Delay) updates) =>
@@ -3140,14 +2758,14 @@ class HttpRoute_FaultInjectionPolicy_Delay extends $pb.GeneratedMessage {
               updates(message as HttpRoute_FaultInjectionPolicy_Delay))
           as HttpRoute_FaultInjectionPolicy_Delay;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static HttpRoute_FaultInjectionPolicy_Delay create() =>
       HttpRoute_FaultInjectionPolicy_Delay._();
+  @$core.override
   HttpRoute_FaultInjectionPolicy_Delay createEmptyInstance() => create();
-  static $pb.PbList<HttpRoute_FaultInjectionPolicy_Delay> createRepeated() =>
-      $pb.PbList<HttpRoute_FaultInjectionPolicy_Delay>();
   @$core.pragma('dart2js:noInline')
   static HttpRoute_FaultInjectionPolicy_Delay getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
@@ -3156,18 +2774,15 @@ class HttpRoute_FaultInjectionPolicy_Delay extends $pb.GeneratedMessage {
 
   /// Specify a fixed delay before forwarding the request.
   @$pb.TagNumber(1)
-  $0.Duration get fixedDelay => $_getN(0);
+  $1.Duration get fixedDelay => $_getN(0);
   @$pb.TagNumber(1)
-  set fixedDelay($0.Duration v) {
-    $_setField(1, v);
-  }
-
+  set fixedDelay($1.Duration value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasFixedDelay() => $_has(0);
   @$pb.TagNumber(1)
   void clearFixedDelay() => $_clearField(1);
   @$pb.TagNumber(1)
-  $0.Duration ensureFixedDelay() => $_ensure(0);
+  $1.Duration ensureFixedDelay() => $_ensure(0);
 
   /// The percentage of traffic on which delay will be injected.
   ///
@@ -3175,10 +2790,7 @@ class HttpRoute_FaultInjectionPolicy_Delay extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get percentage => $_getIZ(1);
   @$pb.TagNumber(2)
-  set percentage($core.int v) {
-    $_setSignedInt32(1, v);
-  }
-
+  set percentage($core.int value) => $_setSignedInt32(1, value);
   @$pb.TagNumber(2)
   $core.bool hasPercentage() => $_has(1);
   @$pb.TagNumber(2)
@@ -3192,36 +2804,33 @@ class HttpRoute_FaultInjectionPolicy_Abort extends $pb.GeneratedMessage {
     $core.int? httpStatus,
     $core.int? percentage,
   }) {
-    final $result = create();
-    if (httpStatus != null) {
-      $result.httpStatus = httpStatus;
-    }
-    if (percentage != null) {
-      $result.percentage = percentage;
-    }
-    return $result;
+    final result = create();
+    if (httpStatus != null) result.httpStatus = httpStatus;
+    if (percentage != null) result.percentage = percentage;
+    return result;
   }
-  HttpRoute_FaultInjectionPolicy_Abort._() : super();
+
+  HttpRoute_FaultInjectionPolicy_Abort._();
+
   factory HttpRoute_FaultInjectionPolicy_Abort.fromBuffer(
-          $core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory HttpRoute_FaultInjectionPolicy_Abort.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+          $core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory HttpRoute_FaultInjectionPolicy_Abort.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'HttpRoute.FaultInjectionPolicy.Abort',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.networkservices.v1'),
       createEmptyInstance: create)
-    ..a<$core.int>(1, _omitFieldNames ? '' : 'httpStatus', $pb.PbFieldType.O3)
-    ..a<$core.int>(2, _omitFieldNames ? '' : 'percentage', $pb.PbFieldType.O3)
+    ..aI(1, _omitFieldNames ? '' : 'httpStatus')
+    ..aI(2, _omitFieldNames ? '' : 'percentage')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  HttpRoute_FaultInjectionPolicy_Abort clone() =>
-      HttpRoute_FaultInjectionPolicy_Abort()..mergeFromMessage(this);
+  HttpRoute_FaultInjectionPolicy_Abort clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HttpRoute_FaultInjectionPolicy_Abort copyWith(
           void Function(HttpRoute_FaultInjectionPolicy_Abort) updates) =>
@@ -3229,14 +2838,14 @@ class HttpRoute_FaultInjectionPolicy_Abort extends $pb.GeneratedMessage {
               updates(message as HttpRoute_FaultInjectionPolicy_Abort))
           as HttpRoute_FaultInjectionPolicy_Abort;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static HttpRoute_FaultInjectionPolicy_Abort create() =>
       HttpRoute_FaultInjectionPolicy_Abort._();
+  @$core.override
   HttpRoute_FaultInjectionPolicy_Abort createEmptyInstance() => create();
-  static $pb.PbList<HttpRoute_FaultInjectionPolicy_Abort> createRepeated() =>
-      $pb.PbList<HttpRoute_FaultInjectionPolicy_Abort>();
   @$core.pragma('dart2js:noInline')
   static HttpRoute_FaultInjectionPolicy_Abort getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
@@ -3249,10 +2858,7 @@ class HttpRoute_FaultInjectionPolicy_Abort extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.int get httpStatus => $_getIZ(0);
   @$pb.TagNumber(1)
-  set httpStatus($core.int v) {
-    $_setSignedInt32(0, v);
-  }
-
+  set httpStatus($core.int value) => $_setSignedInt32(0, value);
   @$pb.TagNumber(1)
   $core.bool hasHttpStatus() => $_has(0);
   @$pb.TagNumber(1)
@@ -3264,10 +2870,7 @@ class HttpRoute_FaultInjectionPolicy_Abort extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get percentage => $_getIZ(1);
   @$pb.TagNumber(2)
-  set percentage($core.int v) {
-    $_setSignedInt32(1, v);
-  }
-
+  set percentage($core.int value) => $_setSignedInt32(1, value);
   @$pb.TagNumber(2)
   $core.bool hasPercentage() => $_has(1);
   @$pb.TagNumber(2)
@@ -3285,22 +2888,20 @@ class HttpRoute_FaultInjectionPolicy extends $pb.GeneratedMessage {
     HttpRoute_FaultInjectionPolicy_Delay? delay,
     HttpRoute_FaultInjectionPolicy_Abort? abort,
   }) {
-    final $result = create();
-    if (delay != null) {
-      $result.delay = delay;
-    }
-    if (abort != null) {
-      $result.abort = abort;
-    }
-    return $result;
+    final result = create();
+    if (delay != null) result.delay = delay;
+    if (abort != null) result.abort = abort;
+    return result;
   }
-  HttpRoute_FaultInjectionPolicy._() : super();
-  factory HttpRoute_FaultInjectionPolicy.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory HttpRoute_FaultInjectionPolicy.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  HttpRoute_FaultInjectionPolicy._();
+
+  factory HttpRoute_FaultInjectionPolicy.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory HttpRoute_FaultInjectionPolicy.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'HttpRoute.FaultInjectionPolicy',
@@ -3316,8 +2917,7 @@ class HttpRoute_FaultInjectionPolicy extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  HttpRoute_FaultInjectionPolicy clone() =>
-      HttpRoute_FaultInjectionPolicy()..mergeFromMessage(this);
+  HttpRoute_FaultInjectionPolicy clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HttpRoute_FaultInjectionPolicy copyWith(
           void Function(HttpRoute_FaultInjectionPolicy) updates) =>
@@ -3325,14 +2925,14 @@ class HttpRoute_FaultInjectionPolicy extends $pb.GeneratedMessage {
               (message) => updates(message as HttpRoute_FaultInjectionPolicy))
           as HttpRoute_FaultInjectionPolicy;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static HttpRoute_FaultInjectionPolicy create() =>
       HttpRoute_FaultInjectionPolicy._();
+  @$core.override
   HttpRoute_FaultInjectionPolicy createEmptyInstance() => create();
-  static $pb.PbList<HttpRoute_FaultInjectionPolicy> createRepeated() =>
-      $pb.PbList<HttpRoute_FaultInjectionPolicy>();
   @$core.pragma('dart2js:noInline')
   static HttpRoute_FaultInjectionPolicy getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<HttpRoute_FaultInjectionPolicy>(create);
@@ -3342,10 +2942,7 @@ class HttpRoute_FaultInjectionPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   HttpRoute_FaultInjectionPolicy_Delay get delay => $_getN(0);
   @$pb.TagNumber(1)
-  set delay(HttpRoute_FaultInjectionPolicy_Delay v) {
-    $_setField(1, v);
-  }
-
+  set delay(HttpRoute_FaultInjectionPolicy_Delay value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasDelay() => $_has(0);
   @$pb.TagNumber(1)
@@ -3357,10 +2954,7 @@ class HttpRoute_FaultInjectionPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   HttpRoute_FaultInjectionPolicy_Abort get abort => $_getN(1);
   @$pb.TagNumber(2)
-  set abort(HttpRoute_FaultInjectionPolicy_Abort v) {
-    $_setField(2, v);
-  }
-
+  set abort(HttpRoute_FaultInjectionPolicy_Abort value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasAbort() => $_has(1);
   @$pb.TagNumber(2)
@@ -3377,25 +2971,21 @@ class HttpRoute_HeaderModifier extends $pb.GeneratedMessage {
     $core.Iterable<$core.MapEntry<$core.String, $core.String>>? add,
     $core.Iterable<$core.String>? remove,
   }) {
-    final $result = create();
-    if (set != null) {
-      $result.set.addEntries(set);
-    }
-    if (add != null) {
-      $result.add.addEntries(add);
-    }
-    if (remove != null) {
-      $result.remove.addAll(remove);
-    }
-    return $result;
+    final result = create();
+    if (set != null) result.set.addEntries(set);
+    if (add != null) result.add.addEntries(add);
+    if (remove != null) result.remove.addAll(remove);
+    return result;
   }
-  HttpRoute_HeaderModifier._() : super();
-  factory HttpRoute_HeaderModifier.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory HttpRoute_HeaderModifier.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  HttpRoute_HeaderModifier._();
+
+  factory HttpRoute_HeaderModifier.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory HttpRoute_HeaderModifier.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'HttpRoute.HeaderModifier',
@@ -3418,21 +3008,20 @@ class HttpRoute_HeaderModifier extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  HttpRoute_HeaderModifier clone() =>
-      HttpRoute_HeaderModifier()..mergeFromMessage(this);
+  HttpRoute_HeaderModifier clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HttpRoute_HeaderModifier copyWith(
           void Function(HttpRoute_HeaderModifier) updates) =>
       super.copyWith((message) => updates(message as HttpRoute_HeaderModifier))
           as HttpRoute_HeaderModifier;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static HttpRoute_HeaderModifier create() => HttpRoute_HeaderModifier._();
+  @$core.override
   HttpRoute_HeaderModifier createEmptyInstance() => create();
-  static $pb.PbList<HttpRoute_HeaderModifier> createRepeated() =>
-      $pb.PbList<HttpRoute_HeaderModifier>();
   @$core.pragma('dart2js:noInline')
   static HttpRoute_HeaderModifier getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<HttpRoute_HeaderModifier>(create);
@@ -3460,22 +3049,20 @@ class HttpRoute_URLRewrite extends $pb.GeneratedMessage {
     $core.String? pathPrefixRewrite,
     $core.String? hostRewrite,
   }) {
-    final $result = create();
-    if (pathPrefixRewrite != null) {
-      $result.pathPrefixRewrite = pathPrefixRewrite;
-    }
-    if (hostRewrite != null) {
-      $result.hostRewrite = hostRewrite;
-    }
-    return $result;
+    final result = create();
+    if (pathPrefixRewrite != null) result.pathPrefixRewrite = pathPrefixRewrite;
+    if (hostRewrite != null) result.hostRewrite = hostRewrite;
+    return result;
   }
-  HttpRoute_URLRewrite._() : super();
-  factory HttpRoute_URLRewrite.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory HttpRoute_URLRewrite.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  HttpRoute_URLRewrite._();
+
+  factory HttpRoute_URLRewrite.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory HttpRoute_URLRewrite.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'HttpRoute.URLRewrite',
@@ -3487,20 +3074,19 @@ class HttpRoute_URLRewrite extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  HttpRoute_URLRewrite clone() =>
-      HttpRoute_URLRewrite()..mergeFromMessage(this);
+  HttpRoute_URLRewrite clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HttpRoute_URLRewrite copyWith(void Function(HttpRoute_URLRewrite) updates) =>
       super.copyWith((message) => updates(message as HttpRoute_URLRewrite))
           as HttpRoute_URLRewrite;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static HttpRoute_URLRewrite create() => HttpRoute_URLRewrite._();
+  @$core.override
   HttpRoute_URLRewrite createEmptyInstance() => create();
-  static $pb.PbList<HttpRoute_URLRewrite> createRepeated() =>
-      $pb.PbList<HttpRoute_URLRewrite>();
   @$core.pragma('dart2js:noInline')
   static HttpRoute_URLRewrite getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<HttpRoute_URLRewrite>(create);
@@ -3511,10 +3097,7 @@ class HttpRoute_URLRewrite extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get pathPrefixRewrite => $_getSZ(0);
   @$pb.TagNumber(1)
-  set pathPrefixRewrite($core.String v) {
-    $_setString(0, v);
-  }
-
+  set pathPrefixRewrite($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasPathPrefixRewrite() => $_has(0);
   @$pb.TagNumber(1)
@@ -3525,10 +3108,7 @@ class HttpRoute_URLRewrite extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get hostRewrite => $_getSZ(1);
   @$pb.TagNumber(2)
-  set hostRewrite($core.String v) {
-    $_setString(1, v);
-  }
-
+  set hostRewrite($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasHostRewrite() => $_has(1);
   @$pb.TagNumber(2)
@@ -3540,27 +3120,23 @@ class HttpRoute_RetryPolicy extends $pb.GeneratedMessage {
   factory HttpRoute_RetryPolicy({
     $core.Iterable<$core.String>? retryConditions,
     $core.int? numRetries,
-    $0.Duration? perTryTimeout,
+    $1.Duration? perTryTimeout,
   }) {
-    final $result = create();
-    if (retryConditions != null) {
-      $result.retryConditions.addAll(retryConditions);
-    }
-    if (numRetries != null) {
-      $result.numRetries = numRetries;
-    }
-    if (perTryTimeout != null) {
-      $result.perTryTimeout = perTryTimeout;
-    }
-    return $result;
+    final result = create();
+    if (retryConditions != null) result.retryConditions.addAll(retryConditions);
+    if (numRetries != null) result.numRetries = numRetries;
+    if (perTryTimeout != null) result.perTryTimeout = perTryTimeout;
+    return result;
   }
-  HttpRoute_RetryPolicy._() : super();
-  factory HttpRoute_RetryPolicy.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory HttpRoute_RetryPolicy.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  HttpRoute_RetryPolicy._();
+
+  factory HttpRoute_RetryPolicy.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory HttpRoute_RetryPolicy.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'HttpRoute.RetryPolicy',
@@ -3568,27 +3144,26 @@ class HttpRoute_RetryPolicy extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.events.cloud.networkservices.v1'),
       createEmptyInstance: create)
     ..pPS(1, _omitFieldNames ? '' : 'retryConditions')
-    ..a<$core.int>(2, _omitFieldNames ? '' : 'numRetries', $pb.PbFieldType.O3)
-    ..aOM<$0.Duration>(3, _omitFieldNames ? '' : 'perTryTimeout',
-        subBuilder: $0.Duration.create)
+    ..aI(2, _omitFieldNames ? '' : 'numRetries')
+    ..aOM<$1.Duration>(3, _omitFieldNames ? '' : 'perTryTimeout',
+        subBuilder: $1.Duration.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  HttpRoute_RetryPolicy clone() =>
-      HttpRoute_RetryPolicy()..mergeFromMessage(this);
+  HttpRoute_RetryPolicy clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HttpRoute_RetryPolicy copyWith(
           void Function(HttpRoute_RetryPolicy) updates) =>
       super.copyWith((message) => updates(message as HttpRoute_RetryPolicy))
           as HttpRoute_RetryPolicy;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static HttpRoute_RetryPolicy create() => HttpRoute_RetryPolicy._();
+  @$core.override
   HttpRoute_RetryPolicy createEmptyInstance() => create();
-  static $pb.PbList<HttpRoute_RetryPolicy> createRepeated() =>
-      $pb.PbList<HttpRoute_RetryPolicy>();
   @$core.pragma('dart2js:noInline')
   static HttpRoute_RetryPolicy getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<HttpRoute_RetryPolicy>(create);
@@ -3624,10 +3199,7 @@ class HttpRoute_RetryPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get numRetries => $_getIZ(1);
   @$pb.TagNumber(2)
-  set numRetries($core.int v) {
-    $_setSignedInt32(1, v);
-  }
-
+  set numRetries($core.int value) => $_setSignedInt32(1, value);
   @$pb.TagNumber(2)
   $core.bool hasNumRetries() => $_has(1);
   @$pb.TagNumber(2)
@@ -3635,18 +3207,15 @@ class HttpRoute_RetryPolicy extends $pb.GeneratedMessage {
 
   /// Specifies a non-zero timeout per retry attempt.
   @$pb.TagNumber(3)
-  $0.Duration get perTryTimeout => $_getN(2);
+  $1.Duration get perTryTimeout => $_getN(2);
   @$pb.TagNumber(3)
-  set perTryTimeout($0.Duration v) {
-    $_setField(3, v);
-  }
-
+  set perTryTimeout($1.Duration value) => $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasPerTryTimeout() => $_has(2);
   @$pb.TagNumber(3)
   void clearPerTryTimeout() => $_clearField(3);
   @$pb.TagNumber(3)
-  $0.Duration ensurePerTryTimeout() => $_ensure(2);
+  $1.Duration ensurePerTryTimeout() => $_ensure(2);
 }
 
 /// Specifies the policy on how requests are shadowed to a separate mirrored
@@ -3657,19 +3226,19 @@ class HttpRoute_RequestMirrorPolicy extends $pb.GeneratedMessage {
   factory HttpRoute_RequestMirrorPolicy({
     HttpRoute_Destination? destination,
   }) {
-    final $result = create();
-    if (destination != null) {
-      $result.destination = destination;
-    }
-    return $result;
+    final result = create();
+    if (destination != null) result.destination = destination;
+    return result;
   }
-  HttpRoute_RequestMirrorPolicy._() : super();
-  factory HttpRoute_RequestMirrorPolicy.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory HttpRoute_RequestMirrorPolicy.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  HttpRoute_RequestMirrorPolicy._();
+
+  factory HttpRoute_RequestMirrorPolicy.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory HttpRoute_RequestMirrorPolicy.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'HttpRoute.RequestMirrorPolicy',
@@ -3681,8 +3250,7 @@ class HttpRoute_RequestMirrorPolicy extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  HttpRoute_RequestMirrorPolicy clone() =>
-      HttpRoute_RequestMirrorPolicy()..mergeFromMessage(this);
+  HttpRoute_RequestMirrorPolicy clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HttpRoute_RequestMirrorPolicy copyWith(
           void Function(HttpRoute_RequestMirrorPolicy) updates) =>
@@ -3690,14 +3258,14 @@ class HttpRoute_RequestMirrorPolicy extends $pb.GeneratedMessage {
               (message) => updates(message as HttpRoute_RequestMirrorPolicy))
           as HttpRoute_RequestMirrorPolicy;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static HttpRoute_RequestMirrorPolicy create() =>
       HttpRoute_RequestMirrorPolicy._();
+  @$core.override
   HttpRoute_RequestMirrorPolicy createEmptyInstance() => create();
-  static $pb.PbList<HttpRoute_RequestMirrorPolicy> createRepeated() =>
-      $pb.PbList<HttpRoute_RequestMirrorPolicy>();
   @$core.pragma('dart2js:noInline')
   static HttpRoute_RequestMirrorPolicy getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<HttpRoute_RequestMirrorPolicy>(create);
@@ -3708,10 +3276,7 @@ class HttpRoute_RequestMirrorPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   HttpRoute_Destination get destination => $_getN(0);
   @$pb.TagNumber(1)
-  set destination(HttpRoute_Destination v) {
-    $_setField(1, v);
-  }
-
+  set destination(HttpRoute_Destination value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasDestination() => $_has(0);
   @$pb.TagNumber(1)
@@ -3732,40 +3297,27 @@ class HttpRoute_CorsPolicy extends $pb.GeneratedMessage {
     $core.bool? allowCredentials,
     $core.bool? disabled,
   }) {
-    final $result = create();
-    if (allowOrigins != null) {
-      $result.allowOrigins.addAll(allowOrigins);
-    }
-    if (allowOriginRegexes != null) {
-      $result.allowOriginRegexes.addAll(allowOriginRegexes);
-    }
-    if (allowMethods != null) {
-      $result.allowMethods.addAll(allowMethods);
-    }
-    if (allowHeaders != null) {
-      $result.allowHeaders.addAll(allowHeaders);
-    }
-    if (exposeHeaders != null) {
-      $result.exposeHeaders.addAll(exposeHeaders);
-    }
-    if (maxAge != null) {
-      $result.maxAge = maxAge;
-    }
-    if (allowCredentials != null) {
-      $result.allowCredentials = allowCredentials;
-    }
-    if (disabled != null) {
-      $result.disabled = disabled;
-    }
-    return $result;
+    final result = create();
+    if (allowOrigins != null) result.allowOrigins.addAll(allowOrigins);
+    if (allowOriginRegexes != null)
+      result.allowOriginRegexes.addAll(allowOriginRegexes);
+    if (allowMethods != null) result.allowMethods.addAll(allowMethods);
+    if (allowHeaders != null) result.allowHeaders.addAll(allowHeaders);
+    if (exposeHeaders != null) result.exposeHeaders.addAll(exposeHeaders);
+    if (maxAge != null) result.maxAge = maxAge;
+    if (allowCredentials != null) result.allowCredentials = allowCredentials;
+    if (disabled != null) result.disabled = disabled;
+    return result;
   }
-  HttpRoute_CorsPolicy._() : super();
-  factory HttpRoute_CorsPolicy.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory HttpRoute_CorsPolicy.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  HttpRoute_CorsPolicy._();
+
+  factory HttpRoute_CorsPolicy.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory HttpRoute_CorsPolicy.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'HttpRoute.CorsPolicy',
@@ -3783,20 +3335,19 @@ class HttpRoute_CorsPolicy extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  HttpRoute_CorsPolicy clone() =>
-      HttpRoute_CorsPolicy()..mergeFromMessage(this);
+  HttpRoute_CorsPolicy clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HttpRoute_CorsPolicy copyWith(void Function(HttpRoute_CorsPolicy) updates) =>
       super.copyWith((message) => updates(message as HttpRoute_CorsPolicy))
           as HttpRoute_CorsPolicy;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static HttpRoute_CorsPolicy create() => HttpRoute_CorsPolicy._();
+  @$core.override
   HttpRoute_CorsPolicy createEmptyInstance() => create();
-  static $pb.PbList<HttpRoute_CorsPolicy> createRepeated() =>
-      $pb.PbList<HttpRoute_CorsPolicy>();
   @$core.pragma('dart2js:noInline')
   static HttpRoute_CorsPolicy getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<HttpRoute_CorsPolicy>(create);
@@ -3831,10 +3382,7 @@ class HttpRoute_CorsPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get maxAge => $_getSZ(5);
   @$pb.TagNumber(6)
-  set maxAge($core.String v) {
-    $_setString(5, v);
-  }
-
+  set maxAge($core.String value) => $_setString(5, value);
   @$pb.TagNumber(6)
   $core.bool hasMaxAge() => $_has(5);
   @$pb.TagNumber(6)
@@ -3848,10 +3396,7 @@ class HttpRoute_CorsPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool get allowCredentials => $_getBF(6);
   @$pb.TagNumber(7)
-  set allowCredentials($core.bool v) {
-    $_setBool(6, v);
-  }
-
+  set allowCredentials($core.bool value) => $_setBool(6, value);
   @$pb.TagNumber(7)
   $core.bool hasAllowCredentials() => $_has(6);
   @$pb.TagNumber(7)
@@ -3862,10 +3407,7 @@ class HttpRoute_CorsPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.bool get disabled => $_getBF(7);
   @$pb.TagNumber(8)
-  set disabled($core.bool v) {
-    $_setBool(7, v);
-  }
-
+  set disabled($core.bool value) => $_setBool(7, value);
   @$pb.TagNumber(8)
   $core.bool hasDisabled() => $_has(7);
   @$pb.TagNumber(8)
@@ -3881,59 +3423,44 @@ class HttpRoute_RouteAction extends $pb.GeneratedMessage {
     HttpRoute_HeaderModifier? requestHeaderModifier,
     HttpRoute_HeaderModifier? responseHeaderModifier,
     HttpRoute_URLRewrite? urlRewrite,
-    $0.Duration? timeout,
+    $1.Duration? timeout,
     HttpRoute_RetryPolicy? retryPolicy,
     HttpRoute_RequestMirrorPolicy? requestMirrorPolicy,
     HttpRoute_CorsPolicy? corsPolicy,
   }) {
-    final $result = create();
-    if (destinations != null) {
-      $result.destinations.addAll(destinations);
-    }
-    if (redirect != null) {
-      $result.redirect = redirect;
-    }
-    if (faultInjectionPolicy != null) {
-      $result.faultInjectionPolicy = faultInjectionPolicy;
-    }
-    if (requestHeaderModifier != null) {
-      $result.requestHeaderModifier = requestHeaderModifier;
-    }
-    if (responseHeaderModifier != null) {
-      $result.responseHeaderModifier = responseHeaderModifier;
-    }
-    if (urlRewrite != null) {
-      $result.urlRewrite = urlRewrite;
-    }
-    if (timeout != null) {
-      $result.timeout = timeout;
-    }
-    if (retryPolicy != null) {
-      $result.retryPolicy = retryPolicy;
-    }
-    if (requestMirrorPolicy != null) {
-      $result.requestMirrorPolicy = requestMirrorPolicy;
-    }
-    if (corsPolicy != null) {
-      $result.corsPolicy = corsPolicy;
-    }
-    return $result;
+    final result = create();
+    if (destinations != null) result.destinations.addAll(destinations);
+    if (redirect != null) result.redirect = redirect;
+    if (faultInjectionPolicy != null)
+      result.faultInjectionPolicy = faultInjectionPolicy;
+    if (requestHeaderModifier != null)
+      result.requestHeaderModifier = requestHeaderModifier;
+    if (responseHeaderModifier != null)
+      result.responseHeaderModifier = responseHeaderModifier;
+    if (urlRewrite != null) result.urlRewrite = urlRewrite;
+    if (timeout != null) result.timeout = timeout;
+    if (retryPolicy != null) result.retryPolicy = retryPolicy;
+    if (requestMirrorPolicy != null)
+      result.requestMirrorPolicy = requestMirrorPolicy;
+    if (corsPolicy != null) result.corsPolicy = corsPolicy;
+    return result;
   }
-  HttpRoute_RouteAction._() : super();
-  factory HttpRoute_RouteAction.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory HttpRoute_RouteAction.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  HttpRoute_RouteAction._();
+
+  factory HttpRoute_RouteAction.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory HttpRoute_RouteAction.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'HttpRoute.RouteAction',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.networkservices.v1'),
       createEmptyInstance: create)
-    ..pc<HttpRoute_Destination>(
-        1, _omitFieldNames ? '' : 'destinations', $pb.PbFieldType.PM,
+    ..pPM<HttpRoute_Destination>(1, _omitFieldNames ? '' : 'destinations',
         subBuilder: HttpRoute_Destination.create)
     ..aOM<HttpRoute_Redirect>(2, _omitFieldNames ? '' : 'redirect',
         subBuilder: HttpRoute_Redirect.create)
@@ -3948,8 +3475,8 @@ class HttpRoute_RouteAction extends $pb.GeneratedMessage {
         subBuilder: HttpRoute_HeaderModifier.create)
     ..aOM<HttpRoute_URLRewrite>(7, _omitFieldNames ? '' : 'urlRewrite',
         subBuilder: HttpRoute_URLRewrite.create)
-    ..aOM<$0.Duration>(8, _omitFieldNames ? '' : 'timeout',
-        subBuilder: $0.Duration.create)
+    ..aOM<$1.Duration>(8, _omitFieldNames ? '' : 'timeout',
+        subBuilder: $1.Duration.create)
     ..aOM<HttpRoute_RetryPolicy>(9, _omitFieldNames ? '' : 'retryPolicy',
         subBuilder: HttpRoute_RetryPolicy.create)
     ..aOM<HttpRoute_RequestMirrorPolicy>(
@@ -3960,21 +3487,20 @@ class HttpRoute_RouteAction extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  HttpRoute_RouteAction clone() =>
-      HttpRoute_RouteAction()..mergeFromMessage(this);
+  HttpRoute_RouteAction clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HttpRoute_RouteAction copyWith(
           void Function(HttpRoute_RouteAction) updates) =>
       super.copyWith((message) => updates(message as HttpRoute_RouteAction))
           as HttpRoute_RouteAction;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static HttpRoute_RouteAction create() => HttpRoute_RouteAction._();
+  @$core.override
   HttpRoute_RouteAction createEmptyInstance() => create();
-  static $pb.PbList<HttpRoute_RouteAction> createRepeated() =>
-      $pb.PbList<HttpRoute_RouteAction>();
   @$core.pragma('dart2js:noInline')
   static HttpRoute_RouteAction getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<HttpRoute_RouteAction>(create);
@@ -3988,10 +3514,7 @@ class HttpRoute_RouteAction extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   HttpRoute_Redirect get redirect => $_getN(1);
   @$pb.TagNumber(2)
-  set redirect(HttpRoute_Redirect v) {
-    $_setField(2, v);
-  }
-
+  set redirect(HttpRoute_Redirect value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasRedirect() => $_has(1);
   @$pb.TagNumber(2)
@@ -4011,10 +3534,8 @@ class HttpRoute_RouteAction extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   HttpRoute_FaultInjectionPolicy get faultInjectionPolicy => $_getN(2);
   @$pb.TagNumber(4)
-  set faultInjectionPolicy(HttpRoute_FaultInjectionPolicy v) {
-    $_setField(4, v);
-  }
-
+  set faultInjectionPolicy(HttpRoute_FaultInjectionPolicy value) =>
+      $_setField(4, value);
   @$pb.TagNumber(4)
   $core.bool hasFaultInjectionPolicy() => $_has(2);
   @$pb.TagNumber(4)
@@ -4027,10 +3548,8 @@ class HttpRoute_RouteAction extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   HttpRoute_HeaderModifier get requestHeaderModifier => $_getN(3);
   @$pb.TagNumber(5)
-  set requestHeaderModifier(HttpRoute_HeaderModifier v) {
-    $_setField(5, v);
-  }
-
+  set requestHeaderModifier(HttpRoute_HeaderModifier value) =>
+      $_setField(5, value);
   @$pb.TagNumber(5)
   $core.bool hasRequestHeaderModifier() => $_has(3);
   @$pb.TagNumber(5)
@@ -4043,10 +3562,8 @@ class HttpRoute_RouteAction extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   HttpRoute_HeaderModifier get responseHeaderModifier => $_getN(4);
   @$pb.TagNumber(6)
-  set responseHeaderModifier(HttpRoute_HeaderModifier v) {
-    $_setField(6, v);
-  }
-
+  set responseHeaderModifier(HttpRoute_HeaderModifier value) =>
+      $_setField(6, value);
   @$pb.TagNumber(6)
   $core.bool hasResponseHeaderModifier() => $_has(4);
   @$pb.TagNumber(6)
@@ -4059,10 +3576,7 @@ class HttpRoute_RouteAction extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   HttpRoute_URLRewrite get urlRewrite => $_getN(5);
   @$pb.TagNumber(7)
-  set urlRewrite(HttpRoute_URLRewrite v) {
-    $_setField(7, v);
-  }
-
+  set urlRewrite(HttpRoute_URLRewrite value) => $_setField(7, value);
   @$pb.TagNumber(7)
   $core.bool hasUrlRewrite() => $_has(5);
   @$pb.TagNumber(7)
@@ -4074,27 +3588,21 @@ class HttpRoute_RouteAction extends $pb.GeneratedMessage {
   /// time the request has been fully processed (i.e. end of stream) up until
   /// the response has been completely processed. Timeout includes all retries.
   @$pb.TagNumber(8)
-  $0.Duration get timeout => $_getN(6);
+  $1.Duration get timeout => $_getN(6);
   @$pb.TagNumber(8)
-  set timeout($0.Duration v) {
-    $_setField(8, v);
-  }
-
+  set timeout($1.Duration value) => $_setField(8, value);
   @$pb.TagNumber(8)
   $core.bool hasTimeout() => $_has(6);
   @$pb.TagNumber(8)
   void clearTimeout() => $_clearField(8);
   @$pb.TagNumber(8)
-  $0.Duration ensureTimeout() => $_ensure(6);
+  $1.Duration ensureTimeout() => $_ensure(6);
 
   /// Specifies the retry policy associated with this route.
   @$pb.TagNumber(9)
   HttpRoute_RetryPolicy get retryPolicy => $_getN(7);
   @$pb.TagNumber(9)
-  set retryPolicy(HttpRoute_RetryPolicy v) {
-    $_setField(9, v);
-  }
-
+  set retryPolicy(HttpRoute_RetryPolicy value) => $_setField(9, value);
   @$pb.TagNumber(9)
   $core.bool hasRetryPolicy() => $_has(7);
   @$pb.TagNumber(9)
@@ -4110,10 +3618,8 @@ class HttpRoute_RouteAction extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   HttpRoute_RequestMirrorPolicy get requestMirrorPolicy => $_getN(8);
   @$pb.TagNumber(10)
-  set requestMirrorPolicy(HttpRoute_RequestMirrorPolicy v) {
-    $_setField(10, v);
-  }
-
+  set requestMirrorPolicy(HttpRoute_RequestMirrorPolicy value) =>
+      $_setField(10, value);
   @$pb.TagNumber(10)
   $core.bool hasRequestMirrorPolicy() => $_has(8);
   @$pb.TagNumber(10)
@@ -4125,10 +3631,7 @@ class HttpRoute_RouteAction extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   HttpRoute_CorsPolicy get corsPolicy => $_getN(9);
   @$pb.TagNumber(11)
-  set corsPolicy(HttpRoute_CorsPolicy v) {
-    $_setField(11, v);
-  }
-
+  set corsPolicy(HttpRoute_CorsPolicy value) => $_setField(11, value);
   @$pb.TagNumber(11)
   $core.bool hasCorsPolicy() => $_has(9);
   @$pb.TagNumber(11)
@@ -4144,49 +3647,46 @@ class HttpRoute_RouteRule extends $pb.GeneratedMessage {
     $core.Iterable<HttpRoute_RouteMatch>? matches,
     HttpRoute_RouteAction? action,
   }) {
-    final $result = create();
-    if (matches != null) {
-      $result.matches.addAll(matches);
-    }
-    if (action != null) {
-      $result.action = action;
-    }
-    return $result;
+    final result = create();
+    if (matches != null) result.matches.addAll(matches);
+    if (action != null) result.action = action;
+    return result;
   }
-  HttpRoute_RouteRule._() : super();
-  factory HttpRoute_RouteRule.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory HttpRoute_RouteRule.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  HttpRoute_RouteRule._();
+
+  factory HttpRoute_RouteRule.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory HttpRoute_RouteRule.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'HttpRoute.RouteRule',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.networkservices.v1'),
       createEmptyInstance: create)
-    ..pc<HttpRoute_RouteMatch>(
-        1, _omitFieldNames ? '' : 'matches', $pb.PbFieldType.PM,
+    ..pPM<HttpRoute_RouteMatch>(1, _omitFieldNames ? '' : 'matches',
         subBuilder: HttpRoute_RouteMatch.create)
     ..aOM<HttpRoute_RouteAction>(2, _omitFieldNames ? '' : 'action',
         subBuilder: HttpRoute_RouteAction.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  HttpRoute_RouteRule clone() => HttpRoute_RouteRule()..mergeFromMessage(this);
+  HttpRoute_RouteRule clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HttpRoute_RouteRule copyWith(void Function(HttpRoute_RouteRule) updates) =>
       super.copyWith((message) => updates(message as HttpRoute_RouteRule))
           as HttpRoute_RouteRule;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static HttpRoute_RouteRule create() => HttpRoute_RouteRule._();
+  @$core.override
   HttpRoute_RouteRule createEmptyInstance() => create();
-  static $pb.PbList<HttpRoute_RouteRule> createRepeated() =>
-      $pb.PbList<HttpRoute_RouteRule>();
   @$core.pragma('dart2js:noInline')
   static HttpRoute_RouteRule getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<HttpRoute_RouteRule>(create);
@@ -4208,10 +3708,7 @@ class HttpRoute_RouteRule extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   HttpRoute_RouteAction get action => $_getN(1);
   @$pb.TagNumber(2)
-  set action(HttpRoute_RouteAction v) {
-    $_setField(2, v);
-  }
-
+  set action(HttpRoute_RouteAction value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasAction() => $_has(1);
   @$pb.TagNumber(2)
@@ -4226,8 +3723,8 @@ class HttpRoute extends $pb.GeneratedMessage {
   factory HttpRoute({
     $core.String? name,
     $core.String? description,
-    $2.Timestamp? createTime,
-    $2.Timestamp? updateTime,
+    $0.Timestamp? createTime,
+    $0.Timestamp? updateTime,
     $core.Iterable<$core.String>? hostnames,
     $core.Iterable<HttpRoute_RouteRule>? rules,
     $core.Iterable<$core.String>? meshes,
@@ -4235,46 +3732,28 @@ class HttpRoute extends $pb.GeneratedMessage {
     $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.String? selfLink,
   }) {
-    final $result = create();
-    if (name != null) {
-      $result.name = name;
-    }
-    if (description != null) {
-      $result.description = description;
-    }
-    if (createTime != null) {
-      $result.createTime = createTime;
-    }
-    if (updateTime != null) {
-      $result.updateTime = updateTime;
-    }
-    if (hostnames != null) {
-      $result.hostnames.addAll(hostnames);
-    }
-    if (rules != null) {
-      $result.rules.addAll(rules);
-    }
-    if (meshes != null) {
-      $result.meshes.addAll(meshes);
-    }
-    if (gateways != null) {
-      $result.gateways.addAll(gateways);
-    }
-    if (labels != null) {
-      $result.labels.addEntries(labels);
-    }
-    if (selfLink != null) {
-      $result.selfLink = selfLink;
-    }
-    return $result;
+    final result = create();
+    if (name != null) result.name = name;
+    if (description != null) result.description = description;
+    if (createTime != null) result.createTime = createTime;
+    if (updateTime != null) result.updateTime = updateTime;
+    if (hostnames != null) result.hostnames.addAll(hostnames);
+    if (rules != null) result.rules.addAll(rules);
+    if (meshes != null) result.meshes.addAll(meshes);
+    if (gateways != null) result.gateways.addAll(gateways);
+    if (labels != null) result.labels.addEntries(labels);
+    if (selfLink != null) result.selfLink = selfLink;
+    return result;
   }
-  HttpRoute._() : super();
-  factory HttpRoute.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory HttpRoute.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  HttpRoute._();
+
+  factory HttpRoute.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory HttpRoute.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'HttpRoute',
@@ -4283,13 +3762,12 @@ class HttpRoute extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'description')
-    ..aOM<$2.Timestamp>(3, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(4, _omitFieldNames ? '' : 'updateTime',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$0.Timestamp>(3, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(4, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $0.Timestamp.create)
     ..pPS(5, _omitFieldNames ? '' : 'hostnames')
-    ..pc<HttpRoute_RouteRule>(
-        6, _omitFieldNames ? '' : 'rules', $pb.PbFieldType.PM,
+    ..pPM<HttpRoute_RouteRule>(6, _omitFieldNames ? '' : 'rules',
         subBuilder: HttpRoute_RouteRule.create)
     ..pPS(8, _omitFieldNames ? '' : 'meshes')
     ..pPS(9, _omitFieldNames ? '' : 'gateways')
@@ -4303,17 +3781,18 @@ class HttpRoute extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  HttpRoute clone() => HttpRoute()..mergeFromMessage(this);
+  HttpRoute clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HttpRoute copyWith(void Function(HttpRoute) updates) =>
       super.copyWith((message) => updates(message as HttpRoute)) as HttpRoute;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static HttpRoute create() => HttpRoute._();
+  @$core.override
   HttpRoute createEmptyInstance() => create();
-  static $pb.PbList<HttpRoute> createRepeated() => $pb.PbList<HttpRoute>();
   @$core.pragma('dart2js:noInline')
   static HttpRoute getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<HttpRoute>(create);
@@ -4324,10 +3803,7 @@ class HttpRoute extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) {
-    $_setString(0, v);
-  }
-
+  set name($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -4338,10 +3814,7 @@ class HttpRoute extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get description => $_getSZ(1);
   @$pb.TagNumber(2)
-  set description($core.String v) {
-    $_setString(1, v);
-  }
-
+  set description($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasDescription() => $_has(1);
   @$pb.TagNumber(2)
@@ -4349,33 +3822,27 @@ class HttpRoute extends $pb.GeneratedMessage {
 
   /// Output only. The timestamp when the resource was created.
   @$pb.TagNumber(3)
-  $2.Timestamp get createTime => $_getN(2);
+  $0.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($2.Timestamp v) {
-    $_setField(3, v);
-  }
-
+  set createTime($0.Timestamp value) => $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => $_clearField(3);
   @$pb.TagNumber(3)
-  $2.Timestamp ensureCreateTime() => $_ensure(2);
+  $0.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// Output only. The timestamp when the resource was updated.
   @$pb.TagNumber(4)
-  $2.Timestamp get updateTime => $_getN(3);
+  $0.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(4)
-  set updateTime($2.Timestamp v) {
-    $_setField(4, v);
-  }
-
+  set updateTime($0.Timestamp value) => $_setField(4, value);
   @$pb.TagNumber(4)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateTime() => $_clearField(4);
   @$pb.TagNumber(4)
-  $2.Timestamp ensureUpdateTime() => $_ensure(3);
+  $0.Timestamp ensureUpdateTime() => $_ensure(3);
 
   /// Required. Hostnames define a set of hosts that should match against the
   /// HTTP host header to select a HttpRoute to process the request. Hostname is
@@ -4437,10 +3904,7 @@ class HttpRoute extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.String get selfLink => $_getSZ(9);
   @$pb.TagNumber(11)
-  set selfLink($core.String v) {
-    $_setString(9, v);
-  }
-
+  set selfLink($core.String value) => $_setString(9, value);
   @$pb.TagNumber(11)
   $core.bool hasSelfLink() => $_has(9);
   @$pb.TagNumber(11)
@@ -4453,44 +3917,32 @@ class HttpRoute extends $pb.GeneratedMessage {
 class Mesh extends $pb.GeneratedMessage {
   factory Mesh({
     $core.String? name,
-    $2.Timestamp? createTime,
-    $2.Timestamp? updateTime,
+    $0.Timestamp? createTime,
+    $0.Timestamp? updateTime,
     $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.String? description,
     $core.int? interceptionPort,
     $core.String? selfLink,
   }) {
-    final $result = create();
-    if (name != null) {
-      $result.name = name;
-    }
-    if (createTime != null) {
-      $result.createTime = createTime;
-    }
-    if (updateTime != null) {
-      $result.updateTime = updateTime;
-    }
-    if (labels != null) {
-      $result.labels.addEntries(labels);
-    }
-    if (description != null) {
-      $result.description = description;
-    }
-    if (interceptionPort != null) {
-      $result.interceptionPort = interceptionPort;
-    }
-    if (selfLink != null) {
-      $result.selfLink = selfLink;
-    }
-    return $result;
+    final result = create();
+    if (name != null) result.name = name;
+    if (createTime != null) result.createTime = createTime;
+    if (updateTime != null) result.updateTime = updateTime;
+    if (labels != null) result.labels.addEntries(labels);
+    if (description != null) result.description = description;
+    if (interceptionPort != null) result.interceptionPort = interceptionPort;
+    if (selfLink != null) result.selfLink = selfLink;
+    return result;
   }
-  Mesh._() : super();
-  factory Mesh.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Mesh.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  Mesh._();
+
+  factory Mesh.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory Mesh.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'Mesh',
@@ -4498,10 +3950,10 @@ class Mesh extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.events.cloud.networkservices.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$2.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(3, _omitFieldNames ? '' : 'updateTime',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$0.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(3, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $0.Timestamp.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels',
         entryClassName: 'Mesh.LabelsEntry',
         keyFieldType: $pb.PbFieldType.OS,
@@ -4509,23 +3961,23 @@ class Mesh extends $pb.GeneratedMessage {
         packageName:
             const $pb.PackageName('google.events.cloud.networkservices.v1'))
     ..aOS(5, _omitFieldNames ? '' : 'description')
-    ..a<$core.int>(
-        8, _omitFieldNames ? '' : 'interceptionPort', $pb.PbFieldType.O3)
+    ..aI(8, _omitFieldNames ? '' : 'interceptionPort')
     ..aOS(9, _omitFieldNames ? '' : 'selfLink')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  Mesh clone() => Mesh()..mergeFromMessage(this);
+  Mesh clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Mesh copyWith(void Function(Mesh) updates) =>
       super.copyWith((message) => updates(message as Mesh)) as Mesh;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Mesh create() => Mesh._();
+  @$core.override
   Mesh createEmptyInstance() => create();
-  static $pb.PbList<Mesh> createRepeated() => $pb.PbList<Mesh>();
   @$core.pragma('dart2js:noInline')
   static Mesh getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Mesh>(create);
@@ -4536,10 +3988,7 @@ class Mesh extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) {
-    $_setString(0, v);
-  }
-
+  set name($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -4547,33 +3996,27 @@ class Mesh extends $pb.GeneratedMessage {
 
   /// Output only. The timestamp when the resource was created.
   @$pb.TagNumber(2)
-  $2.Timestamp get createTime => $_getN(1);
+  $0.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($2.Timestamp v) {
-    $_setField(2, v);
-  }
-
+  set createTime($0.Timestamp value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => $_clearField(2);
   @$pb.TagNumber(2)
-  $2.Timestamp ensureCreateTime() => $_ensure(1);
+  $0.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. The timestamp when the resource was updated.
   @$pb.TagNumber(3)
-  $2.Timestamp get updateTime => $_getN(2);
+  $0.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($2.Timestamp v) {
-    $_setField(3, v);
-  }
-
+  set updateTime($0.Timestamp value) => $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => $_clearField(3);
   @$pb.TagNumber(3)
-  $2.Timestamp ensureUpdateTime() => $_ensure(2);
+  $0.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Optional. Set of label tags associated with the Mesh resource.
   @$pb.TagNumber(4)
@@ -4584,10 +4027,7 @@ class Mesh extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get description => $_getSZ(4);
   @$pb.TagNumber(5)
-  set description($core.String v) {
-    $_setString(4, v);
-  }
-
+  set description($core.String value) => $_setString(4, value);
   @$pb.TagNumber(5)
   $core.bool hasDescription() => $_has(4);
   @$pb.TagNumber(5)
@@ -4602,10 +4042,7 @@ class Mesh extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.int get interceptionPort => $_getIZ(5);
   @$pb.TagNumber(8)
-  set interceptionPort($core.int v) {
-    $_setSignedInt32(5, v);
-  }
-
+  set interceptionPort($core.int value) => $_setSignedInt32(5, value);
   @$pb.TagNumber(8)
   $core.bool hasInterceptionPort() => $_has(5);
   @$pb.TagNumber(8)
@@ -4615,10 +4052,7 @@ class Mesh extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.String get selfLink => $_getSZ(6);
   @$pb.TagNumber(9)
-  set selfLink($core.String v) {
-    $_setString(6, v);
-  }
-
+  set selfLink($core.String value) => $_setString(6, value);
   @$pb.TagNumber(9)
   $core.bool hasSelfLink() => $_has(6);
   @$pb.TagNumber(9)
@@ -4631,43 +4065,31 @@ class ServiceBinding extends $pb.GeneratedMessage {
   factory ServiceBinding({
     $core.String? name,
     $core.String? description,
-    $2.Timestamp? createTime,
-    $2.Timestamp? updateTime,
+    $0.Timestamp? createTime,
+    $0.Timestamp? updateTime,
     $core.String? service,
     $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.String? serviceId,
   }) {
-    final $result = create();
-    if (name != null) {
-      $result.name = name;
-    }
-    if (description != null) {
-      $result.description = description;
-    }
-    if (createTime != null) {
-      $result.createTime = createTime;
-    }
-    if (updateTime != null) {
-      $result.updateTime = updateTime;
-    }
-    if (service != null) {
-      $result.service = service;
-    }
-    if (labels != null) {
-      $result.labels.addEntries(labels);
-    }
-    if (serviceId != null) {
-      $result.serviceId = serviceId;
-    }
-    return $result;
+    final result = create();
+    if (name != null) result.name = name;
+    if (description != null) result.description = description;
+    if (createTime != null) result.createTime = createTime;
+    if (updateTime != null) result.updateTime = updateTime;
+    if (service != null) result.service = service;
+    if (labels != null) result.labels.addEntries(labels);
+    if (serviceId != null) result.serviceId = serviceId;
+    return result;
   }
-  ServiceBinding._() : super();
-  factory ServiceBinding.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ServiceBinding.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  ServiceBinding._();
+
+  factory ServiceBinding.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ServiceBinding.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'ServiceBinding',
@@ -4676,10 +4098,10 @@ class ServiceBinding extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'description')
-    ..aOM<$2.Timestamp>(3, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(4, _omitFieldNames ? '' : 'updateTime',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$0.Timestamp>(3, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(4, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $0.Timestamp.create)
     ..aOS(5, _omitFieldNames ? '' : 'service')
     ..m<$core.String, $core.String>(7, _omitFieldNames ? '' : 'labels',
         entryClassName: 'ServiceBinding.LabelsEntry',
@@ -4691,19 +4113,19 @@ class ServiceBinding extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ServiceBinding clone() => ServiceBinding()..mergeFromMessage(this);
+  ServiceBinding clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceBinding copyWith(void Function(ServiceBinding) updates) =>
       super.copyWith((message) => updates(message as ServiceBinding))
           as ServiceBinding;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ServiceBinding create() => ServiceBinding._();
+  @$core.override
   ServiceBinding createEmptyInstance() => create();
-  static $pb.PbList<ServiceBinding> createRepeated() =>
-      $pb.PbList<ServiceBinding>();
   @$core.pragma('dart2js:noInline')
   static ServiceBinding getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ServiceBinding>(create);
@@ -4714,10 +4136,7 @@ class ServiceBinding extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) {
-    $_setString(0, v);
-  }
-
+  set name($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -4728,10 +4147,7 @@ class ServiceBinding extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get description => $_getSZ(1);
   @$pb.TagNumber(2)
-  set description($core.String v) {
-    $_setString(1, v);
-  }
-
+  set description($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasDescription() => $_has(1);
   @$pb.TagNumber(2)
@@ -4739,43 +4155,34 @@ class ServiceBinding extends $pb.GeneratedMessage {
 
   /// Output only. The timestamp when the resource was created.
   @$pb.TagNumber(3)
-  $2.Timestamp get createTime => $_getN(2);
+  $0.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($2.Timestamp v) {
-    $_setField(3, v);
-  }
-
+  set createTime($0.Timestamp value) => $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => $_clearField(3);
   @$pb.TagNumber(3)
-  $2.Timestamp ensureCreateTime() => $_ensure(2);
+  $0.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// Output only. The timestamp when the resource was updated.
   @$pb.TagNumber(4)
-  $2.Timestamp get updateTime => $_getN(3);
+  $0.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(4)
-  set updateTime($2.Timestamp v) {
-    $_setField(4, v);
-  }
-
+  set updateTime($0.Timestamp value) => $_setField(4, value);
   @$pb.TagNumber(4)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateTime() => $_clearField(4);
   @$pb.TagNumber(4)
-  $2.Timestamp ensureUpdateTime() => $_ensure(3);
+  $0.Timestamp ensureUpdateTime() => $_ensure(3);
 
   /// Required. The full Service Directory Service name of the format
   /// projects/*/locations/*/namespaces/*/services/*
   @$pb.TagNumber(5)
   $core.String get service => $_getSZ(4);
   @$pb.TagNumber(5)
-  set service($core.String v) {
-    $_setString(4, v);
-  }
-
+  set service($core.String value) => $_setString(4, value);
   @$pb.TagNumber(5)
   $core.bool hasService() => $_has(4);
   @$pb.TagNumber(5)
@@ -4792,10 +4199,7 @@ class ServiceBinding extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.String get serviceId => $_getSZ(6);
   @$pb.TagNumber(8)
-  set serviceId($core.String v) {
-    $_setString(6, v);
-  }
-
+  set serviceId($core.String value) => $_setString(6, value);
   @$pb.TagNumber(8)
   $core.bool hasServiceId() => $_has(6);
   @$pb.TagNumber(8)
@@ -4809,49 +4213,46 @@ class TcpRoute_RouteRule extends $pb.GeneratedMessage {
     $core.Iterable<TcpRoute_RouteMatch>? matches,
     TcpRoute_RouteAction? action,
   }) {
-    final $result = create();
-    if (matches != null) {
-      $result.matches.addAll(matches);
-    }
-    if (action != null) {
-      $result.action = action;
-    }
-    return $result;
+    final result = create();
+    if (matches != null) result.matches.addAll(matches);
+    if (action != null) result.action = action;
+    return result;
   }
-  TcpRoute_RouteRule._() : super();
-  factory TcpRoute_RouteRule.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory TcpRoute_RouteRule.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  TcpRoute_RouteRule._();
+
+  factory TcpRoute_RouteRule.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory TcpRoute_RouteRule.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'TcpRoute.RouteRule',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.networkservices.v1'),
       createEmptyInstance: create)
-    ..pc<TcpRoute_RouteMatch>(
-        1, _omitFieldNames ? '' : 'matches', $pb.PbFieldType.PM,
+    ..pPM<TcpRoute_RouteMatch>(1, _omitFieldNames ? '' : 'matches',
         subBuilder: TcpRoute_RouteMatch.create)
     ..aOM<TcpRoute_RouteAction>(2, _omitFieldNames ? '' : 'action',
         subBuilder: TcpRoute_RouteAction.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  TcpRoute_RouteRule clone() => TcpRoute_RouteRule()..mergeFromMessage(this);
+  TcpRoute_RouteRule clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TcpRoute_RouteRule copyWith(void Function(TcpRoute_RouteRule) updates) =>
       super.copyWith((message) => updates(message as TcpRoute_RouteRule))
           as TcpRoute_RouteRule;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static TcpRoute_RouteRule create() => TcpRoute_RouteRule._();
+  @$core.override
   TcpRoute_RouteRule createEmptyInstance() => create();
-  static $pb.PbList<TcpRoute_RouteRule> createRepeated() =>
-      $pb.PbList<TcpRoute_RouteRule>();
   @$core.pragma('dart2js:noInline')
   static TcpRoute_RouteRule getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<TcpRoute_RouteRule>(create);
@@ -4868,10 +4269,7 @@ class TcpRoute_RouteRule extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   TcpRoute_RouteAction get action => $_getN(1);
   @$pb.TagNumber(2)
-  set action(TcpRoute_RouteAction v) {
-    $_setField(2, v);
-  }
-
+  set action(TcpRoute_RouteAction value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasAction() => $_has(1);
   @$pb.TagNumber(2)
@@ -4889,22 +4287,20 @@ class TcpRoute_RouteMatch extends $pb.GeneratedMessage {
     $core.String? address,
     $core.String? port,
   }) {
-    final $result = create();
-    if (address != null) {
-      $result.address = address;
-    }
-    if (port != null) {
-      $result.port = port;
-    }
-    return $result;
+    final result = create();
+    if (address != null) result.address = address;
+    if (port != null) result.port = port;
+    return result;
   }
-  TcpRoute_RouteMatch._() : super();
-  factory TcpRoute_RouteMatch.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory TcpRoute_RouteMatch.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  TcpRoute_RouteMatch._();
+
+  factory TcpRoute_RouteMatch.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory TcpRoute_RouteMatch.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'TcpRoute.RouteMatch',
@@ -4916,19 +4312,19 @@ class TcpRoute_RouteMatch extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  TcpRoute_RouteMatch clone() => TcpRoute_RouteMatch()..mergeFromMessage(this);
+  TcpRoute_RouteMatch clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TcpRoute_RouteMatch copyWith(void Function(TcpRoute_RouteMatch) updates) =>
       super.copyWith((message) => updates(message as TcpRoute_RouteMatch))
           as TcpRoute_RouteMatch;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static TcpRoute_RouteMatch create() => TcpRoute_RouteMatch._();
+  @$core.override
   TcpRoute_RouteMatch createEmptyInstance() => create();
-  static $pb.PbList<TcpRoute_RouteMatch> createRepeated() =>
-      $pb.PbList<TcpRoute_RouteMatch>();
   @$core.pragma('dart2js:noInline')
   static TcpRoute_RouteMatch getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<TcpRoute_RouteMatch>(create);
@@ -4944,10 +4340,7 @@ class TcpRoute_RouteMatch extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get address => $_getSZ(0);
   @$pb.TagNumber(1)
-  set address($core.String v) {
-    $_setString(0, v);
-  }
-
+  set address($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasAddress() => $_has(0);
   @$pb.TagNumber(1)
@@ -4957,10 +4350,7 @@ class TcpRoute_RouteMatch extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get port => $_getSZ(1);
   @$pb.TagNumber(2)
-  set port($core.String v) {
-    $_setString(1, v);
-  }
-
+  set port($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasPort() => $_has(1);
   @$pb.TagNumber(2)
@@ -4973,49 +4363,46 @@ class TcpRoute_RouteAction extends $pb.GeneratedMessage {
     $core.Iterable<TcpRoute_RouteDestination>? destinations,
     $core.bool? originalDestination,
   }) {
-    final $result = create();
-    if (destinations != null) {
-      $result.destinations.addAll(destinations);
-    }
-    if (originalDestination != null) {
-      $result.originalDestination = originalDestination;
-    }
-    return $result;
+    final result = create();
+    if (destinations != null) result.destinations.addAll(destinations);
+    if (originalDestination != null)
+      result.originalDestination = originalDestination;
+    return result;
   }
-  TcpRoute_RouteAction._() : super();
-  factory TcpRoute_RouteAction.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory TcpRoute_RouteAction.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  TcpRoute_RouteAction._();
+
+  factory TcpRoute_RouteAction.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory TcpRoute_RouteAction.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'TcpRoute.RouteAction',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.networkservices.v1'),
       createEmptyInstance: create)
-    ..pc<TcpRoute_RouteDestination>(
-        1, _omitFieldNames ? '' : 'destinations', $pb.PbFieldType.PM,
+    ..pPM<TcpRoute_RouteDestination>(1, _omitFieldNames ? '' : 'destinations',
         subBuilder: TcpRoute_RouteDestination.create)
     ..aOB(3, _omitFieldNames ? '' : 'originalDestination')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  TcpRoute_RouteAction clone() =>
-      TcpRoute_RouteAction()..mergeFromMessage(this);
+  TcpRoute_RouteAction clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TcpRoute_RouteAction copyWith(void Function(TcpRoute_RouteAction) updates) =>
       super.copyWith((message) => updates(message as TcpRoute_RouteAction))
           as TcpRoute_RouteAction;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static TcpRoute_RouteAction create() => TcpRoute_RouteAction._();
+  @$core.override
   TcpRoute_RouteAction createEmptyInstance() => create();
-  static $pb.PbList<TcpRoute_RouteAction> createRepeated() =>
-      $pb.PbList<TcpRoute_RouteAction>();
   @$core.pragma('dart2js:noInline')
   static TcpRoute_RouteAction getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<TcpRoute_RouteAction>(create);
@@ -5033,10 +4420,7 @@ class TcpRoute_RouteAction extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool get originalDestination => $_getBF(1);
   @$pb.TagNumber(3)
-  set originalDestination($core.bool v) {
-    $_setBool(1, v);
-  }
-
+  set originalDestination($core.bool value) => $_setBool(1, value);
   @$pb.TagNumber(3)
   $core.bool hasOriginalDestination() => $_has(1);
   @$pb.TagNumber(3)
@@ -5049,22 +4433,20 @@ class TcpRoute_RouteDestination extends $pb.GeneratedMessage {
     $core.String? serviceName,
     $core.int? weight,
   }) {
-    final $result = create();
-    if (serviceName != null) {
-      $result.serviceName = serviceName;
-    }
-    if (weight != null) {
-      $result.weight = weight;
-    }
-    return $result;
+    final result = create();
+    if (serviceName != null) result.serviceName = serviceName;
+    if (weight != null) result.weight = weight;
+    return result;
   }
-  TcpRoute_RouteDestination._() : super();
-  factory TcpRoute_RouteDestination.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory TcpRoute_RouteDestination.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  TcpRoute_RouteDestination._();
+
+  factory TcpRoute_RouteDestination.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory TcpRoute_RouteDestination.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'TcpRoute.RouteDestination',
@@ -5072,25 +4454,24 @@ class TcpRoute_RouteDestination extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.events.cloud.networkservices.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'serviceName')
-    ..a<$core.int>(2, _omitFieldNames ? '' : 'weight', $pb.PbFieldType.O3)
+    ..aI(2, _omitFieldNames ? '' : 'weight')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  TcpRoute_RouteDestination clone() =>
-      TcpRoute_RouteDestination()..mergeFromMessage(this);
+  TcpRoute_RouteDestination clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TcpRoute_RouteDestination copyWith(
           void Function(TcpRoute_RouteDestination) updates) =>
       super.copyWith((message) => updates(message as TcpRoute_RouteDestination))
           as TcpRoute_RouteDestination;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static TcpRoute_RouteDestination create() => TcpRoute_RouteDestination._();
+  @$core.override
   TcpRoute_RouteDestination createEmptyInstance() => create();
-  static $pb.PbList<TcpRoute_RouteDestination> createRepeated() =>
-      $pb.PbList<TcpRoute_RouteDestination>();
   @$core.pragma('dart2js:noInline')
   static TcpRoute_RouteDestination getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<TcpRoute_RouteDestination>(create);
@@ -5100,10 +4481,7 @@ class TcpRoute_RouteDestination extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get serviceName => $_getSZ(0);
   @$pb.TagNumber(1)
-  set serviceName($core.String v) {
-    $_setString(0, v);
-  }
-
+  set serviceName($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasServiceName() => $_has(0);
   @$pb.TagNumber(1)
@@ -5126,10 +4504,7 @@ class TcpRoute_RouteDestination extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get weight => $_getIZ(1);
   @$pb.TagNumber(2)
-  set weight($core.int v) {
-    $_setSignedInt32(1, v);
-  }
-
+  set weight($core.int value) => $_setSignedInt32(1, value);
   @$pb.TagNumber(2)
   $core.bool hasWeight() => $_has(1);
   @$pb.TagNumber(2)
@@ -5141,8 +4516,8 @@ class TcpRoute_RouteDestination extends $pb.GeneratedMessage {
 class TcpRoute extends $pb.GeneratedMessage {
   factory TcpRoute({
     $core.String? name,
-    $2.Timestamp? createTime,
-    $2.Timestamp? updateTime,
+    $0.Timestamp? createTime,
+    $0.Timestamp? updateTime,
     $core.String? description,
     $core.Iterable<TcpRoute_RouteRule>? rules,
     $core.Iterable<$core.String>? meshes,
@@ -5150,43 +4525,27 @@ class TcpRoute extends $pb.GeneratedMessage {
     $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.String? selfLink,
   }) {
-    final $result = create();
-    if (name != null) {
-      $result.name = name;
-    }
-    if (createTime != null) {
-      $result.createTime = createTime;
-    }
-    if (updateTime != null) {
-      $result.updateTime = updateTime;
-    }
-    if (description != null) {
-      $result.description = description;
-    }
-    if (rules != null) {
-      $result.rules.addAll(rules);
-    }
-    if (meshes != null) {
-      $result.meshes.addAll(meshes);
-    }
-    if (gateways != null) {
-      $result.gateways.addAll(gateways);
-    }
-    if (labels != null) {
-      $result.labels.addEntries(labels);
-    }
-    if (selfLink != null) {
-      $result.selfLink = selfLink;
-    }
-    return $result;
+    final result = create();
+    if (name != null) result.name = name;
+    if (createTime != null) result.createTime = createTime;
+    if (updateTime != null) result.updateTime = updateTime;
+    if (description != null) result.description = description;
+    if (rules != null) result.rules.addAll(rules);
+    if (meshes != null) result.meshes.addAll(meshes);
+    if (gateways != null) result.gateways.addAll(gateways);
+    if (labels != null) result.labels.addEntries(labels);
+    if (selfLink != null) result.selfLink = selfLink;
+    return result;
   }
-  TcpRoute._() : super();
-  factory TcpRoute.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory TcpRoute.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  TcpRoute._();
+
+  factory TcpRoute.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory TcpRoute.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'TcpRoute',
@@ -5194,13 +4553,12 @@ class TcpRoute extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.events.cloud.networkservices.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$2.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(3, _omitFieldNames ? '' : 'updateTime',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$0.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(3, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $0.Timestamp.create)
     ..aOS(4, _omitFieldNames ? '' : 'description')
-    ..pc<TcpRoute_RouteRule>(
-        5, _omitFieldNames ? '' : 'rules', $pb.PbFieldType.PM,
+    ..pPM<TcpRoute_RouteRule>(5, _omitFieldNames ? '' : 'rules',
         subBuilder: TcpRoute_RouteRule.create)
     ..pPS(8, _omitFieldNames ? '' : 'meshes')
     ..pPS(9, _omitFieldNames ? '' : 'gateways')
@@ -5214,17 +4572,18 @@ class TcpRoute extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  TcpRoute clone() => TcpRoute()..mergeFromMessage(this);
+  TcpRoute clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TcpRoute copyWith(void Function(TcpRoute) updates) =>
       super.copyWith((message) => updates(message as TcpRoute)) as TcpRoute;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static TcpRoute create() => TcpRoute._();
+  @$core.override
   TcpRoute createEmptyInstance() => create();
-  static $pb.PbList<TcpRoute> createRepeated() => $pb.PbList<TcpRoute>();
   @$core.pragma('dart2js:noInline')
   static TcpRoute getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TcpRoute>(create);
@@ -5235,10 +4594,7 @@ class TcpRoute extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) {
-    $_setString(0, v);
-  }
-
+  set name($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -5246,43 +4602,34 @@ class TcpRoute extends $pb.GeneratedMessage {
 
   /// Output only. The timestamp when the resource was created.
   @$pb.TagNumber(2)
-  $2.Timestamp get createTime => $_getN(1);
+  $0.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($2.Timestamp v) {
-    $_setField(2, v);
-  }
-
+  set createTime($0.Timestamp value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => $_clearField(2);
   @$pb.TagNumber(2)
-  $2.Timestamp ensureCreateTime() => $_ensure(1);
+  $0.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. The timestamp when the resource was updated.
   @$pb.TagNumber(3)
-  $2.Timestamp get updateTime => $_getN(2);
+  $0.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($2.Timestamp v) {
-    $_setField(3, v);
-  }
-
+  set updateTime($0.Timestamp value) => $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => $_clearField(3);
   @$pb.TagNumber(3)
-  $2.Timestamp ensureUpdateTime() => $_ensure(2);
+  $0.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Optional. A free-text description of the resource. Max length 1024
   /// characters.
   @$pb.TagNumber(4)
   $core.String get description => $_getSZ(3);
   @$pb.TagNumber(4)
-  set description($core.String v) {
-    $_setString(3, v);
-  }
-
+  set description($core.String value) => $_setString(3, value);
   @$pb.TagNumber(4)
   $core.bool hasDescription() => $_has(3);
   @$pb.TagNumber(4)
@@ -5320,10 +4667,7 @@ class TcpRoute extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.String get selfLink => $_getSZ(8);
   @$pb.TagNumber(11)
-  set selfLink($core.String v) {
-    $_setString(8, v);
-  }
-
+  set selfLink($core.String value) => $_setString(8, value);
   @$pb.TagNumber(11)
   $core.bool hasSelfLink() => $_has(8);
   @$pb.TagNumber(11)
@@ -5337,49 +4681,46 @@ class TlsRoute_RouteRule extends $pb.GeneratedMessage {
     $core.Iterable<TlsRoute_RouteMatch>? matches,
     TlsRoute_RouteAction? action,
   }) {
-    final $result = create();
-    if (matches != null) {
-      $result.matches.addAll(matches);
-    }
-    if (action != null) {
-      $result.action = action;
-    }
-    return $result;
+    final result = create();
+    if (matches != null) result.matches.addAll(matches);
+    if (action != null) result.action = action;
+    return result;
   }
-  TlsRoute_RouteRule._() : super();
-  factory TlsRoute_RouteRule.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory TlsRoute_RouteRule.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  TlsRoute_RouteRule._();
+
+  factory TlsRoute_RouteRule.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory TlsRoute_RouteRule.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'TlsRoute.RouteRule',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.networkservices.v1'),
       createEmptyInstance: create)
-    ..pc<TlsRoute_RouteMatch>(
-        1, _omitFieldNames ? '' : 'matches', $pb.PbFieldType.PM,
+    ..pPM<TlsRoute_RouteMatch>(1, _omitFieldNames ? '' : 'matches',
         subBuilder: TlsRoute_RouteMatch.create)
     ..aOM<TlsRoute_RouteAction>(2, _omitFieldNames ? '' : 'action',
         subBuilder: TlsRoute_RouteAction.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  TlsRoute_RouteRule clone() => TlsRoute_RouteRule()..mergeFromMessage(this);
+  TlsRoute_RouteRule clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TlsRoute_RouteRule copyWith(void Function(TlsRoute_RouteRule) updates) =>
       super.copyWith((message) => updates(message as TlsRoute_RouteRule))
           as TlsRoute_RouteRule;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static TlsRoute_RouteRule create() => TlsRoute_RouteRule._();
+  @$core.override
   TlsRoute_RouteRule createEmptyInstance() => create();
-  static $pb.PbList<TlsRoute_RouteRule> createRepeated() =>
-      $pb.PbList<TlsRoute_RouteRule>();
   @$core.pragma('dart2js:noInline')
   static TlsRoute_RouteRule getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<TlsRoute_RouteRule>(create);
@@ -5394,10 +4735,7 @@ class TlsRoute_RouteRule extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   TlsRoute_RouteAction get action => $_getN(1);
   @$pb.TagNumber(2)
-  set action(TlsRoute_RouteAction v) {
-    $_setField(2, v);
-  }
-
+  set action(TlsRoute_RouteAction value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasAction() => $_has(1);
   @$pb.TagNumber(2)
@@ -5415,22 +4753,20 @@ class TlsRoute_RouteMatch extends $pb.GeneratedMessage {
     $core.Iterable<$core.String>? sniHost,
     $core.Iterable<$core.String>? alpn,
   }) {
-    final $result = create();
-    if (sniHost != null) {
-      $result.sniHost.addAll(sniHost);
-    }
-    if (alpn != null) {
-      $result.alpn.addAll(alpn);
-    }
-    return $result;
+    final result = create();
+    if (sniHost != null) result.sniHost.addAll(sniHost);
+    if (alpn != null) result.alpn.addAll(alpn);
+    return result;
   }
-  TlsRoute_RouteMatch._() : super();
-  factory TlsRoute_RouteMatch.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory TlsRoute_RouteMatch.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  TlsRoute_RouteMatch._();
+
+  factory TlsRoute_RouteMatch.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory TlsRoute_RouteMatch.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'TlsRoute.RouteMatch',
@@ -5442,19 +4778,19 @@ class TlsRoute_RouteMatch extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  TlsRoute_RouteMatch clone() => TlsRoute_RouteMatch()..mergeFromMessage(this);
+  TlsRoute_RouteMatch clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TlsRoute_RouteMatch copyWith(void Function(TlsRoute_RouteMatch) updates) =>
       super.copyWith((message) => updates(message as TlsRoute_RouteMatch))
           as TlsRoute_RouteMatch;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static TlsRoute_RouteMatch create() => TlsRoute_RouteMatch._();
+  @$core.override
   TlsRoute_RouteMatch createEmptyInstance() => create();
-  static $pb.PbList<TlsRoute_RouteMatch> createRepeated() =>
-      $pb.PbList<TlsRoute_RouteMatch>();
   @$core.pragma('dart2js:noInline')
   static TlsRoute_RouteMatch getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<TlsRoute_RouteMatch>(create);
@@ -5484,45 +4820,43 @@ class TlsRoute_RouteAction extends $pb.GeneratedMessage {
   factory TlsRoute_RouteAction({
     $core.Iterable<TlsRoute_RouteDestination>? destinations,
   }) {
-    final $result = create();
-    if (destinations != null) {
-      $result.destinations.addAll(destinations);
-    }
-    return $result;
+    final result = create();
+    if (destinations != null) result.destinations.addAll(destinations);
+    return result;
   }
-  TlsRoute_RouteAction._() : super();
-  factory TlsRoute_RouteAction.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory TlsRoute_RouteAction.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  TlsRoute_RouteAction._();
+
+  factory TlsRoute_RouteAction.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory TlsRoute_RouteAction.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'TlsRoute.RouteAction',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.networkservices.v1'),
       createEmptyInstance: create)
-    ..pc<TlsRoute_RouteDestination>(
-        1, _omitFieldNames ? '' : 'destinations', $pb.PbFieldType.PM,
+    ..pPM<TlsRoute_RouteDestination>(1, _omitFieldNames ? '' : 'destinations',
         subBuilder: TlsRoute_RouteDestination.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  TlsRoute_RouteAction clone() =>
-      TlsRoute_RouteAction()..mergeFromMessage(this);
+  TlsRoute_RouteAction clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TlsRoute_RouteAction copyWith(void Function(TlsRoute_RouteAction) updates) =>
       super.copyWith((message) => updates(message as TlsRoute_RouteAction))
           as TlsRoute_RouteAction;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static TlsRoute_RouteAction create() => TlsRoute_RouteAction._();
+  @$core.override
   TlsRoute_RouteAction createEmptyInstance() => create();
-  static $pb.PbList<TlsRoute_RouteAction> createRepeated() =>
-      $pb.PbList<TlsRoute_RouteAction>();
   @$core.pragma('dart2js:noInline')
   static TlsRoute_RouteAction getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<TlsRoute_RouteAction>(create);
@@ -5540,22 +4874,20 @@ class TlsRoute_RouteDestination extends $pb.GeneratedMessage {
     $core.String? serviceName,
     $core.int? weight,
   }) {
-    final $result = create();
-    if (serviceName != null) {
-      $result.serviceName = serviceName;
-    }
-    if (weight != null) {
-      $result.weight = weight;
-    }
-    return $result;
+    final result = create();
+    if (serviceName != null) result.serviceName = serviceName;
+    if (weight != null) result.weight = weight;
+    return result;
   }
-  TlsRoute_RouteDestination._() : super();
-  factory TlsRoute_RouteDestination.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory TlsRoute_RouteDestination.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  TlsRoute_RouteDestination._();
+
+  factory TlsRoute_RouteDestination.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory TlsRoute_RouteDestination.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'TlsRoute.RouteDestination',
@@ -5563,25 +4895,24 @@ class TlsRoute_RouteDestination extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.events.cloud.networkservices.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'serviceName')
-    ..a<$core.int>(2, _omitFieldNames ? '' : 'weight', $pb.PbFieldType.O3)
+    ..aI(2, _omitFieldNames ? '' : 'weight')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  TlsRoute_RouteDestination clone() =>
-      TlsRoute_RouteDestination()..mergeFromMessage(this);
+  TlsRoute_RouteDestination clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TlsRoute_RouteDestination copyWith(
           void Function(TlsRoute_RouteDestination) updates) =>
       super.copyWith((message) => updates(message as TlsRoute_RouteDestination))
           as TlsRoute_RouteDestination;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static TlsRoute_RouteDestination create() => TlsRoute_RouteDestination._();
+  @$core.override
   TlsRoute_RouteDestination createEmptyInstance() => create();
-  static $pb.PbList<TlsRoute_RouteDestination> createRepeated() =>
-      $pb.PbList<TlsRoute_RouteDestination>();
   @$core.pragma('dart2js:noInline')
   static TlsRoute_RouteDestination getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<TlsRoute_RouteDestination>(create);
@@ -5591,10 +4922,7 @@ class TlsRoute_RouteDestination extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get serviceName => $_getSZ(0);
   @$pb.TagNumber(1)
-  set serviceName($core.String v) {
-    $_setString(0, v);
-  }
-
+  set serviceName($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasServiceName() => $_has(0);
   @$pb.TagNumber(1)
@@ -5607,10 +4935,7 @@ class TlsRoute_RouteDestination extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get weight => $_getIZ(1);
   @$pb.TagNumber(2)
-  set weight($core.int v) {
-    $_setSignedInt32(1, v);
-  }
-
+  set weight($core.int value) => $_setSignedInt32(1, value);
   @$pb.TagNumber(2)
   $core.bool hasWeight() => $_has(1);
   @$pb.TagNumber(2)
@@ -5622,48 +4947,34 @@ class TlsRoute_RouteDestination extends $pb.GeneratedMessage {
 class TlsRoute extends $pb.GeneratedMessage {
   factory TlsRoute({
     $core.String? name,
-    $2.Timestamp? createTime,
-    $2.Timestamp? updateTime,
+    $0.Timestamp? createTime,
+    $0.Timestamp? updateTime,
     $core.String? description,
     $core.Iterable<TlsRoute_RouteRule>? rules,
     $core.Iterable<$core.String>? meshes,
     $core.Iterable<$core.String>? gateways,
     $core.String? selfLink,
   }) {
-    final $result = create();
-    if (name != null) {
-      $result.name = name;
-    }
-    if (createTime != null) {
-      $result.createTime = createTime;
-    }
-    if (updateTime != null) {
-      $result.updateTime = updateTime;
-    }
-    if (description != null) {
-      $result.description = description;
-    }
-    if (rules != null) {
-      $result.rules.addAll(rules);
-    }
-    if (meshes != null) {
-      $result.meshes.addAll(meshes);
-    }
-    if (gateways != null) {
-      $result.gateways.addAll(gateways);
-    }
-    if (selfLink != null) {
-      $result.selfLink = selfLink;
-    }
-    return $result;
+    final result = create();
+    if (name != null) result.name = name;
+    if (createTime != null) result.createTime = createTime;
+    if (updateTime != null) result.updateTime = updateTime;
+    if (description != null) result.description = description;
+    if (rules != null) result.rules.addAll(rules);
+    if (meshes != null) result.meshes.addAll(meshes);
+    if (gateways != null) result.gateways.addAll(gateways);
+    if (selfLink != null) result.selfLink = selfLink;
+    return result;
   }
-  TlsRoute._() : super();
-  factory TlsRoute.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory TlsRoute.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  TlsRoute._();
+
+  factory TlsRoute.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory TlsRoute.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'TlsRoute',
@@ -5671,13 +4982,12 @@ class TlsRoute extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.events.cloud.networkservices.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$2.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(3, _omitFieldNames ? '' : 'updateTime',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$0.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(3, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $0.Timestamp.create)
     ..aOS(4, _omitFieldNames ? '' : 'description')
-    ..pc<TlsRoute_RouteRule>(
-        5, _omitFieldNames ? '' : 'rules', $pb.PbFieldType.PM,
+    ..pPM<TlsRoute_RouteRule>(5, _omitFieldNames ? '' : 'rules',
         subBuilder: TlsRoute_RouteRule.create)
     ..pPS(6, _omitFieldNames ? '' : 'meshes')
     ..pPS(7, _omitFieldNames ? '' : 'gateways')
@@ -5685,17 +4995,18 @@ class TlsRoute extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  TlsRoute clone() => TlsRoute()..mergeFromMessage(this);
+  TlsRoute clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TlsRoute copyWith(void Function(TlsRoute) updates) =>
       super.copyWith((message) => updates(message as TlsRoute)) as TlsRoute;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static TlsRoute create() => TlsRoute._();
+  @$core.override
   TlsRoute createEmptyInstance() => create();
-  static $pb.PbList<TlsRoute> createRepeated() => $pb.PbList<TlsRoute>();
   @$core.pragma('dart2js:noInline')
   static TlsRoute getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TlsRoute>(create);
@@ -5706,10 +5017,7 @@ class TlsRoute extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) {
-    $_setString(0, v);
-  }
-
+  set name($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -5717,43 +5025,34 @@ class TlsRoute extends $pb.GeneratedMessage {
 
   /// Output only. The timestamp when the resource was created.
   @$pb.TagNumber(2)
-  $2.Timestamp get createTime => $_getN(1);
+  $0.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($2.Timestamp v) {
-    $_setField(2, v);
-  }
-
+  set createTime($0.Timestamp value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => $_clearField(2);
   @$pb.TagNumber(2)
-  $2.Timestamp ensureCreateTime() => $_ensure(1);
+  $0.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. The timestamp when the resource was updated.
   @$pb.TagNumber(3)
-  $2.Timestamp get updateTime => $_getN(2);
+  $0.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($2.Timestamp v) {
-    $_setField(3, v);
-  }
-
+  set updateTime($0.Timestamp value) => $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => $_clearField(3);
   @$pb.TagNumber(3)
-  $2.Timestamp ensureUpdateTime() => $_ensure(2);
+  $0.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Optional. A free-text description of the resource. Max length 1024
   /// characters.
   @$pb.TagNumber(4)
   $core.String get description => $_getSZ(3);
   @$pb.TagNumber(4)
-  set description($core.String v) {
-    $_setString(3, v);
-  }
-
+  set description($core.String value) => $_setString(3, value);
   @$pb.TagNumber(4)
   $core.bool hasDescription() => $_has(3);
   @$pb.TagNumber(4)
@@ -5787,10 +5086,7 @@ class TlsRoute extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.String get selfLink => $_getSZ(7);
   @$pb.TagNumber(8)
-  set selfLink($core.String v) {
-    $_setString(7, v);
-  }
-
+  set selfLink($core.String value) => $_setString(7, value);
   @$pb.TagNumber(8)
   $core.bool hasSelfLink() => $_has(7);
   @$pb.TagNumber(8)
@@ -5802,19 +5098,19 @@ class EndpointPolicyEventData extends $pb.GeneratedMessage {
   factory EndpointPolicyEventData({
     EndpointPolicy? payload,
   }) {
-    final $result = create();
-    if (payload != null) {
-      $result.payload = payload;
-    }
-    return $result;
+    final result = create();
+    if (payload != null) result.payload = payload;
+    return result;
   }
-  EndpointPolicyEventData._() : super();
-  factory EndpointPolicyEventData.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory EndpointPolicyEventData.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  EndpointPolicyEventData._();
+
+  factory EndpointPolicyEventData.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory EndpointPolicyEventData.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'EndpointPolicyEventData',
@@ -5826,21 +5122,20 @@ class EndpointPolicyEventData extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  EndpointPolicyEventData clone() =>
-      EndpointPolicyEventData()..mergeFromMessage(this);
+  EndpointPolicyEventData clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   EndpointPolicyEventData copyWith(
           void Function(EndpointPolicyEventData) updates) =>
       super.copyWith((message) => updates(message as EndpointPolicyEventData))
           as EndpointPolicyEventData;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static EndpointPolicyEventData create() => EndpointPolicyEventData._();
+  @$core.override
   EndpointPolicyEventData createEmptyInstance() => create();
-  static $pb.PbList<EndpointPolicyEventData> createRepeated() =>
-      $pb.PbList<EndpointPolicyEventData>();
   @$core.pragma('dart2js:noInline')
   static EndpointPolicyEventData getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<EndpointPolicyEventData>(create);
@@ -5850,10 +5145,7 @@ class EndpointPolicyEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   EndpointPolicy get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(EndpointPolicy v) {
-    $_setField(1, v);
-  }
-
+  set payload(EndpointPolicy value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -5867,19 +5159,19 @@ class HttpRouteEventData extends $pb.GeneratedMessage {
   factory HttpRouteEventData({
     HttpRoute? payload,
   }) {
-    final $result = create();
-    if (payload != null) {
-      $result.payload = payload;
-    }
-    return $result;
+    final result = create();
+    if (payload != null) result.payload = payload;
+    return result;
   }
-  HttpRouteEventData._() : super();
-  factory HttpRouteEventData.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory HttpRouteEventData.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  HttpRouteEventData._();
+
+  factory HttpRouteEventData.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory HttpRouteEventData.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'HttpRouteEventData',
@@ -5891,19 +5183,19 @@ class HttpRouteEventData extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  HttpRouteEventData clone() => HttpRouteEventData()..mergeFromMessage(this);
+  HttpRouteEventData clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HttpRouteEventData copyWith(void Function(HttpRouteEventData) updates) =>
       super.copyWith((message) => updates(message as HttpRouteEventData))
           as HttpRouteEventData;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static HttpRouteEventData create() => HttpRouteEventData._();
+  @$core.override
   HttpRouteEventData createEmptyInstance() => create();
-  static $pb.PbList<HttpRouteEventData> createRepeated() =>
-      $pb.PbList<HttpRouteEventData>();
   @$core.pragma('dart2js:noInline')
   static HttpRouteEventData getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<HttpRouteEventData>(create);
@@ -5913,10 +5205,7 @@ class HttpRouteEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   HttpRoute get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(HttpRoute v) {
-    $_setField(1, v);
-  }
-
+  set payload(HttpRoute value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -5930,19 +5219,19 @@ class ServiceBindingEventData extends $pb.GeneratedMessage {
   factory ServiceBindingEventData({
     ServiceBinding? payload,
   }) {
-    final $result = create();
-    if (payload != null) {
-      $result.payload = payload;
-    }
-    return $result;
+    final result = create();
+    if (payload != null) result.payload = payload;
+    return result;
   }
-  ServiceBindingEventData._() : super();
-  factory ServiceBindingEventData.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ServiceBindingEventData.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  ServiceBindingEventData._();
+
+  factory ServiceBindingEventData.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ServiceBindingEventData.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'ServiceBindingEventData',
@@ -5954,21 +5243,20 @@ class ServiceBindingEventData extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ServiceBindingEventData clone() =>
-      ServiceBindingEventData()..mergeFromMessage(this);
+  ServiceBindingEventData clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceBindingEventData copyWith(
           void Function(ServiceBindingEventData) updates) =>
       super.copyWith((message) => updates(message as ServiceBindingEventData))
           as ServiceBindingEventData;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ServiceBindingEventData create() => ServiceBindingEventData._();
+  @$core.override
   ServiceBindingEventData createEmptyInstance() => create();
-  static $pb.PbList<ServiceBindingEventData> createRepeated() =>
-      $pb.PbList<ServiceBindingEventData>();
   @$core.pragma('dart2js:noInline')
   static ServiceBindingEventData getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ServiceBindingEventData>(create);
@@ -5978,10 +5266,7 @@ class ServiceBindingEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   ServiceBinding get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(ServiceBinding v) {
-    $_setField(1, v);
-  }
-
+  set payload(ServiceBinding value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -5995,19 +5280,19 @@ class GatewayEventData extends $pb.GeneratedMessage {
   factory GatewayEventData({
     Gateway? payload,
   }) {
-    final $result = create();
-    if (payload != null) {
-      $result.payload = payload;
-    }
-    return $result;
+    final result = create();
+    if (payload != null) result.payload = payload;
+    return result;
   }
-  GatewayEventData._() : super();
-  factory GatewayEventData.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory GatewayEventData.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  GatewayEventData._();
+
+  factory GatewayEventData.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory GatewayEventData.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'GatewayEventData',
@@ -6019,19 +5304,19 @@ class GatewayEventData extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  GatewayEventData clone() => GatewayEventData()..mergeFromMessage(this);
+  GatewayEventData clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   GatewayEventData copyWith(void Function(GatewayEventData) updates) =>
       super.copyWith((message) => updates(message as GatewayEventData))
           as GatewayEventData;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GatewayEventData create() => GatewayEventData._();
+  @$core.override
   GatewayEventData createEmptyInstance() => create();
-  static $pb.PbList<GatewayEventData> createRepeated() =>
-      $pb.PbList<GatewayEventData>();
   @$core.pragma('dart2js:noInline')
   static GatewayEventData getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<GatewayEventData>(create);
@@ -6041,10 +5326,7 @@ class GatewayEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   Gateway get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(Gateway v) {
-    $_setField(1, v);
-  }
-
+  set payload(Gateway value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -6058,19 +5340,19 @@ class TlsRouteEventData extends $pb.GeneratedMessage {
   factory TlsRouteEventData({
     TlsRoute? payload,
   }) {
-    final $result = create();
-    if (payload != null) {
-      $result.payload = payload;
-    }
-    return $result;
+    final result = create();
+    if (payload != null) result.payload = payload;
+    return result;
   }
-  TlsRouteEventData._() : super();
-  factory TlsRouteEventData.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory TlsRouteEventData.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  TlsRouteEventData._();
+
+  factory TlsRouteEventData.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory TlsRouteEventData.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'TlsRouteEventData',
@@ -6082,19 +5364,19 @@ class TlsRouteEventData extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  TlsRouteEventData clone() => TlsRouteEventData()..mergeFromMessage(this);
+  TlsRouteEventData clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TlsRouteEventData copyWith(void Function(TlsRouteEventData) updates) =>
       super.copyWith((message) => updates(message as TlsRouteEventData))
           as TlsRouteEventData;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static TlsRouteEventData create() => TlsRouteEventData._();
+  @$core.override
   TlsRouteEventData createEmptyInstance() => create();
-  static $pb.PbList<TlsRouteEventData> createRepeated() =>
-      $pb.PbList<TlsRouteEventData>();
   @$core.pragma('dart2js:noInline')
   static TlsRouteEventData getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<TlsRouteEventData>(create);
@@ -6104,10 +5386,7 @@ class TlsRouteEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   TlsRoute get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(TlsRoute v) {
-    $_setField(1, v);
-  }
-
+  set payload(TlsRoute value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -6121,19 +5400,19 @@ class GrpcRouteEventData extends $pb.GeneratedMessage {
   factory GrpcRouteEventData({
     GrpcRoute? payload,
   }) {
-    final $result = create();
-    if (payload != null) {
-      $result.payload = payload;
-    }
-    return $result;
+    final result = create();
+    if (payload != null) result.payload = payload;
+    return result;
   }
-  GrpcRouteEventData._() : super();
-  factory GrpcRouteEventData.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory GrpcRouteEventData.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  GrpcRouteEventData._();
+
+  factory GrpcRouteEventData.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory GrpcRouteEventData.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'GrpcRouteEventData',
@@ -6145,19 +5424,19 @@ class GrpcRouteEventData extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  GrpcRouteEventData clone() => GrpcRouteEventData()..mergeFromMessage(this);
+  GrpcRouteEventData clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   GrpcRouteEventData copyWith(void Function(GrpcRouteEventData) updates) =>
       super.copyWith((message) => updates(message as GrpcRouteEventData))
           as GrpcRouteEventData;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GrpcRouteEventData create() => GrpcRouteEventData._();
+  @$core.override
   GrpcRouteEventData createEmptyInstance() => create();
-  static $pb.PbList<GrpcRouteEventData> createRepeated() =>
-      $pb.PbList<GrpcRouteEventData>();
   @$core.pragma('dart2js:noInline')
   static GrpcRouteEventData getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<GrpcRouteEventData>(create);
@@ -6167,10 +5446,7 @@ class GrpcRouteEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   GrpcRoute get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(GrpcRoute v) {
-    $_setField(1, v);
-  }
-
+  set payload(GrpcRoute value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -6184,19 +5460,19 @@ class MeshEventData extends $pb.GeneratedMessage {
   factory MeshEventData({
     Mesh? payload,
   }) {
-    final $result = create();
-    if (payload != null) {
-      $result.payload = payload;
-    }
-    return $result;
+    final result = create();
+    if (payload != null) result.payload = payload;
+    return result;
   }
-  MeshEventData._() : super();
-  factory MeshEventData.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory MeshEventData.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  MeshEventData._();
+
+  factory MeshEventData.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory MeshEventData.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'MeshEventData',
@@ -6207,19 +5483,19 @@ class MeshEventData extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  MeshEventData clone() => MeshEventData()..mergeFromMessage(this);
+  MeshEventData clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MeshEventData copyWith(void Function(MeshEventData) updates) =>
       super.copyWith((message) => updates(message as MeshEventData))
           as MeshEventData;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static MeshEventData create() => MeshEventData._();
+  @$core.override
   MeshEventData createEmptyInstance() => create();
-  static $pb.PbList<MeshEventData> createRepeated() =>
-      $pb.PbList<MeshEventData>();
   @$core.pragma('dart2js:noInline')
   static MeshEventData getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<MeshEventData>(create);
@@ -6229,10 +5505,7 @@ class MeshEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   Mesh get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(Mesh v) {
-    $_setField(1, v);
-  }
-
+  set payload(Mesh value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -6246,19 +5519,19 @@ class TcpRouteEventData extends $pb.GeneratedMessage {
   factory TcpRouteEventData({
     TcpRoute? payload,
   }) {
-    final $result = create();
-    if (payload != null) {
-      $result.payload = payload;
-    }
-    return $result;
+    final result = create();
+    if (payload != null) result.payload = payload;
+    return result;
   }
-  TcpRouteEventData._() : super();
-  factory TcpRouteEventData.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory TcpRouteEventData.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  TcpRouteEventData._();
+
+  factory TcpRouteEventData.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory TcpRouteEventData.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'TcpRouteEventData',
@@ -6270,19 +5543,19 @@ class TcpRouteEventData extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  TcpRouteEventData clone() => TcpRouteEventData()..mergeFromMessage(this);
+  TcpRouteEventData clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TcpRouteEventData copyWith(void Function(TcpRouteEventData) updates) =>
       super.copyWith((message) => updates(message as TcpRouteEventData))
           as TcpRouteEventData;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static TcpRouteEventData create() => TcpRouteEventData._();
+  @$core.override
   TcpRouteEventData createEmptyInstance() => create();
-  static $pb.PbList<TcpRouteEventData> createRepeated() =>
-      $pb.PbList<TcpRouteEventData>();
   @$core.pragma('dart2js:noInline')
   static TcpRouteEventData getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<TcpRouteEventData>(create);
@@ -6292,10 +5565,7 @@ class TcpRouteEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   TcpRoute get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(TcpRoute v) {
-    $_setField(1, v);
-  }
-
+  set payload(TcpRoute value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -6304,6 +5574,7 @@ class TcpRouteEventData extends $pb.GeneratedMessage {
   TcpRoute ensurePayload() => $_ensure(0);
 }
 
-const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames =
+const $core.bool _omitFieldNames =
+    $core.bool.fromEnvironment('protobuf.omit_field_names');
+const $core.bool _omitMessageNames =
     $core.bool.fromEnvironment('protobuf.omit_message_names');

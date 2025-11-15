@@ -1,40 +1,42 @@
+// This is a generated file - do not edit.
 //
-//  Generated code. Do not modify.
-//  source: google/events/cloud/networkconnectivity/v1/events.proto
-//
+// Generated from google/events/cloud/networkconnectivity/v1/events.proto.
+
 // @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
-// ignore_for_file: constant_identifier_names, library_prefixes
-// ignore_for_file: non_constant_identifier_names, prefer_final_fields
-// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
+// ignore_for_file: constant_identifier_names
+// ignore_for_file: curly_braces_in_flow_control_structures
+// ignore_for_file: deprecated_member_use_from_same_package, library_prefixes
+// ignore_for_file: non_constant_identifier_names
 
 import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'data.pb.dart' as $39;
+import 'data.pb.dart' as $0;
 
 export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
 /// The CloudEvent raised when a ServiceConnectionMap is created.
 class ServiceConnectionMapCreatedEvent extends $pb.GeneratedMessage {
   factory ServiceConnectionMapCreatedEvent({
-    $39.ServiceConnectionMapEventData? data,
+    $0.ServiceConnectionMapEventData? data,
   }) {
-    final $result = create();
-    if (data != null) {
-      $result.data = data;
-    }
-    return $result;
+    final result = create();
+    if (data != null) result.data = data;
+    return result;
   }
-  ServiceConnectionMapCreatedEvent._() : super();
-  factory ServiceConnectionMapCreatedEvent.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ServiceConnectionMapCreatedEvent.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  ServiceConnectionMapCreatedEvent._();
+
+  factory ServiceConnectionMapCreatedEvent.fromBuffer(
+          $core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ServiceConnectionMapCreatedEvent.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'ServiceConnectionMapCreatedEvent',
@@ -42,13 +44,12 @@ class ServiceConnectionMapCreatedEvent extends $pb.GeneratedMessage {
           ? ''
           : 'google.events.cloud.networkconnectivity.v1'),
       createEmptyInstance: create)
-    ..aOM<$39.ServiceConnectionMapEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $39.ServiceConnectionMapEventData.create)
+    ..aOM<$0.ServiceConnectionMapEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $0.ServiceConnectionMapEventData.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ServiceConnectionMapCreatedEvent clone() =>
-      ServiceConnectionMapCreatedEvent()..mergeFromMessage(this);
+  ServiceConnectionMapCreatedEvent clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceConnectionMapCreatedEvent copyWith(
           void Function(ServiceConnectionMapCreatedEvent) updates) =>
@@ -56,14 +57,14 @@ class ServiceConnectionMapCreatedEvent extends $pb.GeneratedMessage {
               (message) => updates(message as ServiceConnectionMapCreatedEvent))
           as ServiceConnectionMapCreatedEvent;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ServiceConnectionMapCreatedEvent create() =>
       ServiceConnectionMapCreatedEvent._();
+  @$core.override
   ServiceConnectionMapCreatedEvent createEmptyInstance() => create();
-  static $pb.PbList<ServiceConnectionMapCreatedEvent> createRepeated() =>
-      $pb.PbList<ServiceConnectionMapCreatedEvent>();
   @$core.pragma('dart2js:noInline')
   static ServiceConnectionMapCreatedEvent getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ServiceConnectionMapCreatedEvent>(
@@ -72,38 +73,36 @@ class ServiceConnectionMapCreatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $39.ServiceConnectionMapEventData get data => $_getN(0);
+  $0.ServiceConnectionMapEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($39.ServiceConnectionMapEventData v) {
-    $_setField(1, v);
-  }
-
+  set data($0.ServiceConnectionMapEventData value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
   void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $39.ServiceConnectionMapEventData ensureData() => $_ensure(0);
+  $0.ServiceConnectionMapEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a ServiceConnectionMap is updated.
 class ServiceConnectionMapUpdatedEvent extends $pb.GeneratedMessage {
   factory ServiceConnectionMapUpdatedEvent({
-    $39.ServiceConnectionMapEventData? data,
+    $0.ServiceConnectionMapEventData? data,
   }) {
-    final $result = create();
-    if (data != null) {
-      $result.data = data;
-    }
-    return $result;
+    final result = create();
+    if (data != null) result.data = data;
+    return result;
   }
-  ServiceConnectionMapUpdatedEvent._() : super();
-  factory ServiceConnectionMapUpdatedEvent.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ServiceConnectionMapUpdatedEvent.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  ServiceConnectionMapUpdatedEvent._();
+
+  factory ServiceConnectionMapUpdatedEvent.fromBuffer(
+          $core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ServiceConnectionMapUpdatedEvent.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'ServiceConnectionMapUpdatedEvent',
@@ -111,13 +110,12 @@ class ServiceConnectionMapUpdatedEvent extends $pb.GeneratedMessage {
           ? ''
           : 'google.events.cloud.networkconnectivity.v1'),
       createEmptyInstance: create)
-    ..aOM<$39.ServiceConnectionMapEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $39.ServiceConnectionMapEventData.create)
+    ..aOM<$0.ServiceConnectionMapEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $0.ServiceConnectionMapEventData.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ServiceConnectionMapUpdatedEvent clone() =>
-      ServiceConnectionMapUpdatedEvent()..mergeFromMessage(this);
+  ServiceConnectionMapUpdatedEvent clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceConnectionMapUpdatedEvent copyWith(
           void Function(ServiceConnectionMapUpdatedEvent) updates) =>
@@ -125,14 +123,14 @@ class ServiceConnectionMapUpdatedEvent extends $pb.GeneratedMessage {
               (message) => updates(message as ServiceConnectionMapUpdatedEvent))
           as ServiceConnectionMapUpdatedEvent;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ServiceConnectionMapUpdatedEvent create() =>
       ServiceConnectionMapUpdatedEvent._();
+  @$core.override
   ServiceConnectionMapUpdatedEvent createEmptyInstance() => create();
-  static $pb.PbList<ServiceConnectionMapUpdatedEvent> createRepeated() =>
-      $pb.PbList<ServiceConnectionMapUpdatedEvent>();
   @$core.pragma('dart2js:noInline')
   static ServiceConnectionMapUpdatedEvent getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ServiceConnectionMapUpdatedEvent>(
@@ -141,38 +139,36 @@ class ServiceConnectionMapUpdatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $39.ServiceConnectionMapEventData get data => $_getN(0);
+  $0.ServiceConnectionMapEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($39.ServiceConnectionMapEventData v) {
-    $_setField(1, v);
-  }
-
+  set data($0.ServiceConnectionMapEventData value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
   void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $39.ServiceConnectionMapEventData ensureData() => $_ensure(0);
+  $0.ServiceConnectionMapEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a ServiceConnectionMap is deleted.
 class ServiceConnectionMapDeletedEvent extends $pb.GeneratedMessage {
   factory ServiceConnectionMapDeletedEvent({
-    $39.ServiceConnectionMapEventData? data,
+    $0.ServiceConnectionMapEventData? data,
   }) {
-    final $result = create();
-    if (data != null) {
-      $result.data = data;
-    }
-    return $result;
+    final result = create();
+    if (data != null) result.data = data;
+    return result;
   }
-  ServiceConnectionMapDeletedEvent._() : super();
-  factory ServiceConnectionMapDeletedEvent.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ServiceConnectionMapDeletedEvent.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  ServiceConnectionMapDeletedEvent._();
+
+  factory ServiceConnectionMapDeletedEvent.fromBuffer(
+          $core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ServiceConnectionMapDeletedEvent.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'ServiceConnectionMapDeletedEvent',
@@ -180,13 +176,12 @@ class ServiceConnectionMapDeletedEvent extends $pb.GeneratedMessage {
           ? ''
           : 'google.events.cloud.networkconnectivity.v1'),
       createEmptyInstance: create)
-    ..aOM<$39.ServiceConnectionMapEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $39.ServiceConnectionMapEventData.create)
+    ..aOM<$0.ServiceConnectionMapEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $0.ServiceConnectionMapEventData.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ServiceConnectionMapDeletedEvent clone() =>
-      ServiceConnectionMapDeletedEvent()..mergeFromMessage(this);
+  ServiceConnectionMapDeletedEvent clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceConnectionMapDeletedEvent copyWith(
           void Function(ServiceConnectionMapDeletedEvent) updates) =>
@@ -194,14 +189,14 @@ class ServiceConnectionMapDeletedEvent extends $pb.GeneratedMessage {
               (message) => updates(message as ServiceConnectionMapDeletedEvent))
           as ServiceConnectionMapDeletedEvent;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ServiceConnectionMapDeletedEvent create() =>
       ServiceConnectionMapDeletedEvent._();
+  @$core.override
   ServiceConnectionMapDeletedEvent createEmptyInstance() => create();
-  static $pb.PbList<ServiceConnectionMapDeletedEvent> createRepeated() =>
-      $pb.PbList<ServiceConnectionMapDeletedEvent>();
   @$core.pragma('dart2js:noInline')
   static ServiceConnectionMapDeletedEvent getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ServiceConnectionMapDeletedEvent>(
@@ -210,39 +205,36 @@ class ServiceConnectionMapDeletedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $39.ServiceConnectionMapEventData get data => $_getN(0);
+  $0.ServiceConnectionMapEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($39.ServiceConnectionMapEventData v) {
-    $_setField(1, v);
-  }
-
+  set data($0.ServiceConnectionMapEventData value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
   void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $39.ServiceConnectionMapEventData ensureData() => $_ensure(0);
+  $0.ServiceConnectionMapEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a ServiceConnectionPolicy is created.
 class ServiceConnectionPolicyCreatedEvent extends $pb.GeneratedMessage {
   factory ServiceConnectionPolicyCreatedEvent({
-    $39.ServiceConnectionPolicyEventData? data,
+    $0.ServiceConnectionPolicyEventData? data,
   }) {
-    final $result = create();
-    if (data != null) {
-      $result.data = data;
-    }
-    return $result;
+    final result = create();
+    if (data != null) result.data = data;
+    return result;
   }
-  ServiceConnectionPolicyCreatedEvent._() : super();
+
+  ServiceConnectionPolicyCreatedEvent._();
+
   factory ServiceConnectionPolicyCreatedEvent.fromBuffer(
-          $core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ServiceConnectionPolicyCreatedEvent.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+          $core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ServiceConnectionPolicyCreatedEvent.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'ServiceConnectionPolicyCreatedEvent',
@@ -250,14 +242,12 @@ class ServiceConnectionPolicyCreatedEvent extends $pb.GeneratedMessage {
           ? ''
           : 'google.events.cloud.networkconnectivity.v1'),
       createEmptyInstance: create)
-    ..aOM<$39.ServiceConnectionPolicyEventData>(
-        1, _omitFieldNames ? '' : 'data',
-        subBuilder: $39.ServiceConnectionPolicyEventData.create)
+    ..aOM<$0.ServiceConnectionPolicyEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $0.ServiceConnectionPolicyEventData.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ServiceConnectionPolicyCreatedEvent clone() =>
-      ServiceConnectionPolicyCreatedEvent()..mergeFromMessage(this);
+  ServiceConnectionPolicyCreatedEvent clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceConnectionPolicyCreatedEvent copyWith(
           void Function(ServiceConnectionPolicyCreatedEvent) updates) =>
@@ -265,14 +255,14 @@ class ServiceConnectionPolicyCreatedEvent extends $pb.GeneratedMessage {
               updates(message as ServiceConnectionPolicyCreatedEvent))
           as ServiceConnectionPolicyCreatedEvent;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ServiceConnectionPolicyCreatedEvent create() =>
       ServiceConnectionPolicyCreatedEvent._();
+  @$core.override
   ServiceConnectionPolicyCreatedEvent createEmptyInstance() => create();
-  static $pb.PbList<ServiceConnectionPolicyCreatedEvent> createRepeated() =>
-      $pb.PbList<ServiceConnectionPolicyCreatedEvent>();
   @$core.pragma('dart2js:noInline')
   static ServiceConnectionPolicyCreatedEvent getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
@@ -281,39 +271,36 @@ class ServiceConnectionPolicyCreatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $39.ServiceConnectionPolicyEventData get data => $_getN(0);
+  $0.ServiceConnectionPolicyEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($39.ServiceConnectionPolicyEventData v) {
-    $_setField(1, v);
-  }
-
+  set data($0.ServiceConnectionPolicyEventData value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
   void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $39.ServiceConnectionPolicyEventData ensureData() => $_ensure(0);
+  $0.ServiceConnectionPolicyEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a ServiceConnectionPolicy is updated.
 class ServiceConnectionPolicyUpdatedEvent extends $pb.GeneratedMessage {
   factory ServiceConnectionPolicyUpdatedEvent({
-    $39.ServiceConnectionPolicyEventData? data,
+    $0.ServiceConnectionPolicyEventData? data,
   }) {
-    final $result = create();
-    if (data != null) {
-      $result.data = data;
-    }
-    return $result;
+    final result = create();
+    if (data != null) result.data = data;
+    return result;
   }
-  ServiceConnectionPolicyUpdatedEvent._() : super();
+
+  ServiceConnectionPolicyUpdatedEvent._();
+
   factory ServiceConnectionPolicyUpdatedEvent.fromBuffer(
-          $core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ServiceConnectionPolicyUpdatedEvent.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+          $core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ServiceConnectionPolicyUpdatedEvent.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'ServiceConnectionPolicyUpdatedEvent',
@@ -321,14 +308,12 @@ class ServiceConnectionPolicyUpdatedEvent extends $pb.GeneratedMessage {
           ? ''
           : 'google.events.cloud.networkconnectivity.v1'),
       createEmptyInstance: create)
-    ..aOM<$39.ServiceConnectionPolicyEventData>(
-        1, _omitFieldNames ? '' : 'data',
-        subBuilder: $39.ServiceConnectionPolicyEventData.create)
+    ..aOM<$0.ServiceConnectionPolicyEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $0.ServiceConnectionPolicyEventData.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ServiceConnectionPolicyUpdatedEvent clone() =>
-      ServiceConnectionPolicyUpdatedEvent()..mergeFromMessage(this);
+  ServiceConnectionPolicyUpdatedEvent clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceConnectionPolicyUpdatedEvent copyWith(
           void Function(ServiceConnectionPolicyUpdatedEvent) updates) =>
@@ -336,14 +321,14 @@ class ServiceConnectionPolicyUpdatedEvent extends $pb.GeneratedMessage {
               updates(message as ServiceConnectionPolicyUpdatedEvent))
           as ServiceConnectionPolicyUpdatedEvent;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ServiceConnectionPolicyUpdatedEvent create() =>
       ServiceConnectionPolicyUpdatedEvent._();
+  @$core.override
   ServiceConnectionPolicyUpdatedEvent createEmptyInstance() => create();
-  static $pb.PbList<ServiceConnectionPolicyUpdatedEvent> createRepeated() =>
-      $pb.PbList<ServiceConnectionPolicyUpdatedEvent>();
   @$core.pragma('dart2js:noInline')
   static ServiceConnectionPolicyUpdatedEvent getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
@@ -352,39 +337,36 @@ class ServiceConnectionPolicyUpdatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $39.ServiceConnectionPolicyEventData get data => $_getN(0);
+  $0.ServiceConnectionPolicyEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($39.ServiceConnectionPolicyEventData v) {
-    $_setField(1, v);
-  }
-
+  set data($0.ServiceConnectionPolicyEventData value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
   void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $39.ServiceConnectionPolicyEventData ensureData() => $_ensure(0);
+  $0.ServiceConnectionPolicyEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a ServiceConnectionPolicy is deleted.
 class ServiceConnectionPolicyDeletedEvent extends $pb.GeneratedMessage {
   factory ServiceConnectionPolicyDeletedEvent({
-    $39.ServiceConnectionPolicyEventData? data,
+    $0.ServiceConnectionPolicyEventData? data,
   }) {
-    final $result = create();
-    if (data != null) {
-      $result.data = data;
-    }
-    return $result;
+    final result = create();
+    if (data != null) result.data = data;
+    return result;
   }
-  ServiceConnectionPolicyDeletedEvent._() : super();
+
+  ServiceConnectionPolicyDeletedEvent._();
+
   factory ServiceConnectionPolicyDeletedEvent.fromBuffer(
-          $core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ServiceConnectionPolicyDeletedEvent.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+          $core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ServiceConnectionPolicyDeletedEvent.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'ServiceConnectionPolicyDeletedEvent',
@@ -392,14 +374,12 @@ class ServiceConnectionPolicyDeletedEvent extends $pb.GeneratedMessage {
           ? ''
           : 'google.events.cloud.networkconnectivity.v1'),
       createEmptyInstance: create)
-    ..aOM<$39.ServiceConnectionPolicyEventData>(
-        1, _omitFieldNames ? '' : 'data',
-        subBuilder: $39.ServiceConnectionPolicyEventData.create)
+    ..aOM<$0.ServiceConnectionPolicyEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $0.ServiceConnectionPolicyEventData.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ServiceConnectionPolicyDeletedEvent clone() =>
-      ServiceConnectionPolicyDeletedEvent()..mergeFromMessage(this);
+  ServiceConnectionPolicyDeletedEvent clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceConnectionPolicyDeletedEvent copyWith(
           void Function(ServiceConnectionPolicyDeletedEvent) updates) =>
@@ -407,14 +387,14 @@ class ServiceConnectionPolicyDeletedEvent extends $pb.GeneratedMessage {
               updates(message as ServiceConnectionPolicyDeletedEvent))
           as ServiceConnectionPolicyDeletedEvent;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ServiceConnectionPolicyDeletedEvent create() =>
       ServiceConnectionPolicyDeletedEvent._();
+  @$core.override
   ServiceConnectionPolicyDeletedEvent createEmptyInstance() => create();
-  static $pb.PbList<ServiceConnectionPolicyDeletedEvent> createRepeated() =>
-      $pb.PbList<ServiceConnectionPolicyDeletedEvent>();
   @$core.pragma('dart2js:noInline')
   static ServiceConnectionPolicyDeletedEvent getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
@@ -423,38 +403,35 @@ class ServiceConnectionPolicyDeletedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $39.ServiceConnectionPolicyEventData get data => $_getN(0);
+  $0.ServiceConnectionPolicyEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($39.ServiceConnectionPolicyEventData v) {
-    $_setField(1, v);
-  }
-
+  set data($0.ServiceConnectionPolicyEventData value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
   void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $39.ServiceConnectionPolicyEventData ensureData() => $_ensure(0);
+  $0.ServiceConnectionPolicyEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a ServiceClass is updated.
 class ServiceClassUpdatedEvent extends $pb.GeneratedMessage {
   factory ServiceClassUpdatedEvent({
-    $39.ServiceClassEventData? data,
+    $0.ServiceClassEventData? data,
   }) {
-    final $result = create();
-    if (data != null) {
-      $result.data = data;
-    }
-    return $result;
+    final result = create();
+    if (data != null) result.data = data;
+    return result;
   }
-  ServiceClassUpdatedEvent._() : super();
-  factory ServiceClassUpdatedEvent.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ServiceClassUpdatedEvent.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  ServiceClassUpdatedEvent._();
+
+  factory ServiceClassUpdatedEvent.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ServiceClassUpdatedEvent.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'ServiceClassUpdatedEvent',
@@ -462,26 +439,25 @@ class ServiceClassUpdatedEvent extends $pb.GeneratedMessage {
           ? ''
           : 'google.events.cloud.networkconnectivity.v1'),
       createEmptyInstance: create)
-    ..aOM<$39.ServiceClassEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $39.ServiceClassEventData.create)
+    ..aOM<$0.ServiceClassEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $0.ServiceClassEventData.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ServiceClassUpdatedEvent clone() =>
-      ServiceClassUpdatedEvent()..mergeFromMessage(this);
+  ServiceClassUpdatedEvent clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceClassUpdatedEvent copyWith(
           void Function(ServiceClassUpdatedEvent) updates) =>
       super.copyWith((message) => updates(message as ServiceClassUpdatedEvent))
           as ServiceClassUpdatedEvent;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ServiceClassUpdatedEvent create() => ServiceClassUpdatedEvent._();
+  @$core.override
   ServiceClassUpdatedEvent createEmptyInstance() => create();
-  static $pb.PbList<ServiceClassUpdatedEvent> createRepeated() =>
-      $pb.PbList<ServiceClassUpdatedEvent>();
   @$core.pragma('dart2js:noInline')
   static ServiceClassUpdatedEvent getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ServiceClassUpdatedEvent>(create);
@@ -489,38 +465,35 @@ class ServiceClassUpdatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $39.ServiceClassEventData get data => $_getN(0);
+  $0.ServiceClassEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($39.ServiceClassEventData v) {
-    $_setField(1, v);
-  }
-
+  set data($0.ServiceClassEventData value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
   void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $39.ServiceClassEventData ensureData() => $_ensure(0);
+  $0.ServiceClassEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a ServiceClass is deleted.
 class ServiceClassDeletedEvent extends $pb.GeneratedMessage {
   factory ServiceClassDeletedEvent({
-    $39.ServiceClassEventData? data,
+    $0.ServiceClassEventData? data,
   }) {
-    final $result = create();
-    if (data != null) {
-      $result.data = data;
-    }
-    return $result;
+    final result = create();
+    if (data != null) result.data = data;
+    return result;
   }
-  ServiceClassDeletedEvent._() : super();
-  factory ServiceClassDeletedEvent.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ServiceClassDeletedEvent.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  ServiceClassDeletedEvent._();
+
+  factory ServiceClassDeletedEvent.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ServiceClassDeletedEvent.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'ServiceClassDeletedEvent',
@@ -528,26 +501,25 @@ class ServiceClassDeletedEvent extends $pb.GeneratedMessage {
           ? ''
           : 'google.events.cloud.networkconnectivity.v1'),
       createEmptyInstance: create)
-    ..aOM<$39.ServiceClassEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $39.ServiceClassEventData.create)
+    ..aOM<$0.ServiceClassEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $0.ServiceClassEventData.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ServiceClassDeletedEvent clone() =>
-      ServiceClassDeletedEvent()..mergeFromMessage(this);
+  ServiceClassDeletedEvent clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceClassDeletedEvent copyWith(
           void Function(ServiceClassDeletedEvent) updates) =>
       super.copyWith((message) => updates(message as ServiceClassDeletedEvent))
           as ServiceClassDeletedEvent;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ServiceClassDeletedEvent create() => ServiceClassDeletedEvent._();
+  @$core.override
   ServiceClassDeletedEvent createEmptyInstance() => create();
-  static $pb.PbList<ServiceClassDeletedEvent> createRepeated() =>
-      $pb.PbList<ServiceClassDeletedEvent>();
   @$core.pragma('dart2js:noInline')
   static ServiceClassDeletedEvent getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ServiceClassDeletedEvent>(create);
@@ -555,38 +527,36 @@ class ServiceClassDeletedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $39.ServiceClassEventData get data => $_getN(0);
+  $0.ServiceClassEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($39.ServiceClassEventData v) {
-    $_setField(1, v);
-  }
-
+  set data($0.ServiceClassEventData value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
   void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $39.ServiceClassEventData ensureData() => $_ensure(0);
+  $0.ServiceClassEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a ServiceConnectionToken is created.
 class ServiceConnectionTokenCreatedEvent extends $pb.GeneratedMessage {
   factory ServiceConnectionTokenCreatedEvent({
-    $39.ServiceConnectionTokenEventData? data,
+    $0.ServiceConnectionTokenEventData? data,
   }) {
-    final $result = create();
-    if (data != null) {
-      $result.data = data;
-    }
-    return $result;
+    final result = create();
+    if (data != null) result.data = data;
+    return result;
   }
-  ServiceConnectionTokenCreatedEvent._() : super();
-  factory ServiceConnectionTokenCreatedEvent.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ServiceConnectionTokenCreatedEvent.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  ServiceConnectionTokenCreatedEvent._();
+
+  factory ServiceConnectionTokenCreatedEvent.fromBuffer(
+          $core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ServiceConnectionTokenCreatedEvent.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'ServiceConnectionTokenCreatedEvent',
@@ -594,13 +564,12 @@ class ServiceConnectionTokenCreatedEvent extends $pb.GeneratedMessage {
           ? ''
           : 'google.events.cloud.networkconnectivity.v1'),
       createEmptyInstance: create)
-    ..aOM<$39.ServiceConnectionTokenEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $39.ServiceConnectionTokenEventData.create)
+    ..aOM<$0.ServiceConnectionTokenEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $0.ServiceConnectionTokenEventData.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ServiceConnectionTokenCreatedEvent clone() =>
-      ServiceConnectionTokenCreatedEvent()..mergeFromMessage(this);
+  ServiceConnectionTokenCreatedEvent clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceConnectionTokenCreatedEvent copyWith(
           void Function(ServiceConnectionTokenCreatedEvent) updates) =>
@@ -608,14 +577,14 @@ class ServiceConnectionTokenCreatedEvent extends $pb.GeneratedMessage {
               updates(message as ServiceConnectionTokenCreatedEvent))
           as ServiceConnectionTokenCreatedEvent;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ServiceConnectionTokenCreatedEvent create() =>
       ServiceConnectionTokenCreatedEvent._();
+  @$core.override
   ServiceConnectionTokenCreatedEvent createEmptyInstance() => create();
-  static $pb.PbList<ServiceConnectionTokenCreatedEvent> createRepeated() =>
-      $pb.PbList<ServiceConnectionTokenCreatedEvent>();
   @$core.pragma('dart2js:noInline')
   static ServiceConnectionTokenCreatedEvent getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ServiceConnectionTokenCreatedEvent>(
@@ -624,38 +593,36 @@ class ServiceConnectionTokenCreatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $39.ServiceConnectionTokenEventData get data => $_getN(0);
+  $0.ServiceConnectionTokenEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($39.ServiceConnectionTokenEventData v) {
-    $_setField(1, v);
-  }
-
+  set data($0.ServiceConnectionTokenEventData value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
   void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $39.ServiceConnectionTokenEventData ensureData() => $_ensure(0);
+  $0.ServiceConnectionTokenEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a ServiceConnectionToken is deleted.
 class ServiceConnectionTokenDeletedEvent extends $pb.GeneratedMessage {
   factory ServiceConnectionTokenDeletedEvent({
-    $39.ServiceConnectionTokenEventData? data,
+    $0.ServiceConnectionTokenEventData? data,
   }) {
-    final $result = create();
-    if (data != null) {
-      $result.data = data;
-    }
-    return $result;
+    final result = create();
+    if (data != null) result.data = data;
+    return result;
   }
-  ServiceConnectionTokenDeletedEvent._() : super();
-  factory ServiceConnectionTokenDeletedEvent.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ServiceConnectionTokenDeletedEvent.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  ServiceConnectionTokenDeletedEvent._();
+
+  factory ServiceConnectionTokenDeletedEvent.fromBuffer(
+          $core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ServiceConnectionTokenDeletedEvent.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'ServiceConnectionTokenDeletedEvent',
@@ -663,13 +630,12 @@ class ServiceConnectionTokenDeletedEvent extends $pb.GeneratedMessage {
           ? ''
           : 'google.events.cloud.networkconnectivity.v1'),
       createEmptyInstance: create)
-    ..aOM<$39.ServiceConnectionTokenEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $39.ServiceConnectionTokenEventData.create)
+    ..aOM<$0.ServiceConnectionTokenEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $0.ServiceConnectionTokenEventData.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ServiceConnectionTokenDeletedEvent clone() =>
-      ServiceConnectionTokenDeletedEvent()..mergeFromMessage(this);
+  ServiceConnectionTokenDeletedEvent clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceConnectionTokenDeletedEvent copyWith(
           void Function(ServiceConnectionTokenDeletedEvent) updates) =>
@@ -677,14 +643,14 @@ class ServiceConnectionTokenDeletedEvent extends $pb.GeneratedMessage {
               updates(message as ServiceConnectionTokenDeletedEvent))
           as ServiceConnectionTokenDeletedEvent;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ServiceConnectionTokenDeletedEvent create() =>
       ServiceConnectionTokenDeletedEvent._();
+  @$core.override
   ServiceConnectionTokenDeletedEvent createEmptyInstance() => create();
-  static $pb.PbList<ServiceConnectionTokenDeletedEvent> createRepeated() =>
-      $pb.PbList<ServiceConnectionTokenDeletedEvent>();
   @$core.pragma('dart2js:noInline')
   static ServiceConnectionTokenDeletedEvent getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ServiceConnectionTokenDeletedEvent>(
@@ -693,38 +659,35 @@ class ServiceConnectionTokenDeletedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $39.ServiceConnectionTokenEventData get data => $_getN(0);
+  $0.ServiceConnectionTokenEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($39.ServiceConnectionTokenEventData v) {
-    $_setField(1, v);
-  }
-
+  set data($0.ServiceConnectionTokenEventData value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
   void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $39.ServiceConnectionTokenEventData ensureData() => $_ensure(0);
+  $0.ServiceConnectionTokenEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a Hub is created.
 class HubCreatedEvent extends $pb.GeneratedMessage {
   factory HubCreatedEvent({
-    $39.HubEventData? data,
+    $0.HubEventData? data,
   }) {
-    final $result = create();
-    if (data != null) {
-      $result.data = data;
-    }
-    return $result;
+    final result = create();
+    if (data != null) result.data = data;
+    return result;
   }
-  HubCreatedEvent._() : super();
-  factory HubCreatedEvent.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory HubCreatedEvent.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  HubCreatedEvent._();
+
+  factory HubCreatedEvent.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory HubCreatedEvent.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'HubCreatedEvent',
@@ -732,24 +695,24 @@ class HubCreatedEvent extends $pb.GeneratedMessage {
           ? ''
           : 'google.events.cloud.networkconnectivity.v1'),
       createEmptyInstance: create)
-    ..aOM<$39.HubEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $39.HubEventData.create)
+    ..aOM<$0.HubEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $0.HubEventData.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  HubCreatedEvent clone() => HubCreatedEvent()..mergeFromMessage(this);
+  HubCreatedEvent clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HubCreatedEvent copyWith(void Function(HubCreatedEvent) updates) =>
       super.copyWith((message) => updates(message as HubCreatedEvent))
           as HubCreatedEvent;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static HubCreatedEvent create() => HubCreatedEvent._();
+  @$core.override
   HubCreatedEvent createEmptyInstance() => create();
-  static $pb.PbList<HubCreatedEvent> createRepeated() =>
-      $pb.PbList<HubCreatedEvent>();
   @$core.pragma('dart2js:noInline')
   static HubCreatedEvent getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<HubCreatedEvent>(create);
@@ -757,38 +720,35 @@ class HubCreatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $39.HubEventData get data => $_getN(0);
+  $0.HubEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($39.HubEventData v) {
-    $_setField(1, v);
-  }
-
+  set data($0.HubEventData value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
   void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $39.HubEventData ensureData() => $_ensure(0);
+  $0.HubEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a Hub is updated.
 class HubUpdatedEvent extends $pb.GeneratedMessage {
   factory HubUpdatedEvent({
-    $39.HubEventData? data,
+    $0.HubEventData? data,
   }) {
-    final $result = create();
-    if (data != null) {
-      $result.data = data;
-    }
-    return $result;
+    final result = create();
+    if (data != null) result.data = data;
+    return result;
   }
-  HubUpdatedEvent._() : super();
-  factory HubUpdatedEvent.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory HubUpdatedEvent.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  HubUpdatedEvent._();
+
+  factory HubUpdatedEvent.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory HubUpdatedEvent.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'HubUpdatedEvent',
@@ -796,24 +756,24 @@ class HubUpdatedEvent extends $pb.GeneratedMessage {
           ? ''
           : 'google.events.cloud.networkconnectivity.v1'),
       createEmptyInstance: create)
-    ..aOM<$39.HubEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $39.HubEventData.create)
+    ..aOM<$0.HubEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $0.HubEventData.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  HubUpdatedEvent clone() => HubUpdatedEvent()..mergeFromMessage(this);
+  HubUpdatedEvent clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HubUpdatedEvent copyWith(void Function(HubUpdatedEvent) updates) =>
       super.copyWith((message) => updates(message as HubUpdatedEvent))
           as HubUpdatedEvent;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static HubUpdatedEvent create() => HubUpdatedEvent._();
+  @$core.override
   HubUpdatedEvent createEmptyInstance() => create();
-  static $pb.PbList<HubUpdatedEvent> createRepeated() =>
-      $pb.PbList<HubUpdatedEvent>();
   @$core.pragma('dart2js:noInline')
   static HubUpdatedEvent getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<HubUpdatedEvent>(create);
@@ -821,38 +781,35 @@ class HubUpdatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $39.HubEventData get data => $_getN(0);
+  $0.HubEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($39.HubEventData v) {
-    $_setField(1, v);
-  }
-
+  set data($0.HubEventData value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
   void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $39.HubEventData ensureData() => $_ensure(0);
+  $0.HubEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a Hub is deleted.
 class HubDeletedEvent extends $pb.GeneratedMessage {
   factory HubDeletedEvent({
-    $39.HubEventData? data,
+    $0.HubEventData? data,
   }) {
-    final $result = create();
-    if (data != null) {
-      $result.data = data;
-    }
-    return $result;
+    final result = create();
+    if (data != null) result.data = data;
+    return result;
   }
-  HubDeletedEvent._() : super();
-  factory HubDeletedEvent.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory HubDeletedEvent.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  HubDeletedEvent._();
+
+  factory HubDeletedEvent.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory HubDeletedEvent.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'HubDeletedEvent',
@@ -860,24 +817,24 @@ class HubDeletedEvent extends $pb.GeneratedMessage {
           ? ''
           : 'google.events.cloud.networkconnectivity.v1'),
       createEmptyInstance: create)
-    ..aOM<$39.HubEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $39.HubEventData.create)
+    ..aOM<$0.HubEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $0.HubEventData.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  HubDeletedEvent clone() => HubDeletedEvent()..mergeFromMessage(this);
+  HubDeletedEvent clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HubDeletedEvent copyWith(void Function(HubDeletedEvent) updates) =>
       super.copyWith((message) => updates(message as HubDeletedEvent))
           as HubDeletedEvent;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static HubDeletedEvent create() => HubDeletedEvent._();
+  @$core.override
   HubDeletedEvent createEmptyInstance() => create();
-  static $pb.PbList<HubDeletedEvent> createRepeated() =>
-      $pb.PbList<HubDeletedEvent>();
   @$core.pragma('dart2js:noInline')
   static HubDeletedEvent getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<HubDeletedEvent>(create);
@@ -885,38 +842,35 @@ class HubDeletedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $39.HubEventData get data => $_getN(0);
+  $0.HubEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($39.HubEventData v) {
-    $_setField(1, v);
-  }
-
+  set data($0.HubEventData value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
   void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $39.HubEventData ensureData() => $_ensure(0);
+  $0.HubEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a Spoke is created.
 class SpokeCreatedEvent extends $pb.GeneratedMessage {
   factory SpokeCreatedEvent({
-    $39.SpokeEventData? data,
+    $0.SpokeEventData? data,
   }) {
-    final $result = create();
-    if (data != null) {
-      $result.data = data;
-    }
-    return $result;
+    final result = create();
+    if (data != null) result.data = data;
+    return result;
   }
-  SpokeCreatedEvent._() : super();
-  factory SpokeCreatedEvent.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory SpokeCreatedEvent.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  SpokeCreatedEvent._();
+
+  factory SpokeCreatedEvent.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory SpokeCreatedEvent.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'SpokeCreatedEvent',
@@ -924,24 +878,24 @@ class SpokeCreatedEvent extends $pb.GeneratedMessage {
           ? ''
           : 'google.events.cloud.networkconnectivity.v1'),
       createEmptyInstance: create)
-    ..aOM<$39.SpokeEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $39.SpokeEventData.create)
+    ..aOM<$0.SpokeEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $0.SpokeEventData.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  SpokeCreatedEvent clone() => SpokeCreatedEvent()..mergeFromMessage(this);
+  SpokeCreatedEvent clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   SpokeCreatedEvent copyWith(void Function(SpokeCreatedEvent) updates) =>
       super.copyWith((message) => updates(message as SpokeCreatedEvent))
           as SpokeCreatedEvent;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SpokeCreatedEvent create() => SpokeCreatedEvent._();
+  @$core.override
   SpokeCreatedEvent createEmptyInstance() => create();
-  static $pb.PbList<SpokeCreatedEvent> createRepeated() =>
-      $pb.PbList<SpokeCreatedEvent>();
   @$core.pragma('dart2js:noInline')
   static SpokeCreatedEvent getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<SpokeCreatedEvent>(create);
@@ -949,38 +903,35 @@ class SpokeCreatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $39.SpokeEventData get data => $_getN(0);
+  $0.SpokeEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($39.SpokeEventData v) {
-    $_setField(1, v);
-  }
-
+  set data($0.SpokeEventData value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
   void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $39.SpokeEventData ensureData() => $_ensure(0);
+  $0.SpokeEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a Spoke is updated.
 class SpokeUpdatedEvent extends $pb.GeneratedMessage {
   factory SpokeUpdatedEvent({
-    $39.SpokeEventData? data,
+    $0.SpokeEventData? data,
   }) {
-    final $result = create();
-    if (data != null) {
-      $result.data = data;
-    }
-    return $result;
+    final result = create();
+    if (data != null) result.data = data;
+    return result;
   }
-  SpokeUpdatedEvent._() : super();
-  factory SpokeUpdatedEvent.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory SpokeUpdatedEvent.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  SpokeUpdatedEvent._();
+
+  factory SpokeUpdatedEvent.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory SpokeUpdatedEvent.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'SpokeUpdatedEvent',
@@ -988,24 +939,24 @@ class SpokeUpdatedEvent extends $pb.GeneratedMessage {
           ? ''
           : 'google.events.cloud.networkconnectivity.v1'),
       createEmptyInstance: create)
-    ..aOM<$39.SpokeEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $39.SpokeEventData.create)
+    ..aOM<$0.SpokeEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $0.SpokeEventData.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  SpokeUpdatedEvent clone() => SpokeUpdatedEvent()..mergeFromMessage(this);
+  SpokeUpdatedEvent clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   SpokeUpdatedEvent copyWith(void Function(SpokeUpdatedEvent) updates) =>
       super.copyWith((message) => updates(message as SpokeUpdatedEvent))
           as SpokeUpdatedEvent;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SpokeUpdatedEvent create() => SpokeUpdatedEvent._();
+  @$core.override
   SpokeUpdatedEvent createEmptyInstance() => create();
-  static $pb.PbList<SpokeUpdatedEvent> createRepeated() =>
-      $pb.PbList<SpokeUpdatedEvent>();
   @$core.pragma('dart2js:noInline')
   static SpokeUpdatedEvent getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<SpokeUpdatedEvent>(create);
@@ -1013,38 +964,35 @@ class SpokeUpdatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $39.SpokeEventData get data => $_getN(0);
+  $0.SpokeEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($39.SpokeEventData v) {
-    $_setField(1, v);
-  }
-
+  set data($0.SpokeEventData value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
   void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $39.SpokeEventData ensureData() => $_ensure(0);
+  $0.SpokeEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a Spoke is deleted.
 class SpokeDeletedEvent extends $pb.GeneratedMessage {
   factory SpokeDeletedEvent({
-    $39.SpokeEventData? data,
+    $0.SpokeEventData? data,
   }) {
-    final $result = create();
-    if (data != null) {
-      $result.data = data;
-    }
-    return $result;
+    final result = create();
+    if (data != null) result.data = data;
+    return result;
   }
-  SpokeDeletedEvent._() : super();
-  factory SpokeDeletedEvent.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory SpokeDeletedEvent.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  SpokeDeletedEvent._();
+
+  factory SpokeDeletedEvent.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory SpokeDeletedEvent.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'SpokeDeletedEvent',
@@ -1052,24 +1000,24 @@ class SpokeDeletedEvent extends $pb.GeneratedMessage {
           ? ''
           : 'google.events.cloud.networkconnectivity.v1'),
       createEmptyInstance: create)
-    ..aOM<$39.SpokeEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $39.SpokeEventData.create)
+    ..aOM<$0.SpokeEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $0.SpokeEventData.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  SpokeDeletedEvent clone() => SpokeDeletedEvent()..mergeFromMessage(this);
+  SpokeDeletedEvent clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   SpokeDeletedEvent copyWith(void Function(SpokeDeletedEvent) updates) =>
       super.copyWith((message) => updates(message as SpokeDeletedEvent))
           as SpokeDeletedEvent;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SpokeDeletedEvent create() => SpokeDeletedEvent._();
+  @$core.override
   SpokeDeletedEvent createEmptyInstance() => create();
-  static $pb.PbList<SpokeDeletedEvent> createRepeated() =>
-      $pb.PbList<SpokeDeletedEvent>();
   @$core.pragma('dart2js:noInline')
   static SpokeDeletedEvent getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<SpokeDeletedEvent>(create);
@@ -1077,20 +1025,18 @@ class SpokeDeletedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $39.SpokeEventData get data => $_getN(0);
+  $0.SpokeEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($39.SpokeEventData v) {
-    $_setField(1, v);
-  }
-
+  set data($0.SpokeEventData value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
   void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $39.SpokeEventData ensureData() => $_ensure(0);
+  $0.SpokeEventData ensureData() => $_ensure(0);
 }
 
-const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames =
+const $core.bool _omitFieldNames =
+    $core.bool.fromEnvironment('protobuf.omit_field_names');
+const $core.bool _omitMessageNames =
     $core.bool.fromEnvironment('protobuf.omit_message_names');

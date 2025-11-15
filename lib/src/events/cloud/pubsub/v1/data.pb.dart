@@ -1,19 +1,20 @@
+// This is a generated file - do not edit.
 //
-//  Generated code. Do not modify.
-//  source: google/events/cloud/pubsub/v1/data.proto
-//
+// Generated from google/events/cloud/pubsub/v1/data.proto.
+
 // @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
-// ignore_for_file: constant_identifier_names, library_prefixes
-// ignore_for_file: non_constant_identifier_names, prefer_final_fields
-// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
+// ignore_for_file: constant_identifier_names
+// ignore_for_file: curly_braces_in_flow_control_structures
+// ignore_for_file: deprecated_member_use_from_same_package, library_prefixes
+// ignore_for_file: non_constant_identifier_names
 
 import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/timestamp.pb.dart' as $2;
+import '../../../../protobuf/timestamp.pb.dart' as $0;
 
 export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
@@ -24,25 +25,21 @@ class MessagePublishedData extends $pb.GeneratedMessage {
     $core.String? subscription,
     $core.int? deliveryAttempt,
   }) {
-    final $result = create();
-    if (message != null) {
-      $result.message = message;
-    }
-    if (subscription != null) {
-      $result.subscription = subscription;
-    }
-    if (deliveryAttempt != null) {
-      $result.deliveryAttempt = deliveryAttempt;
-    }
-    return $result;
+    final result = create();
+    if (message != null) result.message = message;
+    if (subscription != null) result.subscription = subscription;
+    if (deliveryAttempt != null) result.deliveryAttempt = deliveryAttempt;
+    return result;
   }
-  MessagePublishedData._() : super();
-  factory MessagePublishedData.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory MessagePublishedData.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  MessagePublishedData._();
+
+  factory MessagePublishedData.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory MessagePublishedData.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'MessagePublishedData',
@@ -52,25 +49,23 @@ class MessagePublishedData extends $pb.GeneratedMessage {
     ..aOM<PubsubMessage>(1, _omitFieldNames ? '' : 'message',
         subBuilder: PubsubMessage.create)
     ..aOS(2, _omitFieldNames ? '' : 'subscription')
-    ..a<$core.int>(
-        3, _omitFieldNames ? '' : 'deliveryAttempt', $pb.PbFieldType.O3)
+    ..aI(3, _omitFieldNames ? '' : 'deliveryAttempt')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  MessagePublishedData clone() =>
-      MessagePublishedData()..mergeFromMessage(this);
+  MessagePublishedData clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MessagePublishedData copyWith(void Function(MessagePublishedData) updates) =>
       super.copyWith((message) => updates(message as MessagePublishedData))
           as MessagePublishedData;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static MessagePublishedData create() => MessagePublishedData._();
+  @$core.override
   MessagePublishedData createEmptyInstance() => create();
-  static $pb.PbList<MessagePublishedData> createRepeated() =>
-      $pb.PbList<MessagePublishedData>();
   @$core.pragma('dart2js:noInline')
   static MessagePublishedData getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<MessagePublishedData>(create);
@@ -80,10 +75,7 @@ class MessagePublishedData extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   PubsubMessage get message => $_getN(0);
   @$pb.TagNumber(1)
-  set message(PubsubMessage v) {
-    $_setField(1, v);
-  }
-
+  set message(PubsubMessage value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasMessage() => $_has(0);
   @$pb.TagNumber(1)
@@ -97,10 +89,7 @@ class MessagePublishedData extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get subscription => $_getSZ(1);
   @$pb.TagNumber(2)
-  set subscription($core.String v) {
-    $_setString(1, v);
-  }
-
+  set subscription($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasSubscription() => $_has(1);
   @$pb.TagNumber(2)
@@ -119,10 +108,7 @@ class MessagePublishedData extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.int get deliveryAttempt => $_getIZ(2);
   @$pb.TagNumber(3)
-  set deliveryAttempt($core.int v) {
-    $_setSignedInt32(2, v);
-  }
-
+  set deliveryAttempt($core.int value) => $_setSignedInt32(2, value);
   @$pb.TagNumber(3)
   $core.bool hasDeliveryAttempt() => $_has(2);
   @$pb.TagNumber(3)
@@ -135,34 +121,26 @@ class PubsubMessage extends $pb.GeneratedMessage {
     $core.List<$core.int>? data,
     $core.Iterable<$core.MapEntry<$core.String, $core.String>>? attributes,
     $core.String? messageId,
-    $2.Timestamp? publishTime,
+    $0.Timestamp? publishTime,
     $core.String? orderingKey,
   }) {
-    final $result = create();
-    if (data != null) {
-      $result.data = data;
-    }
-    if (attributes != null) {
-      $result.attributes.addEntries(attributes);
-    }
-    if (messageId != null) {
-      $result.messageId = messageId;
-    }
-    if (publishTime != null) {
-      $result.publishTime = publishTime;
-    }
-    if (orderingKey != null) {
-      $result.orderingKey = orderingKey;
-    }
-    return $result;
+    final result = create();
+    if (data != null) result.data = data;
+    if (attributes != null) result.attributes.addEntries(attributes);
+    if (messageId != null) result.messageId = messageId;
+    if (publishTime != null) result.publishTime = publishTime;
+    if (orderingKey != null) result.orderingKey = orderingKey;
+    return result;
   }
-  PubsubMessage._() : super();
-  factory PubsubMessage.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory PubsubMessage.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  PubsubMessage._();
+
+  factory PubsubMessage.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory PubsubMessage.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'PubsubMessage',
@@ -177,25 +155,25 @@ class PubsubMessage extends $pb.GeneratedMessage {
         valueFieldType: $pb.PbFieldType.OS,
         packageName: const $pb.PackageName('google.events.cloud.pubsub.v1'))
     ..aOS(3, _omitFieldNames ? '' : 'messageId')
-    ..aOM<$2.Timestamp>(4, _omitFieldNames ? '' : 'publishTime',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$0.Timestamp>(4, _omitFieldNames ? '' : 'publishTime',
+        subBuilder: $0.Timestamp.create)
     ..aOS(5, _omitFieldNames ? '' : 'orderingKey')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  PubsubMessage clone() => PubsubMessage()..mergeFromMessage(this);
+  PubsubMessage clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   PubsubMessage copyWith(void Function(PubsubMessage) updates) =>
       super.copyWith((message) => updates(message as PubsubMessage))
           as PubsubMessage;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static PubsubMessage create() => PubsubMessage._();
+  @$core.override
   PubsubMessage createEmptyInstance() => create();
-  static $pb.PbList<PubsubMessage> createRepeated() =>
-      $pb.PbList<PubsubMessage>();
   @$core.pragma('dart2js:noInline')
   static PubsubMessage getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<PubsubMessage>(create);
@@ -205,10 +183,7 @@ class PubsubMessage extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.List<$core.int> get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($core.List<$core.int> v) {
-    $_setBytes(0, v);
-  }
-
+  set data($core.List<$core.int> value) => $_setBytes(0, value);
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
@@ -223,10 +198,7 @@ class PubsubMessage extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get messageId => $_getSZ(2);
   @$pb.TagNumber(3)
-  set messageId($core.String v) {
-    $_setString(2, v);
-  }
-
+  set messageId($core.String value) => $_setString(2, value);
   @$pb.TagNumber(3)
   $core.bool hasMessageId() => $_has(2);
   @$pb.TagNumber(3)
@@ -235,34 +207,29 @@ class PubsubMessage extends $pb.GeneratedMessage {
   /// The time at which the message was published, populated by the server when
   /// it receives the `Publish` call.
   @$pb.TagNumber(4)
-  $2.Timestamp get publishTime => $_getN(3);
+  $0.Timestamp get publishTime => $_getN(3);
   @$pb.TagNumber(4)
-  set publishTime($2.Timestamp v) {
-    $_setField(4, v);
-  }
-
+  set publishTime($0.Timestamp value) => $_setField(4, value);
   @$pb.TagNumber(4)
   $core.bool hasPublishTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearPublishTime() => $_clearField(4);
   @$pb.TagNumber(4)
-  $2.Timestamp ensurePublishTime() => $_ensure(3);
+  $0.Timestamp ensurePublishTime() => $_ensure(3);
 
   /// If non-empty, identifies related messages for which publish order should be
   /// respected.
   @$pb.TagNumber(5)
   $core.String get orderingKey => $_getSZ(4);
   @$pb.TagNumber(5)
-  set orderingKey($core.String v) {
-    $_setString(4, v);
-  }
-
+  set orderingKey($core.String value) => $_setString(4, value);
   @$pb.TagNumber(5)
   $core.bool hasOrderingKey() => $_has(4);
   @$pb.TagNumber(5)
   void clearOrderingKey() => $_clearField(5);
 }
 
-const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames =
+const $core.bool _omitFieldNames =
+    $core.bool.fromEnvironment('protobuf.omit_field_names');
+const $core.bool _omitMessageNames =
     $core.bool.fromEnvironment('protobuf.omit_message_names');

@@ -1,22 +1,23 @@
+// This is a generated file - do not edit.
 //
-//  Generated code. Do not modify.
-//  source: google/events/cloud/clouddms/v1/data.proto
-//
+// Generated from google/events/cloud/clouddms/v1/data.proto.
+
 // @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
-// ignore_for_file: constant_identifier_names, library_prefixes
-// ignore_for_file: non_constant_identifier_names, prefer_final_fields
-// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
+// ignore_for_file: constant_identifier_names
+// ignore_for_file: curly_braces_in_flow_control_structures
+// ignore_for_file: deprecated_member_use_from_same_package, library_prefixes
+// ignore_for_file: non_constant_identifier_names
 
 import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/duration.pb.dart' as $0;
-import '../../../../protobuf/timestamp.pb.dart' as $2;
-import '../../../../protobuf/wrappers.pb.dart' as $21;
-import '../../../../rpc/status.pb.dart' as $9;
+import '../../../../protobuf/duration.pb.dart' as $2;
+import '../../../../protobuf/timestamp.pb.dart' as $0;
+import '../../../../protobuf/wrappers.pb.dart' as $1;
+import '../../../../rpc/status.pb.dart' as $3;
 import 'data.pbenum.dart';
 
 export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
@@ -28,43 +29,42 @@ class SslConfig extends $pb.GeneratedMessage {
   factory SslConfig({
     SslConfig_SslType? type,
   }) {
-    final $result = create();
-    if (type != null) {
-      $result.type = type;
-    }
-    return $result;
+    final result = create();
+    if (type != null) result.type = type;
+    return result;
   }
-  SslConfig._() : super();
-  factory SslConfig.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory SslConfig.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  SslConfig._();
+
+  factory SslConfig.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory SslConfig.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'SslConfig',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.clouddms.v1'),
       createEmptyInstance: create)
-    ..e<SslConfig_SslType>(1, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE,
-        defaultOrMaker: SslConfig_SslType.SSL_TYPE_UNSPECIFIED,
-        valueOf: SslConfig_SslType.valueOf,
+    ..aE<SslConfig_SslType>(1, _omitFieldNames ? '' : 'type',
         enumValues: SslConfig_SslType.values)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  SslConfig clone() => SslConfig()..mergeFromMessage(this);
+  SslConfig clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   SslConfig copyWith(void Function(SslConfig) updates) =>
       super.copyWith((message) => updates(message as SslConfig)) as SslConfig;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SslConfig create() => SslConfig._();
+  @$core.override
   SslConfig createEmptyInstance() => create();
-  static $pb.PbList<SslConfig> createRepeated() => $pb.PbList<SslConfig>();
   @$core.pragma('dart2js:noInline')
   static SslConfig getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SslConfig>(create);
@@ -75,10 +75,7 @@ class SslConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   SslConfig_SslType get type => $_getN(0);
   @$pb.TagNumber(1)
-  set type(SslConfig_SslType v) {
-    $_setField(1, v);
-  }
-
+  set type(SslConfig_SslType value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasType() => $_has(0);
   @$pb.TagNumber(1)
@@ -95,34 +92,24 @@ class MySqlConnectionProfile extends $pb.GeneratedMessage {
     SslConfig? ssl,
     $core.String? cloudSqlId,
   }) {
-    final $result = create();
-    if (host != null) {
-      $result.host = host;
-    }
-    if (port != null) {
-      $result.port = port;
-    }
-    if (username != null) {
-      $result.username = username;
-    }
-    if (passwordSet != null) {
-      $result.passwordSet = passwordSet;
-    }
-    if (ssl != null) {
-      $result.ssl = ssl;
-    }
-    if (cloudSqlId != null) {
-      $result.cloudSqlId = cloudSqlId;
-    }
-    return $result;
+    final result = create();
+    if (host != null) result.host = host;
+    if (port != null) result.port = port;
+    if (username != null) result.username = username;
+    if (passwordSet != null) result.passwordSet = passwordSet;
+    if (ssl != null) result.ssl = ssl;
+    if (cloudSqlId != null) result.cloudSqlId = cloudSqlId;
+    return result;
   }
-  MySqlConnectionProfile._() : super();
-  factory MySqlConnectionProfile.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory MySqlConnectionProfile.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  MySqlConnectionProfile._();
+
+  factory MySqlConnectionProfile.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory MySqlConnectionProfile.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'MySqlConnectionProfile',
@@ -130,7 +117,7 @@ class MySqlConnectionProfile extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.events.cloud.clouddms.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'host')
-    ..a<$core.int>(2, _omitFieldNames ? '' : 'port', $pb.PbFieldType.O3)
+    ..aI(2, _omitFieldNames ? '' : 'port')
     ..aOS(3, _omitFieldNames ? '' : 'username')
     ..aOB(5, _omitFieldNames ? '' : 'passwordSet')
     ..aOM<SslConfig>(6, _omitFieldNames ? '' : 'ssl',
@@ -139,21 +126,20 @@ class MySqlConnectionProfile extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  MySqlConnectionProfile clone() =>
-      MySqlConnectionProfile()..mergeFromMessage(this);
+  MySqlConnectionProfile clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MySqlConnectionProfile copyWith(
           void Function(MySqlConnectionProfile) updates) =>
       super.copyWith((message) => updates(message as MySqlConnectionProfile))
           as MySqlConnectionProfile;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static MySqlConnectionProfile create() => MySqlConnectionProfile._();
+  @$core.override
   MySqlConnectionProfile createEmptyInstance() => create();
-  static $pb.PbList<MySqlConnectionProfile> createRepeated() =>
-      $pb.PbList<MySqlConnectionProfile>();
   @$core.pragma('dart2js:noInline')
   static MySqlConnectionProfile getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<MySqlConnectionProfile>(create);
@@ -163,10 +149,7 @@ class MySqlConnectionProfile extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get host => $_getSZ(0);
   @$pb.TagNumber(1)
-  set host($core.String v) {
-    $_setString(0, v);
-  }
-
+  set host($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasHost() => $_has(0);
   @$pb.TagNumber(1)
@@ -176,10 +159,7 @@ class MySqlConnectionProfile extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get port => $_getIZ(1);
   @$pb.TagNumber(2)
-  set port($core.int v) {
-    $_setSignedInt32(1, v);
-  }
-
+  set port($core.int value) => $_setSignedInt32(1, value);
   @$pb.TagNumber(2)
   $core.bool hasPort() => $_has(1);
   @$pb.TagNumber(2)
@@ -191,10 +171,7 @@ class MySqlConnectionProfile extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get username => $_getSZ(2);
   @$pb.TagNumber(3)
-  set username($core.String v) {
-    $_setString(2, v);
-  }
-
+  set username($core.String value) => $_setString(2, value);
   @$pb.TagNumber(3)
   $core.bool hasUsername() => $_has(2);
   @$pb.TagNumber(3)
@@ -204,10 +181,7 @@ class MySqlConnectionProfile extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool get passwordSet => $_getBF(3);
   @$pb.TagNumber(5)
-  set passwordSet($core.bool v) {
-    $_setBool(3, v);
-  }
-
+  set passwordSet($core.bool value) => $_setBool(3, value);
   @$pb.TagNumber(5)
   $core.bool hasPasswordSet() => $_has(3);
   @$pb.TagNumber(5)
@@ -217,10 +191,7 @@ class MySqlConnectionProfile extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   SslConfig get ssl => $_getN(4);
   @$pb.TagNumber(6)
-  set ssl(SslConfig v) {
-    $_setField(6, v);
-  }
-
+  set ssl(SslConfig value) => $_setField(6, value);
   @$pb.TagNumber(6)
   $core.bool hasSsl() => $_has(4);
   @$pb.TagNumber(6)
@@ -233,10 +204,7 @@ class MySqlConnectionProfile extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get cloudSqlId => $_getSZ(5);
   @$pb.TagNumber(7)
-  set cloudSqlId($core.String v) {
-    $_setString(5, v);
-  }
-
+  set cloudSqlId($core.String value) => $_setString(5, value);
   @$pb.TagNumber(7)
   $core.bool hasCloudSqlId() => $_has(5);
   @$pb.TagNumber(7)
@@ -255,37 +223,26 @@ class PostgreSqlConnectionProfile extends $pb.GeneratedMessage {
     $core.String? cloudSqlId,
     NetworkArchitecture? networkArchitecture,
   }) {
-    final $result = create();
-    if (host != null) {
-      $result.host = host;
-    }
-    if (port != null) {
-      $result.port = port;
-    }
-    if (username != null) {
-      $result.username = username;
-    }
-    if (passwordSet != null) {
-      $result.passwordSet = passwordSet;
-    }
-    if (ssl != null) {
-      $result.ssl = ssl;
-    }
-    if (cloudSqlId != null) {
-      $result.cloudSqlId = cloudSqlId;
-    }
-    if (networkArchitecture != null) {
-      $result.networkArchitecture = networkArchitecture;
-    }
-    return $result;
+    final result = create();
+    if (host != null) result.host = host;
+    if (port != null) result.port = port;
+    if (username != null) result.username = username;
+    if (passwordSet != null) result.passwordSet = passwordSet;
+    if (ssl != null) result.ssl = ssl;
+    if (cloudSqlId != null) result.cloudSqlId = cloudSqlId;
+    if (networkArchitecture != null)
+      result.networkArchitecture = networkArchitecture;
+    return result;
   }
-  PostgreSqlConnectionProfile._() : super();
-  factory PostgreSqlConnectionProfile.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory PostgreSqlConnectionProfile.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  PostgreSqlConnectionProfile._();
+
+  factory PostgreSqlConnectionProfile.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory PostgreSqlConnectionProfile.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'PostgreSqlConnectionProfile',
@@ -293,22 +250,18 @@ class PostgreSqlConnectionProfile extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.events.cloud.clouddms.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'host')
-    ..a<$core.int>(2, _omitFieldNames ? '' : 'port', $pb.PbFieldType.O3)
+    ..aI(2, _omitFieldNames ? '' : 'port')
     ..aOS(3, _omitFieldNames ? '' : 'username')
     ..aOB(5, _omitFieldNames ? '' : 'passwordSet')
     ..aOM<SslConfig>(6, _omitFieldNames ? '' : 'ssl',
         subBuilder: SslConfig.create)
     ..aOS(7, _omitFieldNames ? '' : 'cloudSqlId')
-    ..e<NetworkArchitecture>(
-        8, _omitFieldNames ? '' : 'networkArchitecture', $pb.PbFieldType.OE,
-        defaultOrMaker: NetworkArchitecture.NETWORK_ARCHITECTURE_UNSPECIFIED,
-        valueOf: NetworkArchitecture.valueOf,
+    ..aE<NetworkArchitecture>(8, _omitFieldNames ? '' : 'networkArchitecture',
         enumValues: NetworkArchitecture.values)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  PostgreSqlConnectionProfile clone() =>
-      PostgreSqlConnectionProfile()..mergeFromMessage(this);
+  PostgreSqlConnectionProfile clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   PostgreSqlConnectionProfile copyWith(
           void Function(PostgreSqlConnectionProfile) updates) =>
@@ -316,14 +269,14 @@ class PostgreSqlConnectionProfile extends $pb.GeneratedMessage {
               (message) => updates(message as PostgreSqlConnectionProfile))
           as PostgreSqlConnectionProfile;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static PostgreSqlConnectionProfile create() =>
       PostgreSqlConnectionProfile._();
+  @$core.override
   PostgreSqlConnectionProfile createEmptyInstance() => create();
-  static $pb.PbList<PostgreSqlConnectionProfile> createRepeated() =>
-      $pb.PbList<PostgreSqlConnectionProfile>();
   @$core.pragma('dart2js:noInline')
   static PostgreSqlConnectionProfile getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<PostgreSqlConnectionProfile>(create);
@@ -333,10 +286,7 @@ class PostgreSqlConnectionProfile extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get host => $_getSZ(0);
   @$pb.TagNumber(1)
-  set host($core.String v) {
-    $_setString(0, v);
-  }
-
+  set host($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasHost() => $_has(0);
   @$pb.TagNumber(1)
@@ -346,10 +296,7 @@ class PostgreSqlConnectionProfile extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get port => $_getIZ(1);
   @$pb.TagNumber(2)
-  set port($core.int v) {
-    $_setSignedInt32(1, v);
-  }
-
+  set port($core.int value) => $_setSignedInt32(1, value);
   @$pb.TagNumber(2)
   $core.bool hasPort() => $_has(1);
   @$pb.TagNumber(2)
@@ -361,10 +308,7 @@ class PostgreSqlConnectionProfile extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get username => $_getSZ(2);
   @$pb.TagNumber(3)
-  set username($core.String v) {
-    $_setString(2, v);
-  }
-
+  set username($core.String value) => $_setString(2, value);
   @$pb.TagNumber(3)
   $core.bool hasUsername() => $_has(2);
   @$pb.TagNumber(3)
@@ -374,10 +318,7 @@ class PostgreSqlConnectionProfile extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool get passwordSet => $_getBF(3);
   @$pb.TagNumber(5)
-  set passwordSet($core.bool v) {
-    $_setBool(3, v);
-  }
-
+  set passwordSet($core.bool value) => $_setBool(3, value);
   @$pb.TagNumber(5)
   $core.bool hasPasswordSet() => $_has(3);
   @$pb.TagNumber(5)
@@ -387,10 +328,7 @@ class PostgreSqlConnectionProfile extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   SslConfig get ssl => $_getN(4);
   @$pb.TagNumber(6)
-  set ssl(SslConfig v) {
-    $_setField(6, v);
-  }
-
+  set ssl(SslConfig value) => $_setField(6, value);
   @$pb.TagNumber(6)
   $core.bool hasSsl() => $_has(4);
   @$pb.TagNumber(6)
@@ -403,10 +341,7 @@ class PostgreSqlConnectionProfile extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get cloudSqlId => $_getSZ(5);
   @$pb.TagNumber(7)
-  set cloudSqlId($core.String v) {
-    $_setString(5, v);
-  }
-
+  set cloudSqlId($core.String value) => $_setString(5, value);
   @$pb.TagNumber(7)
   $core.bool hasCloudSqlId() => $_has(5);
   @$pb.TagNumber(7)
@@ -417,10 +352,7 @@ class PostgreSqlConnectionProfile extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   NetworkArchitecture get networkArchitecture => $_getN(6);
   @$pb.TagNumber(8)
-  set networkArchitecture(NetworkArchitecture v) {
-    $_setField(8, v);
-  }
-
+  set networkArchitecture(NetworkArchitecture value) => $_setField(8, value);
   @$pb.TagNumber(8)
   $core.bool hasNetworkArchitecture() => $_has(6);
   @$pb.TagNumber(8)
@@ -437,31 +369,24 @@ class CloudSqlConnectionProfile extends $pb.GeneratedMessage {
     $core.String? publicIp,
     $core.String? additionalPublicIp,
   }) {
-    final $result = create();
-    if (cloudSqlId != null) {
-      $result.cloudSqlId = cloudSqlId;
-    }
-    if (settings != null) {
-      $result.settings = settings;
-    }
-    if (privateIp != null) {
-      $result.privateIp = privateIp;
-    }
-    if (publicIp != null) {
-      $result.publicIp = publicIp;
-    }
-    if (additionalPublicIp != null) {
-      $result.additionalPublicIp = additionalPublicIp;
-    }
-    return $result;
+    final result = create();
+    if (cloudSqlId != null) result.cloudSqlId = cloudSqlId;
+    if (settings != null) result.settings = settings;
+    if (privateIp != null) result.privateIp = privateIp;
+    if (publicIp != null) result.publicIp = publicIp;
+    if (additionalPublicIp != null)
+      result.additionalPublicIp = additionalPublicIp;
+    return result;
   }
-  CloudSqlConnectionProfile._() : super();
-  factory CloudSqlConnectionProfile.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory CloudSqlConnectionProfile.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  CloudSqlConnectionProfile._();
+
+  factory CloudSqlConnectionProfile.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory CloudSqlConnectionProfile.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'CloudSqlConnectionProfile',
@@ -477,21 +402,20 @@ class CloudSqlConnectionProfile extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  CloudSqlConnectionProfile clone() =>
-      CloudSqlConnectionProfile()..mergeFromMessage(this);
+  CloudSqlConnectionProfile clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CloudSqlConnectionProfile copyWith(
           void Function(CloudSqlConnectionProfile) updates) =>
       super.copyWith((message) => updates(message as CloudSqlConnectionProfile))
           as CloudSqlConnectionProfile;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CloudSqlConnectionProfile create() => CloudSqlConnectionProfile._();
+  @$core.override
   CloudSqlConnectionProfile createEmptyInstance() => create();
-  static $pb.PbList<CloudSqlConnectionProfile> createRepeated() =>
-      $pb.PbList<CloudSqlConnectionProfile>();
   @$core.pragma('dart2js:noInline')
   static CloudSqlConnectionProfile getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<CloudSqlConnectionProfile>(create);
@@ -502,10 +426,7 @@ class CloudSqlConnectionProfile extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get cloudSqlId => $_getSZ(0);
   @$pb.TagNumber(1)
-  set cloudSqlId($core.String v) {
-    $_setString(0, v);
-  }
-
+  set cloudSqlId($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasCloudSqlId() => $_has(0);
   @$pb.TagNumber(1)
@@ -515,10 +436,7 @@ class CloudSqlConnectionProfile extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   CloudSqlSettings get settings => $_getN(1);
   @$pb.TagNumber(2)
-  set settings(CloudSqlSettings v) {
-    $_setField(2, v);
-  }
-
+  set settings(CloudSqlSettings value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasSettings() => $_has(1);
   @$pb.TagNumber(2)
@@ -530,10 +448,7 @@ class CloudSqlConnectionProfile extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get privateIp => $_getSZ(2);
   @$pb.TagNumber(3)
-  set privateIp($core.String v) {
-    $_setString(2, v);
-  }
-
+  set privateIp($core.String value) => $_setString(2, value);
   @$pb.TagNumber(3)
   $core.bool hasPrivateIp() => $_has(2);
   @$pb.TagNumber(3)
@@ -543,10 +458,7 @@ class CloudSqlConnectionProfile extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get publicIp => $_getSZ(3);
   @$pb.TagNumber(4)
-  set publicIp($core.String v) {
-    $_setString(3, v);
-  }
-
+  set publicIp($core.String value) => $_setString(3, value);
   @$pb.TagNumber(4)
   $core.bool hasPublicIp() => $_has(3);
   @$pb.TagNumber(4)
@@ -558,10 +470,7 @@ class CloudSqlConnectionProfile extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get additionalPublicIp => $_getSZ(4);
   @$pb.TagNumber(5)
-  set additionalPublicIp($core.String v) {
-    $_setString(4, v);
-  }
-
+  set additionalPublicIp($core.String value) => $_setString(4, value);
   @$pb.TagNumber(5)
   $core.bool hasAdditionalPublicIp() => $_has(4);
   @$pb.TagNumber(5)
@@ -575,22 +484,20 @@ class AlloyDbConnectionProfile extends $pb.GeneratedMessage {
     $core.String? clusterId,
     AlloyDbSettings? settings,
   }) {
-    final $result = create();
-    if (clusterId != null) {
-      $result.clusterId = clusterId;
-    }
-    if (settings != null) {
-      $result.settings = settings;
-    }
-    return $result;
+    final result = create();
+    if (clusterId != null) result.clusterId = clusterId;
+    if (settings != null) result.settings = settings;
+    return result;
   }
-  AlloyDbConnectionProfile._() : super();
-  factory AlloyDbConnectionProfile.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory AlloyDbConnectionProfile.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  AlloyDbConnectionProfile._();
+
+  factory AlloyDbConnectionProfile.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory AlloyDbConnectionProfile.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'AlloyDbConnectionProfile',
@@ -603,21 +510,20 @@ class AlloyDbConnectionProfile extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  AlloyDbConnectionProfile clone() =>
-      AlloyDbConnectionProfile()..mergeFromMessage(this);
+  AlloyDbConnectionProfile clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AlloyDbConnectionProfile copyWith(
           void Function(AlloyDbConnectionProfile) updates) =>
       super.copyWith((message) => updates(message as AlloyDbConnectionProfile))
           as AlloyDbConnectionProfile;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AlloyDbConnectionProfile create() => AlloyDbConnectionProfile._();
+  @$core.override
   AlloyDbConnectionProfile createEmptyInstance() => create();
-  static $pb.PbList<AlloyDbConnectionProfile> createRepeated() =>
-      $pb.PbList<AlloyDbConnectionProfile>();
   @$core.pragma('dart2js:noInline')
   static AlloyDbConnectionProfile getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<AlloyDbConnectionProfile>(create);
@@ -628,10 +534,7 @@ class AlloyDbConnectionProfile extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get clusterId => $_getSZ(0);
   @$pb.TagNumber(1)
-  set clusterId($core.String v) {
-    $_setString(0, v);
-  }
-
+  set clusterId($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasClusterId() => $_has(0);
   @$pb.TagNumber(1)
@@ -641,10 +544,7 @@ class AlloyDbConnectionProfile extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   AlloyDbSettings get settings => $_getN(1);
   @$pb.TagNumber(2)
-  set settings(AlloyDbSettings v) {
-    $_setField(2, v);
-  }
-
+  set settings(AlloyDbSettings value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasSettings() => $_has(1);
   @$pb.TagNumber(2)
@@ -660,27 +560,23 @@ class SqlAclEntry extends $pb.GeneratedMessage {
   factory SqlAclEntry({
     $core.String? value,
     $core.String? label,
-    $2.Timestamp? expireTime,
+    $0.Timestamp? expireTime,
   }) {
-    final $result = create();
-    if (value != null) {
-      $result.value = value;
-    }
-    if (label != null) {
-      $result.label = label;
-    }
-    if (expireTime != null) {
-      $result.expireTime = expireTime;
-    }
-    return $result;
+    final result = create();
+    if (value != null) result.value = value;
+    if (label != null) result.label = label;
+    if (expireTime != null) result.expireTime = expireTime;
+    return result;
   }
-  SqlAclEntry._() : super();
-  factory SqlAclEntry.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory SqlAclEntry.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  SqlAclEntry._();
+
+  factory SqlAclEntry.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory SqlAclEntry.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static const $core.Map<$core.int, SqlAclEntry_Expiration>
       _SqlAclEntry_ExpirationByTag = {
@@ -695,40 +591,40 @@ class SqlAclEntry extends $pb.GeneratedMessage {
     ..oo(0, [10])
     ..aOS(1, _omitFieldNames ? '' : 'value')
     ..aOS(3, _omitFieldNames ? '' : 'label')
-    ..aOM<$2.Timestamp>(10, _omitFieldNames ? '' : 'expireTime',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$0.Timestamp>(10, _omitFieldNames ? '' : 'expireTime',
+        subBuilder: $0.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  SqlAclEntry clone() => SqlAclEntry()..mergeFromMessage(this);
+  SqlAclEntry clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   SqlAclEntry copyWith(void Function(SqlAclEntry) updates) =>
       super.copyWith((message) => updates(message as SqlAclEntry))
           as SqlAclEntry;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SqlAclEntry create() => SqlAclEntry._();
+  @$core.override
   SqlAclEntry createEmptyInstance() => create();
-  static $pb.PbList<SqlAclEntry> createRepeated() => $pb.PbList<SqlAclEntry>();
   @$core.pragma('dart2js:noInline')
   static SqlAclEntry getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<SqlAclEntry>(create);
   static SqlAclEntry? _defaultInstance;
 
+  @$pb.TagNumber(10)
   SqlAclEntry_Expiration whichExpiration() =>
       _SqlAclEntry_ExpirationByTag[$_whichOneof(0)]!;
+  @$pb.TagNumber(10)
   void clearExpiration() => $_clearField($_whichOneof(0));
 
   /// The allowlisted value for the access control list.
   @$pb.TagNumber(1)
   $core.String get value => $_getSZ(0);
   @$pb.TagNumber(1)
-  set value($core.String v) {
-    $_setString(0, v);
-  }
-
+  set value($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasValue() => $_has(0);
   @$pb.TagNumber(1)
@@ -738,10 +634,7 @@ class SqlAclEntry extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get label => $_getSZ(1);
   @$pb.TagNumber(3)
-  set label($core.String v) {
-    $_setString(1, v);
-  }
-
+  set label($core.String value) => $_setString(1, value);
   @$pb.TagNumber(3)
   $core.bool hasLabel() => $_has(1);
   @$pb.TagNumber(3)
@@ -751,79 +644,71 @@ class SqlAclEntry extends $pb.GeneratedMessage {
   /// [RFC 3339](https://tools.ietf.org/html/rfc3339) format, for example:
   /// `2012-11-15T16:19:00.094Z`.
   @$pb.TagNumber(10)
-  $2.Timestamp get expireTime => $_getN(2);
+  $0.Timestamp get expireTime => $_getN(2);
   @$pb.TagNumber(10)
-  set expireTime($2.Timestamp v) {
-    $_setField(10, v);
-  }
-
+  set expireTime($0.Timestamp value) => $_setField(10, value);
   @$pb.TagNumber(10)
   $core.bool hasExpireTime() => $_has(2);
   @$pb.TagNumber(10)
   void clearExpireTime() => $_clearField(10);
   @$pb.TagNumber(10)
-  $2.Timestamp ensureExpireTime() => $_ensure(2);
+  $0.Timestamp ensureExpireTime() => $_ensure(2);
 }
 
 /// IP Management configuration.
 class SqlIpConfig extends $pb.GeneratedMessage {
   factory SqlIpConfig({
-    $21.BoolValue? enableIpv4,
+    $1.BoolValue? enableIpv4,
     $core.String? privateNetwork,
-    $21.BoolValue? requireSsl,
+    $1.BoolValue? requireSsl,
     $core.Iterable<SqlAclEntry>? authorizedNetworks,
   }) {
-    final $result = create();
-    if (enableIpv4 != null) {
-      $result.enableIpv4 = enableIpv4;
-    }
-    if (privateNetwork != null) {
-      $result.privateNetwork = privateNetwork;
-    }
-    if (requireSsl != null) {
-      $result.requireSsl = requireSsl;
-    }
-    if (authorizedNetworks != null) {
-      $result.authorizedNetworks.addAll(authorizedNetworks);
-    }
-    return $result;
+    final result = create();
+    if (enableIpv4 != null) result.enableIpv4 = enableIpv4;
+    if (privateNetwork != null) result.privateNetwork = privateNetwork;
+    if (requireSsl != null) result.requireSsl = requireSsl;
+    if (authorizedNetworks != null)
+      result.authorizedNetworks.addAll(authorizedNetworks);
+    return result;
   }
-  SqlIpConfig._() : super();
-  factory SqlIpConfig.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory SqlIpConfig.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  SqlIpConfig._();
+
+  factory SqlIpConfig.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory SqlIpConfig.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'SqlIpConfig',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.clouddms.v1'),
       createEmptyInstance: create)
-    ..aOM<$21.BoolValue>(1, _omitFieldNames ? '' : 'enableIpv4',
-        subBuilder: $21.BoolValue.create)
+    ..aOM<$1.BoolValue>(1, _omitFieldNames ? '' : 'enableIpv4',
+        subBuilder: $1.BoolValue.create)
     ..aOS(2, _omitFieldNames ? '' : 'privateNetwork')
-    ..aOM<$21.BoolValue>(3, _omitFieldNames ? '' : 'requireSsl',
-        subBuilder: $21.BoolValue.create)
-    ..pc<SqlAclEntry>(
-        4, _omitFieldNames ? '' : 'authorizedNetworks', $pb.PbFieldType.PM,
+    ..aOM<$1.BoolValue>(3, _omitFieldNames ? '' : 'requireSsl',
+        subBuilder: $1.BoolValue.create)
+    ..pPM<SqlAclEntry>(4, _omitFieldNames ? '' : 'authorizedNetworks',
         subBuilder: SqlAclEntry.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  SqlIpConfig clone() => SqlIpConfig()..mergeFromMessage(this);
+  SqlIpConfig clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   SqlIpConfig copyWith(void Function(SqlIpConfig) updates) =>
       super.copyWith((message) => updates(message as SqlIpConfig))
           as SqlIpConfig;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SqlIpConfig create() => SqlIpConfig._();
+  @$core.override
   SqlIpConfig createEmptyInstance() => create();
-  static $pb.PbList<SqlIpConfig> createRepeated() => $pb.PbList<SqlIpConfig>();
   @$core.pragma('dart2js:noInline')
   static SqlIpConfig getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<SqlIpConfig>(create);
@@ -831,18 +716,15 @@ class SqlIpConfig extends $pb.GeneratedMessage {
 
   /// Whether the instance should be assigned an IPv4 address or not.
   @$pb.TagNumber(1)
-  $21.BoolValue get enableIpv4 => $_getN(0);
+  $1.BoolValue get enableIpv4 => $_getN(0);
   @$pb.TagNumber(1)
-  set enableIpv4($21.BoolValue v) {
-    $_setField(1, v);
-  }
-
+  set enableIpv4($1.BoolValue value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasEnableIpv4() => $_has(0);
   @$pb.TagNumber(1)
   void clearEnableIpv4() => $_clearField(1);
   @$pb.TagNumber(1)
-  $21.BoolValue ensureEnableIpv4() => $_ensure(0);
+  $1.BoolValue ensureEnableIpv4() => $_ensure(0);
 
   /// The resource link for the VPC network from which the Cloud SQL instance is
   /// accessible for private IP. For example,
@@ -851,10 +733,7 @@ class SqlIpConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get privateNetwork => $_getSZ(1);
   @$pb.TagNumber(2)
-  set privateNetwork($core.String v) {
-    $_setString(1, v);
-  }
-
+  set privateNetwork($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasPrivateNetwork() => $_has(1);
   @$pb.TagNumber(2)
@@ -862,18 +741,15 @@ class SqlIpConfig extends $pb.GeneratedMessage {
 
   /// Whether SSL connections over IP should be enforced or not.
   @$pb.TagNumber(3)
-  $21.BoolValue get requireSsl => $_getN(2);
+  $1.BoolValue get requireSsl => $_getN(2);
   @$pb.TagNumber(3)
-  set requireSsl($21.BoolValue v) {
-    $_setField(3, v);
-  }
-
+  set requireSsl($1.BoolValue value) => $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasRequireSsl() => $_has(2);
   @$pb.TagNumber(3)
   void clearRequireSsl() => $_clearField(3);
   @$pb.TagNumber(3)
-  $21.BoolValue ensureRequireSsl() => $_ensure(2);
+  $1.BoolValue ensureRequireSsl() => $_ensure(2);
 
   /// The list of external networks that are allowed to connect to the instance
   /// using the IP. See
@@ -889,13 +765,13 @@ class CloudSqlSettings extends $pb.GeneratedMessage {
     CloudSqlSettings_SqlDatabaseVersion? databaseVersion,
     $core.Iterable<$core.MapEntry<$core.String, $core.String>>? userLabels,
     $core.String? tier,
-    $21.Int64Value? storageAutoResizeLimit,
+    $1.Int64Value? storageAutoResizeLimit,
     CloudSqlSettings_SqlActivationPolicy? activationPolicy,
     SqlIpConfig? ipConfig,
-    $21.BoolValue? autoStorageIncrease,
+    $1.BoolValue? autoStorageIncrease,
     $core.Iterable<$core.MapEntry<$core.String, $core.String>>? databaseFlags,
     CloudSqlSettings_SqlDataDiskType? dataDiskType,
-    $21.Int64Value? dataDiskSizeGb,
+    $1.Int64Value? dataDiskSizeGb,
     $core.String? zone,
     $core.String? sourceId,
     $core.bool? rootPasswordSet,
@@ -904,78 +780,45 @@ class CloudSqlSettings extends $pb.GeneratedMessage {
     CloudSqlSettings_SqlAvailabilityType? availabilityType,
     $core.String? secondaryZone,
   }) {
-    final $result = create();
-    if (databaseVersion != null) {
-      $result.databaseVersion = databaseVersion;
-    }
-    if (userLabels != null) {
-      $result.userLabels.addEntries(userLabels);
-    }
-    if (tier != null) {
-      $result.tier = tier;
-    }
-    if (storageAutoResizeLimit != null) {
-      $result.storageAutoResizeLimit = storageAutoResizeLimit;
-    }
-    if (activationPolicy != null) {
-      $result.activationPolicy = activationPolicy;
-    }
-    if (ipConfig != null) {
-      $result.ipConfig = ipConfig;
-    }
-    if (autoStorageIncrease != null) {
-      $result.autoStorageIncrease = autoStorageIncrease;
-    }
-    if (databaseFlags != null) {
-      $result.databaseFlags.addEntries(databaseFlags);
-    }
-    if (dataDiskType != null) {
-      $result.dataDiskType = dataDiskType;
-    }
-    if (dataDiskSizeGb != null) {
-      $result.dataDiskSizeGb = dataDiskSizeGb;
-    }
-    if (zone != null) {
-      $result.zone = zone;
-    }
-    if (sourceId != null) {
-      $result.sourceId = sourceId;
-    }
-    if (rootPasswordSet != null) {
-      $result.rootPasswordSet = rootPasswordSet;
-    }
-    if (collation != null) {
-      $result.collation = collation;
-    }
-    if (cmekKeyName != null) {
-      $result.cmekKeyName = cmekKeyName;
-    }
-    if (availabilityType != null) {
-      $result.availabilityType = availabilityType;
-    }
-    if (secondaryZone != null) {
-      $result.secondaryZone = secondaryZone;
-    }
-    return $result;
+    final result = create();
+    if (databaseVersion != null) result.databaseVersion = databaseVersion;
+    if (userLabels != null) result.userLabels.addEntries(userLabels);
+    if (tier != null) result.tier = tier;
+    if (storageAutoResizeLimit != null)
+      result.storageAutoResizeLimit = storageAutoResizeLimit;
+    if (activationPolicy != null) result.activationPolicy = activationPolicy;
+    if (ipConfig != null) result.ipConfig = ipConfig;
+    if (autoStorageIncrease != null)
+      result.autoStorageIncrease = autoStorageIncrease;
+    if (databaseFlags != null) result.databaseFlags.addEntries(databaseFlags);
+    if (dataDiskType != null) result.dataDiskType = dataDiskType;
+    if (dataDiskSizeGb != null) result.dataDiskSizeGb = dataDiskSizeGb;
+    if (zone != null) result.zone = zone;
+    if (sourceId != null) result.sourceId = sourceId;
+    if (rootPasswordSet != null) result.rootPasswordSet = rootPasswordSet;
+    if (collation != null) result.collation = collation;
+    if (cmekKeyName != null) result.cmekKeyName = cmekKeyName;
+    if (availabilityType != null) result.availabilityType = availabilityType;
+    if (secondaryZone != null) result.secondaryZone = secondaryZone;
+    return result;
   }
-  CloudSqlSettings._() : super();
-  factory CloudSqlSettings.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory CloudSqlSettings.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  CloudSqlSettings._();
+
+  factory CloudSqlSettings.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory CloudSqlSettings.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'CloudSqlSettings',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.clouddms.v1'),
       createEmptyInstance: create)
-    ..e<CloudSqlSettings_SqlDatabaseVersion>(
-        1, _omitFieldNames ? '' : 'databaseVersion', $pb.PbFieldType.OE,
-        defaultOrMaker: CloudSqlSettings_SqlDatabaseVersion
-            .SQL_DATABASE_VERSION_UNSPECIFIED,
-        valueOf: CloudSqlSettings_SqlDatabaseVersion.valueOf,
+    ..aE<CloudSqlSettings_SqlDatabaseVersion>(
+        1, _omitFieldNames ? '' : 'databaseVersion',
         enumValues: CloudSqlSettings_SqlDatabaseVersion.values)
     ..m<$core.String, $core.String>(2, _omitFieldNames ? '' : 'userLabels',
         entryClassName: 'CloudSqlSettings.UserLabelsEntry',
@@ -983,59 +826,50 @@ class CloudSqlSettings extends $pb.GeneratedMessage {
         valueFieldType: $pb.PbFieldType.OS,
         packageName: const $pb.PackageName('google.events.cloud.clouddms.v1'))
     ..aOS(3, _omitFieldNames ? '' : 'tier')
-    ..aOM<$21.Int64Value>(4, _omitFieldNames ? '' : 'storageAutoResizeLimit',
-        subBuilder: $21.Int64Value.create)
-    ..e<CloudSqlSettings_SqlActivationPolicy>(
-        5, _omitFieldNames ? '' : 'activationPolicy', $pb.PbFieldType.OE,
-        defaultOrMaker: CloudSqlSettings_SqlActivationPolicy
-            .SQL_ACTIVATION_POLICY_UNSPECIFIED,
-        valueOf: CloudSqlSettings_SqlActivationPolicy.valueOf,
+    ..aOM<$1.Int64Value>(4, _omitFieldNames ? '' : 'storageAutoResizeLimit',
+        subBuilder: $1.Int64Value.create)
+    ..aE<CloudSqlSettings_SqlActivationPolicy>(
+        5, _omitFieldNames ? '' : 'activationPolicy',
         enumValues: CloudSqlSettings_SqlActivationPolicy.values)
     ..aOM<SqlIpConfig>(6, _omitFieldNames ? '' : 'ipConfig',
         subBuilder: SqlIpConfig.create)
-    ..aOM<$21.BoolValue>(7, _omitFieldNames ? '' : 'autoStorageIncrease',
-        subBuilder: $21.BoolValue.create)
+    ..aOM<$1.BoolValue>(7, _omitFieldNames ? '' : 'autoStorageIncrease',
+        subBuilder: $1.BoolValue.create)
     ..m<$core.String, $core.String>(8, _omitFieldNames ? '' : 'databaseFlags',
         entryClassName: 'CloudSqlSettings.DatabaseFlagsEntry',
         keyFieldType: $pb.PbFieldType.OS,
         valueFieldType: $pb.PbFieldType.OS,
         packageName: const $pb.PackageName('google.events.cloud.clouddms.v1'))
-    ..e<CloudSqlSettings_SqlDataDiskType>(
-        9, _omitFieldNames ? '' : 'dataDiskType', $pb.PbFieldType.OE,
-        defaultOrMaker:
-            CloudSqlSettings_SqlDataDiskType.SQL_DATA_DISK_TYPE_UNSPECIFIED,
-        valueOf: CloudSqlSettings_SqlDataDiskType.valueOf,
+    ..aE<CloudSqlSettings_SqlDataDiskType>(
+        9, _omitFieldNames ? '' : 'dataDiskType',
         enumValues: CloudSqlSettings_SqlDataDiskType.values)
-    ..aOM<$21.Int64Value>(10, _omitFieldNames ? '' : 'dataDiskSizeGb',
-        subBuilder: $21.Int64Value.create)
+    ..aOM<$1.Int64Value>(10, _omitFieldNames ? '' : 'dataDiskSizeGb',
+        subBuilder: $1.Int64Value.create)
     ..aOS(11, _omitFieldNames ? '' : 'zone')
     ..aOS(12, _omitFieldNames ? '' : 'sourceId')
     ..aOB(14, _omitFieldNames ? '' : 'rootPasswordSet')
     ..aOS(15, _omitFieldNames ? '' : 'collation')
     ..aOS(16, _omitFieldNames ? '' : 'cmekKeyName')
-    ..e<CloudSqlSettings_SqlAvailabilityType>(
-        17, _omitFieldNames ? '' : 'availabilityType', $pb.PbFieldType.OE,
-        defaultOrMaker: CloudSqlSettings_SqlAvailabilityType
-            .SQL_AVAILABILITY_TYPE_UNSPECIFIED,
-        valueOf: CloudSqlSettings_SqlAvailabilityType.valueOf,
+    ..aE<CloudSqlSettings_SqlAvailabilityType>(
+        17, _omitFieldNames ? '' : 'availabilityType',
         enumValues: CloudSqlSettings_SqlAvailabilityType.values)
     ..aOS(18, _omitFieldNames ? '' : 'secondaryZone')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  CloudSqlSettings clone() => CloudSqlSettings()..mergeFromMessage(this);
+  CloudSqlSettings clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CloudSqlSettings copyWith(void Function(CloudSqlSettings) updates) =>
       super.copyWith((message) => updates(message as CloudSqlSettings))
           as CloudSqlSettings;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CloudSqlSettings create() => CloudSqlSettings._();
+  @$core.override
   CloudSqlSettings createEmptyInstance() => create();
-  static $pb.PbList<CloudSqlSettings> createRepeated() =>
-      $pb.PbList<CloudSqlSettings>();
   @$core.pragma('dart2js:noInline')
   static CloudSqlSettings getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<CloudSqlSettings>(create);
@@ -1045,10 +879,8 @@ class CloudSqlSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   CloudSqlSettings_SqlDatabaseVersion get databaseVersion => $_getN(0);
   @$pb.TagNumber(1)
-  set databaseVersion(CloudSqlSettings_SqlDatabaseVersion v) {
-    $_setField(1, v);
-  }
-
+  set databaseVersion(CloudSqlSettings_SqlDatabaseVersion value) =>
+      $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasDatabaseVersion() => $_has(0);
   @$pb.TagNumber(1)
@@ -1071,10 +903,7 @@ class CloudSqlSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get tier => $_getSZ(2);
   @$pb.TagNumber(3)
-  set tier($core.String v) {
-    $_setString(2, v);
-  }
-
+  set tier($core.String value) => $_setString(2, value);
   @$pb.TagNumber(3)
   $core.bool hasTier() => $_has(2);
   @$pb.TagNumber(3)
@@ -1083,18 +912,15 @@ class CloudSqlSettings extends $pb.GeneratedMessage {
   /// The maximum size to which storage capacity can be automatically increased.
   /// The default value is 0, which specifies that there is no limit.
   @$pb.TagNumber(4)
-  $21.Int64Value get storageAutoResizeLimit => $_getN(3);
+  $1.Int64Value get storageAutoResizeLimit => $_getN(3);
   @$pb.TagNumber(4)
-  set storageAutoResizeLimit($21.Int64Value v) {
-    $_setField(4, v);
-  }
-
+  set storageAutoResizeLimit($1.Int64Value value) => $_setField(4, value);
   @$pb.TagNumber(4)
   $core.bool hasStorageAutoResizeLimit() => $_has(3);
   @$pb.TagNumber(4)
   void clearStorageAutoResizeLimit() => $_clearField(4);
   @$pb.TagNumber(4)
-  $21.Int64Value ensureStorageAutoResizeLimit() => $_ensure(3);
+  $1.Int64Value ensureStorageAutoResizeLimit() => $_ensure(3);
 
   /// The activation policy specifies when the instance is activated; it is
   /// applicable only when the instance state is 'RUNNABLE'. Valid values:
@@ -1107,10 +933,8 @@ class CloudSqlSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   CloudSqlSettings_SqlActivationPolicy get activationPolicy => $_getN(4);
   @$pb.TagNumber(5)
-  set activationPolicy(CloudSqlSettings_SqlActivationPolicy v) {
-    $_setField(5, v);
-  }
-
+  set activationPolicy(CloudSqlSettings_SqlActivationPolicy value) =>
+      $_setField(5, value);
   @$pb.TagNumber(5)
   $core.bool hasActivationPolicy() => $_has(4);
   @$pb.TagNumber(5)
@@ -1122,10 +946,7 @@ class CloudSqlSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   SqlIpConfig get ipConfig => $_getN(5);
   @$pb.TagNumber(6)
-  set ipConfig(SqlIpConfig v) {
-    $_setField(6, v);
-  }
-
+  set ipConfig(SqlIpConfig value) => $_setField(6, value);
   @$pb.TagNumber(6)
   $core.bool hasIpConfig() => $_has(5);
   @$pb.TagNumber(6)
@@ -1139,18 +960,15 @@ class CloudSqlSettings extends $pb.GeneratedMessage {
   /// available storage repeatedly falls below the threshold size, Cloud SQL
   /// continues to add storage until it reaches the maximum of 30 TB.
   @$pb.TagNumber(7)
-  $21.BoolValue get autoStorageIncrease => $_getN(6);
+  $1.BoolValue get autoStorageIncrease => $_getN(6);
   @$pb.TagNumber(7)
-  set autoStorageIncrease($21.BoolValue v) {
-    $_setField(7, v);
-  }
-
+  set autoStorageIncrease($1.BoolValue value) => $_setField(7, value);
   @$pb.TagNumber(7)
   $core.bool hasAutoStorageIncrease() => $_has(6);
   @$pb.TagNumber(7)
   void clearAutoStorageIncrease() => $_clearField(7);
   @$pb.TagNumber(7)
-  $21.BoolValue ensureAutoStorageIncrease() => $_ensure(6);
+  $1.BoolValue ensureAutoStorageIncrease() => $_ensure(6);
 
   /// The database flags passed to the Cloud SQL instance at startup.
   /// An object containing a list of "key": value pairs.
@@ -1162,10 +980,8 @@ class CloudSqlSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   CloudSqlSettings_SqlDataDiskType get dataDiskType => $_getN(8);
   @$pb.TagNumber(9)
-  set dataDiskType(CloudSqlSettings_SqlDataDiskType v) {
-    $_setField(9, v);
-  }
-
+  set dataDiskType(CloudSqlSettings_SqlDataDiskType value) =>
+      $_setField(9, value);
   @$pb.TagNumber(9)
   $core.bool hasDataDiskType() => $_has(8);
   @$pb.TagNumber(9)
@@ -1174,28 +990,22 @@ class CloudSqlSettings extends $pb.GeneratedMessage {
   /// The storage capacity available to the database, in GB.
   /// The minimum (and default) size is 10GB.
   @$pb.TagNumber(10)
-  $21.Int64Value get dataDiskSizeGb => $_getN(9);
+  $1.Int64Value get dataDiskSizeGb => $_getN(9);
   @$pb.TagNumber(10)
-  set dataDiskSizeGb($21.Int64Value v) {
-    $_setField(10, v);
-  }
-
+  set dataDiskSizeGb($1.Int64Value value) => $_setField(10, value);
   @$pb.TagNumber(10)
   $core.bool hasDataDiskSizeGb() => $_has(9);
   @$pb.TagNumber(10)
   void clearDataDiskSizeGb() => $_clearField(10);
   @$pb.TagNumber(10)
-  $21.Int64Value ensureDataDiskSizeGb() => $_ensure(9);
+  $1.Int64Value ensureDataDiskSizeGb() => $_ensure(9);
 
   /// The Google Cloud Platform zone where your Cloud SQL database instance is
   /// located.
   @$pb.TagNumber(11)
   $core.String get zone => $_getSZ(10);
   @$pb.TagNumber(11)
-  set zone($core.String v) {
-    $_setString(10, v);
-  }
-
+  set zone($core.String value) => $_setString(10, value);
   @$pb.TagNumber(11)
   $core.bool hasZone() => $_has(10);
   @$pb.TagNumber(11)
@@ -1207,10 +1017,7 @@ class CloudSqlSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.String get sourceId => $_getSZ(11);
   @$pb.TagNumber(12)
-  set sourceId($core.String v) {
-    $_setString(11, v);
-  }
-
+  set sourceId($core.String value) => $_setString(11, value);
   @$pb.TagNumber(12)
   $core.bool hasSourceId() => $_has(11);
   @$pb.TagNumber(12)
@@ -1220,10 +1027,7 @@ class CloudSqlSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   $core.bool get rootPasswordSet => $_getBF(12);
   @$pb.TagNumber(14)
-  set rootPasswordSet($core.bool v) {
-    $_setBool(12, v);
-  }
-
+  set rootPasswordSet($core.bool value) => $_setBool(12, value);
   @$pb.TagNumber(14)
   $core.bool hasRootPasswordSet() => $_has(12);
   @$pb.TagNumber(14)
@@ -1233,10 +1037,7 @@ class CloudSqlSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   $core.String get collation => $_getSZ(13);
   @$pb.TagNumber(15)
-  set collation($core.String v) {
-    $_setString(13, v);
-  }
-
+  set collation($core.String value) => $_setString(13, value);
   @$pb.TagNumber(15)
   $core.bool hasCollation() => $_has(13);
   @$pb.TagNumber(15)
@@ -1246,10 +1047,7 @@ class CloudSqlSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(16)
   $core.String get cmekKeyName => $_getSZ(14);
   @$pb.TagNumber(16)
-  set cmekKeyName($core.String v) {
-    $_setString(14, v);
-  }
-
+  set cmekKeyName($core.String value) => $_setString(14, value);
   @$pb.TagNumber(16)
   $core.bool hasCmekKeyName() => $_has(14);
   @$pb.TagNumber(16)
@@ -1263,10 +1061,8 @@ class CloudSqlSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(17)
   CloudSqlSettings_SqlAvailabilityType get availabilityType => $_getN(15);
   @$pb.TagNumber(17)
-  set availabilityType(CloudSqlSettings_SqlAvailabilityType v) {
-    $_setField(17, v);
-  }
-
+  set availabilityType(CloudSqlSettings_SqlAvailabilityType value) =>
+      $_setField(17, value);
   @$pb.TagNumber(17)
   $core.bool hasAvailabilityType() => $_has(15);
   @$pb.TagNumber(17)
@@ -1278,10 +1074,7 @@ class CloudSqlSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(18)
   $core.String get secondaryZone => $_getSZ(16);
   @$pb.TagNumber(18)
-  set secondaryZone($core.String v) {
-    $_setString(16, v);
-  }
-
+  set secondaryZone($core.String value) => $_setString(16, value);
   @$pb.TagNumber(18)
   $core.bool hasSecondaryZone() => $_has(16);
   @$pb.TagNumber(18)
@@ -1295,22 +1088,20 @@ class AlloyDbSettings_UserPassword extends $pb.GeneratedMessage {
     $core.String? user,
     $core.bool? passwordSet,
   }) {
-    final $result = create();
-    if (user != null) {
-      $result.user = user;
-    }
-    if (passwordSet != null) {
-      $result.passwordSet = passwordSet;
-    }
-    return $result;
+    final result = create();
+    if (user != null) result.user = user;
+    if (passwordSet != null) result.passwordSet = passwordSet;
+    return result;
   }
-  AlloyDbSettings_UserPassword._() : super();
-  factory AlloyDbSettings_UserPassword.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory AlloyDbSettings_UserPassword.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  AlloyDbSettings_UserPassword._();
+
+  factory AlloyDbSettings_UserPassword.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory AlloyDbSettings_UserPassword.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'AlloyDbSettings.UserPassword',
@@ -1322,8 +1113,7 @@ class AlloyDbSettings_UserPassword extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  AlloyDbSettings_UserPassword clone() =>
-      AlloyDbSettings_UserPassword()..mergeFromMessage(this);
+  AlloyDbSettings_UserPassword clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AlloyDbSettings_UserPassword copyWith(
           void Function(AlloyDbSettings_UserPassword) updates) =>
@@ -1331,14 +1121,14 @@ class AlloyDbSettings_UserPassword extends $pb.GeneratedMessage {
               (message) => updates(message as AlloyDbSettings_UserPassword))
           as AlloyDbSettings_UserPassword;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AlloyDbSettings_UserPassword create() =>
       AlloyDbSettings_UserPassword._();
+  @$core.override
   AlloyDbSettings_UserPassword createEmptyInstance() => create();
-  static $pb.PbList<AlloyDbSettings_UserPassword> createRepeated() =>
-      $pb.PbList<AlloyDbSettings_UserPassword>();
   @$core.pragma('dart2js:noInline')
   static AlloyDbSettings_UserPassword getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<AlloyDbSettings_UserPassword>(create);
@@ -1348,10 +1138,7 @@ class AlloyDbSettings_UserPassword extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get user => $_getSZ(0);
   @$pb.TagNumber(1)
-  set user($core.String v) {
-    $_setString(0, v);
-  }
-
+  set user($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasUser() => $_has(0);
   @$pb.TagNumber(1)
@@ -1361,10 +1148,7 @@ class AlloyDbSettings_UserPassword extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool get passwordSet => $_getBF(1);
   @$pb.TagNumber(3)
-  set passwordSet($core.bool v) {
-    $_setBool(1, v);
-  }
-
+  set passwordSet($core.bool value) => $_setBool(1, value);
   @$pb.TagNumber(3)
   $core.bool hasPasswordSet() => $_has(1);
   @$pb.TagNumber(3)
@@ -1377,21 +1161,21 @@ class AlloyDbSettings_PrimaryInstanceSettings_MachineConfig
   factory AlloyDbSettings_PrimaryInstanceSettings_MachineConfig({
     $core.int? cpuCount,
   }) {
-    final $result = create();
-    if (cpuCount != null) {
-      $result.cpuCount = cpuCount;
-    }
-    return $result;
+    final result = create();
+    if (cpuCount != null) result.cpuCount = cpuCount;
+    return result;
   }
-  AlloyDbSettings_PrimaryInstanceSettings_MachineConfig._() : super();
+
+  AlloyDbSettings_PrimaryInstanceSettings_MachineConfig._();
+
   factory AlloyDbSettings_PrimaryInstanceSettings_MachineConfig.fromBuffer(
-          $core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
+          $core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
   factory AlloyDbSettings_PrimaryInstanceSettings_MachineConfig.fromJson(
-          $core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+          $core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames
@@ -1400,13 +1184,11 @@ class AlloyDbSettings_PrimaryInstanceSettings_MachineConfig
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.clouddms.v1'),
       createEmptyInstance: create)
-    ..a<$core.int>(1, _omitFieldNames ? '' : 'cpuCount', $pb.PbFieldType.O3)
+    ..aI(1, _omitFieldNames ? '' : 'cpuCount')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  AlloyDbSettings_PrimaryInstanceSettings_MachineConfig clone() =>
-      AlloyDbSettings_PrimaryInstanceSettings_MachineConfig()
-        ..mergeFromMessage(this);
+  AlloyDbSettings_PrimaryInstanceSettings_MachineConfig clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AlloyDbSettings_PrimaryInstanceSettings_MachineConfig copyWith(
           void Function(AlloyDbSettings_PrimaryInstanceSettings_MachineConfig)
@@ -1415,16 +1197,15 @@ class AlloyDbSettings_PrimaryInstanceSettings_MachineConfig
               message as AlloyDbSettings_PrimaryInstanceSettings_MachineConfig))
           as AlloyDbSettings_PrimaryInstanceSettings_MachineConfig;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AlloyDbSettings_PrimaryInstanceSettings_MachineConfig create() =>
       AlloyDbSettings_PrimaryInstanceSettings_MachineConfig._();
+  @$core.override
   AlloyDbSettings_PrimaryInstanceSettings_MachineConfig createEmptyInstance() =>
       create();
-  static $pb.PbList<AlloyDbSettings_PrimaryInstanceSettings_MachineConfig>
-      createRepeated() =>
-          $pb.PbList<AlloyDbSettings_PrimaryInstanceSettings_MachineConfig>();
   @$core.pragma('dart2js:noInline')
   static AlloyDbSettings_PrimaryInstanceSettings_MachineConfig getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
@@ -1436,10 +1217,7 @@ class AlloyDbSettings_PrimaryInstanceSettings_MachineConfig
   @$pb.TagNumber(1)
   $core.int get cpuCount => $_getIZ(0);
   @$pb.TagNumber(1)
-  set cpuCount($core.int v) {
-    $_setSignedInt32(0, v);
-  }
-
+  set cpuCount($core.int value) => $_setSignedInt32(0, value);
   @$pb.TagNumber(1)
   $core.bool hasCpuCount() => $_has(0);
   @$pb.TagNumber(1)
@@ -1455,32 +1233,24 @@ class AlloyDbSettings_PrimaryInstanceSettings extends $pb.GeneratedMessage {
     $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.String? privateIp,
   }) {
-    final $result = create();
-    if (id != null) {
-      $result.id = id;
-    }
-    if (machineConfig != null) {
-      $result.machineConfig = machineConfig;
-    }
-    if (databaseFlags != null) {
-      $result.databaseFlags.addEntries(databaseFlags);
-    }
-    if (labels != null) {
-      $result.labels.addEntries(labels);
-    }
-    if (privateIp != null) {
-      $result.privateIp = privateIp;
-    }
-    return $result;
+    final result = create();
+    if (id != null) result.id = id;
+    if (machineConfig != null) result.machineConfig = machineConfig;
+    if (databaseFlags != null) result.databaseFlags.addEntries(databaseFlags);
+    if (labels != null) result.labels.addEntries(labels);
+    if (privateIp != null) result.privateIp = privateIp;
+    return result;
   }
-  AlloyDbSettings_PrimaryInstanceSettings._() : super();
+
+  AlloyDbSettings_PrimaryInstanceSettings._();
+
   factory AlloyDbSettings_PrimaryInstanceSettings.fromBuffer(
-          $core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory AlloyDbSettings_PrimaryInstanceSettings.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+          $core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory AlloyDbSettings_PrimaryInstanceSettings.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'AlloyDbSettings.PrimaryInstanceSettings',
@@ -1507,8 +1277,7 @@ class AlloyDbSettings_PrimaryInstanceSettings extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  AlloyDbSettings_PrimaryInstanceSettings clone() =>
-      AlloyDbSettings_PrimaryInstanceSettings()..mergeFromMessage(this);
+  AlloyDbSettings_PrimaryInstanceSettings clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AlloyDbSettings_PrimaryInstanceSettings copyWith(
           void Function(AlloyDbSettings_PrimaryInstanceSettings) updates) =>
@@ -1516,14 +1285,14 @@ class AlloyDbSettings_PrimaryInstanceSettings extends $pb.GeneratedMessage {
               updates(message as AlloyDbSettings_PrimaryInstanceSettings))
           as AlloyDbSettings_PrimaryInstanceSettings;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AlloyDbSettings_PrimaryInstanceSettings create() =>
       AlloyDbSettings_PrimaryInstanceSettings._();
+  @$core.override
   AlloyDbSettings_PrimaryInstanceSettings createEmptyInstance() => create();
-  static $pb.PbList<AlloyDbSettings_PrimaryInstanceSettings> createRepeated() =>
-      $pb.PbList<AlloyDbSettings_PrimaryInstanceSettings>();
   @$core.pragma('dart2js:noInline')
   static AlloyDbSettings_PrimaryInstanceSettings getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
@@ -1535,10 +1304,7 @@ class AlloyDbSettings_PrimaryInstanceSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get id => $_getSZ(0);
   @$pb.TagNumber(1)
-  set id($core.String v) {
-    $_setString(0, v);
-  }
-
+  set id($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
@@ -1550,10 +1316,9 @@ class AlloyDbSettings_PrimaryInstanceSettings extends $pb.GeneratedMessage {
   AlloyDbSettings_PrimaryInstanceSettings_MachineConfig get machineConfig =>
       $_getN(1);
   @$pb.TagNumber(2)
-  set machineConfig(AlloyDbSettings_PrimaryInstanceSettings_MachineConfig v) {
-    $_setField(2, v);
-  }
-
+  set machineConfig(
+          AlloyDbSettings_PrimaryInstanceSettings_MachineConfig value) =>
+      $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasMachineConfig() => $_has(1);
   @$pb.TagNumber(2)
@@ -1578,10 +1343,7 @@ class AlloyDbSettings_PrimaryInstanceSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.String get privateIp => $_getSZ(4);
   @$pb.TagNumber(8)
-  set privateIp($core.String v) {
-    $_setString(4, v);
-  }
-
+  set privateIp($core.String value) => $_setString(4, value);
   @$pb.TagNumber(8)
   $core.bool hasPrivateIp() => $_has(4);
   @$pb.TagNumber(8)
@@ -1595,25 +1357,22 @@ class AlloyDbSettings extends $pb.GeneratedMessage {
     $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     AlloyDbSettings_PrimaryInstanceSettings? primaryInstanceSettings,
   }) {
-    final $result = create();
-    if (vpcNetwork != null) {
-      $result.vpcNetwork = vpcNetwork;
-    }
-    if (labels != null) {
-      $result.labels.addEntries(labels);
-    }
-    if (primaryInstanceSettings != null) {
-      $result.primaryInstanceSettings = primaryInstanceSettings;
-    }
-    return $result;
+    final result = create();
+    if (vpcNetwork != null) result.vpcNetwork = vpcNetwork;
+    if (labels != null) result.labels.addEntries(labels);
+    if (primaryInstanceSettings != null)
+      result.primaryInstanceSettings = primaryInstanceSettings;
+    return result;
   }
-  AlloyDbSettings._() : super();
-  factory AlloyDbSettings.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory AlloyDbSettings.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  AlloyDbSettings._();
+
+  factory AlloyDbSettings.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory AlloyDbSettings.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'AlloyDbSettings',
@@ -1632,19 +1391,19 @@ class AlloyDbSettings extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  AlloyDbSettings clone() => AlloyDbSettings()..mergeFromMessage(this);
+  AlloyDbSettings clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AlloyDbSettings copyWith(void Function(AlloyDbSettings) updates) =>
       super.copyWith((message) => updates(message as AlloyDbSettings))
           as AlloyDbSettings;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AlloyDbSettings create() => AlloyDbSettings._();
+  @$core.override
   AlloyDbSettings createEmptyInstance() => create();
-  static $pb.PbList<AlloyDbSettings> createRepeated() =>
-      $pb.PbList<AlloyDbSettings>();
   @$core.pragma('dart2js:noInline')
   static AlloyDbSettings getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<AlloyDbSettings>(create);
@@ -1658,10 +1417,7 @@ class AlloyDbSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get vpcNetwork => $_getSZ(0);
   @$pb.TagNumber(2)
-  set vpcNetwork($core.String v) {
-    $_setString(0, v);
-  }
-
+  set vpcNetwork($core.String value) => $_setString(0, value);
   @$pb.TagNumber(2)
   $core.bool hasVpcNetwork() => $_has(0);
   @$pb.TagNumber(2)
@@ -1676,10 +1432,8 @@ class AlloyDbSettings extends $pb.GeneratedMessage {
   AlloyDbSettings_PrimaryInstanceSettings get primaryInstanceSettings =>
       $_getN(2);
   @$pb.TagNumber(4)
-  set primaryInstanceSettings(AlloyDbSettings_PrimaryInstanceSettings v) {
-    $_setField(4, v);
-  }
-
+  set primaryInstanceSettings(AlloyDbSettings_PrimaryInstanceSettings value) =>
+      $_setField(4, value);
   @$pb.TagNumber(4)
   $core.bool hasPrimaryInstanceSettings() => $_has(2);
   @$pb.TagNumber(4)
@@ -1695,13 +1449,15 @@ class AlloyDbSettings extends $pb.GeneratedMessage {
 /// configuration is required.
 class StaticIpConnectivity extends $pb.GeneratedMessage {
   factory StaticIpConnectivity() => create();
-  StaticIpConnectivity._() : super();
-  factory StaticIpConnectivity.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory StaticIpConnectivity.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  StaticIpConnectivity._();
+
+  factory StaticIpConnectivity.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory StaticIpConnectivity.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'StaticIpConnectivity',
@@ -1711,20 +1467,19 @@ class StaticIpConnectivity extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  StaticIpConnectivity clone() =>
-      StaticIpConnectivity()..mergeFromMessage(this);
+  StaticIpConnectivity clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   StaticIpConnectivity copyWith(void Function(StaticIpConnectivity) updates) =>
       super.copyWith((message) => updates(message as StaticIpConnectivity))
           as StaticIpConnectivity;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static StaticIpConnectivity create() => StaticIpConnectivity._();
+  @$core.override
   StaticIpConnectivity createEmptyInstance() => create();
-  static $pb.PbList<StaticIpConnectivity> createRepeated() =>
-      $pb.PbList<StaticIpConnectivity>();
   @$core.pragma('dart2js:noInline')
   static StaticIpConnectivity getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<StaticIpConnectivity>(create);
@@ -1744,28 +1499,22 @@ class ReverseSshConnectivity extends $pb.GeneratedMessage {
     $core.String? vm,
     $core.String? vpc,
   }) {
-    final $result = create();
-    if (vmIp != null) {
-      $result.vmIp = vmIp;
-    }
-    if (vmPort != null) {
-      $result.vmPort = vmPort;
-    }
-    if (vm != null) {
-      $result.vm = vm;
-    }
-    if (vpc != null) {
-      $result.vpc = vpc;
-    }
-    return $result;
+    final result = create();
+    if (vmIp != null) result.vmIp = vmIp;
+    if (vmPort != null) result.vmPort = vmPort;
+    if (vm != null) result.vm = vm;
+    if (vpc != null) result.vpc = vpc;
+    return result;
   }
-  ReverseSshConnectivity._() : super();
-  factory ReverseSshConnectivity.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ReverseSshConnectivity.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  ReverseSshConnectivity._();
+
+  factory ReverseSshConnectivity.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ReverseSshConnectivity.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'ReverseSshConnectivity',
@@ -1773,27 +1522,26 @@ class ReverseSshConnectivity extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.events.cloud.clouddms.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'vmIp')
-    ..a<$core.int>(2, _omitFieldNames ? '' : 'vmPort', $pb.PbFieldType.O3)
+    ..aI(2, _omitFieldNames ? '' : 'vmPort')
     ..aOS(3, _omitFieldNames ? '' : 'vm')
     ..aOS(4, _omitFieldNames ? '' : 'vpc')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ReverseSshConnectivity clone() =>
-      ReverseSshConnectivity()..mergeFromMessage(this);
+  ReverseSshConnectivity clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ReverseSshConnectivity copyWith(
           void Function(ReverseSshConnectivity) updates) =>
       super.copyWith((message) => updates(message as ReverseSshConnectivity))
           as ReverseSshConnectivity;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ReverseSshConnectivity create() => ReverseSshConnectivity._();
+  @$core.override
   ReverseSshConnectivity createEmptyInstance() => create();
-  static $pb.PbList<ReverseSshConnectivity> createRepeated() =>
-      $pb.PbList<ReverseSshConnectivity>();
   @$core.pragma('dart2js:noInline')
   static ReverseSshConnectivity getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ReverseSshConnectivity>(create);
@@ -1804,10 +1552,7 @@ class ReverseSshConnectivity extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get vmIp => $_getSZ(0);
   @$pb.TagNumber(1)
-  set vmIp($core.String v) {
-    $_setString(0, v);
-  }
-
+  set vmIp($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasVmIp() => $_has(0);
   @$pb.TagNumber(1)
@@ -1818,10 +1563,7 @@ class ReverseSshConnectivity extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get vmPort => $_getIZ(1);
   @$pb.TagNumber(2)
-  set vmPort($core.int v) {
-    $_setSignedInt32(1, v);
-  }
-
+  set vmPort($core.int value) => $_setSignedInt32(1, value);
   @$pb.TagNumber(2)
   $core.bool hasVmPort() => $_has(1);
   @$pb.TagNumber(2)
@@ -1832,10 +1574,7 @@ class ReverseSshConnectivity extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get vm => $_getSZ(2);
   @$pb.TagNumber(3)
-  set vm($core.String v) {
-    $_setString(2, v);
-  }
-
+  set vm($core.String value) => $_setString(2, value);
   @$pb.TagNumber(3)
   $core.bool hasVm() => $_has(2);
   @$pb.TagNumber(3)
@@ -1845,10 +1584,7 @@ class ReverseSshConnectivity extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get vpc => $_getSZ(3);
   @$pb.TagNumber(4)
-  set vpc($core.String v) {
-    $_setString(3, v);
-  }
-
+  set vpc($core.String value) => $_setString(3, value);
   @$pb.TagNumber(4)
   $core.bool hasVpc() => $_has(3);
   @$pb.TagNumber(4)
@@ -1862,19 +1598,19 @@ class VpcPeeringConnectivity extends $pb.GeneratedMessage {
   factory VpcPeeringConnectivity({
     $core.String? vpc,
   }) {
-    final $result = create();
-    if (vpc != null) {
-      $result.vpc = vpc;
-    }
-    return $result;
+    final result = create();
+    if (vpc != null) result.vpc = vpc;
+    return result;
   }
-  VpcPeeringConnectivity._() : super();
-  factory VpcPeeringConnectivity.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory VpcPeeringConnectivity.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  VpcPeeringConnectivity._();
+
+  factory VpcPeeringConnectivity.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory VpcPeeringConnectivity.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'VpcPeeringConnectivity',
@@ -1885,21 +1621,20 @@ class VpcPeeringConnectivity extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  VpcPeeringConnectivity clone() =>
-      VpcPeeringConnectivity()..mergeFromMessage(this);
+  VpcPeeringConnectivity clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   VpcPeeringConnectivity copyWith(
           void Function(VpcPeeringConnectivity) updates) =>
       super.copyWith((message) => updates(message as VpcPeeringConnectivity))
           as VpcPeeringConnectivity;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static VpcPeeringConnectivity create() => VpcPeeringConnectivity._();
+  @$core.override
   VpcPeeringConnectivity createEmptyInstance() => create();
-  static $pb.PbList<VpcPeeringConnectivity> createRepeated() =>
-      $pb.PbList<VpcPeeringConnectivity>();
   @$core.pragma('dart2js:noInline')
   static VpcPeeringConnectivity getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<VpcPeeringConnectivity>(create);
@@ -1909,10 +1644,7 @@ class VpcPeeringConnectivity extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get vpc => $_getSZ(0);
   @$pb.TagNumber(1)
-  set vpc($core.String v) {
-    $_setString(0, v);
-  }
-
+  set vpc($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasVpc() => $_has(0);
   @$pb.TagNumber(1)
@@ -1925,53 +1657,46 @@ class DatabaseType extends $pb.GeneratedMessage {
     DatabaseProvider? provider,
     DatabaseEngine? engine,
   }) {
-    final $result = create();
-    if (provider != null) {
-      $result.provider = provider;
-    }
-    if (engine != null) {
-      $result.engine = engine;
-    }
-    return $result;
+    final result = create();
+    if (provider != null) result.provider = provider;
+    if (engine != null) result.engine = engine;
+    return result;
   }
-  DatabaseType._() : super();
-  factory DatabaseType.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory DatabaseType.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  DatabaseType._();
+
+  factory DatabaseType.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory DatabaseType.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'DatabaseType',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.clouddms.v1'),
       createEmptyInstance: create)
-    ..e<DatabaseProvider>(
-        1, _omitFieldNames ? '' : 'provider', $pb.PbFieldType.OE,
-        defaultOrMaker: DatabaseProvider.DATABASE_PROVIDER_UNSPECIFIED,
-        valueOf: DatabaseProvider.valueOf,
+    ..aE<DatabaseProvider>(1, _omitFieldNames ? '' : 'provider',
         enumValues: DatabaseProvider.values)
-    ..e<DatabaseEngine>(2, _omitFieldNames ? '' : 'engine', $pb.PbFieldType.OE,
-        defaultOrMaker: DatabaseEngine.DATABASE_ENGINE_UNSPECIFIED,
-        valueOf: DatabaseEngine.valueOf,
+    ..aE<DatabaseEngine>(2, _omitFieldNames ? '' : 'engine',
         enumValues: DatabaseEngine.values)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  DatabaseType clone() => DatabaseType()..mergeFromMessage(this);
+  DatabaseType clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DatabaseType copyWith(void Function(DatabaseType) updates) =>
       super.copyWith((message) => updates(message as DatabaseType))
           as DatabaseType;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DatabaseType create() => DatabaseType._();
+  @$core.override
   DatabaseType createEmptyInstance() => create();
-  static $pb.PbList<DatabaseType> createRepeated() =>
-      $pb.PbList<DatabaseType>();
   @$core.pragma('dart2js:noInline')
   static DatabaseType getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<DatabaseType>(create);
@@ -1981,10 +1706,7 @@ class DatabaseType extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   DatabaseProvider get provider => $_getN(0);
   @$pb.TagNumber(1)
-  set provider(DatabaseProvider v) {
-    $_setField(1, v);
-  }
-
+  set provider(DatabaseProvider value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasProvider() => $_has(0);
   @$pb.TagNumber(1)
@@ -1994,10 +1716,7 @@ class DatabaseType extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   DatabaseEngine get engine => $_getN(1);
   @$pb.TagNumber(2)
-  set engine(DatabaseEngine v) {
-    $_setField(2, v);
-  }
-
+  set engine(DatabaseEngine value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasEngine() => $_has(1);
   @$pb.TagNumber(2)
@@ -2010,22 +1729,20 @@ class MigrationJob_DumpFlag extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? value,
   }) {
-    final $result = create();
-    if (name != null) {
-      $result.name = name;
-    }
-    if (value != null) {
-      $result.value = value;
-    }
-    return $result;
+    final result = create();
+    if (name != null) result.name = name;
+    if (value != null) result.value = value;
+    return result;
   }
-  MigrationJob_DumpFlag._() : super();
-  factory MigrationJob_DumpFlag.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory MigrationJob_DumpFlag.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  MigrationJob_DumpFlag._();
+
+  factory MigrationJob_DumpFlag.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory MigrationJob_DumpFlag.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'MigrationJob.DumpFlag',
@@ -2037,21 +1754,20 @@ class MigrationJob_DumpFlag extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  MigrationJob_DumpFlag clone() =>
-      MigrationJob_DumpFlag()..mergeFromMessage(this);
+  MigrationJob_DumpFlag clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MigrationJob_DumpFlag copyWith(
           void Function(MigrationJob_DumpFlag) updates) =>
       super.copyWith((message) => updates(message as MigrationJob_DumpFlag))
           as MigrationJob_DumpFlag;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static MigrationJob_DumpFlag create() => MigrationJob_DumpFlag._();
+  @$core.override
   MigrationJob_DumpFlag createEmptyInstance() => create();
-  static $pb.PbList<MigrationJob_DumpFlag> createRepeated() =>
-      $pb.PbList<MigrationJob_DumpFlag>();
   @$core.pragma('dart2js:noInline')
   static MigrationJob_DumpFlag getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<MigrationJob_DumpFlag>(create);
@@ -2061,10 +1777,7 @@ class MigrationJob_DumpFlag extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) {
-    $_setString(0, v);
-  }
-
+  set name($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -2074,10 +1787,7 @@ class MigrationJob_DumpFlag extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get value => $_getSZ(1);
   @$pb.TagNumber(2)
-  set value($core.String v) {
-    $_setString(1, v);
-  }
-
+  set value($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasValue() => $_has(1);
   @$pb.TagNumber(2)
@@ -2089,46 +1799,44 @@ class MigrationJob_DumpFlags extends $pb.GeneratedMessage {
   factory MigrationJob_DumpFlags({
     $core.Iterable<MigrationJob_DumpFlag>? dumpFlags,
   }) {
-    final $result = create();
-    if (dumpFlags != null) {
-      $result.dumpFlags.addAll(dumpFlags);
-    }
-    return $result;
+    final result = create();
+    if (dumpFlags != null) result.dumpFlags.addAll(dumpFlags);
+    return result;
   }
-  MigrationJob_DumpFlags._() : super();
-  factory MigrationJob_DumpFlags.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory MigrationJob_DumpFlags.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  MigrationJob_DumpFlags._();
+
+  factory MigrationJob_DumpFlags.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory MigrationJob_DumpFlags.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'MigrationJob.DumpFlags',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.clouddms.v1'),
       createEmptyInstance: create)
-    ..pc<MigrationJob_DumpFlag>(
-        1, _omitFieldNames ? '' : 'dumpFlags', $pb.PbFieldType.PM,
+    ..pPM<MigrationJob_DumpFlag>(1, _omitFieldNames ? '' : 'dumpFlags',
         subBuilder: MigrationJob_DumpFlag.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  MigrationJob_DumpFlags clone() =>
-      MigrationJob_DumpFlags()..mergeFromMessage(this);
+  MigrationJob_DumpFlags clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MigrationJob_DumpFlags copyWith(
           void Function(MigrationJob_DumpFlags) updates) =>
       super.copyWith((message) => updates(message as MigrationJob_DumpFlags))
           as MigrationJob_DumpFlags;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static MigrationJob_DumpFlags create() => MigrationJob_DumpFlags._();
+  @$core.override
   MigrationJob_DumpFlags createEmptyInstance() => create();
-  static $pb.PbList<MigrationJob_DumpFlags> createRepeated() =>
-      $pb.PbList<MigrationJob_DumpFlags>();
   @$core.pragma('dart2js:noInline')
   static MigrationJob_DumpFlags getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<MigrationJob_DumpFlags>(create);
@@ -2150,8 +1858,8 @@ enum MigrationJob_Connectivity {
 class MigrationJob extends $pb.GeneratedMessage {
   factory MigrationJob({
     $core.String? name,
-    $2.Timestamp? createTime,
-    $2.Timestamp? updateTime,
+    $0.Timestamp? createTime,
+    $0.Timestamp? updateTime,
     $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.String? displayName,
     MigrationJob_State? state,
@@ -2160,86 +1868,52 @@ class MigrationJob extends $pb.GeneratedMessage {
     $core.String? dumpPath,
     $core.String? source,
     $core.String? destination,
-    $0.Duration? duration,
-    $9.Status? error,
+    $2.Duration? duration,
+    $3.Status? error,
     DatabaseType? sourceDatabase,
     DatabaseType? destinationDatabase,
-    $2.Timestamp? endTime,
+    $0.Timestamp? endTime,
     MigrationJob_DumpFlags? dumpFlags,
     ReverseSshConnectivity? reverseSshConnectivity,
     VpcPeeringConnectivity? vpcPeeringConnectivity,
     StaticIpConnectivity? staticIpConnectivity,
   }) {
-    final $result = create();
-    if (name != null) {
-      $result.name = name;
-    }
-    if (createTime != null) {
-      $result.createTime = createTime;
-    }
-    if (updateTime != null) {
-      $result.updateTime = updateTime;
-    }
-    if (labels != null) {
-      $result.labels.addEntries(labels);
-    }
-    if (displayName != null) {
-      $result.displayName = displayName;
-    }
-    if (state != null) {
-      $result.state = state;
-    }
-    if (phase != null) {
-      $result.phase = phase;
-    }
-    if (type != null) {
-      $result.type = type;
-    }
-    if (dumpPath != null) {
-      $result.dumpPath = dumpPath;
-    }
-    if (source != null) {
-      $result.source = source;
-    }
-    if (destination != null) {
-      $result.destination = destination;
-    }
-    if (duration != null) {
-      $result.duration = duration;
-    }
-    if (error != null) {
-      $result.error = error;
-    }
-    if (sourceDatabase != null) {
-      $result.sourceDatabase = sourceDatabase;
-    }
-    if (destinationDatabase != null) {
-      $result.destinationDatabase = destinationDatabase;
-    }
-    if (endTime != null) {
-      $result.endTime = endTime;
-    }
-    if (dumpFlags != null) {
-      $result.dumpFlags = dumpFlags;
-    }
-    if (reverseSshConnectivity != null) {
-      $result.reverseSshConnectivity = reverseSshConnectivity;
-    }
-    if (vpcPeeringConnectivity != null) {
-      $result.vpcPeeringConnectivity = vpcPeeringConnectivity;
-    }
-    if (staticIpConnectivity != null) {
-      $result.staticIpConnectivity = staticIpConnectivity;
-    }
-    return $result;
+    final result = create();
+    if (name != null) result.name = name;
+    if (createTime != null) result.createTime = createTime;
+    if (updateTime != null) result.updateTime = updateTime;
+    if (labels != null) result.labels.addEntries(labels);
+    if (displayName != null) result.displayName = displayName;
+    if (state != null) result.state = state;
+    if (phase != null) result.phase = phase;
+    if (type != null) result.type = type;
+    if (dumpPath != null) result.dumpPath = dumpPath;
+    if (source != null) result.source = source;
+    if (destination != null) result.destination = destination;
+    if (duration != null) result.duration = duration;
+    if (error != null) result.error = error;
+    if (sourceDatabase != null) result.sourceDatabase = sourceDatabase;
+    if (destinationDatabase != null)
+      result.destinationDatabase = destinationDatabase;
+    if (endTime != null) result.endTime = endTime;
+    if (dumpFlags != null) result.dumpFlags = dumpFlags;
+    if (reverseSshConnectivity != null)
+      result.reverseSshConnectivity = reverseSshConnectivity;
+    if (vpcPeeringConnectivity != null)
+      result.vpcPeeringConnectivity = vpcPeeringConnectivity;
+    if (staticIpConnectivity != null)
+      result.staticIpConnectivity = staticIpConnectivity;
+    return result;
   }
-  MigrationJob._() : super();
-  factory MigrationJob.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory MigrationJob.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  MigrationJob._();
+
+  factory MigrationJob.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory MigrationJob.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static const $core.Map<$core.int, MigrationJob_Connectivity>
       _MigrationJob_ConnectivityByTag = {
@@ -2255,43 +1929,35 @@ class MigrationJob extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..oo(0, [101, 102, 103])
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$2.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(3, _omitFieldNames ? '' : 'updateTime',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$0.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(3, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $0.Timestamp.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels',
         entryClassName: 'MigrationJob.LabelsEntry',
         keyFieldType: $pb.PbFieldType.OS,
         valueFieldType: $pb.PbFieldType.OS,
         packageName: const $pb.PackageName('google.events.cloud.clouddms.v1'))
     ..aOS(5, _omitFieldNames ? '' : 'displayName')
-    ..e<MigrationJob_State>(
-        6, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
-        defaultOrMaker: MigrationJob_State.STATE_UNSPECIFIED,
-        valueOf: MigrationJob_State.valueOf,
+    ..aE<MigrationJob_State>(6, _omitFieldNames ? '' : 'state',
         enumValues: MigrationJob_State.values)
-    ..e<MigrationJob_Phase>(
-        7, _omitFieldNames ? '' : 'phase', $pb.PbFieldType.OE,
-        defaultOrMaker: MigrationJob_Phase.PHASE_UNSPECIFIED,
-        valueOf: MigrationJob_Phase.valueOf,
+    ..aE<MigrationJob_Phase>(7, _omitFieldNames ? '' : 'phase',
         enumValues: MigrationJob_Phase.values)
-    ..e<MigrationJob_Type>(8, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE,
-        defaultOrMaker: MigrationJob_Type.TYPE_UNSPECIFIED,
-        valueOf: MigrationJob_Type.valueOf,
+    ..aE<MigrationJob_Type>(8, _omitFieldNames ? '' : 'type',
         enumValues: MigrationJob_Type.values)
     ..aOS(9, _omitFieldNames ? '' : 'dumpPath')
     ..aOS(10, _omitFieldNames ? '' : 'source')
     ..aOS(11, _omitFieldNames ? '' : 'destination')
-    ..aOM<$0.Duration>(12, _omitFieldNames ? '' : 'duration',
-        subBuilder: $0.Duration.create)
-    ..aOM<$9.Status>(13, _omitFieldNames ? '' : 'error',
-        subBuilder: $9.Status.create)
+    ..aOM<$2.Duration>(12, _omitFieldNames ? '' : 'duration',
+        subBuilder: $2.Duration.create)
+    ..aOM<$3.Status>(13, _omitFieldNames ? '' : 'error',
+        subBuilder: $3.Status.create)
     ..aOM<DatabaseType>(14, _omitFieldNames ? '' : 'sourceDatabase',
         subBuilder: DatabaseType.create)
     ..aOM<DatabaseType>(15, _omitFieldNames ? '' : 'destinationDatabase',
         subBuilder: DatabaseType.create)
-    ..aOM<$2.Timestamp>(16, _omitFieldNames ? '' : 'endTime',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$0.Timestamp>(16, _omitFieldNames ? '' : 'endTime',
+        subBuilder: $0.Timestamp.create)
     ..aOM<MigrationJob_DumpFlags>(17, _omitFieldNames ? '' : 'dumpFlags',
         subBuilder: MigrationJob_DumpFlags.create)
     ..aOM<ReverseSshConnectivity>(
@@ -2306,26 +1972,32 @@ class MigrationJob extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  MigrationJob clone() => MigrationJob()..mergeFromMessage(this);
+  MigrationJob clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MigrationJob copyWith(void Function(MigrationJob) updates) =>
       super.copyWith((message) => updates(message as MigrationJob))
           as MigrationJob;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static MigrationJob create() => MigrationJob._();
+  @$core.override
   MigrationJob createEmptyInstance() => create();
-  static $pb.PbList<MigrationJob> createRepeated() =>
-      $pb.PbList<MigrationJob>();
   @$core.pragma('dart2js:noInline')
   static MigrationJob getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<MigrationJob>(create);
   static MigrationJob? _defaultInstance;
 
+  @$pb.TagNumber(101)
+  @$pb.TagNumber(102)
+  @$pb.TagNumber(103)
   MigrationJob_Connectivity whichConnectivity() =>
       _MigrationJob_ConnectivityByTag[$_whichOneof(0)]!;
+  @$pb.TagNumber(101)
+  @$pb.TagNumber(102)
+  @$pb.TagNumber(103)
   void clearConnectivity() => $_clearField($_whichOneof(0));
 
   /// The name (URI) of this migration job resource, in the form of:
@@ -2333,10 +2005,7 @@ class MigrationJob extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) {
-    $_setString(0, v);
-  }
-
+  set name($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -2346,35 +2015,29 @@ class MigrationJob extends $pb.GeneratedMessage {
   /// A timestamp in RFC3339 UTC "Zulu" format, accurate to nanoseconds.
   /// Example: "2014-10-02T15:01:23.045123456Z".
   @$pb.TagNumber(2)
-  $2.Timestamp get createTime => $_getN(1);
+  $0.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($2.Timestamp v) {
-    $_setField(2, v);
-  }
-
+  set createTime($0.Timestamp value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => $_clearField(2);
   @$pb.TagNumber(2)
-  $2.Timestamp ensureCreateTime() => $_ensure(1);
+  $0.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. The timestamp when the migration job resource was last
   /// updated. A timestamp in RFC3339 UTC "Zulu" format, accurate to nanoseconds.
   /// Example: "2014-10-02T15:01:23.045123456Z".
   @$pb.TagNumber(3)
-  $2.Timestamp get updateTime => $_getN(2);
+  $0.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($2.Timestamp v) {
-    $_setField(3, v);
-  }
-
+  set updateTime($0.Timestamp value) => $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => $_clearField(3);
   @$pb.TagNumber(3)
-  $2.Timestamp ensureUpdateTime() => $_ensure(2);
+  $0.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// The resource labels for migration job to use to annotate any related
   /// underlying resources such as Compute Engine VMs. An object containing a
@@ -2388,10 +2051,7 @@ class MigrationJob extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get displayName => $_getSZ(4);
   @$pb.TagNumber(5)
-  set displayName($core.String v) {
-    $_setString(4, v);
-  }
-
+  set displayName($core.String value) => $_setString(4, value);
   @$pb.TagNumber(5)
   $core.bool hasDisplayName() => $_has(4);
   @$pb.TagNumber(5)
@@ -2401,10 +2061,7 @@ class MigrationJob extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   MigrationJob_State get state => $_getN(5);
   @$pb.TagNumber(6)
-  set state(MigrationJob_State v) {
-    $_setField(6, v);
-  }
-
+  set state(MigrationJob_State value) => $_setField(6, value);
   @$pb.TagNumber(6)
   $core.bool hasState() => $_has(5);
   @$pb.TagNumber(6)
@@ -2414,10 +2071,7 @@ class MigrationJob extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   MigrationJob_Phase get phase => $_getN(6);
   @$pb.TagNumber(7)
-  set phase(MigrationJob_Phase v) {
-    $_setField(7, v);
-  }
-
+  set phase(MigrationJob_Phase value) => $_setField(7, value);
   @$pb.TagNumber(7)
   $core.bool hasPhase() => $_has(6);
   @$pb.TagNumber(7)
@@ -2427,10 +2081,7 @@ class MigrationJob extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   MigrationJob_Type get type => $_getN(7);
   @$pb.TagNumber(8)
-  set type(MigrationJob_Type v) {
-    $_setField(8, v);
-  }
-
+  set type(MigrationJob_Type value) => $_setField(8, value);
   @$pb.TagNumber(8)
   $core.bool hasType() => $_has(7);
   @$pb.TagNumber(8)
@@ -2442,10 +2093,7 @@ class MigrationJob extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.String get dumpPath => $_getSZ(8);
   @$pb.TagNumber(9)
-  set dumpPath($core.String v) {
-    $_setString(8, v);
-  }
-
+  set dumpPath($core.String value) => $_setString(8, value);
   @$pb.TagNumber(9)
   $core.bool hasDumpPath() => $_has(8);
   @$pb.TagNumber(9)
@@ -2455,10 +2103,7 @@ class MigrationJob extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.String get source => $_getSZ(9);
   @$pb.TagNumber(10)
-  set source($core.String v) {
-    $_setString(9, v);
-  }
-
+  set source($core.String value) => $_setString(9, value);
   @$pb.TagNumber(10)
   $core.bool hasSource() => $_has(9);
   @$pb.TagNumber(10)
@@ -2468,10 +2113,7 @@ class MigrationJob extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.String get destination => $_getSZ(10);
   @$pb.TagNumber(11)
-  set destination($core.String v) {
-    $_setString(10, v);
-  }
-
+  set destination($core.String value) => $_setString(10, value);
   @$pb.TagNumber(11)
   $core.bool hasDestination() => $_has(10);
   @$pb.TagNumber(11)
@@ -2481,42 +2123,33 @@ class MigrationJob extends $pb.GeneratedMessage {
   /// seconds with up to nine fractional digits, terminated by 's'. Example:
   /// "3.5s".
   @$pb.TagNumber(12)
-  $0.Duration get duration => $_getN(11);
+  $2.Duration get duration => $_getN(11);
   @$pb.TagNumber(12)
-  set duration($0.Duration v) {
-    $_setField(12, v);
-  }
-
+  set duration($2.Duration value) => $_setField(12, value);
   @$pb.TagNumber(12)
   $core.bool hasDuration() => $_has(11);
   @$pb.TagNumber(12)
   void clearDuration() => $_clearField(12);
   @$pb.TagNumber(12)
-  $0.Duration ensureDuration() => $_ensure(11);
+  $2.Duration ensureDuration() => $_ensure(11);
 
   /// Output only. The error details in case of state FAILED.
   @$pb.TagNumber(13)
-  $9.Status get error => $_getN(12);
+  $3.Status get error => $_getN(12);
   @$pb.TagNumber(13)
-  set error($9.Status v) {
-    $_setField(13, v);
-  }
-
+  set error($3.Status value) => $_setField(13, value);
   @$pb.TagNumber(13)
   $core.bool hasError() => $_has(12);
   @$pb.TagNumber(13)
   void clearError() => $_clearField(13);
   @$pb.TagNumber(13)
-  $9.Status ensureError() => $_ensure(12);
+  $3.Status ensureError() => $_ensure(12);
 
   /// The database engine type and provider of the source.
   @$pb.TagNumber(14)
   DatabaseType get sourceDatabase => $_getN(13);
   @$pb.TagNumber(14)
-  set sourceDatabase(DatabaseType v) {
-    $_setField(14, v);
-  }
-
+  set sourceDatabase(DatabaseType value) => $_setField(14, value);
   @$pb.TagNumber(14)
   $core.bool hasSourceDatabase() => $_has(13);
   @$pb.TagNumber(14)
@@ -2528,10 +2161,7 @@ class MigrationJob extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   DatabaseType get destinationDatabase => $_getN(14);
   @$pb.TagNumber(15)
-  set destinationDatabase(DatabaseType v) {
-    $_setField(15, v);
-  }
-
+  set destinationDatabase(DatabaseType value) => $_setField(15, value);
   @$pb.TagNumber(15)
   $core.bool hasDestinationDatabase() => $_has(14);
   @$pb.TagNumber(15)
@@ -2542,28 +2172,22 @@ class MigrationJob extends $pb.GeneratedMessage {
   /// Output only. If the migration job is completed, the time when it was
   /// completed.
   @$pb.TagNumber(16)
-  $2.Timestamp get endTime => $_getN(15);
+  $0.Timestamp get endTime => $_getN(15);
   @$pb.TagNumber(16)
-  set endTime($2.Timestamp v) {
-    $_setField(16, v);
-  }
-
+  set endTime($0.Timestamp value) => $_setField(16, value);
   @$pb.TagNumber(16)
   $core.bool hasEndTime() => $_has(15);
   @$pb.TagNumber(16)
   void clearEndTime() => $_clearField(16);
   @$pb.TagNumber(16)
-  $2.Timestamp ensureEndTime() => $_ensure(15);
+  $0.Timestamp ensureEndTime() => $_ensure(15);
 
   /// The initial dump flags.
   /// This field and the "dump_path" field are mutually exclusive.
   @$pb.TagNumber(17)
   MigrationJob_DumpFlags get dumpFlags => $_getN(16);
   @$pb.TagNumber(17)
-  set dumpFlags(MigrationJob_DumpFlags v) {
-    $_setField(17, v);
-  }
-
+  set dumpFlags(MigrationJob_DumpFlags value) => $_setField(17, value);
   @$pb.TagNumber(17)
   $core.bool hasDumpFlags() => $_has(16);
   @$pb.TagNumber(17)
@@ -2576,10 +2200,8 @@ class MigrationJob extends $pb.GeneratedMessage {
   @$pb.TagNumber(101)
   ReverseSshConnectivity get reverseSshConnectivity => $_getN(17);
   @$pb.TagNumber(101)
-  set reverseSshConnectivity(ReverseSshConnectivity v) {
-    $_setField(101, v);
-  }
-
+  set reverseSshConnectivity(ReverseSshConnectivity value) =>
+      $_setField(101, value);
   @$pb.TagNumber(101)
   $core.bool hasReverseSshConnectivity() => $_has(17);
   @$pb.TagNumber(101)
@@ -2591,10 +2213,8 @@ class MigrationJob extends $pb.GeneratedMessage {
   @$pb.TagNumber(102)
   VpcPeeringConnectivity get vpcPeeringConnectivity => $_getN(18);
   @$pb.TagNumber(102)
-  set vpcPeeringConnectivity(VpcPeeringConnectivity v) {
-    $_setField(102, v);
-  }
-
+  set vpcPeeringConnectivity(VpcPeeringConnectivity value) =>
+      $_setField(102, value);
   @$pb.TagNumber(102)
   $core.bool hasVpcPeeringConnectivity() => $_has(18);
   @$pb.TagNumber(102)
@@ -2606,10 +2226,8 @@ class MigrationJob extends $pb.GeneratedMessage {
   @$pb.TagNumber(103)
   StaticIpConnectivity get staticIpConnectivity => $_getN(19);
   @$pb.TagNumber(103)
-  set staticIpConnectivity(StaticIpConnectivity v) {
-    $_setField(103, v);
-  }
-
+  set staticIpConnectivity(StaticIpConnectivity value) =>
+      $_setField(103, value);
   @$pb.TagNumber(103)
   $core.bool hasStaticIpConnectivity() => $_has(19);
   @$pb.TagNumber(103)
@@ -2630,64 +2248,42 @@ enum ConnectionProfile_ConnectionProfile {
 class ConnectionProfile extends $pb.GeneratedMessage {
   factory ConnectionProfile({
     $core.String? name,
-    $2.Timestamp? createTime,
-    $2.Timestamp? updateTime,
+    $0.Timestamp? createTime,
+    $0.Timestamp? updateTime,
     $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     ConnectionProfile_State? state,
     $core.String? displayName,
-    $9.Status? error,
+    $3.Status? error,
     DatabaseProvider? provider,
     MySqlConnectionProfile? mysql,
     PostgreSqlConnectionProfile? postgresql,
     CloudSqlConnectionProfile? cloudsql,
     AlloyDbConnectionProfile? alloydb,
   }) {
-    final $result = create();
-    if (name != null) {
-      $result.name = name;
-    }
-    if (createTime != null) {
-      $result.createTime = createTime;
-    }
-    if (updateTime != null) {
-      $result.updateTime = updateTime;
-    }
-    if (labels != null) {
-      $result.labels.addEntries(labels);
-    }
-    if (state != null) {
-      $result.state = state;
-    }
-    if (displayName != null) {
-      $result.displayName = displayName;
-    }
-    if (error != null) {
-      $result.error = error;
-    }
-    if (provider != null) {
-      $result.provider = provider;
-    }
-    if (mysql != null) {
-      $result.mysql = mysql;
-    }
-    if (postgresql != null) {
-      $result.postgresql = postgresql;
-    }
-    if (cloudsql != null) {
-      $result.cloudsql = cloudsql;
-    }
-    if (alloydb != null) {
-      $result.alloydb = alloydb;
-    }
-    return $result;
+    final result = create();
+    if (name != null) result.name = name;
+    if (createTime != null) result.createTime = createTime;
+    if (updateTime != null) result.updateTime = updateTime;
+    if (labels != null) result.labels.addEntries(labels);
+    if (state != null) result.state = state;
+    if (displayName != null) result.displayName = displayName;
+    if (error != null) result.error = error;
+    if (provider != null) result.provider = provider;
+    if (mysql != null) result.mysql = mysql;
+    if (postgresql != null) result.postgresql = postgresql;
+    if (cloudsql != null) result.cloudsql = cloudsql;
+    if (alloydb != null) result.alloydb = alloydb;
+    return result;
   }
-  ConnectionProfile._() : super();
-  factory ConnectionProfile.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ConnectionProfile.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  ConnectionProfile._();
+
+  factory ConnectionProfile.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ConnectionProfile.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static const $core.Map<$core.int, ConnectionProfile_ConnectionProfile>
       _ConnectionProfile_ConnectionProfileByTag = {
@@ -2704,27 +2300,21 @@ class ConnectionProfile extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..oo(0, [100, 101, 102, 105])
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$2.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(3, _omitFieldNames ? '' : 'updateTime',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$0.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(3, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $0.Timestamp.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels',
         entryClassName: 'ConnectionProfile.LabelsEntry',
         keyFieldType: $pb.PbFieldType.OS,
         valueFieldType: $pb.PbFieldType.OS,
         packageName: const $pb.PackageName('google.events.cloud.clouddms.v1'))
-    ..e<ConnectionProfile_State>(
-        5, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
-        defaultOrMaker: ConnectionProfile_State.STATE_UNSPECIFIED,
-        valueOf: ConnectionProfile_State.valueOf,
+    ..aE<ConnectionProfile_State>(5, _omitFieldNames ? '' : 'state',
         enumValues: ConnectionProfile_State.values)
     ..aOS(6, _omitFieldNames ? '' : 'displayName')
-    ..aOM<$9.Status>(7, _omitFieldNames ? '' : 'error',
-        subBuilder: $9.Status.create)
-    ..e<DatabaseProvider>(
-        8, _omitFieldNames ? '' : 'provider', $pb.PbFieldType.OE,
-        defaultOrMaker: DatabaseProvider.DATABASE_PROVIDER_UNSPECIFIED,
-        valueOf: DatabaseProvider.valueOf,
+    ..aOM<$3.Status>(7, _omitFieldNames ? '' : 'error',
+        subBuilder: $3.Status.create)
+    ..aE<DatabaseProvider>(8, _omitFieldNames ? '' : 'provider',
         enumValues: DatabaseProvider.values)
     ..aOM<MySqlConnectionProfile>(100, _omitFieldNames ? '' : 'mysql',
         subBuilder: MySqlConnectionProfile.create)
@@ -2737,26 +2327,34 @@ class ConnectionProfile extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ConnectionProfile clone() => ConnectionProfile()..mergeFromMessage(this);
+  ConnectionProfile clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ConnectionProfile copyWith(void Function(ConnectionProfile) updates) =>
       super.copyWith((message) => updates(message as ConnectionProfile))
           as ConnectionProfile;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ConnectionProfile create() => ConnectionProfile._();
+  @$core.override
   ConnectionProfile createEmptyInstance() => create();
-  static $pb.PbList<ConnectionProfile> createRepeated() =>
-      $pb.PbList<ConnectionProfile>();
   @$core.pragma('dart2js:noInline')
   static ConnectionProfile getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ConnectionProfile>(create);
   static ConnectionProfile? _defaultInstance;
 
+  @$pb.TagNumber(100)
+  @$pb.TagNumber(101)
+  @$pb.TagNumber(102)
+  @$pb.TagNumber(105)
   ConnectionProfile_ConnectionProfile whichConnectionProfile() =>
       _ConnectionProfile_ConnectionProfileByTag[$_whichOneof(0)]!;
+  @$pb.TagNumber(100)
+  @$pb.TagNumber(101)
+  @$pb.TagNumber(102)
+  @$pb.TagNumber(105)
   void clearConnectionProfile() => $_clearField($_whichOneof(0));
 
   /// The name of this connection profile resource in the form of
@@ -2764,10 +2362,7 @@ class ConnectionProfile extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) {
-    $_setString(0, v);
-  }
-
+  set name($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -2777,35 +2372,29 @@ class ConnectionProfile extends $pb.GeneratedMessage {
   /// A timestamp in RFC3339 UTC "Zulu" format, accurate to nanoseconds.
   /// Example: "2014-10-02T15:01:23.045123456Z".
   @$pb.TagNumber(2)
-  $2.Timestamp get createTime => $_getN(1);
+  $0.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($2.Timestamp v) {
-    $_setField(2, v);
-  }
-
+  set createTime($0.Timestamp value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => $_clearField(2);
   @$pb.TagNumber(2)
-  $2.Timestamp ensureCreateTime() => $_ensure(1);
+  $0.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. The timestamp when the resource was last updated.
   /// A timestamp in RFC3339 UTC "Zulu" format, accurate to nanoseconds.
   /// Example: "2014-10-02T15:01:23.045123456Z".
   @$pb.TagNumber(3)
-  $2.Timestamp get updateTime => $_getN(2);
+  $0.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($2.Timestamp v) {
-    $_setField(3, v);
-  }
-
+  set updateTime($0.Timestamp value) => $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => $_clearField(3);
   @$pb.TagNumber(3)
-  $2.Timestamp ensureUpdateTime() => $_ensure(2);
+  $0.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// The resource labels for connection profile to use to annotate any related
   /// underlying resources such as Compute Engine VMs. An object containing a
@@ -2819,10 +2408,7 @@ class ConnectionProfile extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   ConnectionProfile_State get state => $_getN(4);
   @$pb.TagNumber(5)
-  set state(ConnectionProfile_State v) {
-    $_setField(5, v);
-  }
-
+  set state(ConnectionProfile_State value) => $_setField(5, value);
   @$pb.TagNumber(5)
   $core.bool hasState() => $_has(4);
   @$pb.TagNumber(5)
@@ -2832,10 +2418,7 @@ class ConnectionProfile extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get displayName => $_getSZ(5);
   @$pb.TagNumber(6)
-  set displayName($core.String v) {
-    $_setString(5, v);
-  }
-
+  set displayName($core.String value) => $_setString(5, value);
   @$pb.TagNumber(6)
   $core.bool hasDisplayName() => $_has(5);
   @$pb.TagNumber(6)
@@ -2843,27 +2426,21 @@ class ConnectionProfile extends $pb.GeneratedMessage {
 
   /// Output only. The error details in case of state FAILED.
   @$pb.TagNumber(7)
-  $9.Status get error => $_getN(6);
+  $3.Status get error => $_getN(6);
   @$pb.TagNumber(7)
-  set error($9.Status v) {
-    $_setField(7, v);
-  }
-
+  set error($3.Status value) => $_setField(7, value);
   @$pb.TagNumber(7)
   $core.bool hasError() => $_has(6);
   @$pb.TagNumber(7)
   void clearError() => $_clearField(7);
   @$pb.TagNumber(7)
-  $9.Status ensureError() => $_ensure(6);
+  $3.Status ensureError() => $_ensure(6);
 
   /// The database provider.
   @$pb.TagNumber(8)
   DatabaseProvider get provider => $_getN(7);
   @$pb.TagNumber(8)
-  set provider(DatabaseProvider v) {
-    $_setField(8, v);
-  }
-
+  set provider(DatabaseProvider value) => $_setField(8, value);
   @$pb.TagNumber(8)
   $core.bool hasProvider() => $_has(7);
   @$pb.TagNumber(8)
@@ -2873,10 +2450,7 @@ class ConnectionProfile extends $pb.GeneratedMessage {
   @$pb.TagNumber(100)
   MySqlConnectionProfile get mysql => $_getN(8);
   @$pb.TagNumber(100)
-  set mysql(MySqlConnectionProfile v) {
-    $_setField(100, v);
-  }
-
+  set mysql(MySqlConnectionProfile value) => $_setField(100, value);
   @$pb.TagNumber(100)
   $core.bool hasMysql() => $_has(8);
   @$pb.TagNumber(100)
@@ -2888,10 +2462,7 @@ class ConnectionProfile extends $pb.GeneratedMessage {
   @$pb.TagNumber(101)
   PostgreSqlConnectionProfile get postgresql => $_getN(9);
   @$pb.TagNumber(101)
-  set postgresql(PostgreSqlConnectionProfile v) {
-    $_setField(101, v);
-  }
-
+  set postgresql(PostgreSqlConnectionProfile value) => $_setField(101, value);
   @$pb.TagNumber(101)
   $core.bool hasPostgresql() => $_has(9);
   @$pb.TagNumber(101)
@@ -2903,10 +2474,7 @@ class ConnectionProfile extends $pb.GeneratedMessage {
   @$pb.TagNumber(102)
   CloudSqlConnectionProfile get cloudsql => $_getN(10);
   @$pb.TagNumber(102)
-  set cloudsql(CloudSqlConnectionProfile v) {
-    $_setField(102, v);
-  }
-
+  set cloudsql(CloudSqlConnectionProfile value) => $_setField(102, value);
   @$pb.TagNumber(102)
   $core.bool hasCloudsql() => $_has(10);
   @$pb.TagNumber(102)
@@ -2918,10 +2486,7 @@ class ConnectionProfile extends $pb.GeneratedMessage {
   @$pb.TagNumber(105)
   AlloyDbConnectionProfile get alloydb => $_getN(11);
   @$pb.TagNumber(105)
-  set alloydb(AlloyDbConnectionProfile v) {
-    $_setField(105, v);
-  }
-
+  set alloydb(AlloyDbConnectionProfile value) => $_setField(105, value);
   @$pb.TagNumber(105)
   $core.bool hasAlloydb() => $_has(11);
   @$pb.TagNumber(105)
@@ -2935,19 +2500,19 @@ class ConnectionProfileEventData extends $pb.GeneratedMessage {
   factory ConnectionProfileEventData({
     ConnectionProfile? payload,
   }) {
-    final $result = create();
-    if (payload != null) {
-      $result.payload = payload;
-    }
-    return $result;
+    final result = create();
+    if (payload != null) result.payload = payload;
+    return result;
   }
-  ConnectionProfileEventData._() : super();
-  factory ConnectionProfileEventData.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ConnectionProfileEventData.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  ConnectionProfileEventData._();
+
+  factory ConnectionProfileEventData.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ConnectionProfileEventData.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'ConnectionProfileEventData',
@@ -2959,8 +2524,7 @@ class ConnectionProfileEventData extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ConnectionProfileEventData clone() =>
-      ConnectionProfileEventData()..mergeFromMessage(this);
+  ConnectionProfileEventData clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ConnectionProfileEventData copyWith(
           void Function(ConnectionProfileEventData) updates) =>
@@ -2968,13 +2532,13 @@ class ConnectionProfileEventData extends $pb.GeneratedMessage {
               (message) => updates(message as ConnectionProfileEventData))
           as ConnectionProfileEventData;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ConnectionProfileEventData create() => ConnectionProfileEventData._();
+  @$core.override
   ConnectionProfileEventData createEmptyInstance() => create();
-  static $pb.PbList<ConnectionProfileEventData> createRepeated() =>
-      $pb.PbList<ConnectionProfileEventData>();
   @$core.pragma('dart2js:noInline')
   static ConnectionProfileEventData getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ConnectionProfileEventData>(create);
@@ -2984,10 +2548,7 @@ class ConnectionProfileEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   ConnectionProfile get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(ConnectionProfile v) {
-    $_setField(1, v);
-  }
-
+  set payload(ConnectionProfile value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -3001,19 +2562,19 @@ class MigrationJobEventData extends $pb.GeneratedMessage {
   factory MigrationJobEventData({
     MigrationJob? payload,
   }) {
-    final $result = create();
-    if (payload != null) {
-      $result.payload = payload;
-    }
-    return $result;
+    final result = create();
+    if (payload != null) result.payload = payload;
+    return result;
   }
-  MigrationJobEventData._() : super();
-  factory MigrationJobEventData.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory MigrationJobEventData.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  MigrationJobEventData._();
+
+  factory MigrationJobEventData.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory MigrationJobEventData.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'MigrationJobEventData',
@@ -3025,21 +2586,20 @@ class MigrationJobEventData extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  MigrationJobEventData clone() =>
-      MigrationJobEventData()..mergeFromMessage(this);
+  MigrationJobEventData clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MigrationJobEventData copyWith(
           void Function(MigrationJobEventData) updates) =>
       super.copyWith((message) => updates(message as MigrationJobEventData))
           as MigrationJobEventData;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static MigrationJobEventData create() => MigrationJobEventData._();
+  @$core.override
   MigrationJobEventData createEmptyInstance() => create();
-  static $pb.PbList<MigrationJobEventData> createRepeated() =>
-      $pb.PbList<MigrationJobEventData>();
   @$core.pragma('dart2js:noInline')
   static MigrationJobEventData getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<MigrationJobEventData>(create);
@@ -3049,10 +2609,7 @@ class MigrationJobEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   MigrationJob get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(MigrationJob v) {
-    $_setField(1, v);
-  }
-
+  set payload(MigrationJob value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -3061,6 +2618,7 @@ class MigrationJobEventData extends $pb.GeneratedMessage {
   MigrationJob ensurePayload() => $_ensure(0);
 }
 
-const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames =
+const $core.bool _omitFieldNames =
+    $core.bool.fromEnvironment('protobuf.omit_field_names');
+const $core.bool _omitMessageNames =
     $core.bool.fromEnvironment('protobuf.omit_message_names');

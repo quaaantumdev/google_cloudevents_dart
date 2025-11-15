@@ -1,19 +1,20 @@
+// This is a generated file - do not edit.
 //
-//  Generated code. Do not modify.
-//  source: google/events/cloud/beyondcorp/appconnectors/v1/data.proto
-//
+// Generated from google/events/cloud/beyondcorp/appconnectors/v1/data.proto.
+
 // @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
-// ignore_for_file: constant_identifier_names, library_prefixes
-// ignore_for_file: non_constant_identifier_names, prefer_final_fields
-// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
+// ignore_for_file: constant_identifier_names
+// ignore_for_file: curly_braces_in_flow_control_structures
+// ignore_for_file: deprecated_member_use_from_same_package, library_prefixes
+// ignore_for_file: non_constant_identifier_names
 
 import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../../protobuf/timestamp.pb.dart' as $2;
+import '../../../../../protobuf/timestamp.pb.dart' as $0;
 import 'data.pbenum.dart';
 
 export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
@@ -34,31 +35,25 @@ class ResourceInfo extends $pb.GeneratedMessage {
   factory ResourceInfo({
     $core.String? id,
     HealthStatus? status,
-    $2.Timestamp? time,
+    $0.Timestamp? time,
     $core.Iterable<ResourceInfo>? sub,
   }) {
-    final $result = create();
-    if (id != null) {
-      $result.id = id;
-    }
-    if (status != null) {
-      $result.status = status;
-    }
-    if (time != null) {
-      $result.time = time;
-    }
-    if (sub != null) {
-      $result.sub.addAll(sub);
-    }
-    return $result;
+    final result = create();
+    if (id != null) result.id = id;
+    if (status != null) result.status = status;
+    if (time != null) result.time = time;
+    if (sub != null) result.sub.addAll(sub);
+    return result;
   }
-  ResourceInfo._() : super();
-  factory ResourceInfo.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ResourceInfo.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  ResourceInfo._();
+
+  factory ResourceInfo.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ResourceInfo.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'ResourceInfo',
@@ -67,30 +62,28 @@ class ResourceInfo extends $pb.GeneratedMessage {
           : 'google.events.cloud.beyondcorp.appconnectors.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'id')
-    ..e<HealthStatus>(2, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE,
-        defaultOrMaker: HealthStatus.HEALTH_STATUS_UNSPECIFIED,
-        valueOf: HealthStatus.valueOf,
+    ..aE<HealthStatus>(2, _omitFieldNames ? '' : 'status',
         enumValues: HealthStatus.values)
-    ..aOM<$2.Timestamp>(4, _omitFieldNames ? '' : 'time',
-        subBuilder: $2.Timestamp.create)
-    ..pc<ResourceInfo>(5, _omitFieldNames ? '' : 'sub', $pb.PbFieldType.PM,
+    ..aOM<$0.Timestamp>(4, _omitFieldNames ? '' : 'time',
+        subBuilder: $0.Timestamp.create)
+    ..pPM<ResourceInfo>(5, _omitFieldNames ? '' : 'sub',
         subBuilder: ResourceInfo.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ResourceInfo clone() => ResourceInfo()..mergeFromMessage(this);
+  ResourceInfo clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ResourceInfo copyWith(void Function(ResourceInfo) updates) =>
       super.copyWith((message) => updates(message as ResourceInfo))
           as ResourceInfo;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ResourceInfo create() => ResourceInfo._();
+  @$core.override
   ResourceInfo createEmptyInstance() => create();
-  static $pb.PbList<ResourceInfo> createRepeated() =>
-      $pb.PbList<ResourceInfo>();
   @$core.pragma('dart2js:noInline')
   static ResourceInfo getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ResourceInfo>(create);
@@ -100,10 +93,7 @@ class ResourceInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get id => $_getSZ(0);
   @$pb.TagNumber(1)
-  set id($core.String v) {
-    $_setString(0, v);
-  }
-
+  set id($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
@@ -114,10 +104,7 @@ class ResourceInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   HealthStatus get status => $_getN(1);
   @$pb.TagNumber(2)
-  set status(HealthStatus v) {
-    $_setField(2, v);
-  }
-
+  set status(HealthStatus value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasStatus() => $_has(1);
   @$pb.TagNumber(2)
@@ -126,18 +113,15 @@ class ResourceInfo extends $pb.GeneratedMessage {
   /// The timestamp to collect the info. It is suggested to be set by
   /// the topmost level resource only.
   @$pb.TagNumber(4)
-  $2.Timestamp get time => $_getN(2);
+  $0.Timestamp get time => $_getN(2);
   @$pb.TagNumber(4)
-  set time($2.Timestamp v) {
-    $_setField(4, v);
-  }
-
+  set time($0.Timestamp value) => $_setField(4, value);
   @$pb.TagNumber(4)
   $core.bool hasTime() => $_has(2);
   @$pb.TagNumber(4)
   void clearTime() => $_clearField(4);
   @$pb.TagNumber(4)
-  $2.Timestamp ensureTime() => $_ensure(2);
+  $0.Timestamp ensureTime() => $_ensure(2);
 
   /// List of Info for the sub level resources.
   @$pb.TagNumber(5)
@@ -149,20 +133,20 @@ class AppConnector_PrincipalInfo_ServiceAccount extends $pb.GeneratedMessage {
   factory AppConnector_PrincipalInfo_ServiceAccount({
     $core.String? email,
   }) {
-    final $result = create();
-    if (email != null) {
-      $result.email = email;
-    }
-    return $result;
+    final result = create();
+    if (email != null) result.email = email;
+    return result;
   }
-  AppConnector_PrincipalInfo_ServiceAccount._() : super();
+
+  AppConnector_PrincipalInfo_ServiceAccount._();
+
   factory AppConnector_PrincipalInfo_ServiceAccount.fromBuffer(
-          $core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory AppConnector_PrincipalInfo_ServiceAccount.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+          $core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory AppConnector_PrincipalInfo_ServiceAccount.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'AppConnector.PrincipalInfo.ServiceAccount',
@@ -174,8 +158,7 @@ class AppConnector_PrincipalInfo_ServiceAccount extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  AppConnector_PrincipalInfo_ServiceAccount clone() =>
-      AppConnector_PrincipalInfo_ServiceAccount()..mergeFromMessage(this);
+  AppConnector_PrincipalInfo_ServiceAccount clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AppConnector_PrincipalInfo_ServiceAccount copyWith(
           void Function(AppConnector_PrincipalInfo_ServiceAccount) updates) =>
@@ -183,15 +166,14 @@ class AppConnector_PrincipalInfo_ServiceAccount extends $pb.GeneratedMessage {
               updates(message as AppConnector_PrincipalInfo_ServiceAccount))
           as AppConnector_PrincipalInfo_ServiceAccount;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AppConnector_PrincipalInfo_ServiceAccount create() =>
       AppConnector_PrincipalInfo_ServiceAccount._();
+  @$core.override
   AppConnector_PrincipalInfo_ServiceAccount createEmptyInstance() => create();
-  static $pb.PbList<AppConnector_PrincipalInfo_ServiceAccount>
-      createRepeated() =>
-          $pb.PbList<AppConnector_PrincipalInfo_ServiceAccount>();
   @$core.pragma('dart2js:noInline')
   static AppConnector_PrincipalInfo_ServiceAccount getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
@@ -202,10 +184,7 @@ class AppConnector_PrincipalInfo_ServiceAccount extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get email => $_getSZ(0);
   @$pb.TagNumber(1)
-  set email($core.String v) {
-    $_setString(0, v);
-  }
-
+  set email($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasEmail() => $_has(0);
   @$pb.TagNumber(1)
@@ -219,19 +198,19 @@ class AppConnector_PrincipalInfo extends $pb.GeneratedMessage {
   factory AppConnector_PrincipalInfo({
     AppConnector_PrincipalInfo_ServiceAccount? serviceAccount,
   }) {
-    final $result = create();
-    if (serviceAccount != null) {
-      $result.serviceAccount = serviceAccount;
-    }
-    return $result;
+    final result = create();
+    if (serviceAccount != null) result.serviceAccount = serviceAccount;
+    return result;
   }
-  AppConnector_PrincipalInfo._() : super();
-  factory AppConnector_PrincipalInfo.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory AppConnector_PrincipalInfo.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  AppConnector_PrincipalInfo._();
+
+  factory AppConnector_PrincipalInfo.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory AppConnector_PrincipalInfo.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static const $core.Map<$core.int, AppConnector_PrincipalInfo_Type>
       _AppConnector_PrincipalInfo_TypeByTag = {
@@ -251,8 +230,7 @@ class AppConnector_PrincipalInfo extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  AppConnector_PrincipalInfo clone() =>
-      AppConnector_PrincipalInfo()..mergeFromMessage(this);
+  AppConnector_PrincipalInfo clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AppConnector_PrincipalInfo copyWith(
           void Function(AppConnector_PrincipalInfo) updates) =>
@@ -260,30 +238,30 @@ class AppConnector_PrincipalInfo extends $pb.GeneratedMessage {
               (message) => updates(message as AppConnector_PrincipalInfo))
           as AppConnector_PrincipalInfo;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AppConnector_PrincipalInfo create() => AppConnector_PrincipalInfo._();
+  @$core.override
   AppConnector_PrincipalInfo createEmptyInstance() => create();
-  static $pb.PbList<AppConnector_PrincipalInfo> createRepeated() =>
-      $pb.PbList<AppConnector_PrincipalInfo>();
   @$core.pragma('dart2js:noInline')
   static AppConnector_PrincipalInfo getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<AppConnector_PrincipalInfo>(create);
   static AppConnector_PrincipalInfo? _defaultInstance;
 
+  @$pb.TagNumber(1)
   AppConnector_PrincipalInfo_Type whichType() =>
       _AppConnector_PrincipalInfo_TypeByTag[$_whichOneof(0)]!;
+  @$pb.TagNumber(1)
   void clearType() => $_clearField($_whichOneof(0));
 
   /// A GCP service account.
   @$pb.TagNumber(1)
   AppConnector_PrincipalInfo_ServiceAccount get serviceAccount => $_getN(0);
   @$pb.TagNumber(1)
-  set serviceAccount(AppConnector_PrincipalInfo_ServiceAccount v) {
-    $_setField(1, v);
-  }
-
+  set serviceAccount(AppConnector_PrincipalInfo_ServiceAccount value) =>
+      $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasServiceAccount() => $_has(0);
   @$pb.TagNumber(1)
@@ -301,8 +279,8 @@ class AppConnector_PrincipalInfo extends $pb.GeneratedMessage {
 class AppConnector extends $pb.GeneratedMessage {
   factory AppConnector({
     $core.String? name,
-    $2.Timestamp? createTime,
-    $2.Timestamp? updateTime,
+    $0.Timestamp? createTime,
+    $0.Timestamp? updateTime,
     $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.String? displayName,
     $core.String? uid,
@@ -310,43 +288,27 @@ class AppConnector extends $pb.GeneratedMessage {
     AppConnector_PrincipalInfo? principalInfo,
     ResourceInfo? resourceInfo,
   }) {
-    final $result = create();
-    if (name != null) {
-      $result.name = name;
-    }
-    if (createTime != null) {
-      $result.createTime = createTime;
-    }
-    if (updateTime != null) {
-      $result.updateTime = updateTime;
-    }
-    if (labels != null) {
-      $result.labels.addEntries(labels);
-    }
-    if (displayName != null) {
-      $result.displayName = displayName;
-    }
-    if (uid != null) {
-      $result.uid = uid;
-    }
-    if (state != null) {
-      $result.state = state;
-    }
-    if (principalInfo != null) {
-      $result.principalInfo = principalInfo;
-    }
-    if (resourceInfo != null) {
-      $result.resourceInfo = resourceInfo;
-    }
-    return $result;
+    final result = create();
+    if (name != null) result.name = name;
+    if (createTime != null) result.createTime = createTime;
+    if (updateTime != null) result.updateTime = updateTime;
+    if (labels != null) result.labels.addEntries(labels);
+    if (displayName != null) result.displayName = displayName;
+    if (uid != null) result.uid = uid;
+    if (state != null) result.state = state;
+    if (principalInfo != null) result.principalInfo = principalInfo;
+    if (resourceInfo != null) result.resourceInfo = resourceInfo;
+    return result;
   }
-  AppConnector._() : super();
-  factory AppConnector.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory AppConnector.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  AppConnector._();
+
+  factory AppConnector.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory AppConnector.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'AppConnector',
@@ -355,10 +317,10 @@ class AppConnector extends $pb.GeneratedMessage {
           : 'google.events.cloud.beyondcorp.appconnectors.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$2.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(3, _omitFieldNames ? '' : 'updateTime',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$0.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(3, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $0.Timestamp.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels',
         entryClassName: 'AppConnector.LabelsEntry',
         keyFieldType: $pb.PbFieldType.OS,
@@ -367,10 +329,7 @@ class AppConnector extends $pb.GeneratedMessage {
             'google.events.cloud.beyondcorp.appconnectors.v1'))
     ..aOS(5, _omitFieldNames ? '' : 'displayName')
     ..aOS(6, _omitFieldNames ? '' : 'uid')
-    ..e<AppConnector_State>(
-        7, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
-        defaultOrMaker: AppConnector_State.STATE_UNSPECIFIED,
-        valueOf: AppConnector_State.valueOf,
+    ..aE<AppConnector_State>(7, _omitFieldNames ? '' : 'state',
         enumValues: AppConnector_State.values)
     ..aOM<AppConnector_PrincipalInfo>(8, _omitFieldNames ? '' : 'principalInfo',
         subBuilder: AppConnector_PrincipalInfo.create)
@@ -379,19 +338,19 @@ class AppConnector extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  AppConnector clone() => AppConnector()..mergeFromMessage(this);
+  AppConnector clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AppConnector copyWith(void Function(AppConnector) updates) =>
       super.copyWith((message) => updates(message as AppConnector))
           as AppConnector;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AppConnector create() => AppConnector._();
+  @$core.override
   AppConnector createEmptyInstance() => create();
-  static $pb.PbList<AppConnector> createRepeated() =>
-      $pb.PbList<AppConnector>();
   @$core.pragma('dart2js:noInline')
   static AppConnector getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<AppConnector>(create);
@@ -402,10 +361,7 @@ class AppConnector extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) {
-    $_setString(0, v);
-  }
-
+  set name($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -413,33 +369,27 @@ class AppConnector extends $pb.GeneratedMessage {
 
   /// Output only. Timestamp when the resource was created.
   @$pb.TagNumber(2)
-  $2.Timestamp get createTime => $_getN(1);
+  $0.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($2.Timestamp v) {
-    $_setField(2, v);
-  }
-
+  set createTime($0.Timestamp value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => $_clearField(2);
   @$pb.TagNumber(2)
-  $2.Timestamp ensureCreateTime() => $_ensure(1);
+  $0.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. Timestamp when the resource was last modified.
   @$pb.TagNumber(3)
-  $2.Timestamp get updateTime => $_getN(2);
+  $0.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($2.Timestamp v) {
-    $_setField(3, v);
-  }
-
+  set updateTime($0.Timestamp value) => $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => $_clearField(3);
   @$pb.TagNumber(3)
-  $2.Timestamp ensureUpdateTime() => $_ensure(2);
+  $0.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Optional. Resource labels to represent user provided metadata.
   @$pb.TagNumber(4)
@@ -450,10 +400,7 @@ class AppConnector extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get displayName => $_getSZ(4);
   @$pb.TagNumber(5)
-  set displayName($core.String v) {
-    $_setString(4, v);
-  }
-
+  set displayName($core.String value) => $_setString(4, value);
   @$pb.TagNumber(5)
   $core.bool hasDisplayName() => $_has(4);
   @$pb.TagNumber(5)
@@ -464,10 +411,7 @@ class AppConnector extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get uid => $_getSZ(5);
   @$pb.TagNumber(6)
-  set uid($core.String v) {
-    $_setString(5, v);
-  }
-
+  set uid($core.String value) => $_setString(5, value);
   @$pb.TagNumber(6)
   $core.bool hasUid() => $_has(5);
   @$pb.TagNumber(6)
@@ -477,10 +421,7 @@ class AppConnector extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   AppConnector_State get state => $_getN(6);
   @$pb.TagNumber(7)
-  set state(AppConnector_State v) {
-    $_setField(7, v);
-  }
-
+  set state(AppConnector_State value) => $_setField(7, value);
   @$pb.TagNumber(7)
   $core.bool hasState() => $_has(6);
   @$pb.TagNumber(7)
@@ -490,10 +431,7 @@ class AppConnector extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   AppConnector_PrincipalInfo get principalInfo => $_getN(7);
   @$pb.TagNumber(8)
-  set principalInfo(AppConnector_PrincipalInfo v) {
-    $_setField(8, v);
-  }
-
+  set principalInfo(AppConnector_PrincipalInfo value) => $_setField(8, value);
   @$pb.TagNumber(8)
   $core.bool hasPrincipalInfo() => $_has(7);
   @$pb.TagNumber(8)
@@ -505,10 +443,7 @@ class AppConnector extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   ResourceInfo get resourceInfo => $_getN(8);
   @$pb.TagNumber(11)
-  set resourceInfo(ResourceInfo v) {
-    $_setField(11, v);
-  }
-
+  set resourceInfo(ResourceInfo value) => $_setField(11, value);
   @$pb.TagNumber(11)
   $core.bool hasResourceInfo() => $_has(8);
   @$pb.TagNumber(11)
@@ -522,19 +457,19 @@ class AppConnectorEventData extends $pb.GeneratedMessage {
   factory AppConnectorEventData({
     AppConnector? payload,
   }) {
-    final $result = create();
-    if (payload != null) {
-      $result.payload = payload;
-    }
-    return $result;
+    final result = create();
+    if (payload != null) result.payload = payload;
+    return result;
   }
-  AppConnectorEventData._() : super();
-  factory AppConnectorEventData.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory AppConnectorEventData.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  AppConnectorEventData._();
+
+  factory AppConnectorEventData.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory AppConnectorEventData.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'AppConnectorEventData',
@@ -547,21 +482,20 @@ class AppConnectorEventData extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  AppConnectorEventData clone() =>
-      AppConnectorEventData()..mergeFromMessage(this);
+  AppConnectorEventData clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AppConnectorEventData copyWith(
           void Function(AppConnectorEventData) updates) =>
       super.copyWith((message) => updates(message as AppConnectorEventData))
           as AppConnectorEventData;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AppConnectorEventData create() => AppConnectorEventData._();
+  @$core.override
   AppConnectorEventData createEmptyInstance() => create();
-  static $pb.PbList<AppConnectorEventData> createRepeated() =>
-      $pb.PbList<AppConnectorEventData>();
   @$core.pragma('dart2js:noInline')
   static AppConnectorEventData getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<AppConnectorEventData>(create);
@@ -571,10 +505,7 @@ class AppConnectorEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   AppConnector get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(AppConnector v) {
-    $_setField(1, v);
-  }
-
+  set payload(AppConnector value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -583,6 +514,7 @@ class AppConnectorEventData extends $pb.GeneratedMessage {
   AppConnector ensurePayload() => $_ensure(0);
 }
 
-const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames =
+const $core.bool _omitFieldNames =
+    $core.bool.fromEnvironment('protobuf.omit_field_names');
+const $core.bool _omitMessageNames =
     $core.bool.fromEnvironment('protobuf.omit_message_names');

@@ -1,13 +1,14 @@
+// This is a generated file - do not edit.
 //
-//  Generated code. Do not modify.
-//  source: google/events/cloud/apigateway/v1/data.proto
-//
+// Generated from google/events/cloud/apigateway/v1/data.proto.
+
 // @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
-// ignore_for_file: constant_identifier_names, library_prefixes
-// ignore_for_file: non_constant_identifier_names, prefer_final_fields
-// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
+// ignore_for_file: constant_identifier_names
+// ignore_for_file: curly_braces_in_flow_control_structures
+// ignore_for_file: deprecated_member_use_from_same_package, library_prefixes
+// ignore_for_file: non_constant_identifier_names
 
 import 'dart:core' as $core;
 
@@ -53,7 +54,7 @@ class Api_State extends $pb.ProtobufEnum {
   static Api_State? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Api_State._(super.v, super.n);
+  const Api_State._(super.value, super.name);
 }
 
 /// All the possible API Config states.
@@ -102,7 +103,7 @@ class ApiConfig_State extends $pb.ProtobufEnum {
   static ApiConfig_State? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const ApiConfig_State._(super.v, super.n);
+  const ApiConfig_State._(super.value, super.name);
 }
 
 /// All the possible Gateway states.
@@ -145,7 +146,8 @@ class Gateway_State extends $pb.ProtobufEnum {
   static Gateway_State? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Gateway_State._(super.v, super.n);
+  const Gateway_State._(super.value, super.name);
 }
 
-const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');
+const $core.bool _omitEnumNames =
+    $core.bool.fromEnvironment('protobuf.omit_enum_names');

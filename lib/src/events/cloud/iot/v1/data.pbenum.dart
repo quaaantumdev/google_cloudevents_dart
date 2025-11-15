@@ -1,13 +1,14 @@
+// This is a generated file - do not edit.
 //
-//  Generated code. Do not modify.
-//  source: google/events/cloud/iot/v1/data.proto
-//
+// Generated from google/events/cloud/iot/v1/data.proto.
+
 // @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
-// ignore_for_file: constant_identifier_names, library_prefixes
-// ignore_for_file: non_constant_identifier_names, prefer_final_fields
-// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
+// ignore_for_file: constant_identifier_names
+// ignore_for_file: curly_braces_in_flow_control_structures
+// ignore_for_file: deprecated_member_use_from_same_package, library_prefixes
+// ignore_for_file: non_constant_identifier_names
 
 import 'dart:core' as $core;
 
@@ -39,7 +40,7 @@ class MqttState extends $pb.ProtobufEnum {
   static MqttState? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const MqttState._(super.v, super.n);
+  const MqttState._(super.value, super.name);
 }
 
 /// Indicates whether DeviceService (HTTP) is enabled or disabled for the
@@ -69,7 +70,7 @@ class HttpState extends $pb.ProtobufEnum {
   static HttpState? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const HttpState._(super.v, super.n);
+  const HttpState._(super.value, super.name);
 }
 
 /// **Beta Feature**
@@ -108,7 +109,7 @@ class LogLevel extends $pb.ProtobufEnum {
       $pb.ProtobufEnum.initByValue(values);
   static LogLevel? valueOf($core.int value) => _byValue[value];
 
-  const LogLevel._(super.v, super.n);
+  const LogLevel._(super.value, super.name);
 }
 
 /// Gateway type.
@@ -136,7 +137,7 @@ class GatewayType extends $pb.ProtobufEnum {
   static GatewayType? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const GatewayType._(super.v, super.n);
+  const GatewayType._(super.value, super.name);
 }
 
 /// The gateway authorization/authentication method. This setting determines how
@@ -177,7 +178,7 @@ class GatewayAuthMethod extends $pb.ProtobufEnum {
   static GatewayAuthMethod? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const GatewayAuthMethod._(super.v, super.n);
+  const GatewayAuthMethod._(super.value, super.name);
 }
 
 /// The supported formats for the public key.
@@ -206,7 +207,7 @@ class PublicKeyCertificateFormat extends $pb.ProtobufEnum {
   static PublicKeyCertificateFormat? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const PublicKeyCertificateFormat._(super.v, super.n);
+  const PublicKeyCertificateFormat._(super.value, super.name);
 }
 
 /// The supported formats for the public key.
@@ -257,7 +258,8 @@ class PublicKeyFormat extends $pb.ProtobufEnum {
   static PublicKeyFormat? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const PublicKeyFormat._(super.v, super.n);
+  const PublicKeyFormat._(super.value, super.name);
 }
 
-const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');
+const $core.bool _omitEnumNames =
+    $core.bool.fromEnvironment('protobuf.omit_enum_names');

@@ -1,13 +1,14 @@
+// This is a generated file - do not edit.
 //
-//  Generated code. Do not modify.
-//  source: google/events/cloud/deploy/v1/data.proto
-//
+// Generated from google/events/cloud/deploy/v1/data.proto.
+
 // @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
-// ignore_for_file: constant_identifier_names, library_prefixes
-// ignore_for_file: non_constant_identifier_names, prefer_final_fields
-// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
+// ignore_for_file: constant_identifier_names
+// ignore_for_file: curly_braces_in_flow_control_structures
+// ignore_for_file: deprecated_member_use_from_same_package, library_prefixes
+// ignore_for_file: non_constant_identifier_names
 
 import 'dart:core' as $core;
 
@@ -47,7 +48,7 @@ class SkaffoldSupportState extends $pb.ProtobufEnum {
   static SkaffoldSupportState? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const SkaffoldSupportState._(super.v, super.n);
+  const SkaffoldSupportState._(super.value, super.name);
 }
 
 /// The pattern of how wait time is increased.
@@ -75,7 +76,7 @@ class BackoffMode extends $pb.ProtobufEnum {
   static BackoffMode? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const BackoffMode._(super.v, super.n);
+  const BackoffMode._(super.value, super.name);
 }
 
 /// Possible usages of this configuration.
@@ -126,7 +127,7 @@ class ExecutionConfig_ExecutionEnvironmentUsage extends $pb.ProtobufEnum {
   static ExecutionConfig_ExecutionEnvironmentUsage? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const ExecutionConfig_ExecutionEnvironmentUsage._(super.v, super.n);
+  const ExecutionConfig_ExecutionEnvironmentUsage._(super.value, super.name);
 }
 
 /// Valid states of the render operation.
@@ -160,7 +161,7 @@ class Release_RenderState extends $pb.ProtobufEnum {
   static Release_RenderState? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Release_RenderState._(super.v, super.n);
+  const Release_RenderState._(super.value, super.name);
 }
 
 /// Valid states of the render operation.
@@ -199,7 +200,7 @@ class Release_TargetRender_TargetRenderState extends $pb.ProtobufEnum {
   static Release_TargetRender_TargetRenderState? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Release_TargetRender_TargetRenderState._(super.v, super.n);
+  const Release_TargetRender_TargetRenderState._(super.value, super.name);
 }
 
 /// Well-known rendering failures.
@@ -270,7 +271,7 @@ class Release_TargetRender_FailureCause extends $pb.ProtobufEnum {
   static Release_TargetRender_FailureCause? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Release_TargetRender_FailureCause._(super.v, super.n);
+  const Release_TargetRender_FailureCause._(super.value, super.name);
 }
 
 /// Valid approval states of a `Rollout`.
@@ -311,7 +312,7 @@ class Rollout_ApprovalState extends $pb.ProtobufEnum {
   static Rollout_ApprovalState? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Rollout_ApprovalState._(super.v, super.n);
+  const Rollout_ApprovalState._(super.value, super.name);
 }
 
 /// Valid states of a `Rollout`.
@@ -380,7 +381,7 @@ class Rollout_State extends $pb.ProtobufEnum {
   static Rollout_State? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Rollout_State._(super.v, super.n);
+  const Rollout_State._(super.value, super.name);
 }
 
 /// Well-known rollout failures.
@@ -447,7 +448,7 @@ class Rollout_FailureCause extends $pb.ProtobufEnum {
   static Rollout_FailureCause? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Rollout_FailureCause._(super.v, super.n);
+  const Rollout_FailureCause._(super.value, super.name);
 }
 
 /// Valid states of a Phase.
@@ -495,7 +496,7 @@ class Phase_State extends $pb.ProtobufEnum {
   static Phase_State? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Phase_State._(super.v, super.n);
+  const Phase_State._(super.value, super.name);
 }
 
 /// Valid states of a Job.
@@ -553,7 +554,8 @@ class Job_State extends $pb.ProtobufEnum {
   static Job_State? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Job_State._(super.v, super.n);
+  const Job_State._(super.value, super.name);
 }
 
-const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');
+const $core.bool _omitEnumNames =
+    $core.bool.fromEnvironment('protobuf.omit_enum_names');

@@ -1,19 +1,20 @@
+// This is a generated file - do not edit.
 //
-//  Generated code. Do not modify.
-//  source: google/events/cloud/beyondcorp/clientconnectorservices/v1/data.proto
-//
+// Generated from google/events/cloud/beyondcorp/clientconnectorservices/v1/data.proto.
+
 // @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
-// ignore_for_file: constant_identifier_names, library_prefixes
-// ignore_for_file: non_constant_identifier_names, prefer_final_fields
-// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
+// ignore_for_file: constant_identifier_names
+// ignore_for_file: curly_braces_in_flow_control_structures
+// ignore_for_file: deprecated_member_use_from_same_package, library_prefixes
+// ignore_for_file: non_constant_identifier_names
 
 import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../../protobuf/timestamp.pb.dart' as $2;
+import '../../../../../protobuf/timestamp.pb.dart' as $0;
 import 'data.pbenum.dart';
 
 export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
@@ -29,24 +30,22 @@ class ClientConnectorService_Ingress_Config_DestinationRoute
     $core.String? address,
     $core.String? netmask,
   }) {
-    final $result = create();
-    if (address != null) {
-      $result.address = address;
-    }
-    if (netmask != null) {
-      $result.netmask = netmask;
-    }
-    return $result;
+    final result = create();
+    if (address != null) result.address = address;
+    if (netmask != null) result.netmask = netmask;
+    return result;
   }
-  ClientConnectorService_Ingress_Config_DestinationRoute._() : super();
+
+  ClientConnectorService_Ingress_Config_DestinationRoute._();
+
   factory ClientConnectorService_Ingress_Config_DestinationRoute.fromBuffer(
-          $core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
+          $core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
   factory ClientConnectorService_Ingress_Config_DestinationRoute.fromJson(
-          $core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+          $core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames
@@ -61,9 +60,7 @@ class ClientConnectorService_Ingress_Config_DestinationRoute
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ClientConnectorService_Ingress_Config_DestinationRoute clone() =>
-      ClientConnectorService_Ingress_Config_DestinationRoute()
-        ..mergeFromMessage(this);
+  ClientConnectorService_Ingress_Config_DestinationRoute clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ClientConnectorService_Ingress_Config_DestinationRoute copyWith(
           void Function(ClientConnectorService_Ingress_Config_DestinationRoute)
@@ -72,16 +69,15 @@ class ClientConnectorService_Ingress_Config_DestinationRoute
               as ClientConnectorService_Ingress_Config_DestinationRoute))
           as ClientConnectorService_Ingress_Config_DestinationRoute;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ClientConnectorService_Ingress_Config_DestinationRoute create() =>
       ClientConnectorService_Ingress_Config_DestinationRoute._();
+  @$core.override
   ClientConnectorService_Ingress_Config_DestinationRoute
       createEmptyInstance() => create();
-  static $pb.PbList<ClientConnectorService_Ingress_Config_DestinationRoute>
-      createRepeated() =>
-          $pb.PbList<ClientConnectorService_Ingress_Config_DestinationRoute>();
   @$core.pragma('dart2js:noInline')
   static ClientConnectorService_Ingress_Config_DestinationRoute getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
@@ -94,10 +90,7 @@ class ClientConnectorService_Ingress_Config_DestinationRoute
   @$pb.TagNumber(1)
   $core.String get address => $_getSZ(0);
   @$pb.TagNumber(1)
-  set address($core.String v) {
-    $_setString(0, v);
-  }
-
+  set address($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasAddress() => $_has(0);
   @$pb.TagNumber(1)
@@ -108,10 +101,7 @@ class ClientConnectorService_Ingress_Config_DestinationRoute
   @$pb.TagNumber(2)
   $core.String get netmask => $_getSZ(1);
   @$pb.TagNumber(2)
-  set netmask($core.String v) {
-    $_setString(1, v);
-  }
-
+  set netmask($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasNetmask() => $_has(1);
   @$pb.TagNumber(2)
@@ -125,23 +115,22 @@ class ClientConnectorService_Ingress_Config extends $pb.GeneratedMessage {
     $core.Iterable<ClientConnectorService_Ingress_Config_DestinationRoute>?
         destinationRoutes,
   }) {
-    final $result = create();
-    if (transportProtocol != null) {
-      $result.transportProtocol = transportProtocol;
-    }
-    if (destinationRoutes != null) {
-      $result.destinationRoutes.addAll(destinationRoutes);
-    }
-    return $result;
+    final result = create();
+    if (transportProtocol != null) result.transportProtocol = transportProtocol;
+    if (destinationRoutes != null)
+      result.destinationRoutes.addAll(destinationRoutes);
+    return result;
   }
-  ClientConnectorService_Ingress_Config._() : super();
+
+  ClientConnectorService_Ingress_Config._();
+
   factory ClientConnectorService_Ingress_Config.fromBuffer(
-          $core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ClientConnectorService_Ingress_Config.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+          $core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ClientConnectorService_Ingress_Config.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'ClientConnectorService.Ingress.Config',
@@ -149,23 +138,18 @@ class ClientConnectorService_Ingress_Config extends $pb.GeneratedMessage {
           ? ''
           : 'google.events.cloud.beyondcorp.clientconnectorservices.v1'),
       createEmptyInstance: create)
-    ..e<ClientConnectorService_Ingress_Config_TransportProtocol>(
-        1, _omitFieldNames ? '' : 'transportProtocol', $pb.PbFieldType.OE,
-        defaultOrMaker: ClientConnectorService_Ingress_Config_TransportProtocol
-            .TRANSPORT_PROTOCOL_UNSPECIFIED,
-        valueOf:
-            ClientConnectorService_Ingress_Config_TransportProtocol.valueOf,
+    ..aE<ClientConnectorService_Ingress_Config_TransportProtocol>(
+        1, _omitFieldNames ? '' : 'transportProtocol',
         enumValues:
             ClientConnectorService_Ingress_Config_TransportProtocol.values)
-    ..pc<ClientConnectorService_Ingress_Config_DestinationRoute>(
-        2, _omitFieldNames ? '' : 'destinationRoutes', $pb.PbFieldType.PM,
+    ..pPM<ClientConnectorService_Ingress_Config_DestinationRoute>(
+        2, _omitFieldNames ? '' : 'destinationRoutes',
         subBuilder:
             ClientConnectorService_Ingress_Config_DestinationRoute.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ClientConnectorService_Ingress_Config clone() =>
-      ClientConnectorService_Ingress_Config()..mergeFromMessage(this);
+  ClientConnectorService_Ingress_Config clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ClientConnectorService_Ingress_Config copyWith(
           void Function(ClientConnectorService_Ingress_Config) updates) =>
@@ -173,14 +157,14 @@ class ClientConnectorService_Ingress_Config extends $pb.GeneratedMessage {
               updates(message as ClientConnectorService_Ingress_Config))
           as ClientConnectorService_Ingress_Config;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ClientConnectorService_Ingress_Config create() =>
       ClientConnectorService_Ingress_Config._();
+  @$core.override
   ClientConnectorService_Ingress_Config createEmptyInstance() => create();
-  static $pb.PbList<ClientConnectorService_Ingress_Config> createRepeated() =>
-      $pb.PbList<ClientConnectorService_Ingress_Config>();
   @$core.pragma('dart2js:noInline')
   static ClientConnectorService_Ingress_Config getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
@@ -194,10 +178,8 @@ class ClientConnectorService_Ingress_Config extends $pb.GeneratedMessage {
       get transportProtocol => $_getN(0);
   @$pb.TagNumber(1)
   set transportProtocol(
-      ClientConnectorService_Ingress_Config_TransportProtocol v) {
-    $_setField(1, v);
-  }
-
+          ClientConnectorService_Ingress_Config_TransportProtocol value) =>
+      $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasTransportProtocol() => $_has(0);
   @$pb.TagNumber(1)
@@ -217,19 +199,19 @@ class ClientConnectorService_Ingress extends $pb.GeneratedMessage {
   factory ClientConnectorService_Ingress({
     ClientConnectorService_Ingress_Config? config,
   }) {
-    final $result = create();
-    if (config != null) {
-      $result.config = config;
-    }
-    return $result;
+    final result = create();
+    if (config != null) result.config = config;
+    return result;
   }
-  ClientConnectorService_Ingress._() : super();
-  factory ClientConnectorService_Ingress.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ClientConnectorService_Ingress.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  ClientConnectorService_Ingress._();
+
+  factory ClientConnectorService_Ingress.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ClientConnectorService_Ingress.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static const $core
       .Map<$core.int, ClientConnectorService_Ingress_IngressConfig>
@@ -250,8 +232,7 @@ class ClientConnectorService_Ingress extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ClientConnectorService_Ingress clone() =>
-      ClientConnectorService_Ingress()..mergeFromMessage(this);
+  ClientConnectorService_Ingress clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ClientConnectorService_Ingress copyWith(
           void Function(ClientConnectorService_Ingress) updates) =>
@@ -259,31 +240,31 @@ class ClientConnectorService_Ingress extends $pb.GeneratedMessage {
               (message) => updates(message as ClientConnectorService_Ingress))
           as ClientConnectorService_Ingress;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ClientConnectorService_Ingress create() =>
       ClientConnectorService_Ingress._();
+  @$core.override
   ClientConnectorService_Ingress createEmptyInstance() => create();
-  static $pb.PbList<ClientConnectorService_Ingress> createRepeated() =>
-      $pb.PbList<ClientConnectorService_Ingress>();
   @$core.pragma('dart2js:noInline')
   static ClientConnectorService_Ingress getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ClientConnectorService_Ingress>(create);
   static ClientConnectorService_Ingress? _defaultInstance;
 
+  @$pb.TagNumber(1)
   ClientConnectorService_Ingress_IngressConfig whichIngressConfig() =>
       _ClientConnectorService_Ingress_IngressConfigByTag[$_whichOneof(0)]!;
+  @$pb.TagNumber(1)
   void clearIngressConfig() => $_clearField($_whichOneof(0));
 
   /// The basic ingress config for ClientGateways.
   @$pb.TagNumber(1)
   ClientConnectorService_Ingress_Config get config => $_getN(0);
   @$pb.TagNumber(1)
-  set config(ClientConnectorService_Ingress_Config v) {
-    $_setField(1, v);
-  }
-
+  set config(ClientConnectorService_Ingress_Config value) =>
+      $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasConfig() => $_has(0);
   @$pb.TagNumber(1)
@@ -297,20 +278,20 @@ class ClientConnectorService_Egress_PeeredVpc extends $pb.GeneratedMessage {
   factory ClientConnectorService_Egress_PeeredVpc({
     $core.String? networkVpc,
   }) {
-    final $result = create();
-    if (networkVpc != null) {
-      $result.networkVpc = networkVpc;
-    }
-    return $result;
+    final result = create();
+    if (networkVpc != null) result.networkVpc = networkVpc;
+    return result;
   }
-  ClientConnectorService_Egress_PeeredVpc._() : super();
+
+  ClientConnectorService_Egress_PeeredVpc._();
+
   factory ClientConnectorService_Egress_PeeredVpc.fromBuffer(
-          $core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ClientConnectorService_Egress_PeeredVpc.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+          $core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ClientConnectorService_Egress_PeeredVpc.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'ClientConnectorService.Egress.PeeredVpc',
@@ -322,8 +303,7 @@ class ClientConnectorService_Egress_PeeredVpc extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ClientConnectorService_Egress_PeeredVpc clone() =>
-      ClientConnectorService_Egress_PeeredVpc()..mergeFromMessage(this);
+  ClientConnectorService_Egress_PeeredVpc clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ClientConnectorService_Egress_PeeredVpc copyWith(
           void Function(ClientConnectorService_Egress_PeeredVpc) updates) =>
@@ -331,14 +311,14 @@ class ClientConnectorService_Egress_PeeredVpc extends $pb.GeneratedMessage {
               updates(message as ClientConnectorService_Egress_PeeredVpc))
           as ClientConnectorService_Egress_PeeredVpc;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ClientConnectorService_Egress_PeeredVpc create() =>
       ClientConnectorService_Egress_PeeredVpc._();
+  @$core.override
   ClientConnectorService_Egress_PeeredVpc createEmptyInstance() => create();
-  static $pb.PbList<ClientConnectorService_Egress_PeeredVpc> createRepeated() =>
-      $pb.PbList<ClientConnectorService_Egress_PeeredVpc>();
   @$core.pragma('dart2js:noInline')
   static ClientConnectorService_Egress_PeeredVpc getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
@@ -349,10 +329,7 @@ class ClientConnectorService_Egress_PeeredVpc extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get networkVpc => $_getSZ(0);
   @$pb.TagNumber(1)
-  set networkVpc($core.String v) {
-    $_setString(0, v);
-  }
-
+  set networkVpc($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasNetworkVpc() => $_has(0);
   @$pb.TagNumber(1)
@@ -366,19 +343,19 @@ class ClientConnectorService_Egress extends $pb.GeneratedMessage {
   factory ClientConnectorService_Egress({
     ClientConnectorService_Egress_PeeredVpc? peeredVpc,
   }) {
-    final $result = create();
-    if (peeredVpc != null) {
-      $result.peeredVpc = peeredVpc;
-    }
-    return $result;
+    final result = create();
+    if (peeredVpc != null) result.peeredVpc = peeredVpc;
+    return result;
   }
-  ClientConnectorService_Egress._() : super();
-  factory ClientConnectorService_Egress.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ClientConnectorService_Egress.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  ClientConnectorService_Egress._();
+
+  factory ClientConnectorService_Egress.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ClientConnectorService_Egress.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static const $core
       .Map<$core.int, ClientConnectorService_Egress_DestinationType>
@@ -399,8 +376,7 @@ class ClientConnectorService_Egress extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ClientConnectorService_Egress clone() =>
-      ClientConnectorService_Egress()..mergeFromMessage(this);
+  ClientConnectorService_Egress clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ClientConnectorService_Egress copyWith(
           void Function(ClientConnectorService_Egress) updates) =>
@@ -408,31 +384,31 @@ class ClientConnectorService_Egress extends $pb.GeneratedMessage {
               (message) => updates(message as ClientConnectorService_Egress))
           as ClientConnectorService_Egress;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ClientConnectorService_Egress create() =>
       ClientConnectorService_Egress._();
+  @$core.override
   ClientConnectorService_Egress createEmptyInstance() => create();
-  static $pb.PbList<ClientConnectorService_Egress> createRepeated() =>
-      $pb.PbList<ClientConnectorService_Egress>();
   @$core.pragma('dart2js:noInline')
   static ClientConnectorService_Egress getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ClientConnectorService_Egress>(create);
   static ClientConnectorService_Egress? _defaultInstance;
 
+  @$pb.TagNumber(1)
   ClientConnectorService_Egress_DestinationType whichDestinationType() =>
       _ClientConnectorService_Egress_DestinationTypeByTag[$_whichOneof(0)]!;
+  @$pb.TagNumber(1)
   void clearDestinationType() => $_clearField($_whichOneof(0));
 
   /// A VPC from the consumer project.
   @$pb.TagNumber(1)
   ClientConnectorService_Egress_PeeredVpc get peeredVpc => $_getN(0);
   @$pb.TagNumber(1)
-  set peeredVpc(ClientConnectorService_Egress_PeeredVpc v) {
-    $_setField(1, v);
-  }
-
+  set peeredVpc(ClientConnectorService_Egress_PeeredVpc value) =>
+      $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasPeeredVpc() => $_has(0);
   @$pb.TagNumber(1)
@@ -445,44 +421,32 @@ class ClientConnectorService_Egress extends $pb.GeneratedMessage {
 class ClientConnectorService extends $pb.GeneratedMessage {
   factory ClientConnectorService({
     $core.String? name,
-    $2.Timestamp? createTime,
-    $2.Timestamp? updateTime,
+    $0.Timestamp? createTime,
+    $0.Timestamp? updateTime,
     $core.String? displayName,
     ClientConnectorService_Ingress? ingress,
     ClientConnectorService_Egress? egress,
     ClientConnectorService_State? state,
   }) {
-    final $result = create();
-    if (name != null) {
-      $result.name = name;
-    }
-    if (createTime != null) {
-      $result.createTime = createTime;
-    }
-    if (updateTime != null) {
-      $result.updateTime = updateTime;
-    }
-    if (displayName != null) {
-      $result.displayName = displayName;
-    }
-    if (ingress != null) {
-      $result.ingress = ingress;
-    }
-    if (egress != null) {
-      $result.egress = egress;
-    }
-    if (state != null) {
-      $result.state = state;
-    }
-    return $result;
+    final result = create();
+    if (name != null) result.name = name;
+    if (createTime != null) result.createTime = createTime;
+    if (updateTime != null) result.updateTime = updateTime;
+    if (displayName != null) result.displayName = displayName;
+    if (ingress != null) result.ingress = ingress;
+    if (egress != null) result.egress = egress;
+    if (state != null) result.state = state;
+    return result;
   }
-  ClientConnectorService._() : super();
-  factory ClientConnectorService.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ClientConnectorService.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  ClientConnectorService._();
+
+  factory ClientConnectorService.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ClientConnectorService.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'ClientConnectorService',
@@ -491,38 +455,34 @@ class ClientConnectorService extends $pb.GeneratedMessage {
           : 'google.events.cloud.beyondcorp.clientconnectorservices.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$2.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(3, _omitFieldNames ? '' : 'updateTime',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$0.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(3, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $0.Timestamp.create)
     ..aOS(4, _omitFieldNames ? '' : 'displayName')
     ..aOM<ClientConnectorService_Ingress>(6, _omitFieldNames ? '' : 'ingress',
         subBuilder: ClientConnectorService_Ingress.create)
     ..aOM<ClientConnectorService_Egress>(7, _omitFieldNames ? '' : 'egress',
         subBuilder: ClientConnectorService_Egress.create)
-    ..e<ClientConnectorService_State>(
-        8, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
-        defaultOrMaker: ClientConnectorService_State.STATE_UNSPECIFIED,
-        valueOf: ClientConnectorService_State.valueOf,
+    ..aE<ClientConnectorService_State>(8, _omitFieldNames ? '' : 'state',
         enumValues: ClientConnectorService_State.values)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ClientConnectorService clone() =>
-      ClientConnectorService()..mergeFromMessage(this);
+  ClientConnectorService clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ClientConnectorService copyWith(
           void Function(ClientConnectorService) updates) =>
       super.copyWith((message) => updates(message as ClientConnectorService))
           as ClientConnectorService;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ClientConnectorService create() => ClientConnectorService._();
+  @$core.override
   ClientConnectorService createEmptyInstance() => create();
-  static $pb.PbList<ClientConnectorService> createRepeated() =>
-      $pb.PbList<ClientConnectorService>();
   @$core.pragma('dart2js:noInline')
   static ClientConnectorService getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ClientConnectorService>(create);
@@ -532,10 +492,7 @@ class ClientConnectorService extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) {
-    $_setString(0, v);
-  }
-
+  set name($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -543,33 +500,27 @@ class ClientConnectorService extends $pb.GeneratedMessage {
 
   /// Output only. [Output only] Create time stamp.
   @$pb.TagNumber(2)
-  $2.Timestamp get createTime => $_getN(1);
+  $0.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($2.Timestamp v) {
-    $_setField(2, v);
-  }
-
+  set createTime($0.Timestamp value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => $_clearField(2);
   @$pb.TagNumber(2)
-  $2.Timestamp ensureCreateTime() => $_ensure(1);
+  $0.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. [Output only] Update time stamp.
   @$pb.TagNumber(3)
-  $2.Timestamp get updateTime => $_getN(2);
+  $0.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($2.Timestamp v) {
-    $_setField(3, v);
-  }
-
+  set updateTime($0.Timestamp value) => $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => $_clearField(3);
   @$pb.TagNumber(3)
-  $2.Timestamp ensureUpdateTime() => $_ensure(2);
+  $0.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Optional. User-provided name.
   /// The display name should follow certain format.
@@ -579,10 +530,7 @@ class ClientConnectorService extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get displayName => $_getSZ(3);
   @$pb.TagNumber(4)
-  set displayName($core.String v) {
-    $_setString(3, v);
-  }
-
+  set displayName($core.String value) => $_setString(3, value);
   @$pb.TagNumber(4)
   $core.bool hasDisplayName() => $_has(3);
   @$pb.TagNumber(4)
@@ -592,10 +540,7 @@ class ClientConnectorService extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   ClientConnectorService_Ingress get ingress => $_getN(4);
   @$pb.TagNumber(6)
-  set ingress(ClientConnectorService_Ingress v) {
-    $_setField(6, v);
-  }
-
+  set ingress(ClientConnectorService_Ingress value) => $_setField(6, value);
   @$pb.TagNumber(6)
   $core.bool hasIngress() => $_has(4);
   @$pb.TagNumber(6)
@@ -607,10 +552,7 @@ class ClientConnectorService extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   ClientConnectorService_Egress get egress => $_getN(5);
   @$pb.TagNumber(7)
-  set egress(ClientConnectorService_Egress v) {
-    $_setField(7, v);
-  }
-
+  set egress(ClientConnectorService_Egress value) => $_setField(7, value);
   @$pb.TagNumber(7)
   $core.bool hasEgress() => $_has(5);
   @$pb.TagNumber(7)
@@ -622,10 +564,7 @@ class ClientConnectorService extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   ClientConnectorService_State get state => $_getN(6);
   @$pb.TagNumber(8)
-  set state(ClientConnectorService_State v) {
-    $_setField(8, v);
-  }
-
+  set state(ClientConnectorService_State value) => $_setField(8, value);
   @$pb.TagNumber(8)
   $core.bool hasState() => $_has(6);
   @$pb.TagNumber(8)
@@ -637,19 +576,19 @@ class ClientConnectorServiceEventData extends $pb.GeneratedMessage {
   factory ClientConnectorServiceEventData({
     ClientConnectorService? payload,
   }) {
-    final $result = create();
-    if (payload != null) {
-      $result.payload = payload;
-    }
-    return $result;
+    final result = create();
+    if (payload != null) result.payload = payload;
+    return result;
   }
-  ClientConnectorServiceEventData._() : super();
-  factory ClientConnectorServiceEventData.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ClientConnectorServiceEventData.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  ClientConnectorServiceEventData._();
+
+  factory ClientConnectorServiceEventData.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ClientConnectorServiceEventData.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'ClientConnectorServiceEventData',
@@ -662,8 +601,7 @@ class ClientConnectorServiceEventData extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ClientConnectorServiceEventData clone() =>
-      ClientConnectorServiceEventData()..mergeFromMessage(this);
+  ClientConnectorServiceEventData clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ClientConnectorServiceEventData copyWith(
           void Function(ClientConnectorServiceEventData) updates) =>
@@ -671,14 +609,14 @@ class ClientConnectorServiceEventData extends $pb.GeneratedMessage {
               (message) => updates(message as ClientConnectorServiceEventData))
           as ClientConnectorServiceEventData;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ClientConnectorServiceEventData create() =>
       ClientConnectorServiceEventData._();
+  @$core.override
   ClientConnectorServiceEventData createEmptyInstance() => create();
-  static $pb.PbList<ClientConnectorServiceEventData> createRepeated() =>
-      $pb.PbList<ClientConnectorServiceEventData>();
   @$core.pragma('dart2js:noInline')
   static ClientConnectorServiceEventData getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ClientConnectorServiceEventData>(
@@ -690,10 +628,7 @@ class ClientConnectorServiceEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   ClientConnectorService get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(ClientConnectorService v) {
-    $_setField(1, v);
-  }
-
+  set payload(ClientConnectorService value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -702,6 +637,7 @@ class ClientConnectorServiceEventData extends $pb.GeneratedMessage {
   ClientConnectorService ensurePayload() => $_ensure(0);
 }
 
-const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames =
+const $core.bool _omitFieldNames =
+    $core.bool.fromEnvironment('protobuf.omit_field_names');
+const $core.bool _omitMessageNames =
     $core.bool.fromEnvironment('protobuf.omit_message_names');

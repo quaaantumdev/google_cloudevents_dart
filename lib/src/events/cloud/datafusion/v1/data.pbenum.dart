@@ -1,13 +1,14 @@
+// This is a generated file - do not edit.
 //
-//  Generated code. Do not modify.
-//  source: google/events/cloud/datafusion/v1/data.proto
-//
+// Generated from google/events/cloud/datafusion/v1/data.proto.
+
 // @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
-// ignore_for_file: constant_identifier_names, library_prefixes
-// ignore_for_file: non_constant_identifier_names, prefer_final_fields
-// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
+// ignore_for_file: constant_identifier_names
+// ignore_for_file: curly_braces_in_flow_control_structures
+// ignore_for_file: deprecated_member_use_from_same_package, library_prefixes
+// ignore_for_file: non_constant_identifier_names
 
 import 'dart:core' as $core;
 
@@ -38,7 +39,7 @@ class Version_Type extends $pb.ProtobufEnum {
   static Version_Type? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Version_Type._(super.v, super.n);
+  const Version_Type._(super.value, super.name);
 }
 
 /// Each type represents an Accelerator (Add-On) supported by Cloud Data Fusion
@@ -77,7 +78,7 @@ class Accelerator_AcceleratorType extends $pb.ProtobufEnum {
   static Accelerator_AcceleratorType? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Accelerator_AcceleratorType._(super.v, super.n);
+  const Accelerator_AcceleratorType._(super.value, super.name);
 }
 
 /// Different values possible for the state of an accelerator.
@@ -111,7 +112,7 @@ class Accelerator_State extends $pb.ProtobufEnum {
   static Accelerator_State? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Accelerator_State._(super.v, super.n);
+  const Accelerator_State._(super.value, super.name);
 }
 
 /// Represents the type of Data Fusion instance. Each type is configured with
@@ -153,7 +154,7 @@ class Instance_Type extends $pb.ProtobufEnum {
   static Instance_Type? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Instance_Type._(super.v, super.n);
+  const Instance_Type._(super.value, super.name);
 }
 
 /// Represents the state of a Data Fusion instance
@@ -222,7 +223,7 @@ class Instance_State extends $pb.ProtobufEnum {
   static Instance_State? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Instance_State._(super.v, super.n);
+  const Instance_State._(super.value, super.name);
 }
 
 /// The reason for disabling the instance if the state is DISABLED.
@@ -247,7 +248,8 @@ class Instance_DisabledReason extends $pb.ProtobufEnum {
   static Instance_DisabledReason? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Instance_DisabledReason._(super.v, super.n);
+  const Instance_DisabledReason._(super.value, super.name);
 }
 
-const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');
+const $core.bool _omitEnumNames =
+    $core.bool.fromEnvironment('protobuf.omit_enum_names');

@@ -1,21 +1,22 @@
+// This is a generated file - do not edit.
 //
-//  Generated code. Do not modify.
-//  source: google/events/cloud/video/transcoder/v1/data.proto
-//
+// Generated from google/events/cloud/video/transcoder/v1/data.proto.
+
 // @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
-// ignore_for_file: constant_identifier_names, library_prefixes
-// ignore_for_file: non_constant_identifier_names, prefer_final_fields
-// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
+// ignore_for_file: constant_identifier_names
+// ignore_for_file: curly_braces_in_flow_control_structures
+// ignore_for_file: deprecated_member_use_from_same_package, library_prefixes
+// ignore_for_file: non_constant_identifier_names
 
 import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../../protobuf/duration.pb.dart' as $0;
-import '../../../../../protobuf/timestamp.pb.dart' as $2;
-import '../../../../../rpc/status.pb.dart' as $9;
+import '../../../../../protobuf/duration.pb.dart' as $2;
+import '../../../../../protobuf/timestamp.pb.dart' as $0;
+import '../../../../../rpc/status.pb.dart' as $1;
 import 'data.pbenum.dart';
 
 export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
@@ -30,54 +31,37 @@ class Job extends $pb.GeneratedMessage {
     $core.String? name,
     JobConfig? config,
     Job_ProcessingState? state,
-    $2.Timestamp? createTime,
-    $2.Timestamp? startTime,
-    $2.Timestamp? endTime,
+    $0.Timestamp? createTime,
+    $0.Timestamp? startTime,
+    $0.Timestamp? endTime,
     $core.int? ttlAfterCompletionDays,
     $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
-    $9.Status? error,
+    $1.Status? error,
     Job_ProcessingMode? mode,
   }) {
-    final $result = create();
-    if (name != null) {
-      $result.name = name;
-    }
-    if (config != null) {
-      $result.config = config;
-    }
-    if (state != null) {
-      $result.state = state;
-    }
-    if (createTime != null) {
-      $result.createTime = createTime;
-    }
-    if (startTime != null) {
-      $result.startTime = startTime;
-    }
-    if (endTime != null) {
-      $result.endTime = endTime;
-    }
-    if (ttlAfterCompletionDays != null) {
-      $result.ttlAfterCompletionDays = ttlAfterCompletionDays;
-    }
-    if (labels != null) {
-      $result.labels.addEntries(labels);
-    }
-    if (error != null) {
-      $result.error = error;
-    }
-    if (mode != null) {
-      $result.mode = mode;
-    }
-    return $result;
+    final result = create();
+    if (name != null) result.name = name;
+    if (config != null) result.config = config;
+    if (state != null) result.state = state;
+    if (createTime != null) result.createTime = createTime;
+    if (startTime != null) result.startTime = startTime;
+    if (endTime != null) result.endTime = endTime;
+    if (ttlAfterCompletionDays != null)
+      result.ttlAfterCompletionDays = ttlAfterCompletionDays;
+    if (labels != null) result.labels.addEntries(labels);
+    if (error != null) result.error = error;
+    if (mode != null) result.mode = mode;
+    return result;
   }
-  Job._() : super();
-  factory Job.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Job.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  Job._();
+
+  factory Job.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory Job.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static const $core.Map<$core.int, Job_JobConfig> _Job_JobConfigByTag = {
     5: Job_JobConfig.config,
@@ -92,52 +76,48 @@ class Job extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOM<JobConfig>(5, _omitFieldNames ? '' : 'config',
         subBuilder: JobConfig.create)
-    ..e<Job_ProcessingState>(
-        8, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
-        defaultOrMaker: Job_ProcessingState.PROCESSING_STATE_UNSPECIFIED,
-        valueOf: Job_ProcessingState.valueOf,
+    ..aE<Job_ProcessingState>(8, _omitFieldNames ? '' : 'state',
         enumValues: Job_ProcessingState.values)
-    ..aOM<$2.Timestamp>(12, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(13, _omitFieldNames ? '' : 'startTime',
-        subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(14, _omitFieldNames ? '' : 'endTime',
-        subBuilder: $2.Timestamp.create)
-    ..a<$core.int>(
-        15, _omitFieldNames ? '' : 'ttlAfterCompletionDays', $pb.PbFieldType.O3)
+    ..aOM<$0.Timestamp>(12, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(13, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(14, _omitFieldNames ? '' : 'endTime',
+        subBuilder: $0.Timestamp.create)
+    ..aI(15, _omitFieldNames ? '' : 'ttlAfterCompletionDays')
     ..m<$core.String, $core.String>(16, _omitFieldNames ? '' : 'labels',
         entryClassName: 'Job.LabelsEntry',
         keyFieldType: $pb.PbFieldType.OS,
         valueFieldType: $pb.PbFieldType.OS,
         packageName:
             const $pb.PackageName('google.events.cloud.video.transcoder.v1'))
-    ..aOM<$9.Status>(17, _omitFieldNames ? '' : 'error',
-        subBuilder: $9.Status.create)
-    ..e<Job_ProcessingMode>(
-        20, _omitFieldNames ? '' : 'mode', $pb.PbFieldType.OE,
-        defaultOrMaker: Job_ProcessingMode.PROCESSING_MODE_UNSPECIFIED,
-        valueOf: Job_ProcessingMode.valueOf,
+    ..aOM<$1.Status>(17, _omitFieldNames ? '' : 'error',
+        subBuilder: $1.Status.create)
+    ..aE<Job_ProcessingMode>(20, _omitFieldNames ? '' : 'mode',
         enumValues: Job_ProcessingMode.values)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  Job clone() => Job()..mergeFromMessage(this);
+  Job clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Job copyWith(void Function(Job) updates) =>
       super.copyWith((message) => updates(message as Job)) as Job;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Job create() => Job._();
+  @$core.override
   Job createEmptyInstance() => create();
-  static $pb.PbList<Job> createRepeated() => $pb.PbList<Job>();
   @$core.pragma('dart2js:noInline')
   static Job getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Job>(create);
   static Job? _defaultInstance;
 
+  @$pb.TagNumber(5)
   Job_JobConfig whichJobConfig() => _Job_JobConfigByTag[$_whichOneof(0)]!;
+  @$pb.TagNumber(5)
   void clearJobConfig() => $_clearField($_whichOneof(0));
 
   /// The resource name of the job.
@@ -145,10 +125,7 @@ class Job extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) {
-    $_setString(0, v);
-  }
-
+  set name($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -158,10 +135,7 @@ class Job extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   JobConfig get config => $_getN(1);
   @$pb.TagNumber(5)
-  set config(JobConfig v) {
-    $_setField(5, v);
-  }
-
+  set config(JobConfig value) => $_setField(5, value);
   @$pb.TagNumber(5)
   $core.bool hasConfig() => $_has(1);
   @$pb.TagNumber(5)
@@ -173,10 +147,7 @@ class Job extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   Job_ProcessingState get state => $_getN(2);
   @$pb.TagNumber(8)
-  set state(Job_ProcessingState v) {
-    $_setField(8, v);
-  }
-
+  set state(Job_ProcessingState value) => $_setField(8, value);
   @$pb.TagNumber(8)
   $core.bool hasState() => $_has(2);
   @$pb.TagNumber(8)
@@ -184,48 +155,39 @@ class Job extends $pb.GeneratedMessage {
 
   /// Output only. The time the job was created.
   @$pb.TagNumber(12)
-  $2.Timestamp get createTime => $_getN(3);
+  $0.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(12)
-  set createTime($2.Timestamp v) {
-    $_setField(12, v);
-  }
-
+  set createTime($0.Timestamp value) => $_setField(12, value);
   @$pb.TagNumber(12)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(12)
   void clearCreateTime() => $_clearField(12);
   @$pb.TagNumber(12)
-  $2.Timestamp ensureCreateTime() => $_ensure(3);
+  $0.Timestamp ensureCreateTime() => $_ensure(3);
 
   /// Output only. The time the transcoding started.
   @$pb.TagNumber(13)
-  $2.Timestamp get startTime => $_getN(4);
+  $0.Timestamp get startTime => $_getN(4);
   @$pb.TagNumber(13)
-  set startTime($2.Timestamp v) {
-    $_setField(13, v);
-  }
-
+  set startTime($0.Timestamp value) => $_setField(13, value);
   @$pb.TagNumber(13)
   $core.bool hasStartTime() => $_has(4);
   @$pb.TagNumber(13)
   void clearStartTime() => $_clearField(13);
   @$pb.TagNumber(13)
-  $2.Timestamp ensureStartTime() => $_ensure(4);
+  $0.Timestamp ensureStartTime() => $_ensure(4);
 
   /// Output only. The time the transcoding finished.
   @$pb.TagNumber(14)
-  $2.Timestamp get endTime => $_getN(5);
+  $0.Timestamp get endTime => $_getN(5);
   @$pb.TagNumber(14)
-  set endTime($2.Timestamp v) {
-    $_setField(14, v);
-  }
-
+  set endTime($0.Timestamp value) => $_setField(14, value);
   @$pb.TagNumber(14)
   $core.bool hasEndTime() => $_has(5);
   @$pb.TagNumber(14)
   void clearEndTime() => $_clearField(14);
   @$pb.TagNumber(14)
-  $2.Timestamp ensureEndTime() => $_ensure(5);
+  $0.Timestamp ensureEndTime() => $_ensure(5);
 
   /// Job time to live value in days, which will be effective after job
   /// completion. Job should be deleted automatically after the given TTL. Enter
@@ -233,10 +195,7 @@ class Job extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   $core.int get ttlAfterCompletionDays => $_getIZ(6);
   @$pb.TagNumber(15)
-  set ttlAfterCompletionDays($core.int v) {
-    $_setSignedInt32(6, v);
-  }
-
+  set ttlAfterCompletionDays($core.int value) => $_setSignedInt32(6, value);
   @$pb.TagNumber(15)
   $core.bool hasTtlAfterCompletionDays() => $_has(6);
   @$pb.TagNumber(15)
@@ -250,28 +209,22 @@ class Job extends $pb.GeneratedMessage {
   /// Output only. An error object that describes the reason for the failure.
   /// This property is always present when `state` is `FAILED`.
   @$pb.TagNumber(17)
-  $9.Status get error => $_getN(8);
+  $1.Status get error => $_getN(8);
   @$pb.TagNumber(17)
-  set error($9.Status v) {
-    $_setField(17, v);
-  }
-
+  set error($1.Status value) => $_setField(17, value);
   @$pb.TagNumber(17)
   $core.bool hasError() => $_has(8);
   @$pb.TagNumber(17)
   void clearError() => $_clearField(17);
   @$pb.TagNumber(17)
-  $9.Status ensureError() => $_ensure(8);
+  $1.Status ensureError() => $_ensure(8);
 
   /// The processing mode of the job.
   /// The default is `PROCESSING_MODE_INTERACTIVE`.
   @$pb.TagNumber(20)
   Job_ProcessingMode get mode => $_getN(9);
   @$pb.TagNumber(20)
-  set mode(Job_ProcessingMode v) {
-    $_setField(20, v);
-  }
-
+  set mode(Job_ProcessingMode value) => $_setField(20, value);
   @$pb.TagNumber(20)
   $core.bool hasMode() => $_has(9);
   @$pb.TagNumber(20)
@@ -285,25 +238,21 @@ class JobTemplate extends $pb.GeneratedMessage {
     JobConfig? config,
     $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
   }) {
-    final $result = create();
-    if (name != null) {
-      $result.name = name;
-    }
-    if (config != null) {
-      $result.config = config;
-    }
-    if (labels != null) {
-      $result.labels.addEntries(labels);
-    }
-    return $result;
+    final result = create();
+    if (name != null) result.name = name;
+    if (config != null) result.config = config;
+    if (labels != null) result.labels.addEntries(labels);
+    return result;
   }
-  JobTemplate._() : super();
-  factory JobTemplate.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory JobTemplate.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  JobTemplate._();
+
+  factory JobTemplate.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory JobTemplate.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'JobTemplate',
@@ -322,18 +271,19 @@ class JobTemplate extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  JobTemplate clone() => JobTemplate()..mergeFromMessage(this);
+  JobTemplate clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   JobTemplate copyWith(void Function(JobTemplate) updates) =>
       super.copyWith((message) => updates(message as JobTemplate))
           as JobTemplate;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static JobTemplate create() => JobTemplate._();
+  @$core.override
   JobTemplate createEmptyInstance() => create();
-  static $pb.PbList<JobTemplate> createRepeated() => $pb.PbList<JobTemplate>();
   @$core.pragma('dart2js:noInline')
   static JobTemplate getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<JobTemplate>(create);
@@ -345,10 +295,7 @@ class JobTemplate extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) {
-    $_setString(0, v);
-  }
-
+  set name($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -358,10 +305,7 @@ class JobTemplate extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   JobConfig get config => $_getN(1);
   @$pb.TagNumber(2)
-  set config(JobConfig v) {
-    $_setField(2, v);
-  }
-
+  set config(JobConfig value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasConfig() => $_has(1);
   @$pb.TagNumber(2)
@@ -389,87 +333,68 @@ class JobConfig extends $pb.GeneratedMessage {
     $core.Iterable<SpriteSheet>? spriteSheets,
     $core.Iterable<Overlay>? overlays,
   }) {
-    final $result = create();
-    if (inputs != null) {
-      $result.inputs.addAll(inputs);
-    }
-    if (editList != null) {
-      $result.editList.addAll(editList);
-    }
-    if (elementaryStreams != null) {
-      $result.elementaryStreams.addAll(elementaryStreams);
-    }
-    if (muxStreams != null) {
-      $result.muxStreams.addAll(muxStreams);
-    }
-    if (manifests != null) {
-      $result.manifests.addAll(manifests);
-    }
-    if (output != null) {
-      $result.output = output;
-    }
-    if (adBreaks != null) {
-      $result.adBreaks.addAll(adBreaks);
-    }
-    if (pubsubDestination != null) {
-      $result.pubsubDestination = pubsubDestination;
-    }
-    if (spriteSheets != null) {
-      $result.spriteSheets.addAll(spriteSheets);
-    }
-    if (overlays != null) {
-      $result.overlays.addAll(overlays);
-    }
-    return $result;
+    final result = create();
+    if (inputs != null) result.inputs.addAll(inputs);
+    if (editList != null) result.editList.addAll(editList);
+    if (elementaryStreams != null)
+      result.elementaryStreams.addAll(elementaryStreams);
+    if (muxStreams != null) result.muxStreams.addAll(muxStreams);
+    if (manifests != null) result.manifests.addAll(manifests);
+    if (output != null) result.output = output;
+    if (adBreaks != null) result.adBreaks.addAll(adBreaks);
+    if (pubsubDestination != null) result.pubsubDestination = pubsubDestination;
+    if (spriteSheets != null) result.spriteSheets.addAll(spriteSheets);
+    if (overlays != null) result.overlays.addAll(overlays);
+    return result;
   }
-  JobConfig._() : super();
-  factory JobConfig.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory JobConfig.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  JobConfig._();
+
+  factory JobConfig.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory JobConfig.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'JobConfig',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.video.transcoder.v1'),
       createEmptyInstance: create)
-    ..pc<Input>(1, _omitFieldNames ? '' : 'inputs', $pb.PbFieldType.PM,
-        subBuilder: Input.create)
-    ..pc<EditAtom>(2, _omitFieldNames ? '' : 'editList', $pb.PbFieldType.PM,
+    ..pPM<Input>(1, _omitFieldNames ? '' : 'inputs', subBuilder: Input.create)
+    ..pPM<EditAtom>(2, _omitFieldNames ? '' : 'editList',
         subBuilder: EditAtom.create)
-    ..pc<ElementaryStream>(
-        3, _omitFieldNames ? '' : 'elementaryStreams', $pb.PbFieldType.PM,
+    ..pPM<ElementaryStream>(3, _omitFieldNames ? '' : 'elementaryStreams',
         subBuilder: ElementaryStream.create)
-    ..pc<MuxStream>(4, _omitFieldNames ? '' : 'muxStreams', $pb.PbFieldType.PM,
+    ..pPM<MuxStream>(4, _omitFieldNames ? '' : 'muxStreams',
         subBuilder: MuxStream.create)
-    ..pc<Manifest>(5, _omitFieldNames ? '' : 'manifests', $pb.PbFieldType.PM,
+    ..pPM<Manifest>(5, _omitFieldNames ? '' : 'manifests',
         subBuilder: Manifest.create)
     ..aOM<Output>(6, _omitFieldNames ? '' : 'output', subBuilder: Output.create)
-    ..pc<AdBreak>(7, _omitFieldNames ? '' : 'adBreaks', $pb.PbFieldType.PM,
+    ..pPM<AdBreak>(7, _omitFieldNames ? '' : 'adBreaks',
         subBuilder: AdBreak.create)
     ..aOM<PubsubDestination>(8, _omitFieldNames ? '' : 'pubsubDestination',
         subBuilder: PubsubDestination.create)
-    ..pc<SpriteSheet>(
-        9, _omitFieldNames ? '' : 'spriteSheets', $pb.PbFieldType.PM,
+    ..pPM<SpriteSheet>(9, _omitFieldNames ? '' : 'spriteSheets',
         subBuilder: SpriteSheet.create)
-    ..pc<Overlay>(10, _omitFieldNames ? '' : 'overlays', $pb.PbFieldType.PM,
+    ..pPM<Overlay>(10, _omitFieldNames ? '' : 'overlays',
         subBuilder: Overlay.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  JobConfig clone() => JobConfig()..mergeFromMessage(this);
+  JobConfig clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   JobConfig copyWith(void Function(JobConfig) updates) =>
       super.copyWith((message) => updates(message as JobConfig)) as JobConfig;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static JobConfig create() => JobConfig._();
+  @$core.override
   JobConfig createEmptyInstance() => create();
-  static $pb.PbList<JobConfig> createRepeated() => $pb.PbList<JobConfig>();
   @$core.pragma('dart2js:noInline')
   static JobConfig getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<JobConfig>(create);
@@ -500,10 +425,7 @@ class JobConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   Output get output => $_getN(5);
   @$pb.TagNumber(6)
-  set output(Output v) {
-    $_setField(6, v);
-  }
-
+  set output(Output value) => $_setField(6, value);
   @$pb.TagNumber(6)
   $core.bool hasOutput() => $_has(5);
   @$pb.TagNumber(6)
@@ -520,10 +442,7 @@ class JobConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   PubsubDestination get pubsubDestination => $_getN(7);
   @$pb.TagNumber(8)
-  set pubsubDestination(PubsubDestination v) {
-    $_setField(8, v);
-  }
-
+  set pubsubDestination(PubsubDestination value) => $_setField(8, value);
   @$pb.TagNumber(8)
   $core.bool hasPubsubDestination() => $_has(7);
   @$pb.TagNumber(8)
@@ -548,25 +467,22 @@ class Input extends $pb.GeneratedMessage {
     $core.String? uri,
     PreprocessingConfig? preprocessingConfig,
   }) {
-    final $result = create();
-    if (key != null) {
-      $result.key = key;
-    }
-    if (uri != null) {
-      $result.uri = uri;
-    }
-    if (preprocessingConfig != null) {
-      $result.preprocessingConfig = preprocessingConfig;
-    }
-    return $result;
+    final result = create();
+    if (key != null) result.key = key;
+    if (uri != null) result.uri = uri;
+    if (preprocessingConfig != null)
+      result.preprocessingConfig = preprocessingConfig;
+    return result;
   }
-  Input._() : super();
-  factory Input.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Input.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  Input._();
+
+  factory Input.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory Input.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'Input',
@@ -580,17 +496,18 @@ class Input extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  Input clone() => Input()..mergeFromMessage(this);
+  Input clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Input copyWith(void Function(Input) updates) =>
       super.copyWith((message) => updates(message as Input)) as Input;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Input create() => Input._();
+  @$core.override
   Input createEmptyInstance() => create();
-  static $pb.PbList<Input> createRepeated() => $pb.PbList<Input>();
   @$core.pragma('dart2js:noInline')
   static Input getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Input>(create);
@@ -601,10 +518,7 @@ class Input extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get key => $_getSZ(0);
   @$pb.TagNumber(1)
-  set key($core.String v) {
-    $_setString(0, v);
-  }
-
+  set key($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasKey() => $_has(0);
   @$pb.TagNumber(1)
@@ -618,10 +532,7 @@ class Input extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get uri => $_getSZ(1);
   @$pb.TagNumber(2)
-  set uri($core.String v) {
-    $_setString(1, v);
-  }
-
+  set uri($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasUri() => $_has(1);
   @$pb.TagNumber(2)
@@ -631,10 +542,7 @@ class Input extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   PreprocessingConfig get preprocessingConfig => $_getN(2);
   @$pb.TagNumber(3)
-  set preprocessingConfig(PreprocessingConfig v) {
-    $_setField(3, v);
-  }
-
+  set preprocessingConfig(PreprocessingConfig value) => $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasPreprocessingConfig() => $_has(2);
   @$pb.TagNumber(3)
@@ -648,19 +556,19 @@ class Output extends $pb.GeneratedMessage {
   factory Output({
     $core.String? uri,
   }) {
-    final $result = create();
-    if (uri != null) {
-      $result.uri = uri;
-    }
-    return $result;
+    final result = create();
+    if (uri != null) result.uri = uri;
+    return result;
   }
-  Output._() : super();
-  factory Output.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Output.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  Output._();
+
+  factory Output.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory Output.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'Output',
@@ -671,17 +579,18 @@ class Output extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  Output clone() => Output()..mergeFromMessage(this);
+  Output clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Output copyWith(void Function(Output) updates) =>
       super.copyWith((message) => updates(message as Output)) as Output;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Output create() => Output._();
+  @$core.override
   Output createEmptyInstance() => create();
-  static $pb.PbList<Output> createRepeated() => $pb.PbList<Output>();
   @$core.pragma('dart2js:noInline')
   static Output getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Output>(create);
@@ -694,10 +603,7 @@ class Output extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get uri => $_getSZ(0);
   @$pb.TagNumber(1)
-  set uri($core.String v) {
-    $_setString(0, v);
-  }
-
+  set uri($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasUri() => $_has(0);
   @$pb.TagNumber(1)
@@ -709,31 +615,25 @@ class EditAtom extends $pb.GeneratedMessage {
   factory EditAtom({
     $core.String? key,
     $core.Iterable<$core.String>? inputs,
-    $0.Duration? endTimeOffset,
-    $0.Duration? startTimeOffset,
+    $2.Duration? endTimeOffset,
+    $2.Duration? startTimeOffset,
   }) {
-    final $result = create();
-    if (key != null) {
-      $result.key = key;
-    }
-    if (inputs != null) {
-      $result.inputs.addAll(inputs);
-    }
-    if (endTimeOffset != null) {
-      $result.endTimeOffset = endTimeOffset;
-    }
-    if (startTimeOffset != null) {
-      $result.startTimeOffset = startTimeOffset;
-    }
-    return $result;
+    final result = create();
+    if (key != null) result.key = key;
+    if (inputs != null) result.inputs.addAll(inputs);
+    if (endTimeOffset != null) result.endTimeOffset = endTimeOffset;
+    if (startTimeOffset != null) result.startTimeOffset = startTimeOffset;
+    return result;
   }
-  EditAtom._() : super();
-  factory EditAtom.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory EditAtom.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  EditAtom._();
+
+  factory EditAtom.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory EditAtom.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'EditAtom',
@@ -742,24 +642,25 @@ class EditAtom extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'key')
     ..pPS(2, _omitFieldNames ? '' : 'inputs')
-    ..aOM<$0.Duration>(3, _omitFieldNames ? '' : 'endTimeOffset',
-        subBuilder: $0.Duration.create)
-    ..aOM<$0.Duration>(4, _omitFieldNames ? '' : 'startTimeOffset',
-        subBuilder: $0.Duration.create)
+    ..aOM<$2.Duration>(3, _omitFieldNames ? '' : 'endTimeOffset',
+        subBuilder: $2.Duration.create)
+    ..aOM<$2.Duration>(4, _omitFieldNames ? '' : 'startTimeOffset',
+        subBuilder: $2.Duration.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  EditAtom clone() => EditAtom()..mergeFromMessage(this);
+  EditAtom clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   EditAtom copyWith(void Function(EditAtom) updates) =>
       super.copyWith((message) => updates(message as EditAtom)) as EditAtom;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static EditAtom create() => EditAtom._();
+  @$core.override
   EditAtom createEmptyInstance() => create();
-  static $pb.PbList<EditAtom> createRepeated() => $pb.PbList<EditAtom>();
   @$core.pragma('dart2js:noInline')
   static EditAtom getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<EditAtom>(create);
@@ -770,10 +671,7 @@ class EditAtom extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get key => $_getSZ(0);
   @$pb.TagNumber(1)
-  set key($core.String v) {
-    $_setString(0, v);
-  }
-
+  set key($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasKey() => $_has(0);
   @$pb.TagNumber(1)
@@ -788,76 +686,71 @@ class EditAtom extends $pb.GeneratedMessage {
   /// When `end_time_offset` is not specified, the `inputs` are used until
   /// the end of the atom.
   @$pb.TagNumber(3)
-  $0.Duration get endTimeOffset => $_getN(2);
+  $2.Duration get endTimeOffset => $_getN(2);
   @$pb.TagNumber(3)
-  set endTimeOffset($0.Duration v) {
-    $_setField(3, v);
-  }
-
+  set endTimeOffset($2.Duration value) => $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasEndTimeOffset() => $_has(2);
   @$pb.TagNumber(3)
   void clearEndTimeOffset() => $_clearField(3);
   @$pb.TagNumber(3)
-  $0.Duration ensureEndTimeOffset() => $_ensure(2);
+  $2.Duration ensureEndTimeOffset() => $_ensure(2);
 
   /// Start time in seconds for the atom, relative to the input file timeline.
   /// The default is `0s`.
   @$pb.TagNumber(4)
-  $0.Duration get startTimeOffset => $_getN(3);
+  $2.Duration get startTimeOffset => $_getN(3);
   @$pb.TagNumber(4)
-  set startTimeOffset($0.Duration v) {
-    $_setField(4, v);
-  }
-
+  set startTimeOffset($2.Duration value) => $_setField(4, value);
   @$pb.TagNumber(4)
   $core.bool hasStartTimeOffset() => $_has(3);
   @$pb.TagNumber(4)
   void clearStartTimeOffset() => $_clearField(4);
   @$pb.TagNumber(4)
-  $0.Duration ensureStartTimeOffset() => $_ensure(3);
+  $2.Duration ensureStartTimeOffset() => $_ensure(3);
 }
 
 /// Ad break.
 class AdBreak extends $pb.GeneratedMessage {
   factory AdBreak({
-    $0.Duration? startTimeOffset,
+    $2.Duration? startTimeOffset,
   }) {
-    final $result = create();
-    if (startTimeOffset != null) {
-      $result.startTimeOffset = startTimeOffset;
-    }
-    return $result;
+    final result = create();
+    if (startTimeOffset != null) result.startTimeOffset = startTimeOffset;
+    return result;
   }
-  AdBreak._() : super();
-  factory AdBreak.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory AdBreak.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  AdBreak._();
+
+  factory AdBreak.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory AdBreak.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'AdBreak',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.video.transcoder.v1'),
       createEmptyInstance: create)
-    ..aOM<$0.Duration>(1, _omitFieldNames ? '' : 'startTimeOffset',
-        subBuilder: $0.Duration.create)
+    ..aOM<$2.Duration>(1, _omitFieldNames ? '' : 'startTimeOffset',
+        subBuilder: $2.Duration.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  AdBreak clone() => AdBreak()..mergeFromMessage(this);
+  AdBreak clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AdBreak copyWith(void Function(AdBreak) updates) =>
       super.copyWith((message) => updates(message as AdBreak)) as AdBreak;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AdBreak create() => AdBreak._();
+  @$core.override
   AdBreak createEmptyInstance() => create();
-  static $pb.PbList<AdBreak> createRepeated() => $pb.PbList<AdBreak>();
   @$core.pragma('dart2js:noInline')
   static AdBreak getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AdBreak>(create);
@@ -866,18 +759,15 @@ class AdBreak extends $pb.GeneratedMessage {
   /// Start time in seconds for the ad break, relative to the output file
   /// timeline. The default is `0s`.
   @$pb.TagNumber(1)
-  $0.Duration get startTimeOffset => $_getN(0);
+  $2.Duration get startTimeOffset => $_getN(0);
   @$pb.TagNumber(1)
-  set startTimeOffset($0.Duration v) {
-    $_setField(1, v);
-  }
-
+  set startTimeOffset($2.Duration value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasStartTimeOffset() => $_has(0);
   @$pb.TagNumber(1)
   void clearStartTimeOffset() => $_clearField(1);
   @$pb.TagNumber(1)
-  $0.Duration ensureStartTimeOffset() => $_ensure(0);
+  $2.Duration ensureStartTimeOffset() => $_ensure(0);
 }
 
 enum ElementaryStream_ElementaryStream {
@@ -897,28 +787,22 @@ class ElementaryStream extends $pb.GeneratedMessage {
     TextStream? textStream,
     $core.String? key,
   }) {
-    final $result = create();
-    if (videoStream != null) {
-      $result.videoStream = videoStream;
-    }
-    if (audioStream != null) {
-      $result.audioStream = audioStream;
-    }
-    if (textStream != null) {
-      $result.textStream = textStream;
-    }
-    if (key != null) {
-      $result.key = key;
-    }
-    return $result;
+    final result = create();
+    if (videoStream != null) result.videoStream = videoStream;
+    if (audioStream != null) result.audioStream = audioStream;
+    if (textStream != null) result.textStream = textStream;
+    if (key != null) result.key = key;
+    return result;
   }
-  ElementaryStream._() : super();
-  factory ElementaryStream.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ElementaryStream.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  ElementaryStream._();
+
+  factory ElementaryStream.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ElementaryStream.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static const $core.Map<$core.int, ElementaryStream_ElementaryStream>
       _ElementaryStream_ElementaryStreamByTag = {
@@ -943,36 +827,39 @@ class ElementaryStream extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ElementaryStream clone() => ElementaryStream()..mergeFromMessage(this);
+  ElementaryStream clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ElementaryStream copyWith(void Function(ElementaryStream) updates) =>
       super.copyWith((message) => updates(message as ElementaryStream))
           as ElementaryStream;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ElementaryStream create() => ElementaryStream._();
+  @$core.override
   ElementaryStream createEmptyInstance() => create();
-  static $pb.PbList<ElementaryStream> createRepeated() =>
-      $pb.PbList<ElementaryStream>();
   @$core.pragma('dart2js:noInline')
   static ElementaryStream getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ElementaryStream>(create);
   static ElementaryStream? _defaultInstance;
 
+  @$pb.TagNumber(1)
+  @$pb.TagNumber(2)
+  @$pb.TagNumber(3)
   ElementaryStream_ElementaryStream whichElementaryStream() =>
       _ElementaryStream_ElementaryStreamByTag[$_whichOneof(0)]!;
+  @$pb.TagNumber(1)
+  @$pb.TagNumber(2)
+  @$pb.TagNumber(3)
   void clearElementaryStream() => $_clearField($_whichOneof(0));
 
   /// Encoding of a video stream.
   @$pb.TagNumber(1)
   VideoStream get videoStream => $_getN(0);
   @$pb.TagNumber(1)
-  set videoStream(VideoStream v) {
-    $_setField(1, v);
-  }
-
+  set videoStream(VideoStream value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasVideoStream() => $_has(0);
   @$pb.TagNumber(1)
@@ -984,10 +871,7 @@ class ElementaryStream extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   AudioStream get audioStream => $_getN(1);
   @$pb.TagNumber(2)
-  set audioStream(AudioStream v) {
-    $_setField(2, v);
-  }
-
+  set audioStream(AudioStream value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasAudioStream() => $_has(1);
   @$pb.TagNumber(2)
@@ -999,10 +883,7 @@ class ElementaryStream extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   TextStream get textStream => $_getN(2);
   @$pb.TagNumber(3)
-  set textStream(TextStream v) {
-    $_setField(3, v);
-  }
-
+  set textStream(TextStream value) => $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasTextStream() => $_has(2);
   @$pb.TagNumber(3)
@@ -1014,10 +895,7 @@ class ElementaryStream extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get key => $_getSZ(3);
   @$pb.TagNumber(4)
-  set key($core.String v) {
-    $_setString(3, v);
-  }
-
+  set key($core.String value) => $_setString(3, value);
   @$pb.TagNumber(4)
   $core.bool hasKey() => $_has(3);
   @$pb.TagNumber(4)
@@ -1033,31 +911,24 @@ class MuxStream extends $pb.GeneratedMessage {
     $core.Iterable<$core.String>? elementaryStreams,
     SegmentSettings? segmentSettings,
   }) {
-    final $result = create();
-    if (key != null) {
-      $result.key = key;
-    }
-    if (fileName != null) {
-      $result.fileName = fileName;
-    }
-    if (container != null) {
-      $result.container = container;
-    }
-    if (elementaryStreams != null) {
-      $result.elementaryStreams.addAll(elementaryStreams);
-    }
-    if (segmentSettings != null) {
-      $result.segmentSettings = segmentSettings;
-    }
-    return $result;
+    final result = create();
+    if (key != null) result.key = key;
+    if (fileName != null) result.fileName = fileName;
+    if (container != null) result.container = container;
+    if (elementaryStreams != null)
+      result.elementaryStreams.addAll(elementaryStreams);
+    if (segmentSettings != null) result.segmentSettings = segmentSettings;
+    return result;
   }
-  MuxStream._() : super();
-  factory MuxStream.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory MuxStream.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  MuxStream._();
+
+  factory MuxStream.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory MuxStream.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'MuxStream',
@@ -1073,17 +944,18 @@ class MuxStream extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  MuxStream clone() => MuxStream()..mergeFromMessage(this);
+  MuxStream clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MuxStream copyWith(void Function(MuxStream) updates) =>
       super.copyWith((message) => updates(message as MuxStream)) as MuxStream;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static MuxStream create() => MuxStream._();
+  @$core.override
   MuxStream createEmptyInstance() => create();
-  static $pb.PbList<MuxStream> createRepeated() => $pb.PbList<MuxStream>();
   @$core.pragma('dart2js:noInline')
   static MuxStream getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MuxStream>(create);
@@ -1094,10 +966,7 @@ class MuxStream extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get key => $_getSZ(0);
   @$pb.TagNumber(1)
-  set key($core.String v) {
-    $_setString(0, v);
-  }
-
+  set key($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasKey() => $_has(0);
   @$pb.TagNumber(1)
@@ -1111,10 +980,7 @@ class MuxStream extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get fileName => $_getSZ(1);
   @$pb.TagNumber(2)
-  set fileName($core.String v) {
-    $_setString(1, v);
-  }
-
+  set fileName($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasFileName() => $_has(1);
   @$pb.TagNumber(2)
@@ -1135,10 +1001,7 @@ class MuxStream extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get container => $_getSZ(2);
   @$pb.TagNumber(3)
-  set container($core.String v) {
-    $_setString(2, v);
-  }
-
+  set container($core.String value) => $_setString(2, value);
   @$pb.TagNumber(3)
   $core.bool hasContainer() => $_has(2);
   @$pb.TagNumber(3)
@@ -1152,10 +1015,7 @@ class MuxStream extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   SegmentSettings get segmentSettings => $_getN(4);
   @$pb.TagNumber(5)
-  set segmentSettings(SegmentSettings v) {
-    $_setField(5, v);
-  }
-
+  set segmentSettings(SegmentSettings value) => $_setField(5, value);
   @$pb.TagNumber(5)
   $core.bool hasSegmentSettings() => $_has(4);
   @$pb.TagNumber(5)
@@ -1171,25 +1031,21 @@ class Manifest extends $pb.GeneratedMessage {
     Manifest_ManifestType? type,
     $core.Iterable<$core.String>? muxStreams,
   }) {
-    final $result = create();
-    if (fileName != null) {
-      $result.fileName = fileName;
-    }
-    if (type != null) {
-      $result.type = type;
-    }
-    if (muxStreams != null) {
-      $result.muxStreams.addAll(muxStreams);
-    }
-    return $result;
+    final result = create();
+    if (fileName != null) result.fileName = fileName;
+    if (type != null) result.type = type;
+    if (muxStreams != null) result.muxStreams.addAll(muxStreams);
+    return result;
   }
-  Manifest._() : super();
-  factory Manifest.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Manifest.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  Manifest._();
+
+  factory Manifest.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory Manifest.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'Manifest',
@@ -1197,26 +1053,24 @@ class Manifest extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.events.cloud.video.transcoder.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'fileName')
-    ..e<Manifest_ManifestType>(
-        2, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE,
-        defaultOrMaker: Manifest_ManifestType.MANIFEST_TYPE_UNSPECIFIED,
-        valueOf: Manifest_ManifestType.valueOf,
+    ..aE<Manifest_ManifestType>(2, _omitFieldNames ? '' : 'type',
         enumValues: Manifest_ManifestType.values)
     ..pPS(3, _omitFieldNames ? '' : 'muxStreams')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  Manifest clone() => Manifest()..mergeFromMessage(this);
+  Manifest clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Manifest copyWith(void Function(Manifest) updates) =>
       super.copyWith((message) => updates(message as Manifest)) as Manifest;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Manifest create() => Manifest._();
+  @$core.override
   Manifest createEmptyInstance() => create();
-  static $pb.PbList<Manifest> createRepeated() => $pb.PbList<Manifest>();
   @$core.pragma('dart2js:noInline')
   static Manifest getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Manifest>(create);
@@ -1227,10 +1081,7 @@ class Manifest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get fileName => $_getSZ(0);
   @$pb.TagNumber(1)
-  set fileName($core.String v) {
-    $_setString(0, v);
-  }
-
+  set fileName($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasFileName() => $_has(0);
   @$pb.TagNumber(1)
@@ -1240,10 +1091,7 @@ class Manifest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   Manifest_ManifestType get type => $_getN(1);
   @$pb.TagNumber(2)
-  set type(Manifest_ManifestType v) {
-    $_setField(2, v);
-  }
-
+  set type(Manifest_ManifestType value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasType() => $_has(1);
   @$pb.TagNumber(2)
@@ -1264,19 +1112,19 @@ class PubsubDestination extends $pb.GeneratedMessage {
   factory PubsubDestination({
     $core.String? topic,
   }) {
-    final $result = create();
-    if (topic != null) {
-      $result.topic = topic;
-    }
-    return $result;
+    final result = create();
+    if (topic != null) result.topic = topic;
+    return result;
   }
-  PubsubDestination._() : super();
-  factory PubsubDestination.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory PubsubDestination.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  PubsubDestination._();
+
+  factory PubsubDestination.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory PubsubDestination.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'PubsubDestination',
@@ -1287,19 +1135,19 @@ class PubsubDestination extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  PubsubDestination clone() => PubsubDestination()..mergeFromMessage(this);
+  PubsubDestination clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   PubsubDestination copyWith(void Function(PubsubDestination) updates) =>
       super.copyWith((message) => updates(message as PubsubDestination))
           as PubsubDestination;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static PubsubDestination create() => PubsubDestination._();
+  @$core.override
   PubsubDestination createEmptyInstance() => create();
-  static $pb.PbList<PubsubDestination> createRepeated() =>
-      $pb.PbList<PubsubDestination>();
   @$core.pragma('dart2js:noInline')
   static PubsubDestination getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<PubsubDestination>(create);
@@ -1310,10 +1158,7 @@ class PubsubDestination extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get topic => $_getSZ(0);
   @$pb.TagNumber(1)
-  set topic($core.String v) {
-    $_setString(0, v);
-  }
-
+  set topic($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasTopic() => $_has(0);
   @$pb.TagNumber(1)
@@ -1331,55 +1176,36 @@ class SpriteSheet extends $pb.GeneratedMessage {
     $core.int? spriteHeightPixels,
     $core.int? columnCount,
     $core.int? rowCount,
-    $0.Duration? startTimeOffset,
-    $0.Duration? endTimeOffset,
+    $2.Duration? startTimeOffset,
+    $2.Duration? endTimeOffset,
     $core.int? totalCount,
-    $0.Duration? interval,
+    $2.Duration? interval,
     $core.int? quality,
   }) {
-    final $result = create();
-    if (format != null) {
-      $result.format = format;
-    }
-    if (filePrefix != null) {
-      $result.filePrefix = filePrefix;
-    }
-    if (spriteWidthPixels != null) {
-      $result.spriteWidthPixels = spriteWidthPixels;
-    }
-    if (spriteHeightPixels != null) {
-      $result.spriteHeightPixels = spriteHeightPixels;
-    }
-    if (columnCount != null) {
-      $result.columnCount = columnCount;
-    }
-    if (rowCount != null) {
-      $result.rowCount = rowCount;
-    }
-    if (startTimeOffset != null) {
-      $result.startTimeOffset = startTimeOffset;
-    }
-    if (endTimeOffset != null) {
-      $result.endTimeOffset = endTimeOffset;
-    }
-    if (totalCount != null) {
-      $result.totalCount = totalCount;
-    }
-    if (interval != null) {
-      $result.interval = interval;
-    }
-    if (quality != null) {
-      $result.quality = quality;
-    }
-    return $result;
+    final result = create();
+    if (format != null) result.format = format;
+    if (filePrefix != null) result.filePrefix = filePrefix;
+    if (spriteWidthPixels != null) result.spriteWidthPixels = spriteWidthPixels;
+    if (spriteHeightPixels != null)
+      result.spriteHeightPixels = spriteHeightPixels;
+    if (columnCount != null) result.columnCount = columnCount;
+    if (rowCount != null) result.rowCount = rowCount;
+    if (startTimeOffset != null) result.startTimeOffset = startTimeOffset;
+    if (endTimeOffset != null) result.endTimeOffset = endTimeOffset;
+    if (totalCount != null) result.totalCount = totalCount;
+    if (interval != null) result.interval = interval;
+    if (quality != null) result.quality = quality;
+    return result;
   }
-  SpriteSheet._() : super();
-  factory SpriteSheet.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory SpriteSheet.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  SpriteSheet._();
+
+  factory SpriteSheet.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory SpriteSheet.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static const $core.Map<$core.int, SpriteSheet_ExtractionStrategy>
       _SpriteSheet_ExtractionStrategyByTag = {
@@ -1395,42 +1221,45 @@ class SpriteSheet extends $pb.GeneratedMessage {
     ..oo(0, [9, 10])
     ..aOS(1, _omitFieldNames ? '' : 'format')
     ..aOS(2, _omitFieldNames ? '' : 'filePrefix')
-    ..a<$core.int>(
-        3, _omitFieldNames ? '' : 'spriteWidthPixels', $pb.PbFieldType.O3)
-    ..a<$core.int>(
-        4, _omitFieldNames ? '' : 'spriteHeightPixels', $pb.PbFieldType.O3)
-    ..a<$core.int>(5, _omitFieldNames ? '' : 'columnCount', $pb.PbFieldType.O3)
-    ..a<$core.int>(6, _omitFieldNames ? '' : 'rowCount', $pb.PbFieldType.O3)
-    ..aOM<$0.Duration>(7, _omitFieldNames ? '' : 'startTimeOffset',
-        subBuilder: $0.Duration.create)
-    ..aOM<$0.Duration>(8, _omitFieldNames ? '' : 'endTimeOffset',
-        subBuilder: $0.Duration.create)
-    ..a<$core.int>(9, _omitFieldNames ? '' : 'totalCount', $pb.PbFieldType.O3)
-    ..aOM<$0.Duration>(10, _omitFieldNames ? '' : 'interval',
-        subBuilder: $0.Duration.create)
-    ..a<$core.int>(11, _omitFieldNames ? '' : 'quality', $pb.PbFieldType.O3)
+    ..aI(3, _omitFieldNames ? '' : 'spriteWidthPixels')
+    ..aI(4, _omitFieldNames ? '' : 'spriteHeightPixels')
+    ..aI(5, _omitFieldNames ? '' : 'columnCount')
+    ..aI(6, _omitFieldNames ? '' : 'rowCount')
+    ..aOM<$2.Duration>(7, _omitFieldNames ? '' : 'startTimeOffset',
+        subBuilder: $2.Duration.create)
+    ..aOM<$2.Duration>(8, _omitFieldNames ? '' : 'endTimeOffset',
+        subBuilder: $2.Duration.create)
+    ..aI(9, _omitFieldNames ? '' : 'totalCount')
+    ..aOM<$2.Duration>(10, _omitFieldNames ? '' : 'interval',
+        subBuilder: $2.Duration.create)
+    ..aI(11, _omitFieldNames ? '' : 'quality')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  SpriteSheet clone() => SpriteSheet()..mergeFromMessage(this);
+  SpriteSheet clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   SpriteSheet copyWith(void Function(SpriteSheet) updates) =>
       super.copyWith((message) => updates(message as SpriteSheet))
           as SpriteSheet;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SpriteSheet create() => SpriteSheet._();
+  @$core.override
   SpriteSheet createEmptyInstance() => create();
-  static $pb.PbList<SpriteSheet> createRepeated() => $pb.PbList<SpriteSheet>();
   @$core.pragma('dart2js:noInline')
   static SpriteSheet getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<SpriteSheet>(create);
   static SpriteSheet? _defaultInstance;
 
+  @$pb.TagNumber(9)
+  @$pb.TagNumber(10)
   SpriteSheet_ExtractionStrategy whichExtractionStrategy() =>
       _SpriteSheet_ExtractionStrategyByTag[$_whichOneof(0)]!;
+  @$pb.TagNumber(9)
+  @$pb.TagNumber(10)
   void clearExtractionStrategy() => $_clearField($_whichOneof(0));
 
   /// Format type. The default is `jpeg`.
@@ -1441,10 +1270,7 @@ class SpriteSheet extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get format => $_getSZ(0);
   @$pb.TagNumber(1)
-  set format($core.String v) {
-    $_setString(0, v);
-  }
-
+  set format($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasFormat() => $_has(0);
   @$pb.TagNumber(1)
@@ -1457,10 +1283,7 @@ class SpriteSheet extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get filePrefix => $_getSZ(1);
   @$pb.TagNumber(2)
-  set filePrefix($core.String v) {
-    $_setString(1, v);
-  }
-
+  set filePrefix($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasFilePrefix() => $_has(1);
   @$pb.TagNumber(2)
@@ -1481,10 +1304,7 @@ class SpriteSheet extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.int get spriteWidthPixels => $_getIZ(2);
   @$pb.TagNumber(3)
-  set spriteWidthPixels($core.int v) {
-    $_setSignedInt32(2, v);
-  }
-
+  set spriteWidthPixels($core.int value) => $_setSignedInt32(2, value);
   @$pb.TagNumber(3)
   $core.bool hasSpriteWidthPixels() => $_has(2);
   @$pb.TagNumber(3)
@@ -1505,10 +1325,7 @@ class SpriteSheet extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.int get spriteHeightPixels => $_getIZ(3);
   @$pb.TagNumber(4)
-  set spriteHeightPixels($core.int v) {
-    $_setSignedInt32(3, v);
-  }
-
+  set spriteHeightPixels($core.int value) => $_setSignedInt32(3, value);
   @$pb.TagNumber(4)
   $core.bool hasSpriteHeightPixels() => $_has(3);
   @$pb.TagNumber(4)
@@ -1519,10 +1336,7 @@ class SpriteSheet extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.int get columnCount => $_getIZ(4);
   @$pb.TagNumber(5)
-  set columnCount($core.int v) {
-    $_setSignedInt32(4, v);
-  }
-
+  set columnCount($core.int value) => $_setSignedInt32(4, value);
   @$pb.TagNumber(5)
   $core.bool hasColumnCount() => $_has(4);
   @$pb.TagNumber(5)
@@ -1534,10 +1348,7 @@ class SpriteSheet extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.int get rowCount => $_getIZ(5);
   @$pb.TagNumber(6)
-  set rowCount($core.int v) {
-    $_setSignedInt32(5, v);
-  }
-
+  set rowCount($core.int value) => $_setSignedInt32(5, value);
   @$pb.TagNumber(6)
   $core.bool hasRowCount() => $_has(5);
   @$pb.TagNumber(6)
@@ -1546,35 +1357,29 @@ class SpriteSheet extends $pb.GeneratedMessage {
   /// Start time in seconds, relative to the output file timeline. Determines the
   /// first sprite to pick. The default is `0s`.
   @$pb.TagNumber(7)
-  $0.Duration get startTimeOffset => $_getN(6);
+  $2.Duration get startTimeOffset => $_getN(6);
   @$pb.TagNumber(7)
-  set startTimeOffset($0.Duration v) {
-    $_setField(7, v);
-  }
-
+  set startTimeOffset($2.Duration value) => $_setField(7, value);
   @$pb.TagNumber(7)
   $core.bool hasStartTimeOffset() => $_has(6);
   @$pb.TagNumber(7)
   void clearStartTimeOffset() => $_clearField(7);
   @$pb.TagNumber(7)
-  $0.Duration ensureStartTimeOffset() => $_ensure(6);
+  $2.Duration ensureStartTimeOffset() => $_ensure(6);
 
   /// End time in seconds, relative to the output file timeline. When
   /// `end_time_offset` is not specified, the sprites are generated until the end
   /// of the output file.
   @$pb.TagNumber(8)
-  $0.Duration get endTimeOffset => $_getN(7);
+  $2.Duration get endTimeOffset => $_getN(7);
   @$pb.TagNumber(8)
-  set endTimeOffset($0.Duration v) {
-    $_setField(8, v);
-  }
-
+  set endTimeOffset($2.Duration value) => $_setField(8, value);
   @$pb.TagNumber(8)
   $core.bool hasEndTimeOffset() => $_has(7);
   @$pb.TagNumber(8)
   void clearEndTimeOffset() => $_clearField(8);
   @$pb.TagNumber(8)
-  $0.Duration ensureEndTimeOffset() => $_ensure(7);
+  $2.Duration ensureEndTimeOffset() => $_ensure(7);
 
   /// Total number of sprites. Create the specified number of sprites
   /// distributed evenly across the timeline of the output media. The default
@@ -1582,10 +1387,7 @@ class SpriteSheet extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.int get totalCount => $_getIZ(8);
   @$pb.TagNumber(9)
-  set totalCount($core.int v) {
-    $_setSignedInt32(8, v);
-  }
-
+  set totalCount($core.int value) => $_setSignedInt32(8, value);
   @$pb.TagNumber(9)
   $core.bool hasTotalCount() => $_has(8);
   @$pb.TagNumber(9)
@@ -1594,18 +1396,15 @@ class SpriteSheet extends $pb.GeneratedMessage {
   /// Starting from `0s`, create sprites at regular intervals. Specify the
   /// interval value in seconds.
   @$pb.TagNumber(10)
-  $0.Duration get interval => $_getN(9);
+  $2.Duration get interval => $_getN(9);
   @$pb.TagNumber(10)
-  set interval($0.Duration v) {
-    $_setField(10, v);
-  }
-
+  set interval($2.Duration value) => $_setField(10, value);
   @$pb.TagNumber(10)
   $core.bool hasInterval() => $_has(9);
   @$pb.TagNumber(10)
   void clearInterval() => $_clearField(10);
   @$pb.TagNumber(10)
-  $0.Duration ensureInterval() => $_ensure(9);
+  $2.Duration ensureInterval() => $_ensure(9);
 
   /// The quality of the generated sprite sheet. Enter a value between 1
   /// and 100, where 1 is the lowest quality and 100 is the highest quality.
@@ -1614,10 +1413,7 @@ class SpriteSheet extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.int get quality => $_getIZ(10);
   @$pb.TagNumber(11)
-  set quality($core.int v) {
-    $_setSignedInt32(10, v);
-  }
-
+  set quality($core.int value) => $_setSignedInt32(10, value);
   @$pb.TagNumber(11)
   $core.bool hasQuality() => $_has(10);
   @$pb.TagNumber(11)
@@ -1630,35 +1426,32 @@ class Overlay_NormalizedCoordinate extends $pb.GeneratedMessage {
     $core.double? x,
     $core.double? y,
   }) {
-    final $result = create();
-    if (x != null) {
-      $result.x = x;
-    }
-    if (y != null) {
-      $result.y = y;
-    }
-    return $result;
+    final result = create();
+    if (x != null) result.x = x;
+    if (y != null) result.y = y;
+    return result;
   }
-  Overlay_NormalizedCoordinate._() : super();
-  factory Overlay_NormalizedCoordinate.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Overlay_NormalizedCoordinate.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  Overlay_NormalizedCoordinate._();
+
+  factory Overlay_NormalizedCoordinate.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory Overlay_NormalizedCoordinate.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'Overlay.NormalizedCoordinate',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.video.transcoder.v1'),
       createEmptyInstance: create)
-    ..a<$core.double>(1, _omitFieldNames ? '' : 'x', $pb.PbFieldType.OD)
-    ..a<$core.double>(2, _omitFieldNames ? '' : 'y', $pb.PbFieldType.OD)
+    ..aD(1, _omitFieldNames ? '' : 'x')
+    ..aD(2, _omitFieldNames ? '' : 'y')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  Overlay_NormalizedCoordinate clone() =>
-      Overlay_NormalizedCoordinate()..mergeFromMessage(this);
+  Overlay_NormalizedCoordinate clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Overlay_NormalizedCoordinate copyWith(
           void Function(Overlay_NormalizedCoordinate) updates) =>
@@ -1666,14 +1459,14 @@ class Overlay_NormalizedCoordinate extends $pb.GeneratedMessage {
               (message) => updates(message as Overlay_NormalizedCoordinate))
           as Overlay_NormalizedCoordinate;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Overlay_NormalizedCoordinate create() =>
       Overlay_NormalizedCoordinate._();
+  @$core.override
   Overlay_NormalizedCoordinate createEmptyInstance() => create();
-  static $pb.PbList<Overlay_NormalizedCoordinate> createRepeated() =>
-      $pb.PbList<Overlay_NormalizedCoordinate>();
   @$core.pragma('dart2js:noInline')
   static Overlay_NormalizedCoordinate getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<Overlay_NormalizedCoordinate>(create);
@@ -1683,10 +1476,7 @@ class Overlay_NormalizedCoordinate extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.double get x => $_getN(0);
   @$pb.TagNumber(1)
-  set x($core.double v) {
-    $_setDouble(0, v);
-  }
-
+  set x($core.double value) => $_setDouble(0, value);
   @$pb.TagNumber(1)
   $core.bool hasX() => $_has(0);
   @$pb.TagNumber(1)
@@ -1696,10 +1486,7 @@ class Overlay_NormalizedCoordinate extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.double get y => $_getN(1);
   @$pb.TagNumber(2)
-  set y($core.double v) {
-    $_setDouble(1, v);
-  }
-
+  set y($core.double value) => $_setDouble(1, value);
   @$pb.TagNumber(2)
   $core.bool hasY() => $_has(1);
   @$pb.TagNumber(2)
@@ -1713,25 +1500,21 @@ class Overlay_Image extends $pb.GeneratedMessage {
     Overlay_NormalizedCoordinate? resolution,
     $core.double? alpha,
   }) {
-    final $result = create();
-    if (uri != null) {
-      $result.uri = uri;
-    }
-    if (resolution != null) {
-      $result.resolution = resolution;
-    }
-    if (alpha != null) {
-      $result.alpha = alpha;
-    }
-    return $result;
+    final result = create();
+    if (uri != null) result.uri = uri;
+    if (resolution != null) result.resolution = resolution;
+    if (alpha != null) result.alpha = alpha;
+    return result;
   }
-  Overlay_Image._() : super();
-  factory Overlay_Image.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Overlay_Image.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  Overlay_Image._();
+
+  factory Overlay_Image.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory Overlay_Image.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'Overlay.Image',
@@ -1741,23 +1524,23 @@ class Overlay_Image extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'uri')
     ..aOM<Overlay_NormalizedCoordinate>(2, _omitFieldNames ? '' : 'resolution',
         subBuilder: Overlay_NormalizedCoordinate.create)
-    ..a<$core.double>(3, _omitFieldNames ? '' : 'alpha', $pb.PbFieldType.OD)
+    ..aD(3, _omitFieldNames ? '' : 'alpha')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  Overlay_Image clone() => Overlay_Image()..mergeFromMessage(this);
+  Overlay_Image clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Overlay_Image copyWith(void Function(Overlay_Image) updates) =>
       super.copyWith((message) => updates(message as Overlay_Image))
           as Overlay_Image;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Overlay_Image create() => Overlay_Image._();
+  @$core.override
   Overlay_Image createEmptyInstance() => create();
-  static $pb.PbList<Overlay_Image> createRepeated() =>
-      $pb.PbList<Overlay_Image>();
   @$core.pragma('dart2js:noInline')
   static Overlay_Image getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<Overlay_Image>(create);
@@ -1768,10 +1551,7 @@ class Overlay_Image extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get uri => $_getSZ(0);
   @$pb.TagNumber(1)
-  set uri($core.String v) {
-    $_setString(0, v);
-  }
-
+  set uri($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasUri() => $_has(0);
   @$pb.TagNumber(1)
@@ -1784,10 +1564,7 @@ class Overlay_Image extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   Overlay_NormalizedCoordinate get resolution => $_getN(1);
   @$pb.TagNumber(2)
-  set resolution(Overlay_NormalizedCoordinate v) {
-    $_setField(2, v);
-  }
-
+  set resolution(Overlay_NormalizedCoordinate value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasResolution() => $_has(1);
   @$pb.TagNumber(2)
@@ -1800,10 +1577,7 @@ class Overlay_Image extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.double get alpha => $_getN(2);
   @$pb.TagNumber(3)
-  set alpha($core.double v) {
-    $_setDouble(2, v);
-  }
-
+  set alpha($core.double value) => $_setDouble(2, value);
   @$pb.TagNumber(3)
   $core.bool hasAlpha() => $_has(2);
   @$pb.TagNumber(3)
@@ -1814,24 +1588,22 @@ class Overlay_Image extends $pb.GeneratedMessage {
 class Overlay_AnimationStatic extends $pb.GeneratedMessage {
   factory Overlay_AnimationStatic({
     Overlay_NormalizedCoordinate? xy,
-    $0.Duration? startTimeOffset,
+    $2.Duration? startTimeOffset,
   }) {
-    final $result = create();
-    if (xy != null) {
-      $result.xy = xy;
-    }
-    if (startTimeOffset != null) {
-      $result.startTimeOffset = startTimeOffset;
-    }
-    return $result;
+    final result = create();
+    if (xy != null) result.xy = xy;
+    if (startTimeOffset != null) result.startTimeOffset = startTimeOffset;
+    return result;
   }
-  Overlay_AnimationStatic._() : super();
-  factory Overlay_AnimationStatic.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Overlay_AnimationStatic.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  Overlay_AnimationStatic._();
+
+  factory Overlay_AnimationStatic.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory Overlay_AnimationStatic.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'Overlay.AnimationStatic',
@@ -1840,26 +1612,25 @@ class Overlay_AnimationStatic extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOM<Overlay_NormalizedCoordinate>(1, _omitFieldNames ? '' : 'xy',
         subBuilder: Overlay_NormalizedCoordinate.create)
-    ..aOM<$0.Duration>(2, _omitFieldNames ? '' : 'startTimeOffset',
-        subBuilder: $0.Duration.create)
+    ..aOM<$2.Duration>(2, _omitFieldNames ? '' : 'startTimeOffset',
+        subBuilder: $2.Duration.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  Overlay_AnimationStatic clone() =>
-      Overlay_AnimationStatic()..mergeFromMessage(this);
+  Overlay_AnimationStatic clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Overlay_AnimationStatic copyWith(
           void Function(Overlay_AnimationStatic) updates) =>
       super.copyWith((message) => updates(message as Overlay_AnimationStatic))
           as Overlay_AnimationStatic;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Overlay_AnimationStatic create() => Overlay_AnimationStatic._();
+  @$core.override
   Overlay_AnimationStatic createEmptyInstance() => create();
-  static $pb.PbList<Overlay_AnimationStatic> createRepeated() =>
-      $pb.PbList<Overlay_AnimationStatic>();
   @$core.pragma('dart2js:noInline')
   static Overlay_AnimationStatic getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<Overlay_AnimationStatic>(create);
@@ -1873,10 +1644,7 @@ class Overlay_AnimationStatic extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   Overlay_NormalizedCoordinate get xy => $_getN(0);
   @$pb.TagNumber(1)
-  set xy(Overlay_NormalizedCoordinate v) {
-    $_setField(1, v);
-  }
-
+  set xy(Overlay_NormalizedCoordinate value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasXy() => $_has(0);
   @$pb.TagNumber(1)
@@ -1886,18 +1654,15 @@ class Overlay_AnimationStatic extends $pb.GeneratedMessage {
 
   /// The time to start displaying the overlay object, in seconds. Default: 0
   @$pb.TagNumber(2)
-  $0.Duration get startTimeOffset => $_getN(1);
+  $2.Duration get startTimeOffset => $_getN(1);
   @$pb.TagNumber(2)
-  set startTimeOffset($0.Duration v) {
-    $_setField(2, v);
-  }
-
+  set startTimeOffset($2.Duration value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasStartTimeOffset() => $_has(1);
   @$pb.TagNumber(2)
   void clearStartTimeOffset() => $_clearField(2);
   @$pb.TagNumber(2)
-  $0.Duration ensureStartTimeOffset() => $_ensure(1);
+  $2.Duration ensureStartTimeOffset() => $_ensure(1);
 }
 
 /// Display overlay object with fade animation.
@@ -1905,66 +1670,56 @@ class Overlay_AnimationFade extends $pb.GeneratedMessage {
   factory Overlay_AnimationFade({
     Overlay_FadeType? fadeType,
     Overlay_NormalizedCoordinate? xy,
-    $0.Duration? startTimeOffset,
-    $0.Duration? endTimeOffset,
+    $2.Duration? startTimeOffset,
+    $2.Duration? endTimeOffset,
   }) {
-    final $result = create();
-    if (fadeType != null) {
-      $result.fadeType = fadeType;
-    }
-    if (xy != null) {
-      $result.xy = xy;
-    }
-    if (startTimeOffset != null) {
-      $result.startTimeOffset = startTimeOffset;
-    }
-    if (endTimeOffset != null) {
-      $result.endTimeOffset = endTimeOffset;
-    }
-    return $result;
+    final result = create();
+    if (fadeType != null) result.fadeType = fadeType;
+    if (xy != null) result.xy = xy;
+    if (startTimeOffset != null) result.startTimeOffset = startTimeOffset;
+    if (endTimeOffset != null) result.endTimeOffset = endTimeOffset;
+    return result;
   }
-  Overlay_AnimationFade._() : super();
-  factory Overlay_AnimationFade.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Overlay_AnimationFade.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  Overlay_AnimationFade._();
+
+  factory Overlay_AnimationFade.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory Overlay_AnimationFade.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'Overlay.AnimationFade',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.video.transcoder.v1'),
       createEmptyInstance: create)
-    ..e<Overlay_FadeType>(
-        1, _omitFieldNames ? '' : 'fadeType', $pb.PbFieldType.OE,
-        defaultOrMaker: Overlay_FadeType.FADE_TYPE_UNSPECIFIED,
-        valueOf: Overlay_FadeType.valueOf,
+    ..aE<Overlay_FadeType>(1, _omitFieldNames ? '' : 'fadeType',
         enumValues: Overlay_FadeType.values)
     ..aOM<Overlay_NormalizedCoordinate>(2, _omitFieldNames ? '' : 'xy',
         subBuilder: Overlay_NormalizedCoordinate.create)
-    ..aOM<$0.Duration>(3, _omitFieldNames ? '' : 'startTimeOffset',
-        subBuilder: $0.Duration.create)
-    ..aOM<$0.Duration>(4, _omitFieldNames ? '' : 'endTimeOffset',
-        subBuilder: $0.Duration.create)
+    ..aOM<$2.Duration>(3, _omitFieldNames ? '' : 'startTimeOffset',
+        subBuilder: $2.Duration.create)
+    ..aOM<$2.Duration>(4, _omitFieldNames ? '' : 'endTimeOffset',
+        subBuilder: $2.Duration.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  Overlay_AnimationFade clone() =>
-      Overlay_AnimationFade()..mergeFromMessage(this);
+  Overlay_AnimationFade clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Overlay_AnimationFade copyWith(
           void Function(Overlay_AnimationFade) updates) =>
       super.copyWith((message) => updates(message as Overlay_AnimationFade))
           as Overlay_AnimationFade;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Overlay_AnimationFade create() => Overlay_AnimationFade._();
+  @$core.override
   Overlay_AnimationFade createEmptyInstance() => create();
-  static $pb.PbList<Overlay_AnimationFade> createRepeated() =>
-      $pb.PbList<Overlay_AnimationFade>();
   @$core.pragma('dart2js:noInline')
   static Overlay_AnimationFade getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<Overlay_AnimationFade>(create);
@@ -1974,10 +1729,7 @@ class Overlay_AnimationFade extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   Overlay_FadeType get fadeType => $_getN(0);
   @$pb.TagNumber(1)
-  set fadeType(Overlay_FadeType v) {
-    $_setField(1, v);
-  }
-
+  set fadeType(Overlay_FadeType value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasFadeType() => $_has(0);
   @$pb.TagNumber(1)
@@ -1991,10 +1743,7 @@ class Overlay_AnimationFade extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   Overlay_NormalizedCoordinate get xy => $_getN(1);
   @$pb.TagNumber(2)
-  set xy(Overlay_NormalizedCoordinate v) {
-    $_setField(2, v);
-  }
-
+  set xy(Overlay_NormalizedCoordinate value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasXy() => $_has(1);
   @$pb.TagNumber(2)
@@ -2004,34 +1753,28 @@ class Overlay_AnimationFade extends $pb.GeneratedMessage {
 
   /// The time to start the fade animation, in seconds. Default: 0
   @$pb.TagNumber(3)
-  $0.Duration get startTimeOffset => $_getN(2);
+  $2.Duration get startTimeOffset => $_getN(2);
   @$pb.TagNumber(3)
-  set startTimeOffset($0.Duration v) {
-    $_setField(3, v);
-  }
-
+  set startTimeOffset($2.Duration value) => $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasStartTimeOffset() => $_has(2);
   @$pb.TagNumber(3)
   void clearStartTimeOffset() => $_clearField(3);
   @$pb.TagNumber(3)
-  $0.Duration ensureStartTimeOffset() => $_ensure(2);
+  $2.Duration ensureStartTimeOffset() => $_ensure(2);
 
   /// The time to end the fade animation, in seconds. Default:
   /// `start_time_offset` + 1s
   @$pb.TagNumber(4)
-  $0.Duration get endTimeOffset => $_getN(3);
+  $2.Duration get endTimeOffset => $_getN(3);
   @$pb.TagNumber(4)
-  set endTimeOffset($0.Duration v) {
-    $_setField(4, v);
-  }
-
+  set endTimeOffset($2.Duration value) => $_setField(4, value);
   @$pb.TagNumber(4)
   $core.bool hasEndTimeOffset() => $_has(3);
   @$pb.TagNumber(4)
   void clearEndTimeOffset() => $_clearField(4);
   @$pb.TagNumber(4)
-  $0.Duration ensureEndTimeOffset() => $_ensure(3);
+  $2.Duration ensureEndTimeOffset() => $_ensure(3);
 }
 
 /// End previous overlay animation from the video. Without AnimationEnd, the
@@ -2039,46 +1782,45 @@ class Overlay_AnimationFade extends $pb.GeneratedMessage {
 /// the video.
 class Overlay_AnimationEnd extends $pb.GeneratedMessage {
   factory Overlay_AnimationEnd({
-    $0.Duration? startTimeOffset,
+    $2.Duration? startTimeOffset,
   }) {
-    final $result = create();
-    if (startTimeOffset != null) {
-      $result.startTimeOffset = startTimeOffset;
-    }
-    return $result;
+    final result = create();
+    if (startTimeOffset != null) result.startTimeOffset = startTimeOffset;
+    return result;
   }
-  Overlay_AnimationEnd._() : super();
-  factory Overlay_AnimationEnd.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Overlay_AnimationEnd.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  Overlay_AnimationEnd._();
+
+  factory Overlay_AnimationEnd.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory Overlay_AnimationEnd.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'Overlay.AnimationEnd',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.video.transcoder.v1'),
       createEmptyInstance: create)
-    ..aOM<$0.Duration>(1, _omitFieldNames ? '' : 'startTimeOffset',
-        subBuilder: $0.Duration.create)
+    ..aOM<$2.Duration>(1, _omitFieldNames ? '' : 'startTimeOffset',
+        subBuilder: $2.Duration.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  Overlay_AnimationEnd clone() =>
-      Overlay_AnimationEnd()..mergeFromMessage(this);
+  Overlay_AnimationEnd clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Overlay_AnimationEnd copyWith(void Function(Overlay_AnimationEnd) updates) =>
       super.copyWith((message) => updates(message as Overlay_AnimationEnd))
           as Overlay_AnimationEnd;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Overlay_AnimationEnd create() => Overlay_AnimationEnd._();
+  @$core.override
   Overlay_AnimationEnd createEmptyInstance() => create();
-  static $pb.PbList<Overlay_AnimationEnd> createRepeated() =>
-      $pb.PbList<Overlay_AnimationEnd>();
   @$core.pragma('dart2js:noInline')
   static Overlay_AnimationEnd getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<Overlay_AnimationEnd>(create);
@@ -2086,18 +1828,15 @@ class Overlay_AnimationEnd extends $pb.GeneratedMessage {
 
   /// The time to end overlay object, in seconds. Default: 0
   @$pb.TagNumber(1)
-  $0.Duration get startTimeOffset => $_getN(0);
+  $2.Duration get startTimeOffset => $_getN(0);
   @$pb.TagNumber(1)
-  set startTimeOffset($0.Duration v) {
-    $_setField(1, v);
-  }
-
+  set startTimeOffset($2.Duration value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasStartTimeOffset() => $_has(0);
   @$pb.TagNumber(1)
   void clearStartTimeOffset() => $_clearField(1);
   @$pb.TagNumber(1)
-  $0.Duration ensureStartTimeOffset() => $_ensure(0);
+  $2.Duration ensureStartTimeOffset() => $_ensure(0);
 }
 
 enum Overlay_Animation_AnimationType {
@@ -2114,25 +1853,21 @@ class Overlay_Animation extends $pb.GeneratedMessage {
     Overlay_AnimationFade? animationFade,
     Overlay_AnimationEnd? animationEnd,
   }) {
-    final $result = create();
-    if (animationStatic != null) {
-      $result.animationStatic = animationStatic;
-    }
-    if (animationFade != null) {
-      $result.animationFade = animationFade;
-    }
-    if (animationEnd != null) {
-      $result.animationEnd = animationEnd;
-    }
-    return $result;
+    final result = create();
+    if (animationStatic != null) result.animationStatic = animationStatic;
+    if (animationFade != null) result.animationFade = animationFade;
+    if (animationEnd != null) result.animationEnd = animationEnd;
+    return result;
   }
-  Overlay_Animation._() : super();
-  factory Overlay_Animation.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Overlay_Animation.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  Overlay_Animation._();
+
+  factory Overlay_Animation.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory Overlay_Animation.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static const $core.Map<$core.int, Overlay_Animation_AnimationType>
       _Overlay_Animation_AnimationTypeByTag = {
@@ -2156,36 +1891,39 @@ class Overlay_Animation extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  Overlay_Animation clone() => Overlay_Animation()..mergeFromMessage(this);
+  Overlay_Animation clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Overlay_Animation copyWith(void Function(Overlay_Animation) updates) =>
       super.copyWith((message) => updates(message as Overlay_Animation))
           as Overlay_Animation;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Overlay_Animation create() => Overlay_Animation._();
+  @$core.override
   Overlay_Animation createEmptyInstance() => create();
-  static $pb.PbList<Overlay_Animation> createRepeated() =>
-      $pb.PbList<Overlay_Animation>();
   @$core.pragma('dart2js:noInline')
   static Overlay_Animation getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<Overlay_Animation>(create);
   static Overlay_Animation? _defaultInstance;
 
+  @$pb.TagNumber(1)
+  @$pb.TagNumber(2)
+  @$pb.TagNumber(3)
   Overlay_Animation_AnimationType whichAnimationType() =>
       _Overlay_Animation_AnimationTypeByTag[$_whichOneof(0)]!;
+  @$pb.TagNumber(1)
+  @$pb.TagNumber(2)
+  @$pb.TagNumber(3)
   void clearAnimationType() => $_clearField($_whichOneof(0));
 
   /// Display static overlay object.
   @$pb.TagNumber(1)
   Overlay_AnimationStatic get animationStatic => $_getN(0);
   @$pb.TagNumber(1)
-  set animationStatic(Overlay_AnimationStatic v) {
-    $_setField(1, v);
-  }
-
+  set animationStatic(Overlay_AnimationStatic value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasAnimationStatic() => $_has(0);
   @$pb.TagNumber(1)
@@ -2197,10 +1935,7 @@ class Overlay_Animation extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   Overlay_AnimationFade get animationFade => $_getN(1);
   @$pb.TagNumber(2)
-  set animationFade(Overlay_AnimationFade v) {
-    $_setField(2, v);
-  }
-
+  set animationFade(Overlay_AnimationFade value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasAnimationFade() => $_has(1);
   @$pb.TagNumber(2)
@@ -2212,10 +1947,7 @@ class Overlay_Animation extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   Overlay_AnimationEnd get animationEnd => $_getN(2);
   @$pb.TagNumber(3)
-  set animationEnd(Overlay_AnimationEnd v) {
-    $_setField(3, v);
-  }
-
+  set animationEnd(Overlay_AnimationEnd value) => $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasAnimationEnd() => $_has(2);
   @$pb.TagNumber(3)
@@ -2230,22 +1962,20 @@ class Overlay extends $pb.GeneratedMessage {
     Overlay_Image? image,
     $core.Iterable<Overlay_Animation>? animations,
   }) {
-    final $result = create();
-    if (image != null) {
-      $result.image = image;
-    }
-    if (animations != null) {
-      $result.animations.addAll(animations);
-    }
-    return $result;
+    final result = create();
+    if (image != null) result.image = image;
+    if (animations != null) result.animations.addAll(animations);
+    return result;
   }
-  Overlay._() : super();
-  factory Overlay.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Overlay.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  Overlay._();
+
+  factory Overlay.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory Overlay.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'Overlay',
@@ -2254,23 +1984,23 @@ class Overlay extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOM<Overlay_Image>(1, _omitFieldNames ? '' : 'image',
         subBuilder: Overlay_Image.create)
-    ..pc<Overlay_Animation>(
-        2, _omitFieldNames ? '' : 'animations', $pb.PbFieldType.PM,
+    ..pPM<Overlay_Animation>(2, _omitFieldNames ? '' : 'animations',
         subBuilder: Overlay_Animation.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  Overlay clone() => Overlay()..mergeFromMessage(this);
+  Overlay clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Overlay copyWith(void Function(Overlay) updates) =>
       super.copyWith((message) => updates(message as Overlay)) as Overlay;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Overlay create() => Overlay._();
+  @$core.override
   Overlay createEmptyInstance() => create();
-  static $pb.PbList<Overlay> createRepeated() => $pb.PbList<Overlay>();
   @$core.pragma('dart2js:noInline')
   static Overlay getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Overlay>(create);
@@ -2280,10 +2010,7 @@ class Overlay extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   Overlay_Image get image => $_getN(0);
   @$pb.TagNumber(1)
-  set image(Overlay_Image v) {
-    $_setField(1, v);
-  }
-
+  set image(Overlay_Image value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasImage() => $_has(0);
   @$pb.TagNumber(1)
@@ -2306,54 +2033,47 @@ class PreprocessingConfig_Color extends $pb.GeneratedMessage {
     $core.double? contrast,
     $core.double? brightness,
   }) {
-    final $result = create();
-    if (saturation != null) {
-      $result.saturation = saturation;
-    }
-    if (contrast != null) {
-      $result.contrast = contrast;
-    }
-    if (brightness != null) {
-      $result.brightness = brightness;
-    }
-    return $result;
+    final result = create();
+    if (saturation != null) result.saturation = saturation;
+    if (contrast != null) result.contrast = contrast;
+    if (brightness != null) result.brightness = brightness;
+    return result;
   }
-  PreprocessingConfig_Color._() : super();
-  factory PreprocessingConfig_Color.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory PreprocessingConfig_Color.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  PreprocessingConfig_Color._();
+
+  factory PreprocessingConfig_Color.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory PreprocessingConfig_Color.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'PreprocessingConfig.Color',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.video.transcoder.v1'),
       createEmptyInstance: create)
-    ..a<$core.double>(
-        1, _omitFieldNames ? '' : 'saturation', $pb.PbFieldType.OD)
-    ..a<$core.double>(2, _omitFieldNames ? '' : 'contrast', $pb.PbFieldType.OD)
-    ..a<$core.double>(
-        3, _omitFieldNames ? '' : 'brightness', $pb.PbFieldType.OD)
+    ..aD(1, _omitFieldNames ? '' : 'saturation')
+    ..aD(2, _omitFieldNames ? '' : 'contrast')
+    ..aD(3, _omitFieldNames ? '' : 'brightness')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  PreprocessingConfig_Color clone() =>
-      PreprocessingConfig_Color()..mergeFromMessage(this);
+  PreprocessingConfig_Color clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   PreprocessingConfig_Color copyWith(
           void Function(PreprocessingConfig_Color) updates) =>
       super.copyWith((message) => updates(message as PreprocessingConfig_Color))
           as PreprocessingConfig_Color;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static PreprocessingConfig_Color create() => PreprocessingConfig_Color._();
+  @$core.override
   PreprocessingConfig_Color createEmptyInstance() => create();
-  static $pb.PbList<PreprocessingConfig_Color> createRepeated() =>
-      $pb.PbList<PreprocessingConfig_Color>();
   @$core.pragma('dart2js:noInline')
   static PreprocessingConfig_Color getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<PreprocessingConfig_Color>(create);
@@ -2365,10 +2085,7 @@ class PreprocessingConfig_Color extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.double get saturation => $_getN(0);
   @$pb.TagNumber(1)
-  set saturation($core.double v) {
-    $_setDouble(0, v);
-  }
-
+  set saturation($core.double value) => $_setDouble(0, value);
   @$pb.TagNumber(1)
   $core.bool hasSaturation() => $_has(0);
   @$pb.TagNumber(1)
@@ -2380,10 +2097,7 @@ class PreprocessingConfig_Color extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.double get contrast => $_getN(1);
   @$pb.TagNumber(2)
-  set contrast($core.double v) {
-    $_setDouble(1, v);
-  }
-
+  set contrast($core.double value) => $_setDouble(1, value);
   @$pb.TagNumber(2)
   $core.bool hasContrast() => $_has(1);
   @$pb.TagNumber(2)
@@ -2395,10 +2109,7 @@ class PreprocessingConfig_Color extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.double get brightness => $_getN(2);
   @$pb.TagNumber(3)
-  set brightness($core.double v) {
-    $_setDouble(2, v);
-  }
-
+  set brightness($core.double value) => $_setDouble(2, value);
   @$pb.TagNumber(3)
   $core.bool hasBrightness() => $_has(2);
   @$pb.TagNumber(3)
@@ -2413,35 +2124,32 @@ class PreprocessingConfig_Denoise extends $pb.GeneratedMessage {
     $core.double? strength,
     $core.String? tune,
   }) {
-    final $result = create();
-    if (strength != null) {
-      $result.strength = strength;
-    }
-    if (tune != null) {
-      $result.tune = tune;
-    }
-    return $result;
+    final result = create();
+    if (strength != null) result.strength = strength;
+    if (tune != null) result.tune = tune;
+    return result;
   }
-  PreprocessingConfig_Denoise._() : super();
-  factory PreprocessingConfig_Denoise.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory PreprocessingConfig_Denoise.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  PreprocessingConfig_Denoise._();
+
+  factory PreprocessingConfig_Denoise.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory PreprocessingConfig_Denoise.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'PreprocessingConfig.Denoise',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.video.transcoder.v1'),
       createEmptyInstance: create)
-    ..a<$core.double>(1, _omitFieldNames ? '' : 'strength', $pb.PbFieldType.OD)
+    ..aD(1, _omitFieldNames ? '' : 'strength')
     ..aOS(2, _omitFieldNames ? '' : 'tune')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  PreprocessingConfig_Denoise clone() =>
-      PreprocessingConfig_Denoise()..mergeFromMessage(this);
+  PreprocessingConfig_Denoise clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   PreprocessingConfig_Denoise copyWith(
           void Function(PreprocessingConfig_Denoise) updates) =>
@@ -2449,14 +2157,14 @@ class PreprocessingConfig_Denoise extends $pb.GeneratedMessage {
               (message) => updates(message as PreprocessingConfig_Denoise))
           as PreprocessingConfig_Denoise;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static PreprocessingConfig_Denoise create() =>
       PreprocessingConfig_Denoise._();
+  @$core.override
   PreprocessingConfig_Denoise createEmptyInstance() => create();
-  static $pb.PbList<PreprocessingConfig_Denoise> createRepeated() =>
-      $pb.PbList<PreprocessingConfig_Denoise>();
   @$core.pragma('dart2js:noInline')
   static PreprocessingConfig_Denoise getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<PreprocessingConfig_Denoise>(create);
@@ -2467,10 +2175,7 @@ class PreprocessingConfig_Denoise extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.double get strength => $_getN(0);
   @$pb.TagNumber(1)
-  set strength($core.double v) {
-    $_setDouble(0, v);
-  }
-
+  set strength($core.double value) => $_setDouble(0, value);
   @$pb.TagNumber(1)
   $core.bool hasStrength() => $_has(0);
   @$pb.TagNumber(1)
@@ -2485,10 +2190,7 @@ class PreprocessingConfig_Denoise extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get tune => $_getSZ(1);
   @$pb.TagNumber(2)
-  set tune($core.String v) {
-    $_setString(1, v);
-  }
-
+  set tune($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasTune() => $_has(1);
   @$pb.TagNumber(2)
@@ -2503,35 +2205,32 @@ class PreprocessingConfig_Deblock extends $pb.GeneratedMessage {
     $core.double? strength,
     $core.bool? enabled,
   }) {
-    final $result = create();
-    if (strength != null) {
-      $result.strength = strength;
-    }
-    if (enabled != null) {
-      $result.enabled = enabled;
-    }
-    return $result;
+    final result = create();
+    if (strength != null) result.strength = strength;
+    if (enabled != null) result.enabled = enabled;
+    return result;
   }
-  PreprocessingConfig_Deblock._() : super();
-  factory PreprocessingConfig_Deblock.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory PreprocessingConfig_Deblock.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  PreprocessingConfig_Deblock._();
+
+  factory PreprocessingConfig_Deblock.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory PreprocessingConfig_Deblock.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'PreprocessingConfig.Deblock',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.video.transcoder.v1'),
       createEmptyInstance: create)
-    ..a<$core.double>(1, _omitFieldNames ? '' : 'strength', $pb.PbFieldType.OD)
+    ..aD(1, _omitFieldNames ? '' : 'strength')
     ..aOB(2, _omitFieldNames ? '' : 'enabled')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  PreprocessingConfig_Deblock clone() =>
-      PreprocessingConfig_Deblock()..mergeFromMessage(this);
+  PreprocessingConfig_Deblock clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   PreprocessingConfig_Deblock copyWith(
           void Function(PreprocessingConfig_Deblock) updates) =>
@@ -2539,14 +2238,14 @@ class PreprocessingConfig_Deblock extends $pb.GeneratedMessage {
               (message) => updates(message as PreprocessingConfig_Deblock))
           as PreprocessingConfig_Deblock;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static PreprocessingConfig_Deblock create() =>
       PreprocessingConfig_Deblock._();
+  @$core.override
   PreprocessingConfig_Deblock createEmptyInstance() => create();
-  static $pb.PbList<PreprocessingConfig_Deblock> createRepeated() =>
-      $pb.PbList<PreprocessingConfig_Deblock>();
   @$core.pragma('dart2js:noInline')
   static PreprocessingConfig_Deblock getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<PreprocessingConfig_Deblock>(create);
@@ -2558,10 +2257,7 @@ class PreprocessingConfig_Deblock extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.double get strength => $_getN(0);
   @$pb.TagNumber(1)
-  set strength($core.double v) {
-    $_setDouble(0, v);
-  }
-
+  set strength($core.double value) => $_setDouble(0, value);
   @$pb.TagNumber(1)
   $core.bool hasStrength() => $_has(0);
   @$pb.TagNumber(1)
@@ -2571,10 +2267,7 @@ class PreprocessingConfig_Deblock extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool get enabled => $_getBF(1);
   @$pb.TagNumber(2)
-  set enabled($core.bool v) {
-    $_setBool(1, v);
-  }
-
+  set enabled($core.bool value) => $_setBool(1, value);
   @$pb.TagNumber(2)
   $core.bool hasEnabled() => $_has(1);
   @$pb.TagNumber(2)
@@ -2588,52 +2281,47 @@ class PreprocessingConfig_Audio extends $pb.GeneratedMessage {
     $core.bool? highBoost,
     $core.bool? lowBoost,
   }) {
-    final $result = create();
-    if (lufs != null) {
-      $result.lufs = lufs;
-    }
-    if (highBoost != null) {
-      $result.highBoost = highBoost;
-    }
-    if (lowBoost != null) {
-      $result.lowBoost = lowBoost;
-    }
-    return $result;
+    final result = create();
+    if (lufs != null) result.lufs = lufs;
+    if (highBoost != null) result.highBoost = highBoost;
+    if (lowBoost != null) result.lowBoost = lowBoost;
+    return result;
   }
-  PreprocessingConfig_Audio._() : super();
-  factory PreprocessingConfig_Audio.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory PreprocessingConfig_Audio.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  PreprocessingConfig_Audio._();
+
+  factory PreprocessingConfig_Audio.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory PreprocessingConfig_Audio.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'PreprocessingConfig.Audio',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.video.transcoder.v1'),
       createEmptyInstance: create)
-    ..a<$core.double>(1, _omitFieldNames ? '' : 'lufs', $pb.PbFieldType.OD)
+    ..aD(1, _omitFieldNames ? '' : 'lufs')
     ..aOB(2, _omitFieldNames ? '' : 'highBoost')
     ..aOB(3, _omitFieldNames ? '' : 'lowBoost')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  PreprocessingConfig_Audio clone() =>
-      PreprocessingConfig_Audio()..mergeFromMessage(this);
+  PreprocessingConfig_Audio clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   PreprocessingConfig_Audio copyWith(
           void Function(PreprocessingConfig_Audio) updates) =>
       super.copyWith((message) => updates(message as PreprocessingConfig_Audio))
           as PreprocessingConfig_Audio;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static PreprocessingConfig_Audio create() => PreprocessingConfig_Audio._();
+  @$core.override
   PreprocessingConfig_Audio createEmptyInstance() => create();
-  static $pb.PbList<PreprocessingConfig_Audio> createRepeated() =>
-      $pb.PbList<PreprocessingConfig_Audio>();
   @$core.pragma('dart2js:noInline')
   static PreprocessingConfig_Audio getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<PreprocessingConfig_Audio>(create);
@@ -2653,10 +2341,7 @@ class PreprocessingConfig_Audio extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.double get lufs => $_getN(0);
   @$pb.TagNumber(1)
-  set lufs($core.double v) {
-    $_setDouble(0, v);
-  }
-
+  set lufs($core.double value) => $_setDouble(0, value);
   @$pb.TagNumber(1)
   $core.bool hasLufs() => $_has(0);
   @$pb.TagNumber(1)
@@ -2668,10 +2353,7 @@ class PreprocessingConfig_Audio extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool get highBoost => $_getBF(1);
   @$pb.TagNumber(2)
-  set highBoost($core.bool v) {
-    $_setBool(1, v);
-  }
-
+  set highBoost($core.bool value) => $_setBool(1, value);
   @$pb.TagNumber(2)
   $core.bool hasHighBoost() => $_has(1);
   @$pb.TagNumber(2)
@@ -2683,10 +2365,7 @@ class PreprocessingConfig_Audio extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool get lowBoost => $_getBF(2);
   @$pb.TagNumber(3)
-  set lowBoost($core.bool v) {
-    $_setBool(2, v);
-  }
-
+  set lowBoost($core.bool value) => $_setBool(2, value);
   @$pb.TagNumber(3)
   $core.bool hasLowBoost() => $_has(2);
   @$pb.TagNumber(3)
@@ -2702,56 +2381,49 @@ class PreprocessingConfig_Crop extends $pb.GeneratedMessage {
     $core.int? leftPixels,
     $core.int? rightPixels,
   }) {
-    final $result = create();
-    if (topPixels != null) {
-      $result.topPixels = topPixels;
-    }
-    if (bottomPixels != null) {
-      $result.bottomPixels = bottomPixels;
-    }
-    if (leftPixels != null) {
-      $result.leftPixels = leftPixels;
-    }
-    if (rightPixels != null) {
-      $result.rightPixels = rightPixels;
-    }
-    return $result;
+    final result = create();
+    if (topPixels != null) result.topPixels = topPixels;
+    if (bottomPixels != null) result.bottomPixels = bottomPixels;
+    if (leftPixels != null) result.leftPixels = leftPixels;
+    if (rightPixels != null) result.rightPixels = rightPixels;
+    return result;
   }
-  PreprocessingConfig_Crop._() : super();
-  factory PreprocessingConfig_Crop.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory PreprocessingConfig_Crop.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  PreprocessingConfig_Crop._();
+
+  factory PreprocessingConfig_Crop.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory PreprocessingConfig_Crop.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'PreprocessingConfig.Crop',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.video.transcoder.v1'),
       createEmptyInstance: create)
-    ..a<$core.int>(1, _omitFieldNames ? '' : 'topPixels', $pb.PbFieldType.O3)
-    ..a<$core.int>(2, _omitFieldNames ? '' : 'bottomPixels', $pb.PbFieldType.O3)
-    ..a<$core.int>(3, _omitFieldNames ? '' : 'leftPixels', $pb.PbFieldType.O3)
-    ..a<$core.int>(4, _omitFieldNames ? '' : 'rightPixels', $pb.PbFieldType.O3)
+    ..aI(1, _omitFieldNames ? '' : 'topPixels')
+    ..aI(2, _omitFieldNames ? '' : 'bottomPixels')
+    ..aI(3, _omitFieldNames ? '' : 'leftPixels')
+    ..aI(4, _omitFieldNames ? '' : 'rightPixels')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  PreprocessingConfig_Crop clone() =>
-      PreprocessingConfig_Crop()..mergeFromMessage(this);
+  PreprocessingConfig_Crop clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   PreprocessingConfig_Crop copyWith(
           void Function(PreprocessingConfig_Crop) updates) =>
       super.copyWith((message) => updates(message as PreprocessingConfig_Crop))
           as PreprocessingConfig_Crop;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static PreprocessingConfig_Crop create() => PreprocessingConfig_Crop._();
+  @$core.override
   PreprocessingConfig_Crop createEmptyInstance() => create();
-  static $pb.PbList<PreprocessingConfig_Crop> createRepeated() =>
-      $pb.PbList<PreprocessingConfig_Crop>();
   @$core.pragma('dart2js:noInline')
   static PreprocessingConfig_Crop getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<PreprocessingConfig_Crop>(create);
@@ -2761,10 +2433,7 @@ class PreprocessingConfig_Crop extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.int get topPixels => $_getIZ(0);
   @$pb.TagNumber(1)
-  set topPixels($core.int v) {
-    $_setSignedInt32(0, v);
-  }
-
+  set topPixels($core.int value) => $_setSignedInt32(0, value);
   @$pb.TagNumber(1)
   $core.bool hasTopPixels() => $_has(0);
   @$pb.TagNumber(1)
@@ -2774,10 +2443,7 @@ class PreprocessingConfig_Crop extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get bottomPixels => $_getIZ(1);
   @$pb.TagNumber(2)
-  set bottomPixels($core.int v) {
-    $_setSignedInt32(1, v);
-  }
-
+  set bottomPixels($core.int value) => $_setSignedInt32(1, value);
   @$pb.TagNumber(2)
   $core.bool hasBottomPixels() => $_has(1);
   @$pb.TagNumber(2)
@@ -2787,10 +2453,7 @@ class PreprocessingConfig_Crop extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.int get leftPixels => $_getIZ(2);
   @$pb.TagNumber(3)
-  set leftPixels($core.int v) {
-    $_setSignedInt32(2, v);
-  }
-
+  set leftPixels($core.int value) => $_setSignedInt32(2, value);
   @$pb.TagNumber(3)
   $core.bool hasLeftPixels() => $_has(2);
   @$pb.TagNumber(3)
@@ -2800,10 +2463,7 @@ class PreprocessingConfig_Crop extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.int get rightPixels => $_getIZ(3);
   @$pb.TagNumber(4)
-  set rightPixels($core.int v) {
-    $_setSignedInt32(3, v);
-  }
-
+  set rightPixels($core.int value) => $_setSignedInt32(3, value);
   @$pb.TagNumber(4)
   $core.bool hasRightPixels() => $_has(3);
   @$pb.TagNumber(4)
@@ -2819,56 +2479,49 @@ class PreprocessingConfig_Pad extends $pb.GeneratedMessage {
     $core.int? leftPixels,
     $core.int? rightPixels,
   }) {
-    final $result = create();
-    if (topPixels != null) {
-      $result.topPixels = topPixels;
-    }
-    if (bottomPixels != null) {
-      $result.bottomPixels = bottomPixels;
-    }
-    if (leftPixels != null) {
-      $result.leftPixels = leftPixels;
-    }
-    if (rightPixels != null) {
-      $result.rightPixels = rightPixels;
-    }
-    return $result;
+    final result = create();
+    if (topPixels != null) result.topPixels = topPixels;
+    if (bottomPixels != null) result.bottomPixels = bottomPixels;
+    if (leftPixels != null) result.leftPixels = leftPixels;
+    if (rightPixels != null) result.rightPixels = rightPixels;
+    return result;
   }
-  PreprocessingConfig_Pad._() : super();
-  factory PreprocessingConfig_Pad.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory PreprocessingConfig_Pad.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  PreprocessingConfig_Pad._();
+
+  factory PreprocessingConfig_Pad.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory PreprocessingConfig_Pad.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'PreprocessingConfig.Pad',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.video.transcoder.v1'),
       createEmptyInstance: create)
-    ..a<$core.int>(1, _omitFieldNames ? '' : 'topPixels', $pb.PbFieldType.O3)
-    ..a<$core.int>(2, _omitFieldNames ? '' : 'bottomPixels', $pb.PbFieldType.O3)
-    ..a<$core.int>(3, _omitFieldNames ? '' : 'leftPixels', $pb.PbFieldType.O3)
-    ..a<$core.int>(4, _omitFieldNames ? '' : 'rightPixels', $pb.PbFieldType.O3)
+    ..aI(1, _omitFieldNames ? '' : 'topPixels')
+    ..aI(2, _omitFieldNames ? '' : 'bottomPixels')
+    ..aI(3, _omitFieldNames ? '' : 'leftPixels')
+    ..aI(4, _omitFieldNames ? '' : 'rightPixels')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  PreprocessingConfig_Pad clone() =>
-      PreprocessingConfig_Pad()..mergeFromMessage(this);
+  PreprocessingConfig_Pad clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   PreprocessingConfig_Pad copyWith(
           void Function(PreprocessingConfig_Pad) updates) =>
       super.copyWith((message) => updates(message as PreprocessingConfig_Pad))
           as PreprocessingConfig_Pad;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static PreprocessingConfig_Pad create() => PreprocessingConfig_Pad._();
+  @$core.override
   PreprocessingConfig_Pad createEmptyInstance() => create();
-  static $pb.PbList<PreprocessingConfig_Pad> createRepeated() =>
-      $pb.PbList<PreprocessingConfig_Pad>();
   @$core.pragma('dart2js:noInline')
   static PreprocessingConfig_Pad getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<PreprocessingConfig_Pad>(create);
@@ -2878,10 +2531,7 @@ class PreprocessingConfig_Pad extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.int get topPixels => $_getIZ(0);
   @$pb.TagNumber(1)
-  set topPixels($core.int v) {
-    $_setSignedInt32(0, v);
-  }
-
+  set topPixels($core.int value) => $_setSignedInt32(0, value);
   @$pb.TagNumber(1)
   $core.bool hasTopPixels() => $_has(0);
   @$pb.TagNumber(1)
@@ -2891,10 +2541,7 @@ class PreprocessingConfig_Pad extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get bottomPixels => $_getIZ(1);
   @$pb.TagNumber(2)
-  set bottomPixels($core.int v) {
-    $_setSignedInt32(1, v);
-  }
-
+  set bottomPixels($core.int value) => $_setSignedInt32(1, value);
   @$pb.TagNumber(2)
   $core.bool hasBottomPixels() => $_has(1);
   @$pb.TagNumber(2)
@@ -2904,10 +2551,7 @@ class PreprocessingConfig_Pad extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.int get leftPixels => $_getIZ(2);
   @$pb.TagNumber(3)
-  set leftPixels($core.int v) {
-    $_setSignedInt32(2, v);
-  }
-
+  set leftPixels($core.int value) => $_setSignedInt32(2, value);
   @$pb.TagNumber(3)
   $core.bool hasLeftPixels() => $_has(2);
   @$pb.TagNumber(3)
@@ -2917,10 +2561,7 @@ class PreprocessingConfig_Pad extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.int get rightPixels => $_getIZ(3);
   @$pb.TagNumber(4)
-  set rightPixels($core.int v) {
-    $_setSignedInt32(3, v);
-  }
-
+  set rightPixels($core.int value) => $_setSignedInt32(3, value);
   @$pb.TagNumber(4)
   $core.bool hasRightPixels() => $_has(3);
   @$pb.TagNumber(4)
@@ -2935,29 +2576,26 @@ class PreprocessingConfig_Deinterlace_YadifConfig extends $pb.GeneratedMessage {
     $core.String? parity,
     $core.bool? deinterlaceAllFrames,
   }) {
-    final $result = create();
-    if (mode != null) {
-      $result.mode = mode;
-    }
-    if (disableSpatialInterlacing != null) {
-      $result.disableSpatialInterlacing = disableSpatialInterlacing;
-    }
-    if (parity != null) {
-      $result.parity = parity;
-    }
-    if (deinterlaceAllFrames != null) {
-      $result.deinterlaceAllFrames = deinterlaceAllFrames;
-    }
-    return $result;
+    final result = create();
+    if (mode != null) result.mode = mode;
+    if (disableSpatialInterlacing != null)
+      result.disableSpatialInterlacing = disableSpatialInterlacing;
+    if (parity != null) result.parity = parity;
+    if (deinterlaceAllFrames != null)
+      result.deinterlaceAllFrames = deinterlaceAllFrames;
+    return result;
   }
-  PreprocessingConfig_Deinterlace_YadifConfig._() : super();
+
+  PreprocessingConfig_Deinterlace_YadifConfig._();
+
   factory PreprocessingConfig_Deinterlace_YadifConfig.fromBuffer(
-          $core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory PreprocessingConfig_Deinterlace_YadifConfig.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+          $core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory PreprocessingConfig_Deinterlace_YadifConfig.fromJson(
+          $core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'PreprocessingConfig.Deinterlace.YadifConfig',
@@ -2971,8 +2609,7 @@ class PreprocessingConfig_Deinterlace_YadifConfig extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  PreprocessingConfig_Deinterlace_YadifConfig clone() =>
-      PreprocessingConfig_Deinterlace_YadifConfig()..mergeFromMessage(this);
+  PreprocessingConfig_Deinterlace_YadifConfig clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   PreprocessingConfig_Deinterlace_YadifConfig copyWith(
           void Function(PreprocessingConfig_Deinterlace_YadifConfig) updates) =>
@@ -2980,15 +2617,14 @@ class PreprocessingConfig_Deinterlace_YadifConfig extends $pb.GeneratedMessage {
               updates(message as PreprocessingConfig_Deinterlace_YadifConfig))
           as PreprocessingConfig_Deinterlace_YadifConfig;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static PreprocessingConfig_Deinterlace_YadifConfig create() =>
       PreprocessingConfig_Deinterlace_YadifConfig._();
+  @$core.override
   PreprocessingConfig_Deinterlace_YadifConfig createEmptyInstance() => create();
-  static $pb.PbList<PreprocessingConfig_Deinterlace_YadifConfig>
-      createRepeated() =>
-          $pb.PbList<PreprocessingConfig_Deinterlace_YadifConfig>();
   @$core.pragma('dart2js:noInline')
   static PreprocessingConfig_Deinterlace_YadifConfig getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
@@ -3004,10 +2640,7 @@ class PreprocessingConfig_Deinterlace_YadifConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get mode => $_getSZ(0);
   @$pb.TagNumber(1)
-  set mode($core.String v) {
-    $_setString(0, v);
-  }
-
+  set mode($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasMode() => $_has(0);
   @$pb.TagNumber(1)
@@ -3018,10 +2651,7 @@ class PreprocessingConfig_Deinterlace_YadifConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool get disableSpatialInterlacing => $_getBF(1);
   @$pb.TagNumber(2)
-  set disableSpatialInterlacing($core.bool v) {
-    $_setBool(1, v);
-  }
-
+  set disableSpatialInterlacing($core.bool value) => $_setBool(1, value);
   @$pb.TagNumber(2)
   $core.bool hasDisableSpatialInterlacing() => $_has(1);
   @$pb.TagNumber(2)
@@ -3037,10 +2667,7 @@ class PreprocessingConfig_Deinterlace_YadifConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get parity => $_getSZ(2);
   @$pb.TagNumber(3)
-  set parity($core.String v) {
-    $_setString(2, v);
-  }
-
+  set parity($core.String value) => $_setString(2, value);
   @$pb.TagNumber(3)
   $core.bool hasParity() => $_has(2);
   @$pb.TagNumber(3)
@@ -3051,10 +2678,7 @@ class PreprocessingConfig_Deinterlace_YadifConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool get deinterlaceAllFrames => $_getBF(3);
   @$pb.TagNumber(4)
-  set deinterlaceAllFrames($core.bool v) {
-    $_setBool(3, v);
-  }
-
+  set deinterlaceAllFrames($core.bool value) => $_setBool(3, value);
   @$pb.TagNumber(4)
   $core.bool hasDeinterlaceAllFrames() => $_has(3);
   @$pb.TagNumber(4)
@@ -3068,26 +2692,24 @@ class PreprocessingConfig_Deinterlace_BwdifConfig extends $pb.GeneratedMessage {
     $core.String? parity,
     $core.bool? deinterlaceAllFrames,
   }) {
-    final $result = create();
-    if (mode != null) {
-      $result.mode = mode;
-    }
-    if (parity != null) {
-      $result.parity = parity;
-    }
-    if (deinterlaceAllFrames != null) {
-      $result.deinterlaceAllFrames = deinterlaceAllFrames;
-    }
-    return $result;
+    final result = create();
+    if (mode != null) result.mode = mode;
+    if (parity != null) result.parity = parity;
+    if (deinterlaceAllFrames != null)
+      result.deinterlaceAllFrames = deinterlaceAllFrames;
+    return result;
   }
-  PreprocessingConfig_Deinterlace_BwdifConfig._() : super();
+
+  PreprocessingConfig_Deinterlace_BwdifConfig._();
+
   factory PreprocessingConfig_Deinterlace_BwdifConfig.fromBuffer(
-          $core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory PreprocessingConfig_Deinterlace_BwdifConfig.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+          $core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory PreprocessingConfig_Deinterlace_BwdifConfig.fromJson(
+          $core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'PreprocessingConfig.Deinterlace.BwdifConfig',
@@ -3100,8 +2722,7 @@ class PreprocessingConfig_Deinterlace_BwdifConfig extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  PreprocessingConfig_Deinterlace_BwdifConfig clone() =>
-      PreprocessingConfig_Deinterlace_BwdifConfig()..mergeFromMessage(this);
+  PreprocessingConfig_Deinterlace_BwdifConfig clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   PreprocessingConfig_Deinterlace_BwdifConfig copyWith(
           void Function(PreprocessingConfig_Deinterlace_BwdifConfig) updates) =>
@@ -3109,15 +2730,14 @@ class PreprocessingConfig_Deinterlace_BwdifConfig extends $pb.GeneratedMessage {
               updates(message as PreprocessingConfig_Deinterlace_BwdifConfig))
           as PreprocessingConfig_Deinterlace_BwdifConfig;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static PreprocessingConfig_Deinterlace_BwdifConfig create() =>
       PreprocessingConfig_Deinterlace_BwdifConfig._();
+  @$core.override
   PreprocessingConfig_Deinterlace_BwdifConfig createEmptyInstance() => create();
-  static $pb.PbList<PreprocessingConfig_Deinterlace_BwdifConfig>
-      createRepeated() =>
-          $pb.PbList<PreprocessingConfig_Deinterlace_BwdifConfig>();
   @$core.pragma('dart2js:noInline')
   static PreprocessingConfig_Deinterlace_BwdifConfig getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
@@ -3133,10 +2753,7 @@ class PreprocessingConfig_Deinterlace_BwdifConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get mode => $_getSZ(0);
   @$pb.TagNumber(1)
-  set mode($core.String v) {
-    $_setString(0, v);
-  }
-
+  set mode($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasMode() => $_has(0);
   @$pb.TagNumber(1)
@@ -3152,10 +2769,7 @@ class PreprocessingConfig_Deinterlace_BwdifConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get parity => $_getSZ(1);
   @$pb.TagNumber(2)
-  set parity($core.String v) {
-    $_setString(1, v);
-  }
-
+  set parity($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasParity() => $_has(1);
   @$pb.TagNumber(2)
@@ -3166,10 +2780,7 @@ class PreprocessingConfig_Deinterlace_BwdifConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool get deinterlaceAllFrames => $_getBF(2);
   @$pb.TagNumber(3)
-  set deinterlaceAllFrames($core.bool v) {
-    $_setBool(2, v);
-  }
-
+  set deinterlaceAllFrames($core.bool value) => $_setBool(2, value);
   @$pb.TagNumber(3)
   $core.bool hasDeinterlaceAllFrames() => $_has(2);
   @$pb.TagNumber(3)
@@ -3188,22 +2799,20 @@ class PreprocessingConfig_Deinterlace extends $pb.GeneratedMessage {
     PreprocessingConfig_Deinterlace_YadifConfig? yadif,
     PreprocessingConfig_Deinterlace_BwdifConfig? bwdif,
   }) {
-    final $result = create();
-    if (yadif != null) {
-      $result.yadif = yadif;
-    }
-    if (bwdif != null) {
-      $result.bwdif = bwdif;
-    }
-    return $result;
+    final result = create();
+    if (yadif != null) result.yadif = yadif;
+    if (bwdif != null) result.bwdif = bwdif;
+    return result;
   }
-  PreprocessingConfig_Deinterlace._() : super();
-  factory PreprocessingConfig_Deinterlace.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory PreprocessingConfig_Deinterlace.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  PreprocessingConfig_Deinterlace._();
+
+  factory PreprocessingConfig_Deinterlace.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory PreprocessingConfig_Deinterlace.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static const $core
       .Map<$core.int, PreprocessingConfig_Deinterlace_DeinterlacingFilter>
@@ -3227,8 +2836,7 @@ class PreprocessingConfig_Deinterlace extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  PreprocessingConfig_Deinterlace clone() =>
-      PreprocessingConfig_Deinterlace()..mergeFromMessage(this);
+  PreprocessingConfig_Deinterlace clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   PreprocessingConfig_Deinterlace copyWith(
           void Function(PreprocessingConfig_Deinterlace) updates) =>
@@ -3236,34 +2844,36 @@ class PreprocessingConfig_Deinterlace extends $pb.GeneratedMessage {
               (message) => updates(message as PreprocessingConfig_Deinterlace))
           as PreprocessingConfig_Deinterlace;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static PreprocessingConfig_Deinterlace create() =>
       PreprocessingConfig_Deinterlace._();
+  @$core.override
   PreprocessingConfig_Deinterlace createEmptyInstance() => create();
-  static $pb.PbList<PreprocessingConfig_Deinterlace> createRepeated() =>
-      $pb.PbList<PreprocessingConfig_Deinterlace>();
   @$core.pragma('dart2js:noInline')
   static PreprocessingConfig_Deinterlace getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<PreprocessingConfig_Deinterlace>(
           create);
   static PreprocessingConfig_Deinterlace? _defaultInstance;
 
+  @$pb.TagNumber(1)
+  @$pb.TagNumber(2)
   PreprocessingConfig_Deinterlace_DeinterlacingFilter
       whichDeinterlacingFilter() =>
           _PreprocessingConfig_Deinterlace_DeinterlacingFilterByTag[
               $_whichOneof(0)]!;
+  @$pb.TagNumber(1)
+  @$pb.TagNumber(2)
   void clearDeinterlacingFilter() => $_clearField($_whichOneof(0));
 
   /// Specifies the Yet Another Deinterlacing Filter Configuration.
   @$pb.TagNumber(1)
   PreprocessingConfig_Deinterlace_YadifConfig get yadif => $_getN(0);
   @$pb.TagNumber(1)
-  set yadif(PreprocessingConfig_Deinterlace_YadifConfig v) {
-    $_setField(1, v);
-  }
-
+  set yadif(PreprocessingConfig_Deinterlace_YadifConfig value) =>
+      $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasYadif() => $_has(0);
   @$pb.TagNumber(1)
@@ -3275,10 +2885,8 @@ class PreprocessingConfig_Deinterlace extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   PreprocessingConfig_Deinterlace_BwdifConfig get bwdif => $_getN(1);
   @$pb.TagNumber(2)
-  set bwdif(PreprocessingConfig_Deinterlace_BwdifConfig v) {
-    $_setField(2, v);
-  }
-
+  set bwdif(PreprocessingConfig_Deinterlace_BwdifConfig value) =>
+      $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasBwdif() => $_has(1);
   @$pb.TagNumber(2)
@@ -3298,37 +2906,25 @@ class PreprocessingConfig extends $pb.GeneratedMessage {
     PreprocessingConfig_Pad? pad,
     PreprocessingConfig_Deinterlace? deinterlace,
   }) {
-    final $result = create();
-    if (color != null) {
-      $result.color = color;
-    }
-    if (denoise != null) {
-      $result.denoise = denoise;
-    }
-    if (deblock != null) {
-      $result.deblock = deblock;
-    }
-    if (audio != null) {
-      $result.audio = audio;
-    }
-    if (crop != null) {
-      $result.crop = crop;
-    }
-    if (pad != null) {
-      $result.pad = pad;
-    }
-    if (deinterlace != null) {
-      $result.deinterlace = deinterlace;
-    }
-    return $result;
+    final result = create();
+    if (color != null) result.color = color;
+    if (denoise != null) result.denoise = denoise;
+    if (deblock != null) result.deblock = deblock;
+    if (audio != null) result.audio = audio;
+    if (crop != null) result.crop = crop;
+    if (pad != null) result.pad = pad;
+    if (deinterlace != null) result.deinterlace = deinterlace;
+    return result;
   }
-  PreprocessingConfig._() : super();
-  factory PreprocessingConfig.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory PreprocessingConfig.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  PreprocessingConfig._();
+
+  factory PreprocessingConfig.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory PreprocessingConfig.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'PreprocessingConfig',
@@ -3353,19 +2949,19 @@ class PreprocessingConfig extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  PreprocessingConfig clone() => PreprocessingConfig()..mergeFromMessage(this);
+  PreprocessingConfig clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   PreprocessingConfig copyWith(void Function(PreprocessingConfig) updates) =>
       super.copyWith((message) => updates(message as PreprocessingConfig))
           as PreprocessingConfig;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static PreprocessingConfig create() => PreprocessingConfig._();
+  @$core.override
   PreprocessingConfig createEmptyInstance() => create();
-  static $pb.PbList<PreprocessingConfig> createRepeated() =>
-      $pb.PbList<PreprocessingConfig>();
   @$core.pragma('dart2js:noInline')
   static PreprocessingConfig getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<PreprocessingConfig>(create);
@@ -3375,10 +2971,7 @@ class PreprocessingConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   PreprocessingConfig_Color get color => $_getN(0);
   @$pb.TagNumber(1)
-  set color(PreprocessingConfig_Color v) {
-    $_setField(1, v);
-  }
-
+  set color(PreprocessingConfig_Color value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasColor() => $_has(0);
   @$pb.TagNumber(1)
@@ -3390,10 +2983,7 @@ class PreprocessingConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   PreprocessingConfig_Denoise get denoise => $_getN(1);
   @$pb.TagNumber(2)
-  set denoise(PreprocessingConfig_Denoise v) {
-    $_setField(2, v);
-  }
-
+  set denoise(PreprocessingConfig_Denoise value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasDenoise() => $_has(1);
   @$pb.TagNumber(2)
@@ -3405,10 +2995,7 @@ class PreprocessingConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   PreprocessingConfig_Deblock get deblock => $_getN(2);
   @$pb.TagNumber(3)
-  set deblock(PreprocessingConfig_Deblock v) {
-    $_setField(3, v);
-  }
-
+  set deblock(PreprocessingConfig_Deblock value) => $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasDeblock() => $_has(2);
   @$pb.TagNumber(3)
@@ -3420,10 +3007,7 @@ class PreprocessingConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   PreprocessingConfig_Audio get audio => $_getN(3);
   @$pb.TagNumber(4)
-  set audio(PreprocessingConfig_Audio v) {
-    $_setField(4, v);
-  }
-
+  set audio(PreprocessingConfig_Audio value) => $_setField(4, value);
   @$pb.TagNumber(4)
   $core.bool hasAudio() => $_has(3);
   @$pb.TagNumber(4)
@@ -3435,10 +3019,7 @@ class PreprocessingConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   PreprocessingConfig_Crop get crop => $_getN(4);
   @$pb.TagNumber(5)
-  set crop(PreprocessingConfig_Crop v) {
-    $_setField(5, v);
-  }
-
+  set crop(PreprocessingConfig_Crop value) => $_setField(5, value);
   @$pb.TagNumber(5)
   $core.bool hasCrop() => $_has(4);
   @$pb.TagNumber(5)
@@ -3450,10 +3031,7 @@ class PreprocessingConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   PreprocessingConfig_Pad get pad => $_getN(5);
   @$pb.TagNumber(6)
-  set pad(PreprocessingConfig_Pad v) {
-    $_setField(6, v);
-  }
-
+  set pad(PreprocessingConfig_Pad value) => $_setField(6, value);
   @$pb.TagNumber(6)
   $core.bool hasPad() => $_has(5);
   @$pb.TagNumber(6)
@@ -3465,10 +3043,8 @@ class PreprocessingConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   PreprocessingConfig_Deinterlace get deinterlace => $_getN(6);
   @$pb.TagNumber(7)
-  set deinterlace(PreprocessingConfig_Deinterlace v) {
-    $_setField(7, v);
-  }
-
+  set deinterlace(PreprocessingConfig_Deinterlace value) =>
+      $_setField(7, value);
   @$pb.TagNumber(7)
   $core.bool hasDeinterlace() => $_has(6);
   @$pb.TagNumber(7)
@@ -3495,7 +3071,7 @@ class VideoStream_H264CodecSettings extends $pb.GeneratedMessage {
     $core.int? crfLevel,
     $core.bool? allowOpenGop,
     $core.int? gopFrameCount,
-    $0.Duration? gopDuration,
+    $2.Duration? gopDuration,
     $core.bool? enableTwoPass,
     $core.int? vbvSizeBits,
     $core.int? vbvFullnessBits,
@@ -3507,76 +3083,38 @@ class VideoStream_H264CodecSettings extends $pb.GeneratedMessage {
     $core.String? tune,
     $core.String? preset,
   }) {
-    final $result = create();
-    if (widthPixels != null) {
-      $result.widthPixels = widthPixels;
-    }
-    if (heightPixels != null) {
-      $result.heightPixels = heightPixels;
-    }
-    if (frameRate != null) {
-      $result.frameRate = frameRate;
-    }
-    if (bitrateBps != null) {
-      $result.bitrateBps = bitrateBps;
-    }
-    if (pixelFormat != null) {
-      $result.pixelFormat = pixelFormat;
-    }
-    if (rateControlMode != null) {
-      $result.rateControlMode = rateControlMode;
-    }
-    if (crfLevel != null) {
-      $result.crfLevel = crfLevel;
-    }
-    if (allowOpenGop != null) {
-      $result.allowOpenGop = allowOpenGop;
-    }
-    if (gopFrameCount != null) {
-      $result.gopFrameCount = gopFrameCount;
-    }
-    if (gopDuration != null) {
-      $result.gopDuration = gopDuration;
-    }
-    if (enableTwoPass != null) {
-      $result.enableTwoPass = enableTwoPass;
-    }
-    if (vbvSizeBits != null) {
-      $result.vbvSizeBits = vbvSizeBits;
-    }
-    if (vbvFullnessBits != null) {
-      $result.vbvFullnessBits = vbvFullnessBits;
-    }
-    if (entropyCoder != null) {
-      $result.entropyCoder = entropyCoder;
-    }
-    if (bPyramid != null) {
-      $result.bPyramid = bPyramid;
-    }
-    if (bFrameCount != null) {
-      $result.bFrameCount = bFrameCount;
-    }
-    if (aqStrength != null) {
-      $result.aqStrength = aqStrength;
-    }
-    if (profile != null) {
-      $result.profile = profile;
-    }
-    if (tune != null) {
-      $result.tune = tune;
-    }
-    if (preset != null) {
-      $result.preset = preset;
-    }
-    return $result;
+    final result = create();
+    if (widthPixels != null) result.widthPixels = widthPixels;
+    if (heightPixels != null) result.heightPixels = heightPixels;
+    if (frameRate != null) result.frameRate = frameRate;
+    if (bitrateBps != null) result.bitrateBps = bitrateBps;
+    if (pixelFormat != null) result.pixelFormat = pixelFormat;
+    if (rateControlMode != null) result.rateControlMode = rateControlMode;
+    if (crfLevel != null) result.crfLevel = crfLevel;
+    if (allowOpenGop != null) result.allowOpenGop = allowOpenGop;
+    if (gopFrameCount != null) result.gopFrameCount = gopFrameCount;
+    if (gopDuration != null) result.gopDuration = gopDuration;
+    if (enableTwoPass != null) result.enableTwoPass = enableTwoPass;
+    if (vbvSizeBits != null) result.vbvSizeBits = vbvSizeBits;
+    if (vbvFullnessBits != null) result.vbvFullnessBits = vbvFullnessBits;
+    if (entropyCoder != null) result.entropyCoder = entropyCoder;
+    if (bPyramid != null) result.bPyramid = bPyramid;
+    if (bFrameCount != null) result.bFrameCount = bFrameCount;
+    if (aqStrength != null) result.aqStrength = aqStrength;
+    if (profile != null) result.profile = profile;
+    if (tune != null) result.tune = tune;
+    if (preset != null) result.preset = preset;
+    return result;
   }
-  VideoStream_H264CodecSettings._() : super();
-  factory VideoStream_H264CodecSettings.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory VideoStream_H264CodecSettings.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  VideoStream_H264CodecSettings._();
+
+  factory VideoStream_H264CodecSettings.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory VideoStream_H264CodecSettings.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static const $core.Map<$core.int, VideoStream_H264CodecSettings_GopMode>
       _VideoStream_H264CodecSettings_GopModeByTag = {
@@ -3590,35 +3128,31 @@ class VideoStream_H264CodecSettings extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.events.cloud.video.transcoder.v1'),
       createEmptyInstance: create)
     ..oo(0, [9, 10])
-    ..a<$core.int>(1, _omitFieldNames ? '' : 'widthPixels', $pb.PbFieldType.O3)
-    ..a<$core.int>(2, _omitFieldNames ? '' : 'heightPixels', $pb.PbFieldType.O3)
-    ..a<$core.double>(3, _omitFieldNames ? '' : 'frameRate', $pb.PbFieldType.OD)
-    ..a<$core.int>(4, _omitFieldNames ? '' : 'bitrateBps', $pb.PbFieldType.O3)
+    ..aI(1, _omitFieldNames ? '' : 'widthPixels')
+    ..aI(2, _omitFieldNames ? '' : 'heightPixels')
+    ..aD(3, _omitFieldNames ? '' : 'frameRate')
+    ..aI(4, _omitFieldNames ? '' : 'bitrateBps')
     ..aOS(5, _omitFieldNames ? '' : 'pixelFormat')
     ..aOS(6, _omitFieldNames ? '' : 'rateControlMode')
-    ..a<$core.int>(7, _omitFieldNames ? '' : 'crfLevel', $pb.PbFieldType.O3)
+    ..aI(7, _omitFieldNames ? '' : 'crfLevel')
     ..aOB(8, _omitFieldNames ? '' : 'allowOpenGop')
-    ..a<$core.int>(
-        9, _omitFieldNames ? '' : 'gopFrameCount', $pb.PbFieldType.O3)
-    ..aOM<$0.Duration>(10, _omitFieldNames ? '' : 'gopDuration',
-        subBuilder: $0.Duration.create)
+    ..aI(9, _omitFieldNames ? '' : 'gopFrameCount')
+    ..aOM<$2.Duration>(10, _omitFieldNames ? '' : 'gopDuration',
+        subBuilder: $2.Duration.create)
     ..aOB(11, _omitFieldNames ? '' : 'enableTwoPass')
-    ..a<$core.int>(12, _omitFieldNames ? '' : 'vbvSizeBits', $pb.PbFieldType.O3)
-    ..a<$core.int>(
-        13, _omitFieldNames ? '' : 'vbvFullnessBits', $pb.PbFieldType.O3)
+    ..aI(12, _omitFieldNames ? '' : 'vbvSizeBits')
+    ..aI(13, _omitFieldNames ? '' : 'vbvFullnessBits')
     ..aOS(14, _omitFieldNames ? '' : 'entropyCoder')
     ..aOB(15, _omitFieldNames ? '' : 'bPyramid')
-    ..a<$core.int>(16, _omitFieldNames ? '' : 'bFrameCount', $pb.PbFieldType.O3)
-    ..a<$core.double>(
-        17, _omitFieldNames ? '' : 'aqStrength', $pb.PbFieldType.OD)
+    ..aI(16, _omitFieldNames ? '' : 'bFrameCount')
+    ..aD(17, _omitFieldNames ? '' : 'aqStrength')
     ..aOS(18, _omitFieldNames ? '' : 'profile')
     ..aOS(19, _omitFieldNames ? '' : 'tune')
     ..aOS(20, _omitFieldNames ? '' : 'preset')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  VideoStream_H264CodecSettings clone() =>
-      VideoStream_H264CodecSettings()..mergeFromMessage(this);
+  VideoStream_H264CodecSettings clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   VideoStream_H264CodecSettings copyWith(
           void Function(VideoStream_H264CodecSettings) updates) =>
@@ -3626,21 +3160,25 @@ class VideoStream_H264CodecSettings extends $pb.GeneratedMessage {
               (message) => updates(message as VideoStream_H264CodecSettings))
           as VideoStream_H264CodecSettings;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static VideoStream_H264CodecSettings create() =>
       VideoStream_H264CodecSettings._();
+  @$core.override
   VideoStream_H264CodecSettings createEmptyInstance() => create();
-  static $pb.PbList<VideoStream_H264CodecSettings> createRepeated() =>
-      $pb.PbList<VideoStream_H264CodecSettings>();
   @$core.pragma('dart2js:noInline')
   static VideoStream_H264CodecSettings getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<VideoStream_H264CodecSettings>(create);
   static VideoStream_H264CodecSettings? _defaultInstance;
 
+  @$pb.TagNumber(9)
+  @$pb.TagNumber(10)
   VideoStream_H264CodecSettings_GopMode whichGopMode() =>
       _VideoStream_H264CodecSettings_GopModeByTag[$_whichOneof(0)]!;
+  @$pb.TagNumber(9)
+  @$pb.TagNumber(10)
   void clearGopMode() => $_clearField($_whichOneof(0));
 
   /// The width of the video in pixels. Must be an even integer.
@@ -3654,10 +3192,7 @@ class VideoStream_H264CodecSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.int get widthPixels => $_getIZ(0);
   @$pb.TagNumber(1)
-  set widthPixels($core.int v) {
-    $_setSignedInt32(0, v);
-  }
-
+  set widthPixels($core.int value) => $_setSignedInt32(0, value);
   @$pb.TagNumber(1)
   $core.bool hasWidthPixels() => $_has(0);
   @$pb.TagNumber(1)
@@ -3674,10 +3209,7 @@ class VideoStream_H264CodecSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get heightPixels => $_getIZ(1);
   @$pb.TagNumber(2)
-  set heightPixels($core.int v) {
-    $_setSignedInt32(1, v);
-  }
-
+  set heightPixels($core.int value) => $_setSignedInt32(1, value);
   @$pb.TagNumber(2)
   $core.bool hasHeightPixels() => $_has(1);
   @$pb.TagNumber(2)
@@ -3693,10 +3225,7 @@ class VideoStream_H264CodecSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.double get frameRate => $_getN(2);
   @$pb.TagNumber(3)
-  set frameRate($core.double v) {
-    $_setDouble(2, v);
-  }
-
+  set frameRate($core.double value) => $_setDouble(2, value);
   @$pb.TagNumber(3)
   $core.bool hasFrameRate() => $_has(2);
   @$pb.TagNumber(3)
@@ -3707,10 +3236,7 @@ class VideoStream_H264CodecSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.int get bitrateBps => $_getIZ(3);
   @$pb.TagNumber(4)
-  set bitrateBps($core.int v) {
-    $_setSignedInt32(3, v);
-  }
-
+  set bitrateBps($core.int value) => $_setSignedInt32(3, value);
   @$pb.TagNumber(4)
   $core.bool hasBitrateBps() => $_has(3);
   @$pb.TagNumber(4)
@@ -3732,10 +3258,7 @@ class VideoStream_H264CodecSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get pixelFormat => $_getSZ(4);
   @$pb.TagNumber(5)
-  set pixelFormat($core.String v) {
-    $_setString(4, v);
-  }
-
+  set pixelFormat($core.String value) => $_setString(4, value);
   @$pb.TagNumber(5)
   $core.bool hasPixelFormat() => $_has(4);
   @$pb.TagNumber(5)
@@ -3750,10 +3273,7 @@ class VideoStream_H264CodecSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get rateControlMode => $_getSZ(5);
   @$pb.TagNumber(6)
-  set rateControlMode($core.String v) {
-    $_setString(5, v);
-  }
-
+  set rateControlMode($core.String value) => $_setString(5, value);
   @$pb.TagNumber(6)
   $core.bool hasRateControlMode() => $_has(5);
   @$pb.TagNumber(6)
@@ -3764,10 +3284,7 @@ class VideoStream_H264CodecSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.int get crfLevel => $_getIZ(6);
   @$pb.TagNumber(7)
-  set crfLevel($core.int v) {
-    $_setSignedInt32(6, v);
-  }
-
+  set crfLevel($core.int value) => $_setSignedInt32(6, value);
   @$pb.TagNumber(7)
   $core.bool hasCrfLevel() => $_has(6);
   @$pb.TagNumber(7)
@@ -3778,10 +3295,7 @@ class VideoStream_H264CodecSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.bool get allowOpenGop => $_getBF(7);
   @$pb.TagNumber(8)
-  set allowOpenGop($core.bool v) {
-    $_setBool(7, v);
-  }
-
+  set allowOpenGop($core.bool value) => $_setBool(7, value);
   @$pb.TagNumber(8)
   $core.bool hasAllowOpenGop() => $_has(7);
   @$pb.TagNumber(8)
@@ -3792,10 +3306,7 @@ class VideoStream_H264CodecSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.int get gopFrameCount => $_getIZ(8);
   @$pb.TagNumber(9)
-  set gopFrameCount($core.int v) {
-    $_setSignedInt32(8, v);
-  }
-
+  set gopFrameCount($core.int value) => $_setSignedInt32(8, value);
   @$pb.TagNumber(9)
   $core.bool hasGopFrameCount() => $_has(8);
   @$pb.TagNumber(9)
@@ -3807,28 +3318,22 @@ class VideoStream_H264CodecSettings extends $pb.GeneratedMessage {
   /// [`segmentDuration`](#SegmentSettings) must be divisible by
   /// `gopDuration`.
   @$pb.TagNumber(10)
-  $0.Duration get gopDuration => $_getN(9);
+  $2.Duration get gopDuration => $_getN(9);
   @$pb.TagNumber(10)
-  set gopDuration($0.Duration v) {
-    $_setField(10, v);
-  }
-
+  set gopDuration($2.Duration value) => $_setField(10, value);
   @$pb.TagNumber(10)
   $core.bool hasGopDuration() => $_has(9);
   @$pb.TagNumber(10)
   void clearGopDuration() => $_clearField(10);
   @$pb.TagNumber(10)
-  $0.Duration ensureGopDuration() => $_ensure(9);
+  $2.Duration ensureGopDuration() => $_ensure(9);
 
   /// Use two-pass encoding strategy to achieve better video quality.
   /// `VideoStream.rate_control_mode` must be `vbr`. The default is `false`.
   @$pb.TagNumber(11)
   $core.bool get enableTwoPass => $_getBF(10);
   @$pb.TagNumber(11)
-  set enableTwoPass($core.bool v) {
-    $_setBool(10, v);
-  }
-
+  set enableTwoPass($core.bool value) => $_setBool(10, value);
   @$pb.TagNumber(11)
   $core.bool hasEnableTwoPass() => $_has(10);
   @$pb.TagNumber(11)
@@ -3839,10 +3344,7 @@ class VideoStream_H264CodecSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.int get vbvSizeBits => $_getIZ(11);
   @$pb.TagNumber(12)
-  set vbvSizeBits($core.int v) {
-    $_setSignedInt32(11, v);
-  }
-
+  set vbvSizeBits($core.int value) => $_setSignedInt32(11, value);
   @$pb.TagNumber(12)
   $core.bool hasVbvSizeBits() => $_has(11);
   @$pb.TagNumber(12)
@@ -3854,10 +3356,7 @@ class VideoStream_H264CodecSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   $core.int get vbvFullnessBits => $_getIZ(12);
   @$pb.TagNumber(13)
-  set vbvFullnessBits($core.int v) {
-    $_setSignedInt32(12, v);
-  }
-
+  set vbvFullnessBits($core.int value) => $_setSignedInt32(12, value);
   @$pb.TagNumber(13)
   $core.bool hasVbvFullnessBits() => $_has(12);
   @$pb.TagNumber(13)
@@ -3872,10 +3371,7 @@ class VideoStream_H264CodecSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   $core.String get entropyCoder => $_getSZ(13);
   @$pb.TagNumber(14)
-  set entropyCoder($core.String v) {
-    $_setString(13, v);
-  }
-
+  set entropyCoder($core.String value) => $_setString(13, value);
   @$pb.TagNumber(14)
   $core.bool hasEntropyCoder() => $_has(13);
   @$pb.TagNumber(14)
@@ -3886,10 +3382,7 @@ class VideoStream_H264CodecSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   $core.bool get bPyramid => $_getBF(14);
   @$pb.TagNumber(15)
-  set bPyramid($core.bool v) {
-    $_setBool(14, v);
-  }
-
+  set bPyramid($core.bool value) => $_setBool(14, value);
   @$pb.TagNumber(15)
   $core.bool hasBPyramid() => $_has(14);
   @$pb.TagNumber(15)
@@ -3901,10 +3394,7 @@ class VideoStream_H264CodecSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(16)
   $core.int get bFrameCount => $_getIZ(15);
   @$pb.TagNumber(16)
-  set bFrameCount($core.int v) {
-    $_setSignedInt32(15, v);
-  }
-
+  set bFrameCount($core.int value) => $_setSignedInt32(15, value);
   @$pb.TagNumber(16)
   $core.bool hasBFrameCount() => $_has(15);
   @$pb.TagNumber(16)
@@ -3916,10 +3406,7 @@ class VideoStream_H264CodecSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(17)
   $core.double get aqStrength => $_getN(16);
   @$pb.TagNumber(17)
-  set aqStrength($core.double v) {
-    $_setDouble(16, v);
-  }
-
+  set aqStrength($core.double value) => $_setDouble(16, value);
   @$pb.TagNumber(17)
   $core.bool hasAqStrength() => $_has(16);
   @$pb.TagNumber(17)
@@ -3940,10 +3427,7 @@ class VideoStream_H264CodecSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(18)
   $core.String get profile => $_getSZ(17);
   @$pb.TagNumber(18)
-  set profile($core.String v) {
-    $_setString(17, v);
-  }
-
+  set profile($core.String value) => $_setString(17, value);
   @$pb.TagNumber(18)
   $core.bool hasProfile() => $_has(17);
   @$pb.TagNumber(18)
@@ -3957,10 +3441,7 @@ class VideoStream_H264CodecSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(19)
   $core.String get tune => $_getSZ(18);
   @$pb.TagNumber(19)
-  set tune($core.String v) {
-    $_setString(18, v);
-  }
-
+  set tune($core.String value) => $_setString(18, value);
   @$pb.TagNumber(19)
   $core.bool hasTune() => $_has(18);
   @$pb.TagNumber(19)
@@ -3975,10 +3456,7 @@ class VideoStream_H264CodecSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(20)
   $core.String get preset => $_getSZ(19);
   @$pb.TagNumber(20)
-  set preset($core.String v) {
-    $_setString(19, v);
-  }
-
+  set preset($core.String value) => $_setString(19, value);
   @$pb.TagNumber(20)
   $core.bool hasPreset() => $_has(19);
   @$pb.TagNumber(20)
@@ -4003,7 +3481,7 @@ class VideoStream_H265CodecSettings extends $pb.GeneratedMessage {
     $core.int? crfLevel,
     $core.bool? allowOpenGop,
     $core.int? gopFrameCount,
-    $0.Duration? gopDuration,
+    $2.Duration? gopDuration,
     $core.bool? enableTwoPass,
     $core.int? vbvSizeBits,
     $core.int? vbvFullnessBits,
@@ -4014,73 +3492,37 @@ class VideoStream_H265CodecSettings extends $pb.GeneratedMessage {
     $core.String? tune,
     $core.String? preset,
   }) {
-    final $result = create();
-    if (widthPixels != null) {
-      $result.widthPixels = widthPixels;
-    }
-    if (heightPixels != null) {
-      $result.heightPixels = heightPixels;
-    }
-    if (frameRate != null) {
-      $result.frameRate = frameRate;
-    }
-    if (bitrateBps != null) {
-      $result.bitrateBps = bitrateBps;
-    }
-    if (pixelFormat != null) {
-      $result.pixelFormat = pixelFormat;
-    }
-    if (rateControlMode != null) {
-      $result.rateControlMode = rateControlMode;
-    }
-    if (crfLevel != null) {
-      $result.crfLevel = crfLevel;
-    }
-    if (allowOpenGop != null) {
-      $result.allowOpenGop = allowOpenGop;
-    }
-    if (gopFrameCount != null) {
-      $result.gopFrameCount = gopFrameCount;
-    }
-    if (gopDuration != null) {
-      $result.gopDuration = gopDuration;
-    }
-    if (enableTwoPass != null) {
-      $result.enableTwoPass = enableTwoPass;
-    }
-    if (vbvSizeBits != null) {
-      $result.vbvSizeBits = vbvSizeBits;
-    }
-    if (vbvFullnessBits != null) {
-      $result.vbvFullnessBits = vbvFullnessBits;
-    }
-    if (bPyramid != null) {
-      $result.bPyramid = bPyramid;
-    }
-    if (bFrameCount != null) {
-      $result.bFrameCount = bFrameCount;
-    }
-    if (aqStrength != null) {
-      $result.aqStrength = aqStrength;
-    }
-    if (profile != null) {
-      $result.profile = profile;
-    }
-    if (tune != null) {
-      $result.tune = tune;
-    }
-    if (preset != null) {
-      $result.preset = preset;
-    }
-    return $result;
+    final result = create();
+    if (widthPixels != null) result.widthPixels = widthPixels;
+    if (heightPixels != null) result.heightPixels = heightPixels;
+    if (frameRate != null) result.frameRate = frameRate;
+    if (bitrateBps != null) result.bitrateBps = bitrateBps;
+    if (pixelFormat != null) result.pixelFormat = pixelFormat;
+    if (rateControlMode != null) result.rateControlMode = rateControlMode;
+    if (crfLevel != null) result.crfLevel = crfLevel;
+    if (allowOpenGop != null) result.allowOpenGop = allowOpenGop;
+    if (gopFrameCount != null) result.gopFrameCount = gopFrameCount;
+    if (gopDuration != null) result.gopDuration = gopDuration;
+    if (enableTwoPass != null) result.enableTwoPass = enableTwoPass;
+    if (vbvSizeBits != null) result.vbvSizeBits = vbvSizeBits;
+    if (vbvFullnessBits != null) result.vbvFullnessBits = vbvFullnessBits;
+    if (bPyramid != null) result.bPyramid = bPyramid;
+    if (bFrameCount != null) result.bFrameCount = bFrameCount;
+    if (aqStrength != null) result.aqStrength = aqStrength;
+    if (profile != null) result.profile = profile;
+    if (tune != null) result.tune = tune;
+    if (preset != null) result.preset = preset;
+    return result;
   }
-  VideoStream_H265CodecSettings._() : super();
-  factory VideoStream_H265CodecSettings.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory VideoStream_H265CodecSettings.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  VideoStream_H265CodecSettings._();
+
+  factory VideoStream_H265CodecSettings.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory VideoStream_H265CodecSettings.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static const $core.Map<$core.int, VideoStream_H265CodecSettings_GopMode>
       _VideoStream_H265CodecSettings_GopModeByTag = {
@@ -4094,34 +3536,30 @@ class VideoStream_H265CodecSettings extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.events.cloud.video.transcoder.v1'),
       createEmptyInstance: create)
     ..oo(0, [9, 10])
-    ..a<$core.int>(1, _omitFieldNames ? '' : 'widthPixels', $pb.PbFieldType.O3)
-    ..a<$core.int>(2, _omitFieldNames ? '' : 'heightPixels', $pb.PbFieldType.O3)
-    ..a<$core.double>(3, _omitFieldNames ? '' : 'frameRate', $pb.PbFieldType.OD)
-    ..a<$core.int>(4, _omitFieldNames ? '' : 'bitrateBps', $pb.PbFieldType.O3)
+    ..aI(1, _omitFieldNames ? '' : 'widthPixels')
+    ..aI(2, _omitFieldNames ? '' : 'heightPixels')
+    ..aD(3, _omitFieldNames ? '' : 'frameRate')
+    ..aI(4, _omitFieldNames ? '' : 'bitrateBps')
     ..aOS(5, _omitFieldNames ? '' : 'pixelFormat')
     ..aOS(6, _omitFieldNames ? '' : 'rateControlMode')
-    ..a<$core.int>(7, _omitFieldNames ? '' : 'crfLevel', $pb.PbFieldType.O3)
+    ..aI(7, _omitFieldNames ? '' : 'crfLevel')
     ..aOB(8, _omitFieldNames ? '' : 'allowOpenGop')
-    ..a<$core.int>(
-        9, _omitFieldNames ? '' : 'gopFrameCount', $pb.PbFieldType.O3)
-    ..aOM<$0.Duration>(10, _omitFieldNames ? '' : 'gopDuration',
-        subBuilder: $0.Duration.create)
+    ..aI(9, _omitFieldNames ? '' : 'gopFrameCount')
+    ..aOM<$2.Duration>(10, _omitFieldNames ? '' : 'gopDuration',
+        subBuilder: $2.Duration.create)
     ..aOB(11, _omitFieldNames ? '' : 'enableTwoPass')
-    ..a<$core.int>(12, _omitFieldNames ? '' : 'vbvSizeBits', $pb.PbFieldType.O3)
-    ..a<$core.int>(
-        13, _omitFieldNames ? '' : 'vbvFullnessBits', $pb.PbFieldType.O3)
+    ..aI(12, _omitFieldNames ? '' : 'vbvSizeBits')
+    ..aI(13, _omitFieldNames ? '' : 'vbvFullnessBits')
     ..aOB(14, _omitFieldNames ? '' : 'bPyramid')
-    ..a<$core.int>(15, _omitFieldNames ? '' : 'bFrameCount', $pb.PbFieldType.O3)
-    ..a<$core.double>(
-        16, _omitFieldNames ? '' : 'aqStrength', $pb.PbFieldType.OD)
+    ..aI(15, _omitFieldNames ? '' : 'bFrameCount')
+    ..aD(16, _omitFieldNames ? '' : 'aqStrength')
     ..aOS(17, _omitFieldNames ? '' : 'profile')
     ..aOS(18, _omitFieldNames ? '' : 'tune')
     ..aOS(19, _omitFieldNames ? '' : 'preset')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  VideoStream_H265CodecSettings clone() =>
-      VideoStream_H265CodecSettings()..mergeFromMessage(this);
+  VideoStream_H265CodecSettings clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   VideoStream_H265CodecSettings copyWith(
           void Function(VideoStream_H265CodecSettings) updates) =>
@@ -4129,21 +3567,25 @@ class VideoStream_H265CodecSettings extends $pb.GeneratedMessage {
               (message) => updates(message as VideoStream_H265CodecSettings))
           as VideoStream_H265CodecSettings;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static VideoStream_H265CodecSettings create() =>
       VideoStream_H265CodecSettings._();
+  @$core.override
   VideoStream_H265CodecSettings createEmptyInstance() => create();
-  static $pb.PbList<VideoStream_H265CodecSettings> createRepeated() =>
-      $pb.PbList<VideoStream_H265CodecSettings>();
   @$core.pragma('dart2js:noInline')
   static VideoStream_H265CodecSettings getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<VideoStream_H265CodecSettings>(create);
   static VideoStream_H265CodecSettings? _defaultInstance;
 
+  @$pb.TagNumber(9)
+  @$pb.TagNumber(10)
   VideoStream_H265CodecSettings_GopMode whichGopMode() =>
       _VideoStream_H265CodecSettings_GopModeByTag[$_whichOneof(0)]!;
+  @$pb.TagNumber(9)
+  @$pb.TagNumber(10)
   void clearGopMode() => $_clearField($_whichOneof(0));
 
   /// The width of the video in pixels. Must be an even integer.
@@ -4157,10 +3599,7 @@ class VideoStream_H265CodecSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.int get widthPixels => $_getIZ(0);
   @$pb.TagNumber(1)
-  set widthPixels($core.int v) {
-    $_setSignedInt32(0, v);
-  }
-
+  set widthPixels($core.int value) => $_setSignedInt32(0, value);
   @$pb.TagNumber(1)
   $core.bool hasWidthPixels() => $_has(0);
   @$pb.TagNumber(1)
@@ -4177,10 +3616,7 @@ class VideoStream_H265CodecSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get heightPixels => $_getIZ(1);
   @$pb.TagNumber(2)
-  set heightPixels($core.int v) {
-    $_setSignedInt32(1, v);
-  }
-
+  set heightPixels($core.int value) => $_setSignedInt32(1, value);
   @$pb.TagNumber(2)
   $core.bool hasHeightPixels() => $_has(1);
   @$pb.TagNumber(2)
@@ -4196,10 +3632,7 @@ class VideoStream_H265CodecSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.double get frameRate => $_getN(2);
   @$pb.TagNumber(3)
-  set frameRate($core.double v) {
-    $_setDouble(2, v);
-  }
-
+  set frameRate($core.double value) => $_setDouble(2, value);
   @$pb.TagNumber(3)
   $core.bool hasFrameRate() => $_has(2);
   @$pb.TagNumber(3)
@@ -4210,10 +3643,7 @@ class VideoStream_H265CodecSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.int get bitrateBps => $_getIZ(3);
   @$pb.TagNumber(4)
-  set bitrateBps($core.int v) {
-    $_setSignedInt32(3, v);
-  }
-
+  set bitrateBps($core.int value) => $_setSignedInt32(3, value);
   @$pb.TagNumber(4)
   $core.bool hasBitrateBps() => $_has(3);
   @$pb.TagNumber(4)
@@ -4235,10 +3665,7 @@ class VideoStream_H265CodecSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get pixelFormat => $_getSZ(4);
   @$pb.TagNumber(5)
-  set pixelFormat($core.String v) {
-    $_setString(4, v);
-  }
-
+  set pixelFormat($core.String value) => $_setString(4, value);
   @$pb.TagNumber(5)
   $core.bool hasPixelFormat() => $_has(4);
   @$pb.TagNumber(5)
@@ -4253,10 +3680,7 @@ class VideoStream_H265CodecSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get rateControlMode => $_getSZ(5);
   @$pb.TagNumber(6)
-  set rateControlMode($core.String v) {
-    $_setString(5, v);
-  }
-
+  set rateControlMode($core.String value) => $_setString(5, value);
   @$pb.TagNumber(6)
   $core.bool hasRateControlMode() => $_has(5);
   @$pb.TagNumber(6)
@@ -4267,10 +3691,7 @@ class VideoStream_H265CodecSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.int get crfLevel => $_getIZ(6);
   @$pb.TagNumber(7)
-  set crfLevel($core.int v) {
-    $_setSignedInt32(6, v);
-  }
-
+  set crfLevel($core.int value) => $_setSignedInt32(6, value);
   @$pb.TagNumber(7)
   $core.bool hasCrfLevel() => $_has(6);
   @$pb.TagNumber(7)
@@ -4281,10 +3702,7 @@ class VideoStream_H265CodecSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.bool get allowOpenGop => $_getBF(7);
   @$pb.TagNumber(8)
-  set allowOpenGop($core.bool v) {
-    $_setBool(7, v);
-  }
-
+  set allowOpenGop($core.bool value) => $_setBool(7, value);
   @$pb.TagNumber(8)
   $core.bool hasAllowOpenGop() => $_has(7);
   @$pb.TagNumber(8)
@@ -4295,10 +3713,7 @@ class VideoStream_H265CodecSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.int get gopFrameCount => $_getIZ(8);
   @$pb.TagNumber(9)
-  set gopFrameCount($core.int v) {
-    $_setSignedInt32(8, v);
-  }
-
+  set gopFrameCount($core.int value) => $_setSignedInt32(8, value);
   @$pb.TagNumber(9)
   $core.bool hasGopFrameCount() => $_has(8);
   @$pb.TagNumber(9)
@@ -4310,28 +3725,22 @@ class VideoStream_H265CodecSettings extends $pb.GeneratedMessage {
   /// [`segmentDuration`](#SegmentSettings) must be divisible by
   /// `gopDuration`.
   @$pb.TagNumber(10)
-  $0.Duration get gopDuration => $_getN(9);
+  $2.Duration get gopDuration => $_getN(9);
   @$pb.TagNumber(10)
-  set gopDuration($0.Duration v) {
-    $_setField(10, v);
-  }
-
+  set gopDuration($2.Duration value) => $_setField(10, value);
   @$pb.TagNumber(10)
   $core.bool hasGopDuration() => $_has(9);
   @$pb.TagNumber(10)
   void clearGopDuration() => $_clearField(10);
   @$pb.TagNumber(10)
-  $0.Duration ensureGopDuration() => $_ensure(9);
+  $2.Duration ensureGopDuration() => $_ensure(9);
 
   /// Use two-pass encoding strategy to achieve better video quality.
   /// `VideoStream.rate_control_mode` must be `vbr`. The default is `false`.
   @$pb.TagNumber(11)
   $core.bool get enableTwoPass => $_getBF(10);
   @$pb.TagNumber(11)
-  set enableTwoPass($core.bool v) {
-    $_setBool(10, v);
-  }
-
+  set enableTwoPass($core.bool value) => $_setBool(10, value);
   @$pb.TagNumber(11)
   $core.bool hasEnableTwoPass() => $_has(10);
   @$pb.TagNumber(11)
@@ -4342,10 +3751,7 @@ class VideoStream_H265CodecSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.int get vbvSizeBits => $_getIZ(11);
   @$pb.TagNumber(12)
-  set vbvSizeBits($core.int v) {
-    $_setSignedInt32(11, v);
-  }
-
+  set vbvSizeBits($core.int value) => $_setSignedInt32(11, value);
   @$pb.TagNumber(12)
   $core.bool hasVbvSizeBits() => $_has(11);
   @$pb.TagNumber(12)
@@ -4357,10 +3763,7 @@ class VideoStream_H265CodecSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   $core.int get vbvFullnessBits => $_getIZ(12);
   @$pb.TagNumber(13)
-  set vbvFullnessBits($core.int v) {
-    $_setSignedInt32(12, v);
-  }
-
+  set vbvFullnessBits($core.int value) => $_setSignedInt32(12, value);
   @$pb.TagNumber(13)
   $core.bool hasVbvFullnessBits() => $_has(12);
   @$pb.TagNumber(13)
@@ -4371,10 +3774,7 @@ class VideoStream_H265CodecSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   $core.bool get bPyramid => $_getBF(13);
   @$pb.TagNumber(14)
-  set bPyramid($core.bool v) {
-    $_setBool(13, v);
-  }
-
+  set bPyramid($core.bool value) => $_setBool(13, value);
   @$pb.TagNumber(14)
   $core.bool hasBPyramid() => $_has(13);
   @$pb.TagNumber(14)
@@ -4386,10 +3786,7 @@ class VideoStream_H265CodecSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   $core.int get bFrameCount => $_getIZ(14);
   @$pb.TagNumber(15)
-  set bFrameCount($core.int v) {
-    $_setSignedInt32(14, v);
-  }
-
+  set bFrameCount($core.int value) => $_setSignedInt32(14, value);
   @$pb.TagNumber(15)
   $core.bool hasBFrameCount() => $_has(14);
   @$pb.TagNumber(15)
@@ -4401,10 +3798,7 @@ class VideoStream_H265CodecSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(16)
   $core.double get aqStrength => $_getN(15);
   @$pb.TagNumber(16)
-  set aqStrength($core.double v) {
-    $_setDouble(15, v);
-  }
-
+  set aqStrength($core.double value) => $_setDouble(15, value);
   @$pb.TagNumber(16)
   $core.bool hasAqStrength() => $_has(15);
   @$pb.TagNumber(16)
@@ -4440,10 +3834,7 @@ class VideoStream_H265CodecSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(17)
   $core.String get profile => $_getSZ(16);
   @$pb.TagNumber(17)
-  set profile($core.String v) {
-    $_setString(16, v);
-  }
-
+  set profile($core.String value) => $_setString(16, value);
   @$pb.TagNumber(17)
   $core.bool hasProfile() => $_has(16);
   @$pb.TagNumber(17)
@@ -4457,10 +3848,7 @@ class VideoStream_H265CodecSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(18)
   $core.String get tune => $_getSZ(17);
   @$pb.TagNumber(18)
-  set tune($core.String v) {
-    $_setString(17, v);
-  }
-
+  set tune($core.String value) => $_setString(17, value);
   @$pb.TagNumber(18)
   $core.bool hasTune() => $_has(17);
   @$pb.TagNumber(18)
@@ -4475,10 +3863,7 @@ class VideoStream_H265CodecSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(19)
   $core.String get preset => $_getSZ(18);
   @$pb.TagNumber(19)
-  set preset($core.String v) {
-    $_setString(18, v);
-  }
-
+  set preset($core.String value) => $_setString(18, value);
   @$pb.TagNumber(19)
   $core.bool hasPreset() => $_has(18);
   @$pb.TagNumber(19)
@@ -4498,49 +3883,31 @@ class VideoStream_Vp9CodecSettings extends $pb.GeneratedMessage {
     $core.String? rateControlMode,
     $core.int? crfLevel,
     $core.int? gopFrameCount,
-    $0.Duration? gopDuration,
+    $2.Duration? gopDuration,
     $core.String? profile,
   }) {
-    final $result = create();
-    if (widthPixels != null) {
-      $result.widthPixels = widthPixels;
-    }
-    if (heightPixels != null) {
-      $result.heightPixels = heightPixels;
-    }
-    if (frameRate != null) {
-      $result.frameRate = frameRate;
-    }
-    if (bitrateBps != null) {
-      $result.bitrateBps = bitrateBps;
-    }
-    if (pixelFormat != null) {
-      $result.pixelFormat = pixelFormat;
-    }
-    if (rateControlMode != null) {
-      $result.rateControlMode = rateControlMode;
-    }
-    if (crfLevel != null) {
-      $result.crfLevel = crfLevel;
-    }
-    if (gopFrameCount != null) {
-      $result.gopFrameCount = gopFrameCount;
-    }
-    if (gopDuration != null) {
-      $result.gopDuration = gopDuration;
-    }
-    if (profile != null) {
-      $result.profile = profile;
-    }
-    return $result;
+    final result = create();
+    if (widthPixels != null) result.widthPixels = widthPixels;
+    if (heightPixels != null) result.heightPixels = heightPixels;
+    if (frameRate != null) result.frameRate = frameRate;
+    if (bitrateBps != null) result.bitrateBps = bitrateBps;
+    if (pixelFormat != null) result.pixelFormat = pixelFormat;
+    if (rateControlMode != null) result.rateControlMode = rateControlMode;
+    if (crfLevel != null) result.crfLevel = crfLevel;
+    if (gopFrameCount != null) result.gopFrameCount = gopFrameCount;
+    if (gopDuration != null) result.gopDuration = gopDuration;
+    if (profile != null) result.profile = profile;
+    return result;
   }
-  VideoStream_Vp9CodecSettings._() : super();
-  factory VideoStream_Vp9CodecSettings.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory VideoStream_Vp9CodecSettings.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  VideoStream_Vp9CodecSettings._();
+
+  factory VideoStream_Vp9CodecSettings.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory VideoStream_Vp9CodecSettings.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static const $core.Map<$core.int, VideoStream_Vp9CodecSettings_GopMode>
       _VideoStream_Vp9CodecSettings_GopModeByTag = {
@@ -4554,23 +3921,21 @@ class VideoStream_Vp9CodecSettings extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.events.cloud.video.transcoder.v1'),
       createEmptyInstance: create)
     ..oo(0, [8, 9])
-    ..a<$core.int>(1, _omitFieldNames ? '' : 'widthPixels', $pb.PbFieldType.O3)
-    ..a<$core.int>(2, _omitFieldNames ? '' : 'heightPixels', $pb.PbFieldType.O3)
-    ..a<$core.double>(3, _omitFieldNames ? '' : 'frameRate', $pb.PbFieldType.OD)
-    ..a<$core.int>(4, _omitFieldNames ? '' : 'bitrateBps', $pb.PbFieldType.O3)
+    ..aI(1, _omitFieldNames ? '' : 'widthPixels')
+    ..aI(2, _omitFieldNames ? '' : 'heightPixels')
+    ..aD(3, _omitFieldNames ? '' : 'frameRate')
+    ..aI(4, _omitFieldNames ? '' : 'bitrateBps')
     ..aOS(5, _omitFieldNames ? '' : 'pixelFormat')
     ..aOS(6, _omitFieldNames ? '' : 'rateControlMode')
-    ..a<$core.int>(7, _omitFieldNames ? '' : 'crfLevel', $pb.PbFieldType.O3)
-    ..a<$core.int>(
-        8, _omitFieldNames ? '' : 'gopFrameCount', $pb.PbFieldType.O3)
-    ..aOM<$0.Duration>(9, _omitFieldNames ? '' : 'gopDuration',
-        subBuilder: $0.Duration.create)
+    ..aI(7, _omitFieldNames ? '' : 'crfLevel')
+    ..aI(8, _omitFieldNames ? '' : 'gopFrameCount')
+    ..aOM<$2.Duration>(9, _omitFieldNames ? '' : 'gopDuration',
+        subBuilder: $2.Duration.create)
     ..aOS(10, _omitFieldNames ? '' : 'profile')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  VideoStream_Vp9CodecSettings clone() =>
-      VideoStream_Vp9CodecSettings()..mergeFromMessage(this);
+  VideoStream_Vp9CodecSettings clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   VideoStream_Vp9CodecSettings copyWith(
           void Function(VideoStream_Vp9CodecSettings) updates) =>
@@ -4578,21 +3943,25 @@ class VideoStream_Vp9CodecSettings extends $pb.GeneratedMessage {
               (message) => updates(message as VideoStream_Vp9CodecSettings))
           as VideoStream_Vp9CodecSettings;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static VideoStream_Vp9CodecSettings create() =>
       VideoStream_Vp9CodecSettings._();
+  @$core.override
   VideoStream_Vp9CodecSettings createEmptyInstance() => create();
-  static $pb.PbList<VideoStream_Vp9CodecSettings> createRepeated() =>
-      $pb.PbList<VideoStream_Vp9CodecSettings>();
   @$core.pragma('dart2js:noInline')
   static VideoStream_Vp9CodecSettings getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<VideoStream_Vp9CodecSettings>(create);
   static VideoStream_Vp9CodecSettings? _defaultInstance;
 
+  @$pb.TagNumber(8)
+  @$pb.TagNumber(9)
   VideoStream_Vp9CodecSettings_GopMode whichGopMode() =>
       _VideoStream_Vp9CodecSettings_GopModeByTag[$_whichOneof(0)]!;
+  @$pb.TagNumber(8)
+  @$pb.TagNumber(9)
   void clearGopMode() => $_clearField($_whichOneof(0));
 
   /// The width of the video in pixels. Must be an even integer.
@@ -4606,10 +3975,7 @@ class VideoStream_Vp9CodecSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.int get widthPixels => $_getIZ(0);
   @$pb.TagNumber(1)
-  set widthPixels($core.int v) {
-    $_setSignedInt32(0, v);
-  }
-
+  set widthPixels($core.int value) => $_setSignedInt32(0, value);
   @$pb.TagNumber(1)
   $core.bool hasWidthPixels() => $_has(0);
   @$pb.TagNumber(1)
@@ -4626,10 +3992,7 @@ class VideoStream_Vp9CodecSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get heightPixels => $_getIZ(1);
   @$pb.TagNumber(2)
-  set heightPixels($core.int v) {
-    $_setSignedInt32(1, v);
-  }
-
+  set heightPixels($core.int value) => $_setSignedInt32(1, value);
   @$pb.TagNumber(2)
   $core.bool hasHeightPixels() => $_has(1);
   @$pb.TagNumber(2)
@@ -4645,10 +4008,7 @@ class VideoStream_Vp9CodecSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.double get frameRate => $_getN(2);
   @$pb.TagNumber(3)
-  set frameRate($core.double v) {
-    $_setDouble(2, v);
-  }
-
+  set frameRate($core.double value) => $_setDouble(2, value);
   @$pb.TagNumber(3)
   $core.bool hasFrameRate() => $_has(2);
   @$pb.TagNumber(3)
@@ -4659,10 +4019,7 @@ class VideoStream_Vp9CodecSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.int get bitrateBps => $_getIZ(3);
   @$pb.TagNumber(4)
-  set bitrateBps($core.int v) {
-    $_setSignedInt32(3, v);
-  }
-
+  set bitrateBps($core.int value) => $_setSignedInt32(3, value);
   @$pb.TagNumber(4)
   $core.bool hasBitrateBps() => $_has(3);
   @$pb.TagNumber(4)
@@ -4684,10 +4041,7 @@ class VideoStream_Vp9CodecSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get pixelFormat => $_getSZ(4);
   @$pb.TagNumber(5)
-  set pixelFormat($core.String v) {
-    $_setString(4, v);
-  }
-
+  set pixelFormat($core.String value) => $_setString(4, value);
   @$pb.TagNumber(5)
   $core.bool hasPixelFormat() => $_has(4);
   @$pb.TagNumber(5)
@@ -4701,10 +4055,7 @@ class VideoStream_Vp9CodecSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get rateControlMode => $_getSZ(5);
   @$pb.TagNumber(6)
-  set rateControlMode($core.String v) {
-    $_setString(5, v);
-  }
-
+  set rateControlMode($core.String value) => $_setString(5, value);
   @$pb.TagNumber(6)
   $core.bool hasRateControlMode() => $_has(5);
   @$pb.TagNumber(6)
@@ -4717,10 +4068,7 @@ class VideoStream_Vp9CodecSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.int get crfLevel => $_getIZ(6);
   @$pb.TagNumber(7)
-  set crfLevel($core.int v) {
-    $_setSignedInt32(6, v);
-  }
-
+  set crfLevel($core.int value) => $_setSignedInt32(6, value);
   @$pb.TagNumber(7)
   $core.bool hasCrfLevel() => $_has(6);
   @$pb.TagNumber(7)
@@ -4731,10 +4079,7 @@ class VideoStream_Vp9CodecSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.int get gopFrameCount => $_getIZ(7);
   @$pb.TagNumber(8)
-  set gopFrameCount($core.int v) {
-    $_setSignedInt32(7, v);
-  }
-
+  set gopFrameCount($core.int value) => $_setSignedInt32(7, value);
   @$pb.TagNumber(8)
   $core.bool hasGopFrameCount() => $_has(7);
   @$pb.TagNumber(8)
@@ -4746,18 +4091,15 @@ class VideoStream_Vp9CodecSettings extends $pb.GeneratedMessage {
   /// [`segmentDuration`](#SegmentSettings) must be divisible by
   /// `gopDuration`.
   @$pb.TagNumber(9)
-  $0.Duration get gopDuration => $_getN(8);
+  $2.Duration get gopDuration => $_getN(8);
   @$pb.TagNumber(9)
-  set gopDuration($0.Duration v) {
-    $_setField(9, v);
-  }
-
+  set gopDuration($2.Duration value) => $_setField(9, value);
   @$pb.TagNumber(9)
   $core.bool hasGopDuration() => $_has(8);
   @$pb.TagNumber(9)
   void clearGopDuration() => $_clearField(9);
   @$pb.TagNumber(9)
-  $0.Duration ensureGopDuration() => $_ensure(8);
+  $2.Duration ensureGopDuration() => $_ensure(8);
 
   /// Enforces the specified codec profile. The following profiles are
   /// supported:
@@ -4775,10 +4117,7 @@ class VideoStream_Vp9CodecSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.String get profile => $_getSZ(9);
   @$pb.TagNumber(10)
-  set profile($core.String v) {
-    $_setString(9, v);
-  }
-
+  set profile($core.String value) => $_setString(9, value);
   @$pb.TagNumber(10)
   $core.bool hasProfile() => $_has(9);
   @$pb.TagNumber(10)
@@ -4794,25 +4133,21 @@ class VideoStream extends $pb.GeneratedMessage {
     VideoStream_H265CodecSettings? h265,
     VideoStream_Vp9CodecSettings? vp9,
   }) {
-    final $result = create();
-    if (h264 != null) {
-      $result.h264 = h264;
-    }
-    if (h265 != null) {
-      $result.h265 = h265;
-    }
-    if (vp9 != null) {
-      $result.vp9 = vp9;
-    }
-    return $result;
+    final result = create();
+    if (h264 != null) result.h264 = h264;
+    if (h265 != null) result.h265 = h265;
+    if (vp9 != null) result.vp9 = vp9;
+    return result;
   }
-  VideoStream._() : super();
-  factory VideoStream.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory VideoStream.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  VideoStream._();
+
+  factory VideoStream.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory VideoStream.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static const $core.Map<$core.int, VideoStream_CodecSettings>
       _VideoStream_CodecSettingsByTag = {
@@ -4836,35 +4171,39 @@ class VideoStream extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  VideoStream clone() => VideoStream()..mergeFromMessage(this);
+  VideoStream clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   VideoStream copyWith(void Function(VideoStream) updates) =>
       super.copyWith((message) => updates(message as VideoStream))
           as VideoStream;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static VideoStream create() => VideoStream._();
+  @$core.override
   VideoStream createEmptyInstance() => create();
-  static $pb.PbList<VideoStream> createRepeated() => $pb.PbList<VideoStream>();
   @$core.pragma('dart2js:noInline')
   static VideoStream getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<VideoStream>(create);
   static VideoStream? _defaultInstance;
 
+  @$pb.TagNumber(1)
+  @$pb.TagNumber(2)
+  @$pb.TagNumber(3)
   VideoStream_CodecSettings whichCodecSettings() =>
       _VideoStream_CodecSettingsByTag[$_whichOneof(0)]!;
+  @$pb.TagNumber(1)
+  @$pb.TagNumber(2)
+  @$pb.TagNumber(3)
   void clearCodecSettings() => $_clearField($_whichOneof(0));
 
   /// H264 codec settings.
   @$pb.TagNumber(1)
   VideoStream_H264CodecSettings get h264 => $_getN(0);
   @$pb.TagNumber(1)
-  set h264(VideoStream_H264CodecSettings v) {
-    $_setField(1, v);
-  }
-
+  set h264(VideoStream_H264CodecSettings value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasH264() => $_has(0);
   @$pb.TagNumber(1)
@@ -4876,10 +4215,7 @@ class VideoStream extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   VideoStream_H265CodecSettings get h265 => $_getN(1);
   @$pb.TagNumber(2)
-  set h265(VideoStream_H265CodecSettings v) {
-    $_setField(2, v);
-  }
-
+  set h265(VideoStream_H265CodecSettings value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasH265() => $_has(1);
   @$pb.TagNumber(2)
@@ -4891,10 +4227,7 @@ class VideoStream extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   VideoStream_Vp9CodecSettings get vp9 => $_getN(2);
   @$pb.TagNumber(3)
-  set vp9(VideoStream_Vp9CodecSettings v) {
-    $_setField(3, v);
-  }
-
+  set vp9(VideoStream_Vp9CodecSettings value) => $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasVp9() => $_has(2);
   @$pb.TagNumber(3)
@@ -4913,34 +4246,24 @@ class AudioStream_AudioMapping extends $pb.GeneratedMessage {
     $core.int? outputChannel,
     $core.double? gainDb,
   }) {
-    final $result = create();
-    if (atomKey != null) {
-      $result.atomKey = atomKey;
-    }
-    if (inputKey != null) {
-      $result.inputKey = inputKey;
-    }
-    if (inputTrack != null) {
-      $result.inputTrack = inputTrack;
-    }
-    if (inputChannel != null) {
-      $result.inputChannel = inputChannel;
-    }
-    if (outputChannel != null) {
-      $result.outputChannel = outputChannel;
-    }
-    if (gainDb != null) {
-      $result.gainDb = gainDb;
-    }
-    return $result;
+    final result = create();
+    if (atomKey != null) result.atomKey = atomKey;
+    if (inputKey != null) result.inputKey = inputKey;
+    if (inputTrack != null) result.inputTrack = inputTrack;
+    if (inputChannel != null) result.inputChannel = inputChannel;
+    if (outputChannel != null) result.outputChannel = outputChannel;
+    if (gainDb != null) result.gainDb = gainDb;
+    return result;
   }
-  AudioStream_AudioMapping._() : super();
-  factory AudioStream_AudioMapping.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory AudioStream_AudioMapping.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  AudioStream_AudioMapping._();
+
+  factory AudioStream_AudioMapping.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory AudioStream_AudioMapping.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'AudioStream.AudioMapping',
@@ -4949,29 +4272,27 @@ class AudioStream_AudioMapping extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'atomKey')
     ..aOS(2, _omitFieldNames ? '' : 'inputKey')
-    ..a<$core.int>(3, _omitFieldNames ? '' : 'inputTrack', $pb.PbFieldType.O3)
-    ..a<$core.int>(4, _omitFieldNames ? '' : 'inputChannel', $pb.PbFieldType.O3)
-    ..a<$core.int>(
-        5, _omitFieldNames ? '' : 'outputChannel', $pb.PbFieldType.O3)
-    ..a<$core.double>(6, _omitFieldNames ? '' : 'gainDb', $pb.PbFieldType.OD)
+    ..aI(3, _omitFieldNames ? '' : 'inputTrack')
+    ..aI(4, _omitFieldNames ? '' : 'inputChannel')
+    ..aI(5, _omitFieldNames ? '' : 'outputChannel')
+    ..aD(6, _omitFieldNames ? '' : 'gainDb')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  AudioStream_AudioMapping clone() =>
-      AudioStream_AudioMapping()..mergeFromMessage(this);
+  AudioStream_AudioMapping clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AudioStream_AudioMapping copyWith(
           void Function(AudioStream_AudioMapping) updates) =>
       super.copyWith((message) => updates(message as AudioStream_AudioMapping))
           as AudioStream_AudioMapping;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AudioStream_AudioMapping create() => AudioStream_AudioMapping._();
+  @$core.override
   AudioStream_AudioMapping createEmptyInstance() => create();
-  static $pb.PbList<AudioStream_AudioMapping> createRepeated() =>
-      $pb.PbList<AudioStream_AudioMapping>();
   @$core.pragma('dart2js:noInline')
   static AudioStream_AudioMapping getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<AudioStream_AudioMapping>(create);
@@ -4982,10 +4303,7 @@ class AudioStream_AudioMapping extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get atomKey => $_getSZ(0);
   @$pb.TagNumber(1)
-  set atomKey($core.String v) {
-    $_setString(0, v);
-  }
-
+  set atomKey($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasAtomKey() => $_has(0);
   @$pb.TagNumber(1)
@@ -4995,10 +4313,7 @@ class AudioStream_AudioMapping extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get inputKey => $_getSZ(1);
   @$pb.TagNumber(2)
-  set inputKey($core.String v) {
-    $_setString(1, v);
-  }
-
+  set inputKey($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasInputKey() => $_has(1);
   @$pb.TagNumber(2)
@@ -5008,10 +4323,7 @@ class AudioStream_AudioMapping extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.int get inputTrack => $_getIZ(2);
   @$pb.TagNumber(3)
-  set inputTrack($core.int v) {
-    $_setSignedInt32(2, v);
-  }
-
+  set inputTrack($core.int value) => $_setSignedInt32(2, value);
   @$pb.TagNumber(3)
   $core.bool hasInputTrack() => $_has(2);
   @$pb.TagNumber(3)
@@ -5021,10 +4333,7 @@ class AudioStream_AudioMapping extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.int get inputChannel => $_getIZ(3);
   @$pb.TagNumber(4)
-  set inputChannel($core.int v) {
-    $_setSignedInt32(3, v);
-  }
-
+  set inputChannel($core.int value) => $_setSignedInt32(3, value);
   @$pb.TagNumber(4)
   $core.bool hasInputChannel() => $_has(3);
   @$pb.TagNumber(4)
@@ -5034,10 +4343,7 @@ class AudioStream_AudioMapping extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.int get outputChannel => $_getIZ(4);
   @$pb.TagNumber(5)
-  set outputChannel($core.int v) {
-    $_setSignedInt32(4, v);
-  }
-
+  set outputChannel($core.int value) => $_setSignedInt32(4, value);
   @$pb.TagNumber(5)
   $core.bool hasOutputChannel() => $_has(4);
   @$pb.TagNumber(5)
@@ -5048,10 +4354,7 @@ class AudioStream_AudioMapping extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.double get gainDb => $_getN(5);
   @$pb.TagNumber(6)
-  set gainDb($core.double v) {
-    $_setDouble(5, v);
-  }
-
+  set gainDb($core.double value) => $_setDouble(5, value);
   @$pb.TagNumber(6)
   $core.bool hasGainDb() => $_has(5);
   @$pb.TagNumber(6)
@@ -5070,40 +4373,26 @@ class AudioStream extends $pb.GeneratedMessage {
     $core.String? languageCode,
     $core.String? displayName,
   }) {
-    final $result = create();
-    if (codec != null) {
-      $result.codec = codec;
-    }
-    if (bitrateBps != null) {
-      $result.bitrateBps = bitrateBps;
-    }
-    if (channelCount != null) {
-      $result.channelCount = channelCount;
-    }
-    if (channelLayout != null) {
-      $result.channelLayout.addAll(channelLayout);
-    }
-    if (mapping != null) {
-      $result.mapping.addAll(mapping);
-    }
-    if (sampleRateHertz != null) {
-      $result.sampleRateHertz = sampleRateHertz;
-    }
-    if (languageCode != null) {
-      $result.languageCode = languageCode;
-    }
-    if (displayName != null) {
-      $result.displayName = displayName;
-    }
-    return $result;
+    final result = create();
+    if (codec != null) result.codec = codec;
+    if (bitrateBps != null) result.bitrateBps = bitrateBps;
+    if (channelCount != null) result.channelCount = channelCount;
+    if (channelLayout != null) result.channelLayout.addAll(channelLayout);
+    if (mapping != null) result.mapping.addAll(mapping);
+    if (sampleRateHertz != null) result.sampleRateHertz = sampleRateHertz;
+    if (languageCode != null) result.languageCode = languageCode;
+    if (displayName != null) result.displayName = displayName;
+    return result;
   }
-  AudioStream._() : super();
-  factory AudioStream.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory AudioStream.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  AudioStream._();
+
+  factory AudioStream.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory AudioStream.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'AudioStream',
@@ -5111,31 +4400,30 @@ class AudioStream extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.events.cloud.video.transcoder.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'codec')
-    ..a<$core.int>(2, _omitFieldNames ? '' : 'bitrateBps', $pb.PbFieldType.O3)
-    ..a<$core.int>(3, _omitFieldNames ? '' : 'channelCount', $pb.PbFieldType.O3)
+    ..aI(2, _omitFieldNames ? '' : 'bitrateBps')
+    ..aI(3, _omitFieldNames ? '' : 'channelCount')
     ..pPS(4, _omitFieldNames ? '' : 'channelLayout')
-    ..pc<AudioStream_AudioMapping>(
-        5, _omitFieldNames ? '' : 'mapping', $pb.PbFieldType.PM,
+    ..pPM<AudioStream_AudioMapping>(5, _omitFieldNames ? '' : 'mapping',
         subBuilder: AudioStream_AudioMapping.create)
-    ..a<$core.int>(
-        6, _omitFieldNames ? '' : 'sampleRateHertz', $pb.PbFieldType.O3)
+    ..aI(6, _omitFieldNames ? '' : 'sampleRateHertz')
     ..aOS(7, _omitFieldNames ? '' : 'languageCode')
     ..aOS(8, _omitFieldNames ? '' : 'displayName')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  AudioStream clone() => AudioStream()..mergeFromMessage(this);
+  AudioStream clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AudioStream copyWith(void Function(AudioStream) updates) =>
       super.copyWith((message) => updates(message as AudioStream))
           as AudioStream;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AudioStream create() => AudioStream._();
+  @$core.override
   AudioStream createEmptyInstance() => create();
-  static $pb.PbList<AudioStream> createRepeated() => $pb.PbList<AudioStream>();
   @$core.pragma('dart2js:noInline')
   static AudioStream getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<AudioStream>(create);
@@ -5154,10 +4442,7 @@ class AudioStream extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get codec => $_getSZ(0);
   @$pb.TagNumber(1)
-  set codec($core.String v) {
-    $_setString(0, v);
-  }
-
+  set codec($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasCodec() => $_has(0);
   @$pb.TagNumber(1)
@@ -5168,10 +4453,7 @@ class AudioStream extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get bitrateBps => $_getIZ(1);
   @$pb.TagNumber(2)
-  set bitrateBps($core.int v) {
-    $_setSignedInt32(1, v);
-  }
-
+  set bitrateBps($core.int value) => $_setSignedInt32(1, value);
   @$pb.TagNumber(2)
   $core.bool hasBitrateBps() => $_has(1);
   @$pb.TagNumber(2)
@@ -5181,10 +4463,7 @@ class AudioStream extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.int get channelCount => $_getIZ(2);
   @$pb.TagNumber(3)
-  set channelCount($core.int v) {
-    $_setSignedInt32(2, v);
-  }
-
+  set channelCount($core.int value) => $_setSignedInt32(2, value);
   @$pb.TagNumber(3)
   $core.bool hasChannelCount() => $_has(2);
   @$pb.TagNumber(3)
@@ -5213,10 +4492,7 @@ class AudioStream extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.int get sampleRateHertz => $_getIZ(5);
   @$pb.TagNumber(6)
-  set sampleRateHertz($core.int v) {
-    $_setSignedInt32(5, v);
-  }
-
+  set sampleRateHertz($core.int value) => $_setSignedInt32(5, value);
   @$pb.TagNumber(6)
   $core.bool hasSampleRateHertz() => $_has(5);
   @$pb.TagNumber(6)
@@ -5229,10 +4505,7 @@ class AudioStream extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get languageCode => $_getSZ(6);
   @$pb.TagNumber(7)
-  set languageCode($core.String v) {
-    $_setString(6, v);
-  }
-
+  set languageCode($core.String value) => $_setString(6, value);
   @$pb.TagNumber(7)
   $core.bool hasLanguageCode() => $_has(6);
   @$pb.TagNumber(7)
@@ -5243,10 +4516,7 @@ class AudioStream extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.String get displayName => $_getSZ(7);
   @$pb.TagNumber(8)
-  set displayName($core.String v) {
-    $_setString(7, v);
-  }
-
+  set displayName($core.String value) => $_setString(7, value);
   @$pb.TagNumber(8)
   $core.bool hasDisplayName() => $_has(7);
   @$pb.TagNumber(8)
@@ -5260,25 +4530,21 @@ class TextStream_TextMapping extends $pb.GeneratedMessage {
     $core.String? inputKey,
     $core.int? inputTrack,
   }) {
-    final $result = create();
-    if (atomKey != null) {
-      $result.atomKey = atomKey;
-    }
-    if (inputKey != null) {
-      $result.inputKey = inputKey;
-    }
-    if (inputTrack != null) {
-      $result.inputTrack = inputTrack;
-    }
-    return $result;
+    final result = create();
+    if (atomKey != null) result.atomKey = atomKey;
+    if (inputKey != null) result.inputKey = inputKey;
+    if (inputTrack != null) result.inputTrack = inputTrack;
+    return result;
   }
-  TextStream_TextMapping._() : super();
-  factory TextStream_TextMapping.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory TextStream_TextMapping.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  TextStream_TextMapping._();
+
+  factory TextStream_TextMapping.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory TextStream_TextMapping.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'TextStream.TextMapping',
@@ -5287,25 +4553,24 @@ class TextStream_TextMapping extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'atomKey')
     ..aOS(2, _omitFieldNames ? '' : 'inputKey')
-    ..a<$core.int>(3, _omitFieldNames ? '' : 'inputTrack', $pb.PbFieldType.O3)
+    ..aI(3, _omitFieldNames ? '' : 'inputTrack')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  TextStream_TextMapping clone() =>
-      TextStream_TextMapping()..mergeFromMessage(this);
+  TextStream_TextMapping clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TextStream_TextMapping copyWith(
           void Function(TextStream_TextMapping) updates) =>
       super.copyWith((message) => updates(message as TextStream_TextMapping))
           as TextStream_TextMapping;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static TextStream_TextMapping create() => TextStream_TextMapping._();
+  @$core.override
   TextStream_TextMapping createEmptyInstance() => create();
-  static $pb.PbList<TextStream_TextMapping> createRepeated() =>
-      $pb.PbList<TextStream_TextMapping>();
   @$core.pragma('dart2js:noInline')
   static TextStream_TextMapping getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<TextStream_TextMapping>(create);
@@ -5316,10 +4581,7 @@ class TextStream_TextMapping extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get atomKey => $_getSZ(0);
   @$pb.TagNumber(1)
-  set atomKey($core.String v) {
-    $_setString(0, v);
-  }
-
+  set atomKey($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasAtomKey() => $_has(0);
   @$pb.TagNumber(1)
@@ -5329,10 +4591,7 @@ class TextStream_TextMapping extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get inputKey => $_getSZ(1);
   @$pb.TagNumber(2)
-  set inputKey($core.String v) {
-    $_setString(1, v);
-  }
-
+  set inputKey($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasInputKey() => $_has(1);
   @$pb.TagNumber(2)
@@ -5342,10 +4601,7 @@ class TextStream_TextMapping extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.int get inputTrack => $_getIZ(2);
   @$pb.TagNumber(3)
-  set inputTrack($core.int v) {
-    $_setSignedInt32(2, v);
-  }
-
+  set inputTrack($core.int value) => $_setSignedInt32(2, value);
   @$pb.TagNumber(3)
   $core.bool hasInputTrack() => $_has(2);
   @$pb.TagNumber(3)
@@ -5360,28 +4616,22 @@ class TextStream extends $pb.GeneratedMessage {
     $core.Iterable<TextStream_TextMapping>? mapping,
     $core.String? displayName,
   }) {
-    final $result = create();
-    if (codec != null) {
-      $result.codec = codec;
-    }
-    if (languageCode != null) {
-      $result.languageCode = languageCode;
-    }
-    if (mapping != null) {
-      $result.mapping.addAll(mapping);
-    }
-    if (displayName != null) {
-      $result.displayName = displayName;
-    }
-    return $result;
+    final result = create();
+    if (codec != null) result.codec = codec;
+    if (languageCode != null) result.languageCode = languageCode;
+    if (mapping != null) result.mapping.addAll(mapping);
+    if (displayName != null) result.displayName = displayName;
+    return result;
   }
-  TextStream._() : super();
-  factory TextStream.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory TextStream.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  TextStream._();
+
+  factory TextStream.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory TextStream.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'TextStream',
@@ -5390,24 +4640,24 @@ class TextStream extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'codec')
     ..aOS(2, _omitFieldNames ? '' : 'languageCode')
-    ..pc<TextStream_TextMapping>(
-        3, _omitFieldNames ? '' : 'mapping', $pb.PbFieldType.PM,
+    ..pPM<TextStream_TextMapping>(3, _omitFieldNames ? '' : 'mapping',
         subBuilder: TextStream_TextMapping.create)
     ..aOS(4, _omitFieldNames ? '' : 'displayName')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  TextStream clone() => TextStream()..mergeFromMessage(this);
+  TextStream clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TextStream copyWith(void Function(TextStream) updates) =>
       super.copyWith((message) => updates(message as TextStream)) as TextStream;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static TextStream create() => TextStream._();
+  @$core.override
   TextStream createEmptyInstance() => create();
-  static $pb.PbList<TextStream> createRepeated() => $pb.PbList<TextStream>();
   @$core.pragma('dart2js:noInline')
   static TextStream getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<TextStream>(create);
@@ -5425,10 +4675,7 @@ class TextStream extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get codec => $_getSZ(0);
   @$pb.TagNumber(1)
-  set codec($core.String v) {
-    $_setString(0, v);
-  }
-
+  set codec($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasCodec() => $_has(0);
   @$pb.TagNumber(1)
@@ -5441,10 +4688,7 @@ class TextStream extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get languageCode => $_getSZ(1);
   @$pb.TagNumber(2)
-  set languageCode($core.String v) {
-    $_setString(1, v);
-  }
-
+  set languageCode($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasLanguageCode() => $_has(1);
   @$pb.TagNumber(2)
@@ -5459,10 +4703,7 @@ class TextStream extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get displayName => $_getSZ(3);
   @$pb.TagNumber(4)
-  set displayName($core.String v) {
-    $_setString(3, v);
-  }
-
+  set displayName($core.String value) => $_setString(3, value);
   @$pb.TagNumber(4)
   $core.bool hasDisplayName() => $_has(3);
   @$pb.TagNumber(4)
@@ -5472,50 +4713,49 @@ class TextStream extends $pb.GeneratedMessage {
 /// Segment settings for `ts`, `fmp4` and `vtt`.
 class SegmentSettings extends $pb.GeneratedMessage {
   factory SegmentSettings({
-    $0.Duration? segmentDuration,
+    $2.Duration? segmentDuration,
     $core.bool? individualSegments,
   }) {
-    final $result = create();
-    if (segmentDuration != null) {
-      $result.segmentDuration = segmentDuration;
-    }
-    if (individualSegments != null) {
-      $result.individualSegments = individualSegments;
-    }
-    return $result;
+    final result = create();
+    if (segmentDuration != null) result.segmentDuration = segmentDuration;
+    if (individualSegments != null)
+      result.individualSegments = individualSegments;
+    return result;
   }
-  SegmentSettings._() : super();
-  factory SegmentSettings.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory SegmentSettings.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  SegmentSettings._();
+
+  factory SegmentSettings.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory SegmentSettings.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'SegmentSettings',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.video.transcoder.v1'),
       createEmptyInstance: create)
-    ..aOM<$0.Duration>(1, _omitFieldNames ? '' : 'segmentDuration',
-        subBuilder: $0.Duration.create)
+    ..aOM<$2.Duration>(1, _omitFieldNames ? '' : 'segmentDuration',
+        subBuilder: $2.Duration.create)
     ..aOB(3, _omitFieldNames ? '' : 'individualSegments')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  SegmentSettings clone() => SegmentSettings()..mergeFromMessage(this);
+  SegmentSettings clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   SegmentSettings copyWith(void Function(SegmentSettings) updates) =>
       super.copyWith((message) => updates(message as SegmentSettings))
           as SegmentSettings;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SegmentSettings create() => SegmentSettings._();
+  @$core.override
   SegmentSettings createEmptyInstance() => create();
-  static $pb.PbList<SegmentSettings> createRepeated() =>
-      $pb.PbList<SegmentSettings>();
   @$core.pragma('dart2js:noInline')
   static SegmentSettings getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<SegmentSettings>(create);
@@ -5526,27 +4766,21 @@ class SegmentSettings extends $pb.GeneratedMessage {
   /// [`gopDuration`](#videostream), and `segmentDuration` must be divisible by
   /// [`gopDuration`](#videostream).
   @$pb.TagNumber(1)
-  $0.Duration get segmentDuration => $_getN(0);
+  $2.Duration get segmentDuration => $_getN(0);
   @$pb.TagNumber(1)
-  set segmentDuration($0.Duration v) {
-    $_setField(1, v);
-  }
-
+  set segmentDuration($2.Duration value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasSegmentDuration() => $_has(0);
   @$pb.TagNumber(1)
   void clearSegmentDuration() => $_clearField(1);
   @$pb.TagNumber(1)
-  $0.Duration ensureSegmentDuration() => $_ensure(0);
+  $2.Duration ensureSegmentDuration() => $_ensure(0);
 
   /// Required. Create an individual segment file. The default is `false`.
   @$pb.TagNumber(3)
   $core.bool get individualSegments => $_getBF(1);
   @$pb.TagNumber(3)
-  set individualSegments($core.bool v) {
-    $_setBool(1, v);
-  }
-
+  set individualSegments($core.bool value) => $_setBool(1, value);
   @$pb.TagNumber(3)
   $core.bool hasIndividualSegments() => $_has(1);
   @$pb.TagNumber(3)
@@ -5558,19 +4792,19 @@ class JobEventData extends $pb.GeneratedMessage {
   factory JobEventData({
     Job? payload,
   }) {
-    final $result = create();
-    if (payload != null) {
-      $result.payload = payload;
-    }
-    return $result;
+    final result = create();
+    if (payload != null) result.payload = payload;
+    return result;
   }
-  JobEventData._() : super();
-  factory JobEventData.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory JobEventData.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  JobEventData._();
+
+  factory JobEventData.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory JobEventData.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'JobEventData',
@@ -5581,19 +4815,19 @@ class JobEventData extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  JobEventData clone() => JobEventData()..mergeFromMessage(this);
+  JobEventData clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   JobEventData copyWith(void Function(JobEventData) updates) =>
       super.copyWith((message) => updates(message as JobEventData))
           as JobEventData;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static JobEventData create() => JobEventData._();
+  @$core.override
   JobEventData createEmptyInstance() => create();
-  static $pb.PbList<JobEventData> createRepeated() =>
-      $pb.PbList<JobEventData>();
   @$core.pragma('dart2js:noInline')
   static JobEventData getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<JobEventData>(create);
@@ -5603,10 +4837,7 @@ class JobEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   Job get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(Job v) {
-    $_setField(1, v);
-  }
-
+  set payload(Job value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -5620,19 +4851,19 @@ class JobTemplateEventData extends $pb.GeneratedMessage {
   factory JobTemplateEventData({
     JobTemplate? payload,
   }) {
-    final $result = create();
-    if (payload != null) {
-      $result.payload = payload;
-    }
-    return $result;
+    final result = create();
+    if (payload != null) result.payload = payload;
+    return result;
   }
-  JobTemplateEventData._() : super();
-  factory JobTemplateEventData.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory JobTemplateEventData.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  JobTemplateEventData._();
+
+  factory JobTemplateEventData.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory JobTemplateEventData.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'JobTemplateEventData',
@@ -5644,20 +4875,19 @@ class JobTemplateEventData extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  JobTemplateEventData clone() =>
-      JobTemplateEventData()..mergeFromMessage(this);
+  JobTemplateEventData clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   JobTemplateEventData copyWith(void Function(JobTemplateEventData) updates) =>
       super.copyWith((message) => updates(message as JobTemplateEventData))
           as JobTemplateEventData;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static JobTemplateEventData create() => JobTemplateEventData._();
+  @$core.override
   JobTemplateEventData createEmptyInstance() => create();
-  static $pb.PbList<JobTemplateEventData> createRepeated() =>
-      $pb.PbList<JobTemplateEventData>();
   @$core.pragma('dart2js:noInline')
   static JobTemplateEventData getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<JobTemplateEventData>(create);
@@ -5667,10 +4897,7 @@ class JobTemplateEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   JobTemplate get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(JobTemplate v) {
-    $_setField(1, v);
-  }
-
+  set payload(JobTemplate value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -5679,6 +4906,7 @@ class JobTemplateEventData extends $pb.GeneratedMessage {
   JobTemplate ensurePayload() => $_ensure(0);
 }
 
-const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames =
+const $core.bool _omitFieldNames =
+    $core.bool.fromEnvironment('protobuf.omit_field_names');
+const $core.bool _omitMessageNames =
     $core.bool.fromEnvironment('protobuf.omit_message_names');

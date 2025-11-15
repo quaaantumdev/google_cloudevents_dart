@@ -1,13 +1,14 @@
+// This is a generated file - do not edit.
 //
-//  Generated code. Do not modify.
-//  source: google/events/cloud/apihub/v1/data.proto
-//
+// Generated from google/events/cloud/apihub/v1/data.proto.
+
 // @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
-// ignore_for_file: constant_identifier_names, library_prefixes
-// ignore_for_file: non_constant_identifier_names, prefer_final_fields
-// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
+// ignore_for_file: constant_identifier_names
+// ignore_for_file: curly_braces_in_flow_control_structures
+// ignore_for_file: deprecated_member_use_from_same_package, library_prefixes
+// ignore_for_file: non_constant_identifier_names
 
 import 'dart:core' as $core;
 
@@ -38,7 +39,7 @@ class LintState extends $pb.ProtobufEnum {
   static LintState? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const LintState._(super.v, super.n);
+  const LintState._(super.value, super.name);
 }
 
 /// Enumeration of linter types.
@@ -64,7 +65,7 @@ class Linter extends $pb.ProtobufEnum {
   static Linter? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Linter._(super.v, super.n);
+  const Linter._(super.value, super.name);
 }
 
 /// Severity of the issue.
@@ -102,7 +103,7 @@ class Severity extends $pb.ProtobufEnum {
   static Severity? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Severity._(super.v, super.n);
+  const Severity._(super.value, super.name);
 }
 
 /// Enumeration of attribute definition types.
@@ -133,7 +134,7 @@ class Attribute_DefinitionType extends $pb.ProtobufEnum {
   static Attribute_DefinitionType? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Attribute_DefinitionType._(super.v, super.n);
+  const Attribute_DefinitionType._(super.value, super.name);
 }
 
 /// Enumeration for the scope of the attribute representing the resource in the
@@ -197,7 +198,7 @@ class Attribute_Scope extends $pb.ProtobufEnum {
   static Attribute_Scope? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Attribute_Scope._(super.v, super.n);
+  const Attribute_Scope._(super.value, super.name);
 }
 
 /// Enumeration of attribute's data type.
@@ -230,7 +231,7 @@ class Attribute_DataType extends $pb.ProtobufEnum {
   static Attribute_DataType? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Attribute_DataType._(super.v, super.n);
+  const Attribute_DataType._(super.value, super.name);
 }
 
 /// Enumeration of spec formats.
@@ -265,7 +266,7 @@ class OpenApiSpecDetails_Format extends $pb.ProtobufEnum {
   static OpenApiSpecDetails_Format? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const OpenApiSpecDetails_Format._(super.v, super.n);
+  const OpenApiSpecDetails_Format._(super.value, super.name);
 }
 
 /// Possible states for a dependency.
@@ -295,7 +296,7 @@ class Dependency_State extends $pb.ProtobufEnum {
   static Dependency_State? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Dependency_State._(super.v, super.n);
+  const Dependency_State._(super.value, super.name);
 }
 
 /// Possible modes of discovering the dependency.
@@ -320,7 +321,7 @@ class Dependency_DiscoveryMode extends $pb.ProtobufEnum {
   static Dependency_DiscoveryMode? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Dependency_DiscoveryMode._(super.v, super.n);
+  const Dependency_DiscoveryMode._(super.value, super.name);
 }
 
 /// Possible values representing an error in the dependency.
@@ -352,7 +353,7 @@ class DependencyErrorDetail_Error extends $pb.ProtobufEnum {
   static DependencyErrorDetail_Error? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const DependencyErrorDetail_Error._(super.v, super.n);
+  const DependencyErrorDetail_Error._(super.value, super.name);
 }
 
 /// State of the ApiHub Instance.
@@ -400,7 +401,8 @@ class ApiHubInstance_State extends $pb.ProtobufEnum {
   static ApiHubInstance_State? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const ApiHubInstance_State._(super.v, super.n);
+  const ApiHubInstance_State._(super.value, super.name);
 }
 
-const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');
+const $core.bool _omitEnumNames =
+    $core.bool.fromEnvironment('protobuf.omit_enum_names');

@@ -1,13 +1,14 @@
+// This is a generated file - do not edit.
 //
-//  Generated code. Do not modify.
-//  source: google/events/cloud/gkehub/v1/data.proto
-//
+// Generated from google/events/cloud/gkehub/v1/data.proto.
+
 // @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
-// ignore_for_file: constant_identifier_names, library_prefixes
-// ignore_for_file: non_constant_identifier_names, prefer_final_fields
-// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
+// ignore_for_file: constant_identifier_names
+// ignore_for_file: curly_braces_in_flow_control_structures
+// ignore_for_file: deprecated_member_use_from_same_package, library_prefixes
+// ignore_for_file: non_constant_identifier_names
 
 import 'dart:core' as $core;
 
@@ -58,7 +59,7 @@ class FeatureResourceState_State extends $pb.ProtobufEnum {
   static FeatureResourceState_State? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const FeatureResourceState_State._(super.v, super.n);
+  const FeatureResourceState_State._(super.value, super.name);
 }
 
 /// Code represents a machine-readable, high-level status of the Feature.
@@ -97,7 +98,7 @@ class FeatureState_Code extends $pb.ProtobufEnum {
   static FeatureState_Code? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const FeatureState_Code._(super.v, super.n);
+  const FeatureState_Code._(super.value, super.name);
 }
 
 /// Code describes the state of a Scope resource.
@@ -136,7 +137,7 @@ class ScopeLifecycleState_Code extends $pb.ProtobufEnum {
   static ScopeLifecycleState_Code? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const ScopeLifecycleState_Code._(super.v, super.n);
+  const ScopeLifecycleState_Code._(super.value, super.name);
 }
 
 /// Code describes the state of a MembershipBinding resource.
@@ -179,7 +180,7 @@ class MembershipBindingLifecycleState_Code extends $pb.ProtobufEnum {
   static MembershipBindingLifecycleState_Code? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const MembershipBindingLifecycleState_Code._(super.v, super.n);
+  const MembershipBindingLifecycleState_Code._(super.value, super.name);
 }
 
 /// ClusterType describes on prem cluster's type.
@@ -219,7 +220,7 @@ class OnPremCluster_ClusterType extends $pb.ProtobufEnum {
   static OnPremCluster_ClusterType? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const OnPremCluster_ClusterType._(super.v, super.n);
+  const OnPremCluster_ClusterType._(super.value, super.name);
 }
 
 /// Code describes the state of a Membership resource.
@@ -262,7 +263,8 @@ class MembershipState_Code extends $pb.ProtobufEnum {
   static MembershipState_Code? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const MembershipState_Code._(super.v, super.n);
+  const MembershipState_Code._(super.value, super.name);
 }
 
-const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');
+const $core.bool _omitEnumNames =
+    $core.bool.fromEnvironment('protobuf.omit_enum_names');

@@ -1,13 +1,14 @@
+// This is a generated file - do not edit.
 //
-//  Generated code. Do not modify.
-//  source: google/events/cloud/networkservices/v1/data.proto
-//
+// Generated from google/events/cloud/networkservices/v1/data.proto.
+
 // @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
-// ignore_for_file: constant_identifier_names, library_prefixes
-// ignore_for_file: non_constant_identifier_names, prefer_final_fields
-// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
+// ignore_for_file: constant_identifier_names
+// ignore_for_file: curly_braces_in_flow_control_structures
+// ignore_for_file: deprecated_member_use_from_same_package, library_prefixes
+// ignore_for_file: non_constant_identifier_names
 
 import 'dart:core' as $core;
 
@@ -53,7 +54,7 @@ class EndpointMatcher_MetadataLabelMatcher_MetadataLabelMatchCriteria
           value < 0 || value >= _byValue.length ? null : _byValue[value];
 
   const EndpointMatcher_MetadataLabelMatcher_MetadataLabelMatchCriteria._(
-      super.v, super.n);
+      super.value, super.name);
 }
 
 /// The type of endpoint policy.
@@ -85,7 +86,7 @@ class EndpointPolicy_EndpointPolicyType extends $pb.ProtobufEnum {
   static EndpointPolicy_EndpointPolicyType? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const EndpointPolicy_EndpointPolicyType._(super.v, super.n);
+  const EndpointPolicy_EndpointPolicyType._(super.value, super.name);
 }
 
 /// The type of the customer-managed gateway.
@@ -117,7 +118,7 @@ class Gateway_Type extends $pb.ProtobufEnum {
   static Gateway_Type? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Gateway_Type._(super.v, super.n);
+  const Gateway_Type._(super.value, super.name);
 }
 
 /// The type of the match.
@@ -148,7 +149,7 @@ class GrpcRoute_MethodMatch_Type extends $pb.ProtobufEnum {
   static GrpcRoute_MethodMatch_Type? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const GrpcRoute_MethodMatch_Type._(super.v, super.n);
+  const GrpcRoute_MethodMatch_Type._(super.value, super.name);
 }
 
 /// The type of match.
@@ -179,7 +180,7 @@ class GrpcRoute_HeaderMatch_Type extends $pb.ProtobufEnum {
   static GrpcRoute_HeaderMatch_Type? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const GrpcRoute_HeaderMatch_Type._(super.v, super.n);
+  const GrpcRoute_HeaderMatch_Type._(super.value, super.name);
 }
 
 /// Supported HTTP response code.
@@ -227,7 +228,8 @@ class HttpRoute_Redirect_ResponseCode extends $pb.ProtobufEnum {
   static HttpRoute_Redirect_ResponseCode? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const HttpRoute_Redirect_ResponseCode._(super.v, super.n);
+  const HttpRoute_Redirect_ResponseCode._(super.value, super.name);
 }
 
-const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');
+const $core.bool _omitEnumNames =
+    $core.bool.fromEnvironment('protobuf.omit_enum_names');

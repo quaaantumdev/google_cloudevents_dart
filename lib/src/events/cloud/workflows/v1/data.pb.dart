@@ -1,19 +1,20 @@
+// This is a generated file - do not edit.
 //
-//  Generated code. Do not modify.
-//  source: google/events/cloud/workflows/v1/data.proto
-//
+// Generated from google/events/cloud/workflows/v1/data.proto.
+
 // @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
-// ignore_for_file: constant_identifier_names, library_prefixes
-// ignore_for_file: non_constant_identifier_names, prefer_final_fields
-// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
+// ignore_for_file: constant_identifier_names
+// ignore_for_file: curly_braces_in_flow_control_structures
+// ignore_for_file: deprecated_member_use_from_same_package, library_prefixes
+// ignore_for_file: non_constant_identifier_names
 
 import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/timestamp.pb.dart' as $2;
+import '../../../../protobuf/timestamp.pb.dart' as $0;
 import 'data.pbenum.dart';
 
 export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
@@ -29,53 +30,36 @@ class Workflow extends $pb.GeneratedMessage {
     $core.String? description,
     Workflow_State? state,
     $core.String? revisionId,
-    $2.Timestamp? createTime,
-    $2.Timestamp? updateTime,
-    $2.Timestamp? revisionCreateTime,
+    $0.Timestamp? createTime,
+    $0.Timestamp? updateTime,
+    $0.Timestamp? revisionCreateTime,
     $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.String? serviceAccount,
     $core.String? sourceContents,
   }) {
-    final $result = create();
-    if (name != null) {
-      $result.name = name;
-    }
-    if (description != null) {
-      $result.description = description;
-    }
-    if (state != null) {
-      $result.state = state;
-    }
-    if (revisionId != null) {
-      $result.revisionId = revisionId;
-    }
-    if (createTime != null) {
-      $result.createTime = createTime;
-    }
-    if (updateTime != null) {
-      $result.updateTime = updateTime;
-    }
-    if (revisionCreateTime != null) {
-      $result.revisionCreateTime = revisionCreateTime;
-    }
-    if (labels != null) {
-      $result.labels.addEntries(labels);
-    }
-    if (serviceAccount != null) {
-      $result.serviceAccount = serviceAccount;
-    }
-    if (sourceContents != null) {
-      $result.sourceContents = sourceContents;
-    }
-    return $result;
+    final result = create();
+    if (name != null) result.name = name;
+    if (description != null) result.description = description;
+    if (state != null) result.state = state;
+    if (revisionId != null) result.revisionId = revisionId;
+    if (createTime != null) result.createTime = createTime;
+    if (updateTime != null) result.updateTime = updateTime;
+    if (revisionCreateTime != null)
+      result.revisionCreateTime = revisionCreateTime;
+    if (labels != null) result.labels.addEntries(labels);
+    if (serviceAccount != null) result.serviceAccount = serviceAccount;
+    if (sourceContents != null) result.sourceContents = sourceContents;
+    return result;
   }
-  Workflow._() : super();
-  factory Workflow.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Workflow.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  Workflow._();
+
+  factory Workflow.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory Workflow.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static const $core.Map<$core.int, Workflow_SourceCode>
       _Workflow_SourceCodeByTag = {
@@ -90,17 +74,15 @@ class Workflow extends $pb.GeneratedMessage {
     ..oo(0, [10])
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'description')
-    ..e<Workflow_State>(3, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
-        defaultOrMaker: Workflow_State.STATE_UNSPECIFIED,
-        valueOf: Workflow_State.valueOf,
+    ..aE<Workflow_State>(3, _omitFieldNames ? '' : 'state',
         enumValues: Workflow_State.values)
     ..aOS(4, _omitFieldNames ? '' : 'revisionId')
-    ..aOM<$2.Timestamp>(5, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(6, _omitFieldNames ? '' : 'updateTime',
-        subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(7, _omitFieldNames ? '' : 'revisionCreateTime',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$0.Timestamp>(5, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(6, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(7, _omitFieldNames ? '' : 'revisionCreateTime',
+        subBuilder: $0.Timestamp.create)
     ..m<$core.String, $core.String>(8, _omitFieldNames ? '' : 'labels',
         entryClassName: 'Workflow.LabelsEntry',
         keyFieldType: $pb.PbFieldType.OS,
@@ -111,24 +93,27 @@ class Workflow extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  Workflow clone() => Workflow()..mergeFromMessage(this);
+  Workflow clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Workflow copyWith(void Function(Workflow) updates) =>
       super.copyWith((message) => updates(message as Workflow)) as Workflow;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Workflow create() => Workflow._();
+  @$core.override
   Workflow createEmptyInstance() => create();
-  static $pb.PbList<Workflow> createRepeated() => $pb.PbList<Workflow>();
   @$core.pragma('dart2js:noInline')
   static Workflow getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Workflow>(create);
   static Workflow? _defaultInstance;
 
+  @$pb.TagNumber(10)
   Workflow_SourceCode whichSourceCode() =>
       _Workflow_SourceCodeByTag[$_whichOneof(0)]!;
+  @$pb.TagNumber(10)
   void clearSourceCode() => $_clearField($_whichOneof(0));
 
   /// The resource name of the workflow.
@@ -136,10 +121,7 @@ class Workflow extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) {
-    $_setString(0, v);
-  }
-
+  set name($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -150,10 +132,7 @@ class Workflow extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get description => $_getSZ(1);
   @$pb.TagNumber(2)
-  set description($core.String v) {
-    $_setString(1, v);
-  }
-
+  set description($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasDescription() => $_has(1);
   @$pb.TagNumber(2)
@@ -163,10 +142,7 @@ class Workflow extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   Workflow_State get state => $_getN(2);
   @$pb.TagNumber(3)
-  set state(Workflow_State v) {
-    $_setField(3, v);
-  }
-
+  set state(Workflow_State value) => $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasState() => $_has(2);
   @$pb.TagNumber(3)
@@ -186,10 +162,7 @@ class Workflow extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get revisionId => $_getSZ(3);
   @$pb.TagNumber(4)
-  set revisionId($core.String v) {
-    $_setString(3, v);
-  }
-
+  set revisionId($core.String value) => $_setString(3, value);
   @$pb.TagNumber(4)
   $core.bool hasRevisionId() => $_has(3);
   @$pb.TagNumber(4)
@@ -197,49 +170,40 @@ class Workflow extends $pb.GeneratedMessage {
 
   /// Output only. The timestamp of when the workflow was created.
   @$pb.TagNumber(5)
-  $2.Timestamp get createTime => $_getN(4);
+  $0.Timestamp get createTime => $_getN(4);
   @$pb.TagNumber(5)
-  set createTime($2.Timestamp v) {
-    $_setField(5, v);
-  }
-
+  set createTime($0.Timestamp value) => $_setField(5, value);
   @$pb.TagNumber(5)
   $core.bool hasCreateTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearCreateTime() => $_clearField(5);
   @$pb.TagNumber(5)
-  $2.Timestamp ensureCreateTime() => $_ensure(4);
+  $0.Timestamp ensureCreateTime() => $_ensure(4);
 
   /// Output only. The last update timestamp of the workflow.
   @$pb.TagNumber(6)
-  $2.Timestamp get updateTime => $_getN(5);
+  $0.Timestamp get updateTime => $_getN(5);
   @$pb.TagNumber(6)
-  set updateTime($2.Timestamp v) {
-    $_setField(6, v);
-  }
-
+  set updateTime($0.Timestamp value) => $_setField(6, value);
   @$pb.TagNumber(6)
   $core.bool hasUpdateTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearUpdateTime() => $_clearField(6);
   @$pb.TagNumber(6)
-  $2.Timestamp ensureUpdateTime() => $_ensure(5);
+  $0.Timestamp ensureUpdateTime() => $_ensure(5);
 
   /// Output only. The timestamp that the latest revision of the workflow
   /// was created.
   @$pb.TagNumber(7)
-  $2.Timestamp get revisionCreateTime => $_getN(6);
+  $0.Timestamp get revisionCreateTime => $_getN(6);
   @$pb.TagNumber(7)
-  set revisionCreateTime($2.Timestamp v) {
-    $_setField(7, v);
-  }
-
+  set revisionCreateTime($0.Timestamp value) => $_setField(7, value);
   @$pb.TagNumber(7)
   $core.bool hasRevisionCreateTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearRevisionCreateTime() => $_clearField(7);
   @$pb.TagNumber(7)
-  $2.Timestamp ensureRevisionCreateTime() => $_ensure(6);
+  $0.Timestamp ensureRevisionCreateTime() => $_ensure(6);
 
   /// Labels associated with this workflow.
   /// Labels can contain at most 64 entries. Keys and values can be no longer
@@ -264,10 +228,7 @@ class Workflow extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.String get serviceAccount => $_getSZ(8);
   @$pb.TagNumber(9)
-  set serviceAccount($core.String v) {
-    $_setString(8, v);
-  }
-
+  set serviceAccount($core.String value) => $_setString(8, value);
   @$pb.TagNumber(9)
   $core.bool hasServiceAccount() => $_has(8);
   @$pb.TagNumber(9)
@@ -277,10 +238,7 @@ class Workflow extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.String get sourceContents => $_getSZ(9);
   @$pb.TagNumber(10)
-  set sourceContents($core.String v) {
-    $_setString(9, v);
-  }
-
+  set sourceContents($core.String value) => $_setString(9, value);
   @$pb.TagNumber(10)
   $core.bool hasSourceContents() => $_has(9);
   @$pb.TagNumber(10)
@@ -292,19 +250,19 @@ class WorkflowEventData extends $pb.GeneratedMessage {
   factory WorkflowEventData({
     Workflow? payload,
   }) {
-    final $result = create();
-    if (payload != null) {
-      $result.payload = payload;
-    }
-    return $result;
+    final result = create();
+    if (payload != null) result.payload = payload;
+    return result;
   }
-  WorkflowEventData._() : super();
-  factory WorkflowEventData.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory WorkflowEventData.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  WorkflowEventData._();
+
+  factory WorkflowEventData.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory WorkflowEventData.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'WorkflowEventData',
@@ -316,19 +274,19 @@ class WorkflowEventData extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  WorkflowEventData clone() => WorkflowEventData()..mergeFromMessage(this);
+  WorkflowEventData clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   WorkflowEventData copyWith(void Function(WorkflowEventData) updates) =>
       super.copyWith((message) => updates(message as WorkflowEventData))
           as WorkflowEventData;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static WorkflowEventData create() => WorkflowEventData._();
+  @$core.override
   WorkflowEventData createEmptyInstance() => create();
-  static $pb.PbList<WorkflowEventData> createRepeated() =>
-      $pb.PbList<WorkflowEventData>();
   @$core.pragma('dart2js:noInline')
   static WorkflowEventData getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<WorkflowEventData>(create);
@@ -338,10 +296,7 @@ class WorkflowEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   Workflow get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(Workflow v) {
-    $_setField(1, v);
-  }
-
+  set payload(Workflow value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -350,6 +305,7 @@ class WorkflowEventData extends $pb.GeneratedMessage {
   Workflow ensurePayload() => $_ensure(0);
 }
 
-const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames =
+const $core.bool _omitFieldNames =
+    $core.bool.fromEnvironment('protobuf.omit_field_names');
+const $core.bool _omitMessageNames =
     $core.bool.fromEnvironment('protobuf.omit_message_names');

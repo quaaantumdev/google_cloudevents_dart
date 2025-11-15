@@ -1,19 +1,20 @@
+// This is a generated file - do not edit.
 //
-//  Generated code. Do not modify.
-//  source: google/type/color.proto
-//
+// Generated from google/type/color.proto.
+
 // @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
-// ignore_for_file: constant_identifier_names, library_prefixes
-// ignore_for_file: non_constant_identifier_names, prefer_final_fields
-// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
+// ignore_for_file: constant_identifier_names
+// ignore_for_file: curly_braces_in_flow_control_structures
+// ignore_for_file: deprecated_member_use_from_same_package, library_prefixes
+// ignore_for_file: non_constant_identifier_names
 
 import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../protobuf/wrappers.pb.dart' as $21;
+import '../protobuf/wrappers.pb.dart' as $0;
 
 export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
@@ -141,54 +142,49 @@ class Color extends $pb.GeneratedMessage {
     $core.double? red,
     $core.double? green,
     $core.double? blue,
-    $21.FloatValue? alpha,
+    $0.FloatValue? alpha,
   }) {
-    final $result = create();
-    if (red != null) {
-      $result.red = red;
-    }
-    if (green != null) {
-      $result.green = green;
-    }
-    if (blue != null) {
-      $result.blue = blue;
-    }
-    if (alpha != null) {
-      $result.alpha = alpha;
-    }
-    return $result;
+    final result = create();
+    if (red != null) result.red = red;
+    if (green != null) result.green = green;
+    if (blue != null) result.blue = blue;
+    if (alpha != null) result.alpha = alpha;
+    return result;
   }
-  Color._() : super();
-  factory Color.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Color.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  Color._();
+
+  factory Color.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory Color.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'Color',
       package: const $pb.PackageName(_omitMessageNames ? '' : 'google.type'),
       createEmptyInstance: create)
-    ..a<$core.double>(1, _omitFieldNames ? '' : 'red', $pb.PbFieldType.OF)
-    ..a<$core.double>(2, _omitFieldNames ? '' : 'green', $pb.PbFieldType.OF)
-    ..a<$core.double>(3, _omitFieldNames ? '' : 'blue', $pb.PbFieldType.OF)
-    ..aOM<$21.FloatValue>(4, _omitFieldNames ? '' : 'alpha',
-        subBuilder: $21.FloatValue.create)
+    ..aD(1, _omitFieldNames ? '' : 'red', fieldType: $pb.PbFieldType.OF)
+    ..aD(2, _omitFieldNames ? '' : 'green', fieldType: $pb.PbFieldType.OF)
+    ..aD(3, _omitFieldNames ? '' : 'blue', fieldType: $pb.PbFieldType.OF)
+    ..aOM<$0.FloatValue>(4, _omitFieldNames ? '' : 'alpha',
+        subBuilder: $0.FloatValue.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  Color clone() => Color()..mergeFromMessage(this);
+  Color clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Color copyWith(void Function(Color) updates) =>
       super.copyWith((message) => updates(message as Color)) as Color;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Color create() => Color._();
+  @$core.override
   Color createEmptyInstance() => create();
-  static $pb.PbList<Color> createRepeated() => $pb.PbList<Color>();
   @$core.pragma('dart2js:noInline')
   static Color getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Color>(create);
@@ -198,10 +194,7 @@ class Color extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.double get red => $_getN(0);
   @$pb.TagNumber(1)
-  set red($core.double v) {
-    $_setFloat(0, v);
-  }
-
+  set red($core.double value) => $_setFloat(0, value);
   @$pb.TagNumber(1)
   $core.bool hasRed() => $_has(0);
   @$pb.TagNumber(1)
@@ -211,10 +204,7 @@ class Color extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.double get green => $_getN(1);
   @$pb.TagNumber(2)
-  set green($core.double v) {
-    $_setFloat(1, v);
-  }
-
+  set green($core.double value) => $_setFloat(1, value);
   @$pb.TagNumber(2)
   $core.bool hasGreen() => $_has(1);
   @$pb.TagNumber(2)
@@ -224,10 +214,7 @@ class Color extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.double get blue => $_getN(2);
   @$pb.TagNumber(3)
-  set blue($core.double v) {
-    $_setFloat(2, v);
-  }
-
+  set blue($core.double value) => $_setFloat(2, value);
   @$pb.TagNumber(3)
   $core.bool hasBlue() => $_has(2);
   @$pb.TagNumber(3)
@@ -245,20 +232,18 @@ class Color extends $pb.GeneratedMessage {
   /// If omitted, this color object is to be rendered as a solid color
   /// (as if the alpha value had been explicitly given with a value of 1.0).
   @$pb.TagNumber(4)
-  $21.FloatValue get alpha => $_getN(3);
+  $0.FloatValue get alpha => $_getN(3);
   @$pb.TagNumber(4)
-  set alpha($21.FloatValue v) {
-    $_setField(4, v);
-  }
-
+  set alpha($0.FloatValue value) => $_setField(4, value);
   @$pb.TagNumber(4)
   $core.bool hasAlpha() => $_has(3);
   @$pb.TagNumber(4)
   void clearAlpha() => $_clearField(4);
   @$pb.TagNumber(4)
-  $21.FloatValue ensureAlpha() => $_ensure(3);
+  $0.FloatValue ensureAlpha() => $_ensure(3);
 }
 
-const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames =
+const $core.bool _omitFieldNames =
+    $core.bool.fromEnvironment('protobuf.omit_field_names');
+const $core.bool _omitMessageNames =
     $core.bool.fromEnvironment('protobuf.omit_message_names');

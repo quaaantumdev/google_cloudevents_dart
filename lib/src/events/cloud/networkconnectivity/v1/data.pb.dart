@@ -1,21 +1,22 @@
+// This is a generated file - do not edit.
 //
-//  Generated code. Do not modify.
-//  source: google/events/cloud/networkconnectivity/v1/data.proto
-//
+// Generated from google/events/cloud/networkconnectivity/v1/data.proto.
+
 // @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
-// ignore_for_file: constant_identifier_names, library_prefixes
-// ignore_for_file: non_constant_identifier_names, prefer_final_fields
-// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
+// ignore_for_file: constant_identifier_names
+// ignore_for_file: curly_braces_in_flow_control_structures
+// ignore_for_file: deprecated_member_use_from_same_package, library_prefixes
+// ignore_for_file: non_constant_identifier_names
 
 import 'dart:core' as $core;
 
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/timestamp.pb.dart' as $2;
-import '../../../../rpc/status.pb.dart' as $9;
+import '../../../../protobuf/timestamp.pb.dart' as $0;
+import '../../../../rpc/status.pb.dart' as $1;
 import 'data.pbenum.dart';
 
 export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
@@ -27,20 +28,21 @@ class ServiceConnectionMap_ProducerPscConfig extends $pb.GeneratedMessage {
   factory ServiceConnectionMap_ProducerPscConfig({
     $core.String? serviceAttachmentUri,
   }) {
-    final $result = create();
-    if (serviceAttachmentUri != null) {
-      $result.serviceAttachmentUri = serviceAttachmentUri;
-    }
-    return $result;
+    final result = create();
+    if (serviceAttachmentUri != null)
+      result.serviceAttachmentUri = serviceAttachmentUri;
+    return result;
   }
-  ServiceConnectionMap_ProducerPscConfig._() : super();
+
+  ServiceConnectionMap_ProducerPscConfig._();
+
   factory ServiceConnectionMap_ProducerPscConfig.fromBuffer(
-          $core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ServiceConnectionMap_ProducerPscConfig.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+          $core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ServiceConnectionMap_ProducerPscConfig.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'ServiceConnectionMap.ProducerPscConfig',
@@ -52,8 +54,7 @@ class ServiceConnectionMap_ProducerPscConfig extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ServiceConnectionMap_ProducerPscConfig clone() =>
-      ServiceConnectionMap_ProducerPscConfig()..mergeFromMessage(this);
+  ServiceConnectionMap_ProducerPscConfig clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceConnectionMap_ProducerPscConfig copyWith(
           void Function(ServiceConnectionMap_ProducerPscConfig) updates) =>
@@ -61,14 +62,14 @@ class ServiceConnectionMap_ProducerPscConfig extends $pb.GeneratedMessage {
               updates(message as ServiceConnectionMap_ProducerPscConfig))
           as ServiceConnectionMap_ProducerPscConfig;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ServiceConnectionMap_ProducerPscConfig create() =>
       ServiceConnectionMap_ProducerPscConfig._();
+  @$core.override
   ServiceConnectionMap_ProducerPscConfig createEmptyInstance() => create();
-  static $pb.PbList<ServiceConnectionMap_ProducerPscConfig> createRepeated() =>
-      $pb.PbList<ServiceConnectionMap_ProducerPscConfig>();
   @$core.pragma('dart2js:noInline')
   static ServiceConnectionMap_ProducerPscConfig getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
@@ -81,10 +82,7 @@ class ServiceConnectionMap_ProducerPscConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get serviceAttachmentUri => $_getSZ(0);
   @$pb.TagNumber(1)
-  set serviceAttachmentUri($core.String v) {
-    $_setString(0, v);
-  }
-
+  set serviceAttachmentUri($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasServiceAttachmentUri() => $_has(0);
   @$pb.TagNumber(1)
@@ -99,29 +97,24 @@ class ServiceConnectionMap_ConsumerPscConfig extends $pb.GeneratedMessage {
     $core.bool? disableGlobalAccess,
     ServiceConnectionMap_ConsumerPscConfig_State? state,
   }) {
-    final $result = create();
-    if (project != null) {
-      $result.project = project;
-    }
-    if (network != null) {
-      $result.network = network;
-    }
-    if (disableGlobalAccess != null) {
-      $result.disableGlobalAccess = disableGlobalAccess;
-    }
-    if (state != null) {
-      $result.state = state;
-    }
-    return $result;
+    final result = create();
+    if (project != null) result.project = project;
+    if (network != null) result.network = network;
+    if (disableGlobalAccess != null)
+      result.disableGlobalAccess = disableGlobalAccess;
+    if (state != null) result.state = state;
+    return result;
   }
-  ServiceConnectionMap_ConsumerPscConfig._() : super();
+
+  ServiceConnectionMap_ConsumerPscConfig._();
+
   factory ServiceConnectionMap_ConsumerPscConfig.fromBuffer(
-          $core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ServiceConnectionMap_ConsumerPscConfig.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+          $core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ServiceConnectionMap_ConsumerPscConfig.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'ServiceConnectionMap.ConsumerPscConfig',
@@ -132,17 +125,13 @@ class ServiceConnectionMap_ConsumerPscConfig extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'project')
     ..aOS(2, _omitFieldNames ? '' : 'network')
     ..aOB(3, _omitFieldNames ? '' : 'disableGlobalAccess')
-    ..e<ServiceConnectionMap_ConsumerPscConfig_State>(
-        4, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
-        defaultOrMaker:
-            ServiceConnectionMap_ConsumerPscConfig_State.STATE_UNSPECIFIED,
-        valueOf: ServiceConnectionMap_ConsumerPscConfig_State.valueOf,
+    ..aE<ServiceConnectionMap_ConsumerPscConfig_State>(
+        4, _omitFieldNames ? '' : 'state',
         enumValues: ServiceConnectionMap_ConsumerPscConfig_State.values)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ServiceConnectionMap_ConsumerPscConfig clone() =>
-      ServiceConnectionMap_ConsumerPscConfig()..mergeFromMessage(this);
+  ServiceConnectionMap_ConsumerPscConfig clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceConnectionMap_ConsumerPscConfig copyWith(
           void Function(ServiceConnectionMap_ConsumerPscConfig) updates) =>
@@ -150,14 +139,14 @@ class ServiceConnectionMap_ConsumerPscConfig extends $pb.GeneratedMessage {
               updates(message as ServiceConnectionMap_ConsumerPscConfig))
           as ServiceConnectionMap_ConsumerPscConfig;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ServiceConnectionMap_ConsumerPscConfig create() =>
       ServiceConnectionMap_ConsumerPscConfig._();
+  @$core.override
   ServiceConnectionMap_ConsumerPscConfig createEmptyInstance() => create();
-  static $pb.PbList<ServiceConnectionMap_ConsumerPscConfig> createRepeated() =>
-      $pb.PbList<ServiceConnectionMap_ConsumerPscConfig>();
   @$core.pragma('dart2js:noInline')
   static ServiceConnectionMap_ConsumerPscConfig getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
@@ -168,10 +157,7 @@ class ServiceConnectionMap_ConsumerPscConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get project => $_getSZ(0);
   @$pb.TagNumber(1)
-  set project($core.String v) {
-    $_setString(0, v);
-  }
-
+  set project($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasProject() => $_has(0);
   @$pb.TagNumber(1)
@@ -185,10 +171,7 @@ class ServiceConnectionMap_ConsumerPscConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get network => $_getSZ(1);
   @$pb.TagNumber(2)
-  set network($core.String v) {
-    $_setString(1, v);
-  }
-
+  set network($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasNetwork() => $_has(1);
   @$pb.TagNumber(2)
@@ -199,10 +182,7 @@ class ServiceConnectionMap_ConsumerPscConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool get disableGlobalAccess => $_getBF(2);
   @$pb.TagNumber(3)
-  set disableGlobalAccess($core.bool v) {
-    $_setBool(2, v);
-  }
-
+  set disableGlobalAccess($core.bool value) => $_setBool(2, value);
   @$pb.TagNumber(3)
   $core.bool hasDisableGlobalAccess() => $_has(2);
   @$pb.TagNumber(3)
@@ -213,10 +193,8 @@ class ServiceConnectionMap_ConsumerPscConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   ServiceConnectionMap_ConsumerPscConfig_State get state => $_getN(3);
   @$pb.TagNumber(4)
-  set state(ServiceConnectionMap_ConsumerPscConfig_State v) {
-    $_setField(4, v);
-  }
-
+  set state(ServiceConnectionMap_ConsumerPscConfig_State value) =>
+      $_setField(4, value);
   @$pb.TagNumber(4)
   $core.bool hasState() => $_has(3);
   @$pb.TagNumber(4)
@@ -233,51 +211,34 @@ class ServiceConnectionMap_ConsumerPscConnection extends $pb.GeneratedMessage {
     $core.String? pscConnectionId,
     $core.String? ip,
     ConnectionErrorType? errorType,
-    $9.Status? error,
+    $1.Status? error,
     $core.String? gceOperation,
     $core.String? forwardingRule,
   }) {
-    final $result = create();
-    if (serviceAttachmentUri != null) {
-      $result.serviceAttachmentUri = serviceAttachmentUri;
-    }
-    if (state != null) {
-      $result.state = state;
-    }
-    if (project != null) {
-      $result.project = project;
-    }
-    if (network != null) {
-      $result.network = network;
-    }
-    if (pscConnectionId != null) {
-      $result.pscConnectionId = pscConnectionId;
-    }
-    if (ip != null) {
-      $result.ip = ip;
-    }
-    if (errorType != null) {
-      $result.errorType = errorType;
-    }
-    if (error != null) {
-      $result.error = error;
-    }
-    if (gceOperation != null) {
-      $result.gceOperation = gceOperation;
-    }
-    if (forwardingRule != null) {
-      $result.forwardingRule = forwardingRule;
-    }
-    return $result;
+    final result = create();
+    if (serviceAttachmentUri != null)
+      result.serviceAttachmentUri = serviceAttachmentUri;
+    if (state != null) result.state = state;
+    if (project != null) result.project = project;
+    if (network != null) result.network = network;
+    if (pscConnectionId != null) result.pscConnectionId = pscConnectionId;
+    if (ip != null) result.ip = ip;
+    if (errorType != null) result.errorType = errorType;
+    if (error != null) result.error = error;
+    if (gceOperation != null) result.gceOperation = gceOperation;
+    if (forwardingRule != null) result.forwardingRule = forwardingRule;
+    return result;
   }
-  ServiceConnectionMap_ConsumerPscConnection._() : super();
+
+  ServiceConnectionMap_ConsumerPscConnection._();
+
   factory ServiceConnectionMap_ConsumerPscConnection.fromBuffer(
-          $core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ServiceConnectionMap_ConsumerPscConnection.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+          $core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ServiceConnectionMap_ConsumerPscConnection.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'ServiceConnectionMap.ConsumerPscConnection',
@@ -286,30 +247,23 @@ class ServiceConnectionMap_ConsumerPscConnection extends $pb.GeneratedMessage {
           : 'google.events.cloud.networkconnectivity.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'serviceAttachmentUri')
-    ..e<ServiceConnectionMap_ConsumerPscConnection_State>(
-        2, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
-        defaultOrMaker:
-            ServiceConnectionMap_ConsumerPscConnection_State.STATE_UNSPECIFIED,
-        valueOf: ServiceConnectionMap_ConsumerPscConnection_State.valueOf,
+    ..aE<ServiceConnectionMap_ConsumerPscConnection_State>(
+        2, _omitFieldNames ? '' : 'state',
         enumValues: ServiceConnectionMap_ConsumerPscConnection_State.values)
     ..aOS(3, _omitFieldNames ? '' : 'project')
     ..aOS(4, _omitFieldNames ? '' : 'network')
     ..aOS(5, _omitFieldNames ? '' : 'pscConnectionId')
     ..aOS(6, _omitFieldNames ? '' : 'ip')
-    ..e<ConnectionErrorType>(
-        7, _omitFieldNames ? '' : 'errorType', $pb.PbFieldType.OE,
-        defaultOrMaker: ConnectionErrorType.CONNECTION_ERROR_TYPE_UNSPECIFIED,
-        valueOf: ConnectionErrorType.valueOf,
+    ..aE<ConnectionErrorType>(7, _omitFieldNames ? '' : 'errorType',
         enumValues: ConnectionErrorType.values)
-    ..aOM<$9.Status>(8, _omitFieldNames ? '' : 'error',
-        subBuilder: $9.Status.create)
+    ..aOM<$1.Status>(8, _omitFieldNames ? '' : 'error',
+        subBuilder: $1.Status.create)
     ..aOS(9, _omitFieldNames ? '' : 'gceOperation')
     ..aOS(10, _omitFieldNames ? '' : 'forwardingRule')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ServiceConnectionMap_ConsumerPscConnection clone() =>
-      ServiceConnectionMap_ConsumerPscConnection()..mergeFromMessage(this);
+  ServiceConnectionMap_ConsumerPscConnection clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceConnectionMap_ConsumerPscConnection copyWith(
           void Function(ServiceConnectionMap_ConsumerPscConnection) updates) =>
@@ -317,15 +271,14 @@ class ServiceConnectionMap_ConsumerPscConnection extends $pb.GeneratedMessage {
               updates(message as ServiceConnectionMap_ConsumerPscConnection))
           as ServiceConnectionMap_ConsumerPscConnection;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ServiceConnectionMap_ConsumerPscConnection create() =>
       ServiceConnectionMap_ConsumerPscConnection._();
+  @$core.override
   ServiceConnectionMap_ConsumerPscConnection createEmptyInstance() => create();
-  static $pb.PbList<ServiceConnectionMap_ConsumerPscConnection>
-      createRepeated() =>
-          $pb.PbList<ServiceConnectionMap_ConsumerPscConnection>();
   @$core.pragma('dart2js:noInline')
   static ServiceConnectionMap_ConsumerPscConnection getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
@@ -337,10 +290,7 @@ class ServiceConnectionMap_ConsumerPscConnection extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get serviceAttachmentUri => $_getSZ(0);
   @$pb.TagNumber(1)
-  set serviceAttachmentUri($core.String v) {
-    $_setString(0, v);
-  }
-
+  set serviceAttachmentUri($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasServiceAttachmentUri() => $_has(0);
   @$pb.TagNumber(1)
@@ -350,10 +300,8 @@ class ServiceConnectionMap_ConsumerPscConnection extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   ServiceConnectionMap_ConsumerPscConnection_State get state => $_getN(1);
   @$pb.TagNumber(2)
-  set state(ServiceConnectionMap_ConsumerPscConnection_State v) {
-    $_setField(2, v);
-  }
-
+  set state(ServiceConnectionMap_ConsumerPscConnection_State value) =>
+      $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasState() => $_has(1);
   @$pb.TagNumber(2)
@@ -364,10 +312,7 @@ class ServiceConnectionMap_ConsumerPscConnection extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get project => $_getSZ(2);
   @$pb.TagNumber(3)
-  set project($core.String v) {
-    $_setString(2, v);
-  }
-
+  set project($core.String value) => $_setString(2, value);
   @$pb.TagNumber(3)
   $core.bool hasProject() => $_has(2);
   @$pb.TagNumber(3)
@@ -379,10 +324,7 @@ class ServiceConnectionMap_ConsumerPscConnection extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get network => $_getSZ(3);
   @$pb.TagNumber(4)
-  set network($core.String v) {
-    $_setString(3, v);
-  }
-
+  set network($core.String value) => $_setString(3, value);
   @$pb.TagNumber(4)
   $core.bool hasNetwork() => $_has(3);
   @$pb.TagNumber(4)
@@ -393,10 +335,7 @@ class ServiceConnectionMap_ConsumerPscConnection extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get pscConnectionId => $_getSZ(4);
   @$pb.TagNumber(5)
-  set pscConnectionId($core.String v) {
-    $_setString(4, v);
-  }
-
+  set pscConnectionId($core.String value) => $_setString(4, value);
   @$pb.TagNumber(5)
   $core.bool hasPscConnectionId() => $_has(4);
   @$pb.TagNumber(5)
@@ -408,10 +347,7 @@ class ServiceConnectionMap_ConsumerPscConnection extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get ip => $_getSZ(5);
   @$pb.TagNumber(6)
-  set ip($core.String v) {
-    $_setString(5, v);
-  }
-
+  set ip($core.String value) => $_setString(5, value);
   @$pb.TagNumber(6)
   $core.bool hasIp() => $_has(5);
   @$pb.TagNumber(6)
@@ -422,10 +358,7 @@ class ServiceConnectionMap_ConsumerPscConnection extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   ConnectionErrorType get errorType => $_getN(6);
   @$pb.TagNumber(7)
-  set errorType(ConnectionErrorType v) {
-    $_setField(7, v);
-  }
-
+  set errorType(ConnectionErrorType value) => $_setField(7, value);
   @$pb.TagNumber(7)
   $core.bool hasErrorType() => $_has(6);
   @$pb.TagNumber(7)
@@ -433,27 +366,21 @@ class ServiceConnectionMap_ConsumerPscConnection extends $pb.GeneratedMessage {
 
   /// The most recent error during operating this connection.
   @$pb.TagNumber(8)
-  $9.Status get error => $_getN(7);
+  $1.Status get error => $_getN(7);
   @$pb.TagNumber(8)
-  set error($9.Status v) {
-    $_setField(8, v);
-  }
-
+  set error($1.Status value) => $_setField(8, value);
   @$pb.TagNumber(8)
   $core.bool hasError() => $_has(7);
   @$pb.TagNumber(8)
   void clearError() => $_clearField(8);
   @$pb.TagNumber(8)
-  $9.Status ensureError() => $_ensure(7);
+  $1.Status ensureError() => $_ensure(7);
 
   /// The last Compute Engine operation to setup PSC connection.
   @$pb.TagNumber(9)
   $core.String get gceOperation => $_getSZ(8);
   @$pb.TagNumber(9)
-  set gceOperation($core.String v) {
-    $_setString(8, v);
-  }
-
+  set gceOperation($core.String value) => $_setString(8, value);
   @$pb.TagNumber(9)
   $core.bool hasGceOperation() => $_has(8);
   @$pb.TagNumber(9)
@@ -465,10 +392,7 @@ class ServiceConnectionMap_ConsumerPscConnection extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.String get forwardingRule => $_getSZ(9);
   @$pb.TagNumber(10)
-  set forwardingRule($core.String v) {
-    $_setString(9, v);
-  }
-
+  set forwardingRule($core.String value) => $_setString(9, value);
   @$pb.TagNumber(10)
   $core.bool hasForwardingRule() => $_has(9);
   @$pb.TagNumber(10)
@@ -480,8 +404,8 @@ class ServiceConnectionMap_ConsumerPscConnection extends $pb.GeneratedMessage {
 class ServiceConnectionMap extends $pb.GeneratedMessage {
   factory ServiceConnectionMap({
     $core.String? name,
-    $2.Timestamp? createTime,
-    $2.Timestamp? updateTime,
+    $0.Timestamp? createTime,
+    $0.Timestamp? updateTime,
     $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.String? description,
     $core.String? serviceClass,
@@ -492,49 +416,32 @@ class ServiceConnectionMap extends $pb.GeneratedMessage {
         consumerPscConnections,
     $core.String? serviceClassUri,
   }) {
-    final $result = create();
-    if (name != null) {
-      $result.name = name;
-    }
-    if (createTime != null) {
-      $result.createTime = createTime;
-    }
-    if (updateTime != null) {
-      $result.updateTime = updateTime;
-    }
-    if (labels != null) {
-      $result.labels.addEntries(labels);
-    }
-    if (description != null) {
-      $result.description = description;
-    }
-    if (serviceClass != null) {
-      $result.serviceClass = serviceClass;
-    }
-    if (infrastructure != null) {
-      $result.infrastructure = infrastructure;
-    }
-    if (producerPscConfigs != null) {
-      $result.producerPscConfigs.addAll(producerPscConfigs);
-    }
-    if (consumerPscConfigs != null) {
-      $result.consumerPscConfigs.addAll(consumerPscConfigs);
-    }
-    if (consumerPscConnections != null) {
-      $result.consumerPscConnections.addAll(consumerPscConnections);
-    }
-    if (serviceClassUri != null) {
-      $result.serviceClassUri = serviceClassUri;
-    }
-    return $result;
+    final result = create();
+    if (name != null) result.name = name;
+    if (createTime != null) result.createTime = createTime;
+    if (updateTime != null) result.updateTime = updateTime;
+    if (labels != null) result.labels.addEntries(labels);
+    if (description != null) result.description = description;
+    if (serviceClass != null) result.serviceClass = serviceClass;
+    if (infrastructure != null) result.infrastructure = infrastructure;
+    if (producerPscConfigs != null)
+      result.producerPscConfigs.addAll(producerPscConfigs);
+    if (consumerPscConfigs != null)
+      result.consumerPscConfigs.addAll(consumerPscConfigs);
+    if (consumerPscConnections != null)
+      result.consumerPscConnections.addAll(consumerPscConnections);
+    if (serviceClassUri != null) result.serviceClassUri = serviceClassUri;
+    return result;
   }
-  ServiceConnectionMap._() : super();
-  factory ServiceConnectionMap.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ServiceConnectionMap.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  ServiceConnectionMap._();
+
+  factory ServiceConnectionMap.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ServiceConnectionMap.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'ServiceConnectionMap',
@@ -543,10 +450,10 @@ class ServiceConnectionMap extends $pb.GeneratedMessage {
           : 'google.events.cloud.networkconnectivity.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$2.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(3, _omitFieldNames ? '' : 'updateTime',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$0.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(3, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $0.Timestamp.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels',
         entryClassName: 'ServiceConnectionMap.LabelsEntry',
         keyFieldType: $pb.PbFieldType.OS,
@@ -555,38 +462,34 @@ class ServiceConnectionMap extends $pb.GeneratedMessage {
             const $pb.PackageName('google.events.cloud.networkconnectivity.v1'))
     ..aOS(5, _omitFieldNames ? '' : 'description')
     ..aOS(7, _omitFieldNames ? '' : 'serviceClass')
-    ..e<Infrastructure>(
-        8, _omitFieldNames ? '' : 'infrastructure', $pb.PbFieldType.OE,
-        defaultOrMaker: Infrastructure.INFRASTRUCTURE_UNSPECIFIED,
-        valueOf: Infrastructure.valueOf,
+    ..aE<Infrastructure>(8, _omitFieldNames ? '' : 'infrastructure',
         enumValues: Infrastructure.values)
-    ..pc<ServiceConnectionMap_ProducerPscConfig>(
-        9, _omitFieldNames ? '' : 'producerPscConfigs', $pb.PbFieldType.PM,
+    ..pPM<ServiceConnectionMap_ProducerPscConfig>(
+        9, _omitFieldNames ? '' : 'producerPscConfigs',
         subBuilder: ServiceConnectionMap_ProducerPscConfig.create)
-    ..pc<ServiceConnectionMap_ConsumerPscConfig>(
-        10, _omitFieldNames ? '' : 'consumerPscConfigs', $pb.PbFieldType.PM,
+    ..pPM<ServiceConnectionMap_ConsumerPscConfig>(
+        10, _omitFieldNames ? '' : 'consumerPscConfigs',
         subBuilder: ServiceConnectionMap_ConsumerPscConfig.create)
-    ..pc<ServiceConnectionMap_ConsumerPscConnection>(
-        11, _omitFieldNames ? '' : 'consumerPscConnections', $pb.PbFieldType.PM,
+    ..pPM<ServiceConnectionMap_ConsumerPscConnection>(
+        11, _omitFieldNames ? '' : 'consumerPscConnections',
         subBuilder: ServiceConnectionMap_ConsumerPscConnection.create)
     ..aOS(12, _omitFieldNames ? '' : 'serviceClassUri')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ServiceConnectionMap clone() =>
-      ServiceConnectionMap()..mergeFromMessage(this);
+  ServiceConnectionMap clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceConnectionMap copyWith(void Function(ServiceConnectionMap) updates) =>
       super.copyWith((message) => updates(message as ServiceConnectionMap))
           as ServiceConnectionMap;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ServiceConnectionMap create() => ServiceConnectionMap._();
+  @$core.override
   ServiceConnectionMap createEmptyInstance() => create();
-  static $pb.PbList<ServiceConnectionMap> createRepeated() =>
-      $pb.PbList<ServiceConnectionMap>();
   @$core.pragma('dart2js:noInline')
   static ServiceConnectionMap getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ServiceConnectionMap>(create);
@@ -599,10 +502,7 @@ class ServiceConnectionMap extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) {
-    $_setString(0, v);
-  }
-
+  set name($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -610,33 +510,27 @@ class ServiceConnectionMap extends $pb.GeneratedMessage {
 
   /// Output only. Time when the ServiceConnectionMap was created.
   @$pb.TagNumber(2)
-  $2.Timestamp get createTime => $_getN(1);
+  $0.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($2.Timestamp v) {
-    $_setField(2, v);
-  }
-
+  set createTime($0.Timestamp value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => $_clearField(2);
   @$pb.TagNumber(2)
-  $2.Timestamp ensureCreateTime() => $_ensure(1);
+  $0.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. Time when the ServiceConnectionMap was updated.
   @$pb.TagNumber(3)
-  $2.Timestamp get updateTime => $_getN(2);
+  $0.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($2.Timestamp v) {
-    $_setField(3, v);
-  }
-
+  set updateTime($0.Timestamp value) => $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => $_clearField(3);
   @$pb.TagNumber(3)
-  $2.Timestamp ensureUpdateTime() => $_ensure(2);
+  $0.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// User-defined labels.
   @$pb.TagNumber(4)
@@ -646,10 +540,7 @@ class ServiceConnectionMap extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get description => $_getSZ(4);
   @$pb.TagNumber(5)
-  set description($core.String v) {
-    $_setString(4, v);
-  }
-
+  set description($core.String value) => $_setString(4, value);
   @$pb.TagNumber(5)
   $core.bool hasDescription() => $_has(4);
   @$pb.TagNumber(5)
@@ -662,10 +553,7 @@ class ServiceConnectionMap extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get serviceClass => $_getSZ(5);
   @$pb.TagNumber(7)
-  set serviceClass($core.String v) {
-    $_setString(5, v);
-  }
-
+  set serviceClass($core.String value) => $_setString(5, value);
   @$pb.TagNumber(7)
   $core.bool hasServiceClass() => $_has(5);
   @$pb.TagNumber(7)
@@ -676,10 +564,7 @@ class ServiceConnectionMap extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   Infrastructure get infrastructure => $_getN(6);
   @$pb.TagNumber(8)
-  set infrastructure(Infrastructure v) {
-    $_setField(8, v);
-  }
-
+  set infrastructure(Infrastructure value) => $_setField(8, value);
   @$pb.TagNumber(8)
   $core.bool hasInfrastructure() => $_has(6);
   @$pb.TagNumber(8)
@@ -704,10 +589,7 @@ class ServiceConnectionMap extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.String get serviceClassUri => $_getSZ(10);
   @$pb.TagNumber(12)
-  set serviceClassUri($core.String v) {
-    $_setString(10, v);
-  }
-
+  set serviceClassUri($core.String value) => $_setString(10, value);
   @$pb.TagNumber(12)
   $core.bool hasServiceClassUri() => $_has(10);
   @$pb.TagNumber(12)
@@ -721,22 +603,21 @@ class ServiceConnectionPolicy_PscConfig extends $pb.GeneratedMessage {
     $core.Iterable<$core.String>? subnetworks,
     $fixnum.Int64? limit,
   }) {
-    final $result = create();
-    if (subnetworks != null) {
-      $result.subnetworks.addAll(subnetworks);
-    }
-    if (limit != null) {
-      $result.limit = limit;
-    }
-    return $result;
+    final result = create();
+    if (subnetworks != null) result.subnetworks.addAll(subnetworks);
+    if (limit != null) result.limit = limit;
+    return result;
   }
-  ServiceConnectionPolicy_PscConfig._() : super();
-  factory ServiceConnectionPolicy_PscConfig.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ServiceConnectionPolicy_PscConfig.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  ServiceConnectionPolicy_PscConfig._();
+
+  factory ServiceConnectionPolicy_PscConfig.fromBuffer(
+          $core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ServiceConnectionPolicy_PscConfig.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'ServiceConnectionPolicy.PscConfig',
@@ -749,8 +630,7 @@ class ServiceConnectionPolicy_PscConfig extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ServiceConnectionPolicy_PscConfig clone() =>
-      ServiceConnectionPolicy_PscConfig()..mergeFromMessage(this);
+  ServiceConnectionPolicy_PscConfig clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceConnectionPolicy_PscConfig copyWith(
           void Function(ServiceConnectionPolicy_PscConfig) updates) =>
@@ -758,14 +638,14 @@ class ServiceConnectionPolicy_PscConfig extends $pb.GeneratedMessage {
               updates(message as ServiceConnectionPolicy_PscConfig))
           as ServiceConnectionPolicy_PscConfig;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ServiceConnectionPolicy_PscConfig create() =>
       ServiceConnectionPolicy_PscConfig._();
+  @$core.override
   ServiceConnectionPolicy_PscConfig createEmptyInstance() => create();
-  static $pb.PbList<ServiceConnectionPolicy_PscConfig> createRepeated() =>
-      $pb.PbList<ServiceConnectionPolicy_PscConfig>();
   @$core.pragma('dart2js:noInline')
   static ServiceConnectionPolicy_PscConfig getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ServiceConnectionPolicy_PscConfig>(
@@ -782,10 +662,7 @@ class ServiceConnectionPolicy_PscConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $fixnum.Int64 get limit => $_getI64(1);
   @$pb.TagNumber(2)
-  set limit($fixnum.Int64 v) {
-    $_setInt64(1, v);
-  }
-
+  set limit($fixnum.Int64 value) => $_setInt64(1, value);
   @$pb.TagNumber(2)
   $core.bool hasLimit() => $_has(1);
   @$pb.TagNumber(2)
@@ -799,46 +676,34 @@ class ServiceConnectionPolicy_PscConnection extends $pb.GeneratedMessage {
     $core.String? consumerForwardingRule,
     $core.String? consumerAddress,
     ConnectionErrorType? errorType,
-    $9.Status? error,
+    $1.Status? error,
     $core.String? gceOperation,
     $core.String? consumerTargetProject,
     $core.String? pscConnectionId,
   }) {
-    final $result = create();
-    if (state != null) {
-      $result.state = state;
-    }
-    if (consumerForwardingRule != null) {
-      $result.consumerForwardingRule = consumerForwardingRule;
-    }
-    if (consumerAddress != null) {
-      $result.consumerAddress = consumerAddress;
-    }
-    if (errorType != null) {
-      $result.errorType = errorType;
-    }
-    if (error != null) {
-      $result.error = error;
-    }
-    if (gceOperation != null) {
-      $result.gceOperation = gceOperation;
-    }
-    if (consumerTargetProject != null) {
-      $result.consumerTargetProject = consumerTargetProject;
-    }
-    if (pscConnectionId != null) {
-      $result.pscConnectionId = pscConnectionId;
-    }
-    return $result;
+    final result = create();
+    if (state != null) result.state = state;
+    if (consumerForwardingRule != null)
+      result.consumerForwardingRule = consumerForwardingRule;
+    if (consumerAddress != null) result.consumerAddress = consumerAddress;
+    if (errorType != null) result.errorType = errorType;
+    if (error != null) result.error = error;
+    if (gceOperation != null) result.gceOperation = gceOperation;
+    if (consumerTargetProject != null)
+      result.consumerTargetProject = consumerTargetProject;
+    if (pscConnectionId != null) result.pscConnectionId = pscConnectionId;
+    return result;
   }
-  ServiceConnectionPolicy_PscConnection._() : super();
+
+  ServiceConnectionPolicy_PscConnection._();
+
   factory ServiceConnectionPolicy_PscConnection.fromBuffer(
-          $core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ServiceConnectionPolicy_PscConnection.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+          $core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ServiceConnectionPolicy_PscConnection.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'ServiceConnectionPolicy.PscConnection',
@@ -846,28 +711,21 @@ class ServiceConnectionPolicy_PscConnection extends $pb.GeneratedMessage {
           ? ''
           : 'google.events.cloud.networkconnectivity.v1'),
       createEmptyInstance: create)
-    ..e<ServiceConnectionPolicy_State>(
-        1, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
-        defaultOrMaker: ServiceConnectionPolicy_State.STATE_UNSPECIFIED,
-        valueOf: ServiceConnectionPolicy_State.valueOf,
+    ..aE<ServiceConnectionPolicy_State>(1, _omitFieldNames ? '' : 'state',
         enumValues: ServiceConnectionPolicy_State.values)
     ..aOS(2, _omitFieldNames ? '' : 'consumerForwardingRule')
     ..aOS(3, _omitFieldNames ? '' : 'consumerAddress')
-    ..e<ConnectionErrorType>(
-        4, _omitFieldNames ? '' : 'errorType', $pb.PbFieldType.OE,
-        defaultOrMaker: ConnectionErrorType.CONNECTION_ERROR_TYPE_UNSPECIFIED,
-        valueOf: ConnectionErrorType.valueOf,
+    ..aE<ConnectionErrorType>(4, _omitFieldNames ? '' : 'errorType',
         enumValues: ConnectionErrorType.values)
-    ..aOM<$9.Status>(5, _omitFieldNames ? '' : 'error',
-        subBuilder: $9.Status.create)
+    ..aOM<$1.Status>(5, _omitFieldNames ? '' : 'error',
+        subBuilder: $1.Status.create)
     ..aOS(6, _omitFieldNames ? '' : 'gceOperation')
     ..aOS(7, _omitFieldNames ? '' : 'consumerTargetProject')
     ..aOS(8, _omitFieldNames ? '' : 'pscConnectionId')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ServiceConnectionPolicy_PscConnection clone() =>
-      ServiceConnectionPolicy_PscConnection()..mergeFromMessage(this);
+  ServiceConnectionPolicy_PscConnection clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceConnectionPolicy_PscConnection copyWith(
           void Function(ServiceConnectionPolicy_PscConnection) updates) =>
@@ -875,14 +733,14 @@ class ServiceConnectionPolicy_PscConnection extends $pb.GeneratedMessage {
               updates(message as ServiceConnectionPolicy_PscConnection))
           as ServiceConnectionPolicy_PscConnection;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ServiceConnectionPolicy_PscConnection create() =>
       ServiceConnectionPolicy_PscConnection._();
+  @$core.override
   ServiceConnectionPolicy_PscConnection createEmptyInstance() => create();
-  static $pb.PbList<ServiceConnectionPolicy_PscConnection> createRepeated() =>
-      $pb.PbList<ServiceConnectionPolicy_PscConnection>();
   @$core.pragma('dart2js:noInline')
   static ServiceConnectionPolicy_PscConnection getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
@@ -893,10 +751,7 @@ class ServiceConnectionPolicy_PscConnection extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   ServiceConnectionPolicy_State get state => $_getN(0);
   @$pb.TagNumber(1)
-  set state(ServiceConnectionPolicy_State v) {
-    $_setField(1, v);
-  }
-
+  set state(ServiceConnectionPolicy_State value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasState() => $_has(0);
   @$pb.TagNumber(1)
@@ -907,10 +762,7 @@ class ServiceConnectionPolicy_PscConnection extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get consumerForwardingRule => $_getSZ(1);
   @$pb.TagNumber(2)
-  set consumerForwardingRule($core.String v) {
-    $_setString(1, v);
-  }
-
+  set consumerForwardingRule($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasConsumerForwardingRule() => $_has(1);
   @$pb.TagNumber(2)
@@ -920,10 +772,7 @@ class ServiceConnectionPolicy_PscConnection extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get consumerAddress => $_getSZ(2);
   @$pb.TagNumber(3)
-  set consumerAddress($core.String v) {
-    $_setString(2, v);
-  }
-
+  set consumerAddress($core.String value) => $_setString(2, value);
   @$pb.TagNumber(3)
   $core.bool hasConsumerAddress() => $_has(2);
   @$pb.TagNumber(3)
@@ -934,10 +783,7 @@ class ServiceConnectionPolicy_PscConnection extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   ConnectionErrorType get errorType => $_getN(3);
   @$pb.TagNumber(4)
-  set errorType(ConnectionErrorType v) {
-    $_setField(4, v);
-  }
-
+  set errorType(ConnectionErrorType value) => $_setField(4, value);
   @$pb.TagNumber(4)
   $core.bool hasErrorType() => $_has(3);
   @$pb.TagNumber(4)
@@ -945,27 +791,21 @@ class ServiceConnectionPolicy_PscConnection extends $pb.GeneratedMessage {
 
   /// The most recent error during operating this connection.
   @$pb.TagNumber(5)
-  $9.Status get error => $_getN(4);
+  $1.Status get error => $_getN(4);
   @$pb.TagNumber(5)
-  set error($9.Status v) {
-    $_setField(5, v);
-  }
-
+  set error($1.Status value) => $_setField(5, value);
   @$pb.TagNumber(5)
   $core.bool hasError() => $_has(4);
   @$pb.TagNumber(5)
   void clearError() => $_clearField(5);
   @$pb.TagNumber(5)
-  $9.Status ensureError() => $_ensure(4);
+  $1.Status ensureError() => $_ensure(4);
 
   /// The last Compute Engine operation to setup PSC connection.
   @$pb.TagNumber(6)
   $core.String get gceOperation => $_getSZ(5);
   @$pb.TagNumber(6)
-  set gceOperation($core.String v) {
-    $_setString(5, v);
-  }
-
+  set gceOperation($core.String value) => $_setString(5, value);
   @$pb.TagNumber(6)
   $core.bool hasGceOperation() => $_has(5);
   @$pb.TagNumber(6)
@@ -975,10 +815,7 @@ class ServiceConnectionPolicy_PscConnection extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get consumerTargetProject => $_getSZ(6);
   @$pb.TagNumber(7)
-  set consumerTargetProject($core.String v) {
-    $_setString(6, v);
-  }
-
+  set consumerTargetProject($core.String value) => $_setString(6, value);
   @$pb.TagNumber(7)
   $core.bool hasConsumerTargetProject() => $_has(6);
   @$pb.TagNumber(7)
@@ -988,10 +825,7 @@ class ServiceConnectionPolicy_PscConnection extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.String get pscConnectionId => $_getSZ(7);
   @$pb.TagNumber(8)
-  set pscConnectionId($core.String v) {
-    $_setString(7, v);
-  }
-
+  set pscConnectionId($core.String value) => $_setString(7, value);
   @$pb.TagNumber(8)
   $core.bool hasPscConnectionId() => $_has(7);
   @$pb.TagNumber(8)
@@ -1003,8 +837,8 @@ class ServiceConnectionPolicy_PscConnection extends $pb.GeneratedMessage {
 class ServiceConnectionPolicy extends $pb.GeneratedMessage {
   factory ServiceConnectionPolicy({
     $core.String? name,
-    $2.Timestamp? createTime,
-    $2.Timestamp? updateTime,
+    $0.Timestamp? createTime,
+    $0.Timestamp? updateTime,
     $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.String? description,
     $core.String? network,
@@ -1013,46 +847,28 @@ class ServiceConnectionPolicy extends $pb.GeneratedMessage {
     ServiceConnectionPolicy_PscConfig? pscConfig,
     $core.Iterable<ServiceConnectionPolicy_PscConnection>? pscConnections,
   }) {
-    final $result = create();
-    if (name != null) {
-      $result.name = name;
-    }
-    if (createTime != null) {
-      $result.createTime = createTime;
-    }
-    if (updateTime != null) {
-      $result.updateTime = updateTime;
-    }
-    if (labels != null) {
-      $result.labels.addEntries(labels);
-    }
-    if (description != null) {
-      $result.description = description;
-    }
-    if (network != null) {
-      $result.network = network;
-    }
-    if (serviceClass != null) {
-      $result.serviceClass = serviceClass;
-    }
-    if (infrastructure != null) {
-      $result.infrastructure = infrastructure;
-    }
-    if (pscConfig != null) {
-      $result.pscConfig = pscConfig;
-    }
-    if (pscConnections != null) {
-      $result.pscConnections.addAll(pscConnections);
-    }
-    return $result;
+    final result = create();
+    if (name != null) result.name = name;
+    if (createTime != null) result.createTime = createTime;
+    if (updateTime != null) result.updateTime = updateTime;
+    if (labels != null) result.labels.addEntries(labels);
+    if (description != null) result.description = description;
+    if (network != null) result.network = network;
+    if (serviceClass != null) result.serviceClass = serviceClass;
+    if (infrastructure != null) result.infrastructure = infrastructure;
+    if (pscConfig != null) result.pscConfig = pscConfig;
+    if (pscConnections != null) result.pscConnections.addAll(pscConnections);
+    return result;
   }
-  ServiceConnectionPolicy._() : super();
-  factory ServiceConnectionPolicy.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ServiceConnectionPolicy.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  ServiceConnectionPolicy._();
+
+  factory ServiceConnectionPolicy.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ServiceConnectionPolicy.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'ServiceConnectionPolicy',
@@ -1061,10 +877,10 @@ class ServiceConnectionPolicy extends $pb.GeneratedMessage {
           : 'google.events.cloud.networkconnectivity.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$2.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(3, _omitFieldNames ? '' : 'updateTime',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$0.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(3, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $0.Timestamp.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels',
         entryClassName: 'ServiceConnectionPolicy.LabelsEntry',
         keyFieldType: $pb.PbFieldType.OS,
@@ -1074,35 +890,31 @@ class ServiceConnectionPolicy extends $pb.GeneratedMessage {
     ..aOS(5, _omitFieldNames ? '' : 'description')
     ..aOS(6, _omitFieldNames ? '' : 'network')
     ..aOS(7, _omitFieldNames ? '' : 'serviceClass')
-    ..e<Infrastructure>(
-        8, _omitFieldNames ? '' : 'infrastructure', $pb.PbFieldType.OE,
-        defaultOrMaker: Infrastructure.INFRASTRUCTURE_UNSPECIFIED,
-        valueOf: Infrastructure.valueOf,
+    ..aE<Infrastructure>(8, _omitFieldNames ? '' : 'infrastructure',
         enumValues: Infrastructure.values)
     ..aOM<ServiceConnectionPolicy_PscConfig>(
         9, _omitFieldNames ? '' : 'pscConfig',
         subBuilder: ServiceConnectionPolicy_PscConfig.create)
-    ..pc<ServiceConnectionPolicy_PscConnection>(
-        10, _omitFieldNames ? '' : 'pscConnections', $pb.PbFieldType.PM,
+    ..pPM<ServiceConnectionPolicy_PscConnection>(
+        10, _omitFieldNames ? '' : 'pscConnections',
         subBuilder: ServiceConnectionPolicy_PscConnection.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ServiceConnectionPolicy clone() =>
-      ServiceConnectionPolicy()..mergeFromMessage(this);
+  ServiceConnectionPolicy clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceConnectionPolicy copyWith(
           void Function(ServiceConnectionPolicy) updates) =>
       super.copyWith((message) => updates(message as ServiceConnectionPolicy))
           as ServiceConnectionPolicy;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ServiceConnectionPolicy create() => ServiceConnectionPolicy._();
+  @$core.override
   ServiceConnectionPolicy createEmptyInstance() => create();
-  static $pb.PbList<ServiceConnectionPolicy> createRepeated() =>
-      $pb.PbList<ServiceConnectionPolicy>();
   @$core.pragma('dart2js:noInline')
   static ServiceConnectionPolicy getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ServiceConnectionPolicy>(create);
@@ -1115,10 +927,7 @@ class ServiceConnectionPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) {
-    $_setString(0, v);
-  }
-
+  set name($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -1126,33 +935,27 @@ class ServiceConnectionPolicy extends $pb.GeneratedMessage {
 
   /// Output only. Time when the ServiceConnectionMap was created.
   @$pb.TagNumber(2)
-  $2.Timestamp get createTime => $_getN(1);
+  $0.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($2.Timestamp v) {
-    $_setField(2, v);
-  }
-
+  set createTime($0.Timestamp value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => $_clearField(2);
   @$pb.TagNumber(2)
-  $2.Timestamp ensureCreateTime() => $_ensure(1);
+  $0.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. Time when the ServiceConnectionMap was updated.
   @$pb.TagNumber(3)
-  $2.Timestamp get updateTime => $_getN(2);
+  $0.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($2.Timestamp v) {
-    $_setField(3, v);
-  }
-
+  set updateTime($0.Timestamp value) => $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => $_clearField(3);
   @$pb.TagNumber(3)
-  $2.Timestamp ensureUpdateTime() => $_ensure(2);
+  $0.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// User-defined labels.
   @$pb.TagNumber(4)
@@ -1162,10 +965,7 @@ class ServiceConnectionPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get description => $_getSZ(4);
   @$pb.TagNumber(5)
-  set description($core.String v) {
-    $_setString(4, v);
-  }
-
+  set description($core.String value) => $_setString(4, value);
   @$pb.TagNumber(5)
   $core.bool hasDescription() => $_has(4);
   @$pb.TagNumber(5)
@@ -1177,10 +977,7 @@ class ServiceConnectionPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get network => $_getSZ(5);
   @$pb.TagNumber(6)
-  set network($core.String v) {
-    $_setString(5, v);
-  }
-
+  set network($core.String value) => $_setString(5, value);
   @$pb.TagNumber(6)
   $core.bool hasNetwork() => $_has(5);
   @$pb.TagNumber(6)
@@ -1194,10 +991,7 @@ class ServiceConnectionPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get serviceClass => $_getSZ(6);
   @$pb.TagNumber(7)
-  set serviceClass($core.String v) {
-    $_setString(6, v);
-  }
-
+  set serviceClass($core.String value) => $_setString(6, value);
   @$pb.TagNumber(7)
   $core.bool hasServiceClass() => $_has(6);
   @$pb.TagNumber(7)
@@ -1208,10 +1002,7 @@ class ServiceConnectionPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   Infrastructure get infrastructure => $_getN(7);
   @$pb.TagNumber(8)
-  set infrastructure(Infrastructure v) {
-    $_setField(8, v);
-  }
-
+  set infrastructure(Infrastructure value) => $_setField(8, value);
   @$pb.TagNumber(8)
   $core.bool hasInfrastructure() => $_has(7);
   @$pb.TagNumber(8)
@@ -1222,10 +1013,8 @@ class ServiceConnectionPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   ServiceConnectionPolicy_PscConfig get pscConfig => $_getN(8);
   @$pb.TagNumber(9)
-  set pscConfig(ServiceConnectionPolicy_PscConfig v) {
-    $_setField(9, v);
-  }
-
+  set pscConfig(ServiceConnectionPolicy_PscConfig value) =>
+      $_setField(9, value);
   @$pb.TagNumber(9)
   $core.bool hasPscConfig() => $_has(8);
   @$pb.TagNumber(9)
@@ -1245,44 +1034,33 @@ class ServiceConnectionPolicy extends $pb.GeneratedMessage {
 class ServiceClass extends $pb.GeneratedMessage {
   factory ServiceClass({
     $core.String? name,
-    $2.Timestamp? createTime,
-    $2.Timestamp? updateTime,
+    $0.Timestamp? createTime,
+    $0.Timestamp? updateTime,
     $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.String? description,
     $core.Iterable<$core.String>? serviceConnectionMaps,
     $core.String? serviceClass,
   }) {
-    final $result = create();
-    if (name != null) {
-      $result.name = name;
-    }
-    if (createTime != null) {
-      $result.createTime = createTime;
-    }
-    if (updateTime != null) {
-      $result.updateTime = updateTime;
-    }
-    if (labels != null) {
-      $result.labels.addEntries(labels);
-    }
-    if (description != null) {
-      $result.description = description;
-    }
-    if (serviceConnectionMaps != null) {
-      $result.serviceConnectionMaps.addAll(serviceConnectionMaps);
-    }
-    if (serviceClass != null) {
-      $result.serviceClass = serviceClass;
-    }
-    return $result;
+    final result = create();
+    if (name != null) result.name = name;
+    if (createTime != null) result.createTime = createTime;
+    if (updateTime != null) result.updateTime = updateTime;
+    if (labels != null) result.labels.addEntries(labels);
+    if (description != null) result.description = description;
+    if (serviceConnectionMaps != null)
+      result.serviceConnectionMaps.addAll(serviceConnectionMaps);
+    if (serviceClass != null) result.serviceClass = serviceClass;
+    return result;
   }
-  ServiceClass._() : super();
-  factory ServiceClass.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ServiceClass.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  ServiceClass._();
+
+  factory ServiceClass.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ServiceClass.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'ServiceClass',
@@ -1291,10 +1069,10 @@ class ServiceClass extends $pb.GeneratedMessage {
           : 'google.events.cloud.networkconnectivity.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$2.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(3, _omitFieldNames ? '' : 'updateTime',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$0.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(3, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $0.Timestamp.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels',
         entryClassName: 'ServiceClass.LabelsEntry',
         keyFieldType: $pb.PbFieldType.OS,
@@ -1307,19 +1085,19 @@ class ServiceClass extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ServiceClass clone() => ServiceClass()..mergeFromMessage(this);
+  ServiceClass clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceClass copyWith(void Function(ServiceClass) updates) =>
       super.copyWith((message) => updates(message as ServiceClass))
           as ServiceClass;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ServiceClass create() => ServiceClass._();
+  @$core.override
   ServiceClass createEmptyInstance() => create();
-  static $pb.PbList<ServiceClass> createRepeated() =>
-      $pb.PbList<ServiceClass>();
   @$core.pragma('dart2js:noInline')
   static ServiceClass getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ServiceClass>(create);
@@ -1332,10 +1110,7 @@ class ServiceClass extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) {
-    $_setString(0, v);
-  }
-
+  set name($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -1343,33 +1118,27 @@ class ServiceClass extends $pb.GeneratedMessage {
 
   /// Output only. Time when the ServiceClass was created.
   @$pb.TagNumber(2)
-  $2.Timestamp get createTime => $_getN(1);
+  $0.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($2.Timestamp v) {
-    $_setField(2, v);
-  }
-
+  set createTime($0.Timestamp value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => $_clearField(2);
   @$pb.TagNumber(2)
-  $2.Timestamp ensureCreateTime() => $_ensure(1);
+  $0.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. Time when the ServiceClass was updated.
   @$pb.TagNumber(3)
-  $2.Timestamp get updateTime => $_getN(2);
+  $0.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($2.Timestamp v) {
-    $_setField(3, v);
-  }
-
+  set updateTime($0.Timestamp value) => $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => $_clearField(3);
   @$pb.TagNumber(3)
-  $2.Timestamp ensureUpdateTime() => $_ensure(2);
+  $0.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// User-defined labels.
   @$pb.TagNumber(4)
@@ -1379,10 +1148,7 @@ class ServiceClass extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get description => $_getSZ(4);
   @$pb.TagNumber(5)
-  set description($core.String v) {
-    $_setString(4, v);
-  }
-
+  set description($core.String value) => $_setString(4, value);
   @$pb.TagNumber(5)
   $core.bool hasDescription() => $_has(4);
   @$pb.TagNumber(5)
@@ -1398,10 +1164,7 @@ class ServiceClass extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get serviceClass => $_getSZ(6);
   @$pb.TagNumber(7)
-  set serviceClass($core.String v) {
-    $_setString(6, v);
-  }
-
+  set serviceClass($core.String value) => $_setString(6, value);
   @$pb.TagNumber(7)
   $core.bool hasServiceClass() => $_has(6);
   @$pb.TagNumber(7)
@@ -1413,40 +1176,30 @@ class ServiceClass extends $pb.GeneratedMessage {
 class ServiceConnectionToken extends $pb.GeneratedMessage {
   factory ServiceConnectionToken({
     $core.String? name,
-    $2.Timestamp? createTime,
-    $2.Timestamp? updateTime,
+    $0.Timestamp? createTime,
+    $0.Timestamp? updateTime,
     $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.String? description,
     $core.String? network,
   }) {
-    final $result = create();
-    if (name != null) {
-      $result.name = name;
-    }
-    if (createTime != null) {
-      $result.createTime = createTime;
-    }
-    if (updateTime != null) {
-      $result.updateTime = updateTime;
-    }
-    if (labels != null) {
-      $result.labels.addEntries(labels);
-    }
-    if (description != null) {
-      $result.description = description;
-    }
-    if (network != null) {
-      $result.network = network;
-    }
-    return $result;
+    final result = create();
+    if (name != null) result.name = name;
+    if (createTime != null) result.createTime = createTime;
+    if (updateTime != null) result.updateTime = updateTime;
+    if (labels != null) result.labels.addEntries(labels);
+    if (description != null) result.description = description;
+    if (network != null) result.network = network;
+    return result;
   }
-  ServiceConnectionToken._() : super();
-  factory ServiceConnectionToken.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ServiceConnectionToken.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  ServiceConnectionToken._();
+
+  factory ServiceConnectionToken.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ServiceConnectionToken.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'ServiceConnectionToken',
@@ -1455,10 +1208,10 @@ class ServiceConnectionToken extends $pb.GeneratedMessage {
           : 'google.events.cloud.networkconnectivity.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$2.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(3, _omitFieldNames ? '' : 'updateTime',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$0.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(3, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $0.Timestamp.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels',
         entryClassName: 'ServiceConnectionToken.LabelsEntry',
         keyFieldType: $pb.PbFieldType.OS,
@@ -1470,21 +1223,20 @@ class ServiceConnectionToken extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ServiceConnectionToken clone() =>
-      ServiceConnectionToken()..mergeFromMessage(this);
+  ServiceConnectionToken clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceConnectionToken copyWith(
           void Function(ServiceConnectionToken) updates) =>
       super.copyWith((message) => updates(message as ServiceConnectionToken))
           as ServiceConnectionToken;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ServiceConnectionToken create() => ServiceConnectionToken._();
+  @$core.override
   ServiceConnectionToken createEmptyInstance() => create();
-  static $pb.PbList<ServiceConnectionToken> createRepeated() =>
-      $pb.PbList<ServiceConnectionToken>();
   @$core.pragma('dart2js:noInline')
   static ServiceConnectionToken getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ServiceConnectionToken>(create);
@@ -1497,10 +1249,7 @@ class ServiceConnectionToken extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) {
-    $_setString(0, v);
-  }
-
+  set name($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -1508,33 +1257,27 @@ class ServiceConnectionToken extends $pb.GeneratedMessage {
 
   /// Output only. Time when the ServiceConnectionToken was created.
   @$pb.TagNumber(2)
-  $2.Timestamp get createTime => $_getN(1);
+  $0.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($2.Timestamp v) {
-    $_setField(2, v);
-  }
-
+  set createTime($0.Timestamp value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => $_clearField(2);
   @$pb.TagNumber(2)
-  $2.Timestamp ensureCreateTime() => $_ensure(1);
+  $0.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. Time when the ServiceConnectionToken was updated.
   @$pb.TagNumber(3)
-  $2.Timestamp get updateTime => $_getN(2);
+  $0.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($2.Timestamp v) {
-    $_setField(3, v);
-  }
-
+  set updateTime($0.Timestamp value) => $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => $_clearField(3);
   @$pb.TagNumber(3)
-  $2.Timestamp ensureUpdateTime() => $_ensure(2);
+  $0.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// User-defined labels.
   @$pb.TagNumber(4)
@@ -1544,10 +1287,7 @@ class ServiceConnectionToken extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get description => $_getSZ(4);
   @$pb.TagNumber(5)
-  set description($core.String v) {
-    $_setString(4, v);
-  }
-
+  set description($core.String value) => $_setString(4, value);
   @$pb.TagNumber(5)
   $core.bool hasDescription() => $_has(4);
   @$pb.TagNumber(5)
@@ -1559,10 +1299,7 @@ class ServiceConnectionToken extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get network => $_getSZ(5);
   @$pb.TagNumber(6)
-  set network($core.String v) {
-    $_setString(5, v);
-  }
-
+  set network($core.String value) => $_setString(5, value);
   @$pb.TagNumber(6)
   $core.bool hasNetwork() => $_has(5);
   @$pb.TagNumber(6)
@@ -1578,48 +1315,34 @@ class ServiceConnectionToken extends $pb.GeneratedMessage {
 class Hub extends $pb.GeneratedMessage {
   factory Hub({
     $core.String? name,
-    $2.Timestamp? createTime,
-    $2.Timestamp? updateTime,
+    $0.Timestamp? createTime,
+    $0.Timestamp? updateTime,
     $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.String? description,
     $core.String? uniqueId,
     State? state,
     $core.Iterable<RoutingVPC>? routingVpcs,
   }) {
-    final $result = create();
-    if (name != null) {
-      $result.name = name;
-    }
-    if (createTime != null) {
-      $result.createTime = createTime;
-    }
-    if (updateTime != null) {
-      $result.updateTime = updateTime;
-    }
-    if (labels != null) {
-      $result.labels.addEntries(labels);
-    }
-    if (description != null) {
-      $result.description = description;
-    }
-    if (uniqueId != null) {
-      $result.uniqueId = uniqueId;
-    }
-    if (state != null) {
-      $result.state = state;
-    }
-    if (routingVpcs != null) {
-      $result.routingVpcs.addAll(routingVpcs);
-    }
-    return $result;
+    final result = create();
+    if (name != null) result.name = name;
+    if (createTime != null) result.createTime = createTime;
+    if (updateTime != null) result.updateTime = updateTime;
+    if (labels != null) result.labels.addEntries(labels);
+    if (description != null) result.description = description;
+    if (uniqueId != null) result.uniqueId = uniqueId;
+    if (state != null) result.state = state;
+    if (routingVpcs != null) result.routingVpcs.addAll(routingVpcs);
+    return result;
   }
-  Hub._() : super();
-  factory Hub.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Hub.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  Hub._();
+
+  factory Hub.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory Hub.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'Hub',
@@ -1628,10 +1351,10 @@ class Hub extends $pb.GeneratedMessage {
           : 'google.events.cloud.networkconnectivity.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$2.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(3, _omitFieldNames ? '' : 'updateTime',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$0.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(3, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $0.Timestamp.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels',
         entryClassName: 'Hub.LabelsEntry',
         keyFieldType: $pb.PbFieldType.OS,
@@ -1640,27 +1363,24 @@ class Hub extends $pb.GeneratedMessage {
             const $pb.PackageName('google.events.cloud.networkconnectivity.v1'))
     ..aOS(5, _omitFieldNames ? '' : 'description')
     ..aOS(8, _omitFieldNames ? '' : 'uniqueId')
-    ..e<State>(9, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
-        defaultOrMaker: State.STATE_UNSPECIFIED,
-        valueOf: State.valueOf,
-        enumValues: State.values)
-    ..pc<RoutingVPC>(
-        10, _omitFieldNames ? '' : 'routingVpcs', $pb.PbFieldType.PM,
+    ..aE<State>(9, _omitFieldNames ? '' : 'state', enumValues: State.values)
+    ..pPM<RoutingVPC>(10, _omitFieldNames ? '' : 'routingVpcs',
         subBuilder: RoutingVPC.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  Hub clone() => Hub()..mergeFromMessage(this);
+  Hub clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Hub copyWith(void Function(Hub) updates) =>
       super.copyWith((message) => updates(message as Hub)) as Hub;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Hub create() => Hub._();
+  @$core.override
   Hub createEmptyInstance() => create();
-  static $pb.PbList<Hub> createRepeated() => $pb.PbList<Hub>();
   @$core.pragma('dart2js:noInline')
   static Hub getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Hub>(create);
@@ -1672,10 +1392,7 @@ class Hub extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) {
-    $_setString(0, v);
-  }
-
+  set name($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -1683,33 +1400,27 @@ class Hub extends $pb.GeneratedMessage {
 
   /// Output only. The time the hub was created.
   @$pb.TagNumber(2)
-  $2.Timestamp get createTime => $_getN(1);
+  $0.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($2.Timestamp v) {
-    $_setField(2, v);
-  }
-
+  set createTime($0.Timestamp value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => $_clearField(2);
   @$pb.TagNumber(2)
-  $2.Timestamp ensureCreateTime() => $_ensure(1);
+  $0.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. The time the hub was last updated.
   @$pb.TagNumber(3)
-  $2.Timestamp get updateTime => $_getN(2);
+  $0.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($2.Timestamp v) {
-    $_setField(3, v);
-  }
-
+  set updateTime($0.Timestamp value) => $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => $_clearField(3);
   @$pb.TagNumber(3)
-  $2.Timestamp ensureUpdateTime() => $_ensure(2);
+  $0.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Optional labels in key:value format. For more information about labels, see
   /// [Requirements for
@@ -1721,10 +1432,7 @@ class Hub extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get description => $_getSZ(4);
   @$pb.TagNumber(5)
-  set description($core.String v) {
-    $_setString(4, v);
-  }
-
+  set description($core.String value) => $_setString(4, value);
   @$pb.TagNumber(5)
   $core.bool hasDescription() => $_has(4);
   @$pb.TagNumber(5)
@@ -1736,10 +1444,7 @@ class Hub extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.String get uniqueId => $_getSZ(5);
   @$pb.TagNumber(8)
-  set uniqueId($core.String v) {
-    $_setString(5, v);
-  }
-
+  set uniqueId($core.String value) => $_setString(5, value);
   @$pb.TagNumber(8)
   $core.bool hasUniqueId() => $_has(5);
   @$pb.TagNumber(8)
@@ -1749,10 +1454,7 @@ class Hub extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   State get state => $_getN(6);
   @$pb.TagNumber(9)
-  set state(State v) {
-    $_setField(9, v);
-  }
-
+  set state(State value) => $_setField(9, value);
   @$pb.TagNumber(9)
   $core.bool hasState() => $_has(6);
   @$pb.TagNumber(9)
@@ -1773,23 +1475,22 @@ class RoutingVPC extends $pb.GeneratedMessage {
     $core.String? uri,
     $core.bool? requiredForNewSiteToSiteDataTransferSpokes,
   }) {
-    final $result = create();
-    if (uri != null) {
-      $result.uri = uri;
-    }
-    if (requiredForNewSiteToSiteDataTransferSpokes != null) {
-      $result.requiredForNewSiteToSiteDataTransferSpokes =
+    final result = create();
+    if (uri != null) result.uri = uri;
+    if (requiredForNewSiteToSiteDataTransferSpokes != null)
+      result.requiredForNewSiteToSiteDataTransferSpokes =
           requiredForNewSiteToSiteDataTransferSpokes;
-    }
-    return $result;
+    return result;
   }
-  RoutingVPC._() : super();
-  factory RoutingVPC.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory RoutingVPC.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  RoutingVPC._();
+
+  factory RoutingVPC.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory RoutingVPC.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'RoutingVPC',
@@ -1803,17 +1504,18 @@ class RoutingVPC extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  RoutingVPC clone() => RoutingVPC()..mergeFromMessage(this);
+  RoutingVPC clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   RoutingVPC copyWith(void Function(RoutingVPC) updates) =>
       super.copyWith((message) => updates(message as RoutingVPC)) as RoutingVPC;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static RoutingVPC create() => RoutingVPC._();
+  @$core.override
   RoutingVPC createEmptyInstance() => create();
-  static $pb.PbList<RoutingVPC> createRepeated() => $pb.PbList<RoutingVPC>();
   @$core.pragma('dart2js:noInline')
   static RoutingVPC getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<RoutingVPC>(create);
@@ -1823,10 +1525,7 @@ class RoutingVPC extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get uri => $_getSZ(0);
   @$pb.TagNumber(1)
-  set uri($core.String v) {
-    $_setString(0, v);
-  }
-
+  set uri($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasUri() => $_has(0);
   @$pb.TagNumber(1)
@@ -1840,10 +1539,8 @@ class RoutingVPC extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool get requiredForNewSiteToSiteDataTransferSpokes => $_getBF(1);
   @$pb.TagNumber(2)
-  set requiredForNewSiteToSiteDataTransferSpokes($core.bool v) {
-    $_setBool(1, v);
-  }
-
+  set requiredForNewSiteToSiteDataTransferSpokes($core.bool value) =>
+      $_setBool(1, value);
   @$pb.TagNumber(2)
   $core.bool hasRequiredForNewSiteToSiteDataTransferSpokes() => $_has(1);
   @$pb.TagNumber(2)
@@ -1862,8 +1559,8 @@ class RoutingVPC extends $pb.GeneratedMessage {
 class Spoke extends $pb.GeneratedMessage {
   factory Spoke({
     $core.String? name,
-    $2.Timestamp? createTime,
-    $2.Timestamp? updateTime,
+    $0.Timestamp? createTime,
+    $0.Timestamp? updateTime,
     $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.String? description,
     $core.String? hub,
@@ -1873,49 +1570,31 @@ class Spoke extends $pb.GeneratedMessage {
     LinkedInterconnectAttachments? linkedInterconnectAttachments,
     LinkedRouterApplianceInstances? linkedRouterApplianceInstances,
   }) {
-    final $result = create();
-    if (name != null) {
-      $result.name = name;
-    }
-    if (createTime != null) {
-      $result.createTime = createTime;
-    }
-    if (updateTime != null) {
-      $result.updateTime = updateTime;
-    }
-    if (labels != null) {
-      $result.labels.addEntries(labels);
-    }
-    if (description != null) {
-      $result.description = description;
-    }
-    if (hub != null) {
-      $result.hub = hub;
-    }
-    if (uniqueId != null) {
-      $result.uniqueId = uniqueId;
-    }
-    if (state != null) {
-      $result.state = state;
-    }
-    if (linkedVpnTunnels != null) {
-      $result.linkedVpnTunnels = linkedVpnTunnels;
-    }
-    if (linkedInterconnectAttachments != null) {
-      $result.linkedInterconnectAttachments = linkedInterconnectAttachments;
-    }
-    if (linkedRouterApplianceInstances != null) {
-      $result.linkedRouterApplianceInstances = linkedRouterApplianceInstances;
-    }
-    return $result;
+    final result = create();
+    if (name != null) result.name = name;
+    if (createTime != null) result.createTime = createTime;
+    if (updateTime != null) result.updateTime = updateTime;
+    if (labels != null) result.labels.addEntries(labels);
+    if (description != null) result.description = description;
+    if (hub != null) result.hub = hub;
+    if (uniqueId != null) result.uniqueId = uniqueId;
+    if (state != null) result.state = state;
+    if (linkedVpnTunnels != null) result.linkedVpnTunnels = linkedVpnTunnels;
+    if (linkedInterconnectAttachments != null)
+      result.linkedInterconnectAttachments = linkedInterconnectAttachments;
+    if (linkedRouterApplianceInstances != null)
+      result.linkedRouterApplianceInstances = linkedRouterApplianceInstances;
+    return result;
   }
-  Spoke._() : super();
-  factory Spoke.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Spoke.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  Spoke._();
+
+  factory Spoke.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory Spoke.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'Spoke',
@@ -1924,10 +1603,10 @@ class Spoke extends $pb.GeneratedMessage {
           : 'google.events.cloud.networkconnectivity.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$2.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(3, _omitFieldNames ? '' : 'updateTime',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$0.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(3, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $0.Timestamp.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels',
         entryClassName: 'Spoke.LabelsEntry',
         keyFieldType: $pb.PbFieldType.OS,
@@ -1937,10 +1616,7 @@ class Spoke extends $pb.GeneratedMessage {
     ..aOS(5, _omitFieldNames ? '' : 'description')
     ..aOS(6, _omitFieldNames ? '' : 'hub')
     ..aOS(11, _omitFieldNames ? '' : 'uniqueId')
-    ..e<State>(15, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
-        defaultOrMaker: State.STATE_UNSPECIFIED,
-        valueOf: State.valueOf,
-        enumValues: State.values)
+    ..aE<State>(15, _omitFieldNames ? '' : 'state', enumValues: State.values)
     ..aOM<LinkedVpnTunnels>(17, _omitFieldNames ? '' : 'linkedVpnTunnels',
         subBuilder: LinkedVpnTunnels.create)
     ..aOM<LinkedInterconnectAttachments>(
@@ -1952,17 +1628,18 @@ class Spoke extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  Spoke clone() => Spoke()..mergeFromMessage(this);
+  Spoke clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Spoke copyWith(void Function(Spoke) updates) =>
       super.copyWith((message) => updates(message as Spoke)) as Spoke;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Spoke create() => Spoke._();
+  @$core.override
   Spoke createEmptyInstance() => create();
-  static $pb.PbList<Spoke> createRepeated() => $pb.PbList<Spoke>();
   @$core.pragma('dart2js:noInline')
   static Spoke getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Spoke>(create);
@@ -1974,10 +1651,7 @@ class Spoke extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) {
-    $_setString(0, v);
-  }
-
+  set name($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -1985,33 +1659,27 @@ class Spoke extends $pb.GeneratedMessage {
 
   /// Output only. The time the spoke was created.
   @$pb.TagNumber(2)
-  $2.Timestamp get createTime => $_getN(1);
+  $0.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($2.Timestamp v) {
-    $_setField(2, v);
-  }
-
+  set createTime($0.Timestamp value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => $_clearField(2);
   @$pb.TagNumber(2)
-  $2.Timestamp ensureCreateTime() => $_ensure(1);
+  $0.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. The time the spoke was last updated.
   @$pb.TagNumber(3)
-  $2.Timestamp get updateTime => $_getN(2);
+  $0.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($2.Timestamp v) {
-    $_setField(3, v);
-  }
-
+  set updateTime($0.Timestamp value) => $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => $_clearField(3);
   @$pb.TagNumber(3)
-  $2.Timestamp ensureUpdateTime() => $_ensure(2);
+  $0.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Optional labels in key:value format. For more information about labels, see
   /// [Requirements for
@@ -2023,10 +1691,7 @@ class Spoke extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get description => $_getSZ(4);
   @$pb.TagNumber(5)
-  set description($core.String v) {
-    $_setString(4, v);
-  }
-
+  set description($core.String value) => $_setString(4, value);
   @$pb.TagNumber(5)
   $core.bool hasDescription() => $_has(4);
   @$pb.TagNumber(5)
@@ -2036,10 +1701,7 @@ class Spoke extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get hub => $_getSZ(5);
   @$pb.TagNumber(6)
-  set hub($core.String v) {
-    $_setString(5, v);
-  }
-
+  set hub($core.String value) => $_setString(5, value);
   @$pb.TagNumber(6)
   $core.bool hasHub() => $_has(5);
   @$pb.TagNumber(6)
@@ -2051,10 +1713,7 @@ class Spoke extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.String get uniqueId => $_getSZ(6);
   @$pb.TagNumber(11)
-  set uniqueId($core.String v) {
-    $_setString(6, v);
-  }
-
+  set uniqueId($core.String value) => $_setString(6, value);
   @$pb.TagNumber(11)
   $core.bool hasUniqueId() => $_has(6);
   @$pb.TagNumber(11)
@@ -2064,10 +1723,7 @@ class Spoke extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   State get state => $_getN(7);
   @$pb.TagNumber(15)
-  set state(State v) {
-    $_setField(15, v);
-  }
-
+  set state(State value) => $_setField(15, value);
   @$pb.TagNumber(15)
   $core.bool hasState() => $_has(7);
   @$pb.TagNumber(15)
@@ -2077,10 +1733,7 @@ class Spoke extends $pb.GeneratedMessage {
   @$pb.TagNumber(17)
   LinkedVpnTunnels get linkedVpnTunnels => $_getN(8);
   @$pb.TagNumber(17)
-  set linkedVpnTunnels(LinkedVpnTunnels v) {
-    $_setField(17, v);
-  }
-
+  set linkedVpnTunnels(LinkedVpnTunnels value) => $_setField(17, value);
   @$pb.TagNumber(17)
   $core.bool hasLinkedVpnTunnels() => $_has(8);
   @$pb.TagNumber(17)
@@ -2092,10 +1745,8 @@ class Spoke extends $pb.GeneratedMessage {
   @$pb.TagNumber(18)
   LinkedInterconnectAttachments get linkedInterconnectAttachments => $_getN(9);
   @$pb.TagNumber(18)
-  set linkedInterconnectAttachments(LinkedInterconnectAttachments v) {
-    $_setField(18, v);
-  }
-
+  set linkedInterconnectAttachments(LinkedInterconnectAttachments value) =>
+      $_setField(18, value);
   @$pb.TagNumber(18)
   $core.bool hasLinkedInterconnectAttachments() => $_has(9);
   @$pb.TagNumber(18)
@@ -2109,10 +1760,8 @@ class Spoke extends $pb.GeneratedMessage {
   LinkedRouterApplianceInstances get linkedRouterApplianceInstances =>
       $_getN(10);
   @$pb.TagNumber(19)
-  set linkedRouterApplianceInstances(LinkedRouterApplianceInstances v) {
-    $_setField(19, v);
-  }
-
+  set linkedRouterApplianceInstances(LinkedRouterApplianceInstances value) =>
+      $_setField(19, value);
   @$pb.TagNumber(19)
   $core.bool hasLinkedRouterApplianceInstances() => $_has(10);
   @$pb.TagNumber(19)
@@ -2132,25 +1781,22 @@ class LinkedVpnTunnels extends $pb.GeneratedMessage {
     $core.bool? siteToSiteDataTransfer,
     $core.String? vpcNetwork,
   }) {
-    final $result = create();
-    if (uris != null) {
-      $result.uris.addAll(uris);
-    }
-    if (siteToSiteDataTransfer != null) {
-      $result.siteToSiteDataTransfer = siteToSiteDataTransfer;
-    }
-    if (vpcNetwork != null) {
-      $result.vpcNetwork = vpcNetwork;
-    }
-    return $result;
+    final result = create();
+    if (uris != null) result.uris.addAll(uris);
+    if (siteToSiteDataTransfer != null)
+      result.siteToSiteDataTransfer = siteToSiteDataTransfer;
+    if (vpcNetwork != null) result.vpcNetwork = vpcNetwork;
+    return result;
   }
-  LinkedVpnTunnels._() : super();
-  factory LinkedVpnTunnels.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory LinkedVpnTunnels.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  LinkedVpnTunnels._();
+
+  factory LinkedVpnTunnels.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory LinkedVpnTunnels.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'LinkedVpnTunnels',
@@ -2164,19 +1810,19 @@ class LinkedVpnTunnels extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  LinkedVpnTunnels clone() => LinkedVpnTunnels()..mergeFromMessage(this);
+  LinkedVpnTunnels clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   LinkedVpnTunnels copyWith(void Function(LinkedVpnTunnels) updates) =>
       super.copyWith((message) => updates(message as LinkedVpnTunnels))
           as LinkedVpnTunnels;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static LinkedVpnTunnels create() => LinkedVpnTunnels._();
+  @$core.override
   LinkedVpnTunnels createEmptyInstance() => create();
-  static $pb.PbList<LinkedVpnTunnels> createRepeated() =>
-      $pb.PbList<LinkedVpnTunnels>();
   @$core.pragma('dart2js:noInline')
   static LinkedVpnTunnels getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<LinkedVpnTunnels>(create);
@@ -2192,10 +1838,7 @@ class LinkedVpnTunnels extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool get siteToSiteDataTransfer => $_getBF(1);
   @$pb.TagNumber(2)
-  set siteToSiteDataTransfer($core.bool v) {
-    $_setBool(1, v);
-  }
-
+  set siteToSiteDataTransfer($core.bool value) => $_setBool(1, value);
   @$pb.TagNumber(2)
   $core.bool hasSiteToSiteDataTransfer() => $_has(1);
   @$pb.TagNumber(2)
@@ -2205,10 +1848,7 @@ class LinkedVpnTunnels extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get vpcNetwork => $_getSZ(2);
   @$pb.TagNumber(3)
-  set vpcNetwork($core.String v) {
-    $_setString(2, v);
-  }
-
+  set vpcNetwork($core.String value) => $_setString(2, value);
   @$pb.TagNumber(3)
   $core.bool hasVpcNetwork() => $_has(2);
   @$pb.TagNumber(3)
@@ -2225,25 +1865,22 @@ class LinkedInterconnectAttachments extends $pb.GeneratedMessage {
     $core.bool? siteToSiteDataTransfer,
     $core.String? vpcNetwork,
   }) {
-    final $result = create();
-    if (uris != null) {
-      $result.uris.addAll(uris);
-    }
-    if (siteToSiteDataTransfer != null) {
-      $result.siteToSiteDataTransfer = siteToSiteDataTransfer;
-    }
-    if (vpcNetwork != null) {
-      $result.vpcNetwork = vpcNetwork;
-    }
-    return $result;
+    final result = create();
+    if (uris != null) result.uris.addAll(uris);
+    if (siteToSiteDataTransfer != null)
+      result.siteToSiteDataTransfer = siteToSiteDataTransfer;
+    if (vpcNetwork != null) result.vpcNetwork = vpcNetwork;
+    return result;
   }
-  LinkedInterconnectAttachments._() : super();
-  factory LinkedInterconnectAttachments.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory LinkedInterconnectAttachments.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  LinkedInterconnectAttachments._();
+
+  factory LinkedInterconnectAttachments.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory LinkedInterconnectAttachments.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'LinkedInterconnectAttachments',
@@ -2257,8 +1894,7 @@ class LinkedInterconnectAttachments extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  LinkedInterconnectAttachments clone() =>
-      LinkedInterconnectAttachments()..mergeFromMessage(this);
+  LinkedInterconnectAttachments clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   LinkedInterconnectAttachments copyWith(
           void Function(LinkedInterconnectAttachments) updates) =>
@@ -2266,14 +1902,14 @@ class LinkedInterconnectAttachments extends $pb.GeneratedMessage {
               (message) => updates(message as LinkedInterconnectAttachments))
           as LinkedInterconnectAttachments;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static LinkedInterconnectAttachments create() =>
       LinkedInterconnectAttachments._();
+  @$core.override
   LinkedInterconnectAttachments createEmptyInstance() => create();
-  static $pb.PbList<LinkedInterconnectAttachments> createRepeated() =>
-      $pb.PbList<LinkedInterconnectAttachments>();
   @$core.pragma('dart2js:noInline')
   static LinkedInterconnectAttachments getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<LinkedInterconnectAttachments>(create);
@@ -2289,10 +1925,7 @@ class LinkedInterconnectAttachments extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool get siteToSiteDataTransfer => $_getBF(1);
   @$pb.TagNumber(2)
-  set siteToSiteDataTransfer($core.bool v) {
-    $_setBool(1, v);
-  }
-
+  set siteToSiteDataTransfer($core.bool value) => $_setBool(1, value);
   @$pb.TagNumber(2)
   $core.bool hasSiteToSiteDataTransfer() => $_has(1);
   @$pb.TagNumber(2)
@@ -2302,10 +1935,7 @@ class LinkedInterconnectAttachments extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get vpcNetwork => $_getSZ(2);
   @$pb.TagNumber(3)
-  set vpcNetwork($core.String v) {
-    $_setString(2, v);
-  }
-
+  set vpcNetwork($core.String value) => $_setString(2, value);
   @$pb.TagNumber(3)
   $core.bool hasVpcNetwork() => $_has(2);
   @$pb.TagNumber(3)
@@ -2322,25 +1952,22 @@ class LinkedRouterApplianceInstances extends $pb.GeneratedMessage {
     $core.bool? siteToSiteDataTransfer,
     $core.String? vpcNetwork,
   }) {
-    final $result = create();
-    if (instances != null) {
-      $result.instances.addAll(instances);
-    }
-    if (siteToSiteDataTransfer != null) {
-      $result.siteToSiteDataTransfer = siteToSiteDataTransfer;
-    }
-    if (vpcNetwork != null) {
-      $result.vpcNetwork = vpcNetwork;
-    }
-    return $result;
+    final result = create();
+    if (instances != null) result.instances.addAll(instances);
+    if (siteToSiteDataTransfer != null)
+      result.siteToSiteDataTransfer = siteToSiteDataTransfer;
+    if (vpcNetwork != null) result.vpcNetwork = vpcNetwork;
+    return result;
   }
-  LinkedRouterApplianceInstances._() : super();
-  factory LinkedRouterApplianceInstances.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory LinkedRouterApplianceInstances.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  LinkedRouterApplianceInstances._();
+
+  factory LinkedRouterApplianceInstances.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory LinkedRouterApplianceInstances.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'LinkedRouterApplianceInstances',
@@ -2348,16 +1975,14 @@ class LinkedRouterApplianceInstances extends $pb.GeneratedMessage {
           ? ''
           : 'google.events.cloud.networkconnectivity.v1'),
       createEmptyInstance: create)
-    ..pc<RouterApplianceInstance>(
-        1, _omitFieldNames ? '' : 'instances', $pb.PbFieldType.PM,
+    ..pPM<RouterApplianceInstance>(1, _omitFieldNames ? '' : 'instances',
         subBuilder: RouterApplianceInstance.create)
     ..aOB(2, _omitFieldNames ? '' : 'siteToSiteDataTransfer')
     ..aOS(3, _omitFieldNames ? '' : 'vpcNetwork')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  LinkedRouterApplianceInstances clone() =>
-      LinkedRouterApplianceInstances()..mergeFromMessage(this);
+  LinkedRouterApplianceInstances clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   LinkedRouterApplianceInstances copyWith(
           void Function(LinkedRouterApplianceInstances) updates) =>
@@ -2365,14 +1990,14 @@ class LinkedRouterApplianceInstances extends $pb.GeneratedMessage {
               (message) => updates(message as LinkedRouterApplianceInstances))
           as LinkedRouterApplianceInstances;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static LinkedRouterApplianceInstances create() =>
       LinkedRouterApplianceInstances._();
+  @$core.override
   LinkedRouterApplianceInstances createEmptyInstance() => create();
-  static $pb.PbList<LinkedRouterApplianceInstances> createRepeated() =>
-      $pb.PbList<LinkedRouterApplianceInstances>();
   @$core.pragma('dart2js:noInline')
   static LinkedRouterApplianceInstances getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<LinkedRouterApplianceInstances>(create);
@@ -2388,10 +2013,7 @@ class LinkedRouterApplianceInstances extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool get siteToSiteDataTransfer => $_getBF(1);
   @$pb.TagNumber(2)
-  set siteToSiteDataTransfer($core.bool v) {
-    $_setBool(1, v);
-  }
-
+  set siteToSiteDataTransfer($core.bool value) => $_setBool(1, value);
   @$pb.TagNumber(2)
   $core.bool hasSiteToSiteDataTransfer() => $_has(1);
   @$pb.TagNumber(2)
@@ -2402,10 +2024,7 @@ class LinkedRouterApplianceInstances extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get vpcNetwork => $_getSZ(2);
   @$pb.TagNumber(3)
-  set vpcNetwork($core.String v) {
-    $_setString(2, v);
-  }
-
+  set vpcNetwork($core.String value) => $_setString(2, value);
   @$pb.TagNumber(3)
   $core.bool hasVpcNetwork() => $_has(2);
   @$pb.TagNumber(3)
@@ -2421,22 +2040,20 @@ class RouterApplianceInstance extends $pb.GeneratedMessage {
     $core.String? virtualMachine,
     $core.String? ipAddress,
   }) {
-    final $result = create();
-    if (virtualMachine != null) {
-      $result.virtualMachine = virtualMachine;
-    }
-    if (ipAddress != null) {
-      $result.ipAddress = ipAddress;
-    }
-    return $result;
+    final result = create();
+    if (virtualMachine != null) result.virtualMachine = virtualMachine;
+    if (ipAddress != null) result.ipAddress = ipAddress;
+    return result;
   }
-  RouterApplianceInstance._() : super();
-  factory RouterApplianceInstance.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory RouterApplianceInstance.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  RouterApplianceInstance._();
+
+  factory RouterApplianceInstance.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory RouterApplianceInstance.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'RouterApplianceInstance',
@@ -2449,21 +2066,20 @@ class RouterApplianceInstance extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  RouterApplianceInstance clone() =>
-      RouterApplianceInstance()..mergeFromMessage(this);
+  RouterApplianceInstance clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   RouterApplianceInstance copyWith(
           void Function(RouterApplianceInstance) updates) =>
       super.copyWith((message) => updates(message as RouterApplianceInstance))
           as RouterApplianceInstance;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static RouterApplianceInstance create() => RouterApplianceInstance._();
+  @$core.override
   RouterApplianceInstance createEmptyInstance() => create();
-  static $pb.PbList<RouterApplianceInstance> createRepeated() =>
-      $pb.PbList<RouterApplianceInstance>();
   @$core.pragma('dart2js:noInline')
   static RouterApplianceInstance getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<RouterApplianceInstance>(create);
@@ -2473,10 +2089,7 @@ class RouterApplianceInstance extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get virtualMachine => $_getSZ(0);
   @$pb.TagNumber(1)
-  set virtualMachine($core.String v) {
-    $_setString(0, v);
-  }
-
+  set virtualMachine($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasVirtualMachine() => $_has(0);
   @$pb.TagNumber(1)
@@ -2486,10 +2099,7 @@ class RouterApplianceInstance extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get ipAddress => $_getSZ(1);
   @$pb.TagNumber(3)
-  set ipAddress($core.String v) {
-    $_setString(1, v);
-  }
-
+  set ipAddress($core.String value) => $_setString(1, value);
   @$pb.TagNumber(3)
   $core.bool hasIpAddress() => $_has(1);
   @$pb.TagNumber(3)
@@ -2501,19 +2111,19 @@ class ServiceClassEventData extends $pb.GeneratedMessage {
   factory ServiceClassEventData({
     ServiceClass? payload,
   }) {
-    final $result = create();
-    if (payload != null) {
-      $result.payload = payload;
-    }
-    return $result;
+    final result = create();
+    if (payload != null) result.payload = payload;
+    return result;
   }
-  ServiceClassEventData._() : super();
-  factory ServiceClassEventData.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ServiceClassEventData.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  ServiceClassEventData._();
+
+  factory ServiceClassEventData.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ServiceClassEventData.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'ServiceClassEventData',
@@ -2526,21 +2136,20 @@ class ServiceClassEventData extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ServiceClassEventData clone() =>
-      ServiceClassEventData()..mergeFromMessage(this);
+  ServiceClassEventData clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceClassEventData copyWith(
           void Function(ServiceClassEventData) updates) =>
       super.copyWith((message) => updates(message as ServiceClassEventData))
           as ServiceClassEventData;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ServiceClassEventData create() => ServiceClassEventData._();
+  @$core.override
   ServiceClassEventData createEmptyInstance() => create();
-  static $pb.PbList<ServiceClassEventData> createRepeated() =>
-      $pb.PbList<ServiceClassEventData>();
   @$core.pragma('dart2js:noInline')
   static ServiceClassEventData getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ServiceClassEventData>(create);
@@ -2550,10 +2159,7 @@ class ServiceClassEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   ServiceClass get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(ServiceClass v) {
-    $_setField(1, v);
-  }
-
+  set payload(ServiceClass value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -2567,19 +2173,19 @@ class ServiceConnectionTokenEventData extends $pb.GeneratedMessage {
   factory ServiceConnectionTokenEventData({
     ServiceConnectionToken? payload,
   }) {
-    final $result = create();
-    if (payload != null) {
-      $result.payload = payload;
-    }
-    return $result;
+    final result = create();
+    if (payload != null) result.payload = payload;
+    return result;
   }
-  ServiceConnectionTokenEventData._() : super();
-  factory ServiceConnectionTokenEventData.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ServiceConnectionTokenEventData.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  ServiceConnectionTokenEventData._();
+
+  factory ServiceConnectionTokenEventData.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ServiceConnectionTokenEventData.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'ServiceConnectionTokenEventData',
@@ -2592,8 +2198,7 @@ class ServiceConnectionTokenEventData extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ServiceConnectionTokenEventData clone() =>
-      ServiceConnectionTokenEventData()..mergeFromMessage(this);
+  ServiceConnectionTokenEventData clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceConnectionTokenEventData copyWith(
           void Function(ServiceConnectionTokenEventData) updates) =>
@@ -2601,14 +2206,14 @@ class ServiceConnectionTokenEventData extends $pb.GeneratedMessage {
               (message) => updates(message as ServiceConnectionTokenEventData))
           as ServiceConnectionTokenEventData;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ServiceConnectionTokenEventData create() =>
       ServiceConnectionTokenEventData._();
+  @$core.override
   ServiceConnectionTokenEventData createEmptyInstance() => create();
-  static $pb.PbList<ServiceConnectionTokenEventData> createRepeated() =>
-      $pb.PbList<ServiceConnectionTokenEventData>();
   @$core.pragma('dart2js:noInline')
   static ServiceConnectionTokenEventData getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ServiceConnectionTokenEventData>(
@@ -2620,10 +2225,7 @@ class ServiceConnectionTokenEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   ServiceConnectionToken get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(ServiceConnectionToken v) {
-    $_setField(1, v);
-  }
-
+  set payload(ServiceConnectionToken value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -2637,19 +2239,19 @@ class ServiceConnectionMapEventData extends $pb.GeneratedMessage {
   factory ServiceConnectionMapEventData({
     ServiceConnectionMap? payload,
   }) {
-    final $result = create();
-    if (payload != null) {
-      $result.payload = payload;
-    }
-    return $result;
+    final result = create();
+    if (payload != null) result.payload = payload;
+    return result;
   }
-  ServiceConnectionMapEventData._() : super();
-  factory ServiceConnectionMapEventData.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ServiceConnectionMapEventData.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  ServiceConnectionMapEventData._();
+
+  factory ServiceConnectionMapEventData.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ServiceConnectionMapEventData.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'ServiceConnectionMapEventData',
@@ -2662,8 +2264,7 @@ class ServiceConnectionMapEventData extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ServiceConnectionMapEventData clone() =>
-      ServiceConnectionMapEventData()..mergeFromMessage(this);
+  ServiceConnectionMapEventData clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceConnectionMapEventData copyWith(
           void Function(ServiceConnectionMapEventData) updates) =>
@@ -2671,14 +2272,14 @@ class ServiceConnectionMapEventData extends $pb.GeneratedMessage {
               (message) => updates(message as ServiceConnectionMapEventData))
           as ServiceConnectionMapEventData;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ServiceConnectionMapEventData create() =>
       ServiceConnectionMapEventData._();
+  @$core.override
   ServiceConnectionMapEventData createEmptyInstance() => create();
-  static $pb.PbList<ServiceConnectionMapEventData> createRepeated() =>
-      $pb.PbList<ServiceConnectionMapEventData>();
   @$core.pragma('dart2js:noInline')
   static ServiceConnectionMapEventData getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ServiceConnectionMapEventData>(create);
@@ -2689,10 +2290,7 @@ class ServiceConnectionMapEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   ServiceConnectionMap get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(ServiceConnectionMap v) {
-    $_setField(1, v);
-  }
-
+  set payload(ServiceConnectionMap value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -2706,19 +2304,19 @@ class HubEventData extends $pb.GeneratedMessage {
   factory HubEventData({
     Hub? payload,
   }) {
-    final $result = create();
-    if (payload != null) {
-      $result.payload = payload;
-    }
-    return $result;
+    final result = create();
+    if (payload != null) result.payload = payload;
+    return result;
   }
-  HubEventData._() : super();
-  factory HubEventData.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory HubEventData.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  HubEventData._();
+
+  factory HubEventData.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory HubEventData.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'HubEventData',
@@ -2730,19 +2328,19 @@ class HubEventData extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  HubEventData clone() => HubEventData()..mergeFromMessage(this);
+  HubEventData clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HubEventData copyWith(void Function(HubEventData) updates) =>
       super.copyWith((message) => updates(message as HubEventData))
           as HubEventData;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static HubEventData create() => HubEventData._();
+  @$core.override
   HubEventData createEmptyInstance() => create();
-  static $pb.PbList<HubEventData> createRepeated() =>
-      $pb.PbList<HubEventData>();
   @$core.pragma('dart2js:noInline')
   static HubEventData getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<HubEventData>(create);
@@ -2752,10 +2350,7 @@ class HubEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   Hub get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(Hub v) {
-    $_setField(1, v);
-  }
-
+  set payload(Hub value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -2769,19 +2364,19 @@ class SpokeEventData extends $pb.GeneratedMessage {
   factory SpokeEventData({
     Spoke? payload,
   }) {
-    final $result = create();
-    if (payload != null) {
-      $result.payload = payload;
-    }
-    return $result;
+    final result = create();
+    if (payload != null) result.payload = payload;
+    return result;
   }
-  SpokeEventData._() : super();
-  factory SpokeEventData.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory SpokeEventData.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  SpokeEventData._();
+
+  factory SpokeEventData.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory SpokeEventData.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'SpokeEventData',
@@ -2793,19 +2388,19 @@ class SpokeEventData extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  SpokeEventData clone() => SpokeEventData()..mergeFromMessage(this);
+  SpokeEventData clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   SpokeEventData copyWith(void Function(SpokeEventData) updates) =>
       super.copyWith((message) => updates(message as SpokeEventData))
           as SpokeEventData;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SpokeEventData create() => SpokeEventData._();
+  @$core.override
   SpokeEventData createEmptyInstance() => create();
-  static $pb.PbList<SpokeEventData> createRepeated() =>
-      $pb.PbList<SpokeEventData>();
   @$core.pragma('dart2js:noInline')
   static SpokeEventData getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<SpokeEventData>(create);
@@ -2815,10 +2410,7 @@ class SpokeEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   Spoke get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(Spoke v) {
-    $_setField(1, v);
-  }
-
+  set payload(Spoke value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -2832,19 +2424,20 @@ class ServiceConnectionPolicyEventData extends $pb.GeneratedMessage {
   factory ServiceConnectionPolicyEventData({
     ServiceConnectionPolicy? payload,
   }) {
-    final $result = create();
-    if (payload != null) {
-      $result.payload = payload;
-    }
-    return $result;
+    final result = create();
+    if (payload != null) result.payload = payload;
+    return result;
   }
-  ServiceConnectionPolicyEventData._() : super();
-  factory ServiceConnectionPolicyEventData.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ServiceConnectionPolicyEventData.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  ServiceConnectionPolicyEventData._();
+
+  factory ServiceConnectionPolicyEventData.fromBuffer(
+          $core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ServiceConnectionPolicyEventData.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'ServiceConnectionPolicyEventData',
@@ -2857,8 +2450,7 @@ class ServiceConnectionPolicyEventData extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ServiceConnectionPolicyEventData clone() =>
-      ServiceConnectionPolicyEventData()..mergeFromMessage(this);
+  ServiceConnectionPolicyEventData clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceConnectionPolicyEventData copyWith(
           void Function(ServiceConnectionPolicyEventData) updates) =>
@@ -2866,14 +2458,14 @@ class ServiceConnectionPolicyEventData extends $pb.GeneratedMessage {
               (message) => updates(message as ServiceConnectionPolicyEventData))
           as ServiceConnectionPolicyEventData;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ServiceConnectionPolicyEventData create() =>
       ServiceConnectionPolicyEventData._();
+  @$core.override
   ServiceConnectionPolicyEventData createEmptyInstance() => create();
-  static $pb.PbList<ServiceConnectionPolicyEventData> createRepeated() =>
-      $pb.PbList<ServiceConnectionPolicyEventData>();
   @$core.pragma('dart2js:noInline')
   static ServiceConnectionPolicyEventData getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ServiceConnectionPolicyEventData>(
@@ -2885,10 +2477,7 @@ class ServiceConnectionPolicyEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   ServiceConnectionPolicy get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(ServiceConnectionPolicy v) {
-    $_setField(1, v);
-  }
-
+  set payload(ServiceConnectionPolicy value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -2897,6 +2486,7 @@ class ServiceConnectionPolicyEventData extends $pb.GeneratedMessage {
   ServiceConnectionPolicy ensurePayload() => $_ensure(0);
 }
 
-const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames =
+const $core.bool _omitFieldNames =
+    $core.bool.fromEnvironment('protobuf.omit_field_names');
+const $core.bool _omitMessageNames =
     $core.bool.fromEnvironment('protobuf.omit_message_names');

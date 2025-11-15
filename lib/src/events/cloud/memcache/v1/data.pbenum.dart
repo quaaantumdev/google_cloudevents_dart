@@ -1,13 +1,14 @@
+// This is a generated file - do not edit.
 //
-//  Generated code. Do not modify.
-//  source: google/events/cloud/memcache/v1/data.proto
-//
+// Generated from google/events/cloud/memcache/v1/data.proto.
+
 // @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
-// ignore_for_file: constant_identifier_names, library_prefixes
-// ignore_for_file: non_constant_identifier_names, prefer_final_fields
-// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
+// ignore_for_file: constant_identifier_names
+// ignore_for_file: curly_braces_in_flow_control_structures
+// ignore_for_file: deprecated_member_use_from_same_package, library_prefixes
+// ignore_for_file: non_constant_identifier_names
 
 import 'dart:core' as $core;
 
@@ -32,7 +33,7 @@ class MemcacheVersion extends $pb.ProtobufEnum {
   static MemcacheVersion? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const MemcacheVersion._(super.v, super.n);
+  const MemcacheVersion._(super.value, super.name);
 }
 
 /// Different states of a Memcached instance.
@@ -76,7 +77,7 @@ class Instance_State extends $pb.ProtobufEnum {
   static Instance_State? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Instance_State._(super.v, super.n);
+  const Instance_State._(super.value, super.name);
 }
 
 /// Different states of a Memcached node.
@@ -114,7 +115,7 @@ class Instance_Node_State extends $pb.ProtobufEnum {
   static Instance_Node_State? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Instance_Node_State._(super.v, super.n);
+  const Instance_Node_State._(super.value, super.name);
 }
 
 class Instance_InstanceMessage_Code extends $pb.ProtobufEnum {
@@ -139,7 +140,8 @@ class Instance_InstanceMessage_Code extends $pb.ProtobufEnum {
   static Instance_InstanceMessage_Code? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Instance_InstanceMessage_Code._(super.v, super.n);
+  const Instance_InstanceMessage_Code._(super.value, super.name);
 }
 
-const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');
+const $core.bool _omitEnumNames =
+    $core.bool.fromEnvironment('protobuf.omit_enum_names');

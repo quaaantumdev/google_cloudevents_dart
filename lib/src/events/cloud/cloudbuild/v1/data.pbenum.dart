@@ -1,13 +1,14 @@
+// This is a generated file - do not edit.
 //
-//  Generated code. Do not modify.
-//  source: google/events/cloud/cloudbuild/v1/data.proto
-//
+// Generated from google/events/cloud/cloudbuild/v1/data.proto.
+
 // @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
-// ignore_for_file: constant_identifier_names, library_prefixes
-// ignore_for_file: non_constant_identifier_names, prefer_final_fields
-// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
+// ignore_for_file: constant_identifier_names
+// ignore_for_file: curly_braces_in_flow_control_structures
+// ignore_for_file: deprecated_member_use_from_same_package, library_prefixes
+// ignore_for_file: non_constant_identifier_names
 
 import 'dart:core' as $core;
 
@@ -69,7 +70,7 @@ class BuildEventData_Status extends $pb.ProtobufEnum {
   static BuildEventData_Status? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const BuildEventData_Status._(super.v, super.n);
+  const BuildEventData_Status._(super.value, super.name);
 }
 
 /// Specifies the hash algorithm, if any.
@@ -97,7 +98,7 @@ class Hash_HashType extends $pb.ProtobufEnum {
   static Hash_HashType? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Hash_HashType._(super.v, super.n);
+  const Hash_HashType._(super.value, super.name);
 }
 
 /// Specifies the manner in which the build should be verified, if at all.
@@ -121,7 +122,7 @@ class BuildOptions_VerifyOption extends $pb.ProtobufEnum {
   static BuildOptions_VerifyOption? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const BuildOptions_VerifyOption._(super.v, super.n);
+  const BuildOptions_VerifyOption._(super.value, super.name);
 }
 
 /// Supported VM sizes.
@@ -150,7 +151,7 @@ class BuildOptions_MachineType extends $pb.ProtobufEnum {
   static BuildOptions_MachineType? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const BuildOptions_MachineType._(super.v, super.n);
+  const BuildOptions_MachineType._(super.value, super.name);
 }
 
 /// Specifies the behavior when there is an error in the substitution checks.
@@ -175,7 +176,7 @@ class BuildOptions_SubstitutionOption extends $pb.ProtobufEnum {
   static BuildOptions_SubstitutionOption? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const BuildOptions_SubstitutionOption._(super.v, super.n);
+  const BuildOptions_SubstitutionOption._(super.value, super.name);
 }
 
 /// Specifies the behavior when writing build logs to Google Cloud Storage.
@@ -206,7 +207,7 @@ class BuildOptions_LogStreamingOption extends $pb.ProtobufEnum {
   static BuildOptions_LogStreamingOption? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const BuildOptions_LogStreamingOption._(super.v, super.n);
+  const BuildOptions_LogStreamingOption._(super.value, super.name);
 }
 
 /// Specifies the logging mode.
@@ -237,7 +238,8 @@ class BuildOptions_LoggingMode extends $pb.ProtobufEnum {
   static BuildOptions_LoggingMode? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const BuildOptions_LoggingMode._(super.v, super.n);
+  const BuildOptions_LoggingMode._(super.value, super.name);
 }
 
-const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');
+const $core.bool _omitEnumNames =
+    $core.bool.fromEnvironment('protobuf.omit_enum_names');

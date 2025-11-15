@@ -1,13 +1,14 @@
+// This is a generated file - do not edit.
 //
-//  Generated code. Do not modify.
-//  source: google/events/cloud/dataplex/v1/data.proto
-//
+// Generated from google/events/cloud/dataplex/v1/data.proto.
+
 // @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
-// ignore_for_file: constant_identifier_names, library_prefixes
-// ignore_for_file: non_constant_identifier_names, prefer_final_fields
-// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
+// ignore_for_file: constant_identifier_names
+// ignore_for_file: curly_braces_in_flow_control_structures
+// ignore_for_file: deprecated_member_use_from_same_package, library_prefixes
+// ignore_for_file: non_constant_identifier_names
 
 import 'dart:core' as $core;
 
@@ -45,7 +46,7 @@ class State extends $pb.ProtobufEnum {
   static State? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const State._(super.v, super.n);
+  const State._(super.value, super.name);
 }
 
 /// The type of DataScan.
@@ -73,7 +74,7 @@ class DataScanType extends $pb.ProtobufEnum {
   static DataScanType? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const DataScanType._(super.v, super.n);
+  const DataScanType._(super.value, super.name);
 }
 
 /// Current state of association.
@@ -113,7 +114,7 @@ class Lake_MetastoreStatus_State extends $pb.ProtobufEnum {
   static Lake_MetastoreStatus_State? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Lake_MetastoreStatus_State._(super.v, super.n);
+  const Lake_MetastoreStatus_State._(super.value, super.name);
 }
 
 /// Type of zone.
@@ -144,7 +145,7 @@ class Zone_Type extends $pb.ProtobufEnum {
   static Zone_Type? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Zone_Type._(super.v, super.n);
+  const Zone_Type._(super.value, super.name);
 }
 
 /// Location type of the resources attached to a zone.
@@ -175,7 +176,7 @@ class Zone_ResourceSpec_LocationType extends $pb.ProtobufEnum {
   static Zone_ResourceSpec_LocationType? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Zone_ResourceSpec_LocationType._(super.v, super.n);
+  const Zone_ResourceSpec_LocationType._(super.value, super.name);
 }
 
 /// The state of the security policy.
@@ -212,7 +213,7 @@ class Asset_SecurityStatus_State extends $pb.ProtobufEnum {
   static Asset_SecurityStatus_State? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Asset_SecurityStatus_State._(super.v, super.n);
+  const Asset_SecurityStatus_State._(super.value, super.name);
 }
 
 /// Type of resource.
@@ -241,7 +242,7 @@ class Asset_ResourceSpec_Type extends $pb.ProtobufEnum {
   static Asset_ResourceSpec_Type? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Asset_ResourceSpec_Type._(super.v, super.n);
+  const Asset_ResourceSpec_Type._(super.value, super.name);
 }
 
 /// Access Mode determines how data stored within the resource is read. This
@@ -272,7 +273,7 @@ class Asset_ResourceSpec_AccessMode extends $pb.ProtobufEnum {
   static Asset_ResourceSpec_AccessMode? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Asset_ResourceSpec_AccessMode._(super.v, super.n);
+  const Asset_ResourceSpec_AccessMode._(super.value, super.name);
 }
 
 /// The state of a resource.
@@ -302,7 +303,7 @@ class Asset_ResourceStatus_State extends $pb.ProtobufEnum {
   static Asset_ResourceStatus_State? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Asset_ResourceStatus_State._(super.v, super.n);
+  const Asset_ResourceStatus_State._(super.value, super.name);
 }
 
 /// Current state of discovery.
@@ -343,7 +344,7 @@ class Asset_DiscoveryStatus_State extends $pb.ProtobufEnum {
   static Asset_DiscoveryStatus_State? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Asset_DiscoveryStatus_State._(super.v, super.n);
+  const Asset_DiscoveryStatus_State._(super.value, super.name);
 }
 
 class DataQualityRule_StatisticRangeExpectation_ColumnStatistic
@@ -386,7 +387,7 @@ class DataQualityRule_StatisticRangeExpectation_ColumnStatistic
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
   const DataQualityRule_StatisticRangeExpectation_ColumnStatistic._(
-      super.v, super.n);
+      super.value, super.name);
 }
 
 /// Determines how often and when the job will run.
@@ -415,7 +416,7 @@ class Task_TriggerSpec_Type extends $pb.ProtobufEnum {
   static Task_TriggerSpec_Type? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Task_TriggerSpec_Type._(super.v, super.n);
+  const Task_TriggerSpec_Type._(super.value, super.name);
 }
 
 class Job_Service extends $pb.ProtobufEnum {
@@ -437,7 +438,7 @@ class Job_Service extends $pb.ProtobufEnum {
   static Job_Service? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Job_Service._(super.v, super.n);
+  const Job_Service._(super.value, super.name);
 }
 
 class Job_State extends $pb.ProtobufEnum {
@@ -484,7 +485,8 @@ class Job_State extends $pb.ProtobufEnum {
   static Job_State? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Job_State._(super.v, super.n);
+  const Job_State._(super.value, super.name);
 }
 
-const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');
+const $core.bool _omitEnumNames =
+    $core.bool.fromEnvironment('protobuf.omit_enum_names');

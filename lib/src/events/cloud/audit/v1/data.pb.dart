@@ -1,24 +1,25 @@
+// This is a generated file - do not edit.
 //
-//  Generated code. Do not modify.
-//  source: google/events/cloud/audit/v1/data.proto
-//
+// Generated from google/events/cloud/audit/v1/data.proto.
+
 // @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
-// ignore_for_file: constant_identifier_names, library_prefixes
-// ignore_for_file: non_constant_identifier_names, prefer_final_fields
-// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
+// ignore_for_file: constant_identifier_names
+// ignore_for_file: curly_braces_in_flow_control_structures
+// ignore_for_file: deprecated_member_use_from_same_package, library_prefixes
+// ignore_for_file: non_constant_identifier_names
 
 import 'dart:core' as $core;
 
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../api/monitored_resource.pb.dart' as $8;
-import '../../../../protobuf/struct.pb.dart' as $10;
-import '../../../../protobuf/timestamp.pb.dart' as $2;
-import '../../../../rpc/context/attribute_context.pb.dart' as $11;
-import '../../../../rpc/status.pb.dart' as $9;
+import '../../../../api/monitored_resource.pb.dart' as $0;
+import '../../../../protobuf/struct.pb.dart' as $3;
+import '../../../../protobuf/timestamp.pb.dart' as $1;
+import '../../../../rpc/context/attribute_context.pb.dart' as $4;
+import '../../../../rpc/status.pb.dart' as $2;
 import 'data.pbenum.dart';
 
 export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
@@ -30,63 +31,41 @@ class LogEntryData extends $pb.GeneratedMessage {
   factory LogEntryData({
     AuditLog? protoPayload,
     $core.String? insertId,
-    $8.MonitoredResource? resource,
-    $2.Timestamp? timestamp,
+    $0.MonitoredResource? resource,
+    $1.Timestamp? timestamp,
     LogSeverity? severity,
     $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.String? logName,
     LogEntryOperation? operation,
     $core.String? trace,
-    $2.Timestamp? receiveTimestamp,
+    $1.Timestamp? receiveTimestamp,
     $core.String? spanId,
     LogSplit? split,
   }) {
-    final $result = create();
-    if (protoPayload != null) {
-      $result.protoPayload = protoPayload;
-    }
-    if (insertId != null) {
-      $result.insertId = insertId;
-    }
-    if (resource != null) {
-      $result.resource = resource;
-    }
-    if (timestamp != null) {
-      $result.timestamp = timestamp;
-    }
-    if (severity != null) {
-      $result.severity = severity;
-    }
-    if (labels != null) {
-      $result.labels.addEntries(labels);
-    }
-    if (logName != null) {
-      $result.logName = logName;
-    }
-    if (operation != null) {
-      $result.operation = operation;
-    }
-    if (trace != null) {
-      $result.trace = trace;
-    }
-    if (receiveTimestamp != null) {
-      $result.receiveTimestamp = receiveTimestamp;
-    }
-    if (spanId != null) {
-      $result.spanId = spanId;
-    }
-    if (split != null) {
-      $result.split = split;
-    }
-    return $result;
+    final result = create();
+    if (protoPayload != null) result.protoPayload = protoPayload;
+    if (insertId != null) result.insertId = insertId;
+    if (resource != null) result.resource = resource;
+    if (timestamp != null) result.timestamp = timestamp;
+    if (severity != null) result.severity = severity;
+    if (labels != null) result.labels.addEntries(labels);
+    if (logName != null) result.logName = logName;
+    if (operation != null) result.operation = operation;
+    if (trace != null) result.trace = trace;
+    if (receiveTimestamp != null) result.receiveTimestamp = receiveTimestamp;
+    if (spanId != null) result.spanId = spanId;
+    if (split != null) result.split = split;
+    return result;
   }
-  LogEntryData._() : super();
-  factory LogEntryData.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory LogEntryData.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  LogEntryData._();
+
+  factory LogEntryData.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory LogEntryData.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'LogEntryData',
@@ -96,13 +75,11 @@ class LogEntryData extends $pb.GeneratedMessage {
     ..aOM<AuditLog>(2, _omitFieldNames ? '' : 'protoPayload',
         subBuilder: AuditLog.create)
     ..aOS(4, _omitFieldNames ? '' : 'insertId')
-    ..aOM<$8.MonitoredResource>(8, _omitFieldNames ? '' : 'resource',
-        subBuilder: $8.MonitoredResource.create)
-    ..aOM<$2.Timestamp>(9, _omitFieldNames ? '' : 'timestamp',
-        subBuilder: $2.Timestamp.create)
-    ..e<LogSeverity>(10, _omitFieldNames ? '' : 'severity', $pb.PbFieldType.OE,
-        defaultOrMaker: LogSeverity.DEFAULT,
-        valueOf: LogSeverity.valueOf,
+    ..aOM<$0.MonitoredResource>(8, _omitFieldNames ? '' : 'resource',
+        subBuilder: $0.MonitoredResource.create)
+    ..aOM<$1.Timestamp>(9, _omitFieldNames ? '' : 'timestamp',
+        subBuilder: $1.Timestamp.create)
+    ..aE<LogSeverity>(10, _omitFieldNames ? '' : 'severity',
         enumValues: LogSeverity.values)
     ..m<$core.String, $core.String>(11, _omitFieldNames ? '' : 'labels',
         entryClassName: 'LogEntryData.LabelsEntry',
@@ -113,27 +90,27 @@ class LogEntryData extends $pb.GeneratedMessage {
     ..aOM<LogEntryOperation>(15, _omitFieldNames ? '' : 'operation',
         subBuilder: LogEntryOperation.create)
     ..aOS(22, _omitFieldNames ? '' : 'trace')
-    ..aOM<$2.Timestamp>(24, _omitFieldNames ? '' : 'receiveTimestamp',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$1.Timestamp>(24, _omitFieldNames ? '' : 'receiveTimestamp',
+        subBuilder: $1.Timestamp.create)
     ..aOS(27, _omitFieldNames ? '' : 'spanId')
     ..aOM<LogSplit>(35, _omitFieldNames ? '' : 'split',
         subBuilder: LogSplit.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  LogEntryData clone() => LogEntryData()..mergeFromMessage(this);
+  LogEntryData clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   LogEntryData copyWith(void Function(LogEntryData) updates) =>
       super.copyWith((message) => updates(message as LogEntryData))
           as LogEntryData;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static LogEntryData create() => LogEntryData._();
+  @$core.override
   LogEntryData createEmptyInstance() => create();
-  static $pb.PbList<LogEntryData> createRepeated() =>
-      $pb.PbList<LogEntryData>();
   @$core.pragma('dart2js:noInline')
   static LogEntryData getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<LogEntryData>(create);
@@ -144,10 +121,7 @@ class LogEntryData extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   AuditLog get protoPayload => $_getN(0);
   @$pb.TagNumber(2)
-  set protoPayload(AuditLog v) {
-    $_setField(2, v);
-  }
-
+  set protoPayload(AuditLog value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasProtoPayload() => $_has(0);
   @$pb.TagNumber(2)
@@ -159,10 +133,7 @@ class LogEntryData extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get insertId => $_getSZ(1);
   @$pb.TagNumber(4)
-  set insertId($core.String v) {
-    $_setString(1, v);
-  }
-
+  set insertId($core.String value) => $_setString(1, value);
   @$pb.TagNumber(4)
   $core.bool hasInsertId() => $_has(1);
   @$pb.TagNumber(4)
@@ -174,42 +145,33 @@ class LogEntryData extends $pb.GeneratedMessage {
   /// the monitored resource designating the particular database that reported
   /// the error.
   @$pb.TagNumber(8)
-  $8.MonitoredResource get resource => $_getN(2);
+  $0.MonitoredResource get resource => $_getN(2);
   @$pb.TagNumber(8)
-  set resource($8.MonitoredResource v) {
-    $_setField(8, v);
-  }
-
+  set resource($0.MonitoredResource value) => $_setField(8, value);
   @$pb.TagNumber(8)
   $core.bool hasResource() => $_has(2);
   @$pb.TagNumber(8)
   void clearResource() => $_clearField(8);
   @$pb.TagNumber(8)
-  $8.MonitoredResource ensureResource() => $_ensure(2);
+  $0.MonitoredResource ensureResource() => $_ensure(2);
 
   /// The time the event described by the log entry occurred.
   @$pb.TagNumber(9)
-  $2.Timestamp get timestamp => $_getN(3);
+  $1.Timestamp get timestamp => $_getN(3);
   @$pb.TagNumber(9)
-  set timestamp($2.Timestamp v) {
-    $_setField(9, v);
-  }
-
+  set timestamp($1.Timestamp value) => $_setField(9, value);
   @$pb.TagNumber(9)
   $core.bool hasTimestamp() => $_has(3);
   @$pb.TagNumber(9)
   void clearTimestamp() => $_clearField(9);
   @$pb.TagNumber(9)
-  $2.Timestamp ensureTimestamp() => $_ensure(3);
+  $1.Timestamp ensureTimestamp() => $_ensure(3);
 
   /// The severity of the log entry.
   @$pb.TagNumber(10)
   LogSeverity get severity => $_getN(4);
   @$pb.TagNumber(10)
-  set severity(LogSeverity v) {
-    $_setField(10, v);
-  }
-
+  set severity(LogSeverity value) => $_setField(10, value);
   @$pb.TagNumber(10)
   $core.bool hasSeverity() => $_has(4);
   @$pb.TagNumber(10)
@@ -224,10 +186,7 @@ class LogEntryData extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.String get logName => $_getSZ(6);
   @$pb.TagNumber(12)
-  set logName($core.String v) {
-    $_setString(6, v);
-  }
-
+  set logName($core.String value) => $_setString(6, value);
   @$pb.TagNumber(12)
   $core.bool hasLogName() => $_has(6);
   @$pb.TagNumber(12)
@@ -238,10 +197,7 @@ class LogEntryData extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   LogEntryOperation get operation => $_getN(7);
   @$pb.TagNumber(15)
-  set operation(LogEntryOperation v) {
-    $_setField(15, v);
-  }
-
+  set operation(LogEntryOperation value) => $_setField(15, value);
   @$pb.TagNumber(15)
   $core.bool hasOperation() => $_has(7);
   @$pb.TagNumber(15)
@@ -256,10 +212,7 @@ class LogEntryData extends $pb.GeneratedMessage {
   @$pb.TagNumber(22)
   $core.String get trace => $_getSZ(8);
   @$pb.TagNumber(22)
-  set trace($core.String v) {
-    $_setString(8, v);
-  }
-
+  set trace($core.String value) => $_setString(8, value);
   @$pb.TagNumber(22)
   $core.bool hasTrace() => $_has(8);
   @$pb.TagNumber(22)
@@ -267,18 +220,15 @@ class LogEntryData extends $pb.GeneratedMessage {
 
   /// The time the log entry was received by Logging.
   @$pb.TagNumber(24)
-  $2.Timestamp get receiveTimestamp => $_getN(9);
+  $1.Timestamp get receiveTimestamp => $_getN(9);
   @$pb.TagNumber(24)
-  set receiveTimestamp($2.Timestamp v) {
-    $_setField(24, v);
-  }
-
+  set receiveTimestamp($1.Timestamp value) => $_setField(24, value);
   @$pb.TagNumber(24)
   $core.bool hasReceiveTimestamp() => $_has(9);
   @$pb.TagNumber(24)
   void clearReceiveTimestamp() => $_clearField(24);
   @$pb.TagNumber(24)
-  $2.Timestamp ensureReceiveTimestamp() => $_ensure(9);
+  $1.Timestamp ensureReceiveTimestamp() => $_ensure(9);
 
   /// The span ID within the trace associated with the log entry, if any.
   ///
@@ -288,10 +238,7 @@ class LogEntryData extends $pb.GeneratedMessage {
   @$pb.TagNumber(27)
   $core.String get spanId => $_getSZ(10);
   @$pb.TagNumber(27)
-  set spanId($core.String v) {
-    $_setString(10, v);
-  }
-
+  set spanId($core.String value) => $_setString(10, value);
   @$pb.TagNumber(27)
   $core.bool hasSpanId() => $_has(10);
   @$pb.TagNumber(27)
@@ -302,10 +249,7 @@ class LogEntryData extends $pb.GeneratedMessage {
   @$pb.TagNumber(35)
   LogSplit get split => $_getN(11);
   @$pb.TagNumber(35)
-  set split(LogSplit v) {
-    $_setField(35, v);
-  }
-
+  set split(LogSplit value) => $_setField(35, value);
   @$pb.TagNumber(35)
   $core.bool hasSplit() => $_has(11);
   @$pb.TagNumber(35)
@@ -323,28 +267,22 @@ class LogEntryOperation extends $pb.GeneratedMessage {
     $core.bool? first,
     $core.bool? last,
   }) {
-    final $result = create();
-    if (id != null) {
-      $result.id = id;
-    }
-    if (producer != null) {
-      $result.producer = producer;
-    }
-    if (first != null) {
-      $result.first = first;
-    }
-    if (last != null) {
-      $result.last = last;
-    }
-    return $result;
+    final result = create();
+    if (id != null) result.id = id;
+    if (producer != null) result.producer = producer;
+    if (first != null) result.first = first;
+    if (last != null) result.last = last;
+    return result;
   }
-  LogEntryOperation._() : super();
-  factory LogEntryOperation.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory LogEntryOperation.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  LogEntryOperation._();
+
+  factory LogEntryOperation.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory LogEntryOperation.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'LogEntryOperation',
@@ -358,19 +296,19 @@ class LogEntryOperation extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  LogEntryOperation clone() => LogEntryOperation()..mergeFromMessage(this);
+  LogEntryOperation clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   LogEntryOperation copyWith(void Function(LogEntryOperation) updates) =>
       super.copyWith((message) => updates(message as LogEntryOperation))
           as LogEntryOperation;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static LogEntryOperation create() => LogEntryOperation._();
+  @$core.override
   LogEntryOperation createEmptyInstance() => create();
-  static $pb.PbList<LogEntryOperation> createRepeated() =>
-      $pb.PbList<LogEntryOperation>();
   @$core.pragma('dart2js:noInline')
   static LogEntryOperation getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<LogEntryOperation>(create);
@@ -381,10 +319,7 @@ class LogEntryOperation extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get id => $_getSZ(0);
   @$pb.TagNumber(1)
-  set id($core.String v) {
-    $_setString(0, v);
-  }
-
+  set id($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
@@ -396,10 +331,7 @@ class LogEntryOperation extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get producer => $_getSZ(1);
   @$pb.TagNumber(2)
-  set producer($core.String v) {
-    $_setString(1, v);
-  }
-
+  set producer($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasProducer() => $_has(1);
   @$pb.TagNumber(2)
@@ -409,10 +341,7 @@ class LogEntryOperation extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool get first => $_getBF(2);
   @$pb.TagNumber(3)
-  set first($core.bool v) {
-    $_setBool(2, v);
-  }
-
+  set first($core.bool value) => $_setBool(2, value);
   @$pb.TagNumber(3)
   $core.bool hasFirst() => $_has(2);
   @$pb.TagNumber(3)
@@ -422,10 +351,7 @@ class LogEntryOperation extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool get last => $_getBF(3);
   @$pb.TagNumber(4)
-  set last($core.bool v) {
-    $_setBool(3, v);
-  }
-
+  set last($core.bool value) => $_setBool(3, value);
   @$pb.TagNumber(4)
   $core.bool hasLast() => $_has(3);
   @$pb.TagNumber(4)
@@ -438,7 +364,7 @@ class LogEntryOperation extends $pb.GeneratedMessage {
 /// but changing service_data from Any to Struct.
 class AuditLog extends $pb.GeneratedMessage {
   factory AuditLog({
-    $9.Status? status,
+    $2.Status? status,
     AuthenticationInfo? authenticationInfo,
     RequestMetadata? requestMetadata,
     $core.String? serviceName,
@@ -446,110 +372,87 @@ class AuditLog extends $pb.GeneratedMessage {
     $core.Iterable<AuthorizationInfo>? authorizationInfo,
     $core.String? resourceName,
     $fixnum.Int64? numResponseItems,
-    $10.Struct? serviceData,
-    $10.Struct? request,
-    $10.Struct? response,
-    $10.Struct? metadata,
-    $10.Struct? resourceOriginalState,
+    $3.Struct? serviceData,
+    $3.Struct? request,
+    $3.Struct? response,
+    $3.Struct? metadata,
+    $3.Struct? resourceOriginalState,
     ResourceLocation? resourceLocation,
   }) {
-    final $result = create();
-    if (status != null) {
-      $result.status = status;
-    }
-    if (authenticationInfo != null) {
-      $result.authenticationInfo = authenticationInfo;
-    }
-    if (requestMetadata != null) {
-      $result.requestMetadata = requestMetadata;
-    }
-    if (serviceName != null) {
-      $result.serviceName = serviceName;
-    }
-    if (methodName != null) {
-      $result.methodName = methodName;
-    }
-    if (authorizationInfo != null) {
-      $result.authorizationInfo.addAll(authorizationInfo);
-    }
-    if (resourceName != null) {
-      $result.resourceName = resourceName;
-    }
-    if (numResponseItems != null) {
-      $result.numResponseItems = numResponseItems;
-    }
-    if (serviceData != null) {
-      $result.serviceData = serviceData;
-    }
-    if (request != null) {
-      $result.request = request;
-    }
-    if (response != null) {
-      $result.response = response;
-    }
-    if (metadata != null) {
-      $result.metadata = metadata;
-    }
-    if (resourceOriginalState != null) {
-      $result.resourceOriginalState = resourceOriginalState;
-    }
-    if (resourceLocation != null) {
-      $result.resourceLocation = resourceLocation;
-    }
-    return $result;
+    final result = create();
+    if (status != null) result.status = status;
+    if (authenticationInfo != null)
+      result.authenticationInfo = authenticationInfo;
+    if (requestMetadata != null) result.requestMetadata = requestMetadata;
+    if (serviceName != null) result.serviceName = serviceName;
+    if (methodName != null) result.methodName = methodName;
+    if (authorizationInfo != null)
+      result.authorizationInfo.addAll(authorizationInfo);
+    if (resourceName != null) result.resourceName = resourceName;
+    if (numResponseItems != null) result.numResponseItems = numResponseItems;
+    if (serviceData != null) result.serviceData = serviceData;
+    if (request != null) result.request = request;
+    if (response != null) result.response = response;
+    if (metadata != null) result.metadata = metadata;
+    if (resourceOriginalState != null)
+      result.resourceOriginalState = resourceOriginalState;
+    if (resourceLocation != null) result.resourceLocation = resourceLocation;
+    return result;
   }
-  AuditLog._() : super();
-  factory AuditLog.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory AuditLog.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  AuditLog._();
+
+  factory AuditLog.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory AuditLog.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'AuditLog',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.audit.v1'),
       createEmptyInstance: create)
-    ..aOM<$9.Status>(2, _omitFieldNames ? '' : 'status',
-        subBuilder: $9.Status.create)
+    ..aOM<$2.Status>(2, _omitFieldNames ? '' : 'status',
+        subBuilder: $2.Status.create)
     ..aOM<AuthenticationInfo>(3, _omitFieldNames ? '' : 'authenticationInfo',
         subBuilder: AuthenticationInfo.create)
     ..aOM<RequestMetadata>(4, _omitFieldNames ? '' : 'requestMetadata',
         subBuilder: RequestMetadata.create)
     ..aOS(7, _omitFieldNames ? '' : 'serviceName')
     ..aOS(8, _omitFieldNames ? '' : 'methodName')
-    ..pc<AuthorizationInfo>(
-        9, _omitFieldNames ? '' : 'authorizationInfo', $pb.PbFieldType.PM,
+    ..pPM<AuthorizationInfo>(9, _omitFieldNames ? '' : 'authorizationInfo',
         subBuilder: AuthorizationInfo.create)
     ..aOS(11, _omitFieldNames ? '' : 'resourceName')
     ..aInt64(12, _omitFieldNames ? '' : 'numResponseItems')
-    ..aOM<$10.Struct>(15, _omitFieldNames ? '' : 'serviceData',
-        subBuilder: $10.Struct.create)
-    ..aOM<$10.Struct>(16, _omitFieldNames ? '' : 'request',
-        subBuilder: $10.Struct.create)
-    ..aOM<$10.Struct>(17, _omitFieldNames ? '' : 'response',
-        subBuilder: $10.Struct.create)
-    ..aOM<$10.Struct>(18, _omitFieldNames ? '' : 'metadata',
-        subBuilder: $10.Struct.create)
-    ..aOM<$10.Struct>(19, _omitFieldNames ? '' : 'resourceOriginalState',
-        subBuilder: $10.Struct.create)
+    ..aOM<$3.Struct>(15, _omitFieldNames ? '' : 'serviceData',
+        subBuilder: $3.Struct.create)
+    ..aOM<$3.Struct>(16, _omitFieldNames ? '' : 'request',
+        subBuilder: $3.Struct.create)
+    ..aOM<$3.Struct>(17, _omitFieldNames ? '' : 'response',
+        subBuilder: $3.Struct.create)
+    ..aOM<$3.Struct>(18, _omitFieldNames ? '' : 'metadata',
+        subBuilder: $3.Struct.create)
+    ..aOM<$3.Struct>(19, _omitFieldNames ? '' : 'resourceOriginalState',
+        subBuilder: $3.Struct.create)
     ..aOM<ResourceLocation>(20, _omitFieldNames ? '' : 'resourceLocation',
         subBuilder: ResourceLocation.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  AuditLog clone() => AuditLog()..mergeFromMessage(this);
+  AuditLog clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AuditLog copyWith(void Function(AuditLog) updates) =>
       super.copyWith((message) => updates(message as AuditLog)) as AuditLog;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AuditLog create() => AuditLog._();
+  @$core.override
   AuditLog createEmptyInstance() => create();
-  static $pb.PbList<AuditLog> createRepeated() => $pb.PbList<AuditLog>();
   @$core.pragma('dart2js:noInline')
   static AuditLog getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AuditLog>(create);
@@ -557,27 +460,21 @@ class AuditLog extends $pb.GeneratedMessage {
 
   /// The status of the overall operation.
   @$pb.TagNumber(2)
-  $9.Status get status => $_getN(0);
+  $2.Status get status => $_getN(0);
   @$pb.TagNumber(2)
-  set status($9.Status v) {
-    $_setField(2, v);
-  }
-
+  set status($2.Status value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasStatus() => $_has(0);
   @$pb.TagNumber(2)
   void clearStatus() => $_clearField(2);
   @$pb.TagNumber(2)
-  $9.Status ensureStatus() => $_ensure(0);
+  $2.Status ensureStatus() => $_ensure(0);
 
   /// Authentication information.
   @$pb.TagNumber(3)
   AuthenticationInfo get authenticationInfo => $_getN(1);
   @$pb.TagNumber(3)
-  set authenticationInfo(AuthenticationInfo v) {
-    $_setField(3, v);
-  }
-
+  set authenticationInfo(AuthenticationInfo value) => $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasAuthenticationInfo() => $_has(1);
   @$pb.TagNumber(3)
@@ -589,10 +486,7 @@ class AuditLog extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   RequestMetadata get requestMetadata => $_getN(2);
   @$pb.TagNumber(4)
-  set requestMetadata(RequestMetadata v) {
-    $_setField(4, v);
-  }
-
+  set requestMetadata(RequestMetadata value) => $_setField(4, value);
   @$pb.TagNumber(4)
   $core.bool hasRequestMetadata() => $_has(2);
   @$pb.TagNumber(4)
@@ -605,10 +499,7 @@ class AuditLog extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get serviceName => $_getSZ(3);
   @$pb.TagNumber(7)
-  set serviceName($core.String v) {
-    $_setString(3, v);
-  }
-
+  set serviceName($core.String value) => $_setString(3, value);
   @$pb.TagNumber(7)
   $core.bool hasServiceName() => $_has(3);
   @$pb.TagNumber(7)
@@ -623,10 +514,7 @@ class AuditLog extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.String get methodName => $_getSZ(4);
   @$pb.TagNumber(8)
-  set methodName($core.String v) {
-    $_setString(4, v);
-  }
-
+  set methodName($core.String value) => $_setString(4, value);
   @$pb.TagNumber(8)
   $core.bool hasMethodName() => $_has(4);
   @$pb.TagNumber(8)
@@ -647,10 +535,7 @@ class AuditLog extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.String get resourceName => $_getSZ(6);
   @$pb.TagNumber(11)
-  set resourceName($core.String v) {
-    $_setString(6, v);
-  }
-
+  set resourceName($core.String value) => $_setString(6, value);
   @$pb.TagNumber(11)
   $core.bool hasResourceName() => $_has(6);
   @$pb.TagNumber(11)
@@ -661,10 +546,7 @@ class AuditLog extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $fixnum.Int64 get numResponseItems => $_getI64(7);
   @$pb.TagNumber(12)
-  set numResponseItems($fixnum.Int64 v) {
-    $_setInt64(7, v);
-  }
-
+  set numResponseItems($fixnum.Int64 value) => $_setInt64(7, value);
   @$pb.TagNumber(12)
   $core.bool hasNumResponseItems() => $_has(7);
   @$pb.TagNumber(12)
@@ -676,18 +558,15 @@ class AuditLog extends $pb.GeneratedMessage {
   /// When the JSON object represented here has a proto equivalent, the proto
   /// name will be indicated in the `@type` property.
   @$pb.TagNumber(15)
-  $10.Struct get serviceData => $_getN(8);
+  $3.Struct get serviceData => $_getN(8);
   @$pb.TagNumber(15)
-  set serviceData($10.Struct v) {
-    $_setField(15, v);
-  }
-
+  set serviceData($3.Struct value) => $_setField(15, value);
   @$pb.TagNumber(15)
   $core.bool hasServiceData() => $_has(8);
   @$pb.TagNumber(15)
   void clearServiceData() => $_clearField(15);
   @$pb.TagNumber(15)
-  $10.Struct ensureServiceData() => $_ensure(8);
+  $3.Struct ensureServiceData() => $_ensure(8);
 
   /// The operation request. This may not include all request parameters,
   /// such as those that are too large, privacy-sensitive, or duplicated
@@ -696,18 +575,15 @@ class AuditLog extends $pb.GeneratedMessage {
   /// When the JSON object represented here has a proto equivalent, the proto
   /// name will be indicated in the `@type` property.
   @$pb.TagNumber(16)
-  $10.Struct get request => $_getN(9);
+  $3.Struct get request => $_getN(9);
   @$pb.TagNumber(16)
-  set request($10.Struct v) {
-    $_setField(16, v);
-  }
-
+  set request($3.Struct value) => $_setField(16, value);
   @$pb.TagNumber(16)
   $core.bool hasRequest() => $_has(9);
   @$pb.TagNumber(16)
   void clearRequest() => $_clearField(16);
   @$pb.TagNumber(16)
-  $10.Struct ensureRequest() => $_ensure(9);
+  $3.Struct ensureRequest() => $_ensure(9);
 
   /// The operation response. This may not include all response elements,
   /// such as those that are too large, privacy-sensitive, or duplicated
@@ -716,34 +592,28 @@ class AuditLog extends $pb.GeneratedMessage {
   /// When the JSON object represented here has a proto equivalent, the proto
   /// name will be indicated in the `@type` property.
   @$pb.TagNumber(17)
-  $10.Struct get response => $_getN(10);
+  $3.Struct get response => $_getN(10);
   @$pb.TagNumber(17)
-  set response($10.Struct v) {
-    $_setField(17, v);
-  }
-
+  set response($3.Struct value) => $_setField(17, value);
   @$pb.TagNumber(17)
   $core.bool hasResponse() => $_has(10);
   @$pb.TagNumber(17)
   void clearResponse() => $_clearField(17);
   @$pb.TagNumber(17)
-  $10.Struct ensureResponse() => $_ensure(10);
+  $3.Struct ensureResponse() => $_ensure(10);
 
   /// Other service-specific data about the request, response, and other
   /// information associated with the current audited event.
   @$pb.TagNumber(18)
-  $10.Struct get metadata => $_getN(11);
+  $3.Struct get metadata => $_getN(11);
   @$pb.TagNumber(18)
-  set metadata($10.Struct v) {
-    $_setField(18, v);
-  }
-
+  set metadata($3.Struct value) => $_setField(18, value);
   @$pb.TagNumber(18)
   $core.bool hasMetadata() => $_has(11);
   @$pb.TagNumber(18)
   void clearMetadata() => $_clearField(18);
   @$pb.TagNumber(18)
-  $10.Struct ensureMetadata() => $_ensure(11);
+  $3.Struct ensureMetadata() => $_ensure(11);
 
   /// The resource's original state before mutation. Present only for
   /// operations which have successfully modified the targeted resource(s).
@@ -753,27 +623,21 @@ class AuditLog extends $pb.GeneratedMessage {
   /// When the JSON object represented here has a proto equivalent,
   /// the proto name will be indicated in the `@type` property.
   @$pb.TagNumber(19)
-  $10.Struct get resourceOriginalState => $_getN(12);
+  $3.Struct get resourceOriginalState => $_getN(12);
   @$pb.TagNumber(19)
-  set resourceOriginalState($10.Struct v) {
-    $_setField(19, v);
-  }
-
+  set resourceOriginalState($3.Struct value) => $_setField(19, value);
   @$pb.TagNumber(19)
   $core.bool hasResourceOriginalState() => $_has(12);
   @$pb.TagNumber(19)
   void clearResourceOriginalState() => $_clearField(19);
   @$pb.TagNumber(19)
-  $10.Struct ensureResourceOriginalState() => $_ensure(12);
+  $3.Struct ensureResourceOriginalState() => $_ensure(12);
 
   /// The resource location information.
   @$pb.TagNumber(20)
   ResourceLocation get resourceLocation => $_getN(13);
   @$pb.TagNumber(20)
-  set resourceLocation(ResourceLocation v) {
-    $_setField(20, v);
-  }
-
+  set resourceLocation(ResourceLocation value) => $_setField(20, value);
   @$pb.TagNumber(20)
   $core.bool hasResourceLocation() => $_has(13);
   @$pb.TagNumber(20)
@@ -787,39 +651,32 @@ class AuthenticationInfo extends $pb.GeneratedMessage {
   factory AuthenticationInfo({
     $core.String? principalEmail,
     $core.String? authoritySelector,
-    $10.Struct? thirdPartyPrincipal,
+    $3.Struct? thirdPartyPrincipal,
     $core.String? serviceAccountKeyName,
     $core.Iterable<ServiceAccountDelegationInfo>? serviceAccountDelegationInfo,
     $core.String? principalSubject,
   }) {
-    final $result = create();
-    if (principalEmail != null) {
-      $result.principalEmail = principalEmail;
-    }
-    if (authoritySelector != null) {
-      $result.authoritySelector = authoritySelector;
-    }
-    if (thirdPartyPrincipal != null) {
-      $result.thirdPartyPrincipal = thirdPartyPrincipal;
-    }
-    if (serviceAccountKeyName != null) {
-      $result.serviceAccountKeyName = serviceAccountKeyName;
-    }
-    if (serviceAccountDelegationInfo != null) {
-      $result.serviceAccountDelegationInfo.addAll(serviceAccountDelegationInfo);
-    }
-    if (principalSubject != null) {
-      $result.principalSubject = principalSubject;
-    }
-    return $result;
+    final result = create();
+    if (principalEmail != null) result.principalEmail = principalEmail;
+    if (authoritySelector != null) result.authoritySelector = authoritySelector;
+    if (thirdPartyPrincipal != null)
+      result.thirdPartyPrincipal = thirdPartyPrincipal;
+    if (serviceAccountKeyName != null)
+      result.serviceAccountKeyName = serviceAccountKeyName;
+    if (serviceAccountDelegationInfo != null)
+      result.serviceAccountDelegationInfo.addAll(serviceAccountDelegationInfo);
+    if (principalSubject != null) result.principalSubject = principalSubject;
+    return result;
   }
-  AuthenticationInfo._() : super();
-  factory AuthenticationInfo.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory AuthenticationInfo.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  AuthenticationInfo._();
+
+  factory AuthenticationInfo.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory AuthenticationInfo.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'AuthenticationInfo',
@@ -828,31 +685,29 @@ class AuthenticationInfo extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'principalEmail')
     ..aOS(2, _omitFieldNames ? '' : 'authoritySelector')
-    ..aOM<$10.Struct>(4, _omitFieldNames ? '' : 'thirdPartyPrincipal',
-        subBuilder: $10.Struct.create)
+    ..aOM<$3.Struct>(4, _omitFieldNames ? '' : 'thirdPartyPrincipal',
+        subBuilder: $3.Struct.create)
     ..aOS(5, _omitFieldNames ? '' : 'serviceAccountKeyName')
-    ..pc<ServiceAccountDelegationInfo>(
-        6,
-        _omitFieldNames ? '' : 'serviceAccountDelegationInfo',
-        $pb.PbFieldType.PM,
+    ..pPM<ServiceAccountDelegationInfo>(
+        6, _omitFieldNames ? '' : 'serviceAccountDelegationInfo',
         subBuilder: ServiceAccountDelegationInfo.create)
     ..aOS(8, _omitFieldNames ? '' : 'principalSubject')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  AuthenticationInfo clone() => AuthenticationInfo()..mergeFromMessage(this);
+  AuthenticationInfo clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AuthenticationInfo copyWith(void Function(AuthenticationInfo) updates) =>
       super.copyWith((message) => updates(message as AuthenticationInfo))
           as AuthenticationInfo;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AuthenticationInfo create() => AuthenticationInfo._();
+  @$core.override
   AuthenticationInfo createEmptyInstance() => create();
-  static $pb.PbList<AuthenticationInfo> createRepeated() =>
-      $pb.PbList<AuthenticationInfo>();
   @$core.pragma('dart2js:noInline')
   static AuthenticationInfo getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<AuthenticationInfo>(create);
@@ -867,10 +722,7 @@ class AuthenticationInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get principalEmail => $_getSZ(0);
   @$pb.TagNumber(1)
-  set principalEmail($core.String v) {
-    $_setString(0, v);
-  }
-
+  set principalEmail($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasPrincipalEmail() => $_has(0);
   @$pb.TagNumber(1)
@@ -881,10 +733,7 @@ class AuthenticationInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get authoritySelector => $_getSZ(1);
   @$pb.TagNumber(2)
-  set authoritySelector($core.String v) {
-    $_setString(1, v);
-  }
-
+  set authoritySelector($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasAuthoritySelector() => $_has(1);
   @$pb.TagNumber(2)
@@ -895,18 +744,15 @@ class AuthenticationInfo extends $pb.GeneratedMessage {
   /// When the JSON object represented here has a proto equivalent, the proto
   /// name will be indicated in the `@type` property.
   @$pb.TagNumber(4)
-  $10.Struct get thirdPartyPrincipal => $_getN(2);
+  $3.Struct get thirdPartyPrincipal => $_getN(2);
   @$pb.TagNumber(4)
-  set thirdPartyPrincipal($10.Struct v) {
-    $_setField(4, v);
-  }
-
+  set thirdPartyPrincipal($3.Struct value) => $_setField(4, value);
   @$pb.TagNumber(4)
   $core.bool hasThirdPartyPrincipal() => $_has(2);
   @$pb.TagNumber(4)
   void clearThirdPartyPrincipal() => $_clearField(4);
   @$pb.TagNumber(4)
-  $10.Struct ensureThirdPartyPrincipal() => $_ensure(2);
+  $3.Struct ensureThirdPartyPrincipal() => $_ensure(2);
 
   /// The name of the service account key used to create or exchange
   /// credentials for authenticating the service account making the request.
@@ -916,10 +762,7 @@ class AuthenticationInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get serviceAccountKeyName => $_getSZ(3);
   @$pb.TagNumber(5)
-  set serviceAccountKeyName($core.String v) {
-    $_setString(3, v);
-  }
-
+  set serviceAccountKeyName($core.String value) => $_setString(3, value);
   @$pb.TagNumber(5)
   $core.bool hasServiceAccountKeyName() => $_has(3);
   @$pb.TagNumber(5)
@@ -939,10 +782,7 @@ class AuthenticationInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.String get principalSubject => $_getSZ(5);
   @$pb.TagNumber(8)
-  set principalSubject($core.String v) {
-    $_setString(5, v);
-  }
-
+  set principalSubject($core.String value) => $_setString(5, value);
   @$pb.TagNumber(8)
   $core.bool hasPrincipalSubject() => $_has(5);
   @$pb.TagNumber(8)
@@ -955,30 +795,25 @@ class AuthorizationInfo extends $pb.GeneratedMessage {
     $core.String? resource,
     $core.String? permission,
     $core.bool? granted,
-    $11.AttributeContext_Resource? resourceAttributes,
+    $4.AttributeContext_Resource? resourceAttributes,
   }) {
-    final $result = create();
-    if (resource != null) {
-      $result.resource = resource;
-    }
-    if (permission != null) {
-      $result.permission = permission;
-    }
-    if (granted != null) {
-      $result.granted = granted;
-    }
-    if (resourceAttributes != null) {
-      $result.resourceAttributes = resourceAttributes;
-    }
-    return $result;
+    final result = create();
+    if (resource != null) result.resource = resource;
+    if (permission != null) result.permission = permission;
+    if (granted != null) result.granted = granted;
+    if (resourceAttributes != null)
+      result.resourceAttributes = resourceAttributes;
+    return result;
   }
-  AuthorizationInfo._() : super();
-  factory AuthorizationInfo.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory AuthorizationInfo.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  AuthorizationInfo._();
+
+  factory AuthorizationInfo.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory AuthorizationInfo.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'AuthorizationInfo',
@@ -988,25 +823,25 @@ class AuthorizationInfo extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'resource')
     ..aOS(2, _omitFieldNames ? '' : 'permission')
     ..aOB(3, _omitFieldNames ? '' : 'granted')
-    ..aOM<$11.AttributeContext_Resource>(
+    ..aOM<$4.AttributeContext_Resource>(
         5, _omitFieldNames ? '' : 'resourceAttributes',
-        subBuilder: $11.AttributeContext_Resource.create)
+        subBuilder: $4.AttributeContext_Resource.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  AuthorizationInfo clone() => AuthorizationInfo()..mergeFromMessage(this);
+  AuthorizationInfo clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AuthorizationInfo copyWith(void Function(AuthorizationInfo) updates) =>
       super.copyWith((message) => updates(message as AuthorizationInfo))
           as AuthorizationInfo;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AuthorizationInfo create() => AuthorizationInfo._();
+  @$core.override
   AuthorizationInfo createEmptyInstance() => create();
-  static $pb.PbList<AuthorizationInfo> createRepeated() =>
-      $pb.PbList<AuthorizationInfo>();
   @$core.pragma('dart2js:noInline')
   static AuthorizationInfo getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<AuthorizationInfo>(create);
@@ -1018,10 +853,7 @@ class AuthorizationInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get resource => $_getSZ(0);
   @$pb.TagNumber(1)
-  set resource($core.String v) {
-    $_setString(0, v);
-  }
-
+  set resource($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasResource() => $_has(0);
   @$pb.TagNumber(1)
@@ -1031,10 +863,7 @@ class AuthorizationInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get permission => $_getSZ(1);
   @$pb.TagNumber(2)
-  set permission($core.String v) {
-    $_setString(1, v);
-  }
-
+  set permission($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasPermission() => $_has(1);
   @$pb.TagNumber(2)
@@ -1045,10 +874,7 @@ class AuthorizationInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool get granted => $_getBF(2);
   @$pb.TagNumber(3)
-  set granted($core.bool v) {
-    $_setBool(2, v);
-  }
-
+  set granted($core.bool value) => $_setBool(2, value);
   @$pb.TagNumber(3)
   $core.bool hasGranted() => $_has(2);
   @$pb.TagNumber(3)
@@ -1061,18 +887,16 @@ class AuthorizationInfo extends $pb.GeneratedMessage {
   /// condition evaluation, the user must also look into
   /// `AuditLogData.request_metadata.request_attributes`.
   @$pb.TagNumber(5)
-  $11.AttributeContext_Resource get resourceAttributes => $_getN(3);
+  $4.AttributeContext_Resource get resourceAttributes => $_getN(3);
   @$pb.TagNumber(5)
-  set resourceAttributes($11.AttributeContext_Resource v) {
-    $_setField(5, v);
-  }
-
+  set resourceAttributes($4.AttributeContext_Resource value) =>
+      $_setField(5, value);
   @$pb.TagNumber(5)
   $core.bool hasResourceAttributes() => $_has(3);
   @$pb.TagNumber(5)
   void clearResourceAttributes() => $_clearField(5);
   @$pb.TagNumber(5)
-  $11.AttributeContext_Resource ensureResourceAttributes() => $_ensure(3);
+  $4.AttributeContext_Resource ensureResourceAttributes() => $_ensure(3);
 }
 
 /// Metadata about the request.
@@ -1081,34 +905,28 @@ class RequestMetadata extends $pb.GeneratedMessage {
     $core.String? callerIp,
     $core.String? callerSuppliedUserAgent,
     $core.String? callerNetwork,
-    $11.AttributeContext_Request? requestAttributes,
-    $11.AttributeContext_Peer? destinationAttributes,
+    $4.AttributeContext_Request? requestAttributes,
+    $4.AttributeContext_Peer? destinationAttributes,
   }) {
-    final $result = create();
-    if (callerIp != null) {
-      $result.callerIp = callerIp;
-    }
-    if (callerSuppliedUserAgent != null) {
-      $result.callerSuppliedUserAgent = callerSuppliedUserAgent;
-    }
-    if (callerNetwork != null) {
-      $result.callerNetwork = callerNetwork;
-    }
-    if (requestAttributes != null) {
-      $result.requestAttributes = requestAttributes;
-    }
-    if (destinationAttributes != null) {
-      $result.destinationAttributes = destinationAttributes;
-    }
-    return $result;
+    final result = create();
+    if (callerIp != null) result.callerIp = callerIp;
+    if (callerSuppliedUserAgent != null)
+      result.callerSuppliedUserAgent = callerSuppliedUserAgent;
+    if (callerNetwork != null) result.callerNetwork = callerNetwork;
+    if (requestAttributes != null) result.requestAttributes = requestAttributes;
+    if (destinationAttributes != null)
+      result.destinationAttributes = destinationAttributes;
+    return result;
   }
-  RequestMetadata._() : super();
-  factory RequestMetadata.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory RequestMetadata.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  RequestMetadata._();
+
+  factory RequestMetadata.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory RequestMetadata.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'RequestMetadata',
@@ -1118,28 +936,28 @@ class RequestMetadata extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'callerIp')
     ..aOS(2, _omitFieldNames ? '' : 'callerSuppliedUserAgent')
     ..aOS(3, _omitFieldNames ? '' : 'callerNetwork')
-    ..aOM<$11.AttributeContext_Request>(
+    ..aOM<$4.AttributeContext_Request>(
         7, _omitFieldNames ? '' : 'requestAttributes',
-        subBuilder: $11.AttributeContext_Request.create)
-    ..aOM<$11.AttributeContext_Peer>(
+        subBuilder: $4.AttributeContext_Request.create)
+    ..aOM<$4.AttributeContext_Peer>(
         8, _omitFieldNames ? '' : 'destinationAttributes',
-        subBuilder: $11.AttributeContext_Peer.create)
+        subBuilder: $4.AttributeContext_Peer.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  RequestMetadata clone() => RequestMetadata()..mergeFromMessage(this);
+  RequestMetadata clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   RequestMetadata copyWith(void Function(RequestMetadata) updates) =>
       super.copyWith((message) => updates(message as RequestMetadata))
           as RequestMetadata;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static RequestMetadata create() => RequestMetadata._();
+  @$core.override
   RequestMetadata createEmptyInstance() => create();
-  static $pb.PbList<RequestMetadata> createRepeated() =>
-      $pb.PbList<RequestMetadata>();
   @$core.pragma('dart2js:noInline')
   static RequestMetadata getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<RequestMetadata>(create);
@@ -1157,10 +975,7 @@ class RequestMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get callerIp => $_getSZ(0);
   @$pb.TagNumber(1)
-  set callerIp($core.String v) {
-    $_setString(0, v);
-  }
-
+  set callerIp($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasCallerIp() => $_has(0);
   @$pb.TagNumber(1)
@@ -1180,10 +995,7 @@ class RequestMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get callerSuppliedUserAgent => $_getSZ(1);
   @$pb.TagNumber(2)
-  set callerSuppliedUserAgent($core.String v) {
-    $_setString(1, v);
-  }
-
+  set callerSuppliedUserAgent($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasCallerSuppliedUserAgent() => $_has(1);
   @$pb.TagNumber(2)
@@ -1199,10 +1011,7 @@ class RequestMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get callerNetwork => $_getSZ(2);
   @$pb.TagNumber(3)
-  set callerNetwork($core.String v) {
-    $_setString(2, v);
-  }
-
+  set callerNetwork($core.String value) => $_setString(2, value);
   @$pb.TagNumber(3)
   $core.bool hasCallerNetwork() => $_has(2);
   @$pb.TagNumber(3)
@@ -1217,18 +1026,16 @@ class RequestMetadata extends $pb.GeneratedMessage {
   /// condition evaluation, the user must also look into
   /// `AuditLog.authentication_info.resource_attributes`.
   @$pb.TagNumber(7)
-  $11.AttributeContext_Request get requestAttributes => $_getN(3);
+  $4.AttributeContext_Request get requestAttributes => $_getN(3);
   @$pb.TagNumber(7)
-  set requestAttributes($11.AttributeContext_Request v) {
-    $_setField(7, v);
-  }
-
+  set requestAttributes($4.AttributeContext_Request value) =>
+      $_setField(7, value);
   @$pb.TagNumber(7)
   $core.bool hasRequestAttributes() => $_has(3);
   @$pb.TagNumber(7)
   void clearRequestAttributes() => $_clearField(7);
   @$pb.TagNumber(7)
-  $11.AttributeContext_Request ensureRequestAttributes() => $_ensure(3);
+  $4.AttributeContext_Request ensureRequestAttributes() => $_ensure(3);
 
   /// The destination of a network activity, such as accepting a TCP connection.
   /// In a multi hop network activity, the destination represents the receiver of
@@ -1236,18 +1043,16 @@ class RequestMetadata extends $pb.GeneratedMessage {
   /// Peer.ip. These fields are optionally populated by those services utilizing
   /// the IAM condition feature.
   @$pb.TagNumber(8)
-  $11.AttributeContext_Peer get destinationAttributes => $_getN(4);
+  $4.AttributeContext_Peer get destinationAttributes => $_getN(4);
   @$pb.TagNumber(8)
-  set destinationAttributes($11.AttributeContext_Peer v) {
-    $_setField(8, v);
-  }
-
+  set destinationAttributes($4.AttributeContext_Peer value) =>
+      $_setField(8, value);
   @$pb.TagNumber(8)
   $core.bool hasDestinationAttributes() => $_has(4);
   @$pb.TagNumber(8)
   void clearDestinationAttributes() => $_clearField(8);
   @$pb.TagNumber(8)
-  $11.AttributeContext_Peer ensureDestinationAttributes() => $_ensure(4);
+  $4.AttributeContext_Peer ensureDestinationAttributes() => $_ensure(4);
 }
 
 /// Location information about a resource.
@@ -1256,22 +1061,22 @@ class ResourceLocation extends $pb.GeneratedMessage {
     $core.Iterable<$core.String>? currentLocations,
     $core.Iterable<$core.String>? originalLocations,
   }) {
-    final $result = create();
-    if (currentLocations != null) {
-      $result.currentLocations.addAll(currentLocations);
-    }
-    if (originalLocations != null) {
-      $result.originalLocations.addAll(originalLocations);
-    }
-    return $result;
+    final result = create();
+    if (currentLocations != null)
+      result.currentLocations.addAll(currentLocations);
+    if (originalLocations != null)
+      result.originalLocations.addAll(originalLocations);
+    return result;
   }
-  ResourceLocation._() : super();
-  factory ResourceLocation.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ResourceLocation.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  ResourceLocation._();
+
+  factory ResourceLocation.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ResourceLocation.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'ResourceLocation',
@@ -1283,19 +1088,19 @@ class ResourceLocation extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ResourceLocation clone() => ResourceLocation()..mergeFromMessage(this);
+  ResourceLocation clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ResourceLocation copyWith(void Function(ResourceLocation) updates) =>
       super.copyWith((message) => updates(message as ResourceLocation))
           as ResourceLocation;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ResourceLocation create() => ResourceLocation._();
+  @$core.override
   ResourceLocation createEmptyInstance() => create();
-  static $pb.PbList<ResourceLocation> createRepeated() =>
-      $pb.PbList<ResourceLocation>();
   @$core.pragma('dart2js:noInline')
   static ResourceLocation getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ResourceLocation>(create);
@@ -1329,26 +1134,24 @@ class ServiceAccountDelegationInfo_FirstPartyPrincipal
     extends $pb.GeneratedMessage {
   factory ServiceAccountDelegationInfo_FirstPartyPrincipal({
     $core.String? principalEmail,
-    $10.Struct? serviceMetadata,
+    $3.Struct? serviceMetadata,
   }) {
-    final $result = create();
-    if (principalEmail != null) {
-      $result.principalEmail = principalEmail;
-    }
-    if (serviceMetadata != null) {
-      $result.serviceMetadata = serviceMetadata;
-    }
-    return $result;
+    final result = create();
+    if (principalEmail != null) result.principalEmail = principalEmail;
+    if (serviceMetadata != null) result.serviceMetadata = serviceMetadata;
+    return result;
   }
-  ServiceAccountDelegationInfo_FirstPartyPrincipal._() : super();
+
+  ServiceAccountDelegationInfo_FirstPartyPrincipal._();
+
   factory ServiceAccountDelegationInfo_FirstPartyPrincipal.fromBuffer(
-          $core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
+          $core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
   factory ServiceAccountDelegationInfo_FirstPartyPrincipal.fromJson(
-          $core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+          $core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames
@@ -1358,14 +1161,12 @@ class ServiceAccountDelegationInfo_FirstPartyPrincipal
           _omitMessageNames ? '' : 'google.events.cloud.audit.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'principalEmail')
-    ..aOM<$10.Struct>(2, _omitFieldNames ? '' : 'serviceMetadata',
-        subBuilder: $10.Struct.create)
+    ..aOM<$3.Struct>(2, _omitFieldNames ? '' : 'serviceMetadata',
+        subBuilder: $3.Struct.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ServiceAccountDelegationInfo_FirstPartyPrincipal clone() =>
-      ServiceAccountDelegationInfo_FirstPartyPrincipal()
-        ..mergeFromMessage(this);
+  ServiceAccountDelegationInfo_FirstPartyPrincipal clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceAccountDelegationInfo_FirstPartyPrincipal copyWith(
           void Function(ServiceAccountDelegationInfo_FirstPartyPrincipal)
@@ -1374,16 +1175,15 @@ class ServiceAccountDelegationInfo_FirstPartyPrincipal
               message as ServiceAccountDelegationInfo_FirstPartyPrincipal))
           as ServiceAccountDelegationInfo_FirstPartyPrincipal;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ServiceAccountDelegationInfo_FirstPartyPrincipal create() =>
       ServiceAccountDelegationInfo_FirstPartyPrincipal._();
+  @$core.override
   ServiceAccountDelegationInfo_FirstPartyPrincipal createEmptyInstance() =>
       create();
-  static $pb.PbList<ServiceAccountDelegationInfo_FirstPartyPrincipal>
-      createRepeated() =>
-          $pb.PbList<ServiceAccountDelegationInfo_FirstPartyPrincipal>();
   @$core.pragma('dart2js:noInline')
   static ServiceAccountDelegationInfo_FirstPartyPrincipal getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
@@ -1394,10 +1194,7 @@ class ServiceAccountDelegationInfo_FirstPartyPrincipal
   @$pb.TagNumber(1)
   $core.String get principalEmail => $_getSZ(0);
   @$pb.TagNumber(1)
-  set principalEmail($core.String v) {
-    $_setString(0, v);
-  }
-
+  set principalEmail($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasPrincipalEmail() => $_has(0);
   @$pb.TagNumber(1)
@@ -1405,41 +1202,38 @@ class ServiceAccountDelegationInfo_FirstPartyPrincipal
 
   /// Metadata about the service that uses the service account.
   @$pb.TagNumber(2)
-  $10.Struct get serviceMetadata => $_getN(1);
+  $3.Struct get serviceMetadata => $_getN(1);
   @$pb.TagNumber(2)
-  set serviceMetadata($10.Struct v) {
-    $_setField(2, v);
-  }
-
+  set serviceMetadata($3.Struct value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasServiceMetadata() => $_has(1);
   @$pb.TagNumber(2)
   void clearServiceMetadata() => $_clearField(2);
   @$pb.TagNumber(2)
-  $10.Struct ensureServiceMetadata() => $_ensure(1);
+  $3.Struct ensureServiceMetadata() => $_ensure(1);
 }
 
 /// Third party identity principal.
 class ServiceAccountDelegationInfo_ThirdPartyPrincipal
     extends $pb.GeneratedMessage {
   factory ServiceAccountDelegationInfo_ThirdPartyPrincipal({
-    $10.Struct? thirdPartyClaims,
+    $3.Struct? thirdPartyClaims,
   }) {
-    final $result = create();
-    if (thirdPartyClaims != null) {
-      $result.thirdPartyClaims = thirdPartyClaims;
-    }
-    return $result;
+    final result = create();
+    if (thirdPartyClaims != null) result.thirdPartyClaims = thirdPartyClaims;
+    return result;
   }
-  ServiceAccountDelegationInfo_ThirdPartyPrincipal._() : super();
+
+  ServiceAccountDelegationInfo_ThirdPartyPrincipal._();
+
   factory ServiceAccountDelegationInfo_ThirdPartyPrincipal.fromBuffer(
-          $core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
+          $core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
   factory ServiceAccountDelegationInfo_ThirdPartyPrincipal.fromJson(
-          $core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+          $core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames
@@ -1448,14 +1242,12 @@ class ServiceAccountDelegationInfo_ThirdPartyPrincipal
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.audit.v1'),
       createEmptyInstance: create)
-    ..aOM<$10.Struct>(1, _omitFieldNames ? '' : 'thirdPartyClaims',
-        subBuilder: $10.Struct.create)
+    ..aOM<$3.Struct>(1, _omitFieldNames ? '' : 'thirdPartyClaims',
+        subBuilder: $3.Struct.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ServiceAccountDelegationInfo_ThirdPartyPrincipal clone() =>
-      ServiceAccountDelegationInfo_ThirdPartyPrincipal()
-        ..mergeFromMessage(this);
+  ServiceAccountDelegationInfo_ThirdPartyPrincipal clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceAccountDelegationInfo_ThirdPartyPrincipal copyWith(
           void Function(ServiceAccountDelegationInfo_ThirdPartyPrincipal)
@@ -1464,16 +1256,15 @@ class ServiceAccountDelegationInfo_ThirdPartyPrincipal
               message as ServiceAccountDelegationInfo_ThirdPartyPrincipal))
           as ServiceAccountDelegationInfo_ThirdPartyPrincipal;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ServiceAccountDelegationInfo_ThirdPartyPrincipal create() =>
       ServiceAccountDelegationInfo_ThirdPartyPrincipal._();
+  @$core.override
   ServiceAccountDelegationInfo_ThirdPartyPrincipal createEmptyInstance() =>
       create();
-  static $pb.PbList<ServiceAccountDelegationInfo_ThirdPartyPrincipal>
-      createRepeated() =>
-          $pb.PbList<ServiceAccountDelegationInfo_ThirdPartyPrincipal>();
   @$core.pragma('dart2js:noInline')
   static ServiceAccountDelegationInfo_ThirdPartyPrincipal getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
@@ -1482,18 +1273,15 @@ class ServiceAccountDelegationInfo_ThirdPartyPrincipal
 
   /// Metadata about third party identity.
   @$pb.TagNumber(1)
-  $10.Struct get thirdPartyClaims => $_getN(0);
+  $3.Struct get thirdPartyClaims => $_getN(0);
   @$pb.TagNumber(1)
-  set thirdPartyClaims($10.Struct v) {
-    $_setField(1, v);
-  }
-
+  set thirdPartyClaims($3.Struct value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasThirdPartyClaims() => $_has(0);
   @$pb.TagNumber(1)
   void clearThirdPartyClaims() => $_clearField(1);
   @$pb.TagNumber(1)
-  $10.Struct ensureThirdPartyClaims() => $_ensure(0);
+  $3.Struct ensureThirdPartyClaims() => $_ensure(0);
 }
 
 enum ServiceAccountDelegationInfo_Authority {
@@ -1508,22 +1296,22 @@ class ServiceAccountDelegationInfo extends $pb.GeneratedMessage {
     ServiceAccountDelegationInfo_FirstPartyPrincipal? firstPartyPrincipal,
     ServiceAccountDelegationInfo_ThirdPartyPrincipal? thirdPartyPrincipal,
   }) {
-    final $result = create();
-    if (firstPartyPrincipal != null) {
-      $result.firstPartyPrincipal = firstPartyPrincipal;
-    }
-    if (thirdPartyPrincipal != null) {
-      $result.thirdPartyPrincipal = thirdPartyPrincipal;
-    }
-    return $result;
+    final result = create();
+    if (firstPartyPrincipal != null)
+      result.firstPartyPrincipal = firstPartyPrincipal;
+    if (thirdPartyPrincipal != null)
+      result.thirdPartyPrincipal = thirdPartyPrincipal;
+    return result;
   }
-  ServiceAccountDelegationInfo._() : super();
-  factory ServiceAccountDelegationInfo.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ServiceAccountDelegationInfo.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  ServiceAccountDelegationInfo._();
+
+  factory ServiceAccountDelegationInfo.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ServiceAccountDelegationInfo.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static const $core.Map<$core.int, ServiceAccountDelegationInfo_Authority>
       _ServiceAccountDelegationInfo_AuthorityByTag = {
@@ -1546,8 +1334,7 @@ class ServiceAccountDelegationInfo extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ServiceAccountDelegationInfo clone() =>
-      ServiceAccountDelegationInfo()..mergeFromMessage(this);
+  ServiceAccountDelegationInfo clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceAccountDelegationInfo copyWith(
           void Function(ServiceAccountDelegationInfo) updates) =>
@@ -1555,21 +1342,25 @@ class ServiceAccountDelegationInfo extends $pb.GeneratedMessage {
               (message) => updates(message as ServiceAccountDelegationInfo))
           as ServiceAccountDelegationInfo;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ServiceAccountDelegationInfo create() =>
       ServiceAccountDelegationInfo._();
+  @$core.override
   ServiceAccountDelegationInfo createEmptyInstance() => create();
-  static $pb.PbList<ServiceAccountDelegationInfo> createRepeated() =>
-      $pb.PbList<ServiceAccountDelegationInfo>();
   @$core.pragma('dart2js:noInline')
   static ServiceAccountDelegationInfo getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ServiceAccountDelegationInfo>(create);
   static ServiceAccountDelegationInfo? _defaultInstance;
 
+  @$pb.TagNumber(1)
+  @$pb.TagNumber(2)
   ServiceAccountDelegationInfo_Authority whichAuthority() =>
       _ServiceAccountDelegationInfo_AuthorityByTag[$_whichOneof(0)]!;
+  @$pb.TagNumber(1)
+  @$pb.TagNumber(2)
   void clearAuthority() => $_clearField($_whichOneof(0));
 
   /// First party (Google) identity as the real authority.
@@ -1577,10 +1368,9 @@ class ServiceAccountDelegationInfo extends $pb.GeneratedMessage {
   ServiceAccountDelegationInfo_FirstPartyPrincipal get firstPartyPrincipal =>
       $_getN(0);
   @$pb.TagNumber(1)
-  set firstPartyPrincipal(ServiceAccountDelegationInfo_FirstPartyPrincipal v) {
-    $_setField(1, v);
-  }
-
+  set firstPartyPrincipal(
+          ServiceAccountDelegationInfo_FirstPartyPrincipal value) =>
+      $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasFirstPartyPrincipal() => $_has(0);
   @$pb.TagNumber(1)
@@ -1594,10 +1384,9 @@ class ServiceAccountDelegationInfo extends $pb.GeneratedMessage {
   ServiceAccountDelegationInfo_ThirdPartyPrincipal get thirdPartyPrincipal =>
       $_getN(1);
   @$pb.TagNumber(2)
-  set thirdPartyPrincipal(ServiceAccountDelegationInfo_ThirdPartyPrincipal v) {
-    $_setField(2, v);
-  }
-
+  set thirdPartyPrincipal(
+          ServiceAccountDelegationInfo_ThirdPartyPrincipal value) =>
+      $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasThirdPartyPrincipal() => $_has(1);
   @$pb.TagNumber(2)
@@ -1616,25 +1405,21 @@ class LogSplit extends $pb.GeneratedMessage {
     $core.int? index,
     $core.int? totalSplits,
   }) {
-    final $result = create();
-    if (uid != null) {
-      $result.uid = uid;
-    }
-    if (index != null) {
-      $result.index = index;
-    }
-    if (totalSplits != null) {
-      $result.totalSplits = totalSplits;
-    }
-    return $result;
+    final result = create();
+    if (uid != null) result.uid = uid;
+    if (index != null) result.index = index;
+    if (totalSplits != null) result.totalSplits = totalSplits;
+    return result;
   }
-  LogSplit._() : super();
-  factory LogSplit.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory LogSplit.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  LogSplit._();
+
+  factory LogSplit.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory LogSplit.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'LogSplit',
@@ -1642,22 +1427,23 @@ class LogSplit extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.events.cloud.audit.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'uid')
-    ..a<$core.int>(2, _omitFieldNames ? '' : 'index', $pb.PbFieldType.O3)
-    ..a<$core.int>(3, _omitFieldNames ? '' : 'totalSplits', $pb.PbFieldType.O3)
+    ..aI(2, _omitFieldNames ? '' : 'index')
+    ..aI(3, _omitFieldNames ? '' : 'totalSplits')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  LogSplit clone() => LogSplit()..mergeFromMessage(this);
+  LogSplit clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   LogSplit copyWith(void Function(LogSplit) updates) =>
       super.copyWith((message) => updates(message as LogSplit)) as LogSplit;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static LogSplit create() => LogSplit._();
+  @$core.override
   LogSplit createEmptyInstance() => create();
-  static $pb.PbList<LogSplit> createRepeated() => $pb.PbList<LogSplit>();
   @$core.pragma('dart2js:noInline')
   static LogSplit getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<LogSplit>(create);
@@ -1669,10 +1455,7 @@ class LogSplit extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get uid => $_getSZ(0);
   @$pb.TagNumber(1)
-  set uid($core.String v) {
-    $_setString(0, v);
-  }
-
+  set uid($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasUid() => $_has(0);
   @$pb.TagNumber(1)
@@ -1683,10 +1466,7 @@ class LogSplit extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get index => $_getIZ(1);
   @$pb.TagNumber(2)
-  set index($core.int v) {
-    $_setSignedInt32(1, v);
-  }
-
+  set index($core.int value) => $_setSignedInt32(1, value);
   @$pb.TagNumber(2)
   $core.bool hasIndex() => $_has(1);
   @$pb.TagNumber(2)
@@ -1696,16 +1476,14 @@ class LogSplit extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.int get totalSplits => $_getIZ(2);
   @$pb.TagNumber(3)
-  set totalSplits($core.int v) {
-    $_setSignedInt32(2, v);
-  }
-
+  set totalSplits($core.int value) => $_setSignedInt32(2, value);
   @$pb.TagNumber(3)
   $core.bool hasTotalSplits() => $_has(2);
   @$pb.TagNumber(3)
   void clearTotalSplits() => $_clearField(3);
 }
 
-const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames =
+const $core.bool _omitFieldNames =
+    $core.bool.fromEnvironment('protobuf.omit_field_names');
+const $core.bool _omitMessageNames =
     $core.bool.fromEnvironment('protobuf.omit_message_names');

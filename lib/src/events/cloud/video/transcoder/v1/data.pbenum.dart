@@ -1,13 +1,14 @@
+// This is a generated file - do not edit.
 //
-//  Generated code. Do not modify.
-//  source: google/events/cloud/video/transcoder/v1/data.proto
-//
+// Generated from google/events/cloud/video/transcoder/v1/data.proto.
+
 // @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
-// ignore_for_file: constant_identifier_names, library_prefixes
-// ignore_for_file: non_constant_identifier_names, prefer_final_fields
-// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
+// ignore_for_file: constant_identifier_names
+// ignore_for_file: curly_braces_in_flow_control_structures
+// ignore_for_file: deprecated_member_use_from_same_package, library_prefixes
+// ignore_for_file: non_constant_identifier_names
 
 import 'dart:core' as $core;
 
@@ -50,7 +51,7 @@ class Job_ProcessingState extends $pb.ProtobufEnum {
   static Job_ProcessingState? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Job_ProcessingState._(super.v, super.n);
+  const Job_ProcessingState._(super.value, super.name);
 }
 
 /// The processing mode of the job.
@@ -83,7 +84,7 @@ class Job_ProcessingMode extends $pb.ProtobufEnum {
   static Job_ProcessingMode? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Job_ProcessingMode._(super.v, super.n);
+  const Job_ProcessingMode._(super.value, super.name);
 }
 
 /// The manifest type, which corresponds to the adaptive streaming format used.
@@ -113,7 +114,7 @@ class Manifest_ManifestType extends $pb.ProtobufEnum {
   static Manifest_ManifestType? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Manifest_ManifestType._(super.v, super.n);
+  const Manifest_ManifestType._(super.value, super.name);
 }
 
 /// Fade type for the overlay: `FADE_IN` or `FADE_OUT`.
@@ -141,7 +142,8 @@ class Overlay_FadeType extends $pb.ProtobufEnum {
   static Overlay_FadeType? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Overlay_FadeType._(super.v, super.n);
+  const Overlay_FadeType._(super.value, super.name);
 }
 
-const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');
+const $core.bool _omitEnumNames =
+    $core.bool.fromEnvironment('protobuf.omit_enum_names');

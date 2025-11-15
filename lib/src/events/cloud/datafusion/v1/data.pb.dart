@@ -1,19 +1,20 @@
+// This is a generated file - do not edit.
 //
-//  Generated code. Do not modify.
-//  source: google/events/cloud/datafusion/v1/data.proto
-//
+// Generated from google/events/cloud/datafusion/v1/data.proto.
+
 // @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
-// ignore_for_file: constant_identifier_names, library_prefixes
-// ignore_for_file: non_constant_identifier_names, prefer_final_fields
-// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
+// ignore_for_file: constant_identifier_names
+// ignore_for_file: curly_braces_in_flow_control_structures
+// ignore_for_file: deprecated_member_use_from_same_package, library_prefixes
+// ignore_for_file: non_constant_identifier_names
 
 import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/timestamp.pb.dart' as $2;
+import '../../../../protobuf/timestamp.pb.dart' as $0;
 import 'data.pbenum.dart';
 
 export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
@@ -31,22 +32,20 @@ class NetworkConfig extends $pb.GeneratedMessage {
     $core.String? network,
     $core.String? ipAllocation,
   }) {
-    final $result = create();
-    if (network != null) {
-      $result.network = network;
-    }
-    if (ipAllocation != null) {
-      $result.ipAllocation = ipAllocation;
-    }
-    return $result;
+    final result = create();
+    if (network != null) result.network = network;
+    if (ipAllocation != null) result.ipAllocation = ipAllocation;
+    return result;
   }
-  NetworkConfig._() : super();
-  factory NetworkConfig.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory NetworkConfig.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  NetworkConfig._();
+
+  factory NetworkConfig.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory NetworkConfig.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'NetworkConfig',
@@ -58,19 +57,19 @@ class NetworkConfig extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  NetworkConfig clone() => NetworkConfig()..mergeFromMessage(this);
+  NetworkConfig clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   NetworkConfig copyWith(void Function(NetworkConfig) updates) =>
       super.copyWith((message) => updates(message as NetworkConfig))
           as NetworkConfig;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static NetworkConfig create() => NetworkConfig._();
+  @$core.override
   NetworkConfig createEmptyInstance() => create();
-  static $pb.PbList<NetworkConfig> createRepeated() =>
-      $pb.PbList<NetworkConfig>();
   @$core.pragma('dart2js:noInline')
   static NetworkConfig getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<NetworkConfig>(create);
@@ -83,10 +82,7 @@ class NetworkConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get network => $_getSZ(0);
   @$pb.TagNumber(1)
-  set network($core.String v) {
-    $_setString(0, v);
-  }
-
+  set network($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasNetwork() => $_has(0);
   @$pb.TagNumber(1)
@@ -98,10 +94,7 @@ class NetworkConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get ipAllocation => $_getSZ(1);
   @$pb.TagNumber(2)
-  set ipAllocation($core.String v) {
-    $_setString(1, v);
-  }
-
+  set ipAllocation($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasIpAllocation() => $_has(1);
   @$pb.TagNumber(2)
@@ -117,28 +110,23 @@ class Version extends $pb.GeneratedMessage {
     $core.Iterable<$core.String>? availableFeatures,
     Version_Type? type,
   }) {
-    final $result = create();
-    if (versionNumber != null) {
-      $result.versionNumber = versionNumber;
-    }
-    if (defaultVersion != null) {
-      $result.defaultVersion = defaultVersion;
-    }
-    if (availableFeatures != null) {
-      $result.availableFeatures.addAll(availableFeatures);
-    }
-    if (type != null) {
-      $result.type = type;
-    }
-    return $result;
+    final result = create();
+    if (versionNumber != null) result.versionNumber = versionNumber;
+    if (defaultVersion != null) result.defaultVersion = defaultVersion;
+    if (availableFeatures != null)
+      result.availableFeatures.addAll(availableFeatures);
+    if (type != null) result.type = type;
+    return result;
   }
-  Version._() : super();
-  factory Version.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Version.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  Version._();
+
+  factory Version.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory Version.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'Version',
@@ -148,24 +136,23 @@ class Version extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'versionNumber')
     ..aOB(2, _omitFieldNames ? '' : 'defaultVersion')
     ..pPS(3, _omitFieldNames ? '' : 'availableFeatures')
-    ..e<Version_Type>(4, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE,
-        defaultOrMaker: Version_Type.TYPE_UNSPECIFIED,
-        valueOf: Version_Type.valueOf,
+    ..aE<Version_Type>(4, _omitFieldNames ? '' : 'type',
         enumValues: Version_Type.values)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  Version clone() => Version()..mergeFromMessage(this);
+  Version clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Version copyWith(void Function(Version) updates) =>
       super.copyWith((message) => updates(message as Version)) as Version;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Version create() => Version._();
+  @$core.override
   Version createEmptyInstance() => create();
-  static $pb.PbList<Version> createRepeated() => $pb.PbList<Version>();
   @$core.pragma('dart2js:noInline')
   static Version getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Version>(create);
@@ -175,10 +162,7 @@ class Version extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get versionNumber => $_getSZ(0);
   @$pb.TagNumber(1)
-  set versionNumber($core.String v) {
-    $_setString(0, v);
-  }
-
+  set versionNumber($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasVersionNumber() => $_has(0);
   @$pb.TagNumber(1)
@@ -188,10 +172,7 @@ class Version extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool get defaultVersion => $_getBF(1);
   @$pb.TagNumber(2)
-  set defaultVersion($core.bool v) {
-    $_setBool(1, v);
-  }
-
+  set defaultVersion($core.bool value) => $_setBool(1, value);
   @$pb.TagNumber(2)
   $core.bool hasDefaultVersion() => $_has(1);
   @$pb.TagNumber(2)
@@ -205,10 +186,7 @@ class Version extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   Version_Type get type => $_getN(3);
   @$pb.TagNumber(4)
-  set type(Version_Type v) {
-    $_setField(4, v);
-  }
-
+  set type(Version_Type value) => $_setField(4, value);
   @$pb.TagNumber(4)
   $core.bool hasType() => $_has(3);
   @$pb.TagNumber(4)
@@ -221,54 +199,47 @@ class Accelerator extends $pb.GeneratedMessage {
     Accelerator_AcceleratorType? acceleratorType,
     Accelerator_State? state,
   }) {
-    final $result = create();
-    if (acceleratorType != null) {
-      $result.acceleratorType = acceleratorType;
-    }
-    if (state != null) {
-      $result.state = state;
-    }
-    return $result;
+    final result = create();
+    if (acceleratorType != null) result.acceleratorType = acceleratorType;
+    if (state != null) result.state = state;
+    return result;
   }
-  Accelerator._() : super();
-  factory Accelerator.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Accelerator.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  Accelerator._();
+
+  factory Accelerator.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory Accelerator.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'Accelerator',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.datafusion.v1'),
       createEmptyInstance: create)
-    ..e<Accelerator_AcceleratorType>(
-        1, _omitFieldNames ? '' : 'acceleratorType', $pb.PbFieldType.OE,
-        defaultOrMaker:
-            Accelerator_AcceleratorType.ACCELERATOR_TYPE_UNSPECIFIED,
-        valueOf: Accelerator_AcceleratorType.valueOf,
+    ..aE<Accelerator_AcceleratorType>(
+        1, _omitFieldNames ? '' : 'acceleratorType',
         enumValues: Accelerator_AcceleratorType.values)
-    ..e<Accelerator_State>(
-        2, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
-        defaultOrMaker: Accelerator_State.STATE_UNSPECIFIED,
-        valueOf: Accelerator_State.valueOf,
+    ..aE<Accelerator_State>(2, _omitFieldNames ? '' : 'state',
         enumValues: Accelerator_State.values)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  Accelerator clone() => Accelerator()..mergeFromMessage(this);
+  Accelerator clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Accelerator copyWith(void Function(Accelerator) updates) =>
       super.copyWith((message) => updates(message as Accelerator))
           as Accelerator;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Accelerator create() => Accelerator._();
+  @$core.override
   Accelerator createEmptyInstance() => create();
-  static $pb.PbList<Accelerator> createRepeated() => $pb.PbList<Accelerator>();
   @$core.pragma('dart2js:noInline')
   static Accelerator getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<Accelerator>(create);
@@ -278,10 +249,8 @@ class Accelerator extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   Accelerator_AcceleratorType get acceleratorType => $_getN(0);
   @$pb.TagNumber(1)
-  set acceleratorType(Accelerator_AcceleratorType v) {
-    $_setField(1, v);
-  }
-
+  set acceleratorType(Accelerator_AcceleratorType value) =>
+      $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasAcceleratorType() => $_has(0);
   @$pb.TagNumber(1)
@@ -291,10 +260,7 @@ class Accelerator extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   Accelerator_State get state => $_getN(1);
   @$pb.TagNumber(2)
-  set state(Accelerator_State v) {
-    $_setField(2, v);
-  }
-
+  set state(Accelerator_State value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasState() => $_has(1);
   @$pb.TagNumber(2)
@@ -307,19 +273,19 @@ class CryptoKeyConfig extends $pb.GeneratedMessage {
   factory CryptoKeyConfig({
     $core.String? keyReference,
   }) {
-    final $result = create();
-    if (keyReference != null) {
-      $result.keyReference = keyReference;
-    }
-    return $result;
+    final result = create();
+    if (keyReference != null) result.keyReference = keyReference;
+    return result;
   }
-  CryptoKeyConfig._() : super();
-  factory CryptoKeyConfig.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory CryptoKeyConfig.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  CryptoKeyConfig._();
+
+  factory CryptoKeyConfig.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory CryptoKeyConfig.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'CryptoKeyConfig',
@@ -330,19 +296,19 @@ class CryptoKeyConfig extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  CryptoKeyConfig clone() => CryptoKeyConfig()..mergeFromMessage(this);
+  CryptoKeyConfig clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CryptoKeyConfig copyWith(void Function(CryptoKeyConfig) updates) =>
       super.copyWith((message) => updates(message as CryptoKeyConfig))
           as CryptoKeyConfig;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CryptoKeyConfig create() => CryptoKeyConfig._();
+  @$core.override
   CryptoKeyConfig createEmptyInstance() => create();
-  static $pb.PbList<CryptoKeyConfig> createRepeated() =>
-      $pb.PbList<CryptoKeyConfig>();
   @$core.pragma('dart2js:noInline')
   static CryptoKeyConfig getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<CryptoKeyConfig>(create);
@@ -354,10 +320,7 @@ class CryptoKeyConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get keyReference => $_getSZ(0);
   @$pb.TagNumber(1)
-  set keyReference($core.String v) {
-    $_setString(0, v);
-  }
-
+  set keyReference($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasKeyReference() => $_has(0);
   @$pb.TagNumber(1)
@@ -376,8 +339,8 @@ class Instance extends $pb.GeneratedMessage {
     NetworkConfig? networkConfig,
     $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.Iterable<$core.MapEntry<$core.String, $core.String>>? options,
-    $2.Timestamp? createTime,
-    $2.Timestamp? updateTime,
+    $0.Timestamp? createTime,
+    $0.Timestamp? updateTime,
     Instance_State? state,
     $core.String? stateMessage,
     $core.String? serviceEndpoint,
@@ -398,106 +361,54 @@ class Instance extends $pb.GeneratedMessage {
     EventPublishConfig? eventPublishConfig,
     $core.bool? enableZoneSeparation,
   }) {
-    final $result = create();
-    if (name != null) {
-      $result.name = name;
-    }
-    if (description != null) {
-      $result.description = description;
-    }
-    if (type != null) {
-      $result.type = type;
-    }
-    if (enableStackdriverLogging != null) {
-      $result.enableStackdriverLogging = enableStackdriverLogging;
-    }
-    if (enableStackdriverMonitoring != null) {
-      $result.enableStackdriverMonitoring = enableStackdriverMonitoring;
-    }
-    if (privateInstance != null) {
-      $result.privateInstance = privateInstance;
-    }
-    if (networkConfig != null) {
-      $result.networkConfig = networkConfig;
-    }
-    if (labels != null) {
-      $result.labels.addEntries(labels);
-    }
-    if (options != null) {
-      $result.options.addEntries(options);
-    }
-    if (createTime != null) {
-      $result.createTime = createTime;
-    }
-    if (updateTime != null) {
-      $result.updateTime = updateTime;
-    }
-    if (state != null) {
-      $result.state = state;
-    }
-    if (stateMessage != null) {
-      $result.stateMessage = stateMessage;
-    }
-    if (serviceEndpoint != null) {
-      $result.serviceEndpoint = serviceEndpoint;
-    }
-    if (zone != null) {
-      $result.zone = zone;
-    }
-    if (version != null) {
-      $result.version = version;
-    }
-    if (serviceAccount != null) {
-      $result.serviceAccount = serviceAccount;
-    }
-    if (displayName != null) {
-      $result.displayName = displayName;
-    }
-    if (availableVersion != null) {
-      $result.availableVersion.addAll(availableVersion);
-    }
-    if (apiEndpoint != null) {
-      $result.apiEndpoint = apiEndpoint;
-    }
-    if (gcsBucket != null) {
-      $result.gcsBucket = gcsBucket;
-    }
-    if (accelerators != null) {
-      $result.accelerators.addAll(accelerators);
-    }
-    if (p4ServiceAccount != null) {
-      $result.p4ServiceAccount = p4ServiceAccount;
-    }
-    if (tenantProjectId != null) {
-      $result.tenantProjectId = tenantProjectId;
-    }
-    if (dataprocServiceAccount != null) {
-      $result.dataprocServiceAccount = dataprocServiceAccount;
-    }
-    if (enableRbac != null) {
-      $result.enableRbac = enableRbac;
-    }
-    if (cryptoKeyConfig != null) {
-      $result.cryptoKeyConfig = cryptoKeyConfig;
-    }
-    if (disabledReason != null) {
-      $result.disabledReason.addAll(disabledReason);
-    }
-    if (eventPublishConfig != null) {
-      $result.eventPublishConfig = eventPublishConfig;
-    }
-    if (enableZoneSeparation != null) {
-      $result.enableZoneSeparation = enableZoneSeparation;
-    }
-    return $result;
+    final result = create();
+    if (name != null) result.name = name;
+    if (description != null) result.description = description;
+    if (type != null) result.type = type;
+    if (enableStackdriverLogging != null)
+      result.enableStackdriverLogging = enableStackdriverLogging;
+    if (enableStackdriverMonitoring != null)
+      result.enableStackdriverMonitoring = enableStackdriverMonitoring;
+    if (privateInstance != null) result.privateInstance = privateInstance;
+    if (networkConfig != null) result.networkConfig = networkConfig;
+    if (labels != null) result.labels.addEntries(labels);
+    if (options != null) result.options.addEntries(options);
+    if (createTime != null) result.createTime = createTime;
+    if (updateTime != null) result.updateTime = updateTime;
+    if (state != null) result.state = state;
+    if (stateMessage != null) result.stateMessage = stateMessage;
+    if (serviceEndpoint != null) result.serviceEndpoint = serviceEndpoint;
+    if (zone != null) result.zone = zone;
+    if (version != null) result.version = version;
+    if (serviceAccount != null) result.serviceAccount = serviceAccount;
+    if (displayName != null) result.displayName = displayName;
+    if (availableVersion != null)
+      result.availableVersion.addAll(availableVersion);
+    if (apiEndpoint != null) result.apiEndpoint = apiEndpoint;
+    if (gcsBucket != null) result.gcsBucket = gcsBucket;
+    if (accelerators != null) result.accelerators.addAll(accelerators);
+    if (p4ServiceAccount != null) result.p4ServiceAccount = p4ServiceAccount;
+    if (tenantProjectId != null) result.tenantProjectId = tenantProjectId;
+    if (dataprocServiceAccount != null)
+      result.dataprocServiceAccount = dataprocServiceAccount;
+    if (enableRbac != null) result.enableRbac = enableRbac;
+    if (cryptoKeyConfig != null) result.cryptoKeyConfig = cryptoKeyConfig;
+    if (disabledReason != null) result.disabledReason.addAll(disabledReason);
+    if (eventPublishConfig != null)
+      result.eventPublishConfig = eventPublishConfig;
+    if (enableZoneSeparation != null)
+      result.enableZoneSeparation = enableZoneSeparation;
+    return result;
   }
-  Instance._() : super();
-  factory Instance.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Instance.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  Instance._();
+
+  factory Instance.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory Instance.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'Instance',
@@ -506,9 +417,7 @@ class Instance extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'description')
-    ..e<Instance_Type>(3, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE,
-        defaultOrMaker: Instance_Type.TYPE_UNSPECIFIED,
-        valueOf: Instance_Type.valueOf,
+    ..aE<Instance_Type>(3, _omitFieldNames ? '' : 'type',
         enumValues: Instance_Type.values)
     ..aOB(4, _omitFieldNames ? '' : 'enableStackdriverLogging')
     ..aOB(5, _omitFieldNames ? '' : 'enableStackdriverMonitoring')
@@ -525,13 +434,11 @@ class Instance extends $pb.GeneratedMessage {
         keyFieldType: $pb.PbFieldType.OS,
         valueFieldType: $pb.PbFieldType.OS,
         packageName: const $pb.PackageName('google.events.cloud.datafusion.v1'))
-    ..aOM<$2.Timestamp>(10, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(11, _omitFieldNames ? '' : 'updateTime',
-        subBuilder: $2.Timestamp.create)
-    ..e<Instance_State>(12, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
-        defaultOrMaker: Instance_State.STATE_UNSPECIFIED,
-        valueOf: Instance_State.valueOf,
+    ..aOM<$0.Timestamp>(10, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(11, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $0.Timestamp.create)
+    ..aE<Instance_State>(12, _omitFieldNames ? '' : 'state',
         enumValues: Instance_State.values)
     ..aOS(13, _omitFieldNames ? '' : 'stateMessage')
     ..aOS(14, _omitFieldNames ? '' : 'serviceEndpoint')
@@ -539,13 +446,11 @@ class Instance extends $pb.GeneratedMessage {
     ..aOS(16, _omitFieldNames ? '' : 'version')
     ..aOS(17, _omitFieldNames ? '' : 'serviceAccount')
     ..aOS(18, _omitFieldNames ? '' : 'displayName')
-    ..pc<Version>(
-        19, _omitFieldNames ? '' : 'availableVersion', $pb.PbFieldType.PM,
+    ..pPM<Version>(19, _omitFieldNames ? '' : 'availableVersion',
         subBuilder: Version.create)
     ..aOS(20, _omitFieldNames ? '' : 'apiEndpoint')
     ..aOS(21, _omitFieldNames ? '' : 'gcsBucket')
-    ..pc<Accelerator>(
-        22, _omitFieldNames ? '' : 'accelerators', $pb.PbFieldType.PM,
+    ..pPM<Accelerator>(22, _omitFieldNames ? '' : 'accelerators',
         subBuilder: Accelerator.create)
     ..aOS(23, _omitFieldNames ? '' : 'p4ServiceAccount')
     ..aOS(24, _omitFieldNames ? '' : 'tenantProjectId')
@@ -564,17 +469,18 @@ class Instance extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  Instance clone() => Instance()..mergeFromMessage(this);
+  Instance clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Instance copyWith(void Function(Instance) updates) =>
       super.copyWith((message) => updates(message as Instance)) as Instance;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Instance create() => Instance._();
+  @$core.override
   Instance createEmptyInstance() => create();
-  static $pb.PbList<Instance> createRepeated() => $pb.PbList<Instance>();
   @$core.pragma('dart2js:noInline')
   static Instance getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Instance>(create);
@@ -585,10 +491,7 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) {
-    $_setString(0, v);
-  }
-
+  set name($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -598,10 +501,7 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get description => $_getSZ(1);
   @$pb.TagNumber(2)
-  set description($core.String v) {
-    $_setString(1, v);
-  }
-
+  set description($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasDescription() => $_has(1);
   @$pb.TagNumber(2)
@@ -611,10 +511,7 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   Instance_Type get type => $_getN(2);
   @$pb.TagNumber(3)
-  set type(Instance_Type v) {
-    $_setField(3, v);
-  }
-
+  set type(Instance_Type value) => $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasType() => $_has(2);
   @$pb.TagNumber(3)
@@ -624,10 +521,7 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool get enableStackdriverLogging => $_getBF(3);
   @$pb.TagNumber(4)
-  set enableStackdriverLogging($core.bool v) {
-    $_setBool(3, v);
-  }
-
+  set enableStackdriverLogging($core.bool value) => $_setBool(3, value);
   @$pb.TagNumber(4)
   $core.bool hasEnableStackdriverLogging() => $_has(3);
   @$pb.TagNumber(4)
@@ -637,10 +531,7 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool get enableStackdriverMonitoring => $_getBF(4);
   @$pb.TagNumber(5)
-  set enableStackdriverMonitoring($core.bool v) {
-    $_setBool(4, v);
-  }
-
+  set enableStackdriverMonitoring($core.bool value) => $_setBool(4, value);
   @$pb.TagNumber(5)
   $core.bool hasEnableStackdriverMonitoring() => $_has(4);
   @$pb.TagNumber(5)
@@ -652,10 +543,7 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool get privateInstance => $_getBF(5);
   @$pb.TagNumber(6)
-  set privateInstance($core.bool v) {
-    $_setBool(5, v);
-  }
-
+  set privateInstance($core.bool value) => $_setBool(5, value);
   @$pb.TagNumber(6)
   $core.bool hasPrivateInstance() => $_has(5);
   @$pb.TagNumber(6)
@@ -666,10 +554,7 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   NetworkConfig get networkConfig => $_getN(6);
   @$pb.TagNumber(7)
-  set networkConfig(NetworkConfig v) {
-    $_setField(7, v);
-  }
-
+  set networkConfig(NetworkConfig value) => $_setField(7, value);
   @$pb.TagNumber(7)
   $core.bool hasNetworkConfig() => $_has(6);
   @$pb.TagNumber(7)
@@ -690,42 +575,33 @@ class Instance extends $pb.GeneratedMessage {
 
   /// Output only. The time the instance was created.
   @$pb.TagNumber(10)
-  $2.Timestamp get createTime => $_getN(9);
+  $0.Timestamp get createTime => $_getN(9);
   @$pb.TagNumber(10)
-  set createTime($2.Timestamp v) {
-    $_setField(10, v);
-  }
-
+  set createTime($0.Timestamp value) => $_setField(10, value);
   @$pb.TagNumber(10)
   $core.bool hasCreateTime() => $_has(9);
   @$pb.TagNumber(10)
   void clearCreateTime() => $_clearField(10);
   @$pb.TagNumber(10)
-  $2.Timestamp ensureCreateTime() => $_ensure(9);
+  $0.Timestamp ensureCreateTime() => $_ensure(9);
 
   /// Output only. The time the instance was last updated.
   @$pb.TagNumber(11)
-  $2.Timestamp get updateTime => $_getN(10);
+  $0.Timestamp get updateTime => $_getN(10);
   @$pb.TagNumber(11)
-  set updateTime($2.Timestamp v) {
-    $_setField(11, v);
-  }
-
+  set updateTime($0.Timestamp value) => $_setField(11, value);
   @$pb.TagNumber(11)
   $core.bool hasUpdateTime() => $_has(10);
   @$pb.TagNumber(11)
   void clearUpdateTime() => $_clearField(11);
   @$pb.TagNumber(11)
-  $2.Timestamp ensureUpdateTime() => $_ensure(10);
+  $0.Timestamp ensureUpdateTime() => $_ensure(10);
 
   /// Output only. The current state of this Data Fusion instance.
   @$pb.TagNumber(12)
   Instance_State get state => $_getN(11);
   @$pb.TagNumber(12)
-  set state(Instance_State v) {
-    $_setField(12, v);
-  }
-
+  set state(Instance_State value) => $_setField(12, value);
   @$pb.TagNumber(12)
   $core.bool hasState() => $_has(11);
   @$pb.TagNumber(12)
@@ -736,10 +612,7 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   $core.String get stateMessage => $_getSZ(12);
   @$pb.TagNumber(13)
-  set stateMessage($core.String v) {
-    $_setString(12, v);
-  }
-
+  set stateMessage($core.String value) => $_setString(12, value);
   @$pb.TagNumber(13)
   $core.bool hasStateMessage() => $_has(12);
   @$pb.TagNumber(13)
@@ -749,10 +622,7 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   $core.String get serviceEndpoint => $_getSZ(13);
   @$pb.TagNumber(14)
-  set serviceEndpoint($core.String v) {
-    $_setString(13, v);
-  }
-
+  set serviceEndpoint($core.String value) => $_setString(13, value);
   @$pb.TagNumber(14)
   $core.bool hasServiceEndpoint() => $_has(13);
   @$pb.TagNumber(14)
@@ -763,10 +633,7 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   $core.String get zone => $_getSZ(14);
   @$pb.TagNumber(15)
-  set zone($core.String v) {
-    $_setString(14, v);
-  }
-
+  set zone($core.String value) => $_setString(14, value);
   @$pb.TagNumber(15)
   $core.bool hasZone() => $_has(14);
   @$pb.TagNumber(15)
@@ -776,10 +643,7 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(16)
   $core.String get version => $_getSZ(15);
   @$pb.TagNumber(16)
-  set version($core.String v) {
-    $_setString(15, v);
-  }
-
+  set version($core.String value) => $_setString(15, value);
   @$pb.TagNumber(16)
   $core.bool hasVersion() => $_has(15);
   @$pb.TagNumber(16)
@@ -790,10 +654,7 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(17)
   $core.String get serviceAccount => $_getSZ(16);
   @$pb.TagNumber(17)
-  set serviceAccount($core.String v) {
-    $_setString(16, v);
-  }
-
+  set serviceAccount($core.String value) => $_setString(16, value);
   @$pb.TagNumber(17)
   $core.bool hasServiceAccount() => $_has(16);
   @$pb.TagNumber(17)
@@ -803,10 +664,7 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(18)
   $core.String get displayName => $_getSZ(17);
   @$pb.TagNumber(18)
-  set displayName($core.String v) {
-    $_setString(17, v);
-  }
-
+  set displayName($core.String value) => $_setString(17, value);
   @$pb.TagNumber(18)
   $core.bool hasDisplayName() => $_has(17);
   @$pb.TagNumber(18)
@@ -821,10 +679,7 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(20)
   $core.String get apiEndpoint => $_getSZ(19);
   @$pb.TagNumber(20)
-  set apiEndpoint($core.String v) {
-    $_setString(19, v);
-  }
-
+  set apiEndpoint($core.String value) => $_setString(19, value);
   @$pb.TagNumber(20)
   $core.bool hasApiEndpoint() => $_has(19);
   @$pb.TagNumber(20)
@@ -835,10 +690,7 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(21)
   $core.String get gcsBucket => $_getSZ(20);
   @$pb.TagNumber(21)
-  set gcsBucket($core.String v) {
-    $_setString(20, v);
-  }
-
+  set gcsBucket($core.String value) => $_setString(20, value);
   @$pb.TagNumber(21)
   $core.bool hasGcsBucket() => $_has(20);
   @$pb.TagNumber(21)
@@ -852,10 +704,7 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(23)
   $core.String get p4ServiceAccount => $_getSZ(22);
   @$pb.TagNumber(23)
-  set p4ServiceAccount($core.String v) {
-    $_setString(22, v);
-  }
-
+  set p4ServiceAccount($core.String value) => $_setString(22, value);
   @$pb.TagNumber(23)
   $core.bool hasP4ServiceAccount() => $_has(22);
   @$pb.TagNumber(23)
@@ -865,10 +714,7 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(24)
   $core.String get tenantProjectId => $_getSZ(23);
   @$pb.TagNumber(24)
-  set tenantProjectId($core.String v) {
-    $_setString(23, v);
-  }
-
+  set tenantProjectId($core.String value) => $_setString(23, value);
   @$pb.TagNumber(24)
   $core.bool hasTenantProjectId() => $_has(23);
   @$pb.TagNumber(24)
@@ -882,10 +728,7 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(25)
   $core.String get dataprocServiceAccount => $_getSZ(24);
   @$pb.TagNumber(25)
-  set dataprocServiceAccount($core.String v) {
-    $_setString(24, v);
-  }
-
+  set dataprocServiceAccount($core.String value) => $_setString(24, value);
   @$pb.TagNumber(25)
   $core.bool hasDataprocServiceAccount() => $_has(24);
   @$pb.TagNumber(25)
@@ -895,10 +738,7 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(27)
   $core.bool get enableRbac => $_getBF(25);
   @$pb.TagNumber(27)
-  set enableRbac($core.bool v) {
-    $_setBool(25, v);
-  }
-
+  set enableRbac($core.bool value) => $_setBool(25, value);
   @$pb.TagNumber(27)
   $core.bool hasEnableRbac() => $_has(25);
   @$pb.TagNumber(27)
@@ -909,10 +749,7 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(28)
   CryptoKeyConfig get cryptoKeyConfig => $_getN(26);
   @$pb.TagNumber(28)
-  set cryptoKeyConfig(CryptoKeyConfig v) {
-    $_setField(28, v);
-  }
-
+  set cryptoKeyConfig(CryptoKeyConfig value) => $_setField(28, value);
   @$pb.TagNumber(28)
   $core.bool hasCryptoKeyConfig() => $_has(26);
   @$pb.TagNumber(28)
@@ -929,10 +766,7 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(30)
   EventPublishConfig get eventPublishConfig => $_getN(28);
   @$pb.TagNumber(30)
-  set eventPublishConfig(EventPublishConfig v) {
-    $_setField(30, v);
-  }
-
+  set eventPublishConfig(EventPublishConfig value) => $_setField(30, value);
   @$pb.TagNumber(30)
   $core.bool hasEventPublishConfig() => $_has(28);
   @$pb.TagNumber(30)
@@ -944,10 +778,7 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(31)
   $core.bool get enableZoneSeparation => $_getBF(29);
   @$pb.TagNumber(31)
-  set enableZoneSeparation($core.bool v) {
-    $_setBool(29, v);
-  }
-
+  set enableZoneSeparation($core.bool value) => $_setBool(29, value);
   @$pb.TagNumber(31)
   $core.bool hasEnableZoneSeparation() => $_has(29);
   @$pb.TagNumber(31)
@@ -960,22 +791,20 @@ class EventPublishConfig extends $pb.GeneratedMessage {
     $core.bool? enabled,
     $core.String? topic,
   }) {
-    final $result = create();
-    if (enabled != null) {
-      $result.enabled = enabled;
-    }
-    if (topic != null) {
-      $result.topic = topic;
-    }
-    return $result;
+    final result = create();
+    if (enabled != null) result.enabled = enabled;
+    if (topic != null) result.topic = topic;
+    return result;
   }
-  EventPublishConfig._() : super();
-  factory EventPublishConfig.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory EventPublishConfig.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  EventPublishConfig._();
+
+  factory EventPublishConfig.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory EventPublishConfig.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'EventPublishConfig',
@@ -987,19 +816,19 @@ class EventPublishConfig extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  EventPublishConfig clone() => EventPublishConfig()..mergeFromMessage(this);
+  EventPublishConfig clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   EventPublishConfig copyWith(void Function(EventPublishConfig) updates) =>
       super.copyWith((message) => updates(message as EventPublishConfig))
           as EventPublishConfig;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static EventPublishConfig create() => EventPublishConfig._();
+  @$core.override
   EventPublishConfig createEmptyInstance() => create();
-  static $pb.PbList<EventPublishConfig> createRepeated() =>
-      $pb.PbList<EventPublishConfig>();
   @$core.pragma('dart2js:noInline')
   static EventPublishConfig getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<EventPublishConfig>(create);
@@ -1009,10 +838,7 @@ class EventPublishConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool get enabled => $_getBF(0);
   @$pb.TagNumber(1)
-  set enabled($core.bool v) {
-    $_setBool(0, v);
-  }
-
+  set enabled($core.bool value) => $_setBool(0, value);
   @$pb.TagNumber(1)
   $core.bool hasEnabled() => $_has(0);
   @$pb.TagNumber(1)
@@ -1023,10 +849,7 @@ class EventPublishConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get topic => $_getSZ(1);
   @$pb.TagNumber(2)
-  set topic($core.String v) {
-    $_setString(1, v);
-  }
-
+  set topic($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasTopic() => $_has(1);
   @$pb.TagNumber(2)
@@ -1043,31 +866,23 @@ class DnsPeering extends $pb.GeneratedMessage {
     $core.String? targetProject,
     $core.String? targetNetwork,
   }) {
-    final $result = create();
-    if (name != null) {
-      $result.name = name;
-    }
-    if (domain != null) {
-      $result.domain = domain;
-    }
-    if (description != null) {
-      $result.description = description;
-    }
-    if (targetProject != null) {
-      $result.targetProject = targetProject;
-    }
-    if (targetNetwork != null) {
-      $result.targetNetwork = targetNetwork;
-    }
-    return $result;
+    final result = create();
+    if (name != null) result.name = name;
+    if (domain != null) result.domain = domain;
+    if (description != null) result.description = description;
+    if (targetProject != null) result.targetProject = targetProject;
+    if (targetNetwork != null) result.targetNetwork = targetNetwork;
+    return result;
   }
-  DnsPeering._() : super();
-  factory DnsPeering.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory DnsPeering.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  DnsPeering._();
+
+  factory DnsPeering.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory DnsPeering.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'DnsPeering',
@@ -1082,17 +897,18 @@ class DnsPeering extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  DnsPeering clone() => DnsPeering()..mergeFromMessage(this);
+  DnsPeering clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DnsPeering copyWith(void Function(DnsPeering) updates) =>
       super.copyWith((message) => updates(message as DnsPeering)) as DnsPeering;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DnsPeering create() => DnsPeering._();
+  @$core.override
   DnsPeering createEmptyInstance() => create();
-  static $pb.PbList<DnsPeering> createRepeated() => $pb.PbList<DnsPeering>();
   @$core.pragma('dart2js:noInline')
   static DnsPeering getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<DnsPeering>(create);
@@ -1104,10 +920,7 @@ class DnsPeering extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) {
-    $_setString(0, v);
-  }
-
+  set name($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -1117,10 +930,7 @@ class DnsPeering extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get domain => $_getSZ(1);
   @$pb.TagNumber(2)
-  set domain($core.String v) {
-    $_setString(1, v);
-  }
-
+  set domain($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasDomain() => $_has(1);
   @$pb.TagNumber(2)
@@ -1130,10 +940,7 @@ class DnsPeering extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get description => $_getSZ(2);
   @$pb.TagNumber(3)
-  set description($core.String v) {
-    $_setString(2, v);
-  }
-
+  set description($core.String value) => $_setString(2, value);
   @$pb.TagNumber(3)
   $core.bool hasDescription() => $_has(2);
   @$pb.TagNumber(3)
@@ -1143,10 +950,7 @@ class DnsPeering extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get targetProject => $_getSZ(3);
   @$pb.TagNumber(4)
-  set targetProject($core.String v) {
-    $_setString(3, v);
-  }
-
+  set targetProject($core.String value) => $_setString(3, value);
   @$pb.TagNumber(4)
   $core.bool hasTargetProject() => $_has(3);
   @$pb.TagNumber(4)
@@ -1156,10 +960,7 @@ class DnsPeering extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get targetNetwork => $_getSZ(4);
   @$pb.TagNumber(5)
-  set targetNetwork($core.String v) {
-    $_setString(4, v);
-  }
-
+  set targetNetwork($core.String value) => $_setString(4, value);
   @$pb.TagNumber(5)
   $core.bool hasTargetNetwork() => $_has(4);
   @$pb.TagNumber(5)
@@ -1171,19 +972,19 @@ class InstanceEventData extends $pb.GeneratedMessage {
   factory InstanceEventData({
     Instance? payload,
   }) {
-    final $result = create();
-    if (payload != null) {
-      $result.payload = payload;
-    }
-    return $result;
+    final result = create();
+    if (payload != null) result.payload = payload;
+    return result;
   }
-  InstanceEventData._() : super();
-  factory InstanceEventData.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory InstanceEventData.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  InstanceEventData._();
+
+  factory InstanceEventData.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory InstanceEventData.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'InstanceEventData',
@@ -1195,19 +996,19 @@ class InstanceEventData extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  InstanceEventData clone() => InstanceEventData()..mergeFromMessage(this);
+  InstanceEventData clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   InstanceEventData copyWith(void Function(InstanceEventData) updates) =>
       super.copyWith((message) => updates(message as InstanceEventData))
           as InstanceEventData;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static InstanceEventData create() => InstanceEventData._();
+  @$core.override
   InstanceEventData createEmptyInstance() => create();
-  static $pb.PbList<InstanceEventData> createRepeated() =>
-      $pb.PbList<InstanceEventData>();
   @$core.pragma('dart2js:noInline')
   static InstanceEventData getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<InstanceEventData>(create);
@@ -1217,10 +1018,7 @@ class InstanceEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   Instance get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(Instance v) {
-    $_setField(1, v);
-  }
-
+  set payload(Instance value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -1234,19 +1032,19 @@ class DnsPeeringEventData extends $pb.GeneratedMessage {
   factory DnsPeeringEventData({
     DnsPeering? payload,
   }) {
-    final $result = create();
-    if (payload != null) {
-      $result.payload = payload;
-    }
-    return $result;
+    final result = create();
+    if (payload != null) result.payload = payload;
+    return result;
   }
-  DnsPeeringEventData._() : super();
-  factory DnsPeeringEventData.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory DnsPeeringEventData.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  DnsPeeringEventData._();
+
+  factory DnsPeeringEventData.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory DnsPeeringEventData.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'DnsPeeringEventData',
@@ -1258,19 +1056,19 @@ class DnsPeeringEventData extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  DnsPeeringEventData clone() => DnsPeeringEventData()..mergeFromMessage(this);
+  DnsPeeringEventData clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DnsPeeringEventData copyWith(void Function(DnsPeeringEventData) updates) =>
       super.copyWith((message) => updates(message as DnsPeeringEventData))
           as DnsPeeringEventData;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DnsPeeringEventData create() => DnsPeeringEventData._();
+  @$core.override
   DnsPeeringEventData createEmptyInstance() => create();
-  static $pb.PbList<DnsPeeringEventData> createRepeated() =>
-      $pb.PbList<DnsPeeringEventData>();
   @$core.pragma('dart2js:noInline')
   static DnsPeeringEventData getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<DnsPeeringEventData>(create);
@@ -1280,10 +1078,7 @@ class DnsPeeringEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   DnsPeering get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(DnsPeering v) {
-    $_setField(1, v);
-  }
-
+  set payload(DnsPeering value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -1292,6 +1087,7 @@ class DnsPeeringEventData extends $pb.GeneratedMessage {
   DnsPeering ensurePayload() => $_ensure(0);
 }
 
-const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames =
+const $core.bool _omitFieldNames =
+    $core.bool.fromEnvironment('protobuf.omit_field_names');
+const $core.bool _omitMessageNames =
     $core.bool.fromEnvironment('protobuf.omit_message_names');

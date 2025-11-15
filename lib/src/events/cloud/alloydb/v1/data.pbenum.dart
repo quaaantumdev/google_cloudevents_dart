@@ -1,13 +1,14 @@
+// This is a generated file - do not edit.
 //
-//  Generated code. Do not modify.
-//  source: google/events/cloud/alloydb/v1/data.proto
-//
+// Generated from google/events/cloud/alloydb/v1/data.proto.
+
 // @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
-// ignore_for_file: constant_identifier_names, library_prefixes
-// ignore_for_file: non_constant_identifier_names, prefer_final_fields
-// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
+// ignore_for_file: constant_identifier_names
+// ignore_for_file: curly_braces_in_flow_control_structures
+// ignore_for_file: deprecated_member_use_from_same_package, library_prefixes
+// ignore_for_file: non_constant_identifier_names
 
 import 'dart:core' as $core;
 
@@ -38,7 +39,7 @@ class DatabaseVersion extends $pb.ProtobufEnum {
   static DatabaseVersion? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const DatabaseVersion._(super.v, super.n);
+  const DatabaseVersion._(super.value, super.name);
 }
 
 /// Denote the type of migration source that created this cluster.
@@ -63,7 +64,7 @@ class MigrationSource_MigrationSourceType extends $pb.ProtobufEnum {
   static MigrationSource_MigrationSourceType? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const MigrationSource_MigrationSourceType._(super.v, super.n);
+  const MigrationSource_MigrationSourceType._(super.value, super.name);
 }
 
 /// Possible encryption types.
@@ -95,7 +96,7 @@ class EncryptionInfo_Type extends $pb.ProtobufEnum {
   static EncryptionInfo_Type? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const EncryptionInfo_Type._(super.v, super.n);
+  const EncryptionInfo_Type._(super.value, super.name);
 }
 
 /// SSL mode options.
@@ -132,7 +133,7 @@ class SslConfig_SslMode extends $pb.ProtobufEnum {
   static SslConfig_SslMode? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const SslConfig_SslMode._(super.v, super.n);
+  const SslConfig_SslMode._(super.value, super.name);
 }
 
 /// Certificate Authority (CA) source for SSL/TLS certificates.
@@ -156,7 +157,7 @@ class SslConfig_CaSource extends $pb.ProtobufEnum {
   static SslConfig_CaSource? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const SslConfig_CaSource._(super.v, super.n);
+  const SslConfig_CaSource._(super.value, super.name);
 }
 
 /// Cluster State
@@ -227,7 +228,7 @@ class Cluster_State extends $pb.ProtobufEnum {
   static Cluster_State? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Cluster_State._(super.v, super.n);
+  const Cluster_State._(super.value, super.name);
 }
 
 /// Type of Cluster
@@ -257,7 +258,7 @@ class Cluster_ClusterType extends $pb.ProtobufEnum {
   static Cluster_ClusterType? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Cluster_ClusterType._(super.v, super.n);
+  const Cluster_ClusterType._(super.value, super.name);
 }
 
 /// Instance State
@@ -321,7 +322,7 @@ class Instance_State extends $pb.ProtobufEnum {
   static Instance_State? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Instance_State._(super.v, super.n);
+  const Instance_State._(super.value, super.name);
 }
 
 /// Type of an Instance
@@ -361,7 +362,7 @@ class Instance_InstanceType extends $pb.ProtobufEnum {
   static Instance_InstanceType? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Instance_InstanceType._(super.v, super.n);
+  const Instance_InstanceType._(super.value, super.name);
 }
 
 /// The Availability type of an instance. Potential values:
@@ -395,7 +396,7 @@ class Instance_AvailabilityType extends $pb.ProtobufEnum {
   static Instance_AvailabilityType? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Instance_AvailabilityType._(super.v, super.n);
+  const Instance_AvailabilityType._(super.value, super.name);
 }
 
 /// Backup State
@@ -433,7 +434,7 @@ class Backup_State extends $pb.ProtobufEnum {
   static Backup_State? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Backup_State._(super.v, super.n);
+  const Backup_State._(super.value, super.name);
 }
 
 /// Backup Type
@@ -469,7 +470,8 @@ class Backup_Type extends $pb.ProtobufEnum {
   static Backup_Type? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Backup_Type._(super.v, super.n);
+  const Backup_Type._(super.value, super.name);
 }
 
-const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');
+const $core.bool _omitEnumNames =
+    $core.bool.fromEnvironment('protobuf.omit_enum_names');

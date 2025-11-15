@@ -1,13 +1,14 @@
+// This is a generated file - do not edit.
 //
-//  Generated code. Do not modify.
-//  source: google/type/quaternion.proto
-//
+// Generated from google/type/quaternion.proto.
+
 // @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
-// ignore_for_file: constant_identifier_names, library_prefixes
-// ignore_for_file: non_constant_identifier_names, prefer_final_fields
-// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
+// ignore_for_file: constant_identifier_names
+// ignore_for_file: curly_braces_in_flow_control_structures
+// ignore_for_file: deprecated_member_use_from_same_package, library_prefixes
+// ignore_for_file: non_constant_identifier_names
 
 import 'dart:core' as $core;
 
@@ -77,51 +78,46 @@ class Quaternion extends $pb.GeneratedMessage {
     $core.double? z,
     $core.double? w,
   }) {
-    final $result = create();
-    if (x != null) {
-      $result.x = x;
-    }
-    if (y != null) {
-      $result.y = y;
-    }
-    if (z != null) {
-      $result.z = z;
-    }
-    if (w != null) {
-      $result.w = w;
-    }
-    return $result;
+    final result = create();
+    if (x != null) result.x = x;
+    if (y != null) result.y = y;
+    if (z != null) result.z = z;
+    if (w != null) result.w = w;
+    return result;
   }
-  Quaternion._() : super();
-  factory Quaternion.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Quaternion.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  Quaternion._();
+
+  factory Quaternion.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory Quaternion.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'Quaternion',
       package: const $pb.PackageName(_omitMessageNames ? '' : 'google.type'),
       createEmptyInstance: create)
-    ..a<$core.double>(1, _omitFieldNames ? '' : 'x', $pb.PbFieldType.OD)
-    ..a<$core.double>(2, _omitFieldNames ? '' : 'y', $pb.PbFieldType.OD)
-    ..a<$core.double>(3, _omitFieldNames ? '' : 'z', $pb.PbFieldType.OD)
-    ..a<$core.double>(4, _omitFieldNames ? '' : 'w', $pb.PbFieldType.OD)
+    ..aD(1, _omitFieldNames ? '' : 'x')
+    ..aD(2, _omitFieldNames ? '' : 'y')
+    ..aD(3, _omitFieldNames ? '' : 'z')
+    ..aD(4, _omitFieldNames ? '' : 'w')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  Quaternion clone() => Quaternion()..mergeFromMessage(this);
+  Quaternion clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Quaternion copyWith(void Function(Quaternion) updates) =>
       super.copyWith((message) => updates(message as Quaternion)) as Quaternion;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Quaternion create() => Quaternion._();
+  @$core.override
   Quaternion createEmptyInstance() => create();
-  static $pb.PbList<Quaternion> createRepeated() => $pb.PbList<Quaternion>();
   @$core.pragma('dart2js:noInline')
   static Quaternion getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<Quaternion>(create);
@@ -131,10 +127,7 @@ class Quaternion extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.double get x => $_getN(0);
   @$pb.TagNumber(1)
-  set x($core.double v) {
-    $_setDouble(0, v);
-  }
-
+  set x($core.double value) => $_setDouble(0, value);
   @$pb.TagNumber(1)
   $core.bool hasX() => $_has(0);
   @$pb.TagNumber(1)
@@ -144,10 +137,7 @@ class Quaternion extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.double get y => $_getN(1);
   @$pb.TagNumber(2)
-  set y($core.double v) {
-    $_setDouble(1, v);
-  }
-
+  set y($core.double value) => $_setDouble(1, value);
   @$pb.TagNumber(2)
   $core.bool hasY() => $_has(1);
   @$pb.TagNumber(2)
@@ -157,10 +147,7 @@ class Quaternion extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.double get z => $_getN(2);
   @$pb.TagNumber(3)
-  set z($core.double v) {
-    $_setDouble(2, v);
-  }
-
+  set z($core.double value) => $_setDouble(2, value);
   @$pb.TagNumber(3)
   $core.bool hasZ() => $_has(2);
   @$pb.TagNumber(3)
@@ -170,16 +157,14 @@ class Quaternion extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.double get w => $_getN(3);
   @$pb.TagNumber(4)
-  set w($core.double v) {
-    $_setDouble(3, v);
-  }
-
+  set w($core.double value) => $_setDouble(3, value);
   @$pb.TagNumber(4)
   $core.bool hasW() => $_has(3);
   @$pb.TagNumber(4)
   void clearW() => $_clearField(4);
 }
 
-const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames =
+const $core.bool _omitFieldNames =
+    $core.bool.fromEnvironment('protobuf.omit_field_names');
+const $core.bool _omitMessageNames =
     $core.bool.fromEnvironment('protobuf.omit_message_names');

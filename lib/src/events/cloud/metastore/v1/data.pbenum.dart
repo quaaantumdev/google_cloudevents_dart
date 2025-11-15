@@ -1,13 +1,14 @@
+// This is a generated file - do not edit.
 //
-//  Generated code. Do not modify.
-//  source: google/events/cloud/metastore/v1/data.proto
-//
+// Generated from google/events/cloud/metastore/v1/data.proto.
+
 // @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
-// ignore_for_file: constant_identifier_names, library_prefixes
-// ignore_for_file: non_constant_identifier_names, prefer_final_fields
-// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
+// ignore_for_file: constant_identifier_names
+// ignore_for_file: curly_braces_in_flow_control_structures
+// ignore_for_file: deprecated_member_use_from_same_package, library_prefixes
+// ignore_for_file: non_constant_identifier_names
 
 import 'dart:core' as $core;
 
@@ -55,7 +56,7 @@ class Federation_State extends $pb.ProtobufEnum {
   static Federation_State? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Federation_State._(super.v, super.n);
+  const Federation_State._(super.value, super.name);
 }
 
 /// The type of the backend metastore.
@@ -81,7 +82,7 @@ class BackendMetastore_MetastoreType extends $pb.ProtobufEnum {
   static BackendMetastore_MetastoreType? valueOf($core.int value) =>
       _byValue[value];
 
-  const BackendMetastore_MetastoreType._(super.v, super.n);
+  const BackendMetastore_MetastoreType._(super.value, super.name);
 }
 
 /// The current state of the metastore service.
@@ -137,7 +138,7 @@ class Service_State extends $pb.ProtobufEnum {
   static Service_State? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Service_State._(super.v, super.n);
+  const Service_State._(super.value, super.name);
 }
 
 /// Available service tiers.
@@ -167,7 +168,7 @@ class Service_Tier extends $pb.ProtobufEnum {
   static Service_Tier? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Service_Tier._(super.v, super.n);
+  const Service_Tier._(super.value, super.name);
 }
 
 /// Release channels bundle features of varying levels of stability. Newer
@@ -202,7 +203,7 @@ class Service_ReleaseChannel extends $pb.ProtobufEnum {
   static Service_ReleaseChannel? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Service_ReleaseChannel._(super.v, super.n);
+  const Service_ReleaseChannel._(super.value, super.name);
 }
 
 /// The backend database type for the metastore service.
@@ -231,7 +232,7 @@ class Service_DatabaseType extends $pb.ProtobufEnum {
   static Service_DatabaseType? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Service_DatabaseType._(super.v, super.n);
+  const Service_DatabaseType._(super.value, super.name);
 }
 
 class TelemetryConfig_LogFormat extends $pb.ProtobufEnum {
@@ -260,7 +261,7 @@ class TelemetryConfig_LogFormat extends $pb.ProtobufEnum {
   static TelemetryConfig_LogFormat? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const TelemetryConfig_LogFormat._(super.v, super.n);
+  const TelemetryConfig_LogFormat._(super.value, super.name);
 }
 
 /// The current state of the metadata import.
@@ -299,7 +300,7 @@ class MetadataImport_State extends $pb.ProtobufEnum {
   static MetadataImport_State? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const MetadataImport_State._(super.v, super.n);
+  const MetadataImport_State._(super.value, super.name);
 }
 
 /// The type of the database.
@@ -325,7 +326,7 @@ class MetadataImport_DatabaseDump_DatabaseType extends $pb.ProtobufEnum {
   static MetadataImport_DatabaseDump_DatabaseType? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const MetadataImport_DatabaseDump_DatabaseType._(super.v, super.n);
+  const MetadataImport_DatabaseDump_DatabaseType._(super.value, super.name);
 }
 
 /// The current state of the metadata export.
@@ -363,7 +364,7 @@ class MetadataExport_State extends $pb.ProtobufEnum {
   static MetadataExport_State? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const MetadataExport_State._(super.v, super.n);
+  const MetadataExport_State._(super.value, super.name);
 }
 
 /// The current state of the backup.
@@ -406,7 +407,7 @@ class Backup_State extends $pb.ProtobufEnum {
   static Backup_State? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Backup_State._(super.v, super.n);
+  const Backup_State._(super.value, super.name);
 }
 
 /// The current state of the restore.
@@ -444,7 +445,7 @@ class Restore_State extends $pb.ProtobufEnum {
   static Restore_State? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Restore_State._(super.v, super.n);
+  const Restore_State._(super.value, super.name);
 }
 
 /// The type of restore. If unspecified, defaults to `METADATA_ONLY`.
@@ -473,7 +474,7 @@ class Restore_RestoreType extends $pb.ProtobufEnum {
   static Restore_RestoreType? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Restore_RestoreType._(super.v, super.n);
+  const Restore_RestoreType._(super.value, super.name);
 }
 
 /// Metastore instance sizes.
@@ -518,7 +519,7 @@ class ScalingConfig_InstanceSize extends $pb.ProtobufEnum {
   static ScalingConfig_InstanceSize? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const ScalingConfig_InstanceSize._(super.v, super.n);
+  const ScalingConfig_InstanceSize._(super.value, super.name);
 }
 
 /// The type of the database dump.
@@ -547,7 +548,8 @@ class DatabaseDumpSpec_Type extends $pb.ProtobufEnum {
   static DatabaseDumpSpec_Type? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const DatabaseDumpSpec_Type._(super.v, super.n);
+  const DatabaseDumpSpec_Type._(super.value, super.name);
 }
 
-const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');
+const $core.bool _omitEnumNames =
+    $core.bool.fromEnvironment('protobuf.omit_enum_names');

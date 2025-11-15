@@ -1,66 +1,66 @@
+// This is a generated file - do not edit.
 //
-//  Generated code. Do not modify.
-//  source: google/events/cloud/dataflow/v1beta3/events.proto
-//
+// Generated from google/events/cloud/dataflow/v1beta3/events.proto.
+
 // @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
-// ignore_for_file: constant_identifier_names, library_prefixes
-// ignore_for_file: non_constant_identifier_names, prefer_final_fields
-// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
+// ignore_for_file: constant_identifier_names
+// ignore_for_file: curly_braces_in_flow_control_structures
+// ignore_for_file: deprecated_member_use_from_same_package, library_prefixes
+// ignore_for_file: non_constant_identifier_names
 
 import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'data.pb.dart' as $23;
+import 'data.pb.dart' as $0;
 
 export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
 /// The CloudEvent raised when a Job status changes.
 class JobStatusChangedEvent extends $pb.GeneratedMessage {
   factory JobStatusChangedEvent({
-    $23.JobEventData? data,
+    $0.JobEventData? data,
   }) {
-    final $result = create();
-    if (data != null) {
-      $result.data = data;
-    }
-    return $result;
+    final result = create();
+    if (data != null) result.data = data;
+    return result;
   }
-  JobStatusChangedEvent._() : super();
-  factory JobStatusChangedEvent.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory JobStatusChangedEvent.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  JobStatusChangedEvent._();
+
+  factory JobStatusChangedEvent.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory JobStatusChangedEvent.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'JobStatusChangedEvent',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.dataflow.v1beta3'),
       createEmptyInstance: create)
-    ..aOM<$23.JobEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $23.JobEventData.create)
+    ..aOM<$0.JobEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $0.JobEventData.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  JobStatusChangedEvent clone() =>
-      JobStatusChangedEvent()..mergeFromMessage(this);
+  JobStatusChangedEvent clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   JobStatusChangedEvent copyWith(
           void Function(JobStatusChangedEvent) updates) =>
       super.copyWith((message) => updates(message as JobStatusChangedEvent))
           as JobStatusChangedEvent;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static JobStatusChangedEvent create() => JobStatusChangedEvent._();
+  @$core.override
   JobStatusChangedEvent createEmptyInstance() => create();
-  static $pb.PbList<JobStatusChangedEvent> createRepeated() =>
-      $pb.PbList<JobStatusChangedEvent>();
   @$core.pragma('dart2js:noInline')
   static JobStatusChangedEvent getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<JobStatusChangedEvent>(create);
@@ -68,20 +68,18 @@ class JobStatusChangedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $23.JobEventData get data => $_getN(0);
+  $0.JobEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($23.JobEventData v) {
-    $_setField(1, v);
-  }
-
+  set data($0.JobEventData value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
   void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $23.JobEventData ensureData() => $_ensure(0);
+  $0.JobEventData ensureData() => $_ensure(0);
 }
 
-const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames =
+const $core.bool _omitFieldNames =
+    $core.bool.fromEnvironment('protobuf.omit_field_names');
+const $core.bool _omitMessageNames =
     $core.bool.fromEnvironment('protobuf.omit_message_names');

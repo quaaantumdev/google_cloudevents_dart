@@ -1,13 +1,14 @@
+// This is a generated file - do not edit.
 //
-//  Generated code. Do not modify.
-//  source: google/events/cloud/notebooks/v1/data.proto
-//
+// Generated from google/events/cloud/notebooks/v1/data.proto.
+
 // @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
-// ignore_for_file: constant_identifier_names, library_prefixes
-// ignore_for_file: non_constant_identifier_names, prefer_final_fields
-// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
+// ignore_for_file: constant_identifier_names
+// ignore_for_file: curly_braces_in_flow_control_structures
+// ignore_for_file: deprecated_member_use_from_same_package, library_prefixes
+// ignore_for_file: non_constant_identifier_names
 
 import 'dart:core' as $core;
 
@@ -69,7 +70,7 @@ class Runtime_State extends $pb.ProtobufEnum {
   static Runtime_State? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Runtime_State._(super.v, super.n);
+  const Runtime_State._(super.value, super.name);
 }
 
 /// The runtime substate.
@@ -114,7 +115,7 @@ class Runtime_HealthState extends $pb.ProtobufEnum {
   static Runtime_HealthState? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Runtime_HealthState._(super.v, super.n);
+  const Runtime_HealthState._(super.value, super.name);
 }
 
 /// Type of this accelerator.
@@ -200,7 +201,7 @@ class RuntimeAcceleratorConfig_AcceleratorType extends $pb.ProtobufEnum {
   static RuntimeAcceleratorConfig_AcceleratorType? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const RuntimeAcceleratorConfig_AcceleratorType._(super.v, super.n);
+  const RuntimeAcceleratorConfig_AcceleratorType._(super.value, super.name);
 }
 
 /// Possible disk types.
@@ -243,7 +244,7 @@ class LocalDiskInitializeParams_DiskType extends $pb.ProtobufEnum {
   static LocalDiskInitializeParams_DiskType? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const LocalDiskInitializeParams_DiskType._(super.v, super.n);
+  const LocalDiskInitializeParams_DiskType._(super.value, super.name);
 }
 
 /// Possible ways to access runtime. Authentication mode.
@@ -279,7 +280,7 @@ class RuntimeAccessConfig_RuntimeAccessType extends $pb.ProtobufEnum {
   static RuntimeAccessConfig_RuntimeAccessType? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const RuntimeAccessConfig_RuntimeAccessType._(super.v, super.n);
+  const RuntimeAccessConfig_RuntimeAccessType._(super.value, super.name);
 }
 
 /// Behavior for the post startup script.
@@ -314,7 +315,8 @@ class RuntimeSoftwareConfig_PostStartupScriptBehavior extends $pb.ProtobufEnum {
           $core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const RuntimeSoftwareConfig_PostStartupScriptBehavior._(super.v, super.n);
+  const RuntimeSoftwareConfig_PostStartupScriptBehavior._(
+      super.value, super.name);
 }
 
 /// The type of vNIC driver.
@@ -345,7 +347,7 @@ class VirtualMachineConfig_NicType extends $pb.ProtobufEnum {
   static VirtualMachineConfig_NicType? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const VirtualMachineConfig_NicType._(super.v, super.n);
+  const VirtualMachineConfig_NicType._(super.value, super.name);
 }
 
 /// Required. Specifies the machine types, the number of replicas for workers
@@ -403,7 +405,7 @@ class ExecutionTemplate_ScaleTier extends $pb.ProtobufEnum {
   static ExecutionTemplate_ScaleTier? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const ExecutionTemplate_ScaleTier._(super.v, super.n);
+  const ExecutionTemplate_ScaleTier._(super.value, super.name);
 }
 
 /// Hardware accelerator types for AI Platform Training jobs.
@@ -472,7 +474,7 @@ class ExecutionTemplate_SchedulerAcceleratorType extends $pb.ProtobufEnum {
   static ExecutionTemplate_SchedulerAcceleratorType? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const ExecutionTemplate_SchedulerAcceleratorType._(super.v, super.n);
+  const ExecutionTemplate_SchedulerAcceleratorType._(super.value, super.name);
 }
 
 /// The backend used for this execution.
@@ -504,7 +506,7 @@ class ExecutionTemplate_JobType extends $pb.ProtobufEnum {
   static ExecutionTemplate_JobType? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const ExecutionTemplate_JobType._(super.v, super.n);
+  const ExecutionTemplate_JobType._(super.value, super.name);
 }
 
 /// Enum description of the state of the underlying AIP job.
@@ -571,7 +573,7 @@ class Execution_State extends $pb.ProtobufEnum {
   static Execution_State? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Execution_State._(super.v, super.n);
+  const Execution_State._(super.value, super.name);
 }
 
 /// Indicates whether to consume capacity from an reservation or not.
@@ -607,7 +609,7 @@ class ReservationAffinity_Type extends $pb.ProtobufEnum {
   static ReservationAffinity_Type? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const ReservationAffinity_Type._(super.v, super.n);
+  const ReservationAffinity_Type._(super.value, super.name);
 }
 
 /// Definition of the types of hardware accelerators that can be used on this
@@ -686,7 +688,7 @@ class Instance_AcceleratorType extends $pb.ProtobufEnum {
   static Instance_AcceleratorType? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Instance_AcceleratorType._(super.v, super.n);
+  const Instance_AcceleratorType._(super.value, super.name);
 }
 
 /// The definition of the states of this instance.
@@ -760,7 +762,7 @@ class Instance_State extends $pb.ProtobufEnum {
   static Instance_State? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Instance_State._(super.v, super.n);
+  const Instance_State._(super.value, super.name);
 }
 
 /// Possible disk types for notebook instances.
@@ -798,7 +800,7 @@ class Instance_DiskType extends $pb.ProtobufEnum {
   static Instance_DiskType? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Instance_DiskType._(super.v, super.n);
+  const Instance_DiskType._(super.value, super.name);
 }
 
 /// Definition of the disk encryption options.
@@ -828,7 +830,7 @@ class Instance_DiskEncryption extends $pb.ProtobufEnum {
   static Instance_DiskEncryption? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Instance_DiskEncryption._(super.v, super.n);
+  const Instance_DiskEncryption._(super.value, super.name);
 }
 
 /// The type of vNIC driver.
@@ -857,7 +859,7 @@ class Instance_NicType extends $pb.ProtobufEnum {
   static Instance_NicType? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Instance_NicType._(super.v, super.n);
+  const Instance_NicType._(super.value, super.name);
 }
 
 /// The definition of the states of this upgrade history entry.
@@ -893,7 +895,7 @@ class Instance_UpgradeHistoryEntry_State extends $pb.ProtobufEnum {
   static Instance_UpgradeHistoryEntry_State? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Instance_UpgradeHistoryEntry_State._(super.v, super.n);
+  const Instance_UpgradeHistoryEntry_State._(super.value, super.name);
 }
 
 /// The definition of operations of this upgrade history entry.
@@ -924,7 +926,7 @@ class Instance_UpgradeHistoryEntry_Action extends $pb.ProtobufEnum {
   static Instance_UpgradeHistoryEntry_Action? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Instance_UpgradeHistoryEntry_Action._(super.v, super.n);
+  const Instance_UpgradeHistoryEntry_Action._(super.value, super.name);
 }
 
 /// State of the job.
@@ -977,7 +979,8 @@ class Schedule_State extends $pb.ProtobufEnum {
   static Schedule_State? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Schedule_State._(super.v, super.n);
+  const Schedule_State._(super.value, super.name);
 }
 
-const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');
+const $core.bool _omitEnumNames =
+    $core.bool.fromEnvironment('protobuf.omit_enum_names');

@@ -1,21 +1,22 @@
+// This is a generated file - do not edit.
 //
-//  Generated code. Do not modify.
-//  source: google/events/cloud/batch/v1/data.proto
-//
+// Generated from google/events/cloud/batch/v1/data.proto.
+
 // @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
-// ignore_for_file: constant_identifier_names, library_prefixes
-// ignore_for_file: non_constant_identifier_names, prefer_final_fields
-// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
+// ignore_for_file: constant_identifier_names
+// ignore_for_file: curly_braces_in_flow_control_structures
+// ignore_for_file: deprecated_member_use_from_same_package, library_prefixes
+// ignore_for_file: non_constant_identifier_names
 
 import 'dart:core' as $core;
 
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/duration.pb.dart' as $0;
-import '../../../../protobuf/timestamp.pb.dart' as $2;
+import '../../../../protobuf/duration.pb.dart' as $1;
+import '../../../../protobuf/timestamp.pb.dart' as $0;
 import 'data.pbenum.dart';
 
 export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
@@ -33,31 +34,23 @@ class Volume extends $pb.GeneratedMessage {
     $core.Iterable<$core.String>? mountOptions,
     $core.String? deviceName,
   }) {
-    final $result = create();
-    if (nfs != null) {
-      $result.nfs = nfs;
-    }
-    if (gcs != null) {
-      $result.gcs = gcs;
-    }
-    if (mountPath != null) {
-      $result.mountPath = mountPath;
-    }
-    if (mountOptions != null) {
-      $result.mountOptions.addAll(mountOptions);
-    }
-    if (deviceName != null) {
-      $result.deviceName = deviceName;
-    }
-    return $result;
+    final result = create();
+    if (nfs != null) result.nfs = nfs;
+    if (gcs != null) result.gcs = gcs;
+    if (mountPath != null) result.mountPath = mountPath;
+    if (mountOptions != null) result.mountOptions.addAll(mountOptions);
+    if (deviceName != null) result.deviceName = deviceName;
+    return result;
   }
-  Volume._() : super();
-  factory Volume.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Volume.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  Volume._();
+
+  factory Volume.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory Volume.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static const $core.Map<$core.int, Volume_Source> _Volume_SourceByTag = {
     1: Volume_Source.nfs,
@@ -79,23 +72,30 @@ class Volume extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  Volume clone() => Volume()..mergeFromMessage(this);
+  Volume clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Volume copyWith(void Function(Volume) updates) =>
       super.copyWith((message) => updates(message as Volume)) as Volume;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Volume create() => Volume._();
+  @$core.override
   Volume createEmptyInstance() => create();
-  static $pb.PbList<Volume> createRepeated() => $pb.PbList<Volume>();
   @$core.pragma('dart2js:noInline')
   static Volume getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Volume>(create);
   static Volume? _defaultInstance;
 
+  @$pb.TagNumber(1)
+  @$pb.TagNumber(3)
+  @$pb.TagNumber(6)
   Volume_Source whichSource() => _Volume_SourceByTag[$_whichOneof(0)]!;
+  @$pb.TagNumber(1)
+  @$pb.TagNumber(3)
+  @$pb.TagNumber(6)
   void clearSource() => $_clearField($_whichOneof(0));
 
   /// A Network File System (NFS) volume. For example, a
@@ -103,10 +103,7 @@ class Volume extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   NFS get nfs => $_getN(0);
   @$pb.TagNumber(1)
-  set nfs(NFS v) {
-    $_setField(1, v);
-  }
-
+  set nfs(NFS value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasNfs() => $_has(0);
   @$pb.TagNumber(1)
@@ -118,10 +115,7 @@ class Volume extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   GCS get gcs => $_getN(1);
   @$pb.TagNumber(3)
-  set gcs(GCS v) {
-    $_setField(3, v);
-  }
-
+  set gcs(GCS value) => $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasGcs() => $_has(1);
   @$pb.TagNumber(3)
@@ -133,10 +127,7 @@ class Volume extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get mountPath => $_getSZ(2);
   @$pb.TagNumber(4)
-  set mountPath($core.String v) {
-    $_setString(2, v);
-  }
-
+  set mountPath($core.String value) => $_setString(2, value);
   @$pb.TagNumber(4)
   $core.bool hasMountPath() => $_has(2);
   @$pb.TagNumber(4)
@@ -162,10 +153,7 @@ class Volume extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get deviceName => $_getSZ(4);
   @$pb.TagNumber(6)
-  set deviceName($core.String v) {
-    $_setString(4, v);
-  }
-
+  set deviceName($core.String value) => $_setString(4, value);
   @$pb.TagNumber(6)
   $core.bool hasDeviceName() => $_has(4);
   @$pb.TagNumber(6)
@@ -178,22 +166,20 @@ class NFS extends $pb.GeneratedMessage {
     $core.String? server,
     $core.String? remotePath,
   }) {
-    final $result = create();
-    if (server != null) {
-      $result.server = server;
-    }
-    if (remotePath != null) {
-      $result.remotePath = remotePath;
-    }
-    return $result;
+    final result = create();
+    if (server != null) result.server = server;
+    if (remotePath != null) result.remotePath = remotePath;
+    return result;
   }
-  NFS._() : super();
-  factory NFS.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory NFS.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  NFS._();
+
+  factory NFS.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory NFS.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'NFS',
@@ -205,17 +191,18 @@ class NFS extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  NFS clone() => NFS()..mergeFromMessage(this);
+  NFS clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   NFS copyWith(void Function(NFS) updates) =>
       super.copyWith((message) => updates(message as NFS)) as NFS;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static NFS create() => NFS._();
+  @$core.override
   NFS createEmptyInstance() => create();
-  static $pb.PbList<NFS> createRepeated() => $pb.PbList<NFS>();
   @$core.pragma('dart2js:noInline')
   static NFS getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<NFS>(create);
@@ -225,10 +212,7 @@ class NFS extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get server => $_getSZ(0);
   @$pb.TagNumber(1)
-  set server($core.String v) {
-    $_setString(0, v);
-  }
-
+  set server($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasServer() => $_has(0);
   @$pb.TagNumber(1)
@@ -238,10 +222,7 @@ class NFS extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get remotePath => $_getSZ(1);
   @$pb.TagNumber(2)
-  set remotePath($core.String v) {
-    $_setString(1, v);
-  }
-
+  set remotePath($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasRemotePath() => $_has(1);
   @$pb.TagNumber(2)
@@ -253,19 +234,19 @@ class GCS extends $pb.GeneratedMessage {
   factory GCS({
     $core.String? remotePath,
   }) {
-    final $result = create();
-    if (remotePath != null) {
-      $result.remotePath = remotePath;
-    }
-    return $result;
+    final result = create();
+    if (remotePath != null) result.remotePath = remotePath;
+    return result;
   }
-  GCS._() : super();
-  factory GCS.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory GCS.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  GCS._();
+
+  factory GCS.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory GCS.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'GCS',
@@ -276,17 +257,18 @@ class GCS extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  GCS clone() => GCS()..mergeFromMessage(this);
+  GCS clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   GCS copyWith(void Function(GCS) updates) =>
       super.copyWith((message) => updates(message as GCS)) as GCS;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GCS create() => GCS._();
+  @$core.override
   GCS createEmptyInstance() => create();
-  static $pb.PbList<GCS> createRepeated() => $pb.PbList<GCS>();
   @$core.pragma('dart2js:noInline')
   static GCS getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GCS>(create);
@@ -297,10 +279,7 @@ class GCS extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get remotePath => $_getSZ(0);
   @$pb.TagNumber(1)
-  set remotePath($core.String v) {
-    $_setString(0, v);
-  }
-
+  set remotePath($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasRemotePath() => $_has(0);
   @$pb.TagNumber(1)
@@ -314,25 +293,21 @@ class ComputeResource extends $pb.GeneratedMessage {
     $fixnum.Int64? memoryMib,
     $fixnum.Int64? bootDiskMib,
   }) {
-    final $result = create();
-    if (cpuMilli != null) {
-      $result.cpuMilli = cpuMilli;
-    }
-    if (memoryMib != null) {
-      $result.memoryMib = memoryMib;
-    }
-    if (bootDiskMib != null) {
-      $result.bootDiskMib = bootDiskMib;
-    }
-    return $result;
+    final result = create();
+    if (cpuMilli != null) result.cpuMilli = cpuMilli;
+    if (memoryMib != null) result.memoryMib = memoryMib;
+    if (bootDiskMib != null) result.bootDiskMib = bootDiskMib;
+    return result;
   }
-  ComputeResource._() : super();
-  factory ComputeResource.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ComputeResource.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  ComputeResource._();
+
+  factory ComputeResource.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ComputeResource.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'ComputeResource',
@@ -345,19 +320,19 @@ class ComputeResource extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ComputeResource clone() => ComputeResource()..mergeFromMessage(this);
+  ComputeResource clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ComputeResource copyWith(void Function(ComputeResource) updates) =>
       super.copyWith((message) => updates(message as ComputeResource))
           as ComputeResource;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ComputeResource create() => ComputeResource._();
+  @$core.override
   ComputeResource createEmptyInstance() => create();
-  static $pb.PbList<ComputeResource> createRepeated() =>
-      $pb.PbList<ComputeResource>();
   @$core.pragma('dart2js:noInline')
   static ComputeResource getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ComputeResource>(create);
@@ -367,10 +342,7 @@ class ComputeResource extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $fixnum.Int64 get cpuMilli => $_getI64(0);
   @$pb.TagNumber(1)
-  set cpuMilli($fixnum.Int64 v) {
-    $_setInt64(0, v);
-  }
-
+  set cpuMilli($fixnum.Int64 value) => $_setInt64(0, value);
   @$pb.TagNumber(1)
   $core.bool hasCpuMilli() => $_has(0);
   @$pb.TagNumber(1)
@@ -380,10 +352,7 @@ class ComputeResource extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $fixnum.Int64 get memoryMib => $_getI64(1);
   @$pb.TagNumber(2)
-  set memoryMib($fixnum.Int64 v) {
-    $_setInt64(1, v);
-  }
-
+  set memoryMib($fixnum.Int64 value) => $_setInt64(1, value);
   @$pb.TagNumber(2)
   $core.bool hasMemoryMib() => $_has(1);
   @$pb.TagNumber(2)
@@ -393,10 +362,7 @@ class ComputeResource extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $fixnum.Int64 get bootDiskMib => $_getI64(2);
   @$pb.TagNumber(4)
-  set bootDiskMib($fixnum.Int64 v) {
-    $_setInt64(2, v);
-  }
-
+  set bootDiskMib($fixnum.Int64 value) => $_setInt64(2, value);
   @$pb.TagNumber(4)
   $core.bool hasBootDiskMib() => $_has(2);
   @$pb.TagNumber(4)
@@ -407,36 +373,28 @@ class ComputeResource extends $pb.GeneratedMessage {
 class StatusEvent extends $pb.GeneratedMessage {
   factory StatusEvent({
     $core.String? description,
-    $2.Timestamp? eventTime,
+    $0.Timestamp? eventTime,
     $core.String? type,
     TaskExecution? taskExecution,
     TaskStatus_State? taskState,
   }) {
-    final $result = create();
-    if (description != null) {
-      $result.description = description;
-    }
-    if (eventTime != null) {
-      $result.eventTime = eventTime;
-    }
-    if (type != null) {
-      $result.type = type;
-    }
-    if (taskExecution != null) {
-      $result.taskExecution = taskExecution;
-    }
-    if (taskState != null) {
-      $result.taskState = taskState;
-    }
-    return $result;
+    final result = create();
+    if (description != null) result.description = description;
+    if (eventTime != null) result.eventTime = eventTime;
+    if (type != null) result.type = type;
+    if (taskExecution != null) result.taskExecution = taskExecution;
+    if (taskState != null) result.taskState = taskState;
+    return result;
   }
-  StatusEvent._() : super();
-  factory StatusEvent.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory StatusEvent.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  StatusEvent._();
+
+  factory StatusEvent.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory StatusEvent.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'StatusEvent',
@@ -444,31 +402,29 @@ class StatusEvent extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.events.cloud.batch.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'description')
-    ..aOM<$2.Timestamp>(2, _omitFieldNames ? '' : 'eventTime',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$0.Timestamp>(2, _omitFieldNames ? '' : 'eventTime',
+        subBuilder: $0.Timestamp.create)
     ..aOS(3, _omitFieldNames ? '' : 'type')
     ..aOM<TaskExecution>(4, _omitFieldNames ? '' : 'taskExecution',
         subBuilder: TaskExecution.create)
-    ..e<TaskStatus_State>(
-        5, _omitFieldNames ? '' : 'taskState', $pb.PbFieldType.OE,
-        defaultOrMaker: TaskStatus_State.STATE_UNSPECIFIED,
-        valueOf: TaskStatus_State.valueOf,
+    ..aE<TaskStatus_State>(5, _omitFieldNames ? '' : 'taskState',
         enumValues: TaskStatus_State.values)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  StatusEvent clone() => StatusEvent()..mergeFromMessage(this);
+  StatusEvent clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   StatusEvent copyWith(void Function(StatusEvent) updates) =>
       super.copyWith((message) => updates(message as StatusEvent))
           as StatusEvent;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static StatusEvent create() => StatusEvent._();
+  @$core.override
   StatusEvent createEmptyInstance() => create();
-  static $pb.PbList<StatusEvent> createRepeated() => $pb.PbList<StatusEvent>();
   @$core.pragma('dart2js:noInline')
   static StatusEvent getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<StatusEvent>(create);
@@ -478,10 +434,7 @@ class StatusEvent extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get description => $_getSZ(0);
   @$pb.TagNumber(1)
-  set description($core.String v) {
-    $_setString(0, v);
-  }
-
+  set description($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasDescription() => $_has(0);
   @$pb.TagNumber(1)
@@ -489,27 +442,21 @@ class StatusEvent extends $pb.GeneratedMessage {
 
   /// The time this event occurred.
   @$pb.TagNumber(2)
-  $2.Timestamp get eventTime => $_getN(1);
+  $0.Timestamp get eventTime => $_getN(1);
   @$pb.TagNumber(2)
-  set eventTime($2.Timestamp v) {
-    $_setField(2, v);
-  }
-
+  set eventTime($0.Timestamp value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasEventTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearEventTime() => $_clearField(2);
   @$pb.TagNumber(2)
-  $2.Timestamp ensureEventTime() => $_ensure(1);
+  $0.Timestamp ensureEventTime() => $_ensure(1);
 
   /// Type of the event.
   @$pb.TagNumber(3)
   $core.String get type => $_getSZ(2);
   @$pb.TagNumber(3)
-  set type($core.String v) {
-    $_setString(2, v);
-  }
-
+  set type($core.String value) => $_setString(2, value);
   @$pb.TagNumber(3)
   $core.bool hasType() => $_has(2);
   @$pb.TagNumber(3)
@@ -519,10 +466,7 @@ class StatusEvent extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   TaskExecution get taskExecution => $_getN(3);
   @$pb.TagNumber(4)
-  set taskExecution(TaskExecution v) {
-    $_setField(4, v);
-  }
-
+  set taskExecution(TaskExecution value) => $_setField(4, value);
   @$pb.TagNumber(4)
   $core.bool hasTaskExecution() => $_has(3);
   @$pb.TagNumber(4)
@@ -534,10 +478,7 @@ class StatusEvent extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   TaskStatus_State get taskState => $_getN(4);
   @$pb.TagNumber(5)
-  set taskState(TaskStatus_State v) {
-    $_setField(5, v);
-  }
-
+  set taskState(TaskStatus_State value) => $_setField(5, value);
   @$pb.TagNumber(5)
   $core.bool hasTaskState() => $_has(4);
   @$pb.TagNumber(5)
@@ -550,42 +491,42 @@ class TaskExecution extends $pb.GeneratedMessage {
   factory TaskExecution({
     $core.int? exitCode,
   }) {
-    final $result = create();
-    if (exitCode != null) {
-      $result.exitCode = exitCode;
-    }
-    return $result;
+    final result = create();
+    if (exitCode != null) result.exitCode = exitCode;
+    return result;
   }
-  TaskExecution._() : super();
-  factory TaskExecution.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory TaskExecution.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  TaskExecution._();
+
+  factory TaskExecution.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory TaskExecution.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'TaskExecution',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.batch.v1'),
       createEmptyInstance: create)
-    ..a<$core.int>(1, _omitFieldNames ? '' : 'exitCode', $pb.PbFieldType.O3)
+    ..aI(1, _omitFieldNames ? '' : 'exitCode')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  TaskExecution clone() => TaskExecution()..mergeFromMessage(this);
+  TaskExecution clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TaskExecution copyWith(void Function(TaskExecution) updates) =>
       super.copyWith((message) => updates(message as TaskExecution))
           as TaskExecution;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static TaskExecution create() => TaskExecution._();
+  @$core.override
   TaskExecution createEmptyInstance() => create();
-  static $pb.PbList<TaskExecution> createRepeated() =>
-      $pb.PbList<TaskExecution>();
   @$core.pragma('dart2js:noInline')
   static TaskExecution getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<TaskExecution>(create);
@@ -596,10 +537,7 @@ class TaskExecution extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.int get exitCode => $_getIZ(0);
   @$pb.TagNumber(1)
-  set exitCode($core.int v) {
-    $_setSignedInt32(0, v);
-  }
-
+  set exitCode($core.int value) => $_setSignedInt32(0, value);
   @$pb.TagNumber(1)
   $core.bool hasExitCode() => $_has(0);
   @$pb.TagNumber(1)
@@ -609,13 +547,15 @@ class TaskExecution extends $pb.GeneratedMessage {
 /// Status of a task
 class TaskStatus extends $pb.GeneratedMessage {
   factory TaskStatus() => create();
-  TaskStatus._() : super();
-  factory TaskStatus.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory TaskStatus.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  TaskStatus._();
+
+  factory TaskStatus.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory TaskStatus.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'TaskStatus',
@@ -625,17 +565,18 @@ class TaskStatus extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  TaskStatus clone() => TaskStatus()..mergeFromMessage(this);
+  TaskStatus clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TaskStatus copyWith(void Function(TaskStatus) updates) =>
       super.copyWith((message) => updates(message as TaskStatus)) as TaskStatus;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static TaskStatus create() => TaskStatus._();
+  @$core.override
   TaskStatus createEmptyInstance() => create();
-  static $pb.PbList<TaskStatus> createRepeated() => $pb.PbList<TaskStatus>();
   @$core.pragma('dart2js:noInline')
   static TaskStatus getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<TaskStatus>(create);
@@ -654,40 +595,27 @@ class Runnable_Container extends $pb.GeneratedMessage {
     $core.String? username,
     $core.String? password,
   }) {
-    final $result = create();
-    if (imageUri != null) {
-      $result.imageUri = imageUri;
-    }
-    if (commands != null) {
-      $result.commands.addAll(commands);
-    }
-    if (entrypoint != null) {
-      $result.entrypoint = entrypoint;
-    }
-    if (volumes != null) {
-      $result.volumes.addAll(volumes);
-    }
-    if (options != null) {
-      $result.options = options;
-    }
-    if (blockExternalNetwork != null) {
-      $result.blockExternalNetwork = blockExternalNetwork;
-    }
-    if (username != null) {
-      $result.username = username;
-    }
-    if (password != null) {
-      $result.password = password;
-    }
-    return $result;
+    final result = create();
+    if (imageUri != null) result.imageUri = imageUri;
+    if (commands != null) result.commands.addAll(commands);
+    if (entrypoint != null) result.entrypoint = entrypoint;
+    if (volumes != null) result.volumes.addAll(volumes);
+    if (options != null) result.options = options;
+    if (blockExternalNetwork != null)
+      result.blockExternalNetwork = blockExternalNetwork;
+    if (username != null) result.username = username;
+    if (password != null) result.password = password;
+    return result;
   }
-  Runnable_Container._() : super();
-  factory Runnable_Container.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Runnable_Container.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  Runnable_Container._();
+
+  factory Runnable_Container.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory Runnable_Container.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'Runnable.Container',
@@ -705,19 +633,19 @@ class Runnable_Container extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  Runnable_Container clone() => Runnable_Container()..mergeFromMessage(this);
+  Runnable_Container clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Runnable_Container copyWith(void Function(Runnable_Container) updates) =>
       super.copyWith((message) => updates(message as Runnable_Container))
           as Runnable_Container;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Runnable_Container create() => Runnable_Container._();
+  @$core.override
   Runnable_Container createEmptyInstance() => create();
-  static $pb.PbList<Runnable_Container> createRepeated() =>
-      $pb.PbList<Runnable_Container>();
   @$core.pragma('dart2js:noInline')
   static Runnable_Container getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<Runnable_Container>(create);
@@ -727,10 +655,7 @@ class Runnable_Container extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get imageUri => $_getSZ(0);
   @$pb.TagNumber(1)
-  set imageUri($core.String v) {
-    $_setString(0, v);
-  }
-
+  set imageUri($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasImageUri() => $_has(0);
   @$pb.TagNumber(1)
@@ -746,10 +671,7 @@ class Runnable_Container extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get entrypoint => $_getSZ(2);
   @$pb.TagNumber(3)
-  set entrypoint($core.String v) {
-    $_setString(2, v);
-  }
-
+  set entrypoint($core.String value) => $_setString(2, value);
   @$pb.TagNumber(3)
   $core.bool hasEntrypoint() => $_has(2);
   @$pb.TagNumber(3)
@@ -766,10 +688,7 @@ class Runnable_Container extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.String get options => $_getSZ(4);
   @$pb.TagNumber(8)
-  set options($core.String v) {
-    $_setString(4, v);
-  }
-
+  set options($core.String value) => $_setString(4, value);
   @$pb.TagNumber(8)
   $core.bool hasOptions() => $_has(4);
   @$pb.TagNumber(8)
@@ -782,10 +701,7 @@ class Runnable_Container extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.bool get blockExternalNetwork => $_getBF(5);
   @$pb.TagNumber(9)
-  set blockExternalNetwork($core.bool v) {
-    $_setBool(5, v);
-  }
-
+  set blockExternalNetwork($core.bool value) => $_setBool(5, value);
   @$pb.TagNumber(9)
   $core.bool hasBlockExternalNetwork() => $_has(5);
   @$pb.TagNumber(9)
@@ -797,10 +713,7 @@ class Runnable_Container extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.String get username => $_getSZ(6);
   @$pb.TagNumber(10)
-  set username($core.String v) {
-    $_setString(6, v);
-  }
-
+  set username($core.String value) => $_setString(6, value);
   @$pb.TagNumber(10)
   $core.bool hasUsername() => $_has(6);
   @$pb.TagNumber(10)
@@ -812,10 +725,7 @@ class Runnable_Container extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.String get password => $_getSZ(7);
   @$pb.TagNumber(11)
-  set password($core.String v) {
-    $_setString(7, v);
-  }
-
+  set password($core.String value) => $_setString(7, value);
   @$pb.TagNumber(11)
   $core.bool hasPassword() => $_has(7);
   @$pb.TagNumber(11)
@@ -830,22 +740,20 @@ class Runnable_Script extends $pb.GeneratedMessage {
     $core.String? path,
     $core.String? text,
   }) {
-    final $result = create();
-    if (path != null) {
-      $result.path = path;
-    }
-    if (text != null) {
-      $result.text = text;
-    }
-    return $result;
+    final result = create();
+    if (path != null) result.path = path;
+    if (text != null) result.text = text;
+    return result;
   }
-  Runnable_Script._() : super();
-  factory Runnable_Script.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Runnable_Script.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  Runnable_Script._();
+
+  factory Runnable_Script.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory Runnable_Script.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static const $core.Map<$core.int, Runnable_Script_Command>
       _Runnable_Script_CommandByTag = {
@@ -864,26 +772,30 @@ class Runnable_Script extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  Runnable_Script clone() => Runnable_Script()..mergeFromMessage(this);
+  Runnable_Script clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Runnable_Script copyWith(void Function(Runnable_Script) updates) =>
       super.copyWith((message) => updates(message as Runnable_Script))
           as Runnable_Script;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Runnable_Script create() => Runnable_Script._();
+  @$core.override
   Runnable_Script createEmptyInstance() => create();
-  static $pb.PbList<Runnable_Script> createRepeated() =>
-      $pb.PbList<Runnable_Script>();
   @$core.pragma('dart2js:noInline')
   static Runnable_Script getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<Runnable_Script>(create);
   static Runnable_Script? _defaultInstance;
 
+  @$pb.TagNumber(1)
+  @$pb.TagNumber(2)
   Runnable_Script_Command whichCommand() =>
       _Runnable_Script_CommandByTag[$_whichOneof(0)]!;
+  @$pb.TagNumber(1)
+  @$pb.TagNumber(2)
   void clearCommand() => $_clearField($_whichOneof(0));
 
   /// Script file path on the host VM.
@@ -898,10 +810,7 @@ class Runnable_Script extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get path => $_getSZ(0);
   @$pb.TagNumber(1)
-  set path($core.String v) {
-    $_setString(0, v);
-  }
-
+  set path($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasPath() => $_has(0);
   @$pb.TagNumber(1)
@@ -917,10 +826,7 @@ class Runnable_Script extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get text => $_getSZ(1);
   @$pb.TagNumber(2)
-  set text($core.String v) {
-    $_setString(1, v);
-  }
-
+  set text($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasText() => $_has(1);
   @$pb.TagNumber(2)
@@ -932,19 +838,19 @@ class Runnable_Barrier extends $pb.GeneratedMessage {
   factory Runnable_Barrier({
     $core.String? name,
   }) {
-    final $result = create();
-    if (name != null) {
-      $result.name = name;
-    }
-    return $result;
+    final result = create();
+    if (name != null) result.name = name;
+    return result;
   }
-  Runnable_Barrier._() : super();
-  factory Runnable_Barrier.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Runnable_Barrier.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  Runnable_Barrier._();
+
+  factory Runnable_Barrier.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory Runnable_Barrier.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'Runnable.Barrier',
@@ -955,19 +861,19 @@ class Runnable_Barrier extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  Runnable_Barrier clone() => Runnable_Barrier()..mergeFromMessage(this);
+  Runnable_Barrier clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Runnable_Barrier copyWith(void Function(Runnable_Barrier) updates) =>
       super.copyWith((message) => updates(message as Runnable_Barrier))
           as Runnable_Barrier;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Runnable_Barrier create() => Runnable_Barrier._();
+  @$core.override
   Runnable_Barrier createEmptyInstance() => create();
-  static $pb.PbList<Runnable_Barrier> createRepeated() =>
-      $pb.PbList<Runnable_Barrier>();
   @$core.pragma('dart2js:noInline')
   static Runnable_Barrier getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<Runnable_Barrier>(create);
@@ -978,10 +884,7 @@ class Runnable_Barrier extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) {
-    $_setString(0, v);
-  }
-
+  set name($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -1001,46 +904,30 @@ class Runnable extends $pb.GeneratedMessage {
     $core.bool? alwaysRun,
     Runnable_Barrier? barrier,
     Environment? environment,
-    $0.Duration? timeout,
+    $1.Duration? timeout,
     $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
   }) {
-    final $result = create();
-    if (container != null) {
-      $result.container = container;
-    }
-    if (script != null) {
-      $result.script = script;
-    }
-    if (ignoreExitStatus != null) {
-      $result.ignoreExitStatus = ignoreExitStatus;
-    }
-    if (background != null) {
-      $result.background = background;
-    }
-    if (alwaysRun != null) {
-      $result.alwaysRun = alwaysRun;
-    }
-    if (barrier != null) {
-      $result.barrier = barrier;
-    }
-    if (environment != null) {
-      $result.environment = environment;
-    }
-    if (timeout != null) {
-      $result.timeout = timeout;
-    }
-    if (labels != null) {
-      $result.labels.addEntries(labels);
-    }
-    return $result;
+    final result = create();
+    if (container != null) result.container = container;
+    if (script != null) result.script = script;
+    if (ignoreExitStatus != null) result.ignoreExitStatus = ignoreExitStatus;
+    if (background != null) result.background = background;
+    if (alwaysRun != null) result.alwaysRun = alwaysRun;
+    if (barrier != null) result.barrier = barrier;
+    if (environment != null) result.environment = environment;
+    if (timeout != null) result.timeout = timeout;
+    if (labels != null) result.labels.addEntries(labels);
+    return result;
   }
-  Runnable._() : super();
-  factory Runnable.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Runnable.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  Runnable._();
+
+  factory Runnable.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory Runnable.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static const $core.Map<$core.int, Runnable_Executable>
       _Runnable_ExecutableByTag = {
@@ -1066,8 +953,8 @@ class Runnable extends $pb.GeneratedMessage {
         subBuilder: Runnable_Barrier.create)
     ..aOM<Environment>(7, _omitFieldNames ? '' : 'environment',
         subBuilder: Environment.create)
-    ..aOM<$0.Duration>(8, _omitFieldNames ? '' : 'timeout',
-        subBuilder: $0.Duration.create)
+    ..aOM<$1.Duration>(8, _omitFieldNames ? '' : 'timeout',
+        subBuilder: $1.Duration.create)
     ..m<$core.String, $core.String>(9, _omitFieldNames ? '' : 'labels',
         entryClassName: 'Runnable.LabelsEntry',
         keyFieldType: $pb.PbFieldType.OS,
@@ -1076,34 +963,38 @@ class Runnable extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  Runnable clone() => Runnable()..mergeFromMessage(this);
+  Runnable clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Runnable copyWith(void Function(Runnable) updates) =>
       super.copyWith((message) => updates(message as Runnable)) as Runnable;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Runnable create() => Runnable._();
+  @$core.override
   Runnable createEmptyInstance() => create();
-  static $pb.PbList<Runnable> createRepeated() => $pb.PbList<Runnable>();
   @$core.pragma('dart2js:noInline')
   static Runnable getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Runnable>(create);
   static Runnable? _defaultInstance;
 
+  @$pb.TagNumber(1)
+  @$pb.TagNumber(2)
+  @$pb.TagNumber(6)
   Runnable_Executable whichExecutable() =>
       _Runnable_ExecutableByTag[$_whichOneof(0)]!;
+  @$pb.TagNumber(1)
+  @$pb.TagNumber(2)
+  @$pb.TagNumber(6)
   void clearExecutable() => $_clearField($_whichOneof(0));
 
   /// Container runnable.
   @$pb.TagNumber(1)
   Runnable_Container get container => $_getN(0);
   @$pb.TagNumber(1)
-  set container(Runnable_Container v) {
-    $_setField(1, v);
-  }
-
+  set container(Runnable_Container value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasContainer() => $_has(0);
   @$pb.TagNumber(1)
@@ -1115,10 +1006,7 @@ class Runnable extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   Runnable_Script get script => $_getN(1);
   @$pb.TagNumber(2)
-  set script(Runnable_Script v) {
-    $_setField(2, v);
-  }
-
+  set script(Runnable_Script value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasScript() => $_has(1);
   @$pb.TagNumber(2)
@@ -1131,10 +1019,7 @@ class Runnable extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool get ignoreExitStatus => $_getBF(2);
   @$pb.TagNumber(3)
-  set ignoreExitStatus($core.bool v) {
-    $_setBool(2, v);
-  }
-
+  set ignoreExitStatus($core.bool value) => $_setBool(2, value);
   @$pb.TagNumber(3)
   $core.bool hasIgnoreExitStatus() => $_has(2);
   @$pb.TagNumber(3)
@@ -1146,10 +1031,7 @@ class Runnable extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool get background => $_getBF(3);
   @$pb.TagNumber(4)
-  set background($core.bool v) {
-    $_setBool(3, v);
-  }
-
+  set background($core.bool value) => $_setBool(3, value);
   @$pb.TagNumber(4)
   $core.bool hasBackground() => $_has(3);
   @$pb.TagNumber(4)
@@ -1166,10 +1048,7 @@ class Runnable extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool get alwaysRun => $_getBF(4);
   @$pb.TagNumber(5)
-  set alwaysRun($core.bool v) {
-    $_setBool(4, v);
-  }
-
+  set alwaysRun($core.bool value) => $_setBool(4, value);
   @$pb.TagNumber(5)
   $core.bool hasAlwaysRun() => $_has(4);
   @$pb.TagNumber(5)
@@ -1179,10 +1058,7 @@ class Runnable extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   Runnable_Barrier get barrier => $_getN(5);
   @$pb.TagNumber(6)
-  set barrier(Runnable_Barrier v) {
-    $_setField(6, v);
-  }
-
+  set barrier(Runnable_Barrier value) => $_setField(6, value);
   @$pb.TagNumber(6)
   $core.bool hasBarrier() => $_has(5);
   @$pb.TagNumber(6)
@@ -1195,10 +1071,7 @@ class Runnable extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   Environment get environment => $_getN(6);
   @$pb.TagNumber(7)
-  set environment(Environment v) {
-    $_setField(7, v);
-  }
-
+  set environment(Environment value) => $_setField(7, value);
   @$pb.TagNumber(7)
   $core.bool hasEnvironment() => $_has(6);
   @$pb.TagNumber(7)
@@ -1208,18 +1081,15 @@ class Runnable extends $pb.GeneratedMessage {
 
   /// Timeout for this Runnable.
   @$pb.TagNumber(8)
-  $0.Duration get timeout => $_getN(7);
+  $1.Duration get timeout => $_getN(7);
   @$pb.TagNumber(8)
-  set timeout($0.Duration v) {
-    $_setField(8, v);
-  }
-
+  set timeout($1.Duration value) => $_setField(8, value);
   @$pb.TagNumber(8)
   $core.bool hasTimeout() => $_has(7);
   @$pb.TagNumber(8)
   void clearTimeout() => $_clearField(8);
   @$pb.TagNumber(8)
-  $0.Duration ensureTimeout() => $_ensure(7);
+  $1.Duration ensureTimeout() => $_ensure(7);
 
   /// Labels for this Runnable.
   @$pb.TagNumber(9)
@@ -1230,7 +1100,7 @@ class Runnable extends $pb.GeneratedMessage {
 class TaskSpec extends $pb.GeneratedMessage {
   factory TaskSpec({
     ComputeResource? computeResource,
-    $0.Duration? maxRunDuration,
+    $1.Duration? maxRunDuration,
     $core.int? maxRetryCount,
     $core.Iterable<$core.MapEntry<$core.String, $core.String>>? environments,
     $core.Iterable<Volume>? volumes,
@@ -1238,40 +1108,27 @@ class TaskSpec extends $pb.GeneratedMessage {
     $core.Iterable<LifecyclePolicy>? lifecyclePolicies,
     Environment? environment,
   }) {
-    final $result = create();
-    if (computeResource != null) {
-      $result.computeResource = computeResource;
-    }
-    if (maxRunDuration != null) {
-      $result.maxRunDuration = maxRunDuration;
-    }
-    if (maxRetryCount != null) {
-      $result.maxRetryCount = maxRetryCount;
-    }
-    if (environments != null) {
-      $result.environments.addEntries(environments);
-    }
-    if (volumes != null) {
-      $result.volumes.addAll(volumes);
-    }
-    if (runnables != null) {
-      $result.runnables.addAll(runnables);
-    }
-    if (lifecyclePolicies != null) {
-      $result.lifecyclePolicies.addAll(lifecyclePolicies);
-    }
-    if (environment != null) {
-      $result.environment = environment;
-    }
-    return $result;
+    final result = create();
+    if (computeResource != null) result.computeResource = computeResource;
+    if (maxRunDuration != null) result.maxRunDuration = maxRunDuration;
+    if (maxRetryCount != null) result.maxRetryCount = maxRetryCount;
+    if (environments != null) result.environments.addEntries(environments);
+    if (volumes != null) result.volumes.addAll(volumes);
+    if (runnables != null) result.runnables.addAll(runnables);
+    if (lifecyclePolicies != null)
+      result.lifecyclePolicies.addAll(lifecyclePolicies);
+    if (environment != null) result.environment = environment;
+    return result;
   }
-  TaskSpec._() : super();
-  factory TaskSpec.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory TaskSpec.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  TaskSpec._();
+
+  factory TaskSpec.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory TaskSpec.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'TaskSpec',
@@ -1280,38 +1137,37 @@ class TaskSpec extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOM<ComputeResource>(3, _omitFieldNames ? '' : 'computeResource',
         subBuilder: ComputeResource.create)
-    ..aOM<$0.Duration>(4, _omitFieldNames ? '' : 'maxRunDuration',
-        subBuilder: $0.Duration.create)
-    ..a<$core.int>(
-        5, _omitFieldNames ? '' : 'maxRetryCount', $pb.PbFieldType.O3)
+    ..aOM<$1.Duration>(4, _omitFieldNames ? '' : 'maxRunDuration',
+        subBuilder: $1.Duration.create)
+    ..aI(5, _omitFieldNames ? '' : 'maxRetryCount')
     ..m<$core.String, $core.String>(6, _omitFieldNames ? '' : 'environments',
         entryClassName: 'TaskSpec.EnvironmentsEntry',
         keyFieldType: $pb.PbFieldType.OS,
         valueFieldType: $pb.PbFieldType.OS,
         packageName: const $pb.PackageName('google.events.cloud.batch.v1'))
-    ..pc<Volume>(7, _omitFieldNames ? '' : 'volumes', $pb.PbFieldType.PM,
+    ..pPM<Volume>(7, _omitFieldNames ? '' : 'volumes',
         subBuilder: Volume.create)
-    ..pc<Runnable>(8, _omitFieldNames ? '' : 'runnables', $pb.PbFieldType.PM,
+    ..pPM<Runnable>(8, _omitFieldNames ? '' : 'runnables',
         subBuilder: Runnable.create)
-    ..pc<LifecyclePolicy>(
-        9, _omitFieldNames ? '' : 'lifecyclePolicies', $pb.PbFieldType.PM,
+    ..pPM<LifecyclePolicy>(9, _omitFieldNames ? '' : 'lifecyclePolicies',
         subBuilder: LifecyclePolicy.create)
     ..aOM<Environment>(10, _omitFieldNames ? '' : 'environment',
         subBuilder: Environment.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  TaskSpec clone() => TaskSpec()..mergeFromMessage(this);
+  TaskSpec clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TaskSpec copyWith(void Function(TaskSpec) updates) =>
       super.copyWith((message) => updates(message as TaskSpec)) as TaskSpec;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static TaskSpec create() => TaskSpec._();
+  @$core.override
   TaskSpec createEmptyInstance() => create();
-  static $pb.PbList<TaskSpec> createRepeated() => $pb.PbList<TaskSpec>();
   @$core.pragma('dart2js:noInline')
   static TaskSpec getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TaskSpec>(create);
@@ -1321,10 +1177,7 @@ class TaskSpec extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   ComputeResource get computeResource => $_getN(0);
   @$pb.TagNumber(3)
-  set computeResource(ComputeResource v) {
-    $_setField(3, v);
-  }
-
+  set computeResource(ComputeResource value) => $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasComputeResource() => $_has(0);
   @$pb.TagNumber(3)
@@ -1335,18 +1188,15 @@ class TaskSpec extends $pb.GeneratedMessage {
   /// Maximum duration the task should run.
   /// The task will be killed and marked as FAILED if over this limit.
   @$pb.TagNumber(4)
-  $0.Duration get maxRunDuration => $_getN(1);
+  $1.Duration get maxRunDuration => $_getN(1);
   @$pb.TagNumber(4)
-  set maxRunDuration($0.Duration v) {
-    $_setField(4, v);
-  }
-
+  set maxRunDuration($1.Duration value) => $_setField(4, value);
   @$pb.TagNumber(4)
   $core.bool hasMaxRunDuration() => $_has(1);
   @$pb.TagNumber(4)
   void clearMaxRunDuration() => $_clearField(4);
   @$pb.TagNumber(4)
-  $0.Duration ensureMaxRunDuration() => $_ensure(1);
+  $1.Duration ensureMaxRunDuration() => $_ensure(1);
 
   /// Maximum number of retries on failures.
   /// The default, 0, which means never retry.
@@ -1354,10 +1204,7 @@ class TaskSpec extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.int get maxRetryCount => $_getIZ(2);
   @$pb.TagNumber(5)
-  set maxRetryCount($core.int v) {
-    $_setSignedInt32(2, v);
-  }
-
+  set maxRetryCount($core.int value) => $_setSignedInt32(2, value);
   @$pb.TagNumber(5)
   $core.bool hasMaxRetryCount() => $_has(2);
   @$pb.TagNumber(5)
@@ -1399,10 +1246,7 @@ class TaskSpec extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   Environment get environment => $_getN(7);
   @$pb.TagNumber(10)
-  set environment(Environment v) {
-    $_setField(10, v);
-  }
-
+  set environment(Environment value) => $_setField(10, value);
   @$pb.TagNumber(10)
   $core.bool hasEnvironment() => $_has(7);
   @$pb.TagNumber(10)
@@ -1416,19 +1260,19 @@ class LifecyclePolicy_ActionCondition extends $pb.GeneratedMessage {
   factory LifecyclePolicy_ActionCondition({
     $core.Iterable<$core.int>? exitCodes,
   }) {
-    final $result = create();
-    if (exitCodes != null) {
-      $result.exitCodes.addAll(exitCodes);
-    }
-    return $result;
+    final result = create();
+    if (exitCodes != null) result.exitCodes.addAll(exitCodes);
+    return result;
   }
-  LifecyclePolicy_ActionCondition._() : super();
-  factory LifecyclePolicy_ActionCondition.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory LifecyclePolicy_ActionCondition.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  LifecyclePolicy_ActionCondition._();
+
+  factory LifecyclePolicy_ActionCondition.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory LifecyclePolicy_ActionCondition.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'LifecyclePolicy.ActionCondition',
@@ -1439,8 +1283,7 @@ class LifecyclePolicy_ActionCondition extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  LifecyclePolicy_ActionCondition clone() =>
-      LifecyclePolicy_ActionCondition()..mergeFromMessage(this);
+  LifecyclePolicy_ActionCondition clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   LifecyclePolicy_ActionCondition copyWith(
           void Function(LifecyclePolicy_ActionCondition) updates) =>
@@ -1448,14 +1291,14 @@ class LifecyclePolicy_ActionCondition extends $pb.GeneratedMessage {
               (message) => updates(message as LifecyclePolicy_ActionCondition))
           as LifecyclePolicy_ActionCondition;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static LifecyclePolicy_ActionCondition create() =>
       LifecyclePolicy_ActionCondition._();
+  @$core.override
   LifecyclePolicy_ActionCondition createEmptyInstance() => create();
-  static $pb.PbList<LifecyclePolicy_ActionCondition> createRepeated() =>
-      $pb.PbList<LifecyclePolicy_ActionCondition>();
   @$core.pragma('dart2js:noInline')
   static LifecyclePolicy_ActionCondition getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<LifecyclePolicy_ActionCondition>(
@@ -1477,32 +1320,27 @@ class LifecyclePolicy extends $pb.GeneratedMessage {
     LifecyclePolicy_Action? action,
     LifecyclePolicy_ActionCondition? actionCondition,
   }) {
-    final $result = create();
-    if (action != null) {
-      $result.action = action;
-    }
-    if (actionCondition != null) {
-      $result.actionCondition = actionCondition;
-    }
-    return $result;
+    final result = create();
+    if (action != null) result.action = action;
+    if (actionCondition != null) result.actionCondition = actionCondition;
+    return result;
   }
-  LifecyclePolicy._() : super();
-  factory LifecyclePolicy.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory LifecyclePolicy.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  LifecyclePolicy._();
+
+  factory LifecyclePolicy.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory LifecyclePolicy.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'LifecyclePolicy',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.batch.v1'),
       createEmptyInstance: create)
-    ..e<LifecyclePolicy_Action>(
-        1, _omitFieldNames ? '' : 'action', $pb.PbFieldType.OE,
-        defaultOrMaker: LifecyclePolicy_Action.ACTION_UNSPECIFIED,
-        valueOf: LifecyclePolicy_Action.valueOf,
+    ..aE<LifecyclePolicy_Action>(1, _omitFieldNames ? '' : 'action',
         enumValues: LifecyclePolicy_Action.values)
     ..aOM<LifecyclePolicy_ActionCondition>(
         2, _omitFieldNames ? '' : 'actionCondition',
@@ -1510,19 +1348,19 @@ class LifecyclePolicy extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  LifecyclePolicy clone() => LifecyclePolicy()..mergeFromMessage(this);
+  LifecyclePolicy clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   LifecyclePolicy copyWith(void Function(LifecyclePolicy) updates) =>
       super.copyWith((message) => updates(message as LifecyclePolicy))
           as LifecyclePolicy;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static LifecyclePolicy create() => LifecyclePolicy._();
+  @$core.override
   LifecyclePolicy createEmptyInstance() => create();
-  static $pb.PbList<LifecyclePolicy> createRepeated() =>
-      $pb.PbList<LifecyclePolicy>();
   @$core.pragma('dart2js:noInline')
   static LifecyclePolicy getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<LifecyclePolicy>(create);
@@ -1536,10 +1374,7 @@ class LifecyclePolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   LifecyclePolicy_Action get action => $_getN(0);
   @$pb.TagNumber(1)
-  set action(LifecyclePolicy_Action v) {
-    $_setField(1, v);
-  }
-
+  set action(LifecyclePolicy_Action value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasAction() => $_has(0);
   @$pb.TagNumber(1)
@@ -1549,10 +1384,8 @@ class LifecyclePolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   LifecyclePolicy_ActionCondition get actionCondition => $_getN(1);
   @$pb.TagNumber(2)
-  set actionCondition(LifecyclePolicy_ActionCondition v) {
-    $_setField(2, v);
-  }
-
+  set actionCondition(LifecyclePolicy_ActionCondition value) =>
+      $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasActionCondition() => $_has(1);
   @$pb.TagNumber(2)
@@ -1566,22 +1399,20 @@ class Environment_KMSEnvMap extends $pb.GeneratedMessage {
     $core.String? keyName,
     $core.String? cipherText,
   }) {
-    final $result = create();
-    if (keyName != null) {
-      $result.keyName = keyName;
-    }
-    if (cipherText != null) {
-      $result.cipherText = cipherText;
-    }
-    return $result;
+    final result = create();
+    if (keyName != null) result.keyName = keyName;
+    if (cipherText != null) result.cipherText = cipherText;
+    return result;
   }
-  Environment_KMSEnvMap._() : super();
-  factory Environment_KMSEnvMap.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Environment_KMSEnvMap.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  Environment_KMSEnvMap._();
+
+  factory Environment_KMSEnvMap.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory Environment_KMSEnvMap.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'Environment.KMSEnvMap',
@@ -1593,21 +1424,20 @@ class Environment_KMSEnvMap extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  Environment_KMSEnvMap clone() =>
-      Environment_KMSEnvMap()..mergeFromMessage(this);
+  Environment_KMSEnvMap clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Environment_KMSEnvMap copyWith(
           void Function(Environment_KMSEnvMap) updates) =>
       super.copyWith((message) => updates(message as Environment_KMSEnvMap))
           as Environment_KMSEnvMap;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Environment_KMSEnvMap create() => Environment_KMSEnvMap._();
+  @$core.override
   Environment_KMSEnvMap createEmptyInstance() => create();
-  static $pb.PbList<Environment_KMSEnvMap> createRepeated() =>
-      $pb.PbList<Environment_KMSEnvMap>();
   @$core.pragma('dart2js:noInline')
   static Environment_KMSEnvMap getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<Environment_KMSEnvMap>(create);
@@ -1617,10 +1447,7 @@ class Environment_KMSEnvMap extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get keyName => $_getSZ(0);
   @$pb.TagNumber(1)
-  set keyName($core.String v) {
-    $_setString(0, v);
-  }
-
+  set keyName($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasKeyName() => $_has(0);
   @$pb.TagNumber(1)
@@ -1630,10 +1457,7 @@ class Environment_KMSEnvMap extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get cipherText => $_getSZ(1);
   @$pb.TagNumber(2)
-  set cipherText($core.String v) {
-    $_setString(1, v);
-  }
-
+  set cipherText($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasCipherText() => $_has(1);
   @$pb.TagNumber(2)
@@ -1648,25 +1472,23 @@ class Environment extends $pb.GeneratedMessage {
     $core.Iterable<$core.MapEntry<$core.String, $core.String>>? secretVariables,
     Environment_KMSEnvMap? encryptedVariables,
   }) {
-    final $result = create();
-    if (variables != null) {
-      $result.variables.addEntries(variables);
-    }
-    if (secretVariables != null) {
-      $result.secretVariables.addEntries(secretVariables);
-    }
-    if (encryptedVariables != null) {
-      $result.encryptedVariables = encryptedVariables;
-    }
-    return $result;
+    final result = create();
+    if (variables != null) result.variables.addEntries(variables);
+    if (secretVariables != null)
+      result.secretVariables.addEntries(secretVariables);
+    if (encryptedVariables != null)
+      result.encryptedVariables = encryptedVariables;
+    return result;
   }
-  Environment._() : super();
-  factory Environment.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Environment.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  Environment._();
+
+  factory Environment.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory Environment.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'Environment',
@@ -1688,18 +1510,19 @@ class Environment extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  Environment clone() => Environment()..mergeFromMessage(this);
+  Environment clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Environment copyWith(void Function(Environment) updates) =>
       super.copyWith((message) => updates(message as Environment))
           as Environment;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Environment create() => Environment._();
+  @$core.override
   Environment createEmptyInstance() => create();
-  static $pb.PbList<Environment> createRepeated() => $pb.PbList<Environment>();
   @$core.pragma('dart2js:noInline')
   static Environment getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<Environment>(create);
@@ -1720,10 +1543,7 @@ class Environment extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   Environment_KMSEnvMap get encryptedVariables => $_getN(2);
   @$pb.TagNumber(3)
-  set encryptedVariables(Environment_KMSEnvMap v) {
-    $_setField(3, v);
-  }
-
+  set encryptedVariables(Environment_KMSEnvMap value) => $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasEncryptedVariables() => $_has(2);
   @$pb.TagNumber(3)
@@ -1742,54 +1562,34 @@ class Job extends $pb.GeneratedMessage {
     AllocationPolicy? allocationPolicy,
     $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     JobStatus? status,
-    $2.Timestamp? createTime,
-    $2.Timestamp? updateTime,
+    $0.Timestamp? createTime,
+    $0.Timestamp? updateTime,
     LogsPolicy? logsPolicy,
     $core.Iterable<JobNotification>? notifications,
   }) {
-    final $result = create();
-    if (name != null) {
-      $result.name = name;
-    }
-    if (uid != null) {
-      $result.uid = uid;
-    }
-    if (priority != null) {
-      $result.priority = priority;
-    }
-    if (taskGroups != null) {
-      $result.taskGroups.addAll(taskGroups);
-    }
-    if (allocationPolicy != null) {
-      $result.allocationPolicy = allocationPolicy;
-    }
-    if (labels != null) {
-      $result.labels.addEntries(labels);
-    }
-    if (status != null) {
-      $result.status = status;
-    }
-    if (createTime != null) {
-      $result.createTime = createTime;
-    }
-    if (updateTime != null) {
-      $result.updateTime = updateTime;
-    }
-    if (logsPolicy != null) {
-      $result.logsPolicy = logsPolicy;
-    }
-    if (notifications != null) {
-      $result.notifications.addAll(notifications);
-    }
-    return $result;
+    final result = create();
+    if (name != null) result.name = name;
+    if (uid != null) result.uid = uid;
+    if (priority != null) result.priority = priority;
+    if (taskGroups != null) result.taskGroups.addAll(taskGroups);
+    if (allocationPolicy != null) result.allocationPolicy = allocationPolicy;
+    if (labels != null) result.labels.addEntries(labels);
+    if (status != null) result.status = status;
+    if (createTime != null) result.createTime = createTime;
+    if (updateTime != null) result.updateTime = updateTime;
+    if (logsPolicy != null) result.logsPolicy = logsPolicy;
+    if (notifications != null) result.notifications.addAll(notifications);
+    return result;
   }
-  Job._() : super();
-  factory Job.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Job.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  Job._();
+
+  factory Job.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory Job.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'Job',
@@ -1799,7 +1599,7 @@ class Job extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'uid')
     ..aInt64(3, _omitFieldNames ? '' : 'priority')
-    ..pc<TaskGroup>(4, _omitFieldNames ? '' : 'taskGroups', $pb.PbFieldType.PM,
+    ..pPM<TaskGroup>(4, _omitFieldNames ? '' : 'taskGroups',
         subBuilder: TaskGroup.create)
     ..aOM<AllocationPolicy>(7, _omitFieldNames ? '' : 'allocationPolicy',
         subBuilder: AllocationPolicy.create)
@@ -1810,29 +1610,29 @@ class Job extends $pb.GeneratedMessage {
         packageName: const $pb.PackageName('google.events.cloud.batch.v1'))
     ..aOM<JobStatus>(9, _omitFieldNames ? '' : 'status',
         subBuilder: JobStatus.create)
-    ..aOM<$2.Timestamp>(11, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(12, _omitFieldNames ? '' : 'updateTime',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$0.Timestamp>(11, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(12, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $0.Timestamp.create)
     ..aOM<LogsPolicy>(13, _omitFieldNames ? '' : 'logsPolicy',
         subBuilder: LogsPolicy.create)
-    ..pc<JobNotification>(
-        14, _omitFieldNames ? '' : 'notifications', $pb.PbFieldType.PM,
+    ..pPM<JobNotification>(14, _omitFieldNames ? '' : 'notifications',
         subBuilder: JobNotification.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  Job clone() => Job()..mergeFromMessage(this);
+  Job clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Job copyWith(void Function(Job) updates) =>
       super.copyWith((message) => updates(message as Job)) as Job;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Job create() => Job._();
+  @$core.override
   Job createEmptyInstance() => create();
-  static $pb.PbList<Job> createRepeated() => $pb.PbList<Job>();
   @$core.pragma('dart2js:noInline')
   static Job getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Job>(create);
@@ -1843,10 +1643,7 @@ class Job extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) {
-    $_setString(0, v);
-  }
-
+  set name($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -1856,10 +1653,7 @@ class Job extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get uid => $_getSZ(1);
   @$pb.TagNumber(2)
-  set uid($core.String v) {
-    $_setString(1, v);
-  }
-
+  set uid($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasUid() => $_has(1);
   @$pb.TagNumber(2)
@@ -1873,10 +1667,7 @@ class Job extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $fixnum.Int64 get priority => $_getI64(2);
   @$pb.TagNumber(3)
-  set priority($fixnum.Int64 v) {
-    $_setInt64(2, v);
-  }
-
+  set priority($fixnum.Int64 value) => $_setInt64(2, value);
   @$pb.TagNumber(3)
   $core.bool hasPriority() => $_has(2);
   @$pb.TagNumber(3)
@@ -1890,10 +1681,7 @@ class Job extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   AllocationPolicy get allocationPolicy => $_getN(4);
   @$pb.TagNumber(7)
-  set allocationPolicy(AllocationPolicy v) {
-    $_setField(7, v);
-  }
-
+  set allocationPolicy(AllocationPolicy value) => $_setField(7, value);
   @$pb.TagNumber(7)
   $core.bool hasAllocationPolicy() => $_has(4);
   @$pb.TagNumber(7)
@@ -1918,10 +1706,7 @@ class Job extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   JobStatus get status => $_getN(6);
   @$pb.TagNumber(9)
-  set status(JobStatus v) {
-    $_setField(9, v);
-  }
-
+  set status(JobStatus value) => $_setField(9, value);
   @$pb.TagNumber(9)
   $core.bool hasStatus() => $_has(6);
   @$pb.TagNumber(9)
@@ -1931,42 +1716,33 @@ class Job extends $pb.GeneratedMessage {
 
   /// Output only. When the Job was created.
   @$pb.TagNumber(11)
-  $2.Timestamp get createTime => $_getN(7);
+  $0.Timestamp get createTime => $_getN(7);
   @$pb.TagNumber(11)
-  set createTime($2.Timestamp v) {
-    $_setField(11, v);
-  }
-
+  set createTime($0.Timestamp value) => $_setField(11, value);
   @$pb.TagNumber(11)
   $core.bool hasCreateTime() => $_has(7);
   @$pb.TagNumber(11)
   void clearCreateTime() => $_clearField(11);
   @$pb.TagNumber(11)
-  $2.Timestamp ensureCreateTime() => $_ensure(7);
+  $0.Timestamp ensureCreateTime() => $_ensure(7);
 
   /// Output only. The last time the Job was updated.
   @$pb.TagNumber(12)
-  $2.Timestamp get updateTime => $_getN(8);
+  $0.Timestamp get updateTime => $_getN(8);
   @$pb.TagNumber(12)
-  set updateTime($2.Timestamp v) {
-    $_setField(12, v);
-  }
-
+  set updateTime($0.Timestamp value) => $_setField(12, value);
   @$pb.TagNumber(12)
   $core.bool hasUpdateTime() => $_has(8);
   @$pb.TagNumber(12)
   void clearUpdateTime() => $_clearField(12);
   @$pb.TagNumber(12)
-  $2.Timestamp ensureUpdateTime() => $_ensure(8);
+  $0.Timestamp ensureUpdateTime() => $_ensure(8);
 
   /// Log preservation policy for the Job.
   @$pb.TagNumber(13)
   LogsPolicy get logsPolicy => $_getN(9);
   @$pb.TagNumber(13)
-  set logsPolicy(LogsPolicy v) {
-    $_setField(13, v);
-  }
-
+  set logsPolicy(LogsPolicy value) => $_setField(13, value);
   @$pb.TagNumber(13)
   $core.bool hasLogsPolicy() => $_has(9);
   @$pb.TagNumber(13)
@@ -1986,48 +1762,44 @@ class LogsPolicy extends $pb.GeneratedMessage {
     LogsPolicy_Destination? destination,
     $core.String? logsPath,
   }) {
-    final $result = create();
-    if (destination != null) {
-      $result.destination = destination;
-    }
-    if (logsPath != null) {
-      $result.logsPath = logsPath;
-    }
-    return $result;
+    final result = create();
+    if (destination != null) result.destination = destination;
+    if (logsPath != null) result.logsPath = logsPath;
+    return result;
   }
-  LogsPolicy._() : super();
-  factory LogsPolicy.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory LogsPolicy.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  LogsPolicy._();
+
+  factory LogsPolicy.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory LogsPolicy.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'LogsPolicy',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.batch.v1'),
       createEmptyInstance: create)
-    ..e<LogsPolicy_Destination>(
-        1, _omitFieldNames ? '' : 'destination', $pb.PbFieldType.OE,
-        defaultOrMaker: LogsPolicy_Destination.DESTINATION_UNSPECIFIED,
-        valueOf: LogsPolicy_Destination.valueOf,
+    ..aE<LogsPolicy_Destination>(1, _omitFieldNames ? '' : 'destination',
         enumValues: LogsPolicy_Destination.values)
     ..aOS(2, _omitFieldNames ? '' : 'logsPath')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  LogsPolicy clone() => LogsPolicy()..mergeFromMessage(this);
+  LogsPolicy clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   LogsPolicy copyWith(void Function(LogsPolicy) updates) =>
       super.copyWith((message) => updates(message as LogsPolicy)) as LogsPolicy;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static LogsPolicy create() => LogsPolicy._();
+  @$core.override
   LogsPolicy createEmptyInstance() => create();
-  static $pb.PbList<LogsPolicy> createRepeated() => $pb.PbList<LogsPolicy>();
   @$core.pragma('dart2js:noInline')
   static LogsPolicy getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<LogsPolicy>(create);
@@ -2037,10 +1809,7 @@ class LogsPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   LogsPolicy_Destination get destination => $_getN(0);
   @$pb.TagNumber(1)
-  set destination(LogsPolicy_Destination v) {
-    $_setField(1, v);
-  }
-
+  set destination(LogsPolicy_Destination value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasDestination() => $_has(0);
   @$pb.TagNumber(1)
@@ -2052,10 +1821,7 @@ class LogsPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get logsPath => $_getSZ(1);
   @$pb.TagNumber(2)
-  set logsPath($core.String v) {
-    $_setString(1, v);
-  }
-
+  set logsPath($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasLogsPath() => $_has(1);
   @$pb.TagNumber(2)
@@ -2070,28 +1836,22 @@ class JobStatus_InstanceStatus extends $pb.GeneratedMessage {
     $fixnum.Int64? taskPack,
     AllocationPolicy_Disk? bootDisk,
   }) {
-    final $result = create();
-    if (machineType != null) {
-      $result.machineType = machineType;
-    }
-    if (provisioningModel != null) {
-      $result.provisioningModel = provisioningModel;
-    }
-    if (taskPack != null) {
-      $result.taskPack = taskPack;
-    }
-    if (bootDisk != null) {
-      $result.bootDisk = bootDisk;
-    }
-    return $result;
+    final result = create();
+    if (machineType != null) result.machineType = machineType;
+    if (provisioningModel != null) result.provisioningModel = provisioningModel;
+    if (taskPack != null) result.taskPack = taskPack;
+    if (bootDisk != null) result.bootDisk = bootDisk;
+    return result;
   }
-  JobStatus_InstanceStatus._() : super();
-  factory JobStatus_InstanceStatus.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory JobStatus_InstanceStatus.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  JobStatus_InstanceStatus._();
+
+  factory JobStatus_InstanceStatus.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory JobStatus_InstanceStatus.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'JobStatus.InstanceStatus',
@@ -2099,11 +1859,8 @@ class JobStatus_InstanceStatus extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.events.cloud.batch.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'machineType')
-    ..e<AllocationPolicy_ProvisioningModel>(
-        2, _omitFieldNames ? '' : 'provisioningModel', $pb.PbFieldType.OE,
-        defaultOrMaker:
-            AllocationPolicy_ProvisioningModel.PROVISIONING_MODEL_UNSPECIFIED,
-        valueOf: AllocationPolicy_ProvisioningModel.valueOf,
+    ..aE<AllocationPolicy_ProvisioningModel>(
+        2, _omitFieldNames ? '' : 'provisioningModel',
         enumValues: AllocationPolicy_ProvisioningModel.values)
     ..aInt64(3, _omitFieldNames ? '' : 'taskPack')
     ..aOM<AllocationPolicy_Disk>(4, _omitFieldNames ? '' : 'bootDisk',
@@ -2111,21 +1868,20 @@ class JobStatus_InstanceStatus extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  JobStatus_InstanceStatus clone() =>
-      JobStatus_InstanceStatus()..mergeFromMessage(this);
+  JobStatus_InstanceStatus clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   JobStatus_InstanceStatus copyWith(
           void Function(JobStatus_InstanceStatus) updates) =>
       super.copyWith((message) => updates(message as JobStatus_InstanceStatus))
           as JobStatus_InstanceStatus;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static JobStatus_InstanceStatus create() => JobStatus_InstanceStatus._();
+  @$core.override
   JobStatus_InstanceStatus createEmptyInstance() => create();
-  static $pb.PbList<JobStatus_InstanceStatus> createRepeated() =>
-      $pb.PbList<JobStatus_InstanceStatus>();
   @$core.pragma('dart2js:noInline')
   static JobStatus_InstanceStatus getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<JobStatus_InstanceStatus>(create);
@@ -2135,10 +1891,7 @@ class JobStatus_InstanceStatus extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get machineType => $_getSZ(0);
   @$pb.TagNumber(1)
-  set machineType($core.String v) {
-    $_setString(0, v);
-  }
-
+  set machineType($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasMachineType() => $_has(0);
   @$pb.TagNumber(1)
@@ -2148,10 +1901,8 @@ class JobStatus_InstanceStatus extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   AllocationPolicy_ProvisioningModel get provisioningModel => $_getN(1);
   @$pb.TagNumber(2)
-  set provisioningModel(AllocationPolicy_ProvisioningModel v) {
-    $_setField(2, v);
-  }
-
+  set provisioningModel(AllocationPolicy_ProvisioningModel value) =>
+      $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasProvisioningModel() => $_has(1);
   @$pb.TagNumber(2)
@@ -2161,10 +1912,7 @@ class JobStatus_InstanceStatus extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $fixnum.Int64 get taskPack => $_getI64(2);
   @$pb.TagNumber(3)
-  set taskPack($fixnum.Int64 v) {
-    $_setInt64(2, v);
-  }
-
+  set taskPack($fixnum.Int64 value) => $_setInt64(2, value);
   @$pb.TagNumber(3)
   $core.bool hasTaskPack() => $_has(2);
   @$pb.TagNumber(3)
@@ -2174,10 +1922,7 @@ class JobStatus_InstanceStatus extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   AllocationPolicy_Disk get bootDisk => $_getN(3);
   @$pb.TagNumber(4)
-  set bootDisk(AllocationPolicy_Disk v) {
-    $_setField(4, v);
-  }
-
+  set bootDisk(AllocationPolicy_Disk value) => $_setField(4, value);
   @$pb.TagNumber(4)
   $core.bool hasBootDisk() => $_has(3);
   @$pb.TagNumber(4)
@@ -2192,22 +1937,20 @@ class JobStatus_TaskGroupStatus extends $pb.GeneratedMessage {
     $core.Iterable<$core.MapEntry<$core.String, $fixnum.Int64>>? counts,
     $core.Iterable<JobStatus_InstanceStatus>? instances,
   }) {
-    final $result = create();
-    if (counts != null) {
-      $result.counts.addEntries(counts);
-    }
-    if (instances != null) {
-      $result.instances.addAll(instances);
-    }
-    return $result;
+    final result = create();
+    if (counts != null) result.counts.addEntries(counts);
+    if (instances != null) result.instances.addAll(instances);
+    return result;
   }
-  JobStatus_TaskGroupStatus._() : super();
-  factory JobStatus_TaskGroupStatus.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory JobStatus_TaskGroupStatus.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  JobStatus_TaskGroupStatus._();
+
+  factory JobStatus_TaskGroupStatus.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory JobStatus_TaskGroupStatus.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'JobStatus.TaskGroupStatus',
@@ -2219,27 +1962,25 @@ class JobStatus_TaskGroupStatus extends $pb.GeneratedMessage {
         keyFieldType: $pb.PbFieldType.OS,
         valueFieldType: $pb.PbFieldType.O6,
         packageName: const $pb.PackageName('google.events.cloud.batch.v1'))
-    ..pc<JobStatus_InstanceStatus>(
-        2, _omitFieldNames ? '' : 'instances', $pb.PbFieldType.PM,
+    ..pPM<JobStatus_InstanceStatus>(2, _omitFieldNames ? '' : 'instances',
         subBuilder: JobStatus_InstanceStatus.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  JobStatus_TaskGroupStatus clone() =>
-      JobStatus_TaskGroupStatus()..mergeFromMessage(this);
+  JobStatus_TaskGroupStatus clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   JobStatus_TaskGroupStatus copyWith(
           void Function(JobStatus_TaskGroupStatus) updates) =>
       super.copyWith((message) => updates(message as JobStatus_TaskGroupStatus))
           as JobStatus_TaskGroupStatus;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static JobStatus_TaskGroupStatus create() => JobStatus_TaskGroupStatus._();
+  @$core.override
   JobStatus_TaskGroupStatus createEmptyInstance() => create();
-  static $pb.PbList<JobStatus_TaskGroupStatus> createRepeated() =>
-      $pb.PbList<JobStatus_TaskGroupStatus>();
   @$core.pragma('dart2js:noInline')
   static JobStatus_TaskGroupStatus getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<JobStatus_TaskGroupStatus>(create);
@@ -2262,42 +2003,33 @@ class JobStatus extends $pb.GeneratedMessage {
     $core.Iterable<StatusEvent>? statusEvents,
     $core.Iterable<$core.MapEntry<$core.String, JobStatus_TaskGroupStatus>>?
         taskGroups,
-    $0.Duration? runDuration,
+    $1.Duration? runDuration,
   }) {
-    final $result = create();
-    if (state != null) {
-      $result.state = state;
-    }
-    if (statusEvents != null) {
-      $result.statusEvents.addAll(statusEvents);
-    }
-    if (taskGroups != null) {
-      $result.taskGroups.addEntries(taskGroups);
-    }
-    if (runDuration != null) {
-      $result.runDuration = runDuration;
-    }
-    return $result;
+    final result = create();
+    if (state != null) result.state = state;
+    if (statusEvents != null) result.statusEvents.addAll(statusEvents);
+    if (taskGroups != null) result.taskGroups.addEntries(taskGroups);
+    if (runDuration != null) result.runDuration = runDuration;
+    return result;
   }
-  JobStatus._() : super();
-  factory JobStatus.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory JobStatus.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  JobStatus._();
+
+  factory JobStatus.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory JobStatus.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'JobStatus',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.batch.v1'),
       createEmptyInstance: create)
-    ..e<JobStatus_State>(1, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
-        defaultOrMaker: JobStatus_State.STATE_UNSPECIFIED,
-        valueOf: JobStatus_State.valueOf,
+    ..aE<JobStatus_State>(1, _omitFieldNames ? '' : 'state',
         enumValues: JobStatus_State.values)
-    ..pc<StatusEvent>(
-        2, _omitFieldNames ? '' : 'statusEvents', $pb.PbFieldType.PM,
+    ..pPM<StatusEvent>(2, _omitFieldNames ? '' : 'statusEvents',
         subBuilder: StatusEvent.create)
     ..m<$core.String, JobStatus_TaskGroupStatus>(
         4, _omitFieldNames ? '' : 'taskGroups',
@@ -2307,22 +2039,23 @@ class JobStatus extends $pb.GeneratedMessage {
         valueCreator: JobStatus_TaskGroupStatus.create,
         valueDefaultOrMaker: JobStatus_TaskGroupStatus.getDefault,
         packageName: const $pb.PackageName('google.events.cloud.batch.v1'))
-    ..aOM<$0.Duration>(5, _omitFieldNames ? '' : 'runDuration',
-        subBuilder: $0.Duration.create)
+    ..aOM<$1.Duration>(5, _omitFieldNames ? '' : 'runDuration',
+        subBuilder: $1.Duration.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  JobStatus clone() => JobStatus()..mergeFromMessage(this);
+  JobStatus clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   JobStatus copyWith(void Function(JobStatus) updates) =>
       super.copyWith((message) => updates(message as JobStatus)) as JobStatus;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static JobStatus create() => JobStatus._();
+  @$core.override
   JobStatus createEmptyInstance() => create();
-  static $pb.PbList<JobStatus> createRepeated() => $pb.PbList<JobStatus>();
   @$core.pragma('dart2js:noInline')
   static JobStatus getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<JobStatus>(create);
@@ -2332,10 +2065,7 @@ class JobStatus extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   JobStatus_State get state => $_getN(0);
   @$pb.TagNumber(1)
-  set state(JobStatus_State v) {
-    $_setField(1, v);
-  }
-
+  set state(JobStatus_State value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasState() => $_has(0);
   @$pb.TagNumber(1)
@@ -2353,18 +2083,15 @@ class JobStatus extends $pb.GeneratedMessage {
 
   /// The duration of time that the Job spent in status RUNNING.
   @$pb.TagNumber(5)
-  $0.Duration get runDuration => $_getN(3);
+  $1.Duration get runDuration => $_getN(3);
   @$pb.TagNumber(5)
-  set runDuration($0.Duration v) {
-    $_setField(5, v);
-  }
-
+  set runDuration($1.Duration value) => $_setField(5, value);
   @$pb.TagNumber(5)
   $core.bool hasRunDuration() => $_has(3);
   @$pb.TagNumber(5)
   void clearRunDuration() => $_clearField(5);
   @$pb.TagNumber(5)
-  $0.Duration ensureRunDuration() => $_ensure(3);
+  $1.Duration ensureRunDuration() => $_ensure(3);
 }
 
 /// Message details.
@@ -2376,64 +2103,50 @@ class JobNotification_Message extends $pb.GeneratedMessage {
     JobStatus_State? newJobState,
     TaskStatus_State? newTaskState,
   }) {
-    final $result = create();
-    if (type != null) {
-      $result.type = type;
-    }
-    if (newJobState != null) {
-      $result.newJobState = newJobState;
-    }
-    if (newTaskState != null) {
-      $result.newTaskState = newTaskState;
-    }
-    return $result;
+    final result = create();
+    if (type != null) result.type = type;
+    if (newJobState != null) result.newJobState = newJobState;
+    if (newTaskState != null) result.newTaskState = newTaskState;
+    return result;
   }
-  JobNotification_Message._() : super();
-  factory JobNotification_Message.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory JobNotification_Message.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  JobNotification_Message._();
+
+  factory JobNotification_Message.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory JobNotification_Message.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'JobNotification.Message',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.batch.v1'),
       createEmptyInstance: create)
-    ..e<JobNotification_Type>(
-        1, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE,
-        defaultOrMaker: JobNotification_Type.TYPE_UNSPECIFIED,
-        valueOf: JobNotification_Type.valueOf,
+    ..aE<JobNotification_Type>(1, _omitFieldNames ? '' : 'type',
         enumValues: JobNotification_Type.values)
-    ..e<JobStatus_State>(
-        2, _omitFieldNames ? '' : 'newJobState', $pb.PbFieldType.OE,
-        defaultOrMaker: JobStatus_State.STATE_UNSPECIFIED,
-        valueOf: JobStatus_State.valueOf,
+    ..aE<JobStatus_State>(2, _omitFieldNames ? '' : 'newJobState',
         enumValues: JobStatus_State.values)
-    ..e<TaskStatus_State>(
-        3, _omitFieldNames ? '' : 'newTaskState', $pb.PbFieldType.OE,
-        defaultOrMaker: TaskStatus_State.STATE_UNSPECIFIED,
-        valueOf: TaskStatus_State.valueOf,
+    ..aE<TaskStatus_State>(3, _omitFieldNames ? '' : 'newTaskState',
         enumValues: TaskStatus_State.values)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  JobNotification_Message clone() =>
-      JobNotification_Message()..mergeFromMessage(this);
+  JobNotification_Message clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   JobNotification_Message copyWith(
           void Function(JobNotification_Message) updates) =>
       super.copyWith((message) => updates(message as JobNotification_Message))
           as JobNotification_Message;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static JobNotification_Message create() => JobNotification_Message._();
+  @$core.override
   JobNotification_Message createEmptyInstance() => create();
-  static $pb.PbList<JobNotification_Message> createRepeated() =>
-      $pb.PbList<JobNotification_Message>();
   @$core.pragma('dart2js:noInline')
   static JobNotification_Message getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<JobNotification_Message>(create);
@@ -2443,10 +2156,7 @@ class JobNotification_Message extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   JobNotification_Type get type => $_getN(0);
   @$pb.TagNumber(1)
-  set type(JobNotification_Type v) {
-    $_setField(1, v);
-  }
-
+  set type(JobNotification_Type value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasType() => $_has(0);
   @$pb.TagNumber(1)
@@ -2456,10 +2166,7 @@ class JobNotification_Message extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   JobStatus_State get newJobState => $_getN(1);
   @$pb.TagNumber(2)
-  set newJobState(JobStatus_State v) {
-    $_setField(2, v);
-  }
-
+  set newJobState(JobStatus_State value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasNewJobState() => $_has(1);
   @$pb.TagNumber(2)
@@ -2469,10 +2176,7 @@ class JobNotification_Message extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   TaskStatus_State get newTaskState => $_getN(2);
   @$pb.TagNumber(3)
-  set newTaskState(TaskStatus_State v) {
-    $_setField(3, v);
-  }
-
+  set newTaskState(TaskStatus_State value) => $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasNewTaskState() => $_has(2);
   @$pb.TagNumber(3)
@@ -2485,22 +2189,20 @@ class JobNotification extends $pb.GeneratedMessage {
     $core.String? pubsubTopic,
     JobNotification_Message? message,
   }) {
-    final $result = create();
-    if (pubsubTopic != null) {
-      $result.pubsubTopic = pubsubTopic;
-    }
-    if (message != null) {
-      $result.message = message;
-    }
-    return $result;
+    final result = create();
+    if (pubsubTopic != null) result.pubsubTopic = pubsubTopic;
+    if (message != null) result.message = message;
+    return result;
   }
-  JobNotification._() : super();
-  factory JobNotification.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory JobNotification.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  JobNotification._();
+
+  factory JobNotification.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory JobNotification.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'JobNotification',
@@ -2513,19 +2215,19 @@ class JobNotification extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  JobNotification clone() => JobNotification()..mergeFromMessage(this);
+  JobNotification clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   JobNotification copyWith(void Function(JobNotification) updates) =>
       super.copyWith((message) => updates(message as JobNotification))
           as JobNotification;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static JobNotification create() => JobNotification._();
+  @$core.override
   JobNotification createEmptyInstance() => create();
-  static $pb.PbList<JobNotification> createRepeated() =>
-      $pb.PbList<JobNotification>();
   @$core.pragma('dart2js:noInline')
   static JobNotification getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<JobNotification>(create);
@@ -2539,10 +2241,7 @@ class JobNotification extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get pubsubTopic => $_getSZ(0);
   @$pb.TagNumber(1)
-  set pubsubTopic($core.String v) {
-    $_setString(0, v);
-  }
-
+  set pubsubTopic($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasPubsubTopic() => $_has(0);
   @$pb.TagNumber(1)
@@ -2553,10 +2252,7 @@ class JobNotification extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   JobNotification_Message get message => $_getN(1);
   @$pb.TagNumber(2)
-  set message(JobNotification_Message v) {
-    $_setField(2, v);
-  }
-
+  set message(JobNotification_Message value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasMessage() => $_has(1);
   @$pb.TagNumber(2)
@@ -2569,19 +2265,20 @@ class AllocationPolicy_LocationPolicy extends $pb.GeneratedMessage {
   factory AllocationPolicy_LocationPolicy({
     $core.Iterable<$core.String>? allowedLocations,
   }) {
-    final $result = create();
-    if (allowedLocations != null) {
-      $result.allowedLocations.addAll(allowedLocations);
-    }
-    return $result;
+    final result = create();
+    if (allowedLocations != null)
+      result.allowedLocations.addAll(allowedLocations);
+    return result;
   }
-  AllocationPolicy_LocationPolicy._() : super();
-  factory AllocationPolicy_LocationPolicy.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory AllocationPolicy_LocationPolicy.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  AllocationPolicy_LocationPolicy._();
+
+  factory AllocationPolicy_LocationPolicy.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory AllocationPolicy_LocationPolicy.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'AllocationPolicy.LocationPolicy',
@@ -2592,8 +2289,7 @@ class AllocationPolicy_LocationPolicy extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  AllocationPolicy_LocationPolicy clone() =>
-      AllocationPolicy_LocationPolicy()..mergeFromMessage(this);
+  AllocationPolicy_LocationPolicy clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AllocationPolicy_LocationPolicy copyWith(
           void Function(AllocationPolicy_LocationPolicy) updates) =>
@@ -2601,14 +2297,14 @@ class AllocationPolicy_LocationPolicy extends $pb.GeneratedMessage {
               (message) => updates(message as AllocationPolicy_LocationPolicy))
           as AllocationPolicy_LocationPolicy;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AllocationPolicy_LocationPolicy create() =>
       AllocationPolicy_LocationPolicy._();
+  @$core.override
   AllocationPolicy_LocationPolicy createEmptyInstance() => create();
-  static $pb.PbList<AllocationPolicy_LocationPolicy> createRepeated() =>
-      $pb.PbList<AllocationPolicy_LocationPolicy>();
   @$core.pragma('dart2js:noInline')
   static AllocationPolicy_LocationPolicy getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<AllocationPolicy_LocationPolicy>(
@@ -2647,31 +2343,23 @@ class AllocationPolicy_Disk extends $pb.GeneratedMessage {
     $core.String? snapshot,
     $core.String? diskInterface,
   }) {
-    final $result = create();
-    if (type != null) {
-      $result.type = type;
-    }
-    if (sizeGb != null) {
-      $result.sizeGb = sizeGb;
-    }
-    if (image != null) {
-      $result.image = image;
-    }
-    if (snapshot != null) {
-      $result.snapshot = snapshot;
-    }
-    if (diskInterface != null) {
-      $result.diskInterface = diskInterface;
-    }
-    return $result;
+    final result = create();
+    if (type != null) result.type = type;
+    if (sizeGb != null) result.sizeGb = sizeGb;
+    if (image != null) result.image = image;
+    if (snapshot != null) result.snapshot = snapshot;
+    if (diskInterface != null) result.diskInterface = diskInterface;
+    return result;
   }
-  AllocationPolicy_Disk._() : super();
-  factory AllocationPolicy_Disk.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory AllocationPolicy_Disk.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  AllocationPolicy_Disk._();
+
+  factory AllocationPolicy_Disk.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory AllocationPolicy_Disk.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static const $core.Map<$core.int, AllocationPolicy_Disk_DataSource>
       _AllocationPolicy_Disk_DataSourceByTag = {
@@ -2693,28 +2381,31 @@ class AllocationPolicy_Disk extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  AllocationPolicy_Disk clone() =>
-      AllocationPolicy_Disk()..mergeFromMessage(this);
+  AllocationPolicy_Disk clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AllocationPolicy_Disk copyWith(
           void Function(AllocationPolicy_Disk) updates) =>
       super.copyWith((message) => updates(message as AllocationPolicy_Disk))
           as AllocationPolicy_Disk;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AllocationPolicy_Disk create() => AllocationPolicy_Disk._();
+  @$core.override
   AllocationPolicy_Disk createEmptyInstance() => create();
-  static $pb.PbList<AllocationPolicy_Disk> createRepeated() =>
-      $pb.PbList<AllocationPolicy_Disk>();
   @$core.pragma('dart2js:noInline')
   static AllocationPolicy_Disk getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<AllocationPolicy_Disk>(create);
   static AllocationPolicy_Disk? _defaultInstance;
 
+  @$pb.TagNumber(4)
+  @$pb.TagNumber(5)
   AllocationPolicy_Disk_DataSource whichDataSource() =>
       _AllocationPolicy_Disk_DataSourceByTag[$_whichOneof(0)]!;
+  @$pb.TagNumber(4)
+  @$pb.TagNumber(5)
   void clearDataSource() => $_clearField($_whichOneof(0));
 
   /// Disk type as shown in `gcloud compute disk-types list`.
@@ -2724,10 +2415,7 @@ class AllocationPolicy_Disk extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get type => $_getSZ(0);
   @$pb.TagNumber(1)
-  set type($core.String v) {
-    $_setString(0, v);
-  }
-
+  set type($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasType() => $_has(0);
   @$pb.TagNumber(1)
@@ -2746,10 +2434,7 @@ class AllocationPolicy_Disk extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $fixnum.Int64 get sizeGb => $_getI64(1);
   @$pb.TagNumber(2)
-  set sizeGb($fixnum.Int64 v) {
-    $_setInt64(1, v);
-  }
-
+  set sizeGb($fixnum.Int64 value) => $_setInt64(1, value);
   @$pb.TagNumber(2)
   $core.bool hasSizeGb() => $_has(1);
   @$pb.TagNumber(2)
@@ -2773,10 +2458,7 @@ class AllocationPolicy_Disk extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get image => $_getSZ(2);
   @$pb.TagNumber(4)
-  set image($core.String v) {
-    $_setString(2, v);
-  }
-
+  set image($core.String value) => $_setString(2, value);
   @$pb.TagNumber(4)
   $core.bool hasImage() => $_has(2);
   @$pb.TagNumber(4)
@@ -2787,10 +2469,7 @@ class AllocationPolicy_Disk extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get snapshot => $_getSZ(3);
   @$pb.TagNumber(5)
-  set snapshot($core.String v) {
-    $_setString(3, v);
-  }
-
+  set snapshot($core.String value) => $_setString(3, value);
   @$pb.TagNumber(5)
   $core.bool hasSnapshot() => $_has(3);
   @$pb.TagNumber(5)
@@ -2802,10 +2481,7 @@ class AllocationPolicy_Disk extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get diskInterface => $_getSZ(4);
   @$pb.TagNumber(6)
-  set diskInterface($core.String v) {
-    $_setString(4, v);
-  }
-
+  set diskInterface($core.String value) => $_setString(4, value);
   @$pb.TagNumber(6)
   $core.bool hasDiskInterface() => $_has(4);
   @$pb.TagNumber(6)
@@ -2822,25 +2498,21 @@ class AllocationPolicy_AttachedDisk extends $pb.GeneratedMessage {
     $core.String? existingDisk,
     $core.String? deviceName,
   }) {
-    final $result = create();
-    if (newDisk != null) {
-      $result.newDisk = newDisk;
-    }
-    if (existingDisk != null) {
-      $result.existingDisk = existingDisk;
-    }
-    if (deviceName != null) {
-      $result.deviceName = deviceName;
-    }
-    return $result;
+    final result = create();
+    if (newDisk != null) result.newDisk = newDisk;
+    if (existingDisk != null) result.existingDisk = existingDisk;
+    if (deviceName != null) result.deviceName = deviceName;
+    return result;
   }
-  AllocationPolicy_AttachedDisk._() : super();
-  factory AllocationPolicy_AttachedDisk.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory AllocationPolicy_AttachedDisk.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  AllocationPolicy_AttachedDisk._();
+
+  factory AllocationPolicy_AttachedDisk.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory AllocationPolicy_AttachedDisk.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static const $core.Map<$core.int, AllocationPolicy_AttachedDisk_Attached>
       _AllocationPolicy_AttachedDisk_AttachedByTag = {
@@ -2861,8 +2533,7 @@ class AllocationPolicy_AttachedDisk extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  AllocationPolicy_AttachedDisk clone() =>
-      AllocationPolicy_AttachedDisk()..mergeFromMessage(this);
+  AllocationPolicy_AttachedDisk clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AllocationPolicy_AttachedDisk copyWith(
           void Function(AllocationPolicy_AttachedDisk) updates) =>
@@ -2870,30 +2541,31 @@ class AllocationPolicy_AttachedDisk extends $pb.GeneratedMessage {
               (message) => updates(message as AllocationPolicy_AttachedDisk))
           as AllocationPolicy_AttachedDisk;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AllocationPolicy_AttachedDisk create() =>
       AllocationPolicy_AttachedDisk._();
+  @$core.override
   AllocationPolicy_AttachedDisk createEmptyInstance() => create();
-  static $pb.PbList<AllocationPolicy_AttachedDisk> createRepeated() =>
-      $pb.PbList<AllocationPolicy_AttachedDisk>();
   @$core.pragma('dart2js:noInline')
   static AllocationPolicy_AttachedDisk getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<AllocationPolicy_AttachedDisk>(create);
   static AllocationPolicy_AttachedDisk? _defaultInstance;
 
+  @$pb.TagNumber(1)
+  @$pb.TagNumber(2)
   AllocationPolicy_AttachedDisk_Attached whichAttached() =>
       _AllocationPolicy_AttachedDisk_AttachedByTag[$_whichOneof(0)]!;
+  @$pb.TagNumber(1)
+  @$pb.TagNumber(2)
   void clearAttached() => $_clearField($_whichOneof(0));
 
   @$pb.TagNumber(1)
   AllocationPolicy_Disk get newDisk => $_getN(0);
   @$pb.TagNumber(1)
-  set newDisk(AllocationPolicy_Disk v) {
-    $_setField(1, v);
-  }
-
+  set newDisk(AllocationPolicy_Disk value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasNewDisk() => $_has(0);
   @$pb.TagNumber(1)
@@ -2905,10 +2577,7 @@ class AllocationPolicy_AttachedDisk extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get existingDisk => $_getSZ(1);
   @$pb.TagNumber(2)
-  set existingDisk($core.String v) {
-    $_setString(1, v);
-  }
-
+  set existingDisk($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasExistingDisk() => $_has(1);
   @$pb.TagNumber(2)
@@ -2921,10 +2590,7 @@ class AllocationPolicy_AttachedDisk extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get deviceName => $_getSZ(2);
   @$pb.TagNumber(3)
-  set deviceName($core.String v) {
-    $_setString(2, v);
-  }
-
+  set deviceName($core.String value) => $_setString(2, value);
   @$pb.TagNumber(3)
   $core.bool hasDeviceName() => $_has(2);
   @$pb.TagNumber(3)
@@ -2938,25 +2604,21 @@ class AllocationPolicy_Accelerator extends $pb.GeneratedMessage {
     $fixnum.Int64? count,
     $core.bool? installGpuDrivers,
   }) {
-    final $result = create();
-    if (type != null) {
-      $result.type = type;
-    }
-    if (count != null) {
-      $result.count = count;
-    }
-    if (installGpuDrivers != null) {
-      $result.installGpuDrivers = installGpuDrivers;
-    }
-    return $result;
+    final result = create();
+    if (type != null) result.type = type;
+    if (count != null) result.count = count;
+    if (installGpuDrivers != null) result.installGpuDrivers = installGpuDrivers;
+    return result;
   }
-  AllocationPolicy_Accelerator._() : super();
-  factory AllocationPolicy_Accelerator.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory AllocationPolicy_Accelerator.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  AllocationPolicy_Accelerator._();
+
+  factory AllocationPolicy_Accelerator.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory AllocationPolicy_Accelerator.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'AllocationPolicy.Accelerator',
@@ -2969,8 +2631,7 @@ class AllocationPolicy_Accelerator extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  AllocationPolicy_Accelerator clone() =>
-      AllocationPolicy_Accelerator()..mergeFromMessage(this);
+  AllocationPolicy_Accelerator clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AllocationPolicy_Accelerator copyWith(
           void Function(AllocationPolicy_Accelerator) updates) =>
@@ -2978,14 +2639,14 @@ class AllocationPolicy_Accelerator extends $pb.GeneratedMessage {
               (message) => updates(message as AllocationPolicy_Accelerator))
           as AllocationPolicy_Accelerator;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AllocationPolicy_Accelerator create() =>
       AllocationPolicy_Accelerator._();
+  @$core.override
   AllocationPolicy_Accelerator createEmptyInstance() => create();
-  static $pb.PbList<AllocationPolicy_Accelerator> createRepeated() =>
-      $pb.PbList<AllocationPolicy_Accelerator>();
   @$core.pragma('dart2js:noInline')
   static AllocationPolicy_Accelerator getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<AllocationPolicy_Accelerator>(create);
@@ -2996,10 +2657,7 @@ class AllocationPolicy_Accelerator extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get type => $_getSZ(0);
   @$pb.TagNumber(1)
-  set type($core.String v) {
-    $_setString(0, v);
-  }
-
+  set type($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasType() => $_has(0);
   @$pb.TagNumber(1)
@@ -3009,10 +2667,7 @@ class AllocationPolicy_Accelerator extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $fixnum.Int64 get count => $_getI64(1);
   @$pb.TagNumber(2)
-  set count($fixnum.Int64 v) {
-    $_setInt64(1, v);
-  }
-
+  set count($fixnum.Int64 value) => $_setInt64(1, value);
   @$pb.TagNumber(2)
   $core.bool hasCount() => $_has(1);
   @$pb.TagNumber(2)
@@ -3022,10 +2677,7 @@ class AllocationPolicy_Accelerator extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool get installGpuDrivers => $_getBF(2);
   @$pb.TagNumber(3)
-  set installGpuDrivers($core.bool v) {
-    $_setBool(2, v);
-  }
-
+  set installGpuDrivers($core.bool value) => $_setBool(2, value);
   @$pb.TagNumber(3)
   $core.bool hasInstallGpuDrivers() => $_has(2);
   @$pb.TagNumber(3)
@@ -3043,34 +2695,24 @@ class AllocationPolicy_InstancePolicy extends $pb.GeneratedMessage {
     $core.Iterable<AllocationPolicy_AttachedDisk>? disks,
     AllocationPolicy_Disk? bootDisk,
   }) {
-    final $result = create();
-    if (machineType != null) {
-      $result.machineType = machineType;
-    }
-    if (minCpuPlatform != null) {
-      $result.minCpuPlatform = minCpuPlatform;
-    }
-    if (provisioningModel != null) {
-      $result.provisioningModel = provisioningModel;
-    }
-    if (accelerators != null) {
-      $result.accelerators.addAll(accelerators);
-    }
-    if (disks != null) {
-      $result.disks.addAll(disks);
-    }
-    if (bootDisk != null) {
-      $result.bootDisk = bootDisk;
-    }
-    return $result;
+    final result = create();
+    if (machineType != null) result.machineType = machineType;
+    if (minCpuPlatform != null) result.minCpuPlatform = minCpuPlatform;
+    if (provisioningModel != null) result.provisioningModel = provisioningModel;
+    if (accelerators != null) result.accelerators.addAll(accelerators);
+    if (disks != null) result.disks.addAll(disks);
+    if (bootDisk != null) result.bootDisk = bootDisk;
+    return result;
   }
-  AllocationPolicy_InstancePolicy._() : super();
-  factory AllocationPolicy_InstancePolicy.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory AllocationPolicy_InstancePolicy.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  AllocationPolicy_InstancePolicy._();
+
+  factory AllocationPolicy_InstancePolicy.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory AllocationPolicy_InstancePolicy.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'AllocationPolicy.InstancePolicy',
@@ -3079,25 +2721,20 @@ class AllocationPolicy_InstancePolicy extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOS(2, _omitFieldNames ? '' : 'machineType')
     ..aOS(3, _omitFieldNames ? '' : 'minCpuPlatform')
-    ..e<AllocationPolicy_ProvisioningModel>(
-        4, _omitFieldNames ? '' : 'provisioningModel', $pb.PbFieldType.OE,
-        defaultOrMaker:
-            AllocationPolicy_ProvisioningModel.PROVISIONING_MODEL_UNSPECIFIED,
-        valueOf: AllocationPolicy_ProvisioningModel.valueOf,
+    ..aE<AllocationPolicy_ProvisioningModel>(
+        4, _omitFieldNames ? '' : 'provisioningModel',
         enumValues: AllocationPolicy_ProvisioningModel.values)
-    ..pc<AllocationPolicy_Accelerator>(
-        5, _omitFieldNames ? '' : 'accelerators', $pb.PbFieldType.PM,
+    ..pPM<AllocationPolicy_Accelerator>(
+        5, _omitFieldNames ? '' : 'accelerators',
         subBuilder: AllocationPolicy_Accelerator.create)
-    ..pc<AllocationPolicy_AttachedDisk>(
-        6, _omitFieldNames ? '' : 'disks', $pb.PbFieldType.PM,
+    ..pPM<AllocationPolicy_AttachedDisk>(6, _omitFieldNames ? '' : 'disks',
         subBuilder: AllocationPolicy_AttachedDisk.create)
     ..aOM<AllocationPolicy_Disk>(8, _omitFieldNames ? '' : 'bootDisk',
         subBuilder: AllocationPolicy_Disk.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  AllocationPolicy_InstancePolicy clone() =>
-      AllocationPolicy_InstancePolicy()..mergeFromMessage(this);
+  AllocationPolicy_InstancePolicy clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AllocationPolicy_InstancePolicy copyWith(
           void Function(AllocationPolicy_InstancePolicy) updates) =>
@@ -3105,14 +2742,14 @@ class AllocationPolicy_InstancePolicy extends $pb.GeneratedMessage {
               (message) => updates(message as AllocationPolicy_InstancePolicy))
           as AllocationPolicy_InstancePolicy;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AllocationPolicy_InstancePolicy create() =>
       AllocationPolicy_InstancePolicy._();
+  @$core.override
   AllocationPolicy_InstancePolicy createEmptyInstance() => create();
-  static $pb.PbList<AllocationPolicy_InstancePolicy> createRepeated() =>
-      $pb.PbList<AllocationPolicy_InstancePolicy>();
   @$core.pragma('dart2js:noInline')
   static AllocationPolicy_InstancePolicy getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<AllocationPolicy_InstancePolicy>(
@@ -3123,10 +2760,7 @@ class AllocationPolicy_InstancePolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get machineType => $_getSZ(0);
   @$pb.TagNumber(2)
-  set machineType($core.String v) {
-    $_setString(0, v);
-  }
-
+  set machineType($core.String value) => $_setString(0, value);
   @$pb.TagNumber(2)
   $core.bool hasMachineType() => $_has(0);
   @$pb.TagNumber(2)
@@ -3138,10 +2772,7 @@ class AllocationPolicy_InstancePolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get minCpuPlatform => $_getSZ(1);
   @$pb.TagNumber(3)
-  set minCpuPlatform($core.String v) {
-    $_setString(1, v);
-  }
-
+  set minCpuPlatform($core.String value) => $_setString(1, value);
   @$pb.TagNumber(3)
   $core.bool hasMinCpuPlatform() => $_has(1);
   @$pb.TagNumber(3)
@@ -3151,10 +2782,8 @@ class AllocationPolicy_InstancePolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   AllocationPolicy_ProvisioningModel get provisioningModel => $_getN(2);
   @$pb.TagNumber(4)
-  set provisioningModel(AllocationPolicy_ProvisioningModel v) {
-    $_setField(4, v);
-  }
-
+  set provisioningModel(AllocationPolicy_ProvisioningModel value) =>
+      $_setField(4, value);
   @$pb.TagNumber(4)
   $core.bool hasProvisioningModel() => $_has(2);
   @$pb.TagNumber(4)
@@ -3175,10 +2804,7 @@ class AllocationPolicy_InstancePolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   AllocationPolicy_Disk get bootDisk => $_getN(5);
   @$pb.TagNumber(8)
-  set bootDisk(AllocationPolicy_Disk v) {
-    $_setField(8, v);
-  }
-
+  set bootDisk(AllocationPolicy_Disk value) => $_setField(8, value);
   @$pb.TagNumber(8)
   $core.bool hasBootDisk() => $_has(5);
   @$pb.TagNumber(8)
@@ -3200,26 +2826,22 @@ class AllocationPolicy_InstancePolicyOrTemplate extends $pb.GeneratedMessage {
     $core.String? instanceTemplate,
     $core.bool? installGpuDrivers,
   }) {
-    final $result = create();
-    if (policy != null) {
-      $result.policy = policy;
-    }
-    if (instanceTemplate != null) {
-      $result.instanceTemplate = instanceTemplate;
-    }
-    if (installGpuDrivers != null) {
-      $result.installGpuDrivers = installGpuDrivers;
-    }
-    return $result;
+    final result = create();
+    if (policy != null) result.policy = policy;
+    if (instanceTemplate != null) result.instanceTemplate = instanceTemplate;
+    if (installGpuDrivers != null) result.installGpuDrivers = installGpuDrivers;
+    return result;
   }
-  AllocationPolicy_InstancePolicyOrTemplate._() : super();
+
+  AllocationPolicy_InstancePolicyOrTemplate._();
+
   factory AllocationPolicy_InstancePolicyOrTemplate.fromBuffer(
-          $core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory AllocationPolicy_InstancePolicyOrTemplate.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+          $core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory AllocationPolicy_InstancePolicyOrTemplate.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static const $core
       .Map<$core.int, AllocationPolicy_InstancePolicyOrTemplate_PolicyTemplate>
@@ -3242,8 +2864,7 @@ class AllocationPolicy_InstancePolicyOrTemplate extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  AllocationPolicy_InstancePolicyOrTemplate clone() =>
-      AllocationPolicy_InstancePolicyOrTemplate()..mergeFromMessage(this);
+  AllocationPolicy_InstancePolicyOrTemplate clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AllocationPolicy_InstancePolicyOrTemplate copyWith(
           void Function(AllocationPolicy_InstancePolicyOrTemplate) updates) =>
@@ -3251,35 +2872,35 @@ class AllocationPolicy_InstancePolicyOrTemplate extends $pb.GeneratedMessage {
               updates(message as AllocationPolicy_InstancePolicyOrTemplate))
           as AllocationPolicy_InstancePolicyOrTemplate;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AllocationPolicy_InstancePolicyOrTemplate create() =>
       AllocationPolicy_InstancePolicyOrTemplate._();
+  @$core.override
   AllocationPolicy_InstancePolicyOrTemplate createEmptyInstance() => create();
-  static $pb.PbList<AllocationPolicy_InstancePolicyOrTemplate>
-      createRepeated() =>
-          $pb.PbList<AllocationPolicy_InstancePolicyOrTemplate>();
   @$core.pragma('dart2js:noInline')
   static AllocationPolicy_InstancePolicyOrTemplate getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
           AllocationPolicy_InstancePolicyOrTemplate>(create);
   static AllocationPolicy_InstancePolicyOrTemplate? _defaultInstance;
 
+  @$pb.TagNumber(1)
+  @$pb.TagNumber(2)
   AllocationPolicy_InstancePolicyOrTemplate_PolicyTemplate
       whichPolicyTemplate() =>
           _AllocationPolicy_InstancePolicyOrTemplate_PolicyTemplateByTag[
               $_whichOneof(0)]!;
+  @$pb.TagNumber(1)
+  @$pb.TagNumber(2)
   void clearPolicyTemplate() => $_clearField($_whichOneof(0));
 
   /// InstancePolicy.
   @$pb.TagNumber(1)
   AllocationPolicy_InstancePolicy get policy => $_getN(0);
   @$pb.TagNumber(1)
-  set policy(AllocationPolicy_InstancePolicy v) {
-    $_setField(1, v);
-  }
-
+  set policy(AllocationPolicy_InstancePolicy value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasPolicy() => $_has(0);
   @$pb.TagNumber(1)
@@ -3293,10 +2914,7 @@ class AllocationPolicy_InstancePolicyOrTemplate extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get instanceTemplate => $_getSZ(1);
   @$pb.TagNumber(2)
-  set instanceTemplate($core.String v) {
-    $_setString(1, v);
-  }
-
+  set instanceTemplate($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasInstanceTemplate() => $_has(1);
   @$pb.TagNumber(2)
@@ -3309,10 +2927,7 @@ class AllocationPolicy_InstancePolicyOrTemplate extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool get installGpuDrivers => $_getBF(2);
   @$pb.TagNumber(3)
-  set installGpuDrivers($core.bool v) {
-    $_setBool(2, v);
-  }
-
+  set installGpuDrivers($core.bool value) => $_setBool(2, value);
   @$pb.TagNumber(3)
   $core.bool hasInstallGpuDrivers() => $_has(2);
   @$pb.TagNumber(3)
@@ -3326,25 +2941,23 @@ class AllocationPolicy_NetworkInterface extends $pb.GeneratedMessage {
     $core.String? subnetwork,
     $core.bool? noExternalIpAddress,
   }) {
-    final $result = create();
-    if (network != null) {
-      $result.network = network;
-    }
-    if (subnetwork != null) {
-      $result.subnetwork = subnetwork;
-    }
-    if (noExternalIpAddress != null) {
-      $result.noExternalIpAddress = noExternalIpAddress;
-    }
-    return $result;
+    final result = create();
+    if (network != null) result.network = network;
+    if (subnetwork != null) result.subnetwork = subnetwork;
+    if (noExternalIpAddress != null)
+      result.noExternalIpAddress = noExternalIpAddress;
+    return result;
   }
-  AllocationPolicy_NetworkInterface._() : super();
-  factory AllocationPolicy_NetworkInterface.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory AllocationPolicy_NetworkInterface.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  AllocationPolicy_NetworkInterface._();
+
+  factory AllocationPolicy_NetworkInterface.fromBuffer(
+          $core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory AllocationPolicy_NetworkInterface.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'AllocationPolicy.NetworkInterface',
@@ -3357,8 +2970,7 @@ class AllocationPolicy_NetworkInterface extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  AllocationPolicy_NetworkInterface clone() =>
-      AllocationPolicy_NetworkInterface()..mergeFromMessage(this);
+  AllocationPolicy_NetworkInterface clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AllocationPolicy_NetworkInterface copyWith(
           void Function(AllocationPolicy_NetworkInterface) updates) =>
@@ -3366,14 +2978,14 @@ class AllocationPolicy_NetworkInterface extends $pb.GeneratedMessage {
               updates(message as AllocationPolicy_NetworkInterface))
           as AllocationPolicy_NetworkInterface;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AllocationPolicy_NetworkInterface create() =>
       AllocationPolicy_NetworkInterface._();
+  @$core.override
   AllocationPolicy_NetworkInterface createEmptyInstance() => create();
-  static $pb.PbList<AllocationPolicy_NetworkInterface> createRepeated() =>
-      $pb.PbList<AllocationPolicy_NetworkInterface>();
   @$core.pragma('dart2js:noInline')
   static AllocationPolicy_NetworkInterface getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<AllocationPolicy_NetworkInterface>(
@@ -3391,10 +3003,7 @@ class AllocationPolicy_NetworkInterface extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get network => $_getSZ(0);
   @$pb.TagNumber(1)
-  set network($core.String v) {
-    $_setString(0, v);
-  }
-
+  set network($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasNetwork() => $_has(0);
   @$pb.TagNumber(1)
@@ -3411,10 +3020,7 @@ class AllocationPolicy_NetworkInterface extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get subnetwork => $_getSZ(1);
   @$pb.TagNumber(2)
-  set subnetwork($core.String v) {
-    $_setString(1, v);
-  }
-
+  set subnetwork($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasSubnetwork() => $_has(1);
   @$pb.TagNumber(2)
@@ -3430,10 +3036,7 @@ class AllocationPolicy_NetworkInterface extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool get noExternalIpAddress => $_getBF(2);
   @$pb.TagNumber(3)
-  set noExternalIpAddress($core.bool v) {
-    $_setBool(2, v);
-  }
-
+  set noExternalIpAddress($core.bool value) => $_setBool(2, value);
   @$pb.TagNumber(3)
   $core.bool hasNoExternalIpAddress() => $_has(2);
   @$pb.TagNumber(3)
@@ -3445,33 +3048,33 @@ class AllocationPolicy_NetworkPolicy extends $pb.GeneratedMessage {
   factory AllocationPolicy_NetworkPolicy({
     $core.Iterable<AllocationPolicy_NetworkInterface>? networkInterfaces,
   }) {
-    final $result = create();
-    if (networkInterfaces != null) {
-      $result.networkInterfaces.addAll(networkInterfaces);
-    }
-    return $result;
+    final result = create();
+    if (networkInterfaces != null)
+      result.networkInterfaces.addAll(networkInterfaces);
+    return result;
   }
-  AllocationPolicy_NetworkPolicy._() : super();
-  factory AllocationPolicy_NetworkPolicy.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory AllocationPolicy_NetworkPolicy.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  AllocationPolicy_NetworkPolicy._();
+
+  factory AllocationPolicy_NetworkPolicy.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory AllocationPolicy_NetworkPolicy.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'AllocationPolicy.NetworkPolicy',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.batch.v1'),
       createEmptyInstance: create)
-    ..pc<AllocationPolicy_NetworkInterface>(
-        1, _omitFieldNames ? '' : 'networkInterfaces', $pb.PbFieldType.PM,
+    ..pPM<AllocationPolicy_NetworkInterface>(
+        1, _omitFieldNames ? '' : 'networkInterfaces',
         subBuilder: AllocationPolicy_NetworkInterface.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  AllocationPolicy_NetworkPolicy clone() =>
-      AllocationPolicy_NetworkPolicy()..mergeFromMessage(this);
+  AllocationPolicy_NetworkPolicy clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AllocationPolicy_NetworkPolicy copyWith(
           void Function(AllocationPolicy_NetworkPolicy) updates) =>
@@ -3479,14 +3082,14 @@ class AllocationPolicy_NetworkPolicy extends $pb.GeneratedMessage {
               (message) => updates(message as AllocationPolicy_NetworkPolicy))
           as AllocationPolicy_NetworkPolicy;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AllocationPolicy_NetworkPolicy create() =>
       AllocationPolicy_NetworkPolicy._();
+  @$core.override
   AllocationPolicy_NetworkPolicy createEmptyInstance() => create();
-  static $pb.PbList<AllocationPolicy_NetworkPolicy> createRepeated() =>
-      $pb.PbList<AllocationPolicy_NetworkPolicy>();
   @$core.pragma('dart2js:noInline')
   static AllocationPolicy_NetworkPolicy getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<AllocationPolicy_NetworkPolicy>(create);
@@ -3505,22 +3108,21 @@ class AllocationPolicy_PlacementPolicy extends $pb.GeneratedMessage {
     $core.String? collocation,
     $fixnum.Int64? maxDistance,
   }) {
-    final $result = create();
-    if (collocation != null) {
-      $result.collocation = collocation;
-    }
-    if (maxDistance != null) {
-      $result.maxDistance = maxDistance;
-    }
-    return $result;
+    final result = create();
+    if (collocation != null) result.collocation = collocation;
+    if (maxDistance != null) result.maxDistance = maxDistance;
+    return result;
   }
-  AllocationPolicy_PlacementPolicy._() : super();
-  factory AllocationPolicy_PlacementPolicy.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory AllocationPolicy_PlacementPolicy.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  AllocationPolicy_PlacementPolicy._();
+
+  factory AllocationPolicy_PlacementPolicy.fromBuffer(
+          $core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory AllocationPolicy_PlacementPolicy.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'AllocationPolicy.PlacementPolicy',
@@ -3532,8 +3134,7 @@ class AllocationPolicy_PlacementPolicy extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  AllocationPolicy_PlacementPolicy clone() =>
-      AllocationPolicy_PlacementPolicy()..mergeFromMessage(this);
+  AllocationPolicy_PlacementPolicy clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AllocationPolicy_PlacementPolicy copyWith(
           void Function(AllocationPolicy_PlacementPolicy) updates) =>
@@ -3541,14 +3142,14 @@ class AllocationPolicy_PlacementPolicy extends $pb.GeneratedMessage {
               (message) => updates(message as AllocationPolicy_PlacementPolicy))
           as AllocationPolicy_PlacementPolicy;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AllocationPolicy_PlacementPolicy create() =>
       AllocationPolicy_PlacementPolicy._();
+  @$core.override
   AllocationPolicy_PlacementPolicy createEmptyInstance() => create();
-  static $pb.PbList<AllocationPolicy_PlacementPolicy> createRepeated() =>
-      $pb.PbList<AllocationPolicy_PlacementPolicy>();
   @$core.pragma('dart2js:noInline')
   static AllocationPolicy_PlacementPolicy getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<AllocationPolicy_PlacementPolicy>(
@@ -3562,10 +3163,7 @@ class AllocationPolicy_PlacementPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get collocation => $_getSZ(0);
   @$pb.TagNumber(1)
-  set collocation($core.String v) {
-    $_setString(0, v);
-  }
-
+  set collocation($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasCollocation() => $_has(0);
   @$pb.TagNumber(1)
@@ -3579,10 +3177,7 @@ class AllocationPolicy_PlacementPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $fixnum.Int64 get maxDistance => $_getI64(1);
   @$pb.TagNumber(2)
-  set maxDistance($fixnum.Int64 v) {
-    $_setInt64(1, v);
-  }
-
+  set maxDistance($fixnum.Int64 value) => $_setInt64(1, value);
   @$pb.TagNumber(2)
   $core.bool hasMaxDistance() => $_has(1);
   @$pb.TagNumber(2)
@@ -3600,34 +3195,24 @@ class AllocationPolicy extends $pb.GeneratedMessage {
     ServiceAccount? serviceAccount,
     AllocationPolicy_PlacementPolicy? placement,
   }) {
-    final $result = create();
-    if (location != null) {
-      $result.location = location;
-    }
-    if (labels != null) {
-      $result.labels.addEntries(labels);
-    }
-    if (network != null) {
-      $result.network = network;
-    }
-    if (instances != null) {
-      $result.instances.addAll(instances);
-    }
-    if (serviceAccount != null) {
-      $result.serviceAccount = serviceAccount;
-    }
-    if (placement != null) {
-      $result.placement = placement;
-    }
-    return $result;
+    final result = create();
+    if (location != null) result.location = location;
+    if (labels != null) result.labels.addEntries(labels);
+    if (network != null) result.network = network;
+    if (instances != null) result.instances.addAll(instances);
+    if (serviceAccount != null) result.serviceAccount = serviceAccount;
+    if (placement != null) result.placement = placement;
+    return result;
   }
-  AllocationPolicy._() : super();
-  factory AllocationPolicy.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory AllocationPolicy.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  AllocationPolicy._();
+
+  factory AllocationPolicy.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory AllocationPolicy.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'AllocationPolicy',
@@ -3643,8 +3228,8 @@ class AllocationPolicy extends $pb.GeneratedMessage {
         packageName: const $pb.PackageName('google.events.cloud.batch.v1'))
     ..aOM<AllocationPolicy_NetworkPolicy>(7, _omitFieldNames ? '' : 'network',
         subBuilder: AllocationPolicy_NetworkPolicy.create)
-    ..pc<AllocationPolicy_InstancePolicyOrTemplate>(
-        8, _omitFieldNames ? '' : 'instances', $pb.PbFieldType.PM,
+    ..pPM<AllocationPolicy_InstancePolicyOrTemplate>(
+        8, _omitFieldNames ? '' : 'instances',
         subBuilder: AllocationPolicy_InstancePolicyOrTemplate.create)
     ..aOM<ServiceAccount>(9, _omitFieldNames ? '' : 'serviceAccount',
         subBuilder: ServiceAccount.create)
@@ -3654,19 +3239,19 @@ class AllocationPolicy extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  AllocationPolicy clone() => AllocationPolicy()..mergeFromMessage(this);
+  AllocationPolicy clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AllocationPolicy copyWith(void Function(AllocationPolicy) updates) =>
       super.copyWith((message) => updates(message as AllocationPolicy))
           as AllocationPolicy;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AllocationPolicy create() => AllocationPolicy._();
+  @$core.override
   AllocationPolicy createEmptyInstance() => create();
-  static $pb.PbList<AllocationPolicy> createRepeated() =>
-      $pb.PbList<AllocationPolicy>();
   @$core.pragma('dart2js:noInline')
   static AllocationPolicy getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<AllocationPolicy>(create);
@@ -3676,10 +3261,7 @@ class AllocationPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   AllocationPolicy_LocationPolicy get location => $_getN(0);
   @$pb.TagNumber(1)
-  set location(AllocationPolicy_LocationPolicy v) {
-    $_setField(1, v);
-  }
-
+  set location(AllocationPolicy_LocationPolicy value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasLocation() => $_has(0);
   @$pb.TagNumber(1)
@@ -3701,10 +3283,7 @@ class AllocationPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   AllocationPolicy_NetworkPolicy get network => $_getN(2);
   @$pb.TagNumber(7)
-  set network(AllocationPolicy_NetworkPolicy v) {
-    $_setField(7, v);
-  }
-
+  set network(AllocationPolicy_NetworkPolicy value) => $_setField(7, value);
   @$pb.TagNumber(7)
   $core.bool hasNetwork() => $_has(2);
   @$pb.TagNumber(7)
@@ -3722,10 +3301,7 @@ class AllocationPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   ServiceAccount get serviceAccount => $_getN(4);
   @$pb.TagNumber(9)
-  set serviceAccount(ServiceAccount v) {
-    $_setField(9, v);
-  }
-
+  set serviceAccount(ServiceAccount value) => $_setField(9, value);
   @$pb.TagNumber(9)
   $core.bool hasServiceAccount() => $_has(4);
   @$pb.TagNumber(9)
@@ -3737,10 +3313,8 @@ class AllocationPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   AllocationPolicy_PlacementPolicy get placement => $_getN(5);
   @$pb.TagNumber(10)
-  set placement(AllocationPolicy_PlacementPolicy v) {
-    $_setField(10, v);
-  }
-
+  set placement(AllocationPolicy_PlacementPolicy value) =>
+      $_setField(10, value);
   @$pb.TagNumber(10)
   $core.bool hasPlacement() => $_has(5);
   @$pb.TagNumber(10)
@@ -3762,43 +3336,28 @@ class TaskGroup extends $pb.GeneratedMessage {
     $core.bool? requireHostsFile,
     $core.bool? permissiveSsh,
   }) {
-    final $result = create();
-    if (name != null) {
-      $result.name = name;
-    }
-    if (taskSpec != null) {
-      $result.taskSpec = taskSpec;
-    }
-    if (taskCount != null) {
-      $result.taskCount = taskCount;
-    }
-    if (parallelism != null) {
-      $result.parallelism = parallelism;
-    }
-    if (schedulingPolicy != null) {
-      $result.schedulingPolicy = schedulingPolicy;
-    }
-    if (taskEnvironments != null) {
-      $result.taskEnvironments.addAll(taskEnvironments);
-    }
-    if (taskCountPerNode != null) {
-      $result.taskCountPerNode = taskCountPerNode;
-    }
-    if (requireHostsFile != null) {
-      $result.requireHostsFile = requireHostsFile;
-    }
-    if (permissiveSsh != null) {
-      $result.permissiveSsh = permissiveSsh;
-    }
-    return $result;
+    final result = create();
+    if (name != null) result.name = name;
+    if (taskSpec != null) result.taskSpec = taskSpec;
+    if (taskCount != null) result.taskCount = taskCount;
+    if (parallelism != null) result.parallelism = parallelism;
+    if (schedulingPolicy != null) result.schedulingPolicy = schedulingPolicy;
+    if (taskEnvironments != null)
+      result.taskEnvironments.addAll(taskEnvironments);
+    if (taskCountPerNode != null) result.taskCountPerNode = taskCountPerNode;
+    if (requireHostsFile != null) result.requireHostsFile = requireHostsFile;
+    if (permissiveSsh != null) result.permissiveSsh = permissiveSsh;
+    return result;
   }
-  TaskGroup._() : super();
-  factory TaskGroup.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory TaskGroup.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  TaskGroup._();
+
+  factory TaskGroup.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory TaskGroup.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'TaskGroup',
@@ -3810,14 +3369,10 @@ class TaskGroup extends $pb.GeneratedMessage {
         subBuilder: TaskSpec.create)
     ..aInt64(4, _omitFieldNames ? '' : 'taskCount')
     ..aInt64(5, _omitFieldNames ? '' : 'parallelism')
-    ..e<TaskGroup_SchedulingPolicy>(
-        6, _omitFieldNames ? '' : 'schedulingPolicy', $pb.PbFieldType.OE,
-        defaultOrMaker:
-            TaskGroup_SchedulingPolicy.SCHEDULING_POLICY_UNSPECIFIED,
-        valueOf: TaskGroup_SchedulingPolicy.valueOf,
+    ..aE<TaskGroup_SchedulingPolicy>(
+        6, _omitFieldNames ? '' : 'schedulingPolicy',
         enumValues: TaskGroup_SchedulingPolicy.values)
-    ..pc<Environment>(
-        9, _omitFieldNames ? '' : 'taskEnvironments', $pb.PbFieldType.PM,
+    ..pPM<Environment>(9, _omitFieldNames ? '' : 'taskEnvironments',
         subBuilder: Environment.create)
     ..aInt64(10, _omitFieldNames ? '' : 'taskCountPerNode')
     ..aOB(11, _omitFieldNames ? '' : 'requireHostsFile')
@@ -3825,17 +3380,18 @@ class TaskGroup extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  TaskGroup clone() => TaskGroup()..mergeFromMessage(this);
+  TaskGroup clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TaskGroup copyWith(void Function(TaskGroup) updates) =>
       super.copyWith((message) => updates(message as TaskGroup)) as TaskGroup;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static TaskGroup create() => TaskGroup._();
+  @$core.override
   TaskGroup createEmptyInstance() => create();
-  static $pb.PbList<TaskGroup> createRepeated() => $pb.PbList<TaskGroup>();
   @$core.pragma('dart2js:noInline')
   static TaskGroup getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TaskGroup>(create);
@@ -3848,10 +3404,7 @@ class TaskGroup extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) {
-    $_setString(0, v);
-  }
-
+  set name($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -3861,10 +3414,7 @@ class TaskGroup extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   TaskSpec get taskSpec => $_getN(1);
   @$pb.TagNumber(3)
-  set taskSpec(TaskSpec v) {
-    $_setField(3, v);
-  }
-
+  set taskSpec(TaskSpec value) => $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasTaskSpec() => $_has(1);
   @$pb.TagNumber(3)
@@ -3877,10 +3427,7 @@ class TaskGroup extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $fixnum.Int64 get taskCount => $_getI64(2);
   @$pb.TagNumber(4)
-  set taskCount($fixnum.Int64 v) {
-    $_setInt64(2, v);
-  }
-
+  set taskCount($fixnum.Int64 value) => $_setInt64(2, value);
   @$pb.TagNumber(4)
   $core.bool hasTaskCount() => $_has(2);
   @$pb.TagNumber(4)
@@ -3892,10 +3439,7 @@ class TaskGroup extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $fixnum.Int64 get parallelism => $_getI64(3);
   @$pb.TagNumber(5)
-  set parallelism($fixnum.Int64 v) {
-    $_setInt64(3, v);
-  }
-
+  set parallelism($fixnum.Int64 value) => $_setInt64(3, value);
   @$pb.TagNumber(5)
   $core.bool hasParallelism() => $_has(3);
   @$pb.TagNumber(5)
@@ -3906,10 +3450,8 @@ class TaskGroup extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   TaskGroup_SchedulingPolicy get schedulingPolicy => $_getN(4);
   @$pb.TagNumber(6)
-  set schedulingPolicy(TaskGroup_SchedulingPolicy v) {
-    $_setField(6, v);
-  }
-
+  set schedulingPolicy(TaskGroup_SchedulingPolicy value) =>
+      $_setField(6, value);
   @$pb.TagNumber(6)
   $core.bool hasSchedulingPolicy() => $_has(4);
   @$pb.TagNumber(6)
@@ -3933,10 +3475,7 @@ class TaskGroup extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $fixnum.Int64 get taskCountPerNode => $_getI64(6);
   @$pb.TagNumber(10)
-  set taskCountPerNode($fixnum.Int64 v) {
-    $_setInt64(6, v);
-  }
-
+  set taskCountPerNode($fixnum.Int64 value) => $_setInt64(6, value);
   @$pb.TagNumber(10)
   $core.bool hasTaskCountPerNode() => $_has(6);
   @$pb.TagNumber(10)
@@ -3948,10 +3487,7 @@ class TaskGroup extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.bool get requireHostsFile => $_getBF(7);
   @$pb.TagNumber(11)
-  set requireHostsFile($core.bool v) {
-    $_setBool(7, v);
-  }
-
+  set requireHostsFile($core.bool value) => $_setBool(7, value);
   @$pb.TagNumber(11)
   $core.bool hasRequireHostsFile() => $_has(7);
   @$pb.TagNumber(11)
@@ -3962,10 +3498,7 @@ class TaskGroup extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.bool get permissiveSsh => $_getBF(8);
   @$pb.TagNumber(12)
-  set permissiveSsh($core.bool v) {
-    $_setBool(8, v);
-  }
-
+  set permissiveSsh($core.bool value) => $_setBool(8, value);
   @$pb.TagNumber(12)
   $core.bool hasPermissiveSsh() => $_has(8);
   @$pb.TagNumber(12)
@@ -3978,22 +3511,20 @@ class ServiceAccount extends $pb.GeneratedMessage {
     $core.String? email,
     $core.Iterable<$core.String>? scopes,
   }) {
-    final $result = create();
-    if (email != null) {
-      $result.email = email;
-    }
-    if (scopes != null) {
-      $result.scopes.addAll(scopes);
-    }
-    return $result;
+    final result = create();
+    if (email != null) result.email = email;
+    if (scopes != null) result.scopes.addAll(scopes);
+    return result;
   }
-  ServiceAccount._() : super();
-  factory ServiceAccount.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ServiceAccount.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  ServiceAccount._();
+
+  factory ServiceAccount.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ServiceAccount.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'ServiceAccount',
@@ -4005,19 +3536,19 @@ class ServiceAccount extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ServiceAccount clone() => ServiceAccount()..mergeFromMessage(this);
+  ServiceAccount clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceAccount copyWith(void Function(ServiceAccount) updates) =>
       super.copyWith((message) => updates(message as ServiceAccount))
           as ServiceAccount;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ServiceAccount create() => ServiceAccount._();
+  @$core.override
   ServiceAccount createEmptyInstance() => create();
-  static $pb.PbList<ServiceAccount> createRepeated() =>
-      $pb.PbList<ServiceAccount>();
   @$core.pragma('dart2js:noInline')
   static ServiceAccount getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ServiceAccount>(create);
@@ -4030,10 +3561,7 @@ class ServiceAccount extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get email => $_getSZ(0);
   @$pb.TagNumber(1)
-  set email($core.String v) {
-    $_setString(0, v);
-  }
-
+  set email($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasEmail() => $_has(0);
   @$pb.TagNumber(1)
@@ -4050,19 +3578,19 @@ class JobEventData extends $pb.GeneratedMessage {
   factory JobEventData({
     Job? payload,
   }) {
-    final $result = create();
-    if (payload != null) {
-      $result.payload = payload;
-    }
-    return $result;
+    final result = create();
+    if (payload != null) result.payload = payload;
+    return result;
   }
-  JobEventData._() : super();
-  factory JobEventData.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory JobEventData.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  JobEventData._();
+
+  factory JobEventData.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory JobEventData.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'JobEventData',
@@ -4073,19 +3601,19 @@ class JobEventData extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  JobEventData clone() => JobEventData()..mergeFromMessage(this);
+  JobEventData clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   JobEventData copyWith(void Function(JobEventData) updates) =>
       super.copyWith((message) => updates(message as JobEventData))
           as JobEventData;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static JobEventData create() => JobEventData._();
+  @$core.override
   JobEventData createEmptyInstance() => create();
-  static $pb.PbList<JobEventData> createRepeated() =>
-      $pb.PbList<JobEventData>();
   @$core.pragma('dart2js:noInline')
   static JobEventData getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<JobEventData>(create);
@@ -4095,10 +3623,7 @@ class JobEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   Job get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(Job v) {
-    $_setField(1, v);
-  }
-
+  set payload(Job value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -4107,6 +3632,7 @@ class JobEventData extends $pb.GeneratedMessage {
   Job ensurePayload() => $_ensure(0);
 }
 
-const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames =
+const $core.bool _omitFieldNames =
+    $core.bool.fromEnvironment('protobuf.omit_field_names');
+const $core.bool _omitMessageNames =
     $core.bool.fromEnvironment('protobuf.omit_message_names');

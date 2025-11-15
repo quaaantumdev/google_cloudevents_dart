@@ -1,13 +1,14 @@
+// This is a generated file - do not edit.
 //
-//  Generated code. Do not modify.
-//  source: google/events/cloud/dataflow/v1beta3/data.proto
-//
+// Generated from google/events/cloud/dataflow/v1beta3/data.proto.
+
 // @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
-// ignore_for_file: constant_identifier_names, library_prefixes
-// ignore_for_file: non_constant_identifier_names, prefer_final_fields
-// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
+// ignore_for_file: constant_identifier_names
+// ignore_for_file: curly_braces_in_flow_control_structures
+// ignore_for_file: deprecated_member_use_from_same_package, library_prefixes
+// ignore_for_file: non_constant_identifier_names
 
 import 'dart:core' as $core;
 
@@ -43,7 +44,7 @@ class JobType extends $pb.ProtobufEnum {
   static JobType? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const JobType._(super.v, super.n);
+  const JobType._(super.value, super.name);
 }
 
 /// Specifies the resource to optimize for in Flexible Resource Scheduling.
@@ -75,7 +76,7 @@ class FlexResourceSchedulingGoal extends $pb.ProtobufEnum {
   static FlexResourceSchedulingGoal? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const FlexResourceSchedulingGoal._(super.v, super.n);
+  const FlexResourceSchedulingGoal._(super.value, super.name);
 }
 
 /// Specifies what happens to a resource when a Cloud Dataflow
@@ -111,7 +112,7 @@ class TeardownPolicy extends $pb.ProtobufEnum {
   static TeardownPolicy? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const TeardownPolicy._(super.v, super.n);
+  const TeardownPolicy._(super.value, super.name);
 }
 
 /// The default set of packages to be staged on a pool of workers.
@@ -147,7 +148,7 @@ class DefaultPackageSet extends $pb.ProtobufEnum {
   static DefaultPackageSet? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const DefaultPackageSet._(super.v, super.n);
+  const DefaultPackageSet._(super.value, super.name);
 }
 
 /// Specifies the algorithm used to determine the number of worker
@@ -181,7 +182,7 @@ class AutoscalingAlgorithm extends $pb.ProtobufEnum {
   static AutoscalingAlgorithm? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const AutoscalingAlgorithm._(super.v, super.n);
+  const AutoscalingAlgorithm._(super.value, super.name);
 }
 
 /// Specifies how IP addresses should be allocated to the worker machines.
@@ -213,7 +214,7 @@ class WorkerIPAddressConfiguration extends $pb.ProtobufEnum {
   static WorkerIPAddressConfiguration? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const WorkerIPAddressConfiguration._(super.v, super.n);
+  const WorkerIPAddressConfiguration._(super.value, super.name);
 }
 
 /// Specifies the shuffle mode used by a
@@ -244,7 +245,7 @@ class ShuffleMode extends $pb.ProtobufEnum {
   static ShuffleMode? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const ShuffleMode._(super.v, super.n);
+  const ShuffleMode._(super.value, super.name);
 }
 
 /// Describes the overall state of a
@@ -355,7 +356,7 @@ class JobState extends $pb.ProtobufEnum {
   static JobState? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const JobState._(super.v, super.n);
+  const JobState._(super.value, super.name);
 }
 
 /// The support status of the SDK used to run the job.
@@ -395,7 +396,8 @@ class SdkVersion_SdkSupportStatus extends $pb.ProtobufEnum {
   static SdkVersion_SdkSupportStatus? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const SdkVersion_SdkSupportStatus._(super.v, super.n);
+  const SdkVersion_SdkSupportStatus._(super.value, super.name);
 }
 
-const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');
+const $core.bool _omitEnumNames =
+    $core.bool.fromEnvironment('protobuf.omit_enum_names');

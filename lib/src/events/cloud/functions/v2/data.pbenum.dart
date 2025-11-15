@@ -1,13 +1,14 @@
+// This is a generated file - do not edit.
 //
-//  Generated code. Do not modify.
-//  source: google/events/cloud/functions/v2/data.proto
-//
+// Generated from google/events/cloud/functions/v2/data.proto.
+
 // @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
-// ignore_for_file: constant_identifier_names, library_prefixes
-// ignore_for_file: non_constant_identifier_names, prefer_final_fields
-// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
+// ignore_for_file: constant_identifier_names
+// ignore_for_file: curly_braces_in_flow_control_structures
+// ignore_for_file: deprecated_member_use_from_same_package, library_prefixes
+// ignore_for_file: non_constant_identifier_names
 
 import 'dart:core' as $core;
 
@@ -38,7 +39,7 @@ class Environment extends $pb.ProtobufEnum {
   static Environment? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Environment._(super.v, super.n);
+  const Environment._(super.value, super.name);
 }
 
 /// Describes the current state of the function.
@@ -82,7 +83,7 @@ class Function__State extends $pb.ProtobufEnum {
   static Function__State? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Function__State._(super.v, super.n);
+  const Function__State._(super.value, super.name);
 }
 
 /// Severity of the state message.
@@ -116,7 +117,7 @@ class StateMessage_Severity extends $pb.ProtobufEnum {
   static StateMessage_Severity? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const StateMessage_Severity._(super.v, super.n);
+  const StateMessage_Severity._(super.value, super.name);
 }
 
 /// Docker Registry to use for storing function Docker images.
@@ -153,7 +154,7 @@ class BuildConfig_DockerRegistry extends $pb.ProtobufEnum {
   static BuildConfig_DockerRegistry? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const BuildConfig_DockerRegistry._(super.v, super.n);
+  const BuildConfig_DockerRegistry._(super.value, super.name);
 }
 
 /// Available egress settings.
@@ -190,7 +191,7 @@ class ServiceConfig_VpcConnectorEgressSettings extends $pb.ProtobufEnum {
   static ServiceConfig_VpcConnectorEgressSettings? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const ServiceConfig_VpcConnectorEgressSettings._(super.v, super.n);
+  const ServiceConfig_VpcConnectorEgressSettings._(super.value, super.name);
 }
 
 /// Available ingress settings.
@@ -231,7 +232,7 @@ class ServiceConfig_IngressSettings extends $pb.ProtobufEnum {
   static ServiceConfig_IngressSettings? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const ServiceConfig_IngressSettings._(super.v, super.n);
+  const ServiceConfig_IngressSettings._(super.value, super.name);
 }
 
 /// Available security level settings.
@@ -270,7 +271,7 @@ class ServiceConfig_SecurityLevel extends $pb.ProtobufEnum {
   static ServiceConfig_SecurityLevel? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const ServiceConfig_SecurityLevel._(super.v, super.n);
+  const ServiceConfig_SecurityLevel._(super.value, super.name);
 }
 
 /// Describes the retry policy in case of function's execution failure.
@@ -303,7 +304,8 @@ class EventTrigger_RetryPolicy extends $pb.ProtobufEnum {
   static EventTrigger_RetryPolicy? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const EventTrigger_RetryPolicy._(super.v, super.n);
+  const EventTrigger_RetryPolicy._(super.value, super.name);
 }
 
-const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');
+const $core.bool _omitEnumNames =
+    $core.bool.fromEnvironment('protobuf.omit_enum_names');

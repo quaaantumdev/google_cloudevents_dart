@@ -1,13 +1,14 @@
+// This is a generated file - do not edit.
 //
-//  Generated code. Do not modify.
-//  source: google/type/postal_address.proto
-//
+// Generated from google/type/postal_address.proto.
+
 // @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
-// ignore_for_file: constant_identifier_names, library_prefixes
-// ignore_for_file: non_constant_identifier_names, prefer_final_fields
-// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
+// ignore_for_file: constant_identifier_names
+// ignore_for_file: curly_braces_in_flow_control_structures
+// ignore_for_file: deprecated_member_use_from_same_package, library_prefixes
+// ignore_for_file: non_constant_identifier_names
 
 import 'dart:core' as $core;
 
@@ -46,55 +47,36 @@ class PostalAddress extends $pb.GeneratedMessage {
     $core.Iterable<$core.String>? recipients,
     $core.String? organization,
   }) {
-    final $result = create();
-    if (revision != null) {
-      $result.revision = revision;
-    }
-    if (regionCode != null) {
-      $result.regionCode = regionCode;
-    }
-    if (languageCode != null) {
-      $result.languageCode = languageCode;
-    }
-    if (postalCode != null) {
-      $result.postalCode = postalCode;
-    }
-    if (sortingCode != null) {
-      $result.sortingCode = sortingCode;
-    }
-    if (administrativeArea != null) {
-      $result.administrativeArea = administrativeArea;
-    }
-    if (locality != null) {
-      $result.locality = locality;
-    }
-    if (sublocality != null) {
-      $result.sublocality = sublocality;
-    }
-    if (addressLines != null) {
-      $result.addressLines.addAll(addressLines);
-    }
-    if (recipients != null) {
-      $result.recipients.addAll(recipients);
-    }
-    if (organization != null) {
-      $result.organization = organization;
-    }
-    return $result;
+    final result = create();
+    if (revision != null) result.revision = revision;
+    if (regionCode != null) result.regionCode = regionCode;
+    if (languageCode != null) result.languageCode = languageCode;
+    if (postalCode != null) result.postalCode = postalCode;
+    if (sortingCode != null) result.sortingCode = sortingCode;
+    if (administrativeArea != null)
+      result.administrativeArea = administrativeArea;
+    if (locality != null) result.locality = locality;
+    if (sublocality != null) result.sublocality = sublocality;
+    if (addressLines != null) result.addressLines.addAll(addressLines);
+    if (recipients != null) result.recipients.addAll(recipients);
+    if (organization != null) result.organization = organization;
+    return result;
   }
-  PostalAddress._() : super();
-  factory PostalAddress.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory PostalAddress.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  PostalAddress._();
+
+  factory PostalAddress.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory PostalAddress.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'PostalAddress',
       package: const $pb.PackageName(_omitMessageNames ? '' : 'google.type'),
       createEmptyInstance: create)
-    ..a<$core.int>(1, _omitFieldNames ? '' : 'revision', $pb.PbFieldType.O3)
+    ..aI(1, _omitFieldNames ? '' : 'revision')
     ..aOS(2, _omitFieldNames ? '' : 'regionCode')
     ..aOS(3, _omitFieldNames ? '' : 'languageCode')
     ..aOS(4, _omitFieldNames ? '' : 'postalCode')
@@ -108,19 +90,19 @@ class PostalAddress extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  PostalAddress clone() => PostalAddress()..mergeFromMessage(this);
+  PostalAddress clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   PostalAddress copyWith(void Function(PostalAddress) updates) =>
       super.copyWith((message) => updates(message as PostalAddress))
           as PostalAddress;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static PostalAddress create() => PostalAddress._();
+  @$core.override
   PostalAddress createEmptyInstance() => create();
-  static $pb.PbList<PostalAddress> createRepeated() =>
-      $pb.PbList<PostalAddress>();
   @$core.pragma('dart2js:noInline')
   static PostalAddress getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<PostalAddress>(create);
@@ -133,10 +115,7 @@ class PostalAddress extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.int get revision => $_getIZ(0);
   @$pb.TagNumber(1)
-  set revision($core.int v) {
-    $_setSignedInt32(0, v);
-  }
-
+  set revision($core.int value) => $_setSignedInt32(0, value);
   @$pb.TagNumber(1)
   $core.bool hasRevision() => $_has(0);
   @$pb.TagNumber(1)
@@ -150,10 +129,7 @@ class PostalAddress extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get regionCode => $_getSZ(1);
   @$pb.TagNumber(2)
-  set regionCode($core.String v) {
-    $_setString(1, v);
-  }
-
+  set regionCode($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasRegionCode() => $_has(1);
   @$pb.TagNumber(2)
@@ -174,10 +150,7 @@ class PostalAddress extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get languageCode => $_getSZ(2);
   @$pb.TagNumber(3)
-  set languageCode($core.String v) {
-    $_setString(2, v);
-  }
-
+  set languageCode($core.String value) => $_setString(2, value);
   @$pb.TagNumber(3)
   $core.bool hasLanguageCode() => $_has(2);
   @$pb.TagNumber(3)
@@ -190,10 +163,7 @@ class PostalAddress extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get postalCode => $_getSZ(3);
   @$pb.TagNumber(4)
-  set postalCode($core.String v) {
-    $_setString(3, v);
-  }
-
+  set postalCode($core.String value) => $_setString(3, value);
   @$pb.TagNumber(4)
   $core.bool hasPostalCode() => $_has(3);
   @$pb.TagNumber(4)
@@ -207,10 +177,7 @@ class PostalAddress extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get sortingCode => $_getSZ(4);
   @$pb.TagNumber(5)
-  set sortingCode($core.String v) {
-    $_setString(4, v);
-  }
-
+  set sortingCode($core.String value) => $_setString(4, value);
   @$pb.TagNumber(5)
   $core.bool hasSortingCode() => $_has(4);
   @$pb.TagNumber(5)
@@ -226,10 +193,7 @@ class PostalAddress extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get administrativeArea => $_getSZ(5);
   @$pb.TagNumber(6)
-  set administrativeArea($core.String v) {
-    $_setString(5, v);
-  }
-
+  set administrativeArea($core.String value) => $_setString(5, value);
   @$pb.TagNumber(6)
   $core.bool hasAdministrativeArea() => $_has(5);
   @$pb.TagNumber(6)
@@ -242,10 +206,7 @@ class PostalAddress extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get locality => $_getSZ(6);
   @$pb.TagNumber(7)
-  set locality($core.String v) {
-    $_setString(6, v);
-  }
-
+  set locality($core.String value) => $_setString(6, value);
   @$pb.TagNumber(7)
   $core.bool hasLocality() => $_has(6);
   @$pb.TagNumber(7)
@@ -256,10 +217,7 @@ class PostalAddress extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.String get sublocality => $_getSZ(7);
   @$pb.TagNumber(8)
-  set sublocality($core.String v) {
-    $_setString(7, v);
-  }
-
+  set sublocality($core.String value) => $_setString(7, value);
   @$pb.TagNumber(8)
   $core.bool hasSublocality() => $_has(7);
   @$pb.TagNumber(8)
@@ -300,16 +258,14 @@ class PostalAddress extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.String get organization => $_getSZ(10);
   @$pb.TagNumber(11)
-  set organization($core.String v) {
-    $_setString(10, v);
-  }
-
+  set organization($core.String value) => $_setString(10, value);
   @$pb.TagNumber(11)
   $core.bool hasOrganization() => $_has(10);
   @$pb.TagNumber(11)
   void clearOrganization() => $_clearField(11);
 }
 
-const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames =
+const $core.bool _omitFieldNames =
+    $core.bool.fromEnvironment('protobuf.omit_field_names');
+const $core.bool _omitMessageNames =
     $core.bool.fromEnvironment('protobuf.omit_message_names');

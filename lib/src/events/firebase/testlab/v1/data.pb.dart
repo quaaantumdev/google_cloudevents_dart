@@ -1,19 +1,20 @@
+// This is a generated file - do not edit.
 //
-//  Generated code. Do not modify.
-//  source: google/events/firebase/testlab/v1/data.proto
-//
+// Generated from google/events/firebase/testlab/v1/data.proto.
+
 // @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
-// ignore_for_file: constant_identifier_names, library_prefixes
-// ignore_for_file: non_constant_identifier_names, prefer_final_fields
-// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
+// ignore_for_file: constant_identifier_names
+// ignore_for_file: curly_braces_in_flow_control_structures
+// ignore_for_file: deprecated_member_use_from_same_package, library_prefixes
+// ignore_for_file: non_constant_identifier_names
 
 import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/timestamp.pb.dart' as $2;
+import '../../../../protobuf/timestamp.pb.dart' as $0;
 import 'data.pbenum.dart';
 
 export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
@@ -23,7 +24,7 @@ export 'data.pbenum.dart';
 /// The data within all Firebase test matrix events.
 class TestMatrixEventData extends $pb.GeneratedMessage {
   factory TestMatrixEventData({
-    $2.Timestamp? createTime,
+    $0.Timestamp? createTime,
     TestState? state,
     $core.String? invalidMatrixDetails,
     OutcomeSummary? outcomeSummary,
@@ -31,54 +32,38 @@ class TestMatrixEventData extends $pb.GeneratedMessage {
     ClientInfo? clientInfo,
     $core.String? testMatrixId,
   }) {
-    final $result = create();
-    if (createTime != null) {
-      $result.createTime = createTime;
-    }
-    if (state != null) {
-      $result.state = state;
-    }
-    if (invalidMatrixDetails != null) {
-      $result.invalidMatrixDetails = invalidMatrixDetails;
-    }
-    if (outcomeSummary != null) {
-      $result.outcomeSummary = outcomeSummary;
-    }
-    if (resultStorage != null) {
-      $result.resultStorage = resultStorage;
-    }
-    if (clientInfo != null) {
-      $result.clientInfo = clientInfo;
-    }
-    if (testMatrixId != null) {
-      $result.testMatrixId = testMatrixId;
-    }
-    return $result;
+    final result = create();
+    if (createTime != null) result.createTime = createTime;
+    if (state != null) result.state = state;
+    if (invalidMatrixDetails != null)
+      result.invalidMatrixDetails = invalidMatrixDetails;
+    if (outcomeSummary != null) result.outcomeSummary = outcomeSummary;
+    if (resultStorage != null) result.resultStorage = resultStorage;
+    if (clientInfo != null) result.clientInfo = clientInfo;
+    if (testMatrixId != null) result.testMatrixId = testMatrixId;
+    return result;
   }
-  TestMatrixEventData._() : super();
-  factory TestMatrixEventData.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory TestMatrixEventData.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  TestMatrixEventData._();
+
+  factory TestMatrixEventData.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory TestMatrixEventData.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'TestMatrixEventData',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.firebase.testlab.v1'),
       createEmptyInstance: create)
-    ..aOM<$2.Timestamp>(1, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $2.Timestamp.create)
-    ..e<TestState>(2, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
-        defaultOrMaker: TestState.TEST_STATE_UNSPECIFIED,
-        valueOf: TestState.valueOf,
+    ..aOM<$0.Timestamp>(1, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $0.Timestamp.create)
+    ..aE<TestState>(2, _omitFieldNames ? '' : 'state',
         enumValues: TestState.values)
     ..aOS(3, _omitFieldNames ? '' : 'invalidMatrixDetails')
-    ..e<OutcomeSummary>(
-        4, _omitFieldNames ? '' : 'outcomeSummary', $pb.PbFieldType.OE,
-        defaultOrMaker: OutcomeSummary.OUTCOME_SUMMARY_UNSPECIFIED,
-        valueOf: OutcomeSummary.valueOf,
+    ..aE<OutcomeSummary>(4, _omitFieldNames ? '' : 'outcomeSummary',
         enumValues: OutcomeSummary.values)
     ..aOM<ResultStorage>(5, _omitFieldNames ? '' : 'resultStorage',
         subBuilder: ResultStorage.create)
@@ -88,19 +73,19 @@ class TestMatrixEventData extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  TestMatrixEventData clone() => TestMatrixEventData()..mergeFromMessage(this);
+  TestMatrixEventData clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TestMatrixEventData copyWith(void Function(TestMatrixEventData) updates) =>
       super.copyWith((message) => updates(message as TestMatrixEventData))
           as TestMatrixEventData;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static TestMatrixEventData create() => TestMatrixEventData._();
+  @$core.override
   TestMatrixEventData createEmptyInstance() => create();
-  static $pb.PbList<TestMatrixEventData> createRepeated() =>
-      $pb.PbList<TestMatrixEventData>();
   @$core.pragma('dart2js:noInline')
   static TestMatrixEventData getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<TestMatrixEventData>(create);
@@ -108,27 +93,21 @@ class TestMatrixEventData extends $pb.GeneratedMessage {
 
   /// Time the test matrix was created.
   @$pb.TagNumber(1)
-  $2.Timestamp get createTime => $_getN(0);
+  $0.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
-  set createTime($2.Timestamp v) {
-    $_setField(1, v);
-  }
-
+  set createTime($0.Timestamp value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasCreateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreateTime() => $_clearField(1);
   @$pb.TagNumber(1)
-  $2.Timestamp ensureCreateTime() => $_ensure(0);
+  $0.Timestamp ensureCreateTime() => $_ensure(0);
 
   /// State of the test matrix.
   @$pb.TagNumber(2)
   TestState get state => $_getN(1);
   @$pb.TagNumber(2)
-  set state(TestState v) {
-    $_setField(2, v);
-  }
-
+  set state(TestState value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasState() => $_has(1);
   @$pb.TagNumber(2)
@@ -139,10 +118,7 @@ class TestMatrixEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get invalidMatrixDetails => $_getSZ(2);
   @$pb.TagNumber(3)
-  set invalidMatrixDetails($core.String v) {
-    $_setString(2, v);
-  }
-
+  set invalidMatrixDetails($core.String value) => $_setString(2, value);
   @$pb.TagNumber(3)
   $core.bool hasInvalidMatrixDetails() => $_has(2);
   @$pb.TagNumber(3)
@@ -152,10 +128,7 @@ class TestMatrixEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   OutcomeSummary get outcomeSummary => $_getN(3);
   @$pb.TagNumber(4)
-  set outcomeSummary(OutcomeSummary v) {
-    $_setField(4, v);
-  }
-
+  set outcomeSummary(OutcomeSummary value) => $_setField(4, value);
   @$pb.TagNumber(4)
   $core.bool hasOutcomeSummary() => $_has(3);
   @$pb.TagNumber(4)
@@ -165,10 +138,7 @@ class TestMatrixEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   ResultStorage get resultStorage => $_getN(4);
   @$pb.TagNumber(5)
-  set resultStorage(ResultStorage v) {
-    $_setField(5, v);
-  }
-
+  set resultStorage(ResultStorage value) => $_setField(5, value);
   @$pb.TagNumber(5)
   $core.bool hasResultStorage() => $_has(4);
   @$pb.TagNumber(5)
@@ -180,10 +150,7 @@ class TestMatrixEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   ClientInfo get clientInfo => $_getN(5);
   @$pb.TagNumber(6)
-  set clientInfo(ClientInfo v) {
-    $_setField(6, v);
-  }
-
+  set clientInfo(ClientInfo value) => $_setField(6, value);
   @$pb.TagNumber(6)
   $core.bool hasClientInfo() => $_has(5);
   @$pb.TagNumber(6)
@@ -195,10 +162,7 @@ class TestMatrixEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get testMatrixId => $_getSZ(6);
   @$pb.TagNumber(7)
-  set testMatrixId($core.String v) {
-    $_setString(6, v);
-  }
-
+  set testMatrixId($core.String value) => $_setString(6, value);
   @$pb.TagNumber(7)
   $core.bool hasTestMatrixId() => $_has(6);
   @$pb.TagNumber(7)
@@ -211,22 +175,20 @@ class ClientInfo extends $pb.GeneratedMessage {
     $core.String? client,
     $core.Iterable<$core.MapEntry<$core.String, $core.String>>? details,
   }) {
-    final $result = create();
-    if (client != null) {
-      $result.client = client;
-    }
-    if (details != null) {
-      $result.details.addEntries(details);
-    }
-    return $result;
+    final result = create();
+    if (client != null) result.client = client;
+    if (details != null) result.details.addEntries(details);
+    return result;
   }
-  ClientInfo._() : super();
-  factory ClientInfo.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ClientInfo.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  ClientInfo._();
+
+  factory ClientInfo.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ClientInfo.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'ClientInfo',
@@ -242,17 +204,18 @@ class ClientInfo extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ClientInfo clone() => ClientInfo()..mergeFromMessage(this);
+  ClientInfo clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ClientInfo copyWith(void Function(ClientInfo) updates) =>
       super.copyWith((message) => updates(message as ClientInfo)) as ClientInfo;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ClientInfo create() => ClientInfo._();
+  @$core.override
   ClientInfo createEmptyInstance() => create();
-  static $pb.PbList<ClientInfo> createRepeated() => $pb.PbList<ClientInfo>();
   @$core.pragma('dart2js:noInline')
   static ClientInfo getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ClientInfo>(create);
@@ -262,10 +225,7 @@ class ClientInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get client => $_getSZ(0);
   @$pb.TagNumber(1)
-  set client($core.String v) {
-    $_setString(0, v);
-  }
-
+  set client($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasClient() => $_has(0);
   @$pb.TagNumber(1)
@@ -284,28 +244,24 @@ class ResultStorage extends $pb.GeneratedMessage {
     $core.String? resultsUri,
     $core.String? gcsPath,
   }) {
-    final $result = create();
-    if (toolResultsHistory != null) {
-      $result.toolResultsHistory = toolResultsHistory;
-    }
-    if (toolResultsExecution != null) {
-      $result.toolResultsExecution = toolResultsExecution;
-    }
-    if (resultsUri != null) {
-      $result.resultsUri = resultsUri;
-    }
-    if (gcsPath != null) {
-      $result.gcsPath = gcsPath;
-    }
-    return $result;
+    final result = create();
+    if (toolResultsHistory != null)
+      result.toolResultsHistory = toolResultsHistory;
+    if (toolResultsExecution != null)
+      result.toolResultsExecution = toolResultsExecution;
+    if (resultsUri != null) result.resultsUri = resultsUri;
+    if (gcsPath != null) result.gcsPath = gcsPath;
+    return result;
   }
-  ResultStorage._() : super();
-  factory ResultStorage.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ResultStorage.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  ResultStorage._();
+
+  factory ResultStorage.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ResultStorage.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'ResultStorage',
@@ -319,19 +275,19 @@ class ResultStorage extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ResultStorage clone() => ResultStorage()..mergeFromMessage(this);
+  ResultStorage clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ResultStorage copyWith(void Function(ResultStorage) updates) =>
       super.copyWith((message) => updates(message as ResultStorage))
           as ResultStorage;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ResultStorage create() => ResultStorage._();
+  @$core.override
   ResultStorage createEmptyInstance() => create();
-  static $pb.PbList<ResultStorage> createRepeated() =>
-      $pb.PbList<ResultStorage>();
   @$core.pragma('dart2js:noInline')
   static ResultStorage getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ResultStorage>(create);
@@ -344,10 +300,7 @@ class ResultStorage extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get toolResultsHistory => $_getSZ(0);
   @$pb.TagNumber(1)
-  set toolResultsHistory($core.String v) {
-    $_setString(0, v);
-  }
-
+  set toolResultsHistory($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasToolResultsHistory() => $_has(0);
   @$pb.TagNumber(1)
@@ -361,10 +314,7 @@ class ResultStorage extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get toolResultsExecution => $_getSZ(1);
   @$pb.TagNumber(2)
-  set toolResultsExecution($core.String v) {
-    $_setString(1, v);
-  }
-
+  set toolResultsExecution($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasToolResultsExecution() => $_has(1);
   @$pb.TagNumber(2)
@@ -374,10 +324,7 @@ class ResultStorage extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get resultsUri => $_getSZ(2);
   @$pb.TagNumber(3)
-  set resultsUri($core.String v) {
-    $_setString(2, v);
-  }
-
+  set resultsUri($core.String value) => $_setString(2, value);
   @$pb.TagNumber(3)
   $core.bool hasResultsUri() => $_has(2);
   @$pb.TagNumber(3)
@@ -388,16 +335,14 @@ class ResultStorage extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get gcsPath => $_getSZ(3);
   @$pb.TagNumber(4)
-  set gcsPath($core.String v) {
-    $_setString(3, v);
-  }
-
+  set gcsPath($core.String value) => $_setString(3, value);
   @$pb.TagNumber(4)
   $core.bool hasGcsPath() => $_has(3);
   @$pb.TagNumber(4)
   void clearGcsPath() => $_clearField(4);
 }
 
-const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames =
+const $core.bool _omitFieldNames =
+    $core.bool.fromEnvironment('protobuf.omit_field_names');
+const $core.bool _omitMessageNames =
     $core.bool.fromEnvironment('protobuf.omit_message_names');

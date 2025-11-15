@@ -1,19 +1,20 @@
+// This is a generated file - do not edit.
 //
-//  Generated code. Do not modify.
-//  source: google/events/cloud/beyondcorp/clientgateways/v1/data.proto
-//
+// Generated from google/events/cloud/beyondcorp/clientgateways/v1/data.proto.
+
 // @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
-// ignore_for_file: constant_identifier_names, library_prefixes
-// ignore_for_file: non_constant_identifier_names, prefer_final_fields
-// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
+// ignore_for_file: constant_identifier_names
+// ignore_for_file: curly_braces_in_flow_control_structures
+// ignore_for_file: deprecated_member_use_from_same_package, library_prefixes
+// ignore_for_file: non_constant_identifier_names
 
 import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../../protobuf/timestamp.pb.dart' as $2;
+import '../../../../../protobuf/timestamp.pb.dart' as $0;
 import 'data.pbenum.dart';
 
 export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
@@ -24,40 +25,31 @@ export 'data.pbenum.dart';
 class ClientGateway extends $pb.GeneratedMessage {
   factory ClientGateway({
     $core.String? name,
-    $2.Timestamp? createTime,
-    $2.Timestamp? updateTime,
+    $0.Timestamp? createTime,
+    $0.Timestamp? updateTime,
     ClientGateway_State? state,
     $core.String? id,
     $core.String? clientConnectorService,
   }) {
-    final $result = create();
-    if (name != null) {
-      $result.name = name;
-    }
-    if (createTime != null) {
-      $result.createTime = createTime;
-    }
-    if (updateTime != null) {
-      $result.updateTime = updateTime;
-    }
-    if (state != null) {
-      $result.state = state;
-    }
-    if (id != null) {
-      $result.id = id;
-    }
-    if (clientConnectorService != null) {
-      $result.clientConnectorService = clientConnectorService;
-    }
-    return $result;
+    final result = create();
+    if (name != null) result.name = name;
+    if (createTime != null) result.createTime = createTime;
+    if (updateTime != null) result.updateTime = updateTime;
+    if (state != null) result.state = state;
+    if (id != null) result.id = id;
+    if (clientConnectorService != null)
+      result.clientConnectorService = clientConnectorService;
+    return result;
   }
-  ClientGateway._() : super();
-  factory ClientGateway.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ClientGateway.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  ClientGateway._();
+
+  factory ClientGateway.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ClientGateway.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'ClientGateway',
@@ -66,33 +58,30 @@ class ClientGateway extends $pb.GeneratedMessage {
           : 'google.events.cloud.beyondcorp.clientgateways.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$2.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(3, _omitFieldNames ? '' : 'updateTime',
-        subBuilder: $2.Timestamp.create)
-    ..e<ClientGateway_State>(
-        4, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
-        defaultOrMaker: ClientGateway_State.STATE_UNSPECIFIED,
-        valueOf: ClientGateway_State.valueOf,
+    ..aOM<$0.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(3, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $0.Timestamp.create)
+    ..aE<ClientGateway_State>(4, _omitFieldNames ? '' : 'state',
         enumValues: ClientGateway_State.values)
     ..aOS(5, _omitFieldNames ? '' : 'id')
     ..aOS(6, _omitFieldNames ? '' : 'clientConnectorService')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ClientGateway clone() => ClientGateway()..mergeFromMessage(this);
+  ClientGateway clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ClientGateway copyWith(void Function(ClientGateway) updates) =>
       super.copyWith((message) => updates(message as ClientGateway))
           as ClientGateway;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ClientGateway create() => ClientGateway._();
+  @$core.override
   ClientGateway createEmptyInstance() => create();
-  static $pb.PbList<ClientGateway> createRepeated() =>
-      $pb.PbList<ClientGateway>();
   @$core.pragma('dart2js:noInline')
   static ClientGateway getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ClientGateway>(create);
@@ -102,10 +91,7 @@ class ClientGateway extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) {
-    $_setString(0, v);
-  }
-
+  set name($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -113,42 +99,33 @@ class ClientGateway extends $pb.GeneratedMessage {
 
   /// Output only. [Output only] Create time stamp.
   @$pb.TagNumber(2)
-  $2.Timestamp get createTime => $_getN(1);
+  $0.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($2.Timestamp v) {
-    $_setField(2, v);
-  }
-
+  set createTime($0.Timestamp value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => $_clearField(2);
   @$pb.TagNumber(2)
-  $2.Timestamp ensureCreateTime() => $_ensure(1);
+  $0.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. [Output only] Update time stamp.
   @$pb.TagNumber(3)
-  $2.Timestamp get updateTime => $_getN(2);
+  $0.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($2.Timestamp v) {
-    $_setField(3, v);
-  }
-
+  set updateTime($0.Timestamp value) => $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => $_clearField(3);
   @$pb.TagNumber(3)
-  $2.Timestamp ensureUpdateTime() => $_ensure(2);
+  $0.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Output only. The operational state of the gateway.
   @$pb.TagNumber(4)
   ClientGateway_State get state => $_getN(3);
   @$pb.TagNumber(4)
-  set state(ClientGateway_State v) {
-    $_setField(4, v);
-  }
-
+  set state(ClientGateway_State value) => $_setField(4, value);
   @$pb.TagNumber(4)
   $core.bool hasState() => $_has(3);
   @$pb.TagNumber(4)
@@ -158,10 +135,7 @@ class ClientGateway extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get id => $_getSZ(4);
   @$pb.TagNumber(5)
-  set id($core.String v) {
-    $_setString(4, v);
-  }
-
+  set id($core.String value) => $_setString(4, value);
   @$pb.TagNumber(5)
   $core.bool hasId() => $_has(4);
   @$pb.TagNumber(5)
@@ -173,10 +147,7 @@ class ClientGateway extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get clientConnectorService => $_getSZ(5);
   @$pb.TagNumber(6)
-  set clientConnectorService($core.String v) {
-    $_setString(5, v);
-  }
-
+  set clientConnectorService($core.String value) => $_setString(5, value);
   @$pb.TagNumber(6)
   $core.bool hasClientConnectorService() => $_has(5);
   @$pb.TagNumber(6)
@@ -188,19 +159,19 @@ class ClientGatewayEventData extends $pb.GeneratedMessage {
   factory ClientGatewayEventData({
     ClientGateway? payload,
   }) {
-    final $result = create();
-    if (payload != null) {
-      $result.payload = payload;
-    }
-    return $result;
+    final result = create();
+    if (payload != null) result.payload = payload;
+    return result;
   }
-  ClientGatewayEventData._() : super();
-  factory ClientGatewayEventData.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ClientGatewayEventData.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  ClientGatewayEventData._();
+
+  factory ClientGatewayEventData.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ClientGatewayEventData.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'ClientGatewayEventData',
@@ -213,21 +184,20 @@ class ClientGatewayEventData extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ClientGatewayEventData clone() =>
-      ClientGatewayEventData()..mergeFromMessage(this);
+  ClientGatewayEventData clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ClientGatewayEventData copyWith(
           void Function(ClientGatewayEventData) updates) =>
       super.copyWith((message) => updates(message as ClientGatewayEventData))
           as ClientGatewayEventData;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ClientGatewayEventData create() => ClientGatewayEventData._();
+  @$core.override
   ClientGatewayEventData createEmptyInstance() => create();
-  static $pb.PbList<ClientGatewayEventData> createRepeated() =>
-      $pb.PbList<ClientGatewayEventData>();
   @$core.pragma('dart2js:noInline')
   static ClientGatewayEventData getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ClientGatewayEventData>(create);
@@ -237,10 +207,7 @@ class ClientGatewayEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   ClientGateway get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(ClientGateway v) {
-    $_setField(1, v);
-  }
-
+  set payload(ClientGateway value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -249,6 +216,7 @@ class ClientGatewayEventData extends $pb.GeneratedMessage {
   ClientGateway ensurePayload() => $_ensure(0);
 }
 
-const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames =
+const $core.bool _omitFieldNames =
+    $core.bool.fromEnvironment('protobuf.omit_field_names');
+const $core.bool _omitMessageNames =
     $core.bool.fromEnvironment('protobuf.omit_message_names');

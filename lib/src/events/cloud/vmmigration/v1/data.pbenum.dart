@@ -1,13 +1,14 @@
+// This is a generated file - do not edit.
 //
-//  Generated code. Do not modify.
-//  source: google/events/cloud/vmmigration/v1/data.proto
-//
+// Generated from google/events/cloud/vmmigration/v1/data.proto.
+
 // @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
-// ignore_for_file: constant_identifier_names, library_prefixes
-// ignore_for_file: non_constant_identifier_names, prefer_final_fields
-// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
+// ignore_for_file: constant_identifier_names
+// ignore_for_file: curly_braces_in_flow_control_structures
+// ignore_for_file: deprecated_member_use_from_same_package, library_prefixes
+// ignore_for_file: non_constant_identifier_names
 
 import 'dart:core' as $core;
 
@@ -49,7 +50,7 @@ class ComputeEngineDiskType extends $pb.ProtobufEnum {
   static ComputeEngineDiskType? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const ComputeEngineDiskType._(super.v, super.n);
+  const ComputeEngineDiskType._(super.value, super.name);
 }
 
 /// Types of licenses used in OS adaptation.
@@ -81,7 +82,7 @@ class ComputeEngineLicenseType extends $pb.ProtobufEnum {
   static ComputeEngineLicenseType? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const ComputeEngineLicenseType._(super.v, super.n);
+  const ComputeEngineLicenseType._(super.value, super.name);
 }
 
 /// Possible values for vm boot option.
@@ -113,7 +114,7 @@ class ComputeEngineBootOption extends $pb.ProtobufEnum {
   static ComputeEngineBootOption? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const ComputeEngineBootOption._(super.v, super.n);
+  const ComputeEngineBootOption._(super.value, super.name);
 }
 
 /// Possible states of a replication cycle.
@@ -153,7 +154,7 @@ class ReplicationCycle_State extends $pb.ProtobufEnum {
   static ReplicationCycle_State? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const ReplicationCycle_State._(super.v, super.n);
+  const ReplicationCycle_State._(super.value, super.name);
 }
 
 /// The possible values of the state/health of source VM.
@@ -232,7 +233,7 @@ class MigratingVm_State extends $pb.ProtobufEnum {
   static MigratingVm_State? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const MigratingVm_State._(super.v, super.n);
+  const MigratingVm_State._(super.value, super.name);
 }
 
 /// Possible states of the clone job.
@@ -286,7 +287,7 @@ class CloneJob_State extends $pb.ProtobufEnum {
   static CloneJob_State? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const CloneJob_State._(super.v, super.n);
+  const CloneJob_State._(super.value, super.name);
 }
 
 /// Possible states of the cutover job.
@@ -340,7 +341,7 @@ class CutoverJob_State extends $pb.ProtobufEnum {
   static CutoverJob_State? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const CutoverJob_State._(super.v, super.n);
+  const CutoverJob_State._(super.value, super.name);
 }
 
 /// The possible values of the state.
@@ -377,7 +378,7 @@ class AwsSourceDetails_State extends $pb.ProtobufEnum {
   static AwsSourceDetails_State? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const AwsSourceDetails_State._(super.v, super.n);
+  const AwsSourceDetails_State._(super.value, super.name);
 }
 
 /// The possible values of the state.
@@ -419,7 +420,7 @@ class DatacenterConnector_State extends $pb.ProtobufEnum {
   static DatacenterConnector_State? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const DatacenterConnector_State._(super.v, super.n);
+  const DatacenterConnector_State._(super.value, super.name);
 }
 
 /// The possible values of the state.
@@ -452,7 +453,7 @@ class UpgradeStatus_State extends $pb.ProtobufEnum {
   static UpgradeStatus_State? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const UpgradeStatus_State._(super.v, super.n);
+  const UpgradeStatus_State._(super.value, super.name);
 }
 
 /// Possible values for the power state of the VM.
@@ -487,7 +488,7 @@ class VmwareVmDetails_PowerState extends $pb.ProtobufEnum {
   static VmwareVmDetails_PowerState? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const VmwareVmDetails_PowerState._(super.v, super.n);
+  const VmwareVmDetails_PowerState._(super.value, super.name);
 }
 
 /// Possible values for vm boot option.
@@ -517,7 +518,7 @@ class VmwareVmDetails_BootOption extends $pb.ProtobufEnum {
   static VmwareVmDetails_BootOption? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const VmwareVmDetails_BootOption._(super.v, super.n);
+  const VmwareVmDetails_BootOption._(super.value, super.name);
 }
 
 /// Utilization report state.
@@ -551,7 +552,7 @@ class UtilizationReport_State extends $pb.ProtobufEnum {
   static UtilizationReport_State? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const UtilizationReport_State._(super.v, super.n);
+  const UtilizationReport_State._(super.value, super.name);
 }
 
 /// Report time frame options.
@@ -586,7 +587,7 @@ class UtilizationReport_TimeFrame extends $pb.ProtobufEnum {
   static UtilizationReport_TimeFrame? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const UtilizationReport_TimeFrame._(super.v, super.n);
+  const UtilizationReport_TimeFrame._(super.value, super.name);
 }
 
 /// License types used in OS adaptation.
@@ -619,7 +620,7 @@ class AppliedLicense_Type extends $pb.ProtobufEnum {
   static AppliedLicense_Type? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const AppliedLicense_Type._(super.v, super.n);
+  const AppliedLicense_Type._(super.value, super.name);
 }
 
 /// Possible types of node selection operators. Valid operators are IN for
@@ -650,7 +651,7 @@ class SchedulingNodeAffinity_Operator extends $pb.ProtobufEnum {
   static SchedulingNodeAffinity_Operator? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const SchedulingNodeAffinity_Operator._(super.v, super.n);
+  const SchedulingNodeAffinity_Operator._(super.value, super.name);
 }
 
 class ComputeScheduling_OnHostMaintenance extends $pb.ProtobufEnum {
@@ -680,7 +681,7 @@ class ComputeScheduling_OnHostMaintenance extends $pb.ProtobufEnum {
   static ComputeScheduling_OnHostMaintenance? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const ComputeScheduling_OnHostMaintenance._(super.v, super.n);
+  const ComputeScheduling_OnHostMaintenance._(super.value, super.name);
 }
 
 /// Defines whether the Instance should be automatically restarted whenever
@@ -715,7 +716,7 @@ class ComputeScheduling_RestartType extends $pb.ProtobufEnum {
   static ComputeScheduling_RestartType? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const ComputeScheduling_RestartType._(super.v, super.n);
+  const ComputeScheduling_RestartType._(super.value, super.name);
 }
 
 /// Represents possible warning codes.
@@ -741,7 +742,7 @@ class MigrationWarning_WarningCode extends $pb.ProtobufEnum {
   static MigrationWarning_WarningCode? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const MigrationWarning_WarningCode._(super.v, super.n);
+  const MigrationWarning_WarningCode._(super.value, super.name);
 }
 
 /// Possible values for AWS VM firmware.
@@ -771,7 +772,8 @@ class AwsSourceVmDetails_Firmware extends $pb.ProtobufEnum {
   static AwsSourceVmDetails_Firmware? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const AwsSourceVmDetails_Firmware._(super.v, super.n);
+  const AwsSourceVmDetails_Firmware._(super.value, super.name);
 }
 
-const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');
+const $core.bool _omitEnumNames =
+    $core.bool.fromEnvironment('protobuf.omit_enum_names');

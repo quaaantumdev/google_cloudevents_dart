@@ -1,20 +1,21 @@
+// This is a generated file - do not edit.
 //
-//  Generated code. Do not modify.
-//  source: google/events/cloud/gkebackup/v1/data.proto
-//
+// Generated from google/events/cloud/gkebackup/v1/data.proto.
+
 // @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
-// ignore_for_file: constant_identifier_names, library_prefixes
-// ignore_for_file: non_constant_identifier_names, prefer_final_fields
-// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
+// ignore_for_file: constant_identifier_names
+// ignore_for_file: curly_braces_in_flow_control_structures
+// ignore_for_file: deprecated_member_use_from_same_package, library_prefixes
+// ignore_for_file: non_constant_identifier_names
 
 import 'dart:core' as $core;
 
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/timestamp.pb.dart' as $2;
+import '../../../../protobuf/timestamp.pb.dart' as $0;
 import 'data.pbenum.dart';
 
 export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
@@ -26,19 +27,19 @@ class Namespaces extends $pb.GeneratedMessage {
   factory Namespaces({
     $core.Iterable<$core.String>? namespaces,
   }) {
-    final $result = create();
-    if (namespaces != null) {
-      $result.namespaces.addAll(namespaces);
-    }
-    return $result;
+    final result = create();
+    if (namespaces != null) result.namespaces.addAll(namespaces);
+    return result;
   }
-  Namespaces._() : super();
-  factory Namespaces.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Namespaces.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  Namespaces._();
+
+  factory Namespaces.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory Namespaces.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'Namespaces',
@@ -49,17 +50,18 @@ class Namespaces extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  Namespaces clone() => Namespaces()..mergeFromMessage(this);
+  Namespaces clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Namespaces copyWith(void Function(Namespaces) updates) =>
       super.copyWith((message) => updates(message as Namespaces)) as Namespaces;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Namespaces create() => Namespaces._();
+  @$core.override
   Namespaces createEmptyInstance() => create();
-  static $pb.PbList<Namespaces> createRepeated() => $pb.PbList<Namespaces>();
   @$core.pragma('dart2js:noInline')
   static Namespaces getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<Namespaces>(create);
@@ -76,22 +78,20 @@ class NamespacedName extends $pb.GeneratedMessage {
     $core.String? namespace,
     $core.String? name,
   }) {
-    final $result = create();
-    if (namespace != null) {
-      $result.namespace = namespace;
-    }
-    if (name != null) {
-      $result.name = name;
-    }
-    return $result;
+    final result = create();
+    if (namespace != null) result.namespace = namespace;
+    if (name != null) result.name = name;
+    return result;
   }
-  NamespacedName._() : super();
-  factory NamespacedName.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory NamespacedName.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  NamespacedName._();
+
+  factory NamespacedName.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory NamespacedName.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'NamespacedName',
@@ -103,19 +103,19 @@ class NamespacedName extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  NamespacedName clone() => NamespacedName()..mergeFromMessage(this);
+  NamespacedName clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   NamespacedName copyWith(void Function(NamespacedName) updates) =>
       super.copyWith((message) => updates(message as NamespacedName))
           as NamespacedName;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static NamespacedName create() => NamespacedName._();
+  @$core.override
   NamespacedName createEmptyInstance() => create();
-  static $pb.PbList<NamespacedName> createRepeated() =>
-      $pb.PbList<NamespacedName>();
   @$core.pragma('dart2js:noInline')
   static NamespacedName getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<NamespacedName>(create);
@@ -125,10 +125,7 @@ class NamespacedName extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get namespace => $_getSZ(0);
   @$pb.TagNumber(1)
-  set namespace($core.String v) {
-    $_setString(0, v);
-  }
-
+  set namespace($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasNamespace() => $_has(0);
   @$pb.TagNumber(1)
@@ -138,10 +135,7 @@ class NamespacedName extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get name => $_getSZ(1);
   @$pb.TagNumber(2)
-  set name($core.String v) {
-    $_setString(1, v);
-  }
-
+  set name($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasName() => $_has(1);
   @$pb.TagNumber(2)
@@ -153,44 +147,43 @@ class NamespacedNames extends $pb.GeneratedMessage {
   factory NamespacedNames({
     $core.Iterable<NamespacedName>? namespacedNames,
   }) {
-    final $result = create();
-    if (namespacedNames != null) {
-      $result.namespacedNames.addAll(namespacedNames);
-    }
-    return $result;
+    final result = create();
+    if (namespacedNames != null) result.namespacedNames.addAll(namespacedNames);
+    return result;
   }
-  NamespacedNames._() : super();
-  factory NamespacedNames.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory NamespacedNames.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  NamespacedNames._();
+
+  factory NamespacedNames.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory NamespacedNames.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'NamespacedNames',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.gkebackup.v1'),
       createEmptyInstance: create)
-    ..pc<NamespacedName>(
-        1, _omitFieldNames ? '' : 'namespacedNames', $pb.PbFieldType.PM,
+    ..pPM<NamespacedName>(1, _omitFieldNames ? '' : 'namespacedNames',
         subBuilder: NamespacedName.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  NamespacedNames clone() => NamespacedNames()..mergeFromMessage(this);
+  NamespacedNames clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   NamespacedNames copyWith(void Function(NamespacedNames) updates) =>
       super.copyWith((message) => updates(message as NamespacedNames))
           as NamespacedNames;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static NamespacedNames create() => NamespacedNames._();
+  @$core.override
   NamespacedNames createEmptyInstance() => create();
-  static $pb.PbList<NamespacedNames> createRepeated() =>
-      $pb.PbList<NamespacedNames>();
   @$core.pragma('dart2js:noInline')
   static NamespacedNames getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<NamespacedNames>(create);
@@ -207,19 +200,20 @@ class EncryptionKey extends $pb.GeneratedMessage {
   factory EncryptionKey({
     $core.String? gcpKmsEncryptionKey,
   }) {
-    final $result = create();
-    if (gcpKmsEncryptionKey != null) {
-      $result.gcpKmsEncryptionKey = gcpKmsEncryptionKey;
-    }
-    return $result;
+    final result = create();
+    if (gcpKmsEncryptionKey != null)
+      result.gcpKmsEncryptionKey = gcpKmsEncryptionKey;
+    return result;
   }
-  EncryptionKey._() : super();
-  factory EncryptionKey.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory EncryptionKey.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  EncryptionKey._();
+
+  factory EncryptionKey.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory EncryptionKey.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'EncryptionKey',
@@ -230,19 +224,19 @@ class EncryptionKey extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  EncryptionKey clone() => EncryptionKey()..mergeFromMessage(this);
+  EncryptionKey clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   EncryptionKey copyWith(void Function(EncryptionKey) updates) =>
       super.copyWith((message) => updates(message as EncryptionKey))
           as EncryptionKey;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static EncryptionKey create() => EncryptionKey._();
+  @$core.override
   EncryptionKey createEmptyInstance() => create();
-  static $pb.PbList<EncryptionKey> createRepeated() =>
-      $pb.PbList<EncryptionKey>();
   @$core.pragma('dart2js:noInline')
   static EncryptionKey getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<EncryptionKey>(create);
@@ -253,10 +247,7 @@ class EncryptionKey extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get gcpKmsEncryptionKey => $_getSZ(0);
   @$pb.TagNumber(1)
-  set gcpKmsEncryptionKey($core.String v) {
-    $_setString(0, v);
-  }
-
+  set gcpKmsEncryptionKey($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasGcpKmsEncryptionKey() => $_has(0);
   @$pb.TagNumber(1)
@@ -279,31 +270,24 @@ class Backup_ClusterMetadata extends $pb.GeneratedMessage {
     $core.String? gkeVersion,
     $core.String? anthosVersion,
   }) {
-    final $result = create();
-    if (cluster != null) {
-      $result.cluster = cluster;
-    }
-    if (k8sVersion != null) {
-      $result.k8sVersion = k8sVersion;
-    }
-    if (backupCrdVersions != null) {
-      $result.backupCrdVersions.addEntries(backupCrdVersions);
-    }
-    if (gkeVersion != null) {
-      $result.gkeVersion = gkeVersion;
-    }
-    if (anthosVersion != null) {
-      $result.anthosVersion = anthosVersion;
-    }
-    return $result;
+    final result = create();
+    if (cluster != null) result.cluster = cluster;
+    if (k8sVersion != null) result.k8sVersion = k8sVersion;
+    if (backupCrdVersions != null)
+      result.backupCrdVersions.addEntries(backupCrdVersions);
+    if (gkeVersion != null) result.gkeVersion = gkeVersion;
+    if (anthosVersion != null) result.anthosVersion = anthosVersion;
+    return result;
   }
-  Backup_ClusterMetadata._() : super();
-  factory Backup_ClusterMetadata.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Backup_ClusterMetadata.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  Backup_ClusterMetadata._();
+
+  factory Backup_ClusterMetadata.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory Backup_ClusterMetadata.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static const $core.Map<$core.int, Backup_ClusterMetadata_PlatformVersion>
       _Backup_ClusterMetadata_PlatformVersionByTag = {
@@ -330,28 +314,31 @@ class Backup_ClusterMetadata extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  Backup_ClusterMetadata clone() =>
-      Backup_ClusterMetadata()..mergeFromMessage(this);
+  Backup_ClusterMetadata clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Backup_ClusterMetadata copyWith(
           void Function(Backup_ClusterMetadata) updates) =>
       super.copyWith((message) => updates(message as Backup_ClusterMetadata))
           as Backup_ClusterMetadata;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Backup_ClusterMetadata create() => Backup_ClusterMetadata._();
+  @$core.override
   Backup_ClusterMetadata createEmptyInstance() => create();
-  static $pb.PbList<Backup_ClusterMetadata> createRepeated() =>
-      $pb.PbList<Backup_ClusterMetadata>();
   @$core.pragma('dart2js:noInline')
   static Backup_ClusterMetadata getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<Backup_ClusterMetadata>(create);
   static Backup_ClusterMetadata? _defaultInstance;
 
+  @$pb.TagNumber(4)
+  @$pb.TagNumber(5)
   Backup_ClusterMetadata_PlatformVersion whichPlatformVersion() =>
       _Backup_ClusterMetadata_PlatformVersionByTag[$_whichOneof(0)]!;
+  @$pb.TagNumber(4)
+  @$pb.TagNumber(5)
   void clearPlatformVersion() => $_clearField($_whichOneof(0));
 
   /// The source cluster from which this Backup was created.
@@ -365,10 +352,7 @@ class Backup_ClusterMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get cluster => $_getSZ(0);
   @$pb.TagNumber(1)
-  set cluster($core.String v) {
-    $_setString(0, v);
-  }
-
+  set cluster($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasCluster() => $_has(0);
   @$pb.TagNumber(1)
@@ -378,10 +362,7 @@ class Backup_ClusterMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get k8sVersion => $_getSZ(1);
   @$pb.TagNumber(2)
-  set k8sVersion($core.String v) {
-    $_setString(1, v);
-  }
-
+  set k8sVersion($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasK8sVersion() => $_has(1);
   @$pb.TagNumber(2)
@@ -395,10 +376,7 @@ class Backup_ClusterMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get gkeVersion => $_getSZ(3);
   @$pb.TagNumber(4)
-  set gkeVersion($core.String v) {
-    $_setString(3, v);
-  }
-
+  set gkeVersion($core.String value) => $_setString(3, value);
   @$pb.TagNumber(4)
   $core.bool hasGkeVersion() => $_has(3);
   @$pb.TagNumber(4)
@@ -408,10 +386,7 @@ class Backup_ClusterMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get anthosVersion => $_getSZ(4);
   @$pb.TagNumber(5)
-  set anthosVersion($core.String v) {
-    $_setString(4, v);
-  }
-
+  set anthosVersion($core.String value) => $_setString(4, value);
   @$pb.TagNumber(5)
   $core.bool hasAnthosVersion() => $_has(4);
   @$pb.TagNumber(5)
@@ -434,14 +409,14 @@ class Backup extends $pb.GeneratedMessage {
   factory Backup({
     $core.String? name,
     $core.String? uid,
-    $2.Timestamp? createTime,
-    $2.Timestamp? updateTime,
+    $0.Timestamp? createTime,
+    $0.Timestamp? updateTime,
     $core.bool? manual,
     $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.int? deleteLockDays,
-    $2.Timestamp? deleteLockExpireTime,
+    $0.Timestamp? deleteLockExpireTime,
     $core.int? retainDays,
-    $2.Timestamp? retainExpireTime,
+    $0.Timestamp? retainExpireTime,
     EncryptionKey? encryptionKey,
     $core.bool? allNamespaces,
     Namespaces? selectedNamespaces,
@@ -451,7 +426,7 @@ class Backup extends $pb.GeneratedMessage {
     Backup_ClusterMetadata? clusterMetadata,
     Backup_State? state,
     $core.String? stateReason,
-    $2.Timestamp? completeTime,
+    $0.Timestamp? completeTime,
     $core.int? resourceCount,
     $core.int? volumeCount,
     $fixnum.Int64? sizeBytes,
@@ -460,97 +435,50 @@ class Backup extends $pb.GeneratedMessage {
     $core.int? podCount,
     $fixnum.Int64? configBackupSizeBytes,
   }) {
-    final $result = create();
-    if (name != null) {
-      $result.name = name;
-    }
-    if (uid != null) {
-      $result.uid = uid;
-    }
-    if (createTime != null) {
-      $result.createTime = createTime;
-    }
-    if (updateTime != null) {
-      $result.updateTime = updateTime;
-    }
-    if (manual != null) {
-      $result.manual = manual;
-    }
-    if (labels != null) {
-      $result.labels.addEntries(labels);
-    }
-    if (deleteLockDays != null) {
-      $result.deleteLockDays = deleteLockDays;
-    }
-    if (deleteLockExpireTime != null) {
-      $result.deleteLockExpireTime = deleteLockExpireTime;
-    }
-    if (retainDays != null) {
-      $result.retainDays = retainDays;
-    }
-    if (retainExpireTime != null) {
-      $result.retainExpireTime = retainExpireTime;
-    }
-    if (encryptionKey != null) {
-      $result.encryptionKey = encryptionKey;
-    }
-    if (allNamespaces != null) {
-      $result.allNamespaces = allNamespaces;
-    }
-    if (selectedNamespaces != null) {
-      $result.selectedNamespaces = selectedNamespaces;
-    }
-    if (selectedApplications != null) {
-      $result.selectedApplications = selectedApplications;
-    }
-    if (containsVolumeData != null) {
-      $result.containsVolumeData = containsVolumeData;
-    }
-    if (containsSecrets != null) {
-      $result.containsSecrets = containsSecrets;
-    }
-    if (clusterMetadata != null) {
-      $result.clusterMetadata = clusterMetadata;
-    }
-    if (state != null) {
-      $result.state = state;
-    }
-    if (stateReason != null) {
-      $result.stateReason = stateReason;
-    }
-    if (completeTime != null) {
-      $result.completeTime = completeTime;
-    }
-    if (resourceCount != null) {
-      $result.resourceCount = resourceCount;
-    }
-    if (volumeCount != null) {
-      $result.volumeCount = volumeCount;
-    }
-    if (sizeBytes != null) {
-      $result.sizeBytes = sizeBytes;
-    }
-    if (etag != null) {
-      $result.etag = etag;
-    }
-    if (description != null) {
-      $result.description = description;
-    }
-    if (podCount != null) {
-      $result.podCount = podCount;
-    }
-    if (configBackupSizeBytes != null) {
-      $result.configBackupSizeBytes = configBackupSizeBytes;
-    }
-    return $result;
+    final result = create();
+    if (name != null) result.name = name;
+    if (uid != null) result.uid = uid;
+    if (createTime != null) result.createTime = createTime;
+    if (updateTime != null) result.updateTime = updateTime;
+    if (manual != null) result.manual = manual;
+    if (labels != null) result.labels.addEntries(labels);
+    if (deleteLockDays != null) result.deleteLockDays = deleteLockDays;
+    if (deleteLockExpireTime != null)
+      result.deleteLockExpireTime = deleteLockExpireTime;
+    if (retainDays != null) result.retainDays = retainDays;
+    if (retainExpireTime != null) result.retainExpireTime = retainExpireTime;
+    if (encryptionKey != null) result.encryptionKey = encryptionKey;
+    if (allNamespaces != null) result.allNamespaces = allNamespaces;
+    if (selectedNamespaces != null)
+      result.selectedNamespaces = selectedNamespaces;
+    if (selectedApplications != null)
+      result.selectedApplications = selectedApplications;
+    if (containsVolumeData != null)
+      result.containsVolumeData = containsVolumeData;
+    if (containsSecrets != null) result.containsSecrets = containsSecrets;
+    if (clusterMetadata != null) result.clusterMetadata = clusterMetadata;
+    if (state != null) result.state = state;
+    if (stateReason != null) result.stateReason = stateReason;
+    if (completeTime != null) result.completeTime = completeTime;
+    if (resourceCount != null) result.resourceCount = resourceCount;
+    if (volumeCount != null) result.volumeCount = volumeCount;
+    if (sizeBytes != null) result.sizeBytes = sizeBytes;
+    if (etag != null) result.etag = etag;
+    if (description != null) result.description = description;
+    if (podCount != null) result.podCount = podCount;
+    if (configBackupSizeBytes != null)
+      result.configBackupSizeBytes = configBackupSizeBytes;
+    return result;
   }
-  Backup._() : super();
-  factory Backup.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Backup.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  Backup._();
+
+  factory Backup.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory Backup.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static const $core.Map<$core.int, Backup_BackupScope>
       _Backup_BackupScopeByTag = {
@@ -567,23 +495,22 @@ class Backup extends $pb.GeneratedMessage {
     ..oo(0, [12, 13, 14])
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'uid')
-    ..aOM<$2.Timestamp>(3, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(4, _omitFieldNames ? '' : 'updateTime',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$0.Timestamp>(3, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(4, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $0.Timestamp.create)
     ..aOB(5, _omitFieldNames ? '' : 'manual')
     ..m<$core.String, $core.String>(6, _omitFieldNames ? '' : 'labels',
         entryClassName: 'Backup.LabelsEntry',
         keyFieldType: $pb.PbFieldType.OS,
         valueFieldType: $pb.PbFieldType.OS,
         packageName: const $pb.PackageName('google.events.cloud.gkebackup.v1'))
-    ..a<$core.int>(
-        7, _omitFieldNames ? '' : 'deleteLockDays', $pb.PbFieldType.O3)
-    ..aOM<$2.Timestamp>(8, _omitFieldNames ? '' : 'deleteLockExpireTime',
-        subBuilder: $2.Timestamp.create)
-    ..a<$core.int>(9, _omitFieldNames ? '' : 'retainDays', $pb.PbFieldType.O3)
-    ..aOM<$2.Timestamp>(10, _omitFieldNames ? '' : 'retainExpireTime',
-        subBuilder: $2.Timestamp.create)
+    ..aI(7, _omitFieldNames ? '' : 'deleteLockDays')
+    ..aOM<$0.Timestamp>(8, _omitFieldNames ? '' : 'deleteLockExpireTime',
+        subBuilder: $0.Timestamp.create)
+    ..aI(9, _omitFieldNames ? '' : 'retainDays')
+    ..aOM<$0.Timestamp>(10, _omitFieldNames ? '' : 'retainExpireTime',
+        subBuilder: $0.Timestamp.create)
     ..aOM<EncryptionKey>(11, _omitFieldNames ? '' : 'encryptionKey',
         subBuilder: EncryptionKey.create)
     ..aOB(12, _omitFieldNames ? '' : 'allNamespaces')
@@ -595,42 +522,46 @@ class Backup extends $pb.GeneratedMessage {
     ..aOB(16, _omitFieldNames ? '' : 'containsSecrets')
     ..aOM<Backup_ClusterMetadata>(17, _omitFieldNames ? '' : 'clusterMetadata',
         subBuilder: Backup_ClusterMetadata.create)
-    ..e<Backup_State>(18, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
-        defaultOrMaker: Backup_State.STATE_UNSPECIFIED,
-        valueOf: Backup_State.valueOf,
+    ..aE<Backup_State>(18, _omitFieldNames ? '' : 'state',
         enumValues: Backup_State.values)
     ..aOS(19, _omitFieldNames ? '' : 'stateReason')
-    ..aOM<$2.Timestamp>(20, _omitFieldNames ? '' : 'completeTime',
-        subBuilder: $2.Timestamp.create)
-    ..a<$core.int>(
-        21, _omitFieldNames ? '' : 'resourceCount', $pb.PbFieldType.O3)
-    ..a<$core.int>(22, _omitFieldNames ? '' : 'volumeCount', $pb.PbFieldType.O3)
+    ..aOM<$0.Timestamp>(20, _omitFieldNames ? '' : 'completeTime',
+        subBuilder: $0.Timestamp.create)
+    ..aI(21, _omitFieldNames ? '' : 'resourceCount')
+    ..aI(22, _omitFieldNames ? '' : 'volumeCount')
     ..aInt64(23, _omitFieldNames ? '' : 'sizeBytes')
     ..aOS(24, _omitFieldNames ? '' : 'etag')
     ..aOS(25, _omitFieldNames ? '' : 'description')
-    ..a<$core.int>(26, _omitFieldNames ? '' : 'podCount', $pb.PbFieldType.O3)
+    ..aI(26, _omitFieldNames ? '' : 'podCount')
     ..aInt64(27, _omitFieldNames ? '' : 'configBackupSizeBytes')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  Backup clone() => Backup()..mergeFromMessage(this);
+  Backup clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Backup copyWith(void Function(Backup) updates) =>
       super.copyWith((message) => updates(message as Backup)) as Backup;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Backup create() => Backup._();
+  @$core.override
   Backup createEmptyInstance() => create();
-  static $pb.PbList<Backup> createRepeated() => $pb.PbList<Backup>();
   @$core.pragma('dart2js:noInline')
   static Backup getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Backup>(create);
   static Backup? _defaultInstance;
 
+  @$pb.TagNumber(12)
+  @$pb.TagNumber(13)
+  @$pb.TagNumber(14)
   Backup_BackupScope whichBackupScope() =>
       _Backup_BackupScopeByTag[$_whichOneof(0)]!;
+  @$pb.TagNumber(12)
+  @$pb.TagNumber(13)
+  @$pb.TagNumber(14)
   void clearBackupScope() => $_clearField($_whichOneof(0));
 
   /// Output only. The fully qualified name of the Backup.
@@ -638,10 +569,7 @@ class Backup extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) {
-    $_setString(0, v);
-  }
-
+  set name($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -652,10 +580,7 @@ class Backup extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get uid => $_getSZ(1);
   @$pb.TagNumber(2)
-  set uid($core.String v) {
-    $_setString(1, v);
-  }
-
+  set uid($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasUid() => $_has(1);
   @$pb.TagNumber(2)
@@ -663,33 +588,27 @@ class Backup extends $pb.GeneratedMessage {
 
   /// Output only. The timestamp when this Backup resource was created.
   @$pb.TagNumber(3)
-  $2.Timestamp get createTime => $_getN(2);
+  $0.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($2.Timestamp v) {
-    $_setField(3, v);
-  }
-
+  set createTime($0.Timestamp value) => $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => $_clearField(3);
   @$pb.TagNumber(3)
-  $2.Timestamp ensureCreateTime() => $_ensure(2);
+  $0.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// Output only. The timestamp when this Backup resource was last updated.
   @$pb.TagNumber(4)
-  $2.Timestamp get updateTime => $_getN(3);
+  $0.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(4)
-  set updateTime($2.Timestamp v) {
-    $_setField(4, v);
-  }
-
+  set updateTime($0.Timestamp value) => $_setField(4, value);
   @$pb.TagNumber(4)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateTime() => $_clearField(4);
   @$pb.TagNumber(4)
-  $2.Timestamp ensureUpdateTime() => $_ensure(3);
+  $0.Timestamp ensureUpdateTime() => $_ensure(3);
 
   /// Output only. This flag indicates whether this Backup resource was created
   /// manually by a user or via a schedule in the BackupPlan. A value of True
@@ -697,10 +616,7 @@ class Backup extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool get manual => $_getBF(4);
   @$pb.TagNumber(5)
-  set manual($core.bool v) {
-    $_setBool(4, v);
-  }
-
+  set manual($core.bool value) => $_setBool(4, value);
   @$pb.TagNumber(5)
   $core.bool hasManual() => $_has(4);
   @$pb.TagNumber(5)
@@ -723,10 +639,7 @@ class Backup extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.int get deleteLockDays => $_getIZ(6);
   @$pb.TagNumber(7)
-  set deleteLockDays($core.int v) {
-    $_setSignedInt32(6, v);
-  }
-
+  set deleteLockDays($core.int value) => $_setSignedInt32(6, value);
   @$pb.TagNumber(7)
   $core.bool hasDeleteLockDays() => $_has(6);
   @$pb.TagNumber(7)
@@ -736,18 +649,15 @@ class Backup extends $pb.GeneratedMessage {
   /// backup (calculated from create_time +
   /// [delete_lock_days][google.cloud.gkebackup.v1.Backup.delete_lock_days]).
   @$pb.TagNumber(8)
-  $2.Timestamp get deleteLockExpireTime => $_getN(7);
+  $0.Timestamp get deleteLockExpireTime => $_getN(7);
   @$pb.TagNumber(8)
-  set deleteLockExpireTime($2.Timestamp v) {
-    $_setField(8, v);
-  }
-
+  set deleteLockExpireTime($0.Timestamp value) => $_setField(8, value);
   @$pb.TagNumber(8)
   $core.bool hasDeleteLockExpireTime() => $_has(7);
   @$pb.TagNumber(8)
   void clearDeleteLockExpireTime() => $_clearField(8);
   @$pb.TagNumber(8)
-  $2.Timestamp ensureDeleteLockExpireTime() => $_ensure(7);
+  $0.Timestamp ensureDeleteLockExpireTime() => $_ensure(7);
 
   /// The age (in days) after which this Backup will be automatically deleted.
   /// Must be an integer value >= 0:
@@ -765,10 +675,7 @@ class Backup extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.int get retainDays => $_getIZ(8);
   @$pb.TagNumber(9)
-  set retainDays($core.int v) {
-    $_setSignedInt32(8, v);
-  }
-
+  set retainDays($core.int value) => $_setSignedInt32(8, value);
   @$pb.TagNumber(9)
   $core.bool hasRetainDays() => $_has(8);
   @$pb.TagNumber(9)
@@ -778,18 +685,15 @@ class Backup extends $pb.GeneratedMessage {
   /// (calculated from create_time +
   /// [retain_days][google.cloud.gkebackup.v1.Backup.retain_days]).
   @$pb.TagNumber(10)
-  $2.Timestamp get retainExpireTime => $_getN(9);
+  $0.Timestamp get retainExpireTime => $_getN(9);
   @$pb.TagNumber(10)
-  set retainExpireTime($2.Timestamp v) {
-    $_setField(10, v);
-  }
-
+  set retainExpireTime($0.Timestamp value) => $_setField(10, value);
   @$pb.TagNumber(10)
   $core.bool hasRetainExpireTime() => $_has(9);
   @$pb.TagNumber(10)
   void clearRetainExpireTime() => $_clearField(10);
   @$pb.TagNumber(10)
-  $2.Timestamp ensureRetainExpireTime() => $_ensure(9);
+  $0.Timestamp ensureRetainExpireTime() => $_ensure(9);
 
   /// Output only. The customer managed encryption key that was used to encrypt
   /// the Backup's artifacts.  Inherited from the parent BackupPlan's
@@ -798,10 +702,7 @@ class Backup extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   EncryptionKey get encryptionKey => $_getN(10);
   @$pb.TagNumber(11)
-  set encryptionKey(EncryptionKey v) {
-    $_setField(11, v);
-  }
-
+  set encryptionKey(EncryptionKey value) => $_setField(11, value);
   @$pb.TagNumber(11)
   $core.bool hasEncryptionKey() => $_has(10);
   @$pb.TagNumber(11)
@@ -813,10 +714,7 @@ class Backup extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.bool get allNamespaces => $_getBF(11);
   @$pb.TagNumber(12)
-  set allNamespaces($core.bool v) {
-    $_setBool(11, v);
-  }
-
+  set allNamespaces($core.bool value) => $_setBool(11, value);
   @$pb.TagNumber(12)
   $core.bool hasAllNamespaces() => $_has(11);
   @$pb.TagNumber(12)
@@ -827,10 +725,7 @@ class Backup extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   Namespaces get selectedNamespaces => $_getN(12);
   @$pb.TagNumber(13)
-  set selectedNamespaces(Namespaces v) {
-    $_setField(13, v);
-  }
-
+  set selectedNamespaces(Namespaces value) => $_setField(13, value);
   @$pb.TagNumber(13)
   $core.bool hasSelectedNamespaces() => $_has(12);
   @$pb.TagNumber(13)
@@ -843,10 +738,7 @@ class Backup extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   NamespacedNames get selectedApplications => $_getN(13);
   @$pb.TagNumber(14)
-  set selectedApplications(NamespacedNames v) {
-    $_setField(14, v);
-  }
-
+  set selectedApplications(NamespacedNames value) => $_setField(14, value);
   @$pb.TagNumber(14)
   $core.bool hasSelectedApplications() => $_has(13);
   @$pb.TagNumber(14)
@@ -861,10 +753,7 @@ class Backup extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   $core.bool get containsVolumeData => $_getBF(14);
   @$pb.TagNumber(15)
-  set containsVolumeData($core.bool v) {
-    $_setBool(14, v);
-  }
-
+  set containsVolumeData($core.bool value) => $_setBool(14, value);
   @$pb.TagNumber(15)
   $core.bool hasContainsVolumeData() => $_has(14);
   @$pb.TagNumber(15)
@@ -877,10 +766,7 @@ class Backup extends $pb.GeneratedMessage {
   @$pb.TagNumber(16)
   $core.bool get containsSecrets => $_getBF(15);
   @$pb.TagNumber(16)
-  set containsSecrets($core.bool v) {
-    $_setBool(15, v);
-  }
-
+  set containsSecrets($core.bool value) => $_setBool(15, value);
   @$pb.TagNumber(16)
   $core.bool hasContainsSecrets() => $_has(15);
   @$pb.TagNumber(16)
@@ -891,10 +777,7 @@ class Backup extends $pb.GeneratedMessage {
   @$pb.TagNumber(17)
   Backup_ClusterMetadata get clusterMetadata => $_getN(16);
   @$pb.TagNumber(17)
-  set clusterMetadata(Backup_ClusterMetadata v) {
-    $_setField(17, v);
-  }
-
+  set clusterMetadata(Backup_ClusterMetadata value) => $_setField(17, value);
   @$pb.TagNumber(17)
   $core.bool hasClusterMetadata() => $_has(16);
   @$pb.TagNumber(17)
@@ -906,10 +789,7 @@ class Backup extends $pb.GeneratedMessage {
   @$pb.TagNumber(18)
   Backup_State get state => $_getN(17);
   @$pb.TagNumber(18)
-  set state(Backup_State v) {
-    $_setField(18, v);
-  }
-
+  set state(Backup_State value) => $_setField(18, value);
   @$pb.TagNumber(18)
   $core.bool hasState() => $_has(17);
   @$pb.TagNumber(18)
@@ -920,10 +800,7 @@ class Backup extends $pb.GeneratedMessage {
   @$pb.TagNumber(19)
   $core.String get stateReason => $_getSZ(18);
   @$pb.TagNumber(19)
-  set stateReason($core.String v) {
-    $_setString(18, v);
-  }
-
+  set stateReason($core.String value) => $_setString(18, value);
   @$pb.TagNumber(19)
   $core.bool hasStateReason() => $_has(18);
   @$pb.TagNumber(19)
@@ -931,28 +808,22 @@ class Backup extends $pb.GeneratedMessage {
 
   /// Output only. Completion time of the Backup
   @$pb.TagNumber(20)
-  $2.Timestamp get completeTime => $_getN(19);
+  $0.Timestamp get completeTime => $_getN(19);
   @$pb.TagNumber(20)
-  set completeTime($2.Timestamp v) {
-    $_setField(20, v);
-  }
-
+  set completeTime($0.Timestamp value) => $_setField(20, value);
   @$pb.TagNumber(20)
   $core.bool hasCompleteTime() => $_has(19);
   @$pb.TagNumber(20)
   void clearCompleteTime() => $_clearField(20);
   @$pb.TagNumber(20)
-  $2.Timestamp ensureCompleteTime() => $_ensure(19);
+  $0.Timestamp ensureCompleteTime() => $_ensure(19);
 
   /// Output only. The total number of Kubernetes resources included in the
   /// Backup.
   @$pb.TagNumber(21)
   $core.int get resourceCount => $_getIZ(20);
   @$pb.TagNumber(21)
-  set resourceCount($core.int v) {
-    $_setSignedInt32(20, v);
-  }
-
+  set resourceCount($core.int value) => $_setSignedInt32(20, value);
   @$pb.TagNumber(21)
   $core.bool hasResourceCount() => $_has(20);
   @$pb.TagNumber(21)
@@ -962,10 +833,7 @@ class Backup extends $pb.GeneratedMessage {
   @$pb.TagNumber(22)
   $core.int get volumeCount => $_getIZ(21);
   @$pb.TagNumber(22)
-  set volumeCount($core.int v) {
-    $_setSignedInt32(21, v);
-  }
-
+  set volumeCount($core.int value) => $_setSignedInt32(21, value);
   @$pb.TagNumber(22)
   $core.bool hasVolumeCount() => $_has(21);
   @$pb.TagNumber(22)
@@ -976,10 +844,7 @@ class Backup extends $pb.GeneratedMessage {
   @$pb.TagNumber(23)
   $fixnum.Int64 get sizeBytes => $_getI64(22);
   @$pb.TagNumber(23)
-  set sizeBytes($fixnum.Int64 v) {
-    $_setInt64(22, v);
-  }
-
+  set sizeBytes($fixnum.Int64 value) => $_setInt64(22, value);
   @$pb.TagNumber(23)
   $core.bool hasSizeBytes() => $_has(22);
   @$pb.TagNumber(23)
@@ -996,10 +861,7 @@ class Backup extends $pb.GeneratedMessage {
   @$pb.TagNumber(24)
   $core.String get etag => $_getSZ(23);
   @$pb.TagNumber(24)
-  set etag($core.String v) {
-    $_setString(23, v);
-  }
-
+  set etag($core.String value) => $_setString(23, value);
   @$pb.TagNumber(24)
   $core.bool hasEtag() => $_has(23);
   @$pb.TagNumber(24)
@@ -1009,10 +871,7 @@ class Backup extends $pb.GeneratedMessage {
   @$pb.TagNumber(25)
   $core.String get description => $_getSZ(24);
   @$pb.TagNumber(25)
-  set description($core.String v) {
-    $_setString(24, v);
-  }
-
+  set description($core.String value) => $_setString(24, value);
   @$pb.TagNumber(25)
   $core.bool hasDescription() => $_has(24);
   @$pb.TagNumber(25)
@@ -1022,10 +881,7 @@ class Backup extends $pb.GeneratedMessage {
   @$pb.TagNumber(26)
   $core.int get podCount => $_getIZ(25);
   @$pb.TagNumber(26)
-  set podCount($core.int v) {
-    $_setSignedInt32(25, v);
-  }
-
+  set podCount($core.int value) => $_setSignedInt32(25, value);
   @$pb.TagNumber(26)
   $core.bool hasPodCount() => $_has(25);
   @$pb.TagNumber(26)
@@ -1035,10 +891,7 @@ class Backup extends $pb.GeneratedMessage {
   @$pb.TagNumber(27)
   $fixnum.Int64 get configBackupSizeBytes => $_getI64(26);
   @$pb.TagNumber(27)
-  set configBackupSizeBytes($fixnum.Int64 v) {
-    $_setInt64(26, v);
-  }
-
+  set configBackupSizeBytes($fixnum.Int64 value) => $_setInt64(26, value);
   @$pb.TagNumber(27)
   $core.bool hasConfigBackupSizeBytes() => $_has(26);
   @$pb.TagNumber(27)
@@ -1052,41 +905,35 @@ class BackupPlan_RetentionPolicy extends $pb.GeneratedMessage {
     $core.int? backupRetainDays,
     $core.bool? locked,
   }) {
-    final $result = create();
-    if (backupDeleteLockDays != null) {
-      $result.backupDeleteLockDays = backupDeleteLockDays;
-    }
-    if (backupRetainDays != null) {
-      $result.backupRetainDays = backupRetainDays;
-    }
-    if (locked != null) {
-      $result.locked = locked;
-    }
-    return $result;
+    final result = create();
+    if (backupDeleteLockDays != null)
+      result.backupDeleteLockDays = backupDeleteLockDays;
+    if (backupRetainDays != null) result.backupRetainDays = backupRetainDays;
+    if (locked != null) result.locked = locked;
+    return result;
   }
-  BackupPlan_RetentionPolicy._() : super();
-  factory BackupPlan_RetentionPolicy.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory BackupPlan_RetentionPolicy.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  BackupPlan_RetentionPolicy._();
+
+  factory BackupPlan_RetentionPolicy.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory BackupPlan_RetentionPolicy.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'BackupPlan.RetentionPolicy',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.gkebackup.v1'),
       createEmptyInstance: create)
-    ..a<$core.int>(
-        1, _omitFieldNames ? '' : 'backupDeleteLockDays', $pb.PbFieldType.O3)
-    ..a<$core.int>(
-        2, _omitFieldNames ? '' : 'backupRetainDays', $pb.PbFieldType.O3)
+    ..aI(1, _omitFieldNames ? '' : 'backupDeleteLockDays')
+    ..aI(2, _omitFieldNames ? '' : 'backupRetainDays')
     ..aOB(3, _omitFieldNames ? '' : 'locked')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  BackupPlan_RetentionPolicy clone() =>
-      BackupPlan_RetentionPolicy()..mergeFromMessage(this);
+  BackupPlan_RetentionPolicy clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   BackupPlan_RetentionPolicy copyWith(
           void Function(BackupPlan_RetentionPolicy) updates) =>
@@ -1094,13 +941,13 @@ class BackupPlan_RetentionPolicy extends $pb.GeneratedMessage {
               (message) => updates(message as BackupPlan_RetentionPolicy))
           as BackupPlan_RetentionPolicy;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static BackupPlan_RetentionPolicy create() => BackupPlan_RetentionPolicy._();
+  @$core.override
   BackupPlan_RetentionPolicy createEmptyInstance() => create();
-  static $pb.PbList<BackupPlan_RetentionPolicy> createRepeated() =>
-      $pb.PbList<BackupPlan_RetentionPolicy>();
   @$core.pragma('dart2js:noInline')
   static BackupPlan_RetentionPolicy getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<BackupPlan_RetentionPolicy>(create);
@@ -1118,10 +965,7 @@ class BackupPlan_RetentionPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.int get backupDeleteLockDays => $_getIZ(0);
   @$pb.TagNumber(1)
-  set backupDeleteLockDays($core.int v) {
-    $_setSignedInt32(0, v);
-  }
-
+  set backupDeleteLockDays($core.int value) => $_setSignedInt32(0, value);
   @$pb.TagNumber(1)
   $core.bool hasBackupDeleteLockDays() => $_has(0);
   @$pb.TagNumber(1)
@@ -1148,10 +992,7 @@ class BackupPlan_RetentionPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get backupRetainDays => $_getIZ(1);
   @$pb.TagNumber(2)
-  set backupRetainDays($core.int v) {
-    $_setSignedInt32(1, v);
-  }
-
+  set backupRetainDays($core.int value) => $_setSignedInt32(1, value);
   @$pb.TagNumber(2)
   $core.bool hasBackupRetainDays() => $_has(1);
   @$pb.TagNumber(2)
@@ -1165,10 +1006,7 @@ class BackupPlan_RetentionPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool get locked => $_getBF(2);
   @$pb.TagNumber(3)
-  set locked($core.bool v) {
-    $_setBool(2, v);
-  }
-
+  set locked($core.bool value) => $_setBool(2, value);
   @$pb.TagNumber(3)
   $core.bool hasLocked() => $_has(2);
   @$pb.TagNumber(3)
@@ -1182,22 +1020,20 @@ class BackupPlan_Schedule extends $pb.GeneratedMessage {
     $core.String? cronSchedule,
     $core.bool? paused,
   }) {
-    final $result = create();
-    if (cronSchedule != null) {
-      $result.cronSchedule = cronSchedule;
-    }
-    if (paused != null) {
-      $result.paused = paused;
-    }
-    return $result;
+    final result = create();
+    if (cronSchedule != null) result.cronSchedule = cronSchedule;
+    if (paused != null) result.paused = paused;
+    return result;
   }
-  BackupPlan_Schedule._() : super();
-  factory BackupPlan_Schedule.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory BackupPlan_Schedule.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  BackupPlan_Schedule._();
+
+  factory BackupPlan_Schedule.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory BackupPlan_Schedule.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'BackupPlan.Schedule',
@@ -1209,19 +1045,19 @@ class BackupPlan_Schedule extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  BackupPlan_Schedule clone() => BackupPlan_Schedule()..mergeFromMessage(this);
+  BackupPlan_Schedule clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   BackupPlan_Schedule copyWith(void Function(BackupPlan_Schedule) updates) =>
       super.copyWith((message) => updates(message as BackupPlan_Schedule))
           as BackupPlan_Schedule;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static BackupPlan_Schedule create() => BackupPlan_Schedule._();
+  @$core.override
   BackupPlan_Schedule createEmptyInstance() => create();
-  static $pb.PbList<BackupPlan_Schedule> createRepeated() =>
-      $pb.PbList<BackupPlan_Schedule>();
   @$core.pragma('dart2js:noInline')
   static BackupPlan_Schedule getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<BackupPlan_Schedule>(create);
@@ -1237,10 +1073,7 @@ class BackupPlan_Schedule extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get cronSchedule => $_getSZ(0);
   @$pb.TagNumber(1)
-  set cronSchedule($core.String v) {
-    $_setString(0, v);
-  }
-
+  set cronSchedule($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasCronSchedule() => $_has(0);
   @$pb.TagNumber(1)
@@ -1253,10 +1086,7 @@ class BackupPlan_Schedule extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool get paused => $_getBF(1);
   @$pb.TagNumber(2)
-  set paused($core.bool v) {
-    $_setBool(1, v);
-  }
-
+  set paused($core.bool value) => $_setBool(1, value);
   @$pb.TagNumber(2)
   $core.bool hasPaused() => $_has(1);
   @$pb.TagNumber(2)
@@ -1281,34 +1111,26 @@ class BackupPlan_BackupConfig extends $pb.GeneratedMessage {
     $core.bool? includeSecrets,
     EncryptionKey? encryptionKey,
   }) {
-    final $result = create();
-    if (allNamespaces != null) {
-      $result.allNamespaces = allNamespaces;
-    }
-    if (selectedNamespaces != null) {
-      $result.selectedNamespaces = selectedNamespaces;
-    }
-    if (selectedApplications != null) {
-      $result.selectedApplications = selectedApplications;
-    }
-    if (includeVolumeData != null) {
-      $result.includeVolumeData = includeVolumeData;
-    }
-    if (includeSecrets != null) {
-      $result.includeSecrets = includeSecrets;
-    }
-    if (encryptionKey != null) {
-      $result.encryptionKey = encryptionKey;
-    }
-    return $result;
+    final result = create();
+    if (allNamespaces != null) result.allNamespaces = allNamespaces;
+    if (selectedNamespaces != null)
+      result.selectedNamespaces = selectedNamespaces;
+    if (selectedApplications != null)
+      result.selectedApplications = selectedApplications;
+    if (includeVolumeData != null) result.includeVolumeData = includeVolumeData;
+    if (includeSecrets != null) result.includeSecrets = includeSecrets;
+    if (encryptionKey != null) result.encryptionKey = encryptionKey;
+    return result;
   }
-  BackupPlan_BackupConfig._() : super();
-  factory BackupPlan_BackupConfig.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory BackupPlan_BackupConfig.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  BackupPlan_BackupConfig._();
+
+  factory BackupPlan_BackupConfig.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory BackupPlan_BackupConfig.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static const $core.Map<$core.int, BackupPlan_BackupConfig_BackupScope>
       _BackupPlan_BackupConfig_BackupScopeByTag = {
@@ -1335,38 +1157,40 @@ class BackupPlan_BackupConfig extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  BackupPlan_BackupConfig clone() =>
-      BackupPlan_BackupConfig()..mergeFromMessage(this);
+  BackupPlan_BackupConfig clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   BackupPlan_BackupConfig copyWith(
           void Function(BackupPlan_BackupConfig) updates) =>
       super.copyWith((message) => updates(message as BackupPlan_BackupConfig))
           as BackupPlan_BackupConfig;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static BackupPlan_BackupConfig create() => BackupPlan_BackupConfig._();
+  @$core.override
   BackupPlan_BackupConfig createEmptyInstance() => create();
-  static $pb.PbList<BackupPlan_BackupConfig> createRepeated() =>
-      $pb.PbList<BackupPlan_BackupConfig>();
   @$core.pragma('dart2js:noInline')
   static BackupPlan_BackupConfig getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<BackupPlan_BackupConfig>(create);
   static BackupPlan_BackupConfig? _defaultInstance;
 
+  @$pb.TagNumber(1)
+  @$pb.TagNumber(2)
+  @$pb.TagNumber(3)
   BackupPlan_BackupConfig_BackupScope whichBackupScope() =>
       _BackupPlan_BackupConfig_BackupScopeByTag[$_whichOneof(0)]!;
+  @$pb.TagNumber(1)
+  @$pb.TagNumber(2)
+  @$pb.TagNumber(3)
   void clearBackupScope() => $_clearField($_whichOneof(0));
 
   /// If True, include all namespaced resources
   @$pb.TagNumber(1)
   $core.bool get allNamespaces => $_getBF(0);
   @$pb.TagNumber(1)
-  set allNamespaces($core.bool v) {
-    $_setBool(0, v);
-  }
-
+  set allNamespaces($core.bool value) => $_setBool(0, value);
   @$pb.TagNumber(1)
   $core.bool hasAllNamespaces() => $_has(0);
   @$pb.TagNumber(1)
@@ -1376,10 +1200,7 @@ class BackupPlan_BackupConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   Namespaces get selectedNamespaces => $_getN(1);
   @$pb.TagNumber(2)
-  set selectedNamespaces(Namespaces v) {
-    $_setField(2, v);
-  }
-
+  set selectedNamespaces(Namespaces value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasSelectedNamespaces() => $_has(1);
   @$pb.TagNumber(2)
@@ -1392,10 +1213,7 @@ class BackupPlan_BackupConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   NamespacedNames get selectedApplications => $_getN(2);
   @$pb.TagNumber(3)
-  set selectedApplications(NamespacedNames v) {
-    $_setField(3, v);
-  }
-
+  set selectedApplications(NamespacedNames value) => $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasSelectedApplications() => $_has(2);
   @$pb.TagNumber(3)
@@ -1410,10 +1228,7 @@ class BackupPlan_BackupConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool get includeVolumeData => $_getBF(3);
   @$pb.TagNumber(4)
-  set includeVolumeData($core.bool v) {
-    $_setBool(3, v);
-  }
-
+  set includeVolumeData($core.bool value) => $_setBool(3, value);
   @$pb.TagNumber(4)
   $core.bool hasIncludeVolumeData() => $_has(3);
   @$pb.TagNumber(4)
@@ -1426,10 +1241,7 @@ class BackupPlan_BackupConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool get includeSecrets => $_getBF(4);
   @$pb.TagNumber(5)
-  set includeSecrets($core.bool v) {
-    $_setBool(4, v);
-  }
-
+  set includeSecrets($core.bool value) => $_setBool(4, value);
   @$pb.TagNumber(5)
   $core.bool hasIncludeSecrets() => $_has(4);
   @$pb.TagNumber(5)
@@ -1443,10 +1255,7 @@ class BackupPlan_BackupConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   EncryptionKey get encryptionKey => $_getN(5);
   @$pb.TagNumber(6)
-  set encryptionKey(EncryptionKey v) {
-    $_setField(6, v);
-  }
-
+  set encryptionKey(EncryptionKey value) => $_setField(6, value);
   @$pb.TagNumber(6)
   $core.bool hasEncryptionKey() => $_has(5);
   @$pb.TagNumber(6)
@@ -1460,8 +1269,8 @@ class BackupPlan extends $pb.GeneratedMessage {
   factory BackupPlan({
     $core.String? name,
     $core.String? uid,
-    $2.Timestamp? createTime,
-    $2.Timestamp? updateTime,
+    $0.Timestamp? createTime,
+    $0.Timestamp? updateTime,
     $core.String? description,
     $core.String? cluster,
     BackupPlan_RetentionPolicy? retentionPolicy,
@@ -1472,55 +1281,31 @@ class BackupPlan extends $pb.GeneratedMessage {
     BackupPlan_BackupConfig? backupConfig,
     $core.int? protectedPodCount,
   }) {
-    final $result = create();
-    if (name != null) {
-      $result.name = name;
-    }
-    if (uid != null) {
-      $result.uid = uid;
-    }
-    if (createTime != null) {
-      $result.createTime = createTime;
-    }
-    if (updateTime != null) {
-      $result.updateTime = updateTime;
-    }
-    if (description != null) {
-      $result.description = description;
-    }
-    if (cluster != null) {
-      $result.cluster = cluster;
-    }
-    if (retentionPolicy != null) {
-      $result.retentionPolicy = retentionPolicy;
-    }
-    if (labels != null) {
-      $result.labels.addEntries(labels);
-    }
-    if (backupSchedule != null) {
-      $result.backupSchedule = backupSchedule;
-    }
-    if (etag != null) {
-      $result.etag = etag;
-    }
-    if (deactivated != null) {
-      $result.deactivated = deactivated;
-    }
-    if (backupConfig != null) {
-      $result.backupConfig = backupConfig;
-    }
-    if (protectedPodCount != null) {
-      $result.protectedPodCount = protectedPodCount;
-    }
-    return $result;
+    final result = create();
+    if (name != null) result.name = name;
+    if (uid != null) result.uid = uid;
+    if (createTime != null) result.createTime = createTime;
+    if (updateTime != null) result.updateTime = updateTime;
+    if (description != null) result.description = description;
+    if (cluster != null) result.cluster = cluster;
+    if (retentionPolicy != null) result.retentionPolicy = retentionPolicy;
+    if (labels != null) result.labels.addEntries(labels);
+    if (backupSchedule != null) result.backupSchedule = backupSchedule;
+    if (etag != null) result.etag = etag;
+    if (deactivated != null) result.deactivated = deactivated;
+    if (backupConfig != null) result.backupConfig = backupConfig;
+    if (protectedPodCount != null) result.protectedPodCount = protectedPodCount;
+    return result;
   }
-  BackupPlan._() : super();
-  factory BackupPlan.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory BackupPlan.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  BackupPlan._();
+
+  factory BackupPlan.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory BackupPlan.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'BackupPlan',
@@ -1529,10 +1314,10 @@ class BackupPlan extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'uid')
-    ..aOM<$2.Timestamp>(3, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(4, _omitFieldNames ? '' : 'updateTime',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$0.Timestamp>(3, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(4, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $0.Timestamp.create)
     ..aOS(5, _omitFieldNames ? '' : 'description')
     ..aOS(6, _omitFieldNames ? '' : 'cluster')
     ..aOM<BackupPlan_RetentionPolicy>(
@@ -1549,22 +1334,22 @@ class BackupPlan extends $pb.GeneratedMessage {
     ..aOB(11, _omitFieldNames ? '' : 'deactivated')
     ..aOM<BackupPlan_BackupConfig>(12, _omitFieldNames ? '' : 'backupConfig',
         subBuilder: BackupPlan_BackupConfig.create)
-    ..a<$core.int>(
-        13, _omitFieldNames ? '' : 'protectedPodCount', $pb.PbFieldType.O3)
+    ..aI(13, _omitFieldNames ? '' : 'protectedPodCount')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  BackupPlan clone() => BackupPlan()..mergeFromMessage(this);
+  BackupPlan clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   BackupPlan copyWith(void Function(BackupPlan) updates) =>
       super.copyWith((message) => updates(message as BackupPlan)) as BackupPlan;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static BackupPlan create() => BackupPlan._();
+  @$core.override
   BackupPlan createEmptyInstance() => create();
-  static $pb.PbList<BackupPlan> createRepeated() => $pb.PbList<BackupPlan>();
   @$core.pragma('dart2js:noInline')
   static BackupPlan getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<BackupPlan>(create);
@@ -1575,10 +1360,7 @@ class BackupPlan extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) {
-    $_setString(0, v);
-  }
-
+  set name($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -1589,10 +1371,7 @@ class BackupPlan extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get uid => $_getSZ(1);
   @$pb.TagNumber(2)
-  set uid($core.String v) {
-    $_setString(1, v);
-  }
-
+  set uid($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasUid() => $_has(1);
   @$pb.TagNumber(2)
@@ -1600,43 +1379,34 @@ class BackupPlan extends $pb.GeneratedMessage {
 
   /// Output only. The timestamp when this BackupPlan resource was created.
   @$pb.TagNumber(3)
-  $2.Timestamp get createTime => $_getN(2);
+  $0.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($2.Timestamp v) {
-    $_setField(3, v);
-  }
-
+  set createTime($0.Timestamp value) => $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => $_clearField(3);
   @$pb.TagNumber(3)
-  $2.Timestamp ensureCreateTime() => $_ensure(2);
+  $0.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// Output only. The timestamp when this BackupPlan resource was last
   /// updated.
   @$pb.TagNumber(4)
-  $2.Timestamp get updateTime => $_getN(3);
+  $0.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(4)
-  set updateTime($2.Timestamp v) {
-    $_setField(4, v);
-  }
-
+  set updateTime($0.Timestamp value) => $_setField(4, value);
   @$pb.TagNumber(4)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateTime() => $_clearField(4);
   @$pb.TagNumber(4)
-  $2.Timestamp ensureUpdateTime() => $_ensure(3);
+  $0.Timestamp ensureUpdateTime() => $_ensure(3);
 
   /// User specified descriptive string for this BackupPlan.
   @$pb.TagNumber(5)
   $core.String get description => $_getSZ(4);
   @$pb.TagNumber(5)
-  set description($core.String v) {
-    $_setString(4, v);
-  }
-
+  set description($core.String value) => $_setString(4, value);
   @$pb.TagNumber(5)
   $core.bool hasDescription() => $_has(4);
   @$pb.TagNumber(5)
@@ -1650,10 +1420,7 @@ class BackupPlan extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get cluster => $_getSZ(5);
   @$pb.TagNumber(6)
-  set cluster($core.String v) {
-    $_setString(5, v);
-  }
-
+  set cluster($core.String value) => $_setString(5, value);
   @$pb.TagNumber(6)
   $core.bool hasCluster() => $_has(5);
   @$pb.TagNumber(6)
@@ -1663,10 +1430,7 @@ class BackupPlan extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   BackupPlan_RetentionPolicy get retentionPolicy => $_getN(6);
   @$pb.TagNumber(7)
-  set retentionPolicy(BackupPlan_RetentionPolicy v) {
-    $_setField(7, v);
-  }
-
+  set retentionPolicy(BackupPlan_RetentionPolicy value) => $_setField(7, value);
   @$pb.TagNumber(7)
   $core.bool hasRetentionPolicy() => $_has(6);
   @$pb.TagNumber(7)
@@ -1682,10 +1446,7 @@ class BackupPlan extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   BackupPlan_Schedule get backupSchedule => $_getN(8);
   @$pb.TagNumber(9)
-  set backupSchedule(BackupPlan_Schedule v) {
-    $_setField(9, v);
-  }
-
+  set backupSchedule(BackupPlan_Schedule value) => $_setField(9, value);
   @$pb.TagNumber(9)
   $core.bool hasBackupSchedule() => $_has(8);
   @$pb.TagNumber(9)
@@ -1704,10 +1465,7 @@ class BackupPlan extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.String get etag => $_getSZ(9);
   @$pb.TagNumber(10)
-  set etag($core.String v) {
-    $_setString(9, v);
-  }
-
+  set etag($core.String value) => $_setString(9, value);
   @$pb.TagNumber(10)
   $core.bool hasEtag() => $_has(9);
   @$pb.TagNumber(10)
@@ -1723,10 +1481,7 @@ class BackupPlan extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.bool get deactivated => $_getBF(10);
   @$pb.TagNumber(11)
-  set deactivated($core.bool v) {
-    $_setBool(10, v);
-  }
-
+  set deactivated($core.bool value) => $_setBool(10, value);
   @$pb.TagNumber(11)
   $core.bool hasDeactivated() => $_has(10);
   @$pb.TagNumber(11)
@@ -1736,10 +1491,7 @@ class BackupPlan extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   BackupPlan_BackupConfig get backupConfig => $_getN(11);
   @$pb.TagNumber(12)
-  set backupConfig(BackupPlan_BackupConfig v) {
-    $_setField(12, v);
-  }
-
+  set backupConfig(BackupPlan_BackupConfig value) => $_setField(12, value);
   @$pb.TagNumber(12)
   $core.bool hasBackupConfig() => $_has(11);
   @$pb.TagNumber(12)
@@ -1752,10 +1504,7 @@ class BackupPlan extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   $core.int get protectedPodCount => $_getIZ(12);
   @$pb.TagNumber(13)
-  set protectedPodCount($core.int v) {
-    $_setSignedInt32(12, v);
-  }
-
+  set protectedPodCount($core.int value) => $_setSignedInt32(12, value);
   @$pb.TagNumber(13)
   $core.bool hasProtectedPodCount() => $_has(12);
   @$pb.TagNumber(13)
@@ -1769,8 +1518,8 @@ class Restore extends $pb.GeneratedMessage {
   factory Restore({
     $core.String? name,
     $core.String? uid,
-    $2.Timestamp? createTime,
-    $2.Timestamp? updateTime,
+    $0.Timestamp? createTime,
+    $0.Timestamp? updateTime,
     $core.String? description,
     $core.String? backup,
     $core.String? cluster,
@@ -1778,74 +1527,46 @@ class Restore extends $pb.GeneratedMessage {
     $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     Restore_State? state,
     $core.String? stateReason,
-    $2.Timestamp? completeTime,
+    $0.Timestamp? completeTime,
     $core.int? resourcesRestoredCount,
     $core.int? resourcesExcludedCount,
     $core.int? resourcesFailedCount,
     $core.int? volumesRestoredCount,
     $core.String? etag,
   }) {
-    final $result = create();
-    if (name != null) {
-      $result.name = name;
-    }
-    if (uid != null) {
-      $result.uid = uid;
-    }
-    if (createTime != null) {
-      $result.createTime = createTime;
-    }
-    if (updateTime != null) {
-      $result.updateTime = updateTime;
-    }
-    if (description != null) {
-      $result.description = description;
-    }
-    if (backup != null) {
-      $result.backup = backup;
-    }
-    if (cluster != null) {
-      $result.cluster = cluster;
-    }
-    if (restoreConfig != null) {
-      $result.restoreConfig = restoreConfig;
-    }
-    if (labels != null) {
-      $result.labels.addEntries(labels);
-    }
-    if (state != null) {
-      $result.state = state;
-    }
-    if (stateReason != null) {
-      $result.stateReason = stateReason;
-    }
-    if (completeTime != null) {
-      $result.completeTime = completeTime;
-    }
-    if (resourcesRestoredCount != null) {
-      $result.resourcesRestoredCount = resourcesRestoredCount;
-    }
-    if (resourcesExcludedCount != null) {
-      $result.resourcesExcludedCount = resourcesExcludedCount;
-    }
-    if (resourcesFailedCount != null) {
-      $result.resourcesFailedCount = resourcesFailedCount;
-    }
-    if (volumesRestoredCount != null) {
-      $result.volumesRestoredCount = volumesRestoredCount;
-    }
-    if (etag != null) {
-      $result.etag = etag;
-    }
-    return $result;
+    final result = create();
+    if (name != null) result.name = name;
+    if (uid != null) result.uid = uid;
+    if (createTime != null) result.createTime = createTime;
+    if (updateTime != null) result.updateTime = updateTime;
+    if (description != null) result.description = description;
+    if (backup != null) result.backup = backup;
+    if (cluster != null) result.cluster = cluster;
+    if (restoreConfig != null) result.restoreConfig = restoreConfig;
+    if (labels != null) result.labels.addEntries(labels);
+    if (state != null) result.state = state;
+    if (stateReason != null) result.stateReason = stateReason;
+    if (completeTime != null) result.completeTime = completeTime;
+    if (resourcesRestoredCount != null)
+      result.resourcesRestoredCount = resourcesRestoredCount;
+    if (resourcesExcludedCount != null)
+      result.resourcesExcludedCount = resourcesExcludedCount;
+    if (resourcesFailedCount != null)
+      result.resourcesFailedCount = resourcesFailedCount;
+    if (volumesRestoredCount != null)
+      result.volumesRestoredCount = volumesRestoredCount;
+    if (etag != null) result.etag = etag;
+    return result;
   }
-  Restore._() : super();
-  factory Restore.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Restore.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  Restore._();
+
+  factory Restore.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory Restore.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'Restore',
@@ -1854,10 +1575,10 @@ class Restore extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'uid')
-    ..aOM<$2.Timestamp>(3, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(4, _omitFieldNames ? '' : 'updateTime',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$0.Timestamp>(3, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(4, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $0.Timestamp.create)
     ..aOS(5, _omitFieldNames ? '' : 'description')
     ..aOS(6, _omitFieldNames ? '' : 'backup')
     ..aOS(7, _omitFieldNames ? '' : 'cluster')
@@ -1868,36 +1589,31 @@ class Restore extends $pb.GeneratedMessage {
         keyFieldType: $pb.PbFieldType.OS,
         valueFieldType: $pb.PbFieldType.OS,
         packageName: const $pb.PackageName('google.events.cloud.gkebackup.v1'))
-    ..e<Restore_State>(10, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
-        defaultOrMaker: Restore_State.STATE_UNSPECIFIED,
-        valueOf: Restore_State.valueOf,
+    ..aE<Restore_State>(10, _omitFieldNames ? '' : 'state',
         enumValues: Restore_State.values)
     ..aOS(11, _omitFieldNames ? '' : 'stateReason')
-    ..aOM<$2.Timestamp>(12, _omitFieldNames ? '' : 'completeTime',
-        subBuilder: $2.Timestamp.create)
-    ..a<$core.int>(
-        13, _omitFieldNames ? '' : 'resourcesRestoredCount', $pb.PbFieldType.O3)
-    ..a<$core.int>(
-        14, _omitFieldNames ? '' : 'resourcesExcludedCount', $pb.PbFieldType.O3)
-    ..a<$core.int>(
-        15, _omitFieldNames ? '' : 'resourcesFailedCount', $pb.PbFieldType.O3)
-    ..a<$core.int>(
-        16, _omitFieldNames ? '' : 'volumesRestoredCount', $pb.PbFieldType.O3)
+    ..aOM<$0.Timestamp>(12, _omitFieldNames ? '' : 'completeTime',
+        subBuilder: $0.Timestamp.create)
+    ..aI(13, _omitFieldNames ? '' : 'resourcesRestoredCount')
+    ..aI(14, _omitFieldNames ? '' : 'resourcesExcludedCount')
+    ..aI(15, _omitFieldNames ? '' : 'resourcesFailedCount')
+    ..aI(16, _omitFieldNames ? '' : 'volumesRestoredCount')
     ..aOS(17, _omitFieldNames ? '' : 'etag')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  Restore clone() => Restore()..mergeFromMessage(this);
+  Restore clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Restore copyWith(void Function(Restore) updates) =>
       super.copyWith((message) => updates(message as Restore)) as Restore;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Restore create() => Restore._();
+  @$core.override
   Restore createEmptyInstance() => create();
-  static $pb.PbList<Restore> createRepeated() => $pb.PbList<Restore>();
   @$core.pragma('dart2js:noInline')
   static Restore getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Restore>(create);
@@ -1908,10 +1624,7 @@ class Restore extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) {
-    $_setString(0, v);
-  }
-
+  set name($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -1922,10 +1635,7 @@ class Restore extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get uid => $_getSZ(1);
   @$pb.TagNumber(2)
-  set uid($core.String v) {
-    $_setString(1, v);
-  }
-
+  set uid($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasUid() => $_has(1);
   @$pb.TagNumber(2)
@@ -1933,43 +1643,34 @@ class Restore extends $pb.GeneratedMessage {
 
   /// Output only. The timestamp when this Restore resource was created.
   @$pb.TagNumber(3)
-  $2.Timestamp get createTime => $_getN(2);
+  $0.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($2.Timestamp v) {
-    $_setField(3, v);
-  }
-
+  set createTime($0.Timestamp value) => $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => $_clearField(3);
   @$pb.TagNumber(3)
-  $2.Timestamp ensureCreateTime() => $_ensure(2);
+  $0.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// Output only. The timestamp when this Restore resource was last
   /// updated.
   @$pb.TagNumber(4)
-  $2.Timestamp get updateTime => $_getN(3);
+  $0.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(4)
-  set updateTime($2.Timestamp v) {
-    $_setField(4, v);
-  }
-
+  set updateTime($0.Timestamp value) => $_setField(4, value);
   @$pb.TagNumber(4)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateTime() => $_clearField(4);
   @$pb.TagNumber(4)
-  $2.Timestamp ensureUpdateTime() => $_ensure(3);
+  $0.Timestamp ensureUpdateTime() => $_ensure(3);
 
   /// User specified descriptive string for this Restore.
   @$pb.TagNumber(5)
   $core.String get description => $_getSZ(4);
   @$pb.TagNumber(5)
-  set description($core.String v) {
-    $_setString(4, v);
-  }
-
+  set description($core.String value) => $_setString(4, value);
   @$pb.TagNumber(5)
   $core.bool hasDescription() => $_has(4);
   @$pb.TagNumber(5)
@@ -1984,10 +1685,7 @@ class Restore extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get backup => $_getSZ(5);
   @$pb.TagNumber(6)
-  set backup($core.String v) {
-    $_setString(5, v);
-  }
-
+  set backup($core.String value) => $_setString(5, value);
   @$pb.TagNumber(6)
   $core.bool hasBackup() => $_has(5);
   @$pb.TagNumber(6)
@@ -2004,10 +1702,7 @@ class Restore extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get cluster => $_getSZ(6);
   @$pb.TagNumber(7)
-  set cluster($core.String v) {
-    $_setString(6, v);
-  }
-
+  set cluster($core.String value) => $_setString(6, value);
   @$pb.TagNumber(7)
   $core.bool hasCluster() => $_has(6);
   @$pb.TagNumber(7)
@@ -2019,10 +1714,7 @@ class Restore extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   RestoreConfig get restoreConfig => $_getN(7);
   @$pb.TagNumber(8)
-  set restoreConfig(RestoreConfig v) {
-    $_setField(8, v);
-  }
-
+  set restoreConfig(RestoreConfig value) => $_setField(8, value);
   @$pb.TagNumber(8)
   $core.bool hasRestoreConfig() => $_has(7);
   @$pb.TagNumber(8)
@@ -2038,10 +1730,7 @@ class Restore extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   Restore_State get state => $_getN(9);
   @$pb.TagNumber(10)
-  set state(Restore_State v) {
-    $_setField(10, v);
-  }
-
+  set state(Restore_State value) => $_setField(10, value);
   @$pb.TagNumber(10)
   $core.bool hasState() => $_has(9);
   @$pb.TagNumber(10)
@@ -2052,10 +1741,7 @@ class Restore extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.String get stateReason => $_getSZ(10);
   @$pb.TagNumber(11)
-  set stateReason($core.String v) {
-    $_setString(10, v);
-  }
-
+  set stateReason($core.String value) => $_setString(10, value);
   @$pb.TagNumber(11)
   $core.bool hasStateReason() => $_has(10);
   @$pb.TagNumber(11)
@@ -2063,27 +1749,21 @@ class Restore extends $pb.GeneratedMessage {
 
   /// Output only. Timestamp of when the restore operation completed.
   @$pb.TagNumber(12)
-  $2.Timestamp get completeTime => $_getN(11);
+  $0.Timestamp get completeTime => $_getN(11);
   @$pb.TagNumber(12)
-  set completeTime($2.Timestamp v) {
-    $_setField(12, v);
-  }
-
+  set completeTime($0.Timestamp value) => $_setField(12, value);
   @$pb.TagNumber(12)
   $core.bool hasCompleteTime() => $_has(11);
   @$pb.TagNumber(12)
   void clearCompleteTime() => $_clearField(12);
   @$pb.TagNumber(12)
-  $2.Timestamp ensureCompleteTime() => $_ensure(11);
+  $0.Timestamp ensureCompleteTime() => $_ensure(11);
 
   /// Output only. Number of resources restored during the restore execution.
   @$pb.TagNumber(13)
   $core.int get resourcesRestoredCount => $_getIZ(12);
   @$pb.TagNumber(13)
-  set resourcesRestoredCount($core.int v) {
-    $_setSignedInt32(12, v);
-  }
-
+  set resourcesRestoredCount($core.int value) => $_setSignedInt32(12, value);
   @$pb.TagNumber(13)
   $core.bool hasResourcesRestoredCount() => $_has(12);
   @$pb.TagNumber(13)
@@ -2093,10 +1773,7 @@ class Restore extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   $core.int get resourcesExcludedCount => $_getIZ(13);
   @$pb.TagNumber(14)
-  set resourcesExcludedCount($core.int v) {
-    $_setSignedInt32(13, v);
-  }
-
+  set resourcesExcludedCount($core.int value) => $_setSignedInt32(13, value);
   @$pb.TagNumber(14)
   $core.bool hasResourcesExcludedCount() => $_has(13);
   @$pb.TagNumber(14)
@@ -2107,10 +1784,7 @@ class Restore extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   $core.int get resourcesFailedCount => $_getIZ(14);
   @$pb.TagNumber(15)
-  set resourcesFailedCount($core.int v) {
-    $_setSignedInt32(14, v);
-  }
-
+  set resourcesFailedCount($core.int value) => $_setSignedInt32(14, value);
   @$pb.TagNumber(15)
   $core.bool hasResourcesFailedCount() => $_has(14);
   @$pb.TagNumber(15)
@@ -2120,10 +1794,7 @@ class Restore extends $pb.GeneratedMessage {
   @$pb.TagNumber(16)
   $core.int get volumesRestoredCount => $_getIZ(15);
   @$pb.TagNumber(16)
-  set volumesRestoredCount($core.int v) {
-    $_setSignedInt32(15, v);
-  }
-
+  set volumesRestoredCount($core.int value) => $_setSignedInt32(15, value);
   @$pb.TagNumber(16)
   $core.bool hasVolumesRestoredCount() => $_has(15);
   @$pb.TagNumber(16)
@@ -2140,10 +1811,7 @@ class Restore extends $pb.GeneratedMessage {
   @$pb.TagNumber(17)
   $core.String get etag => $_getSZ(16);
   @$pb.TagNumber(17)
-  set etag($core.String v) {
-    $_setString(16, v);
-  }
-
+  set etag($core.String value) => $_setString(16, value);
   @$pb.TagNumber(17)
   $core.bool hasEtag() => $_has(16);
   @$pb.TagNumber(17)
@@ -2158,22 +1826,20 @@ class RestoreConfig_GroupKind extends $pb.GeneratedMessage {
     $core.String? resourceGroup,
     $core.String? resourceKind,
   }) {
-    final $result = create();
-    if (resourceGroup != null) {
-      $result.resourceGroup = resourceGroup;
-    }
-    if (resourceKind != null) {
-      $result.resourceKind = resourceKind;
-    }
-    return $result;
+    final result = create();
+    if (resourceGroup != null) result.resourceGroup = resourceGroup;
+    if (resourceKind != null) result.resourceKind = resourceKind;
+    return result;
   }
-  RestoreConfig_GroupKind._() : super();
-  factory RestoreConfig_GroupKind.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory RestoreConfig_GroupKind.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  RestoreConfig_GroupKind._();
+
+  factory RestoreConfig_GroupKind.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory RestoreConfig_GroupKind.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'RestoreConfig.GroupKind',
@@ -2185,21 +1851,20 @@ class RestoreConfig_GroupKind extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  RestoreConfig_GroupKind clone() =>
-      RestoreConfig_GroupKind()..mergeFromMessage(this);
+  RestoreConfig_GroupKind clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   RestoreConfig_GroupKind copyWith(
           void Function(RestoreConfig_GroupKind) updates) =>
       super.copyWith((message) => updates(message as RestoreConfig_GroupKind))
           as RestoreConfig_GroupKind;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static RestoreConfig_GroupKind create() => RestoreConfig_GroupKind._();
+  @$core.override
   RestoreConfig_GroupKind createEmptyInstance() => create();
-  static $pb.PbList<RestoreConfig_GroupKind> createRepeated() =>
-      $pb.PbList<RestoreConfig_GroupKind>();
   @$core.pragma('dart2js:noInline')
   static RestoreConfig_GroupKind getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<RestoreConfig_GroupKind>(create);
@@ -2211,10 +1876,7 @@ class RestoreConfig_GroupKind extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get resourceGroup => $_getSZ(0);
   @$pb.TagNumber(1)
-  set resourceGroup($core.String v) {
-    $_setString(0, v);
-  }
-
+  set resourceGroup($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasResourceGroup() => $_has(0);
   @$pb.TagNumber(1)
@@ -2225,10 +1887,7 @@ class RestoreConfig_GroupKind extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get resourceKind => $_getSZ(1);
   @$pb.TagNumber(2)
-  set resourceKind($core.String v) {
-    $_setString(1, v);
-  }
-
+  set resourceKind($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasResourceKind() => $_has(1);
   @$pb.TagNumber(2)
@@ -2257,34 +1916,34 @@ class RestoreConfig_ClusterResourceRestoreScope extends $pb.GeneratedMessage {
   factory RestoreConfig_ClusterResourceRestoreScope({
     $core.Iterable<RestoreConfig_GroupKind>? selectedGroupKinds,
   }) {
-    final $result = create();
-    if (selectedGroupKinds != null) {
-      $result.selectedGroupKinds.addAll(selectedGroupKinds);
-    }
-    return $result;
+    final result = create();
+    if (selectedGroupKinds != null)
+      result.selectedGroupKinds.addAll(selectedGroupKinds);
+    return result;
   }
-  RestoreConfig_ClusterResourceRestoreScope._() : super();
+
+  RestoreConfig_ClusterResourceRestoreScope._();
+
   factory RestoreConfig_ClusterResourceRestoreScope.fromBuffer(
-          $core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory RestoreConfig_ClusterResourceRestoreScope.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+          $core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory RestoreConfig_ClusterResourceRestoreScope.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'RestoreConfig.ClusterResourceRestoreScope',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.gkebackup.v1'),
       createEmptyInstance: create)
-    ..pc<RestoreConfig_GroupKind>(
-        1, _omitFieldNames ? '' : 'selectedGroupKinds', $pb.PbFieldType.PM,
+    ..pPM<RestoreConfig_GroupKind>(
+        1, _omitFieldNames ? '' : 'selectedGroupKinds',
         subBuilder: RestoreConfig_GroupKind.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  RestoreConfig_ClusterResourceRestoreScope clone() =>
-      RestoreConfig_ClusterResourceRestoreScope()..mergeFromMessage(this);
+  RestoreConfig_ClusterResourceRestoreScope clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   RestoreConfig_ClusterResourceRestoreScope copyWith(
           void Function(RestoreConfig_ClusterResourceRestoreScope) updates) =>
@@ -2292,15 +1951,14 @@ class RestoreConfig_ClusterResourceRestoreScope extends $pb.GeneratedMessage {
               updates(message as RestoreConfig_ClusterResourceRestoreScope))
           as RestoreConfig_ClusterResourceRestoreScope;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static RestoreConfig_ClusterResourceRestoreScope create() =>
       RestoreConfig_ClusterResourceRestoreScope._();
+  @$core.override
   RestoreConfig_ClusterResourceRestoreScope createEmptyInstance() => create();
-  static $pb.PbList<RestoreConfig_ClusterResourceRestoreScope>
-      createRepeated() =>
-          $pb.PbList<RestoreConfig_ClusterResourceRestoreScope>();
   @$core.pragma('dart2js:noInline')
   static RestoreConfig_ClusterResourceRestoreScope getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
@@ -2325,31 +1983,26 @@ class RestoreConfig_SubstitutionRule extends $pb.GeneratedMessage {
     $core.String? originalValuePattern,
     $core.String? newValue,
   }) {
-    final $result = create();
-    if (targetNamespaces != null) {
-      $result.targetNamespaces.addAll(targetNamespaces);
-    }
-    if (targetGroupKinds != null) {
-      $result.targetGroupKinds.addAll(targetGroupKinds);
-    }
-    if (targetJsonPath != null) {
-      $result.targetJsonPath = targetJsonPath;
-    }
-    if (originalValuePattern != null) {
-      $result.originalValuePattern = originalValuePattern;
-    }
-    if (newValue != null) {
-      $result.newValue = newValue;
-    }
-    return $result;
+    final result = create();
+    if (targetNamespaces != null)
+      result.targetNamespaces.addAll(targetNamespaces);
+    if (targetGroupKinds != null)
+      result.targetGroupKinds.addAll(targetGroupKinds);
+    if (targetJsonPath != null) result.targetJsonPath = targetJsonPath;
+    if (originalValuePattern != null)
+      result.originalValuePattern = originalValuePattern;
+    if (newValue != null) result.newValue = newValue;
+    return result;
   }
-  RestoreConfig_SubstitutionRule._() : super();
-  factory RestoreConfig_SubstitutionRule.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory RestoreConfig_SubstitutionRule.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  RestoreConfig_SubstitutionRule._();
+
+  factory RestoreConfig_SubstitutionRule.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory RestoreConfig_SubstitutionRule.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'RestoreConfig.SubstitutionRule',
@@ -2357,8 +2010,7 @@ class RestoreConfig_SubstitutionRule extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.events.cloud.gkebackup.v1'),
       createEmptyInstance: create)
     ..pPS(1, _omitFieldNames ? '' : 'targetNamespaces')
-    ..pc<RestoreConfig_GroupKind>(
-        2, _omitFieldNames ? '' : 'targetGroupKinds', $pb.PbFieldType.PM,
+    ..pPM<RestoreConfig_GroupKind>(2, _omitFieldNames ? '' : 'targetGroupKinds',
         subBuilder: RestoreConfig_GroupKind.create)
     ..aOS(3, _omitFieldNames ? '' : 'targetJsonPath')
     ..aOS(4, _omitFieldNames ? '' : 'originalValuePattern')
@@ -2366,8 +2018,7 @@ class RestoreConfig_SubstitutionRule extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  RestoreConfig_SubstitutionRule clone() =>
-      RestoreConfig_SubstitutionRule()..mergeFromMessage(this);
+  RestoreConfig_SubstitutionRule clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   RestoreConfig_SubstitutionRule copyWith(
           void Function(RestoreConfig_SubstitutionRule) updates) =>
@@ -2375,14 +2026,14 @@ class RestoreConfig_SubstitutionRule extends $pb.GeneratedMessage {
               (message) => updates(message as RestoreConfig_SubstitutionRule))
           as RestoreConfig_SubstitutionRule;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static RestoreConfig_SubstitutionRule create() =>
       RestoreConfig_SubstitutionRule._();
+  @$core.override
   RestoreConfig_SubstitutionRule createEmptyInstance() => create();
-  static $pb.PbList<RestoreConfig_SubstitutionRule> createRepeated() =>
-      $pb.PbList<RestoreConfig_SubstitutionRule>();
   @$core.pragma('dart2js:noInline')
   static RestoreConfig_SubstitutionRule getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<RestoreConfig_SubstitutionRule>(create);
@@ -2416,10 +2067,7 @@ class RestoreConfig_SubstitutionRule extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get targetJsonPath => $_getSZ(2);
   @$pb.TagNumber(3)
-  set targetJsonPath($core.String v) {
-    $_setString(2, v);
-  }
-
+  set targetJsonPath($core.String value) => $_setString(2, value);
   @$pb.TagNumber(3)
   $core.bool hasTargetJsonPath() => $_has(2);
   @$pb.TagNumber(3)
@@ -2437,10 +2085,7 @@ class RestoreConfig_SubstitutionRule extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get originalValuePattern => $_getSZ(3);
   @$pb.TagNumber(4)
-  set originalValuePattern($core.String v) {
-    $_setString(3, v);
-  }
-
+  set originalValuePattern($core.String value) => $_setString(3, value);
   @$pb.TagNumber(4)
   $core.bool hasOriginalValuePattern() => $_has(3);
   @$pb.TagNumber(4)
@@ -2452,10 +2097,7 @@ class RestoreConfig_SubstitutionRule extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get newValue => $_getSZ(4);
   @$pb.TagNumber(5)
-  set newValue($core.String v) {
-    $_setString(4, v);
-  }
-
+  set newValue($core.String value) => $_setString(4, value);
   @$pb.TagNumber(5)
   $core.bool hasNewValue() => $_has(4);
   @$pb.TagNumber(5)
@@ -2482,40 +2124,33 @@ class RestoreConfig extends $pb.GeneratedMessage {
     NamespacedNames? selectedApplications,
     $core.Iterable<RestoreConfig_SubstitutionRule>? substitutionRules,
   }) {
-    final $result = create();
-    if (volumeDataRestorePolicy != null) {
-      $result.volumeDataRestorePolicy = volumeDataRestorePolicy;
-    }
-    if (clusterResourceConflictPolicy != null) {
-      $result.clusterResourceConflictPolicy = clusterResourceConflictPolicy;
-    }
-    if (namespacedResourceRestoreMode != null) {
-      $result.namespacedResourceRestoreMode = namespacedResourceRestoreMode;
-    }
-    if (clusterResourceRestoreScope != null) {
-      $result.clusterResourceRestoreScope = clusterResourceRestoreScope;
-    }
-    if (allNamespaces != null) {
-      $result.allNamespaces = allNamespaces;
-    }
-    if (selectedNamespaces != null) {
-      $result.selectedNamespaces = selectedNamespaces;
-    }
-    if (selectedApplications != null) {
-      $result.selectedApplications = selectedApplications;
-    }
-    if (substitutionRules != null) {
-      $result.substitutionRules.addAll(substitutionRules);
-    }
-    return $result;
+    final result = create();
+    if (volumeDataRestorePolicy != null)
+      result.volumeDataRestorePolicy = volumeDataRestorePolicy;
+    if (clusterResourceConflictPolicy != null)
+      result.clusterResourceConflictPolicy = clusterResourceConflictPolicy;
+    if (namespacedResourceRestoreMode != null)
+      result.namespacedResourceRestoreMode = namespacedResourceRestoreMode;
+    if (clusterResourceRestoreScope != null)
+      result.clusterResourceRestoreScope = clusterResourceRestoreScope;
+    if (allNamespaces != null) result.allNamespaces = allNamespaces;
+    if (selectedNamespaces != null)
+      result.selectedNamespaces = selectedNamespaces;
+    if (selectedApplications != null)
+      result.selectedApplications = selectedApplications;
+    if (substitutionRules != null)
+      result.substitutionRules.addAll(substitutionRules);
+    return result;
   }
-  RestoreConfig._() : super();
-  factory RestoreConfig.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory RestoreConfig.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  RestoreConfig._();
+
+  factory RestoreConfig.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory RestoreConfig.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static const $core
       .Map<$core.int, RestoreConfig_NamespacedResourceRestoreScope>
@@ -2531,27 +2166,14 @@ class RestoreConfig extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.events.cloud.gkebackup.v1'),
       createEmptyInstance: create)
     ..oo(0, [5, 6, 7])
-    ..e<RestoreConfig_VolumeDataRestorePolicy>(
-        1, _omitFieldNames ? '' : 'volumeDataRestorePolicy', $pb.PbFieldType.OE,
-        defaultOrMaker: RestoreConfig_VolumeDataRestorePolicy
-            .VOLUME_DATA_RESTORE_POLICY_UNSPECIFIED,
-        valueOf: RestoreConfig_VolumeDataRestorePolicy.valueOf,
+    ..aE<RestoreConfig_VolumeDataRestorePolicy>(
+        1, _omitFieldNames ? '' : 'volumeDataRestorePolicy',
         enumValues: RestoreConfig_VolumeDataRestorePolicy.values)
-    ..e<RestoreConfig_ClusterResourceConflictPolicy>(
-        2,
-        _omitFieldNames ? '' : 'clusterResourceConflictPolicy',
-        $pb.PbFieldType.OE,
-        defaultOrMaker: RestoreConfig_ClusterResourceConflictPolicy
-            .CLUSTER_RESOURCE_CONFLICT_POLICY_UNSPECIFIED,
-        valueOf: RestoreConfig_ClusterResourceConflictPolicy.valueOf,
+    ..aE<RestoreConfig_ClusterResourceConflictPolicy>(
+        2, _omitFieldNames ? '' : 'clusterResourceConflictPolicy',
         enumValues: RestoreConfig_ClusterResourceConflictPolicy.values)
-    ..e<RestoreConfig_NamespacedResourceRestoreMode>(
-        3,
-        _omitFieldNames ? '' : 'namespacedResourceRestoreMode',
-        $pb.PbFieldType.OE,
-        defaultOrMaker: RestoreConfig_NamespacedResourceRestoreMode
-            .NAMESPACED_RESOURCE_RESTORE_MODE_UNSPECIFIED,
-        valueOf: RestoreConfig_NamespacedResourceRestoreMode.valueOf,
+    ..aE<RestoreConfig_NamespacedResourceRestoreMode>(
+        3, _omitFieldNames ? '' : 'namespacedResourceRestoreMode',
         enumValues: RestoreConfig_NamespacedResourceRestoreMode.values)
     ..aOM<RestoreConfig_ClusterResourceRestoreScope>(
         4, _omitFieldNames ? '' : 'clusterResourceRestoreScope',
@@ -2561,33 +2183,39 @@ class RestoreConfig extends $pb.GeneratedMessage {
         subBuilder: Namespaces.create)
     ..aOM<NamespacedNames>(7, _omitFieldNames ? '' : 'selectedApplications',
         subBuilder: NamespacedNames.create)
-    ..pc<RestoreConfig_SubstitutionRule>(
-        8, _omitFieldNames ? '' : 'substitutionRules', $pb.PbFieldType.PM,
+    ..pPM<RestoreConfig_SubstitutionRule>(
+        8, _omitFieldNames ? '' : 'substitutionRules',
         subBuilder: RestoreConfig_SubstitutionRule.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  RestoreConfig clone() => RestoreConfig()..mergeFromMessage(this);
+  RestoreConfig clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   RestoreConfig copyWith(void Function(RestoreConfig) updates) =>
       super.copyWith((message) => updates(message as RestoreConfig))
           as RestoreConfig;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static RestoreConfig create() => RestoreConfig._();
+  @$core.override
   RestoreConfig createEmptyInstance() => create();
-  static $pb.PbList<RestoreConfig> createRepeated() =>
-      $pb.PbList<RestoreConfig>();
   @$core.pragma('dart2js:noInline')
   static RestoreConfig getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<RestoreConfig>(create);
   static RestoreConfig? _defaultInstance;
 
+  @$pb.TagNumber(5)
+  @$pb.TagNumber(6)
+  @$pb.TagNumber(7)
   RestoreConfig_NamespacedResourceRestoreScope
       whichNamespacedResourceRestoreScope() =>
           _RestoreConfig_NamespacedResourceRestoreScopeByTag[$_whichOneof(0)]!;
+  @$pb.TagNumber(5)
+  @$pb.TagNumber(6)
+  @$pb.TagNumber(7)
   void clearNamespacedResourceRestoreScope() => $_clearField($_whichOneof(0));
 
   /// Specifies the mechanism to be used to restore volume data.
@@ -2597,10 +2225,8 @@ class RestoreConfig extends $pb.GeneratedMessage {
   RestoreConfig_VolumeDataRestorePolicy get volumeDataRestorePolicy =>
       $_getN(0);
   @$pb.TagNumber(1)
-  set volumeDataRestorePolicy(RestoreConfig_VolumeDataRestorePolicy v) {
-    $_setField(1, v);
-  }
-
+  set volumeDataRestorePolicy(RestoreConfig_VolumeDataRestorePolicy value) =>
+      $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasVolumeDataRestorePolicy() => $_has(0);
   @$pb.TagNumber(1)
@@ -2616,10 +2242,8 @@ class RestoreConfig extends $pb.GeneratedMessage {
       get clusterResourceConflictPolicy => $_getN(1);
   @$pb.TagNumber(2)
   set clusterResourceConflictPolicy(
-      RestoreConfig_ClusterResourceConflictPolicy v) {
-    $_setField(2, v);
-  }
-
+          RestoreConfig_ClusterResourceConflictPolicy value) =>
+      $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasClusterResourceConflictPolicy() => $_has(1);
   @$pb.TagNumber(2)
@@ -2633,10 +2257,8 @@ class RestoreConfig extends $pb.GeneratedMessage {
       get namespacedResourceRestoreMode => $_getN(2);
   @$pb.TagNumber(3)
   set namespacedResourceRestoreMode(
-      RestoreConfig_NamespacedResourceRestoreMode v) {
-    $_setField(3, v);
-  }
-
+          RestoreConfig_NamespacedResourceRestoreMode value) =>
+      $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasNamespacedResourceRestoreMode() => $_has(2);
   @$pb.TagNumber(3)
@@ -2648,10 +2270,9 @@ class RestoreConfig extends $pb.GeneratedMessage {
   RestoreConfig_ClusterResourceRestoreScope get clusterResourceRestoreScope =>
       $_getN(3);
   @$pb.TagNumber(4)
-  set clusterResourceRestoreScope(RestoreConfig_ClusterResourceRestoreScope v) {
-    $_setField(4, v);
-  }
-
+  set clusterResourceRestoreScope(
+          RestoreConfig_ClusterResourceRestoreScope value) =>
+      $_setField(4, value);
   @$pb.TagNumber(4)
   $core.bool hasClusterResourceRestoreScope() => $_has(3);
   @$pb.TagNumber(4)
@@ -2665,10 +2286,7 @@ class RestoreConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool get allNamespaces => $_getBF(4);
   @$pb.TagNumber(5)
-  set allNamespaces($core.bool v) {
-    $_setBool(4, v);
-  }
-
+  set allNamespaces($core.bool value) => $_setBool(4, value);
   @$pb.TagNumber(5)
   $core.bool hasAllNamespaces() => $_has(4);
   @$pb.TagNumber(5)
@@ -2679,10 +2297,7 @@ class RestoreConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   Namespaces get selectedNamespaces => $_getN(5);
   @$pb.TagNumber(6)
-  set selectedNamespaces(Namespaces v) {
-    $_setField(6, v);
-  }
-
+  set selectedNamespaces(Namespaces value) => $_setField(6, value);
   @$pb.TagNumber(6)
   $core.bool hasSelectedNamespaces() => $_has(5);
   @$pb.TagNumber(6)
@@ -2696,10 +2311,7 @@ class RestoreConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   NamespacedNames get selectedApplications => $_getN(6);
   @$pb.TagNumber(7)
-  set selectedApplications(NamespacedNames v) {
-    $_setField(7, v);
-  }
-
+  set selectedApplications(NamespacedNames value) => $_setField(7, value);
   @$pb.TagNumber(7)
   $core.bool hasSelectedApplications() => $_has(6);
   @$pb.TagNumber(7)
@@ -2724,8 +2336,8 @@ class RestorePlan extends $pb.GeneratedMessage {
   factory RestorePlan({
     $core.String? name,
     $core.String? uid,
-    $2.Timestamp? createTime,
-    $2.Timestamp? updateTime,
+    $0.Timestamp? createTime,
+    $0.Timestamp? updateTime,
     $core.String? description,
     $core.String? backupPlan,
     $core.String? cluster,
@@ -2733,46 +2345,28 @@ class RestorePlan extends $pb.GeneratedMessage {
     $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.String? etag,
   }) {
-    final $result = create();
-    if (name != null) {
-      $result.name = name;
-    }
-    if (uid != null) {
-      $result.uid = uid;
-    }
-    if (createTime != null) {
-      $result.createTime = createTime;
-    }
-    if (updateTime != null) {
-      $result.updateTime = updateTime;
-    }
-    if (description != null) {
-      $result.description = description;
-    }
-    if (backupPlan != null) {
-      $result.backupPlan = backupPlan;
-    }
-    if (cluster != null) {
-      $result.cluster = cluster;
-    }
-    if (restoreConfig != null) {
-      $result.restoreConfig = restoreConfig;
-    }
-    if (labels != null) {
-      $result.labels.addEntries(labels);
-    }
-    if (etag != null) {
-      $result.etag = etag;
-    }
-    return $result;
+    final result = create();
+    if (name != null) result.name = name;
+    if (uid != null) result.uid = uid;
+    if (createTime != null) result.createTime = createTime;
+    if (updateTime != null) result.updateTime = updateTime;
+    if (description != null) result.description = description;
+    if (backupPlan != null) result.backupPlan = backupPlan;
+    if (cluster != null) result.cluster = cluster;
+    if (restoreConfig != null) result.restoreConfig = restoreConfig;
+    if (labels != null) result.labels.addEntries(labels);
+    if (etag != null) result.etag = etag;
+    return result;
   }
-  RestorePlan._() : super();
-  factory RestorePlan.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory RestorePlan.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  RestorePlan._();
+
+  factory RestorePlan.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory RestorePlan.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'RestorePlan',
@@ -2781,10 +2375,10 @@ class RestorePlan extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'uid')
-    ..aOM<$2.Timestamp>(3, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(4, _omitFieldNames ? '' : 'updateTime',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$0.Timestamp>(3, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(4, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $0.Timestamp.create)
     ..aOS(5, _omitFieldNames ? '' : 'description')
     ..aOS(6, _omitFieldNames ? '' : 'backupPlan')
     ..aOS(7, _omitFieldNames ? '' : 'cluster')
@@ -2799,18 +2393,19 @@ class RestorePlan extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  RestorePlan clone() => RestorePlan()..mergeFromMessage(this);
+  RestorePlan clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   RestorePlan copyWith(void Function(RestorePlan) updates) =>
       super.copyWith((message) => updates(message as RestorePlan))
           as RestorePlan;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static RestorePlan create() => RestorePlan._();
+  @$core.override
   RestorePlan createEmptyInstance() => create();
-  static $pb.PbList<RestorePlan> createRepeated() => $pb.PbList<RestorePlan>();
   @$core.pragma('dart2js:noInline')
   static RestorePlan getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<RestorePlan>(create);
@@ -2821,10 +2416,7 @@ class RestorePlan extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) {
-    $_setString(0, v);
-  }
-
+  set name($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -2835,10 +2427,7 @@ class RestorePlan extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get uid => $_getSZ(1);
   @$pb.TagNumber(2)
-  set uid($core.String v) {
-    $_setString(1, v);
-  }
-
+  set uid($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasUid() => $_has(1);
   @$pb.TagNumber(2)
@@ -2847,43 +2436,34 @@ class RestorePlan extends $pb.GeneratedMessage {
   /// Output only. The timestamp when this RestorePlan resource was
   /// created.
   @$pb.TagNumber(3)
-  $2.Timestamp get createTime => $_getN(2);
+  $0.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($2.Timestamp v) {
-    $_setField(3, v);
-  }
-
+  set createTime($0.Timestamp value) => $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => $_clearField(3);
   @$pb.TagNumber(3)
-  $2.Timestamp ensureCreateTime() => $_ensure(2);
+  $0.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// Output only. The timestamp when this RestorePlan resource was last
   /// updated.
   @$pb.TagNumber(4)
-  $2.Timestamp get updateTime => $_getN(3);
+  $0.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(4)
-  set updateTime($2.Timestamp v) {
-    $_setField(4, v);
-  }
-
+  set updateTime($0.Timestamp value) => $_setField(4, value);
   @$pb.TagNumber(4)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateTime() => $_clearField(4);
   @$pb.TagNumber(4)
-  $2.Timestamp ensureUpdateTime() => $_ensure(3);
+  $0.Timestamp ensureUpdateTime() => $_ensure(3);
 
   /// User specified descriptive string for this RestorePlan.
   @$pb.TagNumber(5)
   $core.String get description => $_getSZ(4);
   @$pb.TagNumber(5)
-  set description($core.String v) {
-    $_setString(4, v);
-  }
-
+  set description($core.String value) => $_setString(4, value);
   @$pb.TagNumber(5)
   $core.bool hasDescription() => $_has(4);
   @$pb.TagNumber(5)
@@ -2896,10 +2476,7 @@ class RestorePlan extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get backupPlan => $_getSZ(5);
   @$pb.TagNumber(6)
-  set backupPlan($core.String v) {
-    $_setString(5, v);
-  }
-
+  set backupPlan($core.String value) => $_setString(5, value);
   @$pb.TagNumber(6)
   $core.bool hasBackupPlan() => $_has(5);
   @$pb.TagNumber(6)
@@ -2914,10 +2491,7 @@ class RestorePlan extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get cluster => $_getSZ(6);
   @$pb.TagNumber(7)
-  set cluster($core.String v) {
-    $_setString(6, v);
-  }
-
+  set cluster($core.String value) => $_setString(6, value);
   @$pb.TagNumber(7)
   $core.bool hasCluster() => $_has(6);
   @$pb.TagNumber(7)
@@ -2927,10 +2501,7 @@ class RestorePlan extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   RestoreConfig get restoreConfig => $_getN(7);
   @$pb.TagNumber(8)
-  set restoreConfig(RestoreConfig v) {
-    $_setField(8, v);
-  }
-
+  set restoreConfig(RestoreConfig value) => $_setField(8, value);
   @$pb.TagNumber(8)
   $core.bool hasRestoreConfig() => $_has(7);
   @$pb.TagNumber(8)
@@ -2953,10 +2524,7 @@ class RestorePlan extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.String get etag => $_getSZ(9);
   @$pb.TagNumber(10)
-  set etag($core.String v) {
-    $_setString(9, v);
-  }
-
+  set etag($core.String value) => $_setString(9, value);
   @$pb.TagNumber(10)
   $core.bool hasEtag() => $_has(9);
   @$pb.TagNumber(10)
@@ -2968,19 +2536,19 @@ class RestorePlanEventData extends $pb.GeneratedMessage {
   factory RestorePlanEventData({
     RestorePlan? payload,
   }) {
-    final $result = create();
-    if (payload != null) {
-      $result.payload = payload;
-    }
-    return $result;
+    final result = create();
+    if (payload != null) result.payload = payload;
+    return result;
   }
-  RestorePlanEventData._() : super();
-  factory RestorePlanEventData.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory RestorePlanEventData.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  RestorePlanEventData._();
+
+  factory RestorePlanEventData.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory RestorePlanEventData.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'RestorePlanEventData',
@@ -2992,20 +2560,19 @@ class RestorePlanEventData extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  RestorePlanEventData clone() =>
-      RestorePlanEventData()..mergeFromMessage(this);
+  RestorePlanEventData clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   RestorePlanEventData copyWith(void Function(RestorePlanEventData) updates) =>
       super.copyWith((message) => updates(message as RestorePlanEventData))
           as RestorePlanEventData;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static RestorePlanEventData create() => RestorePlanEventData._();
+  @$core.override
   RestorePlanEventData createEmptyInstance() => create();
-  static $pb.PbList<RestorePlanEventData> createRepeated() =>
-      $pb.PbList<RestorePlanEventData>();
   @$core.pragma('dart2js:noInline')
   static RestorePlanEventData getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<RestorePlanEventData>(create);
@@ -3015,10 +2582,7 @@ class RestorePlanEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   RestorePlan get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(RestorePlan v) {
-    $_setField(1, v);
-  }
-
+  set payload(RestorePlan value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -3032,19 +2596,19 @@ class BackupEventData extends $pb.GeneratedMessage {
   factory BackupEventData({
     Backup? payload,
   }) {
-    final $result = create();
-    if (payload != null) {
-      $result.payload = payload;
-    }
-    return $result;
+    final result = create();
+    if (payload != null) result.payload = payload;
+    return result;
   }
-  BackupEventData._() : super();
-  factory BackupEventData.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory BackupEventData.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  BackupEventData._();
+
+  factory BackupEventData.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory BackupEventData.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'BackupEventData',
@@ -3056,19 +2620,19 @@ class BackupEventData extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  BackupEventData clone() => BackupEventData()..mergeFromMessage(this);
+  BackupEventData clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   BackupEventData copyWith(void Function(BackupEventData) updates) =>
       super.copyWith((message) => updates(message as BackupEventData))
           as BackupEventData;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static BackupEventData create() => BackupEventData._();
+  @$core.override
   BackupEventData createEmptyInstance() => create();
-  static $pb.PbList<BackupEventData> createRepeated() =>
-      $pb.PbList<BackupEventData>();
   @$core.pragma('dart2js:noInline')
   static BackupEventData getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<BackupEventData>(create);
@@ -3078,10 +2642,7 @@ class BackupEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   Backup get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(Backup v) {
-    $_setField(1, v);
-  }
-
+  set payload(Backup value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -3095,19 +2656,19 @@ class BackupPlanEventData extends $pb.GeneratedMessage {
   factory BackupPlanEventData({
     BackupPlan? payload,
   }) {
-    final $result = create();
-    if (payload != null) {
-      $result.payload = payload;
-    }
-    return $result;
+    final result = create();
+    if (payload != null) result.payload = payload;
+    return result;
   }
-  BackupPlanEventData._() : super();
-  factory BackupPlanEventData.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory BackupPlanEventData.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  BackupPlanEventData._();
+
+  factory BackupPlanEventData.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory BackupPlanEventData.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'BackupPlanEventData',
@@ -3119,19 +2680,19 @@ class BackupPlanEventData extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  BackupPlanEventData clone() => BackupPlanEventData()..mergeFromMessage(this);
+  BackupPlanEventData clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   BackupPlanEventData copyWith(void Function(BackupPlanEventData) updates) =>
       super.copyWith((message) => updates(message as BackupPlanEventData))
           as BackupPlanEventData;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static BackupPlanEventData create() => BackupPlanEventData._();
+  @$core.override
   BackupPlanEventData createEmptyInstance() => create();
-  static $pb.PbList<BackupPlanEventData> createRepeated() =>
-      $pb.PbList<BackupPlanEventData>();
   @$core.pragma('dart2js:noInline')
   static BackupPlanEventData getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<BackupPlanEventData>(create);
@@ -3141,10 +2702,7 @@ class BackupPlanEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   BackupPlan get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(BackupPlan v) {
-    $_setField(1, v);
-  }
-
+  set payload(BackupPlan value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -3158,19 +2716,19 @@ class RestoreEventData extends $pb.GeneratedMessage {
   factory RestoreEventData({
     Restore? payload,
   }) {
-    final $result = create();
-    if (payload != null) {
-      $result.payload = payload;
-    }
-    return $result;
+    final result = create();
+    if (payload != null) result.payload = payload;
+    return result;
   }
-  RestoreEventData._() : super();
-  factory RestoreEventData.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory RestoreEventData.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  RestoreEventData._();
+
+  factory RestoreEventData.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory RestoreEventData.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'RestoreEventData',
@@ -3182,19 +2740,19 @@ class RestoreEventData extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  RestoreEventData clone() => RestoreEventData()..mergeFromMessage(this);
+  RestoreEventData clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   RestoreEventData copyWith(void Function(RestoreEventData) updates) =>
       super.copyWith((message) => updates(message as RestoreEventData))
           as RestoreEventData;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static RestoreEventData create() => RestoreEventData._();
+  @$core.override
   RestoreEventData createEmptyInstance() => create();
-  static $pb.PbList<RestoreEventData> createRepeated() =>
-      $pb.PbList<RestoreEventData>();
   @$core.pragma('dart2js:noInline')
   static RestoreEventData getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<RestoreEventData>(create);
@@ -3204,10 +2762,7 @@ class RestoreEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   Restore get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(Restore v) {
-    $_setField(1, v);
-  }
-
+  set payload(Restore value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -3216,6 +2771,7 @@ class RestoreEventData extends $pb.GeneratedMessage {
   Restore ensurePayload() => $_ensure(0);
 }
 
-const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames =
+const $core.bool _omitFieldNames =
+    $core.bool.fromEnvironment('protobuf.omit_field_names');
+const $core.bool _omitMessageNames =
     $core.bool.fromEnvironment('protobuf.omit_message_names');

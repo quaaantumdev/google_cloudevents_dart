@@ -1,13 +1,14 @@
+// This is a generated file - do not edit.
 //
-//  Generated code. Do not modify.
-//  source: google/type/datetime.proto
-//
+// Generated from google/type/datetime.proto.
+
 // @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
-// ignore_for_file: constant_identifier_names, library_prefixes
-// ignore_for_file: non_constant_identifier_names, prefer_final_fields
-// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
+// ignore_for_file: constant_identifier_names
+// ignore_for_file: curly_braces_in_flow_control_structures
+// ignore_for_file: deprecated_member_use_from_same_package, library_prefixes
+// ignore_for_file: non_constant_identifier_names
 
 import 'dart:core' as $core;
 
@@ -47,43 +48,27 @@ class DateTime extends $pb.GeneratedMessage {
     $0.Duration? utcOffset,
     TimeZone? timeZone,
   }) {
-    final $result = create();
-    if (year != null) {
-      $result.year = year;
-    }
-    if (month != null) {
-      $result.month = month;
-    }
-    if (day != null) {
-      $result.day = day;
-    }
-    if (hours != null) {
-      $result.hours = hours;
-    }
-    if (minutes != null) {
-      $result.minutes = minutes;
-    }
-    if (seconds != null) {
-      $result.seconds = seconds;
-    }
-    if (nanos != null) {
-      $result.nanos = nanos;
-    }
-    if (utcOffset != null) {
-      $result.utcOffset = utcOffset;
-    }
-    if (timeZone != null) {
-      $result.timeZone = timeZone;
-    }
-    return $result;
+    final result = create();
+    if (year != null) result.year = year;
+    if (month != null) result.month = month;
+    if (day != null) result.day = day;
+    if (hours != null) result.hours = hours;
+    if (minutes != null) result.minutes = minutes;
+    if (seconds != null) result.seconds = seconds;
+    if (nanos != null) result.nanos = nanos;
+    if (utcOffset != null) result.utcOffset = utcOffset;
+    if (timeZone != null) result.timeZone = timeZone;
+    return result;
   }
-  DateTime._() : super();
-  factory DateTime.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory DateTime.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  DateTime._();
+
+  factory DateTime.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory DateTime.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static const $core.Map<$core.int, DateTime_TimeOffset>
       _DateTime_TimeOffsetByTag = {
@@ -96,13 +81,13 @@ class DateTime extends $pb.GeneratedMessage {
       package: const $pb.PackageName(_omitMessageNames ? '' : 'google.type'),
       createEmptyInstance: create)
     ..oo(0, [8, 9])
-    ..a<$core.int>(1, _omitFieldNames ? '' : 'year', $pb.PbFieldType.O3)
-    ..a<$core.int>(2, _omitFieldNames ? '' : 'month', $pb.PbFieldType.O3)
-    ..a<$core.int>(3, _omitFieldNames ? '' : 'day', $pb.PbFieldType.O3)
-    ..a<$core.int>(4, _omitFieldNames ? '' : 'hours', $pb.PbFieldType.O3)
-    ..a<$core.int>(5, _omitFieldNames ? '' : 'minutes', $pb.PbFieldType.O3)
-    ..a<$core.int>(6, _omitFieldNames ? '' : 'seconds', $pb.PbFieldType.O3)
-    ..a<$core.int>(7, _omitFieldNames ? '' : 'nanos', $pb.PbFieldType.O3)
+    ..aI(1, _omitFieldNames ? '' : 'year')
+    ..aI(2, _omitFieldNames ? '' : 'month')
+    ..aI(3, _omitFieldNames ? '' : 'day')
+    ..aI(4, _omitFieldNames ? '' : 'hours')
+    ..aI(5, _omitFieldNames ? '' : 'minutes')
+    ..aI(6, _omitFieldNames ? '' : 'seconds')
+    ..aI(7, _omitFieldNames ? '' : 'nanos')
     ..aOM<$0.Duration>(8, _omitFieldNames ? '' : 'utcOffset',
         subBuilder: $0.Duration.create)
     ..aOM<TimeZone>(9, _omitFieldNames ? '' : 'timeZone',
@@ -110,24 +95,29 @@ class DateTime extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  DateTime clone() => DateTime()..mergeFromMessage(this);
+  DateTime clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DateTime copyWith(void Function(DateTime) updates) =>
       super.copyWith((message) => updates(message as DateTime)) as DateTime;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DateTime create() => DateTime._();
+  @$core.override
   DateTime createEmptyInstance() => create();
-  static $pb.PbList<DateTime> createRepeated() => $pb.PbList<DateTime>();
   @$core.pragma('dart2js:noInline')
   static DateTime getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DateTime>(create);
   static DateTime? _defaultInstance;
 
+  @$pb.TagNumber(8)
+  @$pb.TagNumber(9)
   DateTime_TimeOffset whichTimeOffset() =>
       _DateTime_TimeOffsetByTag[$_whichOneof(0)]!;
+  @$pb.TagNumber(8)
+  @$pb.TagNumber(9)
   void clearTimeOffset() => $_clearField($_whichOneof(0));
 
   /// Optional. Year of date. Must be from 1 to 9999, or 0 if specifying a
@@ -135,10 +125,7 @@ class DateTime extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.int get year => $_getIZ(0);
   @$pb.TagNumber(1)
-  set year($core.int v) {
-    $_setSignedInt32(0, v);
-  }
-
+  set year($core.int value) => $_setSignedInt32(0, value);
   @$pb.TagNumber(1)
   $core.bool hasYear() => $_has(0);
   @$pb.TagNumber(1)
@@ -148,10 +135,7 @@ class DateTime extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get month => $_getIZ(1);
   @$pb.TagNumber(2)
-  set month($core.int v) {
-    $_setSignedInt32(1, v);
-  }
-
+  set month($core.int value) => $_setSignedInt32(1, value);
   @$pb.TagNumber(2)
   $core.bool hasMonth() => $_has(1);
   @$pb.TagNumber(2)
@@ -162,10 +146,7 @@ class DateTime extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.int get day => $_getIZ(2);
   @$pb.TagNumber(3)
-  set day($core.int v) {
-    $_setSignedInt32(2, v);
-  }
-
+  set day($core.int value) => $_setSignedInt32(2, value);
   @$pb.TagNumber(3)
   $core.bool hasDay() => $_has(2);
   @$pb.TagNumber(3)
@@ -177,10 +158,7 @@ class DateTime extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.int get hours => $_getIZ(3);
   @$pb.TagNumber(4)
-  set hours($core.int v) {
-    $_setSignedInt32(3, v);
-  }
-
+  set hours($core.int value) => $_setSignedInt32(3, value);
   @$pb.TagNumber(4)
   $core.bool hasHours() => $_has(3);
   @$pb.TagNumber(4)
@@ -190,10 +168,7 @@ class DateTime extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.int get minutes => $_getIZ(4);
   @$pb.TagNumber(5)
-  set minutes($core.int v) {
-    $_setSignedInt32(4, v);
-  }
-
+  set minutes($core.int value) => $_setSignedInt32(4, value);
   @$pb.TagNumber(5)
   $core.bool hasMinutes() => $_has(4);
   @$pb.TagNumber(5)
@@ -204,10 +179,7 @@ class DateTime extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.int get seconds => $_getIZ(5);
   @$pb.TagNumber(6)
-  set seconds($core.int v) {
-    $_setSignedInt32(5, v);
-  }
-
+  set seconds($core.int value) => $_setSignedInt32(5, value);
   @$pb.TagNumber(6)
   $core.bool hasSeconds() => $_has(5);
   @$pb.TagNumber(6)
@@ -218,10 +190,7 @@ class DateTime extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.int get nanos => $_getIZ(6);
   @$pb.TagNumber(7)
-  set nanos($core.int v) {
-    $_setSignedInt32(6, v);
-  }
-
+  set nanos($core.int value) => $_setSignedInt32(6, value);
   @$pb.TagNumber(7)
   $core.bool hasNanos() => $_has(6);
   @$pb.TagNumber(7)
@@ -233,10 +202,7 @@ class DateTime extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $0.Duration get utcOffset => $_getN(7);
   @$pb.TagNumber(8)
-  set utcOffset($0.Duration v) {
-    $_setField(8, v);
-  }
-
+  set utcOffset($0.Duration value) => $_setField(8, value);
   @$pb.TagNumber(8)
   $core.bool hasUtcOffset() => $_has(7);
   @$pb.TagNumber(8)
@@ -248,10 +214,7 @@ class DateTime extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   TimeZone get timeZone => $_getN(8);
   @$pb.TagNumber(9)
-  set timeZone(TimeZone v) {
-    $_setField(9, v);
-  }
-
+  set timeZone(TimeZone value) => $_setField(9, value);
   @$pb.TagNumber(9)
   $core.bool hasTimeZone() => $_has(8);
   @$pb.TagNumber(9)
@@ -267,22 +230,20 @@ class TimeZone extends $pb.GeneratedMessage {
     $core.String? id,
     $core.String? version,
   }) {
-    final $result = create();
-    if (id != null) {
-      $result.id = id;
-    }
-    if (version != null) {
-      $result.version = version;
-    }
-    return $result;
+    final result = create();
+    if (id != null) result.id = id;
+    if (version != null) result.version = version;
+    return result;
   }
-  TimeZone._() : super();
-  factory TimeZone.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory TimeZone.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  TimeZone._();
+
+  factory TimeZone.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory TimeZone.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'TimeZone',
@@ -293,17 +254,18 @@ class TimeZone extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  TimeZone clone() => TimeZone()..mergeFromMessage(this);
+  TimeZone clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TimeZone copyWith(void Function(TimeZone) updates) =>
       super.copyWith((message) => updates(message as TimeZone)) as TimeZone;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static TimeZone create() => TimeZone._();
+  @$core.override
   TimeZone createEmptyInstance() => create();
-  static $pb.PbList<TimeZone> createRepeated() => $pb.PbList<TimeZone>();
   @$core.pragma('dart2js:noInline')
   static TimeZone getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TimeZone>(create);
@@ -313,10 +275,7 @@ class TimeZone extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get id => $_getSZ(0);
   @$pb.TagNumber(1)
-  set id($core.String v) {
-    $_setString(0, v);
-  }
-
+  set id($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
@@ -326,16 +285,14 @@ class TimeZone extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get version => $_getSZ(1);
   @$pb.TagNumber(2)
-  set version($core.String v) {
-    $_setString(1, v);
-  }
-
+  set version($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasVersion() => $_has(1);
   @$pb.TagNumber(2)
   void clearVersion() => $_clearField(2);
 }
 
-const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames =
+const $core.bool _omitFieldNames =
+    $core.bool.fromEnvironment('protobuf.omit_field_names');
+const $core.bool _omitMessageNames =
     $core.bool.fromEnvironment('protobuf.omit_message_names');

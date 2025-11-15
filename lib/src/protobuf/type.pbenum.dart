@@ -1,13 +1,14 @@
+// This is a generated file - do not edit.
 //
-//  Generated code. Do not modify.
-//  source: google/protobuf/type.proto
-//
+// Generated from google/protobuf/type.proto.
+
 // @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
-// ignore_for_file: constant_identifier_names, library_prefixes
-// ignore_for_file: non_constant_identifier_names, prefer_final_fields
-// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
+// ignore_for_file: constant_identifier_names
+// ignore_for_file: curly_braces_in_flow_control_structures
+// ignore_for_file: deprecated_member_use_from_same_package, library_prefixes
+// ignore_for_file: non_constant_identifier_names
 
 import 'dart:core' as $core;
 
@@ -33,7 +34,7 @@ class Syntax extends $pb.ProtobufEnum {
   static Syntax? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Syntax._(super.v, super.n);
+  const Syntax._(super.value, super.name);
 }
 
 /// Basic field types.
@@ -141,7 +142,7 @@ class Field_Kind extends $pb.ProtobufEnum {
   static Field_Kind? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Field_Kind._(super.v, super.n);
+  const Field_Kind._(super.value, super.name);
 }
 
 /// Whether a field is optional, required, or repeated.
@@ -174,7 +175,8 @@ class Field_Cardinality extends $pb.ProtobufEnum {
   static Field_Cardinality? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Field_Cardinality._(super.v, super.n);
+  const Field_Cardinality._(super.value, super.name);
 }
 
-const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');
+const $core.bool _omitEnumNames =
+    $core.bool.fromEnvironment('protobuf.omit_enum_names');

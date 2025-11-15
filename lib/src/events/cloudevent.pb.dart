@@ -1,13 +1,14 @@
+// This is a generated file - do not edit.
 //
-//  Generated code. Do not modify.
-//  source: google/events/cloudevent.proto
-//
+// Generated from google/events/cloudevent.proto.
+
 // @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
-// ignore_for_file: constant_identifier_names, library_prefixes
-// ignore_for_file: non_constant_identifier_names, prefer_final_fields
-// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
+// ignore_for_file: constant_identifier_names
+// ignore_for_file: curly_braces_in_flow_control_structures
+// ignore_for_file: deprecated_member_use_from_same_package, library_prefixes
+// ignore_for_file: non_constant_identifier_names
 
 import 'dart:core' as $core;
 
@@ -22,25 +23,21 @@ class ExtensionAttribute extends $pb.GeneratedMessage {
     $core.String? description,
     $core.String? camelCaseName,
   }) {
-    final $result = create();
-    if (name != null) {
-      $result.name = name;
-    }
-    if (description != null) {
-      $result.description = description;
-    }
-    if (camelCaseName != null) {
-      $result.camelCaseName = camelCaseName;
-    }
-    return $result;
+    final result = create();
+    if (name != null) result.name = name;
+    if (description != null) result.description = description;
+    if (camelCaseName != null) result.camelCaseName = camelCaseName;
+    return result;
   }
-  ExtensionAttribute._() : super();
-  factory ExtensionAttribute.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ExtensionAttribute.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  ExtensionAttribute._();
+
+  factory ExtensionAttribute.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ExtensionAttribute.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'ExtensionAttribute',
@@ -52,19 +49,19 @@ class ExtensionAttribute extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ExtensionAttribute clone() => ExtensionAttribute()..mergeFromMessage(this);
+  ExtensionAttribute clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ExtensionAttribute copyWith(void Function(ExtensionAttribute) updates) =>
       super.copyWith((message) => updates(message as ExtensionAttribute))
           as ExtensionAttribute;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ExtensionAttribute create() => ExtensionAttribute._();
+  @$core.override
   ExtensionAttribute createEmptyInstance() => create();
-  static $pb.PbList<ExtensionAttribute> createRepeated() =>
-      $pb.PbList<ExtensionAttribute>();
   @$core.pragma('dart2js:noInline')
   static ExtensionAttribute getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ExtensionAttribute>(create);
@@ -75,10 +72,7 @@ class ExtensionAttribute extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) {
-    $_setString(0, v);
-  }
-
+  set name($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -88,10 +82,7 @@ class ExtensionAttribute extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get description => $_getSZ(1);
   @$pb.TagNumber(2)
-  set description($core.String v) {
-    $_setString(1, v);
-  }
-
+  set description($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasDescription() => $_has(1);
   @$pb.TagNumber(2)
@@ -102,10 +93,7 @@ class ExtensionAttribute extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get camelCaseName => $_getSZ(2);
   @$pb.TagNumber(3)
-  set camelCaseName($core.String v) {
-    $_setString(2, v);
-  }
-
+  set camelCaseName($core.String value) => $_setString(2, value);
   @$pb.TagNumber(3)
   $core.bool hasCamelCaseName() => $_has(2);
   @$pb.TagNumber(3)
@@ -145,6 +133,7 @@ class Cloudevent {
   }
 }
 
-const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames =
+const $core.bool _omitFieldNames =
+    $core.bool.fromEnvironment('protobuf.omit_field_names');
+const $core.bool _omitMessageNames =
     $core.bool.fromEnvironment('protobuf.omit_message_names');

@@ -1,20 +1,21 @@
+// This is a generated file - do not edit.
 //
-//  Generated code. Do not modify.
-//  source: google/events/cloud/certificatemanager/v1/data.proto
-//
+// Generated from google/events/cloud/certificatemanager/v1/data.proto.
+
 // @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
-// ignore_for_file: constant_identifier_names, library_prefixes
-// ignore_for_file: non_constant_identifier_names, prefer_final_fields
-// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
+// ignore_for_file: constant_identifier_names
+// ignore_for_file: curly_braces_in_flow_control_structures
+// ignore_for_file: deprecated_member_use_from_same_package, library_prefixes
+// ignore_for_file: non_constant_identifier_names
 
 import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/duration.pb.dart' as $0;
-import '../../../../protobuf/timestamp.pb.dart' as $2;
+import '../../../../protobuf/duration.pb.dart' as $1;
+import '../../../../protobuf/timestamp.pb.dart' as $0;
 import 'data.pbenum.dart';
 
 export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
@@ -27,22 +28,21 @@ class CertificateIssuanceConfig_CertificateAuthorityConfig_CertificateAuthorityS
   factory CertificateIssuanceConfig_CertificateAuthorityConfig_CertificateAuthorityServiceConfig({
     $core.String? caPool,
   }) {
-    final $result = create();
-    if (caPool != null) {
-      $result.caPool = caPool;
-    }
-    return $result;
+    final result = create();
+    if (caPool != null) result.caPool = caPool;
+    return result;
   }
-  CertificateIssuanceConfig_CertificateAuthorityConfig_CertificateAuthorityServiceConfig._()
-      : super();
+
+  CertificateIssuanceConfig_CertificateAuthorityConfig_CertificateAuthorityServiceConfig._();
+
   factory CertificateIssuanceConfig_CertificateAuthorityConfig_CertificateAuthorityServiceConfig.fromBuffer(
-          $core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
+          $core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
   factory CertificateIssuanceConfig_CertificateAuthorityConfig_CertificateAuthorityServiceConfig.fromJson(
-          $core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+          $core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames
@@ -56,9 +56,7 @@ class CertificateIssuanceConfig_CertificateAuthorityConfig_CertificateAuthorityS
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CertificateIssuanceConfig_CertificateAuthorityConfig_CertificateAuthorityServiceConfig
-      clone() =>
-          CertificateIssuanceConfig_CertificateAuthorityConfig_CertificateAuthorityServiceConfig()
-            ..mergeFromMessage(this);
+      clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CertificateIssuanceConfig_CertificateAuthorityConfig_CertificateAuthorityServiceConfig copyWith(
           void Function(
@@ -68,6 +66,7 @@ class CertificateIssuanceConfig_CertificateAuthorityConfig_CertificateAuthorityS
               as CertificateIssuanceConfig_CertificateAuthorityConfig_CertificateAuthorityServiceConfig))
           as CertificateIssuanceConfig_CertificateAuthorityConfig_CertificateAuthorityServiceConfig;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
@@ -75,12 +74,9 @@ class CertificateIssuanceConfig_CertificateAuthorityConfig_CertificateAuthorityS
       create() =>
           CertificateIssuanceConfig_CertificateAuthorityConfig_CertificateAuthorityServiceConfig
               ._();
+  @$core.override
   CertificateIssuanceConfig_CertificateAuthorityConfig_CertificateAuthorityServiceConfig
       createEmptyInstance() => create();
-  static $pb.PbList<
-          CertificateIssuanceConfig_CertificateAuthorityConfig_CertificateAuthorityServiceConfig>
-      createRepeated() => $pb.PbList<
-          CertificateIssuanceConfig_CertificateAuthorityConfig_CertificateAuthorityServiceConfig>();
   @$core.pragma('dart2js:noInline')
   static CertificateIssuanceConfig_CertificateAuthorityConfig_CertificateAuthorityServiceConfig
       getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
@@ -95,10 +91,7 @@ class CertificateIssuanceConfig_CertificateAuthorityConfig_CertificateAuthorityS
   @$pb.TagNumber(1)
   $core.String get caPool => $_getSZ(0);
   @$pb.TagNumber(1)
-  set caPool($core.String v) {
-    $_setString(0, v);
-  }
-
+  set caPool($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasCaPool() => $_has(0);
   @$pb.TagNumber(1)
@@ -118,22 +111,23 @@ class CertificateIssuanceConfig_CertificateAuthorityConfig
     CertificateIssuanceConfig_CertificateAuthorityConfig_CertificateAuthorityServiceConfig?
         certificateAuthorityServiceConfig,
   }) {
-    final $result = create();
-    if (certificateAuthorityServiceConfig != null) {
-      $result.certificateAuthorityServiceConfig =
+    final result = create();
+    if (certificateAuthorityServiceConfig != null)
+      result.certificateAuthorityServiceConfig =
           certificateAuthorityServiceConfig;
-    }
-    return $result;
+    return result;
   }
-  CertificateIssuanceConfig_CertificateAuthorityConfig._() : super();
+
+  CertificateIssuanceConfig_CertificateAuthorityConfig._();
+
   factory CertificateIssuanceConfig_CertificateAuthorityConfig.fromBuffer(
-          $core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
+          $core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
   factory CertificateIssuanceConfig_CertificateAuthorityConfig.fromJson(
-          $core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+          $core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static const $core
       .Map<$core.int, CertificateIssuanceConfig_CertificateAuthorityConfig_Kind>
@@ -158,9 +152,7 @@ class CertificateIssuanceConfig_CertificateAuthorityConfig
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  CertificateIssuanceConfig_CertificateAuthorityConfig clone() =>
-      CertificateIssuanceConfig_CertificateAuthorityConfig()
-        ..mergeFromMessage(this);
+  CertificateIssuanceConfig_CertificateAuthorityConfig clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CertificateIssuanceConfig_CertificateAuthorityConfig copyWith(
           void Function(CertificateIssuanceConfig_CertificateAuthorityConfig)
@@ -169,25 +161,26 @@ class CertificateIssuanceConfig_CertificateAuthorityConfig
               message as CertificateIssuanceConfig_CertificateAuthorityConfig))
           as CertificateIssuanceConfig_CertificateAuthorityConfig;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CertificateIssuanceConfig_CertificateAuthorityConfig create() =>
       CertificateIssuanceConfig_CertificateAuthorityConfig._();
+  @$core.override
   CertificateIssuanceConfig_CertificateAuthorityConfig createEmptyInstance() =>
       create();
-  static $pb.PbList<CertificateIssuanceConfig_CertificateAuthorityConfig>
-      createRepeated() =>
-          $pb.PbList<CertificateIssuanceConfig_CertificateAuthorityConfig>();
   @$core.pragma('dart2js:noInline')
   static CertificateIssuanceConfig_CertificateAuthorityConfig getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
           CertificateIssuanceConfig_CertificateAuthorityConfig>(create);
   static CertificateIssuanceConfig_CertificateAuthorityConfig? _defaultInstance;
 
+  @$pb.TagNumber(1)
   CertificateIssuanceConfig_CertificateAuthorityConfig_Kind whichKind() =>
       _CertificateIssuanceConfig_CertificateAuthorityConfig_KindByTag[
           $_whichOneof(0)]!;
+  @$pb.TagNumber(1)
   void clearKind() => $_clearField($_whichOneof(0));
 
   /// Defines a CertificateAuthorityServiceConfig.
@@ -196,11 +189,9 @@ class CertificateIssuanceConfig_CertificateAuthorityConfig
       get certificateAuthorityServiceConfig => $_getN(0);
   @$pb.TagNumber(1)
   set certificateAuthorityServiceConfig(
-      CertificateIssuanceConfig_CertificateAuthorityConfig_CertificateAuthorityServiceConfig
-          v) {
-    $_setField(1, v);
-  }
-
+          CertificateIssuanceConfig_CertificateAuthorityConfig_CertificateAuthorityServiceConfig
+              value) =>
+      $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasCertificateAuthorityServiceConfig() => $_has(0);
   @$pb.TagNumber(1)
@@ -214,53 +205,39 @@ class CertificateIssuanceConfig_CertificateAuthorityConfig
 class CertificateIssuanceConfig extends $pb.GeneratedMessage {
   factory CertificateIssuanceConfig({
     $core.String? name,
-    $2.Timestamp? createTime,
-    $2.Timestamp? updateTime,
+    $0.Timestamp? createTime,
+    $0.Timestamp? updateTime,
     $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.String? description,
     CertificateIssuanceConfig_CertificateAuthorityConfig?
         certificateAuthorityConfig,
-    $0.Duration? lifetime,
+    $1.Duration? lifetime,
     $core.int? rotationWindowPercentage,
     CertificateIssuanceConfig_KeyAlgorithm? keyAlgorithm,
   }) {
-    final $result = create();
-    if (name != null) {
-      $result.name = name;
-    }
-    if (createTime != null) {
-      $result.createTime = createTime;
-    }
-    if (updateTime != null) {
-      $result.updateTime = updateTime;
-    }
-    if (labels != null) {
-      $result.labels.addEntries(labels);
-    }
-    if (description != null) {
-      $result.description = description;
-    }
-    if (certificateAuthorityConfig != null) {
-      $result.certificateAuthorityConfig = certificateAuthorityConfig;
-    }
-    if (lifetime != null) {
-      $result.lifetime = lifetime;
-    }
-    if (rotationWindowPercentage != null) {
-      $result.rotationWindowPercentage = rotationWindowPercentage;
-    }
-    if (keyAlgorithm != null) {
-      $result.keyAlgorithm = keyAlgorithm;
-    }
-    return $result;
+    final result = create();
+    if (name != null) result.name = name;
+    if (createTime != null) result.createTime = createTime;
+    if (updateTime != null) result.updateTime = updateTime;
+    if (labels != null) result.labels.addEntries(labels);
+    if (description != null) result.description = description;
+    if (certificateAuthorityConfig != null)
+      result.certificateAuthorityConfig = certificateAuthorityConfig;
+    if (lifetime != null) result.lifetime = lifetime;
+    if (rotationWindowPercentage != null)
+      result.rotationWindowPercentage = rotationWindowPercentage;
+    if (keyAlgorithm != null) result.keyAlgorithm = keyAlgorithm;
+    return result;
   }
-  CertificateIssuanceConfig._() : super();
-  factory CertificateIssuanceConfig.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory CertificateIssuanceConfig.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  CertificateIssuanceConfig._();
+
+  factory CertificateIssuanceConfig.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory CertificateIssuanceConfig.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'CertificateIssuanceConfig',
@@ -268,10 +245,10 @@ class CertificateIssuanceConfig extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.events.cloud.certificatemanager.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$2.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(3, _omitFieldNames ? '' : 'updateTime',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$0.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(3, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $0.Timestamp.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels',
         entryClassName: 'CertificateIssuanceConfig.LabelsEntry',
         keyFieldType: $pb.PbFieldType.OS,
@@ -282,34 +259,29 @@ class CertificateIssuanceConfig extends $pb.GeneratedMessage {
     ..aOM<CertificateIssuanceConfig_CertificateAuthorityConfig>(
         6, _omitFieldNames ? '' : 'certificateAuthorityConfig',
         subBuilder: CertificateIssuanceConfig_CertificateAuthorityConfig.create)
-    ..aOM<$0.Duration>(7, _omitFieldNames ? '' : 'lifetime',
-        subBuilder: $0.Duration.create)
-    ..a<$core.int>(8, _omitFieldNames ? '' : 'rotationWindowPercentage',
-        $pb.PbFieldType.O3)
-    ..e<CertificateIssuanceConfig_KeyAlgorithm>(
-        9, _omitFieldNames ? '' : 'keyAlgorithm', $pb.PbFieldType.OE,
-        defaultOrMaker:
-            CertificateIssuanceConfig_KeyAlgorithm.KEY_ALGORITHM_UNSPECIFIED,
-        valueOf: CertificateIssuanceConfig_KeyAlgorithm.valueOf,
+    ..aOM<$1.Duration>(7, _omitFieldNames ? '' : 'lifetime',
+        subBuilder: $1.Duration.create)
+    ..aI(8, _omitFieldNames ? '' : 'rotationWindowPercentage')
+    ..aE<CertificateIssuanceConfig_KeyAlgorithm>(
+        9, _omitFieldNames ? '' : 'keyAlgorithm',
         enumValues: CertificateIssuanceConfig_KeyAlgorithm.values)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  CertificateIssuanceConfig clone() =>
-      CertificateIssuanceConfig()..mergeFromMessage(this);
+  CertificateIssuanceConfig clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CertificateIssuanceConfig copyWith(
           void Function(CertificateIssuanceConfig) updates) =>
       super.copyWith((message) => updates(message as CertificateIssuanceConfig))
           as CertificateIssuanceConfig;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CertificateIssuanceConfig create() => CertificateIssuanceConfig._();
+  @$core.override
   CertificateIssuanceConfig createEmptyInstance() => create();
-  static $pb.PbList<CertificateIssuanceConfig> createRepeated() =>
-      $pb.PbList<CertificateIssuanceConfig>();
   @$core.pragma('dart2js:noInline')
   static CertificateIssuanceConfig getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<CertificateIssuanceConfig>(create);
@@ -321,10 +293,7 @@ class CertificateIssuanceConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) {
-    $_setString(0, v);
-  }
-
+  set name($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -332,33 +301,27 @@ class CertificateIssuanceConfig extends $pb.GeneratedMessage {
 
   /// Output only. The creation timestamp of a CertificateIssuanceConfig.
   @$pb.TagNumber(2)
-  $2.Timestamp get createTime => $_getN(1);
+  $0.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($2.Timestamp v) {
-    $_setField(2, v);
-  }
-
+  set createTime($0.Timestamp value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => $_clearField(2);
   @$pb.TagNumber(2)
-  $2.Timestamp ensureCreateTime() => $_ensure(1);
+  $0.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. The last update timestamp of a CertificateIssuanceConfig.
   @$pb.TagNumber(3)
-  $2.Timestamp get updateTime => $_getN(2);
+  $0.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($2.Timestamp v) {
-    $_setField(3, v);
-  }
-
+  set updateTime($0.Timestamp value) => $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => $_clearField(3);
   @$pb.TagNumber(3)
-  $2.Timestamp ensureUpdateTime() => $_ensure(2);
+  $0.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Set of labels associated with a CertificateIssuanceConfig.
   @$pb.TagNumber(4)
@@ -368,10 +331,7 @@ class CertificateIssuanceConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get description => $_getSZ(4);
   @$pb.TagNumber(5)
-  set description($core.String v) {
-    $_setString(4, v);
-  }
-
+  set description($core.String value) => $_setString(4, value);
   @$pb.TagNumber(5)
   $core.bool hasDescription() => $_has(4);
   @$pb.TagNumber(5)
@@ -384,10 +344,8 @@ class CertificateIssuanceConfig extends $pb.GeneratedMessage {
       get certificateAuthorityConfig => $_getN(5);
   @$pb.TagNumber(6)
   set certificateAuthorityConfig(
-      CertificateIssuanceConfig_CertificateAuthorityConfig v) {
-    $_setField(6, v);
-  }
-
+          CertificateIssuanceConfig_CertificateAuthorityConfig value) =>
+      $_setField(6, value);
   @$pb.TagNumber(6)
   $core.bool hasCertificateAuthorityConfig() => $_has(5);
   @$pb.TagNumber(6)
@@ -398,18 +356,15 @@ class CertificateIssuanceConfig extends $pb.GeneratedMessage {
 
   /// Required. Workload certificate lifetime requested.
   @$pb.TagNumber(7)
-  $0.Duration get lifetime => $_getN(6);
+  $1.Duration get lifetime => $_getN(6);
   @$pb.TagNumber(7)
-  set lifetime($0.Duration v) {
-    $_setField(7, v);
-  }
-
+  set lifetime($1.Duration value) => $_setField(7, value);
   @$pb.TagNumber(7)
   $core.bool hasLifetime() => $_has(6);
   @$pb.TagNumber(7)
   void clearLifetime() => $_clearField(7);
   @$pb.TagNumber(7)
-  $0.Duration ensureLifetime() => $_ensure(6);
+  $1.Duration ensureLifetime() => $_ensure(6);
 
   /// Required. Specifies the percentage of elapsed time of the certificate
   /// lifetime to wait before renewing the certificate. Must be a number between
@@ -417,10 +372,7 @@ class CertificateIssuanceConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.int get rotationWindowPercentage => $_getIZ(7);
   @$pb.TagNumber(8)
-  set rotationWindowPercentage($core.int v) {
-    $_setSignedInt32(7, v);
-  }
-
+  set rotationWindowPercentage($core.int value) => $_setSignedInt32(7, value);
   @$pb.TagNumber(8)
   $core.bool hasRotationWindowPercentage() => $_has(7);
   @$pb.TagNumber(8)
@@ -430,10 +382,8 @@ class CertificateIssuanceConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   CertificateIssuanceConfig_KeyAlgorithm get keyAlgorithm => $_getN(8);
   @$pb.TagNumber(9)
-  set keyAlgorithm(CertificateIssuanceConfig_KeyAlgorithm v) {
-    $_setField(9, v);
-  }
-
+  set keyAlgorithm(CertificateIssuanceConfig_KeyAlgorithm value) =>
+      $_setField(9, value);
   @$pb.TagNumber(9)
   $core.bool hasKeyAlgorithm() => $_has(8);
   @$pb.TagNumber(9)
@@ -445,13 +395,16 @@ class CertificateIssuanceConfig extends $pb.GeneratedMessage {
 /// certificates before they expire remains the user's responsibility.
 class Certificate_SelfManagedCertificate extends $pb.GeneratedMessage {
   factory Certificate_SelfManagedCertificate() => create();
-  Certificate_SelfManagedCertificate._() : super();
-  factory Certificate_SelfManagedCertificate.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Certificate_SelfManagedCertificate.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  Certificate_SelfManagedCertificate._();
+
+  factory Certificate_SelfManagedCertificate.fromBuffer(
+          $core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory Certificate_SelfManagedCertificate.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'Certificate.SelfManagedCertificate',
@@ -461,8 +414,7 @@ class Certificate_SelfManagedCertificate extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  Certificate_SelfManagedCertificate clone() =>
-      Certificate_SelfManagedCertificate()..mergeFromMessage(this);
+  Certificate_SelfManagedCertificate clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Certificate_SelfManagedCertificate copyWith(
           void Function(Certificate_SelfManagedCertificate) updates) =>
@@ -470,14 +422,14 @@ class Certificate_SelfManagedCertificate extends $pb.GeneratedMessage {
               updates(message as Certificate_SelfManagedCertificate))
           as Certificate_SelfManagedCertificate;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Certificate_SelfManagedCertificate create() =>
       Certificate_SelfManagedCertificate._();
+  @$core.override
   Certificate_SelfManagedCertificate createEmptyInstance() => create();
-  static $pb.PbList<Certificate_SelfManagedCertificate> createRepeated() =>
-      $pb.PbList<Certificate_SelfManagedCertificate>();
   @$core.pragma('dart2js:noInline')
   static Certificate_SelfManagedCertificate getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<Certificate_SelfManagedCertificate>(
@@ -492,24 +444,22 @@ class Certificate_ManagedCertificate_ProvisioningIssue
     Certificate_ManagedCertificate_ProvisioningIssue_Reason? reason,
     $core.String? details,
   }) {
-    final $result = create();
-    if (reason != null) {
-      $result.reason = reason;
-    }
-    if (details != null) {
-      $result.details = details;
-    }
-    return $result;
+    final result = create();
+    if (reason != null) result.reason = reason;
+    if (details != null) result.details = details;
+    return result;
   }
-  Certificate_ManagedCertificate_ProvisioningIssue._() : super();
+
+  Certificate_ManagedCertificate_ProvisioningIssue._();
+
   factory Certificate_ManagedCertificate_ProvisioningIssue.fromBuffer(
-          $core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
+          $core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
   factory Certificate_ManagedCertificate_ProvisioningIssue.fromJson(
-          $core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+          $core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames
@@ -518,21 +468,15 @@ class Certificate_ManagedCertificate_ProvisioningIssue
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.certificatemanager.v1'),
       createEmptyInstance: create)
-    ..e<Certificate_ManagedCertificate_ProvisioningIssue_Reason>(
-        1, _omitFieldNames ? '' : 'reason', $pb.PbFieldType.OE,
-        defaultOrMaker: Certificate_ManagedCertificate_ProvisioningIssue_Reason
-            .REASON_UNSPECIFIED,
-        valueOf:
-            Certificate_ManagedCertificate_ProvisioningIssue_Reason.valueOf,
+    ..aE<Certificate_ManagedCertificate_ProvisioningIssue_Reason>(
+        1, _omitFieldNames ? '' : 'reason',
         enumValues:
             Certificate_ManagedCertificate_ProvisioningIssue_Reason.values)
     ..aOS(2, _omitFieldNames ? '' : 'details')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  Certificate_ManagedCertificate_ProvisioningIssue clone() =>
-      Certificate_ManagedCertificate_ProvisioningIssue()
-        ..mergeFromMessage(this);
+  Certificate_ManagedCertificate_ProvisioningIssue clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Certificate_ManagedCertificate_ProvisioningIssue copyWith(
           void Function(Certificate_ManagedCertificate_ProvisioningIssue)
@@ -541,16 +485,15 @@ class Certificate_ManagedCertificate_ProvisioningIssue
               message as Certificate_ManagedCertificate_ProvisioningIssue))
           as Certificate_ManagedCertificate_ProvisioningIssue;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Certificate_ManagedCertificate_ProvisioningIssue create() =>
       Certificate_ManagedCertificate_ProvisioningIssue._();
+  @$core.override
   Certificate_ManagedCertificate_ProvisioningIssue createEmptyInstance() =>
       create();
-  static $pb.PbList<Certificate_ManagedCertificate_ProvisioningIssue>
-      createRepeated() =>
-          $pb.PbList<Certificate_ManagedCertificate_ProvisioningIssue>();
   @$core.pragma('dart2js:noInline')
   static Certificate_ManagedCertificate_ProvisioningIssue getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
@@ -562,10 +505,8 @@ class Certificate_ManagedCertificate_ProvisioningIssue
   Certificate_ManagedCertificate_ProvisioningIssue_Reason get reason =>
       $_getN(0);
   @$pb.TagNumber(1)
-  set reason(Certificate_ManagedCertificate_ProvisioningIssue_Reason v) {
-    $_setField(1, v);
-  }
-
+  set reason(Certificate_ManagedCertificate_ProvisioningIssue_Reason value) =>
+      $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasReason() => $_has(0);
   @$pb.TagNumber(1)
@@ -577,10 +518,7 @@ class Certificate_ManagedCertificate_ProvisioningIssue
   @$pb.TagNumber(2)
   $core.String get details => $_getSZ(1);
   @$pb.TagNumber(2)
-  set details($core.String v) {
-    $_setString(1, v);
-  }
-
+  set details($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasDetails() => $_has(1);
   @$pb.TagNumber(2)
@@ -598,30 +536,24 @@ class Certificate_ManagedCertificate_AuthorizationAttemptInfo
         failureReason,
     $core.String? details,
   }) {
-    final $result = create();
-    if (domain != null) {
-      $result.domain = domain;
-    }
-    if (state != null) {
-      $result.state = state;
-    }
-    if (failureReason != null) {
-      $result.failureReason = failureReason;
-    }
-    if (details != null) {
-      $result.details = details;
-    }
-    return $result;
+    final result = create();
+    if (domain != null) result.domain = domain;
+    if (state != null) result.state = state;
+    if (failureReason != null) result.failureReason = failureReason;
+    if (details != null) result.details = details;
+    return result;
   }
-  Certificate_ManagedCertificate_AuthorizationAttemptInfo._() : super();
+
+  Certificate_ManagedCertificate_AuthorizationAttemptInfo._();
+
   factory Certificate_ManagedCertificate_AuthorizationAttemptInfo.fromBuffer(
-          $core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
+          $core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
   factory Certificate_ManagedCertificate_AuthorizationAttemptInfo.fromJson(
-          $core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+          $core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames
@@ -631,24 +563,13 @@ class Certificate_ManagedCertificate_AuthorizationAttemptInfo
           _omitMessageNames ? '' : 'google.events.cloud.certificatemanager.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'domain')
-    ..e<Certificate_ManagedCertificate_AuthorizationAttemptInfo_State>(
-        2, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
-        defaultOrMaker:
-            Certificate_ManagedCertificate_AuthorizationAttemptInfo_State
-                .STATE_UNSPECIFIED,
-        valueOf: Certificate_ManagedCertificate_AuthorizationAttemptInfo_State
-            .valueOf,
+    ..aE<Certificate_ManagedCertificate_AuthorizationAttemptInfo_State>(
+        2, _omitFieldNames ? '' : 'state',
         enumValues:
             Certificate_ManagedCertificate_AuthorizationAttemptInfo_State
                 .values)
-    ..e<Certificate_ManagedCertificate_AuthorizationAttemptInfo_FailureReason>(
-        3, _omitFieldNames ? '' : 'failureReason', $pb.PbFieldType.OE,
-        defaultOrMaker:
-            Certificate_ManagedCertificate_AuthorizationAttemptInfo_FailureReason
-                .FAILURE_REASON_UNSPECIFIED,
-        valueOf:
-            Certificate_ManagedCertificate_AuthorizationAttemptInfo_FailureReason
-                .valueOf,
+    ..aE<Certificate_ManagedCertificate_AuthorizationAttemptInfo_FailureReason>(
+        3, _omitFieldNames ? '' : 'failureReason',
         enumValues:
             Certificate_ManagedCertificate_AuthorizationAttemptInfo_FailureReason
                 .values)
@@ -656,9 +577,7 @@ class Certificate_ManagedCertificate_AuthorizationAttemptInfo
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  Certificate_ManagedCertificate_AuthorizationAttemptInfo clone() =>
-      Certificate_ManagedCertificate_AuthorizationAttemptInfo()
-        ..mergeFromMessage(this);
+  Certificate_ManagedCertificate_AuthorizationAttemptInfo clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Certificate_ManagedCertificate_AuthorizationAttemptInfo copyWith(
           void Function(Certificate_ManagedCertificate_AuthorizationAttemptInfo)
@@ -667,16 +586,15 @@ class Certificate_ManagedCertificate_AuthorizationAttemptInfo
               as Certificate_ManagedCertificate_AuthorizationAttemptInfo))
           as Certificate_ManagedCertificate_AuthorizationAttemptInfo;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Certificate_ManagedCertificate_AuthorizationAttemptInfo create() =>
       Certificate_ManagedCertificate_AuthorizationAttemptInfo._();
+  @$core.override
   Certificate_ManagedCertificate_AuthorizationAttemptInfo
       createEmptyInstance() => create();
-  static $pb.PbList<Certificate_ManagedCertificate_AuthorizationAttemptInfo>
-      createRepeated() =>
-          $pb.PbList<Certificate_ManagedCertificate_AuthorizationAttemptInfo>();
   @$core.pragma('dart2js:noInline')
   static Certificate_ManagedCertificate_AuthorizationAttemptInfo getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
@@ -688,10 +606,7 @@ class Certificate_ManagedCertificate_AuthorizationAttemptInfo
   @$pb.TagNumber(1)
   $core.String get domain => $_getSZ(0);
   @$pb.TagNumber(1)
-  set domain($core.String v) {
-    $_setString(0, v);
-  }
-
+  set domain($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasDomain() => $_has(0);
   @$pb.TagNumber(1)
@@ -702,10 +617,10 @@ class Certificate_ManagedCertificate_AuthorizationAttemptInfo
   Certificate_ManagedCertificate_AuthorizationAttemptInfo_State get state =>
       $_getN(1);
   @$pb.TagNumber(2)
-  set state(Certificate_ManagedCertificate_AuthorizationAttemptInfo_State v) {
-    $_setField(2, v);
-  }
-
+  set state(
+          Certificate_ManagedCertificate_AuthorizationAttemptInfo_State
+              value) =>
+      $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasState() => $_has(1);
   @$pb.TagNumber(2)
@@ -718,10 +633,9 @@ class Certificate_ManagedCertificate_AuthorizationAttemptInfo
       get failureReason => $_getN(2);
   @$pb.TagNumber(3)
   set failureReason(
-      Certificate_ManagedCertificate_AuthorizationAttemptInfo_FailureReason v) {
-    $_setField(3, v);
-  }
-
+          Certificate_ManagedCertificate_AuthorizationAttemptInfo_FailureReason
+              value) =>
+      $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasFailureReason() => $_has(2);
   @$pb.TagNumber(3)
@@ -733,10 +647,7 @@ class Certificate_ManagedCertificate_AuthorizationAttemptInfo
   @$pb.TagNumber(4)
   $core.String get details => $_getSZ(3);
   @$pb.TagNumber(4)
-  set details($core.String v) {
-    $_setString(3, v);
-  }
-
+  set details($core.String value) => $_setString(3, value);
   @$pb.TagNumber(4)
   $core.bool hasDetails() => $_has(3);
   @$pb.TagNumber(4)
@@ -756,34 +667,26 @@ class Certificate_ManagedCertificate extends $pb.GeneratedMessage {
         authorizationAttemptInfo,
     $core.String? issuanceConfig,
   }) {
-    final $result = create();
-    if (domains != null) {
-      $result.domains.addAll(domains);
-    }
-    if (dnsAuthorizations != null) {
-      $result.dnsAuthorizations.addAll(dnsAuthorizations);
-    }
-    if (provisioningIssue != null) {
-      $result.provisioningIssue = provisioningIssue;
-    }
-    if (state != null) {
-      $result.state = state;
-    }
-    if (authorizationAttemptInfo != null) {
-      $result.authorizationAttemptInfo.addAll(authorizationAttemptInfo);
-    }
-    if (issuanceConfig != null) {
-      $result.issuanceConfig = issuanceConfig;
-    }
-    return $result;
+    final result = create();
+    if (domains != null) result.domains.addAll(domains);
+    if (dnsAuthorizations != null)
+      result.dnsAuthorizations.addAll(dnsAuthorizations);
+    if (provisioningIssue != null) result.provisioningIssue = provisioningIssue;
+    if (state != null) result.state = state;
+    if (authorizationAttemptInfo != null)
+      result.authorizationAttemptInfo.addAll(authorizationAttemptInfo);
+    if (issuanceConfig != null) result.issuanceConfig = issuanceConfig;
+    return result;
   }
-  Certificate_ManagedCertificate._() : super();
-  factory Certificate_ManagedCertificate.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Certificate_ManagedCertificate.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  Certificate_ManagedCertificate._();
+
+  factory Certificate_ManagedCertificate.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory Certificate_ManagedCertificate.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'Certificate.ManagedCertificate',
@@ -795,21 +698,18 @@ class Certificate_ManagedCertificate extends $pb.GeneratedMessage {
     ..aOM<Certificate_ManagedCertificate_ProvisioningIssue>(
         3, _omitFieldNames ? '' : 'provisioningIssue',
         subBuilder: Certificate_ManagedCertificate_ProvisioningIssue.create)
-    ..e<Certificate_ManagedCertificate_State>(
-        4, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
-        defaultOrMaker: Certificate_ManagedCertificate_State.STATE_UNSPECIFIED,
-        valueOf: Certificate_ManagedCertificate_State.valueOf,
+    ..aE<Certificate_ManagedCertificate_State>(
+        4, _omitFieldNames ? '' : 'state',
         enumValues: Certificate_ManagedCertificate_State.values)
-    ..pc<Certificate_ManagedCertificate_AuthorizationAttemptInfo>(5,
-        _omitFieldNames ? '' : 'authorizationAttemptInfo', $pb.PbFieldType.PM,
+    ..pPM<Certificate_ManagedCertificate_AuthorizationAttemptInfo>(
+        5, _omitFieldNames ? '' : 'authorizationAttemptInfo',
         subBuilder:
             Certificate_ManagedCertificate_AuthorizationAttemptInfo.create)
     ..aOS(6, _omitFieldNames ? '' : 'issuanceConfig')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  Certificate_ManagedCertificate clone() =>
-      Certificate_ManagedCertificate()..mergeFromMessage(this);
+  Certificate_ManagedCertificate clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Certificate_ManagedCertificate copyWith(
           void Function(Certificate_ManagedCertificate) updates) =>
@@ -817,14 +717,14 @@ class Certificate_ManagedCertificate extends $pb.GeneratedMessage {
               (message) => updates(message as Certificate_ManagedCertificate))
           as Certificate_ManagedCertificate;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Certificate_ManagedCertificate create() =>
       Certificate_ManagedCertificate._();
+  @$core.override
   Certificate_ManagedCertificate createEmptyInstance() => create();
-  static $pb.PbList<Certificate_ManagedCertificate> createRepeated() =>
-      $pb.PbList<Certificate_ManagedCertificate>();
   @$core.pragma('dart2js:noInline')
   static Certificate_ManagedCertificate getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<Certificate_ManagedCertificate>(create);
@@ -847,10 +747,9 @@ class Certificate_ManagedCertificate extends $pb.GeneratedMessage {
   Certificate_ManagedCertificate_ProvisioningIssue get provisioningIssue =>
       $_getN(2);
   @$pb.TagNumber(3)
-  set provisioningIssue(Certificate_ManagedCertificate_ProvisioningIssue v) {
-    $_setField(3, v);
-  }
-
+  set provisioningIssue(
+          Certificate_ManagedCertificate_ProvisioningIssue value) =>
+      $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasProvisioningIssue() => $_has(2);
   @$pb.TagNumber(3)
@@ -863,10 +762,7 @@ class Certificate_ManagedCertificate extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   Certificate_ManagedCertificate_State get state => $_getN(3);
   @$pb.TagNumber(4)
-  set state(Certificate_ManagedCertificate_State v) {
-    $_setField(4, v);
-  }
-
+  set state(Certificate_ManagedCertificate_State value) => $_setField(4, value);
   @$pb.TagNumber(4)
   $core.bool hasState() => $_has(3);
   @$pb.TagNumber(4)
@@ -888,10 +784,7 @@ class Certificate_ManagedCertificate extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get issuanceConfig => $_getSZ(5);
   @$pb.TagNumber(6)
-  set issuanceConfig($core.String v) {
-    $_setString(5, v);
-  }
-
+  set issuanceConfig($core.String value) => $_setString(5, value);
   @$pb.TagNumber(6)
   $core.bool hasIssuanceConfig() => $_has(5);
   @$pb.TagNumber(6)
@@ -904,60 +797,40 @@ enum Certificate_Type { selfManaged, managed, notSet }
 class Certificate extends $pb.GeneratedMessage {
   factory Certificate({
     $core.String? name,
-    $2.Timestamp? createTime,
-    $2.Timestamp? updateTime,
+    $0.Timestamp? createTime,
+    $0.Timestamp? updateTime,
     $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     Certificate_SelfManagedCertificate? selfManaged,
     $core.Iterable<$core.String>? sanDnsnames,
-    $2.Timestamp? expireTime,
+    $0.Timestamp? expireTime,
     $core.String? description,
     $core.String? pemCertificate,
     Certificate_ManagedCertificate? managed,
     Certificate_Scope? scope,
   }) {
-    final $result = create();
-    if (name != null) {
-      $result.name = name;
-    }
-    if (createTime != null) {
-      $result.createTime = createTime;
-    }
-    if (updateTime != null) {
-      $result.updateTime = updateTime;
-    }
-    if (labels != null) {
-      $result.labels.addEntries(labels);
-    }
-    if (selfManaged != null) {
-      $result.selfManaged = selfManaged;
-    }
-    if (sanDnsnames != null) {
-      $result.sanDnsnames.addAll(sanDnsnames);
-    }
-    if (expireTime != null) {
-      $result.expireTime = expireTime;
-    }
-    if (description != null) {
-      $result.description = description;
-    }
-    if (pemCertificate != null) {
-      $result.pemCertificate = pemCertificate;
-    }
-    if (managed != null) {
-      $result.managed = managed;
-    }
-    if (scope != null) {
-      $result.scope = scope;
-    }
-    return $result;
+    final result = create();
+    if (name != null) result.name = name;
+    if (createTime != null) result.createTime = createTime;
+    if (updateTime != null) result.updateTime = updateTime;
+    if (labels != null) result.labels.addEntries(labels);
+    if (selfManaged != null) result.selfManaged = selfManaged;
+    if (sanDnsnames != null) result.sanDnsnames.addAll(sanDnsnames);
+    if (expireTime != null) result.expireTime = expireTime;
+    if (description != null) result.description = description;
+    if (pemCertificate != null) result.pemCertificate = pemCertificate;
+    if (managed != null) result.managed = managed;
+    if (scope != null) result.scope = scope;
+    return result;
   }
-  Certificate._() : super();
-  factory Certificate.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Certificate.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  Certificate._();
+
+  factory Certificate.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory Certificate.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static const $core.Map<$core.int, Certificate_Type> _Certificate_TypeByTag = {
     5: Certificate_Type.selfManaged,
@@ -971,10 +844,10 @@ class Certificate extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..oo(0, [5, 11])
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$2.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(3, _omitFieldNames ? '' : 'updateTime',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$0.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(3, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $0.Timestamp.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels',
         entryClassName: 'Certificate.LabelsEntry',
         keyFieldType: $pb.PbFieldType.OS,
@@ -985,38 +858,40 @@ class Certificate extends $pb.GeneratedMessage {
         5, _omitFieldNames ? '' : 'selfManaged',
         subBuilder: Certificate_SelfManagedCertificate.create)
     ..pPS(6, _omitFieldNames ? '' : 'sanDnsnames')
-    ..aOM<$2.Timestamp>(7, _omitFieldNames ? '' : 'expireTime',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$0.Timestamp>(7, _omitFieldNames ? '' : 'expireTime',
+        subBuilder: $0.Timestamp.create)
     ..aOS(8, _omitFieldNames ? '' : 'description')
     ..aOS(9, _omitFieldNames ? '' : 'pemCertificate')
     ..aOM<Certificate_ManagedCertificate>(11, _omitFieldNames ? '' : 'managed',
         subBuilder: Certificate_ManagedCertificate.create)
-    ..e<Certificate_Scope>(
-        12, _omitFieldNames ? '' : 'scope', $pb.PbFieldType.OE,
-        defaultOrMaker: Certificate_Scope.DEFAULT,
-        valueOf: Certificate_Scope.valueOf,
+    ..aE<Certificate_Scope>(12, _omitFieldNames ? '' : 'scope',
         enumValues: Certificate_Scope.values)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  Certificate clone() => Certificate()..mergeFromMessage(this);
+  Certificate clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Certificate copyWith(void Function(Certificate) updates) =>
       super.copyWith((message) => updates(message as Certificate))
           as Certificate;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Certificate create() => Certificate._();
+  @$core.override
   Certificate createEmptyInstance() => create();
-  static $pb.PbList<Certificate> createRepeated() => $pb.PbList<Certificate>();
   @$core.pragma('dart2js:noInline')
   static Certificate getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<Certificate>(create);
   static Certificate? _defaultInstance;
 
+  @$pb.TagNumber(5)
+  @$pb.TagNumber(11)
   Certificate_Type whichType() => _Certificate_TypeByTag[$_whichOneof(0)]!;
+  @$pb.TagNumber(5)
+  @$pb.TagNumber(11)
   void clearType() => $_clearField($_whichOneof(0));
 
   /// A user-defined name of the certificate. Certificate names must be unique
@@ -1024,10 +899,7 @@ class Certificate extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) {
-    $_setString(0, v);
-  }
-
+  set name($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -1035,33 +907,27 @@ class Certificate extends $pb.GeneratedMessage {
 
   /// Output only. The creation timestamp of a Certificate.
   @$pb.TagNumber(2)
-  $2.Timestamp get createTime => $_getN(1);
+  $0.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($2.Timestamp v) {
-    $_setField(2, v);
-  }
-
+  set createTime($0.Timestamp value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => $_clearField(2);
   @$pb.TagNumber(2)
-  $2.Timestamp ensureCreateTime() => $_ensure(1);
+  $0.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. The last update timestamp of a Certificate.
   @$pb.TagNumber(3)
-  $2.Timestamp get updateTime => $_getN(2);
+  $0.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($2.Timestamp v) {
-    $_setField(3, v);
-  }
-
+  set updateTime($0.Timestamp value) => $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => $_clearField(3);
   @$pb.TagNumber(3)
-  $2.Timestamp ensureUpdateTime() => $_ensure(2);
+  $0.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Set of labels associated with a Certificate.
   @$pb.TagNumber(4)
@@ -1071,10 +937,8 @@ class Certificate extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   Certificate_SelfManagedCertificate get selfManaged => $_getN(4);
   @$pb.TagNumber(5)
-  set selfManaged(Certificate_SelfManagedCertificate v) {
-    $_setField(5, v);
-  }
-
+  set selfManaged(Certificate_SelfManagedCertificate value) =>
+      $_setField(5, value);
   @$pb.TagNumber(5)
   $core.bool hasSelfManaged() => $_has(4);
   @$pb.TagNumber(5)
@@ -1091,27 +955,21 @@ class Certificate extends $pb.GeneratedMessage {
 
   /// Output only. The expiry timestamp of a Certificate.
   @$pb.TagNumber(7)
-  $2.Timestamp get expireTime => $_getN(6);
+  $0.Timestamp get expireTime => $_getN(6);
   @$pb.TagNumber(7)
-  set expireTime($2.Timestamp v) {
-    $_setField(7, v);
-  }
-
+  set expireTime($0.Timestamp value) => $_setField(7, value);
   @$pb.TagNumber(7)
   $core.bool hasExpireTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearExpireTime() => $_clearField(7);
   @$pb.TagNumber(7)
-  $2.Timestamp ensureExpireTime() => $_ensure(6);
+  $0.Timestamp ensureExpireTime() => $_ensure(6);
 
   /// One or more paragraphs of text description of a certificate.
   @$pb.TagNumber(8)
   $core.String get description => $_getSZ(7);
   @$pb.TagNumber(8)
-  set description($core.String v) {
-    $_setString(7, v);
-  }
-
+  set description($core.String value) => $_setString(7, value);
   @$pb.TagNumber(8)
   $core.bool hasDescription() => $_has(7);
   @$pb.TagNumber(8)
@@ -1121,10 +979,7 @@ class Certificate extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.String get pemCertificate => $_getSZ(8);
   @$pb.TagNumber(9)
-  set pemCertificate($core.String v) {
-    $_setString(8, v);
-  }
-
+  set pemCertificate($core.String value) => $_setString(8, value);
   @$pb.TagNumber(9)
   $core.bool hasPemCertificate() => $_has(8);
   @$pb.TagNumber(9)
@@ -1134,10 +989,7 @@ class Certificate extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   Certificate_ManagedCertificate get managed => $_getN(9);
   @$pb.TagNumber(11)
-  set managed(Certificate_ManagedCertificate v) {
-    $_setField(11, v);
-  }
-
+  set managed(Certificate_ManagedCertificate value) => $_setField(11, value);
   @$pb.TagNumber(11)
   $core.bool hasManaged() => $_has(9);
   @$pb.TagNumber(11)
@@ -1149,10 +1001,7 @@ class Certificate extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   Certificate_Scope get scope => $_getN(10);
   @$pb.TagNumber(12)
-  set scope(Certificate_Scope v) {
-    $_setField(12, v);
-  }
-
+  set scope(Certificate_Scope value) => $_setField(12, value);
   @$pb.TagNumber(12)
   $core.bool hasScope() => $_has(10);
   @$pb.TagNumber(12)
@@ -1165,22 +1014,21 @@ class CertificateMap_GclbTarget_IpConfig extends $pb.GeneratedMessage {
     $core.String? ipAddress,
     $core.Iterable<$core.int>? ports,
   }) {
-    final $result = create();
-    if (ipAddress != null) {
-      $result.ipAddress = ipAddress;
-    }
-    if (ports != null) {
-      $result.ports.addAll(ports);
-    }
-    return $result;
+    final result = create();
+    if (ipAddress != null) result.ipAddress = ipAddress;
+    if (ports != null) result.ports.addAll(ports);
+    return result;
   }
-  CertificateMap_GclbTarget_IpConfig._() : super();
-  factory CertificateMap_GclbTarget_IpConfig.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory CertificateMap_GclbTarget_IpConfig.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  CertificateMap_GclbTarget_IpConfig._();
+
+  factory CertificateMap_GclbTarget_IpConfig.fromBuffer(
+          $core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory CertificateMap_GclbTarget_IpConfig.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'CertificateMap.GclbTarget.IpConfig',
@@ -1192,8 +1040,7 @@ class CertificateMap_GclbTarget_IpConfig extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  CertificateMap_GclbTarget_IpConfig clone() =>
-      CertificateMap_GclbTarget_IpConfig()..mergeFromMessage(this);
+  CertificateMap_GclbTarget_IpConfig clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CertificateMap_GclbTarget_IpConfig copyWith(
           void Function(CertificateMap_GclbTarget_IpConfig) updates) =>
@@ -1201,14 +1048,14 @@ class CertificateMap_GclbTarget_IpConfig extends $pb.GeneratedMessage {
               updates(message as CertificateMap_GclbTarget_IpConfig))
           as CertificateMap_GclbTarget_IpConfig;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CertificateMap_GclbTarget_IpConfig create() =>
       CertificateMap_GclbTarget_IpConfig._();
+  @$core.override
   CertificateMap_GclbTarget_IpConfig createEmptyInstance() => create();
-  static $pb.PbList<CertificateMap_GclbTarget_IpConfig> createRepeated() =>
-      $pb.PbList<CertificateMap_GclbTarget_IpConfig>();
   @$core.pragma('dart2js:noInline')
   static CertificateMap_GclbTarget_IpConfig getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<CertificateMap_GclbTarget_IpConfig>(
@@ -1219,10 +1066,7 @@ class CertificateMap_GclbTarget_IpConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get ipAddress => $_getSZ(0);
   @$pb.TagNumber(1)
-  set ipAddress($core.String v) {
-    $_setString(0, v);
-  }
-
+  set ipAddress($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasIpAddress() => $_has(0);
   @$pb.TagNumber(1)
@@ -1246,25 +1090,21 @@ class CertificateMap_GclbTarget extends $pb.GeneratedMessage {
     $core.Iterable<CertificateMap_GclbTarget_IpConfig>? ipConfigs,
     $core.String? targetSslProxy,
   }) {
-    final $result = create();
-    if (targetHttpsProxy != null) {
-      $result.targetHttpsProxy = targetHttpsProxy;
-    }
-    if (ipConfigs != null) {
-      $result.ipConfigs.addAll(ipConfigs);
-    }
-    if (targetSslProxy != null) {
-      $result.targetSslProxy = targetSslProxy;
-    }
-    return $result;
+    final result = create();
+    if (targetHttpsProxy != null) result.targetHttpsProxy = targetHttpsProxy;
+    if (ipConfigs != null) result.ipConfigs.addAll(ipConfigs);
+    if (targetSslProxy != null) result.targetSslProxy = targetSslProxy;
+    return result;
   }
-  CertificateMap_GclbTarget._() : super();
-  factory CertificateMap_GclbTarget.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory CertificateMap_GclbTarget.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  CertificateMap_GclbTarget._();
+
+  factory CertificateMap_GclbTarget.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory CertificateMap_GclbTarget.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static const $core.Map<$core.int, CertificateMap_GclbTarget_TargetProxy>
       _CertificateMap_GclbTarget_TargetProxyByTag = {
@@ -1279,35 +1119,38 @@ class CertificateMap_GclbTarget extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..oo(0, [1, 3])
     ..aOS(1, _omitFieldNames ? '' : 'targetHttpsProxy')
-    ..pc<CertificateMap_GclbTarget_IpConfig>(
-        2, _omitFieldNames ? '' : 'ipConfigs', $pb.PbFieldType.PM,
+    ..pPM<CertificateMap_GclbTarget_IpConfig>(
+        2, _omitFieldNames ? '' : 'ipConfigs',
         subBuilder: CertificateMap_GclbTarget_IpConfig.create)
     ..aOS(3, _omitFieldNames ? '' : 'targetSslProxy')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  CertificateMap_GclbTarget clone() =>
-      CertificateMap_GclbTarget()..mergeFromMessage(this);
+  CertificateMap_GclbTarget clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CertificateMap_GclbTarget copyWith(
           void Function(CertificateMap_GclbTarget) updates) =>
       super.copyWith((message) => updates(message as CertificateMap_GclbTarget))
           as CertificateMap_GclbTarget;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CertificateMap_GclbTarget create() => CertificateMap_GclbTarget._();
+  @$core.override
   CertificateMap_GclbTarget createEmptyInstance() => create();
-  static $pb.PbList<CertificateMap_GclbTarget> createRepeated() =>
-      $pb.PbList<CertificateMap_GclbTarget>();
   @$core.pragma('dart2js:noInline')
   static CertificateMap_GclbTarget getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<CertificateMap_GclbTarget>(create);
   static CertificateMap_GclbTarget? _defaultInstance;
 
+  @$pb.TagNumber(1)
+  @$pb.TagNumber(3)
   CertificateMap_GclbTarget_TargetProxy whichTargetProxy() =>
       _CertificateMap_GclbTarget_TargetProxyByTag[$_whichOneof(0)]!;
+  @$pb.TagNumber(1)
+  @$pb.TagNumber(3)
   void clearTargetProxy() => $_clearField($_whichOneof(0));
 
   /// Output only. This field returns the resource name in the following
@@ -1316,10 +1159,7 @@ class CertificateMap_GclbTarget extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get targetHttpsProxy => $_getSZ(0);
   @$pb.TagNumber(1)
-  set targetHttpsProxy($core.String v) {
-    $_setString(0, v);
-  }
-
+  set targetHttpsProxy($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasTargetHttpsProxy() => $_has(0);
   @$pb.TagNumber(1)
@@ -1336,10 +1176,7 @@ class CertificateMap_GclbTarget extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get targetSslProxy => $_getSZ(2);
   @$pb.TagNumber(3)
-  set targetSslProxy($core.String v) {
-    $_setString(2, v);
-  }
-
+  set targetSslProxy($core.String value) => $_setString(2, value);
   @$pb.TagNumber(3)
   $core.bool hasTargetSslProxy() => $_has(2);
   @$pb.TagNumber(3)
@@ -1350,40 +1187,30 @@ class CertificateMap_GclbTarget extends $pb.GeneratedMessage {
 class CertificateMap extends $pb.GeneratedMessage {
   factory CertificateMap({
     $core.String? name,
-    $2.Timestamp? createTime,
+    $0.Timestamp? createTime,
     $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.Iterable<CertificateMap_GclbTarget>? gclbTargets,
     $core.String? description,
-    $2.Timestamp? updateTime,
+    $0.Timestamp? updateTime,
   }) {
-    final $result = create();
-    if (name != null) {
-      $result.name = name;
-    }
-    if (createTime != null) {
-      $result.createTime = createTime;
-    }
-    if (labels != null) {
-      $result.labels.addEntries(labels);
-    }
-    if (gclbTargets != null) {
-      $result.gclbTargets.addAll(gclbTargets);
-    }
-    if (description != null) {
-      $result.description = description;
-    }
-    if (updateTime != null) {
-      $result.updateTime = updateTime;
-    }
-    return $result;
+    final result = create();
+    if (name != null) result.name = name;
+    if (createTime != null) result.createTime = createTime;
+    if (labels != null) result.labels.addEntries(labels);
+    if (gclbTargets != null) result.gclbTargets.addAll(gclbTargets);
+    if (description != null) result.description = description;
+    if (updateTime != null) result.updateTime = updateTime;
+    return result;
   }
-  CertificateMap._() : super();
-  factory CertificateMap.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory CertificateMap.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  CertificateMap._();
+
+  factory CertificateMap.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory CertificateMap.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'CertificateMap',
@@ -1391,36 +1218,35 @@ class CertificateMap extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.events.cloud.certificatemanager.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$2.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$0.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $0.Timestamp.create)
     ..m<$core.String, $core.String>(3, _omitFieldNames ? '' : 'labels',
         entryClassName: 'CertificateMap.LabelsEntry',
         keyFieldType: $pb.PbFieldType.OS,
         valueFieldType: $pb.PbFieldType.OS,
         packageName:
             const $pb.PackageName('google.events.cloud.certificatemanager.v1'))
-    ..pc<CertificateMap_GclbTarget>(
-        4, _omitFieldNames ? '' : 'gclbTargets', $pb.PbFieldType.PM,
+    ..pPM<CertificateMap_GclbTarget>(4, _omitFieldNames ? '' : 'gclbTargets',
         subBuilder: CertificateMap_GclbTarget.create)
     ..aOS(5, _omitFieldNames ? '' : 'description')
-    ..aOM<$2.Timestamp>(6, _omitFieldNames ? '' : 'updateTime',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$0.Timestamp>(6, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $0.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  CertificateMap clone() => CertificateMap()..mergeFromMessage(this);
+  CertificateMap clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CertificateMap copyWith(void Function(CertificateMap) updates) =>
       super.copyWith((message) => updates(message as CertificateMap))
           as CertificateMap;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CertificateMap create() => CertificateMap._();
+  @$core.override
   CertificateMap createEmptyInstance() => create();
-  static $pb.PbList<CertificateMap> createRepeated() =>
-      $pb.PbList<CertificateMap>();
   @$core.pragma('dart2js:noInline')
   static CertificateMap getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<CertificateMap>(create);
@@ -1432,10 +1258,7 @@ class CertificateMap extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) {
-    $_setString(0, v);
-  }
-
+  set name($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -1443,18 +1266,15 @@ class CertificateMap extends $pb.GeneratedMessage {
 
   /// Output only. The creation timestamp of a Certificate Map.
   @$pb.TagNumber(2)
-  $2.Timestamp get createTime => $_getN(1);
+  $0.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($2.Timestamp v) {
-    $_setField(2, v);
-  }
-
+  set createTime($0.Timestamp value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => $_clearField(2);
   @$pb.TagNumber(2)
-  $2.Timestamp ensureCreateTime() => $_ensure(1);
+  $0.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Set of labels associated with a Certificate Map.
   @$pb.TagNumber(3)
@@ -1470,10 +1290,7 @@ class CertificateMap extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get description => $_getSZ(4);
   @$pb.TagNumber(5)
-  set description($core.String v) {
-    $_setString(4, v);
-  }
-
+  set description($core.String value) => $_setString(4, value);
   @$pb.TagNumber(5)
   $core.bool hasDescription() => $_has(4);
   @$pb.TagNumber(5)
@@ -1481,18 +1298,15 @@ class CertificateMap extends $pb.GeneratedMessage {
 
   /// Output only. The update timestamp of a Certificate Map.
   @$pb.TagNumber(6)
-  $2.Timestamp get updateTime => $_getN(5);
+  $0.Timestamp get updateTime => $_getN(5);
   @$pb.TagNumber(6)
-  set updateTime($2.Timestamp v) {
-    $_setField(6, v);
-  }
-
+  set updateTime($0.Timestamp value) => $_setField(6, value);
   @$pb.TagNumber(6)
   $core.bool hasUpdateTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearUpdateTime() => $_clearField(6);
   @$pb.TagNumber(6)
-  $2.Timestamp ensureUpdateTime() => $_ensure(5);
+  $0.Timestamp ensureUpdateTime() => $_ensure(5);
 }
 
 enum CertificateMapEntry_Match { hostname, matcher, notSet }
@@ -1501,8 +1315,8 @@ enum CertificateMapEntry_Match { hostname, matcher, notSet }
 class CertificateMapEntry extends $pb.GeneratedMessage {
   factory CertificateMapEntry({
     $core.String? name,
-    $2.Timestamp? createTime,
-    $2.Timestamp? updateTime,
+    $0.Timestamp? createTime,
+    $0.Timestamp? updateTime,
     $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.String? hostname,
     $core.Iterable<$core.String>? certificates,
@@ -1510,43 +1324,27 @@ class CertificateMapEntry extends $pb.GeneratedMessage {
     $core.String? description,
     CertificateMapEntry_Matcher? matcher,
   }) {
-    final $result = create();
-    if (name != null) {
-      $result.name = name;
-    }
-    if (createTime != null) {
-      $result.createTime = createTime;
-    }
-    if (updateTime != null) {
-      $result.updateTime = updateTime;
-    }
-    if (labels != null) {
-      $result.labels.addEntries(labels);
-    }
-    if (hostname != null) {
-      $result.hostname = hostname;
-    }
-    if (certificates != null) {
-      $result.certificates.addAll(certificates);
-    }
-    if (state != null) {
-      $result.state = state;
-    }
-    if (description != null) {
-      $result.description = description;
-    }
-    if (matcher != null) {
-      $result.matcher = matcher;
-    }
-    return $result;
+    final result = create();
+    if (name != null) result.name = name;
+    if (createTime != null) result.createTime = createTime;
+    if (updateTime != null) result.updateTime = updateTime;
+    if (labels != null) result.labels.addEntries(labels);
+    if (hostname != null) result.hostname = hostname;
+    if (certificates != null) result.certificates.addAll(certificates);
+    if (state != null) result.state = state;
+    if (description != null) result.description = description;
+    if (matcher != null) result.matcher = matcher;
+    return result;
   }
-  CertificateMapEntry._() : super();
-  factory CertificateMapEntry.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory CertificateMapEntry.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  CertificateMapEntry._();
+
+  factory CertificateMapEntry.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory CertificateMapEntry.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static const $core.Map<$core.int, CertificateMapEntry_Match>
       _CertificateMapEntry_MatchByTag = {
@@ -1561,10 +1359,10 @@ class CertificateMapEntry extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..oo(0, [5, 10])
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$2.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(3, _omitFieldNames ? '' : 'updateTime',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$0.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(3, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $0.Timestamp.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels',
         entryClassName: 'CertificateMapEntry.LabelsEntry',
         keyFieldType: $pb.PbFieldType.OS,
@@ -1573,39 +1371,38 @@ class CertificateMapEntry extends $pb.GeneratedMessage {
             const $pb.PackageName('google.events.cloud.certificatemanager.v1'))
     ..aOS(5, _omitFieldNames ? '' : 'hostname')
     ..pPS(7, _omitFieldNames ? '' : 'certificates')
-    ..e<ServingState>(8, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
-        defaultOrMaker: ServingState.SERVING_STATE_UNSPECIFIED,
-        valueOf: ServingState.valueOf,
+    ..aE<ServingState>(8, _omitFieldNames ? '' : 'state',
         enumValues: ServingState.values)
     ..aOS(9, _omitFieldNames ? '' : 'description')
-    ..e<CertificateMapEntry_Matcher>(
-        10, _omitFieldNames ? '' : 'matcher', $pb.PbFieldType.OE,
-        defaultOrMaker: CertificateMapEntry_Matcher.MATCHER_UNSPECIFIED,
-        valueOf: CertificateMapEntry_Matcher.valueOf,
+    ..aE<CertificateMapEntry_Matcher>(10, _omitFieldNames ? '' : 'matcher',
         enumValues: CertificateMapEntry_Matcher.values)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  CertificateMapEntry clone() => CertificateMapEntry()..mergeFromMessage(this);
+  CertificateMapEntry clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CertificateMapEntry copyWith(void Function(CertificateMapEntry) updates) =>
       super.copyWith((message) => updates(message as CertificateMapEntry))
           as CertificateMapEntry;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CertificateMapEntry create() => CertificateMapEntry._();
+  @$core.override
   CertificateMapEntry createEmptyInstance() => create();
-  static $pb.PbList<CertificateMapEntry> createRepeated() =>
-      $pb.PbList<CertificateMapEntry>();
   @$core.pragma('dart2js:noInline')
   static CertificateMapEntry getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<CertificateMapEntry>(create);
   static CertificateMapEntry? _defaultInstance;
 
+  @$pb.TagNumber(5)
+  @$pb.TagNumber(10)
   CertificateMapEntry_Match whichMatch() =>
       _CertificateMapEntry_MatchByTag[$_whichOneof(0)]!;
+  @$pb.TagNumber(5)
+  @$pb.TagNumber(10)
   void clearMatch() => $_clearField($_whichOneof(0));
 
   /// A user-defined name of the Certificate Map Entry. Certificate Map Entry
@@ -1614,10 +1411,7 @@ class CertificateMapEntry extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) {
-    $_setString(0, v);
-  }
-
+  set name($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -1625,33 +1419,27 @@ class CertificateMapEntry extends $pb.GeneratedMessage {
 
   /// Output only. The creation timestamp of a Certificate Map Entry.
   @$pb.TagNumber(2)
-  $2.Timestamp get createTime => $_getN(1);
+  $0.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($2.Timestamp v) {
-    $_setField(2, v);
-  }
-
+  set createTime($0.Timestamp value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => $_clearField(2);
   @$pb.TagNumber(2)
-  $2.Timestamp ensureCreateTime() => $_ensure(1);
+  $0.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. The update timestamp of a Certificate Map Entry.
   @$pb.TagNumber(3)
-  $2.Timestamp get updateTime => $_getN(2);
+  $0.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($2.Timestamp v) {
-    $_setField(3, v);
-  }
-
+  set updateTime($0.Timestamp value) => $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => $_clearField(3);
   @$pb.TagNumber(3)
-  $2.Timestamp ensureUpdateTime() => $_ensure(2);
+  $0.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Set of labels associated with a Certificate Map Entry.
   @$pb.TagNumber(4)
@@ -1663,10 +1451,7 @@ class CertificateMapEntry extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get hostname => $_getSZ(4);
   @$pb.TagNumber(5)
-  set hostname($core.String v) {
-    $_setString(4, v);
-  }
-
+  set hostname($core.String value) => $_setString(4, value);
   @$pb.TagNumber(5)
   $core.bool hasHostname() => $_has(4);
   @$pb.TagNumber(5)
@@ -1682,10 +1467,7 @@ class CertificateMapEntry extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   ServingState get state => $_getN(6);
   @$pb.TagNumber(8)
-  set state(ServingState v) {
-    $_setField(8, v);
-  }
-
+  set state(ServingState value) => $_setField(8, value);
   @$pb.TagNumber(8)
   $core.bool hasState() => $_has(6);
   @$pb.TagNumber(8)
@@ -1695,10 +1477,7 @@ class CertificateMapEntry extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.String get description => $_getSZ(7);
   @$pb.TagNumber(9)
-  set description($core.String v) {
-    $_setString(7, v);
-  }
-
+  set description($core.String value) => $_setString(7, value);
   @$pb.TagNumber(9)
   $core.bool hasDescription() => $_has(7);
   @$pb.TagNumber(9)
@@ -1708,10 +1487,7 @@ class CertificateMapEntry extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   CertificateMapEntry_Matcher get matcher => $_getN(8);
   @$pb.TagNumber(10)
-  set matcher(CertificateMapEntry_Matcher v) {
-    $_setField(10, v);
-  }
-
+  set matcher(CertificateMapEntry_Matcher value) => $_setField(10, value);
   @$pb.TagNumber(10)
   $core.bool hasMatcher() => $_has(8);
   @$pb.TagNumber(10)
@@ -1727,25 +1503,22 @@ class DnsAuthorization_DnsResourceRecord extends $pb.GeneratedMessage {
     $core.String? type,
     $core.String? data,
   }) {
-    final $result = create();
-    if (name != null) {
-      $result.name = name;
-    }
-    if (type != null) {
-      $result.type = type;
-    }
-    if (data != null) {
-      $result.data = data;
-    }
-    return $result;
+    final result = create();
+    if (name != null) result.name = name;
+    if (type != null) result.type = type;
+    if (data != null) result.data = data;
+    return result;
   }
-  DnsAuthorization_DnsResourceRecord._() : super();
-  factory DnsAuthorization_DnsResourceRecord.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory DnsAuthorization_DnsResourceRecord.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  DnsAuthorization_DnsResourceRecord._();
+
+  factory DnsAuthorization_DnsResourceRecord.fromBuffer(
+          $core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory DnsAuthorization_DnsResourceRecord.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'DnsAuthorization.DnsResourceRecord',
@@ -1758,8 +1531,7 @@ class DnsAuthorization_DnsResourceRecord extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  DnsAuthorization_DnsResourceRecord clone() =>
-      DnsAuthorization_DnsResourceRecord()..mergeFromMessage(this);
+  DnsAuthorization_DnsResourceRecord clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DnsAuthorization_DnsResourceRecord copyWith(
           void Function(DnsAuthorization_DnsResourceRecord) updates) =>
@@ -1767,14 +1539,14 @@ class DnsAuthorization_DnsResourceRecord extends $pb.GeneratedMessage {
               updates(message as DnsAuthorization_DnsResourceRecord))
           as DnsAuthorization_DnsResourceRecord;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DnsAuthorization_DnsResourceRecord create() =>
       DnsAuthorization_DnsResourceRecord._();
+  @$core.override
   DnsAuthorization_DnsResourceRecord createEmptyInstance() => create();
-  static $pb.PbList<DnsAuthorization_DnsResourceRecord> createRepeated() =>
-      $pb.PbList<DnsAuthorization_DnsResourceRecord>();
   @$core.pragma('dart2js:noInline')
   static DnsAuthorization_DnsResourceRecord getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<DnsAuthorization_DnsResourceRecord>(
@@ -1786,10 +1558,7 @@ class DnsAuthorization_DnsResourceRecord extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) {
-    $_setString(0, v);
-  }
-
+  set name($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -1800,10 +1569,7 @@ class DnsAuthorization_DnsResourceRecord extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get type => $_getSZ(1);
   @$pb.TagNumber(2)
-  set type($core.String v) {
-    $_setString(1, v);
-  }
-
+  set type($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasType() => $_has(1);
   @$pb.TagNumber(2)
@@ -1813,10 +1579,7 @@ class DnsAuthorization_DnsResourceRecord extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get data => $_getSZ(2);
   @$pb.TagNumber(3)
-  set data($core.String v) {
-    $_setString(2, v);
-  }
-
+  set data($core.String value) => $_setString(2, value);
   @$pb.TagNumber(3)
   $core.bool hasData() => $_has(2);
   @$pb.TagNumber(3)
@@ -1828,44 +1591,32 @@ class DnsAuthorization_DnsResourceRecord extends $pb.GeneratedMessage {
 class DnsAuthorization extends $pb.GeneratedMessage {
   factory DnsAuthorization({
     $core.String? name,
-    $2.Timestamp? createTime,
-    $2.Timestamp? updateTime,
+    $0.Timestamp? createTime,
+    $0.Timestamp? updateTime,
     $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.String? description,
     $core.String? domain,
     DnsAuthorization_DnsResourceRecord? dnsResourceRecord,
   }) {
-    final $result = create();
-    if (name != null) {
-      $result.name = name;
-    }
-    if (createTime != null) {
-      $result.createTime = createTime;
-    }
-    if (updateTime != null) {
-      $result.updateTime = updateTime;
-    }
-    if (labels != null) {
-      $result.labels.addEntries(labels);
-    }
-    if (description != null) {
-      $result.description = description;
-    }
-    if (domain != null) {
-      $result.domain = domain;
-    }
-    if (dnsResourceRecord != null) {
-      $result.dnsResourceRecord = dnsResourceRecord;
-    }
-    return $result;
+    final result = create();
+    if (name != null) result.name = name;
+    if (createTime != null) result.createTime = createTime;
+    if (updateTime != null) result.updateTime = updateTime;
+    if (labels != null) result.labels.addEntries(labels);
+    if (description != null) result.description = description;
+    if (domain != null) result.domain = domain;
+    if (dnsResourceRecord != null) result.dnsResourceRecord = dnsResourceRecord;
+    return result;
   }
-  DnsAuthorization._() : super();
-  factory DnsAuthorization.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory DnsAuthorization.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  DnsAuthorization._();
+
+  factory DnsAuthorization.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory DnsAuthorization.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'DnsAuthorization',
@@ -1873,10 +1624,10 @@ class DnsAuthorization extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.events.cloud.certificatemanager.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$2.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(3, _omitFieldNames ? '' : 'updateTime',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$0.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(3, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $0.Timestamp.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels',
         entryClassName: 'DnsAuthorization.LabelsEntry',
         keyFieldType: $pb.PbFieldType.OS,
@@ -1891,19 +1642,19 @@ class DnsAuthorization extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  DnsAuthorization clone() => DnsAuthorization()..mergeFromMessage(this);
+  DnsAuthorization clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DnsAuthorization copyWith(void Function(DnsAuthorization) updates) =>
       super.copyWith((message) => updates(message as DnsAuthorization))
           as DnsAuthorization;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DnsAuthorization create() => DnsAuthorization._();
+  @$core.override
   DnsAuthorization createEmptyInstance() => create();
-  static $pb.PbList<DnsAuthorization> createRepeated() =>
-      $pb.PbList<DnsAuthorization>();
   @$core.pragma('dart2js:noInline')
   static DnsAuthorization getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<DnsAuthorization>(create);
@@ -1915,10 +1666,7 @@ class DnsAuthorization extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) {
-    $_setString(0, v);
-  }
-
+  set name($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -1926,33 +1674,27 @@ class DnsAuthorization extends $pb.GeneratedMessage {
 
   /// Output only. The creation timestamp of a DnsAuthorization.
   @$pb.TagNumber(2)
-  $2.Timestamp get createTime => $_getN(1);
+  $0.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($2.Timestamp v) {
-    $_setField(2, v);
-  }
-
+  set createTime($0.Timestamp value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => $_clearField(2);
   @$pb.TagNumber(2)
-  $2.Timestamp ensureCreateTime() => $_ensure(1);
+  $0.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. The last update timestamp of a DnsAuthorization.
   @$pb.TagNumber(3)
-  $2.Timestamp get updateTime => $_getN(2);
+  $0.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($2.Timestamp v) {
-    $_setField(3, v);
-  }
-
+  set updateTime($0.Timestamp value) => $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => $_clearField(3);
   @$pb.TagNumber(3)
-  $2.Timestamp ensureUpdateTime() => $_ensure(2);
+  $0.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Set of labels associated with a DnsAuthorization.
   @$pb.TagNumber(4)
@@ -1962,10 +1704,7 @@ class DnsAuthorization extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get description => $_getSZ(4);
   @$pb.TagNumber(5)
-  set description($core.String v) {
-    $_setString(4, v);
-  }
-
+  set description($core.String value) => $_setString(4, value);
   @$pb.TagNumber(5)
   $core.bool hasDescription() => $_has(4);
   @$pb.TagNumber(5)
@@ -1978,10 +1717,7 @@ class DnsAuthorization extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get domain => $_getSZ(5);
   @$pb.TagNumber(6)
-  set domain($core.String v) {
-    $_setString(5, v);
-  }
-
+  set domain($core.String value) => $_setString(5, value);
   @$pb.TagNumber(6)
   $core.bool hasDomain() => $_has(5);
   @$pb.TagNumber(6)
@@ -1992,10 +1728,8 @@ class DnsAuthorization extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   DnsAuthorization_DnsResourceRecord get dnsResourceRecord => $_getN(6);
   @$pb.TagNumber(10)
-  set dnsResourceRecord(DnsAuthorization_DnsResourceRecord v) {
-    $_setField(10, v);
-  }
-
+  set dnsResourceRecord(DnsAuthorization_DnsResourceRecord value) =>
+      $_setField(10, value);
   @$pb.TagNumber(10)
   $core.bool hasDnsResourceRecord() => $_has(6);
   @$pb.TagNumber(10)
@@ -2009,19 +1743,19 @@ class DnsAuthorizationEventData extends $pb.GeneratedMessage {
   factory DnsAuthorizationEventData({
     DnsAuthorization? payload,
   }) {
-    final $result = create();
-    if (payload != null) {
-      $result.payload = payload;
-    }
-    return $result;
+    final result = create();
+    if (payload != null) result.payload = payload;
+    return result;
   }
-  DnsAuthorizationEventData._() : super();
-  factory DnsAuthorizationEventData.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory DnsAuthorizationEventData.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  DnsAuthorizationEventData._();
+
+  factory DnsAuthorizationEventData.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory DnsAuthorizationEventData.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'DnsAuthorizationEventData',
@@ -2033,21 +1767,20 @@ class DnsAuthorizationEventData extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  DnsAuthorizationEventData clone() =>
-      DnsAuthorizationEventData()..mergeFromMessage(this);
+  DnsAuthorizationEventData clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DnsAuthorizationEventData copyWith(
           void Function(DnsAuthorizationEventData) updates) =>
       super.copyWith((message) => updates(message as DnsAuthorizationEventData))
           as DnsAuthorizationEventData;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DnsAuthorizationEventData create() => DnsAuthorizationEventData._();
+  @$core.override
   DnsAuthorizationEventData createEmptyInstance() => create();
-  static $pb.PbList<DnsAuthorizationEventData> createRepeated() =>
-      $pb.PbList<DnsAuthorizationEventData>();
   @$core.pragma('dart2js:noInline')
   static DnsAuthorizationEventData getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<DnsAuthorizationEventData>(create);
@@ -2057,10 +1790,7 @@ class DnsAuthorizationEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   DnsAuthorization get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(DnsAuthorization v) {
-    $_setField(1, v);
-  }
-
+  set payload(DnsAuthorization value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -2074,19 +1804,20 @@ class CertificateIssuanceConfigEventData extends $pb.GeneratedMessage {
   factory CertificateIssuanceConfigEventData({
     CertificateIssuanceConfig? payload,
   }) {
-    final $result = create();
-    if (payload != null) {
-      $result.payload = payload;
-    }
-    return $result;
+    final result = create();
+    if (payload != null) result.payload = payload;
+    return result;
   }
-  CertificateIssuanceConfigEventData._() : super();
-  factory CertificateIssuanceConfigEventData.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory CertificateIssuanceConfigEventData.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  CertificateIssuanceConfigEventData._();
+
+  factory CertificateIssuanceConfigEventData.fromBuffer(
+          $core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory CertificateIssuanceConfigEventData.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'CertificateIssuanceConfigEventData',
@@ -2098,8 +1829,7 @@ class CertificateIssuanceConfigEventData extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  CertificateIssuanceConfigEventData clone() =>
-      CertificateIssuanceConfigEventData()..mergeFromMessage(this);
+  CertificateIssuanceConfigEventData clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CertificateIssuanceConfigEventData copyWith(
           void Function(CertificateIssuanceConfigEventData) updates) =>
@@ -2107,14 +1837,14 @@ class CertificateIssuanceConfigEventData extends $pb.GeneratedMessage {
               updates(message as CertificateIssuanceConfigEventData))
           as CertificateIssuanceConfigEventData;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CertificateIssuanceConfigEventData create() =>
       CertificateIssuanceConfigEventData._();
+  @$core.override
   CertificateIssuanceConfigEventData createEmptyInstance() => create();
-  static $pb.PbList<CertificateIssuanceConfigEventData> createRepeated() =>
-      $pb.PbList<CertificateIssuanceConfigEventData>();
   @$core.pragma('dart2js:noInline')
   static CertificateIssuanceConfigEventData getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<CertificateIssuanceConfigEventData>(
@@ -2126,10 +1856,7 @@ class CertificateIssuanceConfigEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   CertificateIssuanceConfig get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(CertificateIssuanceConfig v) {
-    $_setField(1, v);
-  }
-
+  set payload(CertificateIssuanceConfig value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -2143,19 +1870,19 @@ class CertificateMapEntryEventData extends $pb.GeneratedMessage {
   factory CertificateMapEntryEventData({
     CertificateMapEntry? payload,
   }) {
-    final $result = create();
-    if (payload != null) {
-      $result.payload = payload;
-    }
-    return $result;
+    final result = create();
+    if (payload != null) result.payload = payload;
+    return result;
   }
-  CertificateMapEntryEventData._() : super();
-  factory CertificateMapEntryEventData.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory CertificateMapEntryEventData.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  CertificateMapEntryEventData._();
+
+  factory CertificateMapEntryEventData.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory CertificateMapEntryEventData.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'CertificateMapEntryEventData',
@@ -2167,8 +1894,7 @@ class CertificateMapEntryEventData extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  CertificateMapEntryEventData clone() =>
-      CertificateMapEntryEventData()..mergeFromMessage(this);
+  CertificateMapEntryEventData clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CertificateMapEntryEventData copyWith(
           void Function(CertificateMapEntryEventData) updates) =>
@@ -2176,14 +1902,14 @@ class CertificateMapEntryEventData extends $pb.GeneratedMessage {
               (message) => updates(message as CertificateMapEntryEventData))
           as CertificateMapEntryEventData;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CertificateMapEntryEventData create() =>
       CertificateMapEntryEventData._();
+  @$core.override
   CertificateMapEntryEventData createEmptyInstance() => create();
-  static $pb.PbList<CertificateMapEntryEventData> createRepeated() =>
-      $pb.PbList<CertificateMapEntryEventData>();
   @$core.pragma('dart2js:noInline')
   static CertificateMapEntryEventData getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<CertificateMapEntryEventData>(create);
@@ -2193,10 +1919,7 @@ class CertificateMapEntryEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   CertificateMapEntry get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(CertificateMapEntry v) {
-    $_setField(1, v);
-  }
-
+  set payload(CertificateMapEntry value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -2210,19 +1933,19 @@ class CertificateMapEventData extends $pb.GeneratedMessage {
   factory CertificateMapEventData({
     CertificateMap? payload,
   }) {
-    final $result = create();
-    if (payload != null) {
-      $result.payload = payload;
-    }
-    return $result;
+    final result = create();
+    if (payload != null) result.payload = payload;
+    return result;
   }
-  CertificateMapEventData._() : super();
-  factory CertificateMapEventData.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory CertificateMapEventData.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  CertificateMapEventData._();
+
+  factory CertificateMapEventData.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory CertificateMapEventData.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'CertificateMapEventData',
@@ -2234,21 +1957,20 @@ class CertificateMapEventData extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  CertificateMapEventData clone() =>
-      CertificateMapEventData()..mergeFromMessage(this);
+  CertificateMapEventData clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CertificateMapEventData copyWith(
           void Function(CertificateMapEventData) updates) =>
       super.copyWith((message) => updates(message as CertificateMapEventData))
           as CertificateMapEventData;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CertificateMapEventData create() => CertificateMapEventData._();
+  @$core.override
   CertificateMapEventData createEmptyInstance() => create();
-  static $pb.PbList<CertificateMapEventData> createRepeated() =>
-      $pb.PbList<CertificateMapEventData>();
   @$core.pragma('dart2js:noInline')
   static CertificateMapEventData getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<CertificateMapEventData>(create);
@@ -2258,10 +1980,7 @@ class CertificateMapEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   CertificateMap get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(CertificateMap v) {
-    $_setField(1, v);
-  }
-
+  set payload(CertificateMap value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -2275,19 +1994,19 @@ class CertificateEventData extends $pb.GeneratedMessage {
   factory CertificateEventData({
     Certificate? payload,
   }) {
-    final $result = create();
-    if (payload != null) {
-      $result.payload = payload;
-    }
-    return $result;
+    final result = create();
+    if (payload != null) result.payload = payload;
+    return result;
   }
-  CertificateEventData._() : super();
-  factory CertificateEventData.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory CertificateEventData.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  CertificateEventData._();
+
+  factory CertificateEventData.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory CertificateEventData.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'CertificateEventData',
@@ -2299,20 +2018,19 @@ class CertificateEventData extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  CertificateEventData clone() =>
-      CertificateEventData()..mergeFromMessage(this);
+  CertificateEventData clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CertificateEventData copyWith(void Function(CertificateEventData) updates) =>
       super.copyWith((message) => updates(message as CertificateEventData))
           as CertificateEventData;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CertificateEventData create() => CertificateEventData._();
+  @$core.override
   CertificateEventData createEmptyInstance() => create();
-  static $pb.PbList<CertificateEventData> createRepeated() =>
-      $pb.PbList<CertificateEventData>();
   @$core.pragma('dart2js:noInline')
   static CertificateEventData getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<CertificateEventData>(create);
@@ -2322,10 +2040,7 @@ class CertificateEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   Certificate get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(Certificate v) {
-    $_setField(1, v);
-  }
-
+  set payload(Certificate value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -2334,6 +2049,7 @@ class CertificateEventData extends $pb.GeneratedMessage {
   Certificate ensurePayload() => $_ensure(0);
 }
 
-const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames =
+const $core.bool _omitFieldNames =
+    $core.bool.fromEnvironment('protobuf.omit_field_names');
+const $core.bool _omitMessageNames =
     $core.bool.fromEnvironment('protobuf.omit_message_names');

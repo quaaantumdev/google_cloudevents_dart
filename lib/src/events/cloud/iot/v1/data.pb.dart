@@ -1,21 +1,22 @@
+// This is a generated file - do not edit.
 //
-//  Generated code. Do not modify.
-//  source: google/events/cloud/iot/v1/data.proto
-//
+// Generated from google/events/cloud/iot/v1/data.proto.
+
 // @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
-// ignore_for_file: constant_identifier_names, library_prefixes
-// ignore_for_file: non_constant_identifier_names, prefer_final_fields
-// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
+// ignore_for_file: constant_identifier_names
+// ignore_for_file: curly_braces_in_flow_control_structures
+// ignore_for_file: deprecated_member_use_from_same_package, library_prefixes
+// ignore_for_file: non_constant_identifier_names
 
 import 'dart:core' as $core;
 
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/timestamp.pb.dart' as $2;
-import '../../../../rpc/status.pb.dart' as $9;
+import '../../../../protobuf/timestamp.pb.dart' as $0;
+import '../../../../rpc/status.pb.dart' as $1;
 import 'data.pbenum.dart';
 
 export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
@@ -28,82 +29,51 @@ class Device extends $pb.GeneratedMessage {
     $core.String? id,
     $core.String? name,
     $fixnum.Int64? numId,
-    $2.Timestamp? lastHeartbeatTime,
-    $2.Timestamp? lastEventTime,
-    $2.Timestamp? lastErrorTime,
-    $9.Status? lastErrorStatus,
+    $0.Timestamp? lastHeartbeatTime,
+    $0.Timestamp? lastEventTime,
+    $0.Timestamp? lastErrorTime,
+    $1.Status? lastErrorStatus,
     $core.Iterable<DeviceCredential>? credentials,
     DeviceConfig? config,
-    $2.Timestamp? lastConfigAckTime,
+    $0.Timestamp? lastConfigAckTime,
     DeviceState? state,
     $core.Iterable<$core.MapEntry<$core.String, $core.String>>? metadata,
-    $2.Timestamp? lastConfigSendTime,
+    $0.Timestamp? lastConfigSendTime,
     $core.bool? blocked,
-    $2.Timestamp? lastStateTime,
+    $0.Timestamp? lastStateTime,
     LogLevel? logLevel,
     GatewayConfig? gatewayConfig,
   }) {
-    final $result = create();
-    if (id != null) {
-      $result.id = id;
-    }
-    if (name != null) {
-      $result.name = name;
-    }
-    if (numId != null) {
-      $result.numId = numId;
-    }
-    if (lastHeartbeatTime != null) {
-      $result.lastHeartbeatTime = lastHeartbeatTime;
-    }
-    if (lastEventTime != null) {
-      $result.lastEventTime = lastEventTime;
-    }
-    if (lastErrorTime != null) {
-      $result.lastErrorTime = lastErrorTime;
-    }
-    if (lastErrorStatus != null) {
-      $result.lastErrorStatus = lastErrorStatus;
-    }
-    if (credentials != null) {
-      $result.credentials.addAll(credentials);
-    }
-    if (config != null) {
-      $result.config = config;
-    }
-    if (lastConfigAckTime != null) {
-      $result.lastConfigAckTime = lastConfigAckTime;
-    }
-    if (state != null) {
-      $result.state = state;
-    }
-    if (metadata != null) {
-      $result.metadata.addEntries(metadata);
-    }
-    if (lastConfigSendTime != null) {
-      $result.lastConfigSendTime = lastConfigSendTime;
-    }
-    if (blocked != null) {
-      $result.blocked = blocked;
-    }
-    if (lastStateTime != null) {
-      $result.lastStateTime = lastStateTime;
-    }
-    if (logLevel != null) {
-      $result.logLevel = logLevel;
-    }
-    if (gatewayConfig != null) {
-      $result.gatewayConfig = gatewayConfig;
-    }
-    return $result;
+    final result = create();
+    if (id != null) result.id = id;
+    if (name != null) result.name = name;
+    if (numId != null) result.numId = numId;
+    if (lastHeartbeatTime != null) result.lastHeartbeatTime = lastHeartbeatTime;
+    if (lastEventTime != null) result.lastEventTime = lastEventTime;
+    if (lastErrorTime != null) result.lastErrorTime = lastErrorTime;
+    if (lastErrorStatus != null) result.lastErrorStatus = lastErrorStatus;
+    if (credentials != null) result.credentials.addAll(credentials);
+    if (config != null) result.config = config;
+    if (lastConfigAckTime != null) result.lastConfigAckTime = lastConfigAckTime;
+    if (state != null) result.state = state;
+    if (metadata != null) result.metadata.addEntries(metadata);
+    if (lastConfigSendTime != null)
+      result.lastConfigSendTime = lastConfigSendTime;
+    if (blocked != null) result.blocked = blocked;
+    if (lastStateTime != null) result.lastStateTime = lastStateTime;
+    if (logLevel != null) result.logLevel = logLevel;
+    if (gatewayConfig != null) result.gatewayConfig = gatewayConfig;
+    return result;
   }
-  Device._() : super();
-  factory Device.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Device.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  Device._();
+
+  factory Device.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory Device.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'Device',
@@ -114,21 +84,20 @@ class Device extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'name')
     ..a<$fixnum.Int64>(3, _omitFieldNames ? '' : 'numId', $pb.PbFieldType.OU6,
         defaultOrMaker: $fixnum.Int64.ZERO)
-    ..aOM<$2.Timestamp>(7, _omitFieldNames ? '' : 'lastHeartbeatTime',
-        subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(8, _omitFieldNames ? '' : 'lastEventTime',
-        subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(10, _omitFieldNames ? '' : 'lastErrorTime',
-        subBuilder: $2.Timestamp.create)
-    ..aOM<$9.Status>(11, _omitFieldNames ? '' : 'lastErrorStatus',
-        subBuilder: $9.Status.create)
-    ..pc<DeviceCredential>(
-        12, _omitFieldNames ? '' : 'credentials', $pb.PbFieldType.PM,
+    ..aOM<$0.Timestamp>(7, _omitFieldNames ? '' : 'lastHeartbeatTime',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(8, _omitFieldNames ? '' : 'lastEventTime',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(10, _omitFieldNames ? '' : 'lastErrorTime',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$1.Status>(11, _omitFieldNames ? '' : 'lastErrorStatus',
+        subBuilder: $1.Status.create)
+    ..pPM<DeviceCredential>(12, _omitFieldNames ? '' : 'credentials',
         subBuilder: DeviceCredential.create)
     ..aOM<DeviceConfig>(13, _omitFieldNames ? '' : 'config',
         subBuilder: DeviceConfig.create)
-    ..aOM<$2.Timestamp>(14, _omitFieldNames ? '' : 'lastConfigAckTime',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$0.Timestamp>(14, _omitFieldNames ? '' : 'lastConfigAckTime',
+        subBuilder: $0.Timestamp.create)
     ..aOM<DeviceState>(16, _omitFieldNames ? '' : 'state',
         subBuilder: DeviceState.create)
     ..m<$core.String, $core.String>(17, _omitFieldNames ? '' : 'metadata',
@@ -136,31 +105,30 @@ class Device extends $pb.GeneratedMessage {
         keyFieldType: $pb.PbFieldType.OS,
         valueFieldType: $pb.PbFieldType.OS,
         packageName: const $pb.PackageName('google.events.cloud.iot.v1'))
-    ..aOM<$2.Timestamp>(18, _omitFieldNames ? '' : 'lastConfigSendTime',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$0.Timestamp>(18, _omitFieldNames ? '' : 'lastConfigSendTime',
+        subBuilder: $0.Timestamp.create)
     ..aOB(19, _omitFieldNames ? '' : 'blocked')
-    ..aOM<$2.Timestamp>(20, _omitFieldNames ? '' : 'lastStateTime',
-        subBuilder: $2.Timestamp.create)
-    ..e<LogLevel>(21, _omitFieldNames ? '' : 'logLevel', $pb.PbFieldType.OE,
-        defaultOrMaker: LogLevel.LOG_LEVEL_UNSPECIFIED,
-        valueOf: LogLevel.valueOf,
+    ..aOM<$0.Timestamp>(20, _omitFieldNames ? '' : 'lastStateTime',
+        subBuilder: $0.Timestamp.create)
+    ..aE<LogLevel>(21, _omitFieldNames ? '' : 'logLevel',
         enumValues: LogLevel.values)
     ..aOM<GatewayConfig>(24, _omitFieldNames ? '' : 'gatewayConfig',
         subBuilder: GatewayConfig.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  Device clone() => Device()..mergeFromMessage(this);
+  Device clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Device copyWith(void Function(Device) updates) =>
       super.copyWith((message) => updates(message as Device)) as Device;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Device create() => Device._();
+  @$core.override
   Device createEmptyInstance() => create();
-  static $pb.PbList<Device> createRepeated() => $pb.PbList<Device>();
   @$core.pragma('dart2js:noInline')
   static Device getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Device>(create);
@@ -171,10 +139,7 @@ class Device extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get id => $_getSZ(0);
   @$pb.TagNumber(1)
-  set id($core.String v) {
-    $_setString(0, v);
-  }
-
+  set id($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
@@ -188,10 +153,7 @@ class Device extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get name => $_getSZ(1);
   @$pb.TagNumber(2)
-  set name($core.String v) {
-    $_setString(1, v);
-  }
-
+  set name($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasName() => $_has(1);
   @$pb.TagNumber(2)
@@ -202,10 +164,7 @@ class Device extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $fixnum.Int64 get numId => $_getI64(2);
   @$pb.TagNumber(3)
-  set numId($fixnum.Int64 v) {
-    $_setInt64(2, v);
-  }
-
+  set numId($fixnum.Int64 value) => $_setInt64(2, value);
   @$pb.TagNumber(3)
   $core.bool hasNumId() => $_has(2);
   @$pb.TagNumber(3)
@@ -217,52 +176,43 @@ class Device extends $pb.GeneratedMessage {
   /// have been sent. Timestamps are periodically collected and written to
   /// storage; they may be stale by a few minutes.
   @$pb.TagNumber(7)
-  $2.Timestamp get lastHeartbeatTime => $_getN(3);
+  $0.Timestamp get lastHeartbeatTime => $_getN(3);
   @$pb.TagNumber(7)
-  set lastHeartbeatTime($2.Timestamp v) {
-    $_setField(7, v);
-  }
-
+  set lastHeartbeatTime($0.Timestamp value) => $_setField(7, value);
   @$pb.TagNumber(7)
   $core.bool hasLastHeartbeatTime() => $_has(3);
   @$pb.TagNumber(7)
   void clearLastHeartbeatTime() => $_clearField(7);
   @$pb.TagNumber(7)
-  $2.Timestamp ensureLastHeartbeatTime() => $_ensure(3);
+  $0.Timestamp ensureLastHeartbeatTime() => $_ensure(3);
 
   /// [Output only] The last time a telemetry event was received. Timestamps are
   /// periodically collected and written to storage; they may be stale by a few
   /// minutes.
   @$pb.TagNumber(8)
-  $2.Timestamp get lastEventTime => $_getN(4);
+  $0.Timestamp get lastEventTime => $_getN(4);
   @$pb.TagNumber(8)
-  set lastEventTime($2.Timestamp v) {
-    $_setField(8, v);
-  }
-
+  set lastEventTime($0.Timestamp value) => $_setField(8, value);
   @$pb.TagNumber(8)
   $core.bool hasLastEventTime() => $_has(4);
   @$pb.TagNumber(8)
   void clearLastEventTime() => $_clearField(8);
   @$pb.TagNumber(8)
-  $2.Timestamp ensureLastEventTime() => $_ensure(4);
+  $0.Timestamp ensureLastEventTime() => $_ensure(4);
 
   /// [Output only] The time the most recent error occurred, such as a failure to
   /// publish to Cloud Pub/Sub. This field is the timestamp of
   /// 'last_error_status'.
   @$pb.TagNumber(10)
-  $2.Timestamp get lastErrorTime => $_getN(5);
+  $0.Timestamp get lastErrorTime => $_getN(5);
   @$pb.TagNumber(10)
-  set lastErrorTime($2.Timestamp v) {
-    $_setField(10, v);
-  }
-
+  set lastErrorTime($0.Timestamp value) => $_setField(10, value);
   @$pb.TagNumber(10)
   $core.bool hasLastErrorTime() => $_has(5);
   @$pb.TagNumber(10)
   void clearLastErrorTime() => $_clearField(10);
   @$pb.TagNumber(10)
-  $2.Timestamp ensureLastErrorTime() => $_ensure(5);
+  $0.Timestamp ensureLastErrorTime() => $_ensure(5);
 
   /// [Output only] The error message of the most recent error, such as a failure
   /// to publish to Cloud Pub/Sub. 'last_error_time' is the timestamp of this
@@ -270,18 +220,15 @@ class Device extends $pb.GeneratedMessage {
   /// and the status code 0 == OK. Otherwise, this field is expected to have a
   /// status code other than OK.
   @$pb.TagNumber(11)
-  $9.Status get lastErrorStatus => $_getN(6);
+  $1.Status get lastErrorStatus => $_getN(6);
   @$pb.TagNumber(11)
-  set lastErrorStatus($9.Status v) {
-    $_setField(11, v);
-  }
-
+  set lastErrorStatus($1.Status value) => $_setField(11, value);
   @$pb.TagNumber(11)
   $core.bool hasLastErrorStatus() => $_has(6);
   @$pb.TagNumber(11)
   void clearLastErrorStatus() => $_clearField(11);
   @$pb.TagNumber(11)
-  $9.Status ensureLastErrorStatus() => $_ensure(6);
+  $1.Status ensureLastErrorStatus() => $_ensure(6);
 
   /// The credentials used to authenticate this device. To allow credential
   /// rotation without interruption, multiple device credentials can be bound to
@@ -300,10 +247,7 @@ class Device extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   DeviceConfig get config => $_getN(8);
   @$pb.TagNumber(13)
-  set config(DeviceConfig v) {
-    $_setField(13, v);
-  }
-
+  set config(DeviceConfig value) => $_setField(13, value);
   @$pb.TagNumber(13)
   $core.bool hasConfig() => $_has(8);
   @$pb.TagNumber(13)
@@ -315,28 +259,22 @@ class Device extends $pb.GeneratedMessage {
   /// was received from the device. This field is only for configurations
   /// sent through MQTT.
   @$pb.TagNumber(14)
-  $2.Timestamp get lastConfigAckTime => $_getN(9);
+  $0.Timestamp get lastConfigAckTime => $_getN(9);
   @$pb.TagNumber(14)
-  set lastConfigAckTime($2.Timestamp v) {
-    $_setField(14, v);
-  }
-
+  set lastConfigAckTime($0.Timestamp value) => $_setField(14, value);
   @$pb.TagNumber(14)
   $core.bool hasLastConfigAckTime() => $_has(9);
   @$pb.TagNumber(14)
   void clearLastConfigAckTime() => $_clearField(14);
   @$pb.TagNumber(14)
-  $2.Timestamp ensureLastConfigAckTime() => $_ensure(9);
+  $0.Timestamp ensureLastConfigAckTime() => $_ensure(9);
 
   /// [Output only] The state most recently received from the device. If no state
   /// has been reported, this field is not present.
   @$pb.TagNumber(16)
   DeviceState get state => $_getN(10);
   @$pb.TagNumber(16)
-  set state(DeviceState v) {
-    $_setField(16, v);
-  }
-
+  set state(DeviceState value) => $_setField(16, value);
   @$pb.TagNumber(16)
   $core.bool hasState() => $_has(10);
   @$pb.TagNumber(16)
@@ -362,18 +300,15 @@ class Device extends $pb.GeneratedMessage {
   /// [Output only] The last time a cloud-to-device config version was sent to
   /// the device.
   @$pb.TagNumber(18)
-  $2.Timestamp get lastConfigSendTime => $_getN(12);
+  $0.Timestamp get lastConfigSendTime => $_getN(12);
   @$pb.TagNumber(18)
-  set lastConfigSendTime($2.Timestamp v) {
-    $_setField(18, v);
-  }
-
+  set lastConfigSendTime($0.Timestamp value) => $_setField(18, value);
   @$pb.TagNumber(18)
   $core.bool hasLastConfigSendTime() => $_has(12);
   @$pb.TagNumber(18)
   void clearLastConfigSendTime() => $_clearField(18);
   @$pb.TagNumber(18)
-  $2.Timestamp ensureLastConfigSendTime() => $_ensure(12);
+  $0.Timestamp ensureLastConfigSendTime() => $_ensure(12);
 
   /// If a device is blocked, connections or requests from this device will fail.
   /// Can be used to temporarily prevent the device from connecting if, for
@@ -381,10 +316,7 @@ class Device extends $pb.GeneratedMessage {
   @$pb.TagNumber(19)
   $core.bool get blocked => $_getBF(13);
   @$pb.TagNumber(19)
-  set blocked($core.bool v) {
-    $_setBool(13, v);
-  }
-
+  set blocked($core.bool value) => $_setBool(13, value);
   @$pb.TagNumber(19)
   $core.bool hasBlocked() => $_has(13);
   @$pb.TagNumber(19)
@@ -394,18 +326,15 @@ class Device extends $pb.GeneratedMessage {
   /// periodically collected and written to storage; they may be stale by a few
   /// minutes.
   @$pb.TagNumber(20)
-  $2.Timestamp get lastStateTime => $_getN(14);
+  $0.Timestamp get lastStateTime => $_getN(14);
   @$pb.TagNumber(20)
-  set lastStateTime($2.Timestamp v) {
-    $_setField(20, v);
-  }
-
+  set lastStateTime($0.Timestamp value) => $_setField(20, value);
   @$pb.TagNumber(20)
   $core.bool hasLastStateTime() => $_has(14);
   @$pb.TagNumber(20)
   void clearLastStateTime() => $_clearField(20);
   @$pb.TagNumber(20)
-  $2.Timestamp ensureLastStateTime() => $_ensure(14);
+  $0.Timestamp ensureLastStateTime() => $_ensure(14);
 
   /// **Beta Feature**
   ///
@@ -414,10 +343,7 @@ class Device extends $pb.GeneratedMessage {
   @$pb.TagNumber(21)
   LogLevel get logLevel => $_getN(15);
   @$pb.TagNumber(21)
-  set logLevel(LogLevel v) {
-    $_setField(21, v);
-  }
-
+  set logLevel(LogLevel value) => $_setField(21, value);
   @$pb.TagNumber(21)
   $core.bool hasLogLevel() => $_has(15);
   @$pb.TagNumber(21)
@@ -427,10 +353,7 @@ class Device extends $pb.GeneratedMessage {
   @$pb.TagNumber(24)
   GatewayConfig get gatewayConfig => $_getN(16);
   @$pb.TagNumber(24)
-  set gatewayConfig(GatewayConfig v) {
-    $_setField(24, v);
-  }
-
+  set gatewayConfig(GatewayConfig value) => $_setField(24, value);
   @$pb.TagNumber(24)
   $core.bool hasGatewayConfig() => $_has(16);
   @$pb.TagNumber(24)
@@ -445,65 +368,55 @@ class GatewayConfig extends $pb.GeneratedMessage {
     GatewayType? gatewayType,
     GatewayAuthMethod? gatewayAuthMethod,
     $core.String? lastAccessedGatewayId,
-    $2.Timestamp? lastAccessedGatewayTime,
+    $0.Timestamp? lastAccessedGatewayTime,
   }) {
-    final $result = create();
-    if (gatewayType != null) {
-      $result.gatewayType = gatewayType;
-    }
-    if (gatewayAuthMethod != null) {
-      $result.gatewayAuthMethod = gatewayAuthMethod;
-    }
-    if (lastAccessedGatewayId != null) {
-      $result.lastAccessedGatewayId = lastAccessedGatewayId;
-    }
-    if (lastAccessedGatewayTime != null) {
-      $result.lastAccessedGatewayTime = lastAccessedGatewayTime;
-    }
-    return $result;
+    final result = create();
+    if (gatewayType != null) result.gatewayType = gatewayType;
+    if (gatewayAuthMethod != null) result.gatewayAuthMethod = gatewayAuthMethod;
+    if (lastAccessedGatewayId != null)
+      result.lastAccessedGatewayId = lastAccessedGatewayId;
+    if (lastAccessedGatewayTime != null)
+      result.lastAccessedGatewayTime = lastAccessedGatewayTime;
+    return result;
   }
-  GatewayConfig._() : super();
-  factory GatewayConfig.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory GatewayConfig.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  GatewayConfig._();
+
+  factory GatewayConfig.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory GatewayConfig.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'GatewayConfig',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.iot.v1'),
       createEmptyInstance: create)
-    ..e<GatewayType>(
-        1, _omitFieldNames ? '' : 'gatewayType', $pb.PbFieldType.OE,
-        defaultOrMaker: GatewayType.GATEWAY_TYPE_UNSPECIFIED,
-        valueOf: GatewayType.valueOf,
+    ..aE<GatewayType>(1, _omitFieldNames ? '' : 'gatewayType',
         enumValues: GatewayType.values)
-    ..e<GatewayAuthMethod>(
-        2, _omitFieldNames ? '' : 'gatewayAuthMethod', $pb.PbFieldType.OE,
-        defaultOrMaker: GatewayAuthMethod.GATEWAY_AUTH_METHOD_UNSPECIFIED,
-        valueOf: GatewayAuthMethod.valueOf,
+    ..aE<GatewayAuthMethod>(2, _omitFieldNames ? '' : 'gatewayAuthMethod',
         enumValues: GatewayAuthMethod.values)
     ..aOS(3, _omitFieldNames ? '' : 'lastAccessedGatewayId')
-    ..aOM<$2.Timestamp>(4, _omitFieldNames ? '' : 'lastAccessedGatewayTime',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$0.Timestamp>(4, _omitFieldNames ? '' : 'lastAccessedGatewayTime',
+        subBuilder: $0.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  GatewayConfig clone() => GatewayConfig()..mergeFromMessage(this);
+  GatewayConfig clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   GatewayConfig copyWith(void Function(GatewayConfig) updates) =>
       super.copyWith((message) => updates(message as GatewayConfig))
           as GatewayConfig;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GatewayConfig create() => GatewayConfig._();
+  @$core.override
   GatewayConfig createEmptyInstance() => create();
-  static $pb.PbList<GatewayConfig> createRepeated() =>
-      $pb.PbList<GatewayConfig>();
   @$core.pragma('dart2js:noInline')
   static GatewayConfig getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<GatewayConfig>(create);
@@ -513,10 +426,7 @@ class GatewayConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   GatewayType get gatewayType => $_getN(0);
   @$pb.TagNumber(1)
-  set gatewayType(GatewayType v) {
-    $_setField(1, v);
-  }
-
+  set gatewayType(GatewayType value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasGatewayType() => $_has(0);
   @$pb.TagNumber(1)
@@ -527,10 +437,7 @@ class GatewayConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   GatewayAuthMethod get gatewayAuthMethod => $_getN(1);
   @$pb.TagNumber(2)
-  set gatewayAuthMethod(GatewayAuthMethod v) {
-    $_setField(2, v);
-  }
-
+  set gatewayAuthMethod(GatewayAuthMethod value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasGatewayAuthMethod() => $_has(1);
   @$pb.TagNumber(2)
@@ -540,10 +447,7 @@ class GatewayConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get lastAccessedGatewayId => $_getSZ(2);
   @$pb.TagNumber(3)
-  set lastAccessedGatewayId($core.String v) {
-    $_setString(2, v);
-  }
-
+  set lastAccessedGatewayId($core.String value) => $_setString(2, value);
   @$pb.TagNumber(3)
   $core.bool hasLastAccessedGatewayId() => $_has(2);
   @$pb.TagNumber(3)
@@ -552,18 +456,15 @@ class GatewayConfig extends $pb.GeneratedMessage {
   /// [Output only] The most recent time at which the device accessed the gateway
   /// specified in `last_accessed_gateway`.
   @$pb.TagNumber(4)
-  $2.Timestamp get lastAccessedGatewayTime => $_getN(3);
+  $0.Timestamp get lastAccessedGatewayTime => $_getN(3);
   @$pb.TagNumber(4)
-  set lastAccessedGatewayTime($2.Timestamp v) {
-    $_setField(4, v);
-  }
-
+  set lastAccessedGatewayTime($0.Timestamp value) => $_setField(4, value);
   @$pb.TagNumber(4)
   $core.bool hasLastAccessedGatewayTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearLastAccessedGatewayTime() => $_clearField(4);
   @$pb.TagNumber(4)
-  $2.Timestamp ensureLastAccessedGatewayTime() => $_ensure(3);
+  $0.Timestamp ensureLastAccessedGatewayTime() => $_ensure(3);
 }
 
 /// A container for a group of devices.
@@ -578,40 +479,28 @@ class DeviceRegistry extends $pb.GeneratedMessage {
     $core.Iterable<EventNotificationConfig>? eventNotificationConfigs,
     LogLevel? logLevel,
   }) {
-    final $result = create();
-    if (id != null) {
-      $result.id = id;
-    }
-    if (name != null) {
-      $result.name = name;
-    }
-    if (mqttConfig != null) {
-      $result.mqttConfig = mqttConfig;
-    }
-    if (stateNotificationConfig != null) {
-      $result.stateNotificationConfig = stateNotificationConfig;
-    }
-    if (credentials != null) {
-      $result.credentials.addAll(credentials);
-    }
-    if (httpConfig != null) {
-      $result.httpConfig = httpConfig;
-    }
-    if (eventNotificationConfigs != null) {
-      $result.eventNotificationConfigs.addAll(eventNotificationConfigs);
-    }
-    if (logLevel != null) {
-      $result.logLevel = logLevel;
-    }
-    return $result;
+    final result = create();
+    if (id != null) result.id = id;
+    if (name != null) result.name = name;
+    if (mqttConfig != null) result.mqttConfig = mqttConfig;
+    if (stateNotificationConfig != null)
+      result.stateNotificationConfig = stateNotificationConfig;
+    if (credentials != null) result.credentials.addAll(credentials);
+    if (httpConfig != null) result.httpConfig = httpConfig;
+    if (eventNotificationConfigs != null)
+      result.eventNotificationConfigs.addAll(eventNotificationConfigs);
+    if (logLevel != null) result.logLevel = logLevel;
+    return result;
   }
-  DeviceRegistry._() : super();
-  factory DeviceRegistry.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory DeviceRegistry.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  DeviceRegistry._();
+
+  factory DeviceRegistry.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory DeviceRegistry.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'DeviceRegistry',
@@ -625,34 +514,31 @@ class DeviceRegistry extends $pb.GeneratedMessage {
     ..aOM<StateNotificationConfig>(
         7, _omitFieldNames ? '' : 'stateNotificationConfig',
         subBuilder: StateNotificationConfig.create)
-    ..pc<RegistryCredential>(
-        8, _omitFieldNames ? '' : 'credentials', $pb.PbFieldType.PM,
+    ..pPM<RegistryCredential>(8, _omitFieldNames ? '' : 'credentials',
         subBuilder: RegistryCredential.create)
     ..aOM<HttpConfig>(9, _omitFieldNames ? '' : 'httpConfig',
         subBuilder: HttpConfig.create)
-    ..pc<EventNotificationConfig>(10,
-        _omitFieldNames ? '' : 'eventNotificationConfigs', $pb.PbFieldType.PM,
+    ..pPM<EventNotificationConfig>(
+        10, _omitFieldNames ? '' : 'eventNotificationConfigs',
         subBuilder: EventNotificationConfig.create)
-    ..e<LogLevel>(11, _omitFieldNames ? '' : 'logLevel', $pb.PbFieldType.OE,
-        defaultOrMaker: LogLevel.LOG_LEVEL_UNSPECIFIED,
-        valueOf: LogLevel.valueOf,
+    ..aE<LogLevel>(11, _omitFieldNames ? '' : 'logLevel',
         enumValues: LogLevel.values)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  DeviceRegistry clone() => DeviceRegistry()..mergeFromMessage(this);
+  DeviceRegistry clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DeviceRegistry copyWith(void Function(DeviceRegistry) updates) =>
       super.copyWith((message) => updates(message as DeviceRegistry))
           as DeviceRegistry;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DeviceRegistry create() => DeviceRegistry._();
+  @$core.override
   DeviceRegistry createEmptyInstance() => create();
-  static $pb.PbList<DeviceRegistry> createRepeated() =>
-      $pb.PbList<DeviceRegistry>();
   @$core.pragma('dart2js:noInline')
   static DeviceRegistry getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<DeviceRegistry>(create);
@@ -662,10 +548,7 @@ class DeviceRegistry extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get id => $_getSZ(0);
   @$pb.TagNumber(1)
-  set id($core.String v) {
-    $_setString(0, v);
-  }
-
+  set id($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
@@ -676,10 +559,7 @@ class DeviceRegistry extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get name => $_getSZ(1);
   @$pb.TagNumber(2)
-  set name($core.String v) {
-    $_setString(1, v);
-  }
-
+  set name($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasName() => $_has(1);
   @$pb.TagNumber(2)
@@ -689,10 +569,7 @@ class DeviceRegistry extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   MqttConfig get mqttConfig => $_getN(2);
   @$pb.TagNumber(4)
-  set mqttConfig(MqttConfig v) {
-    $_setField(4, v);
-  }
-
+  set mqttConfig(MqttConfig value) => $_setField(4, value);
   @$pb.TagNumber(4)
   $core.bool hasMqttConfig() => $_has(2);
   @$pb.TagNumber(4)
@@ -709,10 +586,8 @@ class DeviceRegistry extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   StateNotificationConfig get stateNotificationConfig => $_getN(3);
   @$pb.TagNumber(7)
-  set stateNotificationConfig(StateNotificationConfig v) {
-    $_setField(7, v);
-  }
-
+  set stateNotificationConfig(StateNotificationConfig value) =>
+      $_setField(7, value);
   @$pb.TagNumber(7)
   $core.bool hasStateNotificationConfig() => $_has(3);
   @$pb.TagNumber(7)
@@ -738,10 +613,7 @@ class DeviceRegistry extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   HttpConfig get httpConfig => $_getN(5);
   @$pb.TagNumber(9)
-  set httpConfig(HttpConfig v) {
-    $_setField(9, v);
-  }
-
+  set httpConfig(HttpConfig value) => $_setField(9, value);
   @$pb.TagNumber(9)
   $core.bool hasHttpConfig() => $_has(5);
   @$pb.TagNumber(9)
@@ -769,10 +641,7 @@ class DeviceRegistry extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   LogLevel get logLevel => $_getN(7);
   @$pb.TagNumber(11)
-  set logLevel(LogLevel v) {
-    $_setField(11, v);
-  }
-
+  set logLevel(LogLevel value) => $_setField(11, value);
   @$pb.TagNumber(11)
   $core.bool hasLogLevel() => $_has(7);
   @$pb.TagNumber(11)
@@ -784,44 +653,42 @@ class MqttConfig extends $pb.GeneratedMessage {
   factory MqttConfig({
     MqttState? mqttEnabledState,
   }) {
-    final $result = create();
-    if (mqttEnabledState != null) {
-      $result.mqttEnabledState = mqttEnabledState;
-    }
-    return $result;
+    final result = create();
+    if (mqttEnabledState != null) result.mqttEnabledState = mqttEnabledState;
+    return result;
   }
-  MqttConfig._() : super();
-  factory MqttConfig.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory MqttConfig.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  MqttConfig._();
+
+  factory MqttConfig.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory MqttConfig.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'MqttConfig',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.iot.v1'),
       createEmptyInstance: create)
-    ..e<MqttState>(
-        1, _omitFieldNames ? '' : 'mqttEnabledState', $pb.PbFieldType.OE,
-        defaultOrMaker: MqttState.MQTT_STATE_UNSPECIFIED,
-        valueOf: MqttState.valueOf,
+    ..aE<MqttState>(1, _omitFieldNames ? '' : 'mqttEnabledState',
         enumValues: MqttState.values)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  MqttConfig clone() => MqttConfig()..mergeFromMessage(this);
+  MqttConfig clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MqttConfig copyWith(void Function(MqttConfig) updates) =>
       super.copyWith((message) => updates(message as MqttConfig)) as MqttConfig;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static MqttConfig create() => MqttConfig._();
+  @$core.override
   MqttConfig createEmptyInstance() => create();
-  static $pb.PbList<MqttConfig> createRepeated() => $pb.PbList<MqttConfig>();
   @$core.pragma('dart2js:noInline')
   static MqttConfig getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<MqttConfig>(create);
@@ -832,10 +699,7 @@ class MqttConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   MqttState get mqttEnabledState => $_getN(0);
   @$pb.TagNumber(1)
-  set mqttEnabledState(MqttState v) {
-    $_setField(1, v);
-  }
-
+  set mqttEnabledState(MqttState value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasMqttEnabledState() => $_has(0);
   @$pb.TagNumber(1)
@@ -847,44 +711,42 @@ class HttpConfig extends $pb.GeneratedMessage {
   factory HttpConfig({
     HttpState? httpEnabledState,
   }) {
-    final $result = create();
-    if (httpEnabledState != null) {
-      $result.httpEnabledState = httpEnabledState;
-    }
-    return $result;
+    final result = create();
+    if (httpEnabledState != null) result.httpEnabledState = httpEnabledState;
+    return result;
   }
-  HttpConfig._() : super();
-  factory HttpConfig.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory HttpConfig.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  HttpConfig._();
+
+  factory HttpConfig.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory HttpConfig.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'HttpConfig',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.iot.v1'),
       createEmptyInstance: create)
-    ..e<HttpState>(
-        1, _omitFieldNames ? '' : 'httpEnabledState', $pb.PbFieldType.OE,
-        defaultOrMaker: HttpState.HTTP_STATE_UNSPECIFIED,
-        valueOf: HttpState.valueOf,
+    ..aE<HttpState>(1, _omitFieldNames ? '' : 'httpEnabledState',
         enumValues: HttpState.values)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  HttpConfig clone() => HttpConfig()..mergeFromMessage(this);
+  HttpConfig clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HttpConfig copyWith(void Function(HttpConfig) updates) =>
       super.copyWith((message) => updates(message as HttpConfig)) as HttpConfig;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static HttpConfig create() => HttpConfig._();
+  @$core.override
   HttpConfig createEmptyInstance() => create();
-  static $pb.PbList<HttpConfig> createRepeated() => $pb.PbList<HttpConfig>();
   @$core.pragma('dart2js:noInline')
   static HttpConfig getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<HttpConfig>(create);
@@ -895,10 +757,7 @@ class HttpConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   HttpState get httpEnabledState => $_getN(0);
   @$pb.TagNumber(1)
-  set httpEnabledState(HttpState v) {
-    $_setField(1, v);
-  }
-
+  set httpEnabledState(HttpState value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasHttpEnabledState() => $_has(0);
   @$pb.TagNumber(1)
@@ -911,22 +770,20 @@ class EventNotificationConfig extends $pb.GeneratedMessage {
     $core.String? pubsubTopicName,
     $core.String? subfolderMatches,
   }) {
-    final $result = create();
-    if (pubsubTopicName != null) {
-      $result.pubsubTopicName = pubsubTopicName;
-    }
-    if (subfolderMatches != null) {
-      $result.subfolderMatches = subfolderMatches;
-    }
-    return $result;
+    final result = create();
+    if (pubsubTopicName != null) result.pubsubTopicName = pubsubTopicName;
+    if (subfolderMatches != null) result.subfolderMatches = subfolderMatches;
+    return result;
   }
-  EventNotificationConfig._() : super();
-  factory EventNotificationConfig.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory EventNotificationConfig.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  EventNotificationConfig._();
+
+  factory EventNotificationConfig.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory EventNotificationConfig.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'EventNotificationConfig',
@@ -938,21 +795,20 @@ class EventNotificationConfig extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  EventNotificationConfig clone() =>
-      EventNotificationConfig()..mergeFromMessage(this);
+  EventNotificationConfig clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   EventNotificationConfig copyWith(
           void Function(EventNotificationConfig) updates) =>
       super.copyWith((message) => updates(message as EventNotificationConfig))
           as EventNotificationConfig;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static EventNotificationConfig create() => EventNotificationConfig._();
+  @$core.override
   EventNotificationConfig createEmptyInstance() => create();
-  static $pb.PbList<EventNotificationConfig> createRepeated() =>
-      $pb.PbList<EventNotificationConfig>();
   @$core.pragma('dart2js:noInline')
   static EventNotificationConfig getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<EventNotificationConfig>(create);
@@ -963,10 +819,7 @@ class EventNotificationConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get pubsubTopicName => $_getSZ(0);
   @$pb.TagNumber(1)
-  set pubsubTopicName($core.String v) {
-    $_setString(0, v);
-  }
-
+  set pubsubTopicName($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasPubsubTopicName() => $_has(0);
   @$pb.TagNumber(1)
@@ -979,10 +832,7 @@ class EventNotificationConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get subfolderMatches => $_getSZ(1);
   @$pb.TagNumber(2)
-  set subfolderMatches($core.String v) {
-    $_setString(1, v);
-  }
-
+  set subfolderMatches($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasSubfolderMatches() => $_has(1);
   @$pb.TagNumber(2)
@@ -994,19 +844,19 @@ class StateNotificationConfig extends $pb.GeneratedMessage {
   factory StateNotificationConfig({
     $core.String? pubsubTopicName,
   }) {
-    final $result = create();
-    if (pubsubTopicName != null) {
-      $result.pubsubTopicName = pubsubTopicName;
-    }
-    return $result;
+    final result = create();
+    if (pubsubTopicName != null) result.pubsubTopicName = pubsubTopicName;
+    return result;
   }
-  StateNotificationConfig._() : super();
-  factory StateNotificationConfig.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory StateNotificationConfig.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  StateNotificationConfig._();
+
+  factory StateNotificationConfig.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory StateNotificationConfig.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'StateNotificationConfig',
@@ -1017,21 +867,20 @@ class StateNotificationConfig extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  StateNotificationConfig clone() =>
-      StateNotificationConfig()..mergeFromMessage(this);
+  StateNotificationConfig clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   StateNotificationConfig copyWith(
           void Function(StateNotificationConfig) updates) =>
       super.copyWith((message) => updates(message as StateNotificationConfig))
           as StateNotificationConfig;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static StateNotificationConfig create() => StateNotificationConfig._();
+  @$core.override
   StateNotificationConfig createEmptyInstance() => create();
-  static $pb.PbList<StateNotificationConfig> createRepeated() =>
-      $pb.PbList<StateNotificationConfig>();
   @$core.pragma('dart2js:noInline')
   static StateNotificationConfig getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<StateNotificationConfig>(create);
@@ -1042,10 +891,7 @@ class StateNotificationConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get pubsubTopicName => $_getSZ(0);
   @$pb.TagNumber(1)
-  set pubsubTopicName($core.String v) {
-    $_setString(0, v);
-  }
-
+  set pubsubTopicName($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasPubsubTopicName() => $_has(0);
   @$pb.TagNumber(1)
@@ -1059,19 +905,20 @@ class RegistryCredential extends $pb.GeneratedMessage {
   factory RegistryCredential({
     PublicKeyCertificate? publicKeyCertificate,
   }) {
-    final $result = create();
-    if (publicKeyCertificate != null) {
-      $result.publicKeyCertificate = publicKeyCertificate;
-    }
-    return $result;
+    final result = create();
+    if (publicKeyCertificate != null)
+      result.publicKeyCertificate = publicKeyCertificate;
+    return result;
   }
-  RegistryCredential._() : super();
-  factory RegistryCredential.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory RegistryCredential.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  RegistryCredential._();
+
+  factory RegistryCredential.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory RegistryCredential.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static const $core.Map<$core.int, RegistryCredential_Credential>
       _RegistryCredential_CredentialByTag = {
@@ -1090,36 +937,35 @@ class RegistryCredential extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  RegistryCredential clone() => RegistryCredential()..mergeFromMessage(this);
+  RegistryCredential clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   RegistryCredential copyWith(void Function(RegistryCredential) updates) =>
       super.copyWith((message) => updates(message as RegistryCredential))
           as RegistryCredential;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static RegistryCredential create() => RegistryCredential._();
+  @$core.override
   RegistryCredential createEmptyInstance() => create();
-  static $pb.PbList<RegistryCredential> createRepeated() =>
-      $pb.PbList<RegistryCredential>();
   @$core.pragma('dart2js:noInline')
   static RegistryCredential getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<RegistryCredential>(create);
   static RegistryCredential? _defaultInstance;
 
+  @$pb.TagNumber(1)
   RegistryCredential_Credential whichCredential() =>
       _RegistryCredential_CredentialByTag[$_whichOneof(0)]!;
+  @$pb.TagNumber(1)
   void clearCredential() => $_clearField($_whichOneof(0));
 
   /// A public key certificate used to verify the device credentials.
   @$pb.TagNumber(1)
   PublicKeyCertificate get publicKeyCertificate => $_getN(0);
   @$pb.TagNumber(1)
-  set publicKeyCertificate(PublicKeyCertificate v) {
-    $_setField(1, v);
-  }
-
+  set publicKeyCertificate(PublicKeyCertificate value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasPublicKeyCertificate() => $_has(0);
   @$pb.TagNumber(1)
@@ -1133,39 +979,30 @@ class X509CertificateDetails extends $pb.GeneratedMessage {
   factory X509CertificateDetails({
     $core.String? issuer,
     $core.String? subject,
-    $2.Timestamp? startTime,
-    $2.Timestamp? expiryTime,
+    $0.Timestamp? startTime,
+    $0.Timestamp? expiryTime,
     $core.String? signatureAlgorithm,
     $core.String? publicKeyType,
   }) {
-    final $result = create();
-    if (issuer != null) {
-      $result.issuer = issuer;
-    }
-    if (subject != null) {
-      $result.subject = subject;
-    }
-    if (startTime != null) {
-      $result.startTime = startTime;
-    }
-    if (expiryTime != null) {
-      $result.expiryTime = expiryTime;
-    }
-    if (signatureAlgorithm != null) {
-      $result.signatureAlgorithm = signatureAlgorithm;
-    }
-    if (publicKeyType != null) {
-      $result.publicKeyType = publicKeyType;
-    }
-    return $result;
+    final result = create();
+    if (issuer != null) result.issuer = issuer;
+    if (subject != null) result.subject = subject;
+    if (startTime != null) result.startTime = startTime;
+    if (expiryTime != null) result.expiryTime = expiryTime;
+    if (signatureAlgorithm != null)
+      result.signatureAlgorithm = signatureAlgorithm;
+    if (publicKeyType != null) result.publicKeyType = publicKeyType;
+    return result;
   }
-  X509CertificateDetails._() : super();
-  factory X509CertificateDetails.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory X509CertificateDetails.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  X509CertificateDetails._();
+
+  factory X509CertificateDetails.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory X509CertificateDetails.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'X509CertificateDetails',
@@ -1174,30 +1011,29 @@ class X509CertificateDetails extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'issuer')
     ..aOS(2, _omitFieldNames ? '' : 'subject')
-    ..aOM<$2.Timestamp>(3, _omitFieldNames ? '' : 'startTime',
-        subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(4, _omitFieldNames ? '' : 'expiryTime',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$0.Timestamp>(3, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(4, _omitFieldNames ? '' : 'expiryTime',
+        subBuilder: $0.Timestamp.create)
     ..aOS(5, _omitFieldNames ? '' : 'signatureAlgorithm')
     ..aOS(6, _omitFieldNames ? '' : 'publicKeyType')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  X509CertificateDetails clone() =>
-      X509CertificateDetails()..mergeFromMessage(this);
+  X509CertificateDetails clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   X509CertificateDetails copyWith(
           void Function(X509CertificateDetails) updates) =>
       super.copyWith((message) => updates(message as X509CertificateDetails))
           as X509CertificateDetails;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static X509CertificateDetails create() => X509CertificateDetails._();
+  @$core.override
   X509CertificateDetails createEmptyInstance() => create();
-  static $pb.PbList<X509CertificateDetails> createRepeated() =>
-      $pb.PbList<X509CertificateDetails>();
   @$core.pragma('dart2js:noInline')
   static X509CertificateDetails getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<X509CertificateDetails>(create);
@@ -1207,10 +1043,7 @@ class X509CertificateDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get issuer => $_getSZ(0);
   @$pb.TagNumber(1)
-  set issuer($core.String v) {
-    $_setString(0, v);
-  }
-
+  set issuer($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasIssuer() => $_has(0);
   @$pb.TagNumber(1)
@@ -1220,10 +1053,7 @@ class X509CertificateDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get subject => $_getSZ(1);
   @$pb.TagNumber(2)
-  set subject($core.String v) {
-    $_setString(1, v);
-  }
-
+  set subject($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasSubject() => $_has(1);
   @$pb.TagNumber(2)
@@ -1231,42 +1061,33 @@ class X509CertificateDetails extends $pb.GeneratedMessage {
 
   /// The time the certificate becomes valid.
   @$pb.TagNumber(3)
-  $2.Timestamp get startTime => $_getN(2);
+  $0.Timestamp get startTime => $_getN(2);
   @$pb.TagNumber(3)
-  set startTime($2.Timestamp v) {
-    $_setField(3, v);
-  }
-
+  set startTime($0.Timestamp value) => $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasStartTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearStartTime() => $_clearField(3);
   @$pb.TagNumber(3)
-  $2.Timestamp ensureStartTime() => $_ensure(2);
+  $0.Timestamp ensureStartTime() => $_ensure(2);
 
   /// The time the certificate becomes invalid.
   @$pb.TagNumber(4)
-  $2.Timestamp get expiryTime => $_getN(3);
+  $0.Timestamp get expiryTime => $_getN(3);
   @$pb.TagNumber(4)
-  set expiryTime($2.Timestamp v) {
-    $_setField(4, v);
-  }
-
+  set expiryTime($0.Timestamp value) => $_setField(4, value);
   @$pb.TagNumber(4)
   $core.bool hasExpiryTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearExpiryTime() => $_clearField(4);
   @$pb.TagNumber(4)
-  $2.Timestamp ensureExpiryTime() => $_ensure(3);
+  $0.Timestamp ensureExpiryTime() => $_ensure(3);
 
   /// The algorithm used to sign the certificate.
   @$pb.TagNumber(5)
   $core.String get signatureAlgorithm => $_getSZ(4);
   @$pb.TagNumber(5)
-  set signatureAlgorithm($core.String v) {
-    $_setString(4, v);
-  }
-
+  set signatureAlgorithm($core.String value) => $_setString(4, value);
   @$pb.TagNumber(5)
   $core.bool hasSignatureAlgorithm() => $_has(4);
   @$pb.TagNumber(5)
@@ -1276,10 +1097,7 @@ class X509CertificateDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get publicKeyType => $_getSZ(5);
   @$pb.TagNumber(6)
-  set publicKeyType($core.String v) {
-    $_setString(5, v);
-  }
-
+  set publicKeyType($core.String value) => $_setString(5, value);
   @$pb.TagNumber(6)
   $core.bool hasPublicKeyType() => $_has(5);
   @$pb.TagNumber(6)
@@ -1293,36 +1111,28 @@ class PublicKeyCertificate extends $pb.GeneratedMessage {
     $core.String? certificate,
     X509CertificateDetails? x509Details,
   }) {
-    final $result = create();
-    if (format != null) {
-      $result.format = format;
-    }
-    if (certificate != null) {
-      $result.certificate = certificate;
-    }
-    if (x509Details != null) {
-      $result.x509Details = x509Details;
-    }
-    return $result;
+    final result = create();
+    if (format != null) result.format = format;
+    if (certificate != null) result.certificate = certificate;
+    if (x509Details != null) result.x509Details = x509Details;
+    return result;
   }
-  PublicKeyCertificate._() : super();
-  factory PublicKeyCertificate.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory PublicKeyCertificate.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  PublicKeyCertificate._();
+
+  factory PublicKeyCertificate.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory PublicKeyCertificate.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'PublicKeyCertificate',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.iot.v1'),
       createEmptyInstance: create)
-    ..e<PublicKeyCertificateFormat>(
-        1, _omitFieldNames ? '' : 'format', $pb.PbFieldType.OE,
-        defaultOrMaker: PublicKeyCertificateFormat
-            .UNSPECIFIED_PUBLIC_KEY_CERTIFICATE_FORMAT,
-        valueOf: PublicKeyCertificateFormat.valueOf,
+    ..aE<PublicKeyCertificateFormat>(1, _omitFieldNames ? '' : 'format',
         enumValues: PublicKeyCertificateFormat.values)
     ..aOS(2, _omitFieldNames ? '' : 'certificate')
     ..aOM<X509CertificateDetails>(3, _omitFieldNames ? '' : 'x509Details',
@@ -1330,20 +1140,19 @@ class PublicKeyCertificate extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  PublicKeyCertificate clone() =>
-      PublicKeyCertificate()..mergeFromMessage(this);
+  PublicKeyCertificate clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   PublicKeyCertificate copyWith(void Function(PublicKeyCertificate) updates) =>
       super.copyWith((message) => updates(message as PublicKeyCertificate))
           as PublicKeyCertificate;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static PublicKeyCertificate create() => PublicKeyCertificate._();
+  @$core.override
   PublicKeyCertificate createEmptyInstance() => create();
-  static $pb.PbList<PublicKeyCertificate> createRepeated() =>
-      $pb.PbList<PublicKeyCertificate>();
   @$core.pragma('dart2js:noInline')
   static PublicKeyCertificate getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<PublicKeyCertificate>(create);
@@ -1353,10 +1162,7 @@ class PublicKeyCertificate extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   PublicKeyCertificateFormat get format => $_getN(0);
   @$pb.TagNumber(1)
-  set format(PublicKeyCertificateFormat v) {
-    $_setField(1, v);
-  }
-
+  set format(PublicKeyCertificateFormat value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasFormat() => $_has(0);
   @$pb.TagNumber(1)
@@ -1366,10 +1172,7 @@ class PublicKeyCertificate extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get certificate => $_getSZ(1);
   @$pb.TagNumber(2)
-  set certificate($core.String v) {
-    $_setString(1, v);
-  }
-
+  set certificate($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasCertificate() => $_has(1);
   @$pb.TagNumber(2)
@@ -1379,10 +1182,7 @@ class PublicKeyCertificate extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   X509CertificateDetails get x509Details => $_getN(2);
   @$pb.TagNumber(3)
-  set x509Details(X509CertificateDetails v) {
-    $_setField(3, v);
-  }
-
+  set x509Details(X509CertificateDetails value) => $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasX509Details() => $_has(2);
   @$pb.TagNumber(3)
@@ -1397,24 +1197,22 @@ enum DeviceCredential_Credential { publicKey, notSet }
 class DeviceCredential extends $pb.GeneratedMessage {
   factory DeviceCredential({
     PublicKeyCredential? publicKey,
-    $2.Timestamp? expirationTime,
+    $0.Timestamp? expirationTime,
   }) {
-    final $result = create();
-    if (publicKey != null) {
-      $result.publicKey = publicKey;
-    }
-    if (expirationTime != null) {
-      $result.expirationTime = expirationTime;
-    }
-    return $result;
+    final result = create();
+    if (publicKey != null) result.publicKey = publicKey;
+    if (expirationTime != null) result.expirationTime = expirationTime;
+    return result;
   }
-  DeviceCredential._() : super();
-  factory DeviceCredential.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory DeviceCredential.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  DeviceCredential._();
+
+  factory DeviceCredential.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory DeviceCredential.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static const $core.Map<$core.int, DeviceCredential_Credential>
       _DeviceCredential_CredentialByTag = {
@@ -1429,31 +1227,33 @@ class DeviceCredential extends $pb.GeneratedMessage {
     ..oo(0, [2])
     ..aOM<PublicKeyCredential>(2, _omitFieldNames ? '' : 'publicKey',
         subBuilder: PublicKeyCredential.create)
-    ..aOM<$2.Timestamp>(6, _omitFieldNames ? '' : 'expirationTime',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$0.Timestamp>(6, _omitFieldNames ? '' : 'expirationTime',
+        subBuilder: $0.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  DeviceCredential clone() => DeviceCredential()..mergeFromMessage(this);
+  DeviceCredential clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DeviceCredential copyWith(void Function(DeviceCredential) updates) =>
       super.copyWith((message) => updates(message as DeviceCredential))
           as DeviceCredential;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DeviceCredential create() => DeviceCredential._();
+  @$core.override
   DeviceCredential createEmptyInstance() => create();
-  static $pb.PbList<DeviceCredential> createRepeated() =>
-      $pb.PbList<DeviceCredential>();
   @$core.pragma('dart2js:noInline')
   static DeviceCredential getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<DeviceCredential>(create);
   static DeviceCredential? _defaultInstance;
 
+  @$pb.TagNumber(2)
   DeviceCredential_Credential whichCredential() =>
       _DeviceCredential_CredentialByTag[$_whichOneof(0)]!;
+  @$pb.TagNumber(2)
   void clearCredential() => $_clearField($_whichOneof(0));
 
   /// A public key used to verify the signature of JSON Web Tokens (JWTs).
@@ -1470,10 +1270,7 @@ class DeviceCredential extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   PublicKeyCredential get publicKey => $_getN(0);
   @$pb.TagNumber(2)
-  set publicKey(PublicKeyCredential v) {
-    $_setField(2, v);
-  }
-
+  set publicKey(PublicKeyCredential value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasPublicKey() => $_has(0);
   @$pb.TagNumber(2)
@@ -1485,18 +1282,15 @@ class DeviceCredential extends $pb.GeneratedMessage {
   /// credential will be ignored for new client authentication requests after
   /// this timestamp; however, it will not be automatically deleted.
   @$pb.TagNumber(6)
-  $2.Timestamp get expirationTime => $_getN(1);
+  $0.Timestamp get expirationTime => $_getN(1);
   @$pb.TagNumber(6)
-  set expirationTime($2.Timestamp v) {
-    $_setField(6, v);
-  }
-
+  set expirationTime($0.Timestamp value) => $_setField(6, value);
   @$pb.TagNumber(6)
   $core.bool hasExpirationTime() => $_has(1);
   @$pb.TagNumber(6)
   void clearExpirationTime() => $_clearField(6);
   @$pb.TagNumber(6)
-  $2.Timestamp ensureExpirationTime() => $_ensure(1);
+  $0.Timestamp ensureExpirationTime() => $_ensure(1);
 }
 
 /// A public key format and data.
@@ -1505,49 +1299,45 @@ class PublicKeyCredential extends $pb.GeneratedMessage {
     PublicKeyFormat? format,
     $core.String? key,
   }) {
-    final $result = create();
-    if (format != null) {
-      $result.format = format;
-    }
-    if (key != null) {
-      $result.key = key;
-    }
-    return $result;
+    final result = create();
+    if (format != null) result.format = format;
+    if (key != null) result.key = key;
+    return result;
   }
-  PublicKeyCredential._() : super();
-  factory PublicKeyCredential.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory PublicKeyCredential.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  PublicKeyCredential._();
+
+  factory PublicKeyCredential.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory PublicKeyCredential.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'PublicKeyCredential',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.iot.v1'),
       createEmptyInstance: create)
-    ..e<PublicKeyFormat>(1, _omitFieldNames ? '' : 'format', $pb.PbFieldType.OE,
-        defaultOrMaker: PublicKeyFormat.UNSPECIFIED_PUBLIC_KEY_FORMAT,
-        valueOf: PublicKeyFormat.valueOf,
+    ..aE<PublicKeyFormat>(1, _omitFieldNames ? '' : 'format',
         enumValues: PublicKeyFormat.values)
     ..aOS(2, _omitFieldNames ? '' : 'key')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  PublicKeyCredential clone() => PublicKeyCredential()..mergeFromMessage(this);
+  PublicKeyCredential clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   PublicKeyCredential copyWith(void Function(PublicKeyCredential) updates) =>
       super.copyWith((message) => updates(message as PublicKeyCredential))
           as PublicKeyCredential;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static PublicKeyCredential create() => PublicKeyCredential._();
+  @$core.override
   PublicKeyCredential createEmptyInstance() => create();
-  static $pb.PbList<PublicKeyCredential> createRepeated() =>
-      $pb.PbList<PublicKeyCredential>();
   @$core.pragma('dart2js:noInline')
   static PublicKeyCredential getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<PublicKeyCredential>(create);
@@ -1557,10 +1347,7 @@ class PublicKeyCredential extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   PublicKeyFormat get format => $_getN(0);
   @$pb.TagNumber(1)
-  set format(PublicKeyFormat v) {
-    $_setField(1, v);
-  }
-
+  set format(PublicKeyFormat value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasFormat() => $_has(0);
   @$pb.TagNumber(1)
@@ -1570,10 +1357,7 @@ class PublicKeyCredential extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get key => $_getSZ(1);
   @$pb.TagNumber(2)
-  set key($core.String v) {
-    $_setString(1, v);
-  }
-
+  set key($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasKey() => $_has(1);
   @$pb.TagNumber(2)
@@ -1584,32 +1368,26 @@ class PublicKeyCredential extends $pb.GeneratedMessage {
 class DeviceConfig extends $pb.GeneratedMessage {
   factory DeviceConfig({
     $fixnum.Int64? version,
-    $2.Timestamp? cloudUpdateTime,
-    $2.Timestamp? deviceAckTime,
+    $0.Timestamp? cloudUpdateTime,
+    $0.Timestamp? deviceAckTime,
     $core.List<$core.int>? binaryData,
   }) {
-    final $result = create();
-    if (version != null) {
-      $result.version = version;
-    }
-    if (cloudUpdateTime != null) {
-      $result.cloudUpdateTime = cloudUpdateTime;
-    }
-    if (deviceAckTime != null) {
-      $result.deviceAckTime = deviceAckTime;
-    }
-    if (binaryData != null) {
-      $result.binaryData = binaryData;
-    }
-    return $result;
+    final result = create();
+    if (version != null) result.version = version;
+    if (cloudUpdateTime != null) result.cloudUpdateTime = cloudUpdateTime;
+    if (deviceAckTime != null) result.deviceAckTime = deviceAckTime;
+    if (binaryData != null) result.binaryData = binaryData;
+    return result;
   }
-  DeviceConfig._() : super();
-  factory DeviceConfig.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory DeviceConfig.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  DeviceConfig._();
+
+  factory DeviceConfig.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory DeviceConfig.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'DeviceConfig',
@@ -1617,28 +1395,28 @@ class DeviceConfig extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.events.cloud.iot.v1'),
       createEmptyInstance: create)
     ..aInt64(1, _omitFieldNames ? '' : 'version')
-    ..aOM<$2.Timestamp>(2, _omitFieldNames ? '' : 'cloudUpdateTime',
-        subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(3, _omitFieldNames ? '' : 'deviceAckTime',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$0.Timestamp>(2, _omitFieldNames ? '' : 'cloudUpdateTime',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(3, _omitFieldNames ? '' : 'deviceAckTime',
+        subBuilder: $0.Timestamp.create)
     ..a<$core.List<$core.int>>(
         4, _omitFieldNames ? '' : 'binaryData', $pb.PbFieldType.OY)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  DeviceConfig clone() => DeviceConfig()..mergeFromMessage(this);
+  DeviceConfig clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DeviceConfig copyWith(void Function(DeviceConfig) updates) =>
       super.copyWith((message) => updates(message as DeviceConfig))
           as DeviceConfig;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DeviceConfig create() => DeviceConfig._();
+  @$core.override
   DeviceConfig createEmptyInstance() => create();
-  static $pb.PbList<DeviceConfig> createRepeated() =>
-      $pb.PbList<DeviceConfig>();
   @$core.pragma('dart2js:noInline')
   static DeviceConfig getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<DeviceConfig>(create);
@@ -1651,10 +1429,7 @@ class DeviceConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $fixnum.Int64 get version => $_getI64(0);
   @$pb.TagNumber(1)
-  set version($fixnum.Int64 v) {
-    $_setInt64(0, v);
-  }
-
+  set version($fixnum.Int64 value) => $_setInt64(0, value);
   @$pb.TagNumber(1)
   $core.bool hasVersion() => $_has(0);
   @$pb.TagNumber(1)
@@ -1663,18 +1438,15 @@ class DeviceConfig extends $pb.GeneratedMessage {
   /// [Output only] The time at which this configuration version was updated in
   /// Cloud IoT Core. This timestamp is set by the server.
   @$pb.TagNumber(2)
-  $2.Timestamp get cloudUpdateTime => $_getN(1);
+  $0.Timestamp get cloudUpdateTime => $_getN(1);
   @$pb.TagNumber(2)
-  set cloudUpdateTime($2.Timestamp v) {
-    $_setField(2, v);
-  }
-
+  set cloudUpdateTime($0.Timestamp value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasCloudUpdateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCloudUpdateTime() => $_clearField(2);
   @$pb.TagNumber(2)
-  $2.Timestamp ensureCloudUpdateTime() => $_ensure(1);
+  $0.Timestamp ensureCloudUpdateTime() => $_ensure(1);
 
   /// [Output only] The time at which Cloud IoT Core received the
   /// acknowledgment from the device, indicating that the device has received
@@ -1686,27 +1458,21 @@ class DeviceConfig extends $pb.GeneratedMessage {
   /// versions may never be sent to the device, and therefore are never
   /// acknowledged. This timestamp is set by Cloud IoT Core.
   @$pb.TagNumber(3)
-  $2.Timestamp get deviceAckTime => $_getN(2);
+  $0.Timestamp get deviceAckTime => $_getN(2);
   @$pb.TagNumber(3)
-  set deviceAckTime($2.Timestamp v) {
-    $_setField(3, v);
-  }
-
+  set deviceAckTime($0.Timestamp value) => $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasDeviceAckTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearDeviceAckTime() => $_clearField(3);
   @$pb.TagNumber(3)
-  $2.Timestamp ensureDeviceAckTime() => $_ensure(2);
+  $0.Timestamp ensureDeviceAckTime() => $_ensure(2);
 
   /// The device configuration data.
   @$pb.TagNumber(4)
   $core.List<$core.int> get binaryData => $_getN(3);
   @$pb.TagNumber(4)
-  set binaryData($core.List<$core.int> v) {
-    $_setBytes(3, v);
-  }
-
+  set binaryData($core.List<$core.int> value) => $_setBytes(3, value);
   @$pb.TagNumber(4)
   $core.bool hasBinaryData() => $_has(3);
   @$pb.TagNumber(4)
@@ -1716,50 +1482,49 @@ class DeviceConfig extends $pb.GeneratedMessage {
 /// The device state, as reported by the device.
 class DeviceState extends $pb.GeneratedMessage {
   factory DeviceState({
-    $2.Timestamp? updateTime,
+    $0.Timestamp? updateTime,
     $core.List<$core.int>? binaryData,
   }) {
-    final $result = create();
-    if (updateTime != null) {
-      $result.updateTime = updateTime;
-    }
-    if (binaryData != null) {
-      $result.binaryData = binaryData;
-    }
-    return $result;
+    final result = create();
+    if (updateTime != null) result.updateTime = updateTime;
+    if (binaryData != null) result.binaryData = binaryData;
+    return result;
   }
-  DeviceState._() : super();
-  factory DeviceState.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory DeviceState.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  DeviceState._();
+
+  factory DeviceState.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory DeviceState.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'DeviceState',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.iot.v1'),
       createEmptyInstance: create)
-    ..aOM<$2.Timestamp>(1, _omitFieldNames ? '' : 'updateTime',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$0.Timestamp>(1, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $0.Timestamp.create)
     ..a<$core.List<$core.int>>(
         2, _omitFieldNames ? '' : 'binaryData', $pb.PbFieldType.OY)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  DeviceState clone() => DeviceState()..mergeFromMessage(this);
+  DeviceState clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DeviceState copyWith(void Function(DeviceState) updates) =>
       super.copyWith((message) => updates(message as DeviceState))
           as DeviceState;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DeviceState create() => DeviceState._();
+  @$core.override
   DeviceState createEmptyInstance() => create();
-  static $pb.PbList<DeviceState> createRepeated() => $pb.PbList<DeviceState>();
   @$core.pragma('dart2js:noInline')
   static DeviceState getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<DeviceState>(create);
@@ -1768,27 +1533,21 @@ class DeviceState extends $pb.GeneratedMessage {
   /// [Output only] The time at which this state version was updated in Cloud
   /// IoT Core.
   @$pb.TagNumber(1)
-  $2.Timestamp get updateTime => $_getN(0);
+  $0.Timestamp get updateTime => $_getN(0);
   @$pb.TagNumber(1)
-  set updateTime($2.Timestamp v) {
-    $_setField(1, v);
-  }
-
+  set updateTime($0.Timestamp value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasUpdateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateTime() => $_clearField(1);
   @$pb.TagNumber(1)
-  $2.Timestamp ensureUpdateTime() => $_ensure(0);
+  $0.Timestamp ensureUpdateTime() => $_ensure(0);
 
   /// The device state data.
   @$pb.TagNumber(2)
   $core.List<$core.int> get binaryData => $_getN(1);
   @$pb.TagNumber(2)
-  set binaryData($core.List<$core.int> v) {
-    $_setBytes(1, v);
-  }
-
+  set binaryData($core.List<$core.int> value) => $_setBytes(1, value);
   @$pb.TagNumber(2)
   $core.bool hasBinaryData() => $_has(1);
   @$pb.TagNumber(2)
@@ -1800,19 +1559,19 @@ class DeviceEventData extends $pb.GeneratedMessage {
   factory DeviceEventData({
     Device? payload,
   }) {
-    final $result = create();
-    if (payload != null) {
-      $result.payload = payload;
-    }
-    return $result;
+    final result = create();
+    if (payload != null) result.payload = payload;
+    return result;
   }
-  DeviceEventData._() : super();
-  factory DeviceEventData.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory DeviceEventData.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  DeviceEventData._();
+
+  factory DeviceEventData.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory DeviceEventData.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'DeviceEventData',
@@ -1824,19 +1583,19 @@ class DeviceEventData extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  DeviceEventData clone() => DeviceEventData()..mergeFromMessage(this);
+  DeviceEventData clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DeviceEventData copyWith(void Function(DeviceEventData) updates) =>
       super.copyWith((message) => updates(message as DeviceEventData))
           as DeviceEventData;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DeviceEventData create() => DeviceEventData._();
+  @$core.override
   DeviceEventData createEmptyInstance() => create();
-  static $pb.PbList<DeviceEventData> createRepeated() =>
-      $pb.PbList<DeviceEventData>();
   @$core.pragma('dart2js:noInline')
   static DeviceEventData getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<DeviceEventData>(create);
@@ -1846,10 +1605,7 @@ class DeviceEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   Device get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(Device v) {
-    $_setField(1, v);
-  }
-
+  set payload(Device value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -1863,19 +1619,19 @@ class RegistryEventData extends $pb.GeneratedMessage {
   factory RegistryEventData({
     DeviceRegistry? payload,
   }) {
-    final $result = create();
-    if (payload != null) {
-      $result.payload = payload;
-    }
-    return $result;
+    final result = create();
+    if (payload != null) result.payload = payload;
+    return result;
   }
-  RegistryEventData._() : super();
-  factory RegistryEventData.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory RegistryEventData.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  RegistryEventData._();
+
+  factory RegistryEventData.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory RegistryEventData.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'RegistryEventData',
@@ -1887,19 +1643,19 @@ class RegistryEventData extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  RegistryEventData clone() => RegistryEventData()..mergeFromMessage(this);
+  RegistryEventData clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   RegistryEventData copyWith(void Function(RegistryEventData) updates) =>
       super.copyWith((message) => updates(message as RegistryEventData))
           as RegistryEventData;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static RegistryEventData create() => RegistryEventData._();
+  @$core.override
   RegistryEventData createEmptyInstance() => create();
-  static $pb.PbList<RegistryEventData> createRepeated() =>
-      $pb.PbList<RegistryEventData>();
   @$core.pragma('dart2js:noInline')
   static RegistryEventData getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<RegistryEventData>(create);
@@ -1909,10 +1665,7 @@ class RegistryEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   DeviceRegistry get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(DeviceRegistry v) {
-    $_setField(1, v);
-  }
-
+  set payload(DeviceRegistry value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -1921,6 +1674,7 @@ class RegistryEventData extends $pb.GeneratedMessage {
   DeviceRegistry ensurePayload() => $_ensure(0);
 }
 
-const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames =
+const $core.bool _omitFieldNames =
+    $core.bool.fromEnvironment('protobuf.omit_field_names');
+const $core.bool _omitMessageNames =
     $core.bool.fromEnvironment('protobuf.omit_message_names');

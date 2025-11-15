@@ -1,70 +1,69 @@
+// This is a generated file - do not edit.
 //
-//  Generated code. Do not modify.
-//  source: google/events/firebase/database/v1/data.proto
-//
+// Generated from google/events/firebase/database/v1/data.proto.
+
 // @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
-// ignore_for_file: constant_identifier_names, library_prefixes
-// ignore_for_file: non_constant_identifier_names, prefer_final_fields
-// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
+// ignore_for_file: constant_identifier_names
+// ignore_for_file: curly_braces_in_flow_control_structures
+// ignore_for_file: deprecated_member_use_from_same_package, library_prefixes
+// ignore_for_file: non_constant_identifier_names
 
 import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/struct.pb.dart' as $10;
+import '../../../../protobuf/struct.pb.dart' as $0;
 
 export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
 /// The data within all Firebase Real Time Database reference events.
 class ReferenceEventData extends $pb.GeneratedMessage {
   factory ReferenceEventData({
-    $10.Value? data,
-    $10.Value? delta,
+    $0.Value? data,
+    $0.Value? delta,
   }) {
-    final $result = create();
-    if (data != null) {
-      $result.data = data;
-    }
-    if (delta != null) {
-      $result.delta = delta;
-    }
-    return $result;
+    final result = create();
+    if (data != null) result.data = data;
+    if (delta != null) result.delta = delta;
+    return result;
   }
-  ReferenceEventData._() : super();
-  factory ReferenceEventData.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ReferenceEventData.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  ReferenceEventData._();
+
+  factory ReferenceEventData.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ReferenceEventData.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'ReferenceEventData',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.firebase.database.v1'),
       createEmptyInstance: create)
-    ..aOM<$10.Value>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $10.Value.create)
-    ..aOM<$10.Value>(2, _omitFieldNames ? '' : 'delta',
-        subBuilder: $10.Value.create)
+    ..aOM<$0.Value>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $0.Value.create)
+    ..aOM<$0.Value>(2, _omitFieldNames ? '' : 'delta',
+        subBuilder: $0.Value.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ReferenceEventData clone() => ReferenceEventData()..mergeFromMessage(this);
+  ReferenceEventData clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ReferenceEventData copyWith(void Function(ReferenceEventData) updates) =>
       super.copyWith((message) => updates(message as ReferenceEventData))
           as ReferenceEventData;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ReferenceEventData create() => ReferenceEventData._();
+  @$core.override
   ReferenceEventData createEmptyInstance() => create();
-  static $pb.PbList<ReferenceEventData> createRepeated() =>
-      $pb.PbList<ReferenceEventData>();
   @$core.pragma('dart2js:noInline')
   static ReferenceEventData getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ReferenceEventData>(create);
@@ -72,35 +71,30 @@ class ReferenceEventData extends $pb.GeneratedMessage {
 
   /// The original data for the reference.
   @$pb.TagNumber(1)
-  $10.Value get data => $_getN(0);
+  $0.Value get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($10.Value v) {
-    $_setField(1, v);
-  }
-
+  set data($0.Value value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
   void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $10.Value ensureData() => $_ensure(0);
+  $0.Value ensureData() => $_ensure(0);
 
   /// The change in the reference data.
   @$pb.TagNumber(2)
-  $10.Value get delta => $_getN(1);
+  $0.Value get delta => $_getN(1);
   @$pb.TagNumber(2)
-  set delta($10.Value v) {
-    $_setField(2, v);
-  }
-
+  set delta($0.Value value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasDelta() => $_has(1);
   @$pb.TagNumber(2)
   void clearDelta() => $_clearField(2);
   @$pb.TagNumber(2)
-  $10.Value ensureDelta() => $_ensure(1);
+  $0.Value ensureDelta() => $_ensure(1);
 }
 
-const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames =
+const $core.bool _omitFieldNames =
+    $core.bool.fromEnvironment('protobuf.omit_field_names');
+const $core.bool _omitMessageNames =
     $core.bool.fromEnvironment('protobuf.omit_message_names');

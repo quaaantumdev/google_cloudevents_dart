@@ -1,13 +1,14 @@
+// This is a generated file - do not edit.
 //
-//  Generated code. Do not modify.
-//  source: google/events/cloud/certificatemanager/v1/data.proto
-//
+// Generated from google/events/cloud/certificatemanager/v1/data.proto.
+
 // @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
-// ignore_for_file: constant_identifier_names, library_prefixes
-// ignore_for_file: non_constant_identifier_names, prefer_final_fields
-// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
+// ignore_for_file: constant_identifier_names
+// ignore_for_file: curly_braces_in_flow_control_structures
+// ignore_for_file: deprecated_member_use_from_same_package, library_prefixes
+// ignore_for_file: non_constant_identifier_names
 
 import 'dart:core' as $core;
 
@@ -38,7 +39,7 @@ class ServingState extends $pb.ProtobufEnum {
   static ServingState? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const ServingState._(super.v, super.n);
+  const ServingState._(super.value, super.name);
 }
 
 /// The type of keypair to generate.
@@ -70,7 +71,7 @@ class CertificateIssuanceConfig_KeyAlgorithm extends $pb.ProtobufEnum {
   static CertificateIssuanceConfig_KeyAlgorithm? valueOf($core.int value) =>
       _byValue[value];
 
-  const CertificateIssuanceConfig_KeyAlgorithm._(super.v, super.n);
+  const CertificateIssuanceConfig_KeyAlgorithm._(super.value, super.name);
 }
 
 /// Certificate scope.
@@ -95,7 +96,7 @@ class Certificate_Scope extends $pb.ProtobufEnum {
   static Certificate_Scope? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Certificate_Scope._(super.v, super.n);
+  const Certificate_Scope._(super.value, super.name);
 }
 
 class Certificate_ManagedCertificate_State extends $pb.ProtobufEnum {
@@ -135,7 +136,7 @@ class Certificate_ManagedCertificate_State extends $pb.ProtobufEnum {
   static Certificate_ManagedCertificate_State? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Certificate_ManagedCertificate_State._(super.v, super.n);
+  const Certificate_ManagedCertificate_State._(super.value, super.name);
 }
 
 class Certificate_ManagedCertificate_ProvisioningIssue_Reason
@@ -176,7 +177,7 @@ class Certificate_ManagedCertificate_ProvisioningIssue_Reason
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
   const Certificate_ManagedCertificate_ProvisioningIssue_Reason._(
-      super.v, super.n);
+      super.value, super.name);
 }
 
 class Certificate_ManagedCertificate_AuthorizationAttemptInfo_State
@@ -223,7 +224,7 @@ class Certificate_ManagedCertificate_AuthorizationAttemptInfo_State
       _byValue[value];
 
   const Certificate_ManagedCertificate_AuthorizationAttemptInfo_State._(
-      super.v, super.n);
+      super.value, super.name);
 }
 
 class Certificate_ManagedCertificate_AuthorizationAttemptInfo_FailureReason
@@ -272,7 +273,7 @@ class Certificate_ManagedCertificate_AuthorizationAttemptInfo_FailureReason
           value < 0 || value >= _byValue.length ? null : _byValue[value];
 
   const Certificate_ManagedCertificate_AuthorizationAttemptInfo_FailureReason._(
-      super.v, super.n);
+      super.value, super.name);
 }
 
 /// Defines predefined cases other than SNI-hostname match when this
@@ -299,7 +300,8 @@ class CertificateMapEntry_Matcher extends $pb.ProtobufEnum {
   static CertificateMapEntry_Matcher? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const CertificateMapEntry_Matcher._(super.v, super.n);
+  const CertificateMapEntry_Matcher._(super.value, super.name);
 }
 
-const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');
+const $core.bool _omitEnumNames =
+    $core.bool.fromEnvironment('protobuf.omit_enum_names');

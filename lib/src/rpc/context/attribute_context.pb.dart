@@ -1,21 +1,22 @@
+// This is a generated file - do not edit.
 //
-//  Generated code. Do not modify.
-//  source: google/rpc/context/attribute_context.proto
-//
+// Generated from google/rpc/context/attribute_context.proto.
+
 // @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
-// ignore_for_file: constant_identifier_names, library_prefixes
-// ignore_for_file: non_constant_identifier_names, prefer_final_fields
-// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
+// ignore_for_file: constant_identifier_names
+// ignore_for_file: curly_braces_in_flow_control_structures
+// ignore_for_file: deprecated_member_use_from_same_package, library_prefixes
+// ignore_for_file: non_constant_identifier_names
 
 import 'dart:core' as $core;
 
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/struct.pb.dart' as $10;
-import '../../protobuf/timestamp.pb.dart' as $2;
+import '../../protobuf/struct.pb.dart' as $0;
+import '../../protobuf/timestamp.pb.dart' as $1;
 
 export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
@@ -31,31 +32,23 @@ class AttributeContext_Peer extends $pb.GeneratedMessage {
     $core.String? principal,
     $core.String? regionCode,
   }) {
-    final $result = create();
-    if (ip != null) {
-      $result.ip = ip;
-    }
-    if (port != null) {
-      $result.port = port;
-    }
-    if (labels != null) {
-      $result.labels.addEntries(labels);
-    }
-    if (principal != null) {
-      $result.principal = principal;
-    }
-    if (regionCode != null) {
-      $result.regionCode = regionCode;
-    }
-    return $result;
+    final result = create();
+    if (ip != null) result.ip = ip;
+    if (port != null) result.port = port;
+    if (labels != null) result.labels.addEntries(labels);
+    if (principal != null) result.principal = principal;
+    if (regionCode != null) result.regionCode = regionCode;
+    return result;
   }
-  AttributeContext_Peer._() : super();
-  factory AttributeContext_Peer.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory AttributeContext_Peer.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  AttributeContext_Peer._();
+
+  factory AttributeContext_Peer.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory AttributeContext_Peer.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'AttributeContext.Peer',
@@ -74,21 +67,20 @@ class AttributeContext_Peer extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  AttributeContext_Peer clone() =>
-      AttributeContext_Peer()..mergeFromMessage(this);
+  AttributeContext_Peer clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AttributeContext_Peer copyWith(
           void Function(AttributeContext_Peer) updates) =>
       super.copyWith((message) => updates(message as AttributeContext_Peer))
           as AttributeContext_Peer;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AttributeContext_Peer create() => AttributeContext_Peer._();
+  @$core.override
   AttributeContext_Peer createEmptyInstance() => create();
-  static $pb.PbList<AttributeContext_Peer> createRepeated() =>
-      $pb.PbList<AttributeContext_Peer>();
   @$core.pragma('dart2js:noInline')
   static AttributeContext_Peer getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<AttributeContext_Peer>(create);
@@ -98,10 +90,7 @@ class AttributeContext_Peer extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get ip => $_getSZ(0);
   @$pb.TagNumber(1)
-  set ip($core.String v) {
-    $_setString(0, v);
-  }
-
+  set ip($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasIp() => $_has(0);
   @$pb.TagNumber(1)
@@ -111,10 +100,7 @@ class AttributeContext_Peer extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $fixnum.Int64 get port => $_getI64(1);
   @$pb.TagNumber(2)
-  set port($fixnum.Int64 v) {
-    $_setInt64(1, v);
-  }
-
+  set port($fixnum.Int64 value) => $_setInt64(1, value);
   @$pb.TagNumber(2)
   $core.bool hasPort() => $_has(1);
   @$pb.TagNumber(2)
@@ -130,10 +116,7 @@ class AttributeContext_Peer extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get principal => $_getSZ(3);
   @$pb.TagNumber(7)
-  set principal($core.String v) {
-    $_setString(3, v);
-  }
-
+  set principal($core.String value) => $_setString(3, value);
   @$pb.TagNumber(7)
   $core.bool hasPrincipal() => $_has(3);
   @$pb.TagNumber(7)
@@ -145,10 +128,7 @@ class AttributeContext_Peer extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.String get regionCode => $_getSZ(4);
   @$pb.TagNumber(8)
-  set regionCode($core.String v) {
-    $_setString(4, v);
-  }
-
+  set regionCode($core.String value) => $_setString(4, value);
   @$pb.TagNumber(8)
   $core.bool hasRegionCode() => $_has(4);
   @$pb.TagNumber(8)
@@ -165,28 +145,22 @@ class AttributeContext_Api extends $pb.GeneratedMessage {
     $core.String? protocol,
     $core.String? version,
   }) {
-    final $result = create();
-    if (service != null) {
-      $result.service = service;
-    }
-    if (operation != null) {
-      $result.operation = operation;
-    }
-    if (protocol != null) {
-      $result.protocol = protocol;
-    }
-    if (version != null) {
-      $result.version = version;
-    }
-    return $result;
+    final result = create();
+    if (service != null) result.service = service;
+    if (operation != null) result.operation = operation;
+    if (protocol != null) result.protocol = protocol;
+    if (version != null) result.version = version;
+    return result;
   }
-  AttributeContext_Api._() : super();
-  factory AttributeContext_Api.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory AttributeContext_Api.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  AttributeContext_Api._();
+
+  factory AttributeContext_Api.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory AttributeContext_Api.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'AttributeContext.Api',
@@ -200,20 +174,19 @@ class AttributeContext_Api extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  AttributeContext_Api clone() =>
-      AttributeContext_Api()..mergeFromMessage(this);
+  AttributeContext_Api clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AttributeContext_Api copyWith(void Function(AttributeContext_Api) updates) =>
       super.copyWith((message) => updates(message as AttributeContext_Api))
           as AttributeContext_Api;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AttributeContext_Api create() => AttributeContext_Api._();
+  @$core.override
   AttributeContext_Api createEmptyInstance() => create();
-  static $pb.PbList<AttributeContext_Api> createRepeated() =>
-      $pb.PbList<AttributeContext_Api>();
   @$core.pragma('dart2js:noInline')
   static AttributeContext_Api getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<AttributeContext_Api>(create);
@@ -225,10 +198,7 @@ class AttributeContext_Api extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get service => $_getSZ(0);
   @$pb.TagNumber(1)
-  set service($core.String v) {
-    $_setString(0, v);
-  }
-
+  set service($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasService() => $_has(0);
   @$pb.TagNumber(1)
@@ -240,10 +210,7 @@ class AttributeContext_Api extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get operation => $_getSZ(1);
   @$pb.TagNumber(2)
-  set operation($core.String v) {
-    $_setString(1, v);
-  }
-
+  set operation($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasOperation() => $_has(1);
   @$pb.TagNumber(2)
@@ -254,10 +221,7 @@ class AttributeContext_Api extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get protocol => $_getSZ(2);
   @$pb.TagNumber(3)
-  set protocol($core.String v) {
-    $_setString(2, v);
-  }
-
+  set protocol($core.String value) => $_setString(2, value);
   @$pb.TagNumber(3)
   $core.bool hasProtocol() => $_has(2);
   @$pb.TagNumber(3)
@@ -268,10 +232,7 @@ class AttributeContext_Api extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get version => $_getSZ(3);
   @$pb.TagNumber(4)
-  set version($core.String v) {
-    $_setString(3, v);
-  }
-
+  set version($core.String value) => $_setString(3, value);
   @$pb.TagNumber(4)
   $core.bool hasVersion() => $_has(3);
   @$pb.TagNumber(4)
@@ -286,34 +247,26 @@ class AttributeContext_Auth extends $pb.GeneratedMessage {
     $core.String? principal,
     $core.Iterable<$core.String>? audiences,
     $core.String? presenter,
-    $10.Struct? claims,
+    $0.Struct? claims,
     $core.Iterable<$core.String>? accessLevels,
   }) {
-    final $result = create();
-    if (principal != null) {
-      $result.principal = principal;
-    }
-    if (audiences != null) {
-      $result.audiences.addAll(audiences);
-    }
-    if (presenter != null) {
-      $result.presenter = presenter;
-    }
-    if (claims != null) {
-      $result.claims = claims;
-    }
-    if (accessLevels != null) {
-      $result.accessLevels.addAll(accessLevels);
-    }
-    return $result;
+    final result = create();
+    if (principal != null) result.principal = principal;
+    if (audiences != null) result.audiences.addAll(audiences);
+    if (presenter != null) result.presenter = presenter;
+    if (claims != null) result.claims = claims;
+    if (accessLevels != null) result.accessLevels.addAll(accessLevels);
+    return result;
   }
-  AttributeContext_Auth._() : super();
-  factory AttributeContext_Auth.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory AttributeContext_Auth.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  AttributeContext_Auth._();
+
+  factory AttributeContext_Auth.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory AttributeContext_Auth.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'AttributeContext.Auth',
@@ -323,27 +276,26 @@ class AttributeContext_Auth extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'principal')
     ..pPS(2, _omitFieldNames ? '' : 'audiences')
     ..aOS(3, _omitFieldNames ? '' : 'presenter')
-    ..aOM<$10.Struct>(4, _omitFieldNames ? '' : 'claims',
-        subBuilder: $10.Struct.create)
+    ..aOM<$0.Struct>(4, _omitFieldNames ? '' : 'claims',
+        subBuilder: $0.Struct.create)
     ..pPS(5, _omitFieldNames ? '' : 'accessLevels')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  AttributeContext_Auth clone() =>
-      AttributeContext_Auth()..mergeFromMessage(this);
+  AttributeContext_Auth clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AttributeContext_Auth copyWith(
           void Function(AttributeContext_Auth) updates) =>
       super.copyWith((message) => updates(message as AttributeContext_Auth))
           as AttributeContext_Auth;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AttributeContext_Auth create() => AttributeContext_Auth._();
+  @$core.override
   AttributeContext_Auth createEmptyInstance() => create();
-  static $pb.PbList<AttributeContext_Auth> createRepeated() =>
-      $pb.PbList<AttributeContext_Auth>();
   @$core.pragma('dart2js:noInline')
   static AttributeContext_Auth getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<AttributeContext_Auth>(create);
@@ -357,10 +309,7 @@ class AttributeContext_Auth extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get principal => $_getSZ(0);
   @$pb.TagNumber(1)
-  set principal($core.String v) {
-    $_setString(0, v);
-  }
-
+  set principal($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasPrincipal() => $_has(0);
   @$pb.TagNumber(1)
@@ -390,10 +339,7 @@ class AttributeContext_Auth extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get presenter => $_getSZ(2);
   @$pb.TagNumber(3)
-  set presenter($core.String v) {
-    $_setString(2, v);
-  }
-
+  set presenter($core.String value) => $_setString(2, value);
   @$pb.TagNumber(3)
   $core.bool hasPresenter() => $_has(2);
   @$pb.TagNumber(3)
@@ -415,18 +361,15 @@ class AttributeContext_Auth extends $pb.GeneratedMessage {
   /// SAML assertions are similarly specified, but with an identity provider
   /// dependent structure.
   @$pb.TagNumber(4)
-  $10.Struct get claims => $_getN(3);
+  $0.Struct get claims => $_getN(3);
   @$pb.TagNumber(4)
-  set claims($10.Struct v) {
-    $_setField(4, v);
-  }
-
+  set claims($0.Struct value) => $_setField(4, value);
   @$pb.TagNumber(4)
   $core.bool hasClaims() => $_has(3);
   @$pb.TagNumber(4)
   void clearClaims() => $_clearField(4);
   @$pb.TagNumber(4)
-  $10.Struct ensureClaims() => $_ensure(3);
+  $0.Struct ensureClaims() => $_ensure(3);
 
   /// A list of access level resource names that allow resources to be
   /// accessed by authenticated requester. It is part of Secure GCP processing
@@ -451,58 +394,36 @@ class AttributeContext_Request extends $pb.GeneratedMessage {
     $core.String? host,
     $core.String? scheme,
     $core.String? query,
-    $2.Timestamp? time,
+    $1.Timestamp? time,
     $fixnum.Int64? size,
     $core.String? protocol,
     $core.String? reason,
     AttributeContext_Auth? auth,
   }) {
-    final $result = create();
-    if (id != null) {
-      $result.id = id;
-    }
-    if (method != null) {
-      $result.method = method;
-    }
-    if (headers != null) {
-      $result.headers.addEntries(headers);
-    }
-    if (path != null) {
-      $result.path = path;
-    }
-    if (host != null) {
-      $result.host = host;
-    }
-    if (scheme != null) {
-      $result.scheme = scheme;
-    }
-    if (query != null) {
-      $result.query = query;
-    }
-    if (time != null) {
-      $result.time = time;
-    }
-    if (size != null) {
-      $result.size = size;
-    }
-    if (protocol != null) {
-      $result.protocol = protocol;
-    }
-    if (reason != null) {
-      $result.reason = reason;
-    }
-    if (auth != null) {
-      $result.auth = auth;
-    }
-    return $result;
+    final result = create();
+    if (id != null) result.id = id;
+    if (method != null) result.method = method;
+    if (headers != null) result.headers.addEntries(headers);
+    if (path != null) result.path = path;
+    if (host != null) result.host = host;
+    if (scheme != null) result.scheme = scheme;
+    if (query != null) result.query = query;
+    if (time != null) result.time = time;
+    if (size != null) result.size = size;
+    if (protocol != null) result.protocol = protocol;
+    if (reason != null) result.reason = reason;
+    if (auth != null) result.auth = auth;
+    return result;
   }
-  AttributeContext_Request._() : super();
-  factory AttributeContext_Request.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory AttributeContext_Request.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  AttributeContext_Request._();
+
+  factory AttributeContext_Request.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory AttributeContext_Request.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'AttributeContext.Request',
@@ -520,8 +441,8 @@ class AttributeContext_Request extends $pb.GeneratedMessage {
     ..aOS(5, _omitFieldNames ? '' : 'host')
     ..aOS(6, _omitFieldNames ? '' : 'scheme')
     ..aOS(7, _omitFieldNames ? '' : 'query')
-    ..aOM<$2.Timestamp>(9, _omitFieldNames ? '' : 'time',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$1.Timestamp>(9, _omitFieldNames ? '' : 'time',
+        subBuilder: $1.Timestamp.create)
     ..aInt64(10, _omitFieldNames ? '' : 'size')
     ..aOS(11, _omitFieldNames ? '' : 'protocol')
     ..aOS(12, _omitFieldNames ? '' : 'reason')
@@ -530,21 +451,20 @@ class AttributeContext_Request extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  AttributeContext_Request clone() =>
-      AttributeContext_Request()..mergeFromMessage(this);
+  AttributeContext_Request clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AttributeContext_Request copyWith(
           void Function(AttributeContext_Request) updates) =>
       super.copyWith((message) => updates(message as AttributeContext_Request))
           as AttributeContext_Request;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AttributeContext_Request create() => AttributeContext_Request._();
+  @$core.override
   AttributeContext_Request createEmptyInstance() => create();
-  static $pb.PbList<AttributeContext_Request> createRepeated() =>
-      $pb.PbList<AttributeContext_Request>();
   @$core.pragma('dart2js:noInline')
   static AttributeContext_Request getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<AttributeContext_Request>(create);
@@ -556,10 +476,7 @@ class AttributeContext_Request extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get id => $_getSZ(0);
   @$pb.TagNumber(1)
-  set id($core.String v) {
-    $_setString(0, v);
-  }
-
+  set id($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
@@ -569,10 +486,7 @@ class AttributeContext_Request extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get method => $_getSZ(1);
   @$pb.TagNumber(2)
-  set method($core.String v) {
-    $_setString(1, v);
-  }
-
+  set method($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasMethod() => $_has(1);
   @$pb.TagNumber(2)
@@ -588,10 +502,7 @@ class AttributeContext_Request extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get path => $_getSZ(3);
   @$pb.TagNumber(4)
-  set path($core.String v) {
-    $_setString(3, v);
-  }
-
+  set path($core.String value) => $_setString(3, value);
   @$pb.TagNumber(4)
   $core.bool hasPath() => $_has(3);
   @$pb.TagNumber(4)
@@ -601,10 +512,7 @@ class AttributeContext_Request extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get host => $_getSZ(4);
   @$pb.TagNumber(5)
-  set host($core.String v) {
-    $_setString(4, v);
-  }
-
+  set host($core.String value) => $_setString(4, value);
   @$pb.TagNumber(5)
   $core.bool hasHost() => $_has(4);
   @$pb.TagNumber(5)
@@ -614,10 +522,7 @@ class AttributeContext_Request extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get scheme => $_getSZ(5);
   @$pb.TagNumber(6)
-  set scheme($core.String v) {
-    $_setString(5, v);
-  }
-
+  set scheme($core.String value) => $_setString(5, value);
   @$pb.TagNumber(6)
   $core.bool hasScheme() => $_has(5);
   @$pb.TagNumber(6)
@@ -628,10 +533,7 @@ class AttributeContext_Request extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get query => $_getSZ(6);
   @$pb.TagNumber(7)
-  set query($core.String v) {
-    $_setString(6, v);
-  }
-
+  set query($core.String value) => $_setString(6, value);
   @$pb.TagNumber(7)
   $core.bool hasQuery() => $_has(6);
   @$pb.TagNumber(7)
@@ -640,27 +542,21 @@ class AttributeContext_Request extends $pb.GeneratedMessage {
   /// The timestamp when the `destination` service receives the first byte of
   /// the request.
   @$pb.TagNumber(9)
-  $2.Timestamp get time => $_getN(7);
+  $1.Timestamp get time => $_getN(7);
   @$pb.TagNumber(9)
-  set time($2.Timestamp v) {
-    $_setField(9, v);
-  }
-
+  set time($1.Timestamp value) => $_setField(9, value);
   @$pb.TagNumber(9)
   $core.bool hasTime() => $_has(7);
   @$pb.TagNumber(9)
   void clearTime() => $_clearField(9);
   @$pb.TagNumber(9)
-  $2.Timestamp ensureTime() => $_ensure(7);
+  $1.Timestamp ensureTime() => $_ensure(7);
 
   /// The HTTP request size in bytes. If unknown, it must be -1.
   @$pb.TagNumber(10)
   $fixnum.Int64 get size => $_getI64(8);
   @$pb.TagNumber(10)
-  set size($fixnum.Int64 v) {
-    $_setInt64(8, v);
-  }
-
+  set size($fixnum.Int64 value) => $_setInt64(8, value);
   @$pb.TagNumber(10)
   $core.bool hasSize() => $_has(8);
   @$pb.TagNumber(10)
@@ -673,10 +569,7 @@ class AttributeContext_Request extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.String get protocol => $_getSZ(9);
   @$pb.TagNumber(11)
-  set protocol($core.String v) {
-    $_setString(9, v);
-  }
-
+  set protocol($core.String value) => $_setString(9, value);
   @$pb.TagNumber(11)
   $core.bool hasProtocol() => $_has(9);
   @$pb.TagNumber(11)
@@ -687,10 +580,7 @@ class AttributeContext_Request extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.String get reason => $_getSZ(10);
   @$pb.TagNumber(12)
-  set reason($core.String v) {
-    $_setString(10, v);
-  }
-
+  set reason($core.String value) => $_setString(10, value);
   @$pb.TagNumber(12)
   $core.bool hasReason() => $_has(10);
   @$pb.TagNumber(12)
@@ -701,10 +591,7 @@ class AttributeContext_Request extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   AttributeContext_Auth get auth => $_getN(11);
   @$pb.TagNumber(13)
-  set auth(AttributeContext_Auth v) {
-    $_setField(13, v);
-  }
-
+  set auth(AttributeContext_Auth value) => $_setField(13, value);
   @$pb.TagNumber(13)
   $core.bool hasAuth() => $_has(11);
   @$pb.TagNumber(13)
@@ -720,30 +607,24 @@ class AttributeContext_Response extends $pb.GeneratedMessage {
     $fixnum.Int64? code,
     $fixnum.Int64? size,
     $core.Iterable<$core.MapEntry<$core.String, $core.String>>? headers,
-    $2.Timestamp? time,
+    $1.Timestamp? time,
   }) {
-    final $result = create();
-    if (code != null) {
-      $result.code = code;
-    }
-    if (size != null) {
-      $result.size = size;
-    }
-    if (headers != null) {
-      $result.headers.addEntries(headers);
-    }
-    if (time != null) {
-      $result.time = time;
-    }
-    return $result;
+    final result = create();
+    if (code != null) result.code = code;
+    if (size != null) result.size = size;
+    if (headers != null) result.headers.addEntries(headers);
+    if (time != null) result.time = time;
+    return result;
   }
-  AttributeContext_Response._() : super();
-  factory AttributeContext_Response.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory AttributeContext_Response.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  AttributeContext_Response._();
+
+  factory AttributeContext_Response.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory AttributeContext_Response.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'AttributeContext.Response',
@@ -757,26 +638,25 @@ class AttributeContext_Response extends $pb.GeneratedMessage {
         keyFieldType: $pb.PbFieldType.OS,
         valueFieldType: $pb.PbFieldType.OS,
         packageName: const $pb.PackageName('google.rpc.context'))
-    ..aOM<$2.Timestamp>(4, _omitFieldNames ? '' : 'time',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$1.Timestamp>(4, _omitFieldNames ? '' : 'time',
+        subBuilder: $1.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  AttributeContext_Response clone() =>
-      AttributeContext_Response()..mergeFromMessage(this);
+  AttributeContext_Response clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AttributeContext_Response copyWith(
           void Function(AttributeContext_Response) updates) =>
       super.copyWith((message) => updates(message as AttributeContext_Response))
           as AttributeContext_Response;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AttributeContext_Response create() => AttributeContext_Response._();
+  @$core.override
   AttributeContext_Response createEmptyInstance() => create();
-  static $pb.PbList<AttributeContext_Response> createRepeated() =>
-      $pb.PbList<AttributeContext_Response>();
   @$core.pragma('dart2js:noInline')
   static AttributeContext_Response getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<AttributeContext_Response>(create);
@@ -786,10 +666,7 @@ class AttributeContext_Response extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $fixnum.Int64 get code => $_getI64(0);
   @$pb.TagNumber(1)
-  set code($fixnum.Int64 v) {
-    $_setInt64(0, v);
-  }
-
+  set code($fixnum.Int64 value) => $_setInt64(0, value);
   @$pb.TagNumber(1)
   $core.bool hasCode() => $_has(0);
   @$pb.TagNumber(1)
@@ -799,10 +676,7 @@ class AttributeContext_Response extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $fixnum.Int64 get size => $_getI64(1);
   @$pb.TagNumber(2)
-  set size($fixnum.Int64 v) {
-    $_setInt64(1, v);
-  }
-
+  set size($fixnum.Int64 value) => $_setInt64(1, value);
   @$pb.TagNumber(2)
   $core.bool hasSize() => $_has(1);
   @$pb.TagNumber(2)
@@ -817,18 +691,15 @@ class AttributeContext_Response extends $pb.GeneratedMessage {
   /// The timestamp when the `destination` service generates the first byte of
   /// the response.
   @$pb.TagNumber(4)
-  $2.Timestamp get time => $_getN(3);
+  $1.Timestamp get time => $_getN(3);
   @$pb.TagNumber(4)
-  set time($2.Timestamp v) {
-    $_setField(4, v);
-  }
-
+  set time($1.Timestamp value) => $_setField(4, value);
   @$pb.TagNumber(4)
   $core.bool hasTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearTime() => $_clearField(4);
   @$pb.TagNumber(4)
-  $2.Timestamp ensureTime() => $_ensure(3);
+  $1.Timestamp ensureTime() => $_ensure(3);
 }
 
 /// This message defines core attributes for a resource. A resource is an
@@ -841,28 +712,22 @@ class AttributeContext_Resource extends $pb.GeneratedMessage {
     $core.String? type,
     $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
   }) {
-    final $result = create();
-    if (service != null) {
-      $result.service = service;
-    }
-    if (name != null) {
-      $result.name = name;
-    }
-    if (type != null) {
-      $result.type = type;
-    }
-    if (labels != null) {
-      $result.labels.addEntries(labels);
-    }
-    return $result;
+    final result = create();
+    if (service != null) result.service = service;
+    if (name != null) result.name = name;
+    if (type != null) result.type = type;
+    if (labels != null) result.labels.addEntries(labels);
+    return result;
   }
-  AttributeContext_Resource._() : super();
-  factory AttributeContext_Resource.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory AttributeContext_Resource.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  AttributeContext_Resource._();
+
+  factory AttributeContext_Resource.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory AttributeContext_Resource.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'AttributeContext.Resource',
@@ -880,21 +745,20 @@ class AttributeContext_Resource extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  AttributeContext_Resource clone() =>
-      AttributeContext_Resource()..mergeFromMessage(this);
+  AttributeContext_Resource clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AttributeContext_Resource copyWith(
           void Function(AttributeContext_Resource) updates) =>
       super.copyWith((message) => updates(message as AttributeContext_Resource))
           as AttributeContext_Resource;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AttributeContext_Resource create() => AttributeContext_Resource._();
+  @$core.override
   AttributeContext_Resource createEmptyInstance() => create();
-  static $pb.PbList<AttributeContext_Resource> createRepeated() =>
-      $pb.PbList<AttributeContext_Resource>();
   @$core.pragma('dart2js:noInline')
   static AttributeContext_Resource getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<AttributeContext_Resource>(create);
@@ -906,10 +770,7 @@ class AttributeContext_Resource extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get service => $_getSZ(0);
   @$pb.TagNumber(1)
-  set service($core.String v) {
-    $_setString(0, v);
-  }
-
+  set service($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasService() => $_has(0);
   @$pb.TagNumber(1)
@@ -930,10 +791,7 @@ class AttributeContext_Resource extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get name => $_getSZ(1);
   @$pb.TagNumber(2)
-  set name($core.String v) {
-    $_setString(1, v);
-  }
-
+  set name($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasName() => $_has(1);
   @$pb.TagNumber(2)
@@ -946,10 +804,7 @@ class AttributeContext_Resource extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get type => $_getSZ(2);
   @$pb.TagNumber(3)
-  set type($core.String v) {
-    $_setString(2, v);
-  }
-
+  set type($core.String value) => $_setString(2, value);
   @$pb.TagNumber(3)
   $core.bool hasType() => $_has(2);
   @$pb.TagNumber(3)
@@ -988,37 +843,25 @@ class AttributeContext extends $pb.GeneratedMessage {
     AttributeContext_Api? api,
     AttributeContext_Peer? origin,
   }) {
-    final $result = create();
-    if (source != null) {
-      $result.source = source;
-    }
-    if (destination != null) {
-      $result.destination = destination;
-    }
-    if (request != null) {
-      $result.request = request;
-    }
-    if (response != null) {
-      $result.response = response;
-    }
-    if (resource != null) {
-      $result.resource = resource;
-    }
-    if (api != null) {
-      $result.api = api;
-    }
-    if (origin != null) {
-      $result.origin = origin;
-    }
-    return $result;
+    final result = create();
+    if (source != null) result.source = source;
+    if (destination != null) result.destination = destination;
+    if (request != null) result.request = request;
+    if (response != null) result.response = response;
+    if (resource != null) result.resource = resource;
+    if (api != null) result.api = api;
+    if (origin != null) result.origin = origin;
+    return result;
   }
-  AttributeContext._() : super();
-  factory AttributeContext.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory AttributeContext.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  AttributeContext._();
+
+  factory AttributeContext.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory AttributeContext.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'AttributeContext',
@@ -1042,19 +885,19 @@ class AttributeContext extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  AttributeContext clone() => AttributeContext()..mergeFromMessage(this);
+  AttributeContext clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AttributeContext copyWith(void Function(AttributeContext) updates) =>
       super.copyWith((message) => updates(message as AttributeContext))
           as AttributeContext;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AttributeContext create() => AttributeContext._();
+  @$core.override
   AttributeContext createEmptyInstance() => create();
-  static $pb.PbList<AttributeContext> createRepeated() =>
-      $pb.PbList<AttributeContext>();
   @$core.pragma('dart2js:noInline')
   static AttributeContext getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<AttributeContext>(create);
@@ -1066,10 +909,7 @@ class AttributeContext extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   AttributeContext_Peer get source => $_getN(0);
   @$pb.TagNumber(1)
-  set source(AttributeContext_Peer v) {
-    $_setField(1, v);
-  }
-
+  set source(AttributeContext_Peer value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasSource() => $_has(0);
   @$pb.TagNumber(1)
@@ -1083,10 +923,7 @@ class AttributeContext extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   AttributeContext_Peer get destination => $_getN(1);
   @$pb.TagNumber(2)
-  set destination(AttributeContext_Peer v) {
-    $_setField(2, v);
-  }
-
+  set destination(AttributeContext_Peer value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasDestination() => $_has(1);
   @$pb.TagNumber(2)
@@ -1098,10 +935,7 @@ class AttributeContext extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   AttributeContext_Request get request => $_getN(2);
   @$pb.TagNumber(3)
-  set request(AttributeContext_Request v) {
-    $_setField(3, v);
-  }
-
+  set request(AttributeContext_Request value) => $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasRequest() => $_has(2);
   @$pb.TagNumber(3)
@@ -1113,10 +947,7 @@ class AttributeContext extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   AttributeContext_Response get response => $_getN(3);
   @$pb.TagNumber(4)
-  set response(AttributeContext_Response v) {
-    $_setField(4, v);
-  }
-
+  set response(AttributeContext_Response value) => $_setField(4, value);
   @$pb.TagNumber(4)
   $core.bool hasResponse() => $_has(3);
   @$pb.TagNumber(4)
@@ -1130,10 +961,7 @@ class AttributeContext extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   AttributeContext_Resource get resource => $_getN(4);
   @$pb.TagNumber(5)
-  set resource(AttributeContext_Resource v) {
-    $_setField(5, v);
-  }
-
+  set resource(AttributeContext_Resource value) => $_setField(5, value);
   @$pb.TagNumber(5)
   $core.bool hasResource() => $_has(4);
   @$pb.TagNumber(5)
@@ -1145,10 +973,7 @@ class AttributeContext extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   AttributeContext_Api get api => $_getN(5);
   @$pb.TagNumber(6)
-  set api(AttributeContext_Api v) {
-    $_setField(6, v);
-  }
-
+  set api(AttributeContext_Api value) => $_setField(6, value);
   @$pb.TagNumber(6)
   $core.bool hasApi() => $_has(5);
   @$pb.TagNumber(6)
@@ -1162,10 +987,7 @@ class AttributeContext extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   AttributeContext_Peer get origin => $_getN(6);
   @$pb.TagNumber(7)
-  set origin(AttributeContext_Peer v) {
-    $_setField(7, v);
-  }
-
+  set origin(AttributeContext_Peer value) => $_setField(7, value);
   @$pb.TagNumber(7)
   $core.bool hasOrigin() => $_has(6);
   @$pb.TagNumber(7)
@@ -1174,6 +996,7 @@ class AttributeContext extends $pb.GeneratedMessage {
   AttributeContext_Peer ensureOrigin() => $_ensure(6);
 }
 
-const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames =
+const $core.bool _omitFieldNames =
+    $core.bool.fromEnvironment('protobuf.omit_field_names');
+const $core.bool _omitMessageNames =
     $core.bool.fromEnvironment('protobuf.omit_message_names');

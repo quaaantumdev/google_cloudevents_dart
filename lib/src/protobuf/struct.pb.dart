@@ -1,13 +1,15 @@
+// This is a generated file - do not edit.
 //
-//  Generated code. Do not modify.
-//  source: google/protobuf/struct.proto
-//
+// Generated from google/protobuf/struct.proto.
+
 // @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
-// ignore_for_file: constant_identifier_names, library_prefixes
-// ignore_for_file: non_constant_identifier_names, prefer_final_fields
-// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
+// ignore_for_file: constant_identifier_names
+// ignore_for_file: curly_braces_in_flow_control_structures
+// ignore_for_file: deprecated_member_use_from_same_package
+// ignore_for_file: implementation_imports, library_prefixes
+// ignore_for_file: non_constant_identifier_names
 
 import 'dart:core' as $core;
 
@@ -32,27 +34,26 @@ class Struct extends $pb.GeneratedMessage with $mixin.StructMixin {
   factory Struct({
     $core.Iterable<$core.MapEntry<$core.String, Value>>? fields,
   }) {
-    final $result = create();
-    if (fields != null) {
-      $result.fields.addEntries(fields);
-    }
-    return $result;
+    final result = create();
+    if (fields != null) result.fields.addEntries(fields);
+    return result;
   }
-  Struct._() : super();
-  factory Struct.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Struct.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  Struct._();
+
+  factory Struct.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory Struct.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'Struct',
       package:
           const $pb.PackageName(_omitMessageNames ? '' : 'google.protobuf'),
       createEmptyInstance: create,
-      toProto3Json: $mixin.StructMixin.toProto3JsonHelper,
-      fromProto3Json: $mixin.StructMixin.fromProto3JsonHelper)
+      wellKnownType: $mixin.WellKnownType.struct)
     ..m<$core.String, Value>(1, _omitFieldNames ? '' : 'fields',
         entryClassName: 'Struct.FieldsEntry',
         keyFieldType: $pb.PbFieldType.OS,
@@ -63,17 +64,18 @@ class Struct extends $pb.GeneratedMessage with $mixin.StructMixin {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  Struct clone() => Struct()..mergeFromMessage(this);
+  Struct clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Struct copyWith(void Function(Struct) updates) =>
       super.copyWith((message) => updates(message as Struct)) as Struct;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Struct create() => Struct._();
+  @$core.override
   Struct createEmptyInstance() => create();
-  static $pb.PbList<Struct> createRepeated() => $pb.PbList<Struct>();
   @$core.pragma('dart2js:noInline')
   static Struct getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Struct>(create);
@@ -109,34 +111,24 @@ class Value extends $pb.GeneratedMessage with $mixin.ValueMixin {
     Struct? structValue,
     ListValue? listValue,
   }) {
-    final $result = create();
-    if (nullValue != null) {
-      $result.nullValue = nullValue;
-    }
-    if (numberValue != null) {
-      $result.numberValue = numberValue;
-    }
-    if (stringValue != null) {
-      $result.stringValue = stringValue;
-    }
-    if (boolValue != null) {
-      $result.boolValue = boolValue;
-    }
-    if (structValue != null) {
-      $result.structValue = structValue;
-    }
-    if (listValue != null) {
-      $result.listValue = listValue;
-    }
-    return $result;
+    final result = create();
+    if (nullValue != null) result.nullValue = nullValue;
+    if (numberValue != null) result.numberValue = numberValue;
+    if (stringValue != null) result.stringValue = stringValue;
+    if (boolValue != null) result.boolValue = boolValue;
+    if (structValue != null) result.structValue = structValue;
+    if (listValue != null) result.listValue = listValue;
+    return result;
   }
-  Value._() : super();
-  factory Value.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Value.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  Value._();
+
+  factory Value.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory Value.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static const $core.Map<$core.int, Value_Kind> _Value_KindByTag = {
     1: Value_Kind.nullValue,
@@ -152,15 +144,11 @@ class Value extends $pb.GeneratedMessage with $mixin.ValueMixin {
       package:
           const $pb.PackageName(_omitMessageNames ? '' : 'google.protobuf'),
       createEmptyInstance: create,
-      toProto3Json: $mixin.ValueMixin.toProto3JsonHelper,
-      fromProto3Json: $mixin.ValueMixin.fromProto3JsonHelper)
+      wellKnownType: $mixin.WellKnownType.value)
     ..oo(0, [1, 2, 3, 4, 5, 6])
-    ..e<NullValue>(1, _omitFieldNames ? '' : 'nullValue', $pb.PbFieldType.OE,
-        defaultOrMaker: NullValue.NULL_VALUE,
-        valueOf: NullValue.valueOf,
+    ..aE<NullValue>(1, _omitFieldNames ? '' : 'nullValue',
         enumValues: NullValue.values)
-    ..a<$core.double>(
-        2, _omitFieldNames ? '' : 'numberValue', $pb.PbFieldType.OD)
+    ..aD(2, _omitFieldNames ? '' : 'numberValue')
     ..aOS(3, _omitFieldNames ? '' : 'stringValue')
     ..aOB(4, _omitFieldNames ? '' : 'boolValue')
     ..aOM<Struct>(5, _omitFieldNames ? '' : 'structValue',
@@ -170,33 +158,43 @@ class Value extends $pb.GeneratedMessage with $mixin.ValueMixin {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  Value clone() => Value()..mergeFromMessage(this);
+  Value clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Value copyWith(void Function(Value) updates) =>
       super.copyWith((message) => updates(message as Value)) as Value;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Value create() => Value._();
+  @$core.override
   Value createEmptyInstance() => create();
-  static $pb.PbList<Value> createRepeated() => $pb.PbList<Value>();
   @$core.pragma('dart2js:noInline')
   static Value getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Value>(create);
   static Value? _defaultInstance;
 
+  @$pb.TagNumber(1)
+  @$pb.TagNumber(2)
+  @$pb.TagNumber(3)
+  @$pb.TagNumber(4)
+  @$pb.TagNumber(5)
+  @$pb.TagNumber(6)
   Value_Kind whichKind() => _Value_KindByTag[$_whichOneof(0)]!;
+  @$pb.TagNumber(1)
+  @$pb.TagNumber(2)
+  @$pb.TagNumber(3)
+  @$pb.TagNumber(4)
+  @$pb.TagNumber(5)
+  @$pb.TagNumber(6)
   void clearKind() => $_clearField($_whichOneof(0));
 
   /// Represents a null value.
   @$pb.TagNumber(1)
   NullValue get nullValue => $_getN(0);
   @$pb.TagNumber(1)
-  set nullValue(NullValue v) {
-    $_setField(1, v);
-  }
-
+  set nullValue(NullValue value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasNullValue() => $_has(0);
   @$pb.TagNumber(1)
@@ -206,10 +204,7 @@ class Value extends $pb.GeneratedMessage with $mixin.ValueMixin {
   @$pb.TagNumber(2)
   $core.double get numberValue => $_getN(1);
   @$pb.TagNumber(2)
-  set numberValue($core.double v) {
-    $_setDouble(1, v);
-  }
-
+  set numberValue($core.double value) => $_setDouble(1, value);
   @$pb.TagNumber(2)
   $core.bool hasNumberValue() => $_has(1);
   @$pb.TagNumber(2)
@@ -219,10 +214,7 @@ class Value extends $pb.GeneratedMessage with $mixin.ValueMixin {
   @$pb.TagNumber(3)
   $core.String get stringValue => $_getSZ(2);
   @$pb.TagNumber(3)
-  set stringValue($core.String v) {
-    $_setString(2, v);
-  }
-
+  set stringValue($core.String value) => $_setString(2, value);
   @$pb.TagNumber(3)
   $core.bool hasStringValue() => $_has(2);
   @$pb.TagNumber(3)
@@ -232,10 +224,7 @@ class Value extends $pb.GeneratedMessage with $mixin.ValueMixin {
   @$pb.TagNumber(4)
   $core.bool get boolValue => $_getBF(3);
   @$pb.TagNumber(4)
-  set boolValue($core.bool v) {
-    $_setBool(3, v);
-  }
-
+  set boolValue($core.bool value) => $_setBool(3, value);
   @$pb.TagNumber(4)
   $core.bool hasBoolValue() => $_has(3);
   @$pb.TagNumber(4)
@@ -245,10 +234,7 @@ class Value extends $pb.GeneratedMessage with $mixin.ValueMixin {
   @$pb.TagNumber(5)
   Struct get structValue => $_getN(4);
   @$pb.TagNumber(5)
-  set structValue(Struct v) {
-    $_setField(5, v);
-  }
-
+  set structValue(Struct value) => $_setField(5, value);
   @$pb.TagNumber(5)
   $core.bool hasStructValue() => $_has(4);
   @$pb.TagNumber(5)
@@ -260,10 +246,7 @@ class Value extends $pb.GeneratedMessage with $mixin.ValueMixin {
   @$pb.TagNumber(6)
   ListValue get listValue => $_getN(5);
   @$pb.TagNumber(6)
-  set listValue(ListValue v) {
-    $_setField(6, v);
-  }
-
+  set listValue(ListValue value) => $_setField(6, value);
   @$pb.TagNumber(6)
   $core.bool hasListValue() => $_has(5);
   @$pb.TagNumber(6)
@@ -279,43 +262,42 @@ class ListValue extends $pb.GeneratedMessage with $mixin.ListValueMixin {
   factory ListValue({
     $core.Iterable<Value>? values,
   }) {
-    final $result = create();
-    if (values != null) {
-      $result.values.addAll(values);
-    }
-    return $result;
+    final result = create();
+    if (values != null) result.values.addAll(values);
+    return result;
   }
-  ListValue._() : super();
-  factory ListValue.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ListValue.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  ListValue._();
+
+  factory ListValue.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ListValue.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'ListValue',
       package:
           const $pb.PackageName(_omitMessageNames ? '' : 'google.protobuf'),
       createEmptyInstance: create,
-      toProto3Json: $mixin.ListValueMixin.toProto3JsonHelper,
-      fromProto3Json: $mixin.ListValueMixin.fromProto3JsonHelper)
-    ..pc<Value>(1, _omitFieldNames ? '' : 'values', $pb.PbFieldType.PM,
-        subBuilder: Value.create)
+      wellKnownType: $mixin.WellKnownType.listValue)
+    ..pPM<Value>(1, _omitFieldNames ? '' : 'values', subBuilder: Value.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ListValue clone() => ListValue()..mergeFromMessage(this);
+  ListValue clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ListValue copyWith(void Function(ListValue) updates) =>
       super.copyWith((message) => updates(message as ListValue)) as ListValue;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ListValue create() => ListValue._();
+  @$core.override
   ListValue createEmptyInstance() => create();
-  static $pb.PbList<ListValue> createRepeated() => $pb.PbList<ListValue>();
   @$core.pragma('dart2js:noInline')
   static ListValue getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListValue>(create);
@@ -326,6 +308,7 @@ class ListValue extends $pb.GeneratedMessage with $mixin.ListValueMixin {
   $pb.PbList<Value> get values => $_getList(0);
 }
 
-const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames =
+const $core.bool _omitFieldNames =
+    $core.bool.fromEnvironment('protobuf.omit_field_names');
+const $core.bool _omitMessageNames =
     $core.bool.fromEnvironment('protobuf.omit_message_names');

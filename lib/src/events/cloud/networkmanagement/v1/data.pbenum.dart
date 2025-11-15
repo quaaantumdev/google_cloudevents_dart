@@ -1,13 +1,14 @@
+// This is a generated file - do not edit.
 //
-//  Generated code. Do not modify.
-//  source: google/events/cloud/networkmanagement/v1/data.proto
-//
+// Generated from google/events/cloud/networkmanagement/v1/data.proto.
+
 // @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
-// ignore_for_file: constant_identifier_names, library_prefixes
-// ignore_for_file: non_constant_identifier_names, prefer_final_fields
-// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
+// ignore_for_file: constant_identifier_names
+// ignore_for_file: curly_braces_in_flow_control_structures
+// ignore_for_file: deprecated_member_use_from_same_package, library_prefixes
+// ignore_for_file: non_constant_identifier_names
 
 import 'dart:core' as $core;
 
@@ -179,7 +180,7 @@ class Step_State extends $pb.ProtobufEnum {
   static Step_State? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Step_State._(super.v, super.n);
+  const Step_State._(super.value, super.name);
 }
 
 /// The firewall rule's type.
@@ -241,7 +242,7 @@ class FirewallInfo_FirewallRuleType extends $pb.ProtobufEnum {
   static FirewallInfo_FirewallRuleType? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const FirewallInfo_FirewallRuleType._(super.v, super.n);
+  const FirewallInfo_FirewallRuleType._(super.value, super.name);
 }
 
 /// Type of route:
@@ -295,7 +296,7 @@ class RouteInfo_RouteType extends $pb.ProtobufEnum {
   static RouteInfo_RouteType? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const RouteInfo_RouteType._(super.v, super.n);
+  const RouteInfo_RouteType._(super.value, super.name);
 }
 
 /// Type of next hop:
@@ -378,7 +379,7 @@ class RouteInfo_NextHopType extends $pb.ProtobufEnum {
   static RouteInfo_NextHopType? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const RouteInfo_NextHopType._(super.v, super.n);
+  const RouteInfo_NextHopType._(super.value, super.name);
 }
 
 /// Recognized type of a Google Service.
@@ -422,7 +423,7 @@ class GoogleServiceInfo_GoogleServiceType extends $pb.ProtobufEnum {
   static GoogleServiceInfo_GoogleServiceType? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const GoogleServiceInfo_GoogleServiceType._(super.v, super.n);
+  const GoogleServiceInfo_GoogleServiceType._(super.value, super.name);
 }
 
 /// The type definition for a load balancer:
@@ -470,7 +471,7 @@ class LoadBalancerInfo_LoadBalancerType extends $pb.ProtobufEnum {
   static LoadBalancerInfo_LoadBalancerType? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const LoadBalancerInfo_LoadBalancerType._(super.v, super.n);
+  const LoadBalancerInfo_LoadBalancerType._(super.value, super.name);
 }
 
 /// The type definition for a load balancer backend configuration:
@@ -507,7 +508,7 @@ class LoadBalancerInfo_BackendType extends $pb.ProtobufEnum {
   static LoadBalancerInfo_BackendType? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const LoadBalancerInfo_BackendType._(super.v, super.n);
+  const LoadBalancerInfo_BackendType._(super.value, super.name);
 }
 
 /// State of a health check firewall configuration:
@@ -546,7 +547,7 @@ class LoadBalancerBackend_HealthCheckFirewallState extends $pb.ProtobufEnum {
           $core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const LoadBalancerBackend_HealthCheckFirewallState._(super.v, super.n);
+  const LoadBalancerBackend_HealthCheckFirewallState._(super.value, super.name);
 }
 
 /// Types of VPN routing policy. For details, refer to [Networks and Tunnel
@@ -582,7 +583,7 @@ class VpnTunnelInfo_RoutingType extends $pb.ProtobufEnum {
   static VpnTunnelInfo_RoutingType? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const VpnTunnelInfo_RoutingType._(super.v, super.n);
+  const VpnTunnelInfo_RoutingType._(super.value, super.name);
 }
 
 /// Deliver target types:
@@ -643,7 +644,7 @@ class DeliverInfo_Target extends $pb.ProtobufEnum {
   static DeliverInfo_Target? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const DeliverInfo_Target._(super.v, super.n);
+  const DeliverInfo_Target._(super.value, super.name);
 }
 
 /// Forward target types.
@@ -697,7 +698,7 @@ class ForwardInfo_Target extends $pb.ProtobufEnum {
   static ForwardInfo_Target? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const ForwardInfo_Target._(super.v, super.n);
+  const ForwardInfo_Target._(super.value, super.name);
 }
 
 /// Abort cause types:
@@ -826,7 +827,7 @@ class AbortInfo_Cause extends $pb.ProtobufEnum {
   static AbortInfo_Cause? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const AbortInfo_Cause._(super.v, super.n);
+  const AbortInfo_Cause._(super.value, super.name);
 }
 
 /// Drop cause types:
@@ -1106,7 +1107,7 @@ class DropInfo_Cause extends $pb.ProtobufEnum {
   static DropInfo_Cause? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const DropInfo_Cause._(super.v, super.n);
+  const DropInfo_Cause._(super.value, super.name);
 }
 
 /// The type definition of an endpoint's network. Use one of the
@@ -1140,7 +1141,7 @@ class Endpoint_NetworkType extends $pb.ProtobufEnum {
   static Endpoint_NetworkType? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Endpoint_NetworkType._(super.v, super.n);
+  const Endpoint_NetworkType._(super.value, super.name);
 }
 
 /// The overall result of the test's configuration analysis.
@@ -1196,7 +1197,8 @@ class ReachabilityDetails_Result extends $pb.ProtobufEnum {
   static ReachabilityDetails_Result? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const ReachabilityDetails_Result._(super.v, super.n);
+  const ReachabilityDetails_Result._(super.value, super.name);
 }
 
-const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');
+const $core.bool _omitEnumNames =
+    $core.bool.fromEnvironment('protobuf.omit_enum_names');

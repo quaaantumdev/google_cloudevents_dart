@@ -1,23 +1,24 @@
+// This is a generated file - do not edit.
 //
-//  Generated code. Do not modify.
-//  source: google/events/cloud/vmmigration/v1/data.proto
-//
+// Generated from google/events/cloud/vmmigration/v1/data.proto.
+
 // @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
-// ignore_for_file: constant_identifier_names, library_prefixes
-// ignore_for_file: non_constant_identifier_names, prefer_final_fields
-// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
+// ignore_for_file: constant_identifier_names
+// ignore_for_file: curly_braces_in_flow_control_structures
+// ignore_for_file: deprecated_member_use_from_same_package, library_prefixes
+// ignore_for_file: non_constant_identifier_names
 
 import 'dart:core' as $core;
 
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/duration.pb.dart' as $0;
-import '../../../../protobuf/timestamp.pb.dart' as $2;
-import '../../../../rpc/error_details.pb.dart' as $50;
-import '../../../../rpc/status.pb.dart' as $9;
+import '../../../../protobuf/duration.pb.dart' as $1;
+import '../../../../protobuf/timestamp.pb.dart' as $0;
+import '../../../../rpc/error_details.pb.dart' as $3;
+import '../../../../rpc/status.pb.dart' as $2;
 import 'data.pbenum.dart';
 
 export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
@@ -28,101 +29,79 @@ export 'data.pbenum.dart';
 /// status.
 class ReplicationCycle extends $pb.GeneratedMessage {
   factory ReplicationCycle({
-    $2.Timestamp? startTime,
+    $0.Timestamp? startTime,
     $core.int? progressPercent,
-    $2.Timestamp? endTime,
-    $0.Duration? totalPauseDuration,
+    $0.Timestamp? endTime,
+    $1.Duration? totalPauseDuration,
     $core.Iterable<CycleStep>? steps,
     $core.int? cycleNumber,
     ReplicationCycle_State? state,
-    $9.Status? error,
+    $2.Status? error,
     $core.String? name,
     $core.Iterable<MigrationWarning>? warnings,
   }) {
-    final $result = create();
-    if (startTime != null) {
-      $result.startTime = startTime;
-    }
-    if (progressPercent != null) {
-      $result.progressPercent = progressPercent;
-    }
-    if (endTime != null) {
-      $result.endTime = endTime;
-    }
-    if (totalPauseDuration != null) {
-      $result.totalPauseDuration = totalPauseDuration;
-    }
-    if (steps != null) {
-      $result.steps.addAll(steps);
-    }
-    if (cycleNumber != null) {
-      $result.cycleNumber = cycleNumber;
-    }
-    if (state != null) {
-      $result.state = state;
-    }
-    if (error != null) {
-      $result.error = error;
-    }
-    if (name != null) {
-      $result.name = name;
-    }
-    if (warnings != null) {
-      $result.warnings.addAll(warnings);
-    }
-    return $result;
+    final result = create();
+    if (startTime != null) result.startTime = startTime;
+    if (progressPercent != null) result.progressPercent = progressPercent;
+    if (endTime != null) result.endTime = endTime;
+    if (totalPauseDuration != null)
+      result.totalPauseDuration = totalPauseDuration;
+    if (steps != null) result.steps.addAll(steps);
+    if (cycleNumber != null) result.cycleNumber = cycleNumber;
+    if (state != null) result.state = state;
+    if (error != null) result.error = error;
+    if (name != null) result.name = name;
+    if (warnings != null) result.warnings.addAll(warnings);
+    return result;
   }
-  ReplicationCycle._() : super();
-  factory ReplicationCycle.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ReplicationCycle.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  ReplicationCycle._();
+
+  factory ReplicationCycle.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ReplicationCycle.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'ReplicationCycle',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.vmmigration.v1'),
       createEmptyInstance: create)
-    ..aOM<$2.Timestamp>(1, _omitFieldNames ? '' : 'startTime',
-        subBuilder: $2.Timestamp.create)
-    ..a<$core.int>(
-        5, _omitFieldNames ? '' : 'progressPercent', $pb.PbFieldType.O3)
-    ..aOM<$2.Timestamp>(6, _omitFieldNames ? '' : 'endTime',
-        subBuilder: $2.Timestamp.create)
-    ..aOM<$0.Duration>(7, _omitFieldNames ? '' : 'totalPauseDuration',
-        subBuilder: $0.Duration.create)
-    ..pc<CycleStep>(9, _omitFieldNames ? '' : 'steps', $pb.PbFieldType.PM,
+    ..aOM<$0.Timestamp>(1, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $0.Timestamp.create)
+    ..aI(5, _omitFieldNames ? '' : 'progressPercent')
+    ..aOM<$0.Timestamp>(6, _omitFieldNames ? '' : 'endTime',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$1.Duration>(7, _omitFieldNames ? '' : 'totalPauseDuration',
+        subBuilder: $1.Duration.create)
+    ..pPM<CycleStep>(9, _omitFieldNames ? '' : 'steps',
         subBuilder: CycleStep.create)
-    ..a<$core.int>(10, _omitFieldNames ? '' : 'cycleNumber', $pb.PbFieldType.O3)
-    ..e<ReplicationCycle_State>(
-        11, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
-        defaultOrMaker: ReplicationCycle_State.STATE_UNSPECIFIED,
-        valueOf: ReplicationCycle_State.valueOf,
+    ..aI(10, _omitFieldNames ? '' : 'cycleNumber')
+    ..aE<ReplicationCycle_State>(11, _omitFieldNames ? '' : 'state',
         enumValues: ReplicationCycle_State.values)
-    ..aOM<$9.Status>(12, _omitFieldNames ? '' : 'error',
-        subBuilder: $9.Status.create)
+    ..aOM<$2.Status>(12, _omitFieldNames ? '' : 'error',
+        subBuilder: $2.Status.create)
     ..aOS(13, _omitFieldNames ? '' : 'name')
-    ..pc<MigrationWarning>(
-        14, _omitFieldNames ? '' : 'warnings', $pb.PbFieldType.PM,
+    ..pPM<MigrationWarning>(14, _omitFieldNames ? '' : 'warnings',
         subBuilder: MigrationWarning.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ReplicationCycle clone() => ReplicationCycle()..mergeFromMessage(this);
+  ReplicationCycle clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ReplicationCycle copyWith(void Function(ReplicationCycle) updates) =>
       super.copyWith((message) => updates(message as ReplicationCycle))
           as ReplicationCycle;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ReplicationCycle create() => ReplicationCycle._();
+  @$core.override
   ReplicationCycle createEmptyInstance() => create();
-  static $pb.PbList<ReplicationCycle> createRepeated() =>
-      $pb.PbList<ReplicationCycle>();
   @$core.pragma('dart2js:noInline')
   static ReplicationCycle getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ReplicationCycle>(create);
@@ -130,18 +109,15 @@ class ReplicationCycle extends $pb.GeneratedMessage {
 
   /// The time the replication cycle has started.
   @$pb.TagNumber(1)
-  $2.Timestamp get startTime => $_getN(0);
+  $0.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($2.Timestamp v) {
-    $_setField(1, v);
-  }
-
+  set startTime($0.Timestamp value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasStartTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearStartTime() => $_clearField(1);
   @$pb.TagNumber(1)
-  $2.Timestamp ensureStartTime() => $_ensure(0);
+  $0.Timestamp ensureStartTime() => $_ensure(0);
 
   /// The current progress in percentage of this cycle.
   /// Was replaced by 'steps' field, which breaks down the cycle progression more
@@ -149,10 +125,7 @@ class ReplicationCycle extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.int get progressPercent => $_getIZ(1);
   @$pb.TagNumber(5)
-  set progressPercent($core.int v) {
-    $_setSignedInt32(1, v);
-  }
-
+  set progressPercent($core.int value) => $_setSignedInt32(1, value);
   @$pb.TagNumber(5)
   $core.bool hasProgressPercent() => $_has(1);
   @$pb.TagNumber(5)
@@ -160,33 +133,27 @@ class ReplicationCycle extends $pb.GeneratedMessage {
 
   /// The time the replication cycle has ended.
   @$pb.TagNumber(6)
-  $2.Timestamp get endTime => $_getN(2);
+  $0.Timestamp get endTime => $_getN(2);
   @$pb.TagNumber(6)
-  set endTime($2.Timestamp v) {
-    $_setField(6, v);
-  }
-
+  set endTime($0.Timestamp value) => $_setField(6, value);
   @$pb.TagNumber(6)
   $core.bool hasEndTime() => $_has(2);
   @$pb.TagNumber(6)
   void clearEndTime() => $_clearField(6);
   @$pb.TagNumber(6)
-  $2.Timestamp ensureEndTime() => $_ensure(2);
+  $0.Timestamp ensureEndTime() => $_ensure(2);
 
   /// The accumulated duration the replication cycle was paused.
   @$pb.TagNumber(7)
-  $0.Duration get totalPauseDuration => $_getN(3);
+  $1.Duration get totalPauseDuration => $_getN(3);
   @$pb.TagNumber(7)
-  set totalPauseDuration($0.Duration v) {
-    $_setField(7, v);
-  }
-
+  set totalPauseDuration($1.Duration value) => $_setField(7, value);
   @$pb.TagNumber(7)
   $core.bool hasTotalPauseDuration() => $_has(3);
   @$pb.TagNumber(7)
   void clearTotalPauseDuration() => $_clearField(7);
   @$pb.TagNumber(7)
-  $0.Duration ensureTotalPauseDuration() => $_ensure(3);
+  $1.Duration ensureTotalPauseDuration() => $_ensure(3);
 
   /// The cycle's steps list representing its progress.
   @$pb.TagNumber(9)
@@ -196,10 +163,7 @@ class ReplicationCycle extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.int get cycleNumber => $_getIZ(5);
   @$pb.TagNumber(10)
-  set cycleNumber($core.int v) {
-    $_setSignedInt32(5, v);
-  }
-
+  set cycleNumber($core.int value) => $_setSignedInt32(5, value);
   @$pb.TagNumber(10)
   $core.bool hasCycleNumber() => $_has(5);
   @$pb.TagNumber(10)
@@ -209,10 +173,7 @@ class ReplicationCycle extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   ReplicationCycle_State get state => $_getN(6);
   @$pb.TagNumber(11)
-  set state(ReplicationCycle_State v) {
-    $_setField(11, v);
-  }
-
+  set state(ReplicationCycle_State value) => $_setField(11, value);
   @$pb.TagNumber(11)
   $core.bool hasState() => $_has(6);
   @$pb.TagNumber(11)
@@ -220,27 +181,21 @@ class ReplicationCycle extends $pb.GeneratedMessage {
 
   /// Provides details on the state of the cycle in case of an error.
   @$pb.TagNumber(12)
-  $9.Status get error => $_getN(7);
+  $2.Status get error => $_getN(7);
   @$pb.TagNumber(12)
-  set error($9.Status v) {
-    $_setField(12, v);
-  }
-
+  set error($2.Status value) => $_setField(12, value);
   @$pb.TagNumber(12)
   $core.bool hasError() => $_has(7);
   @$pb.TagNumber(12)
   void clearError() => $_clearField(12);
   @$pb.TagNumber(12)
-  $9.Status ensureError() => $_ensure(7);
+  $2.Status ensureError() => $_ensure(7);
 
   /// The identifier of the ReplicationCycle.
   @$pb.TagNumber(13)
   $core.String get name => $_getSZ(8);
   @$pb.TagNumber(13)
-  set name($core.String v) {
-    $_setString(8, v);
-  }
-
+  set name($core.String value) => $_setString(8, value);
   @$pb.TagNumber(13)
   $core.bool hasName() => $_has(8);
   @$pb.TagNumber(13)
@@ -261,37 +216,30 @@ enum CycleStep_Step {
 /// CycleStep holds information about a step progress.
 class CycleStep extends $pb.GeneratedMessage {
   factory CycleStep({
-    $2.Timestamp? startTime,
-    $2.Timestamp? endTime,
+    $0.Timestamp? startTime,
+    $0.Timestamp? endTime,
     InitializingReplicationStep? initializingReplication,
     ReplicatingStep? replicating,
     PostProcessingStep? postProcessing,
   }) {
-    final $result = create();
-    if (startTime != null) {
-      $result.startTime = startTime;
-    }
-    if (endTime != null) {
-      $result.endTime = endTime;
-    }
-    if (initializingReplication != null) {
-      $result.initializingReplication = initializingReplication;
-    }
-    if (replicating != null) {
-      $result.replicating = replicating;
-    }
-    if (postProcessing != null) {
-      $result.postProcessing = postProcessing;
-    }
-    return $result;
+    final result = create();
+    if (startTime != null) result.startTime = startTime;
+    if (endTime != null) result.endTime = endTime;
+    if (initializingReplication != null)
+      result.initializingReplication = initializingReplication;
+    if (replicating != null) result.replicating = replicating;
+    if (postProcessing != null) result.postProcessing = postProcessing;
+    return result;
   }
-  CycleStep._() : super();
-  factory CycleStep.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory CycleStep.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  CycleStep._();
+
+  factory CycleStep.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory CycleStep.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static const $core.Map<$core.int, CycleStep_Step> _CycleStep_StepByTag = {
     3: CycleStep_Step.initializingReplication,
@@ -305,10 +253,10 @@ class CycleStep extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.events.cloud.vmmigration.v1'),
       createEmptyInstance: create)
     ..oo(0, [3, 4, 5])
-    ..aOM<$2.Timestamp>(1, _omitFieldNames ? '' : 'startTime',
-        subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(2, _omitFieldNames ? '' : 'endTime',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$0.Timestamp>(1, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(2, _omitFieldNames ? '' : 'endTime',
+        subBuilder: $0.Timestamp.create)
     ..aOM<InitializingReplicationStep>(
         3, _omitFieldNames ? '' : 'initializingReplication',
         subBuilder: InitializingReplicationStep.create)
@@ -319,63 +267,62 @@ class CycleStep extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  CycleStep clone() => CycleStep()..mergeFromMessage(this);
+  CycleStep clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CycleStep copyWith(void Function(CycleStep) updates) =>
       super.copyWith((message) => updates(message as CycleStep)) as CycleStep;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CycleStep create() => CycleStep._();
+  @$core.override
   CycleStep createEmptyInstance() => create();
-  static $pb.PbList<CycleStep> createRepeated() => $pb.PbList<CycleStep>();
   @$core.pragma('dart2js:noInline')
   static CycleStep getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CycleStep>(create);
   static CycleStep? _defaultInstance;
 
+  @$pb.TagNumber(3)
+  @$pb.TagNumber(4)
+  @$pb.TagNumber(5)
   CycleStep_Step whichStep() => _CycleStep_StepByTag[$_whichOneof(0)]!;
+  @$pb.TagNumber(3)
+  @$pb.TagNumber(4)
+  @$pb.TagNumber(5)
   void clearStep() => $_clearField($_whichOneof(0));
 
   /// The time the cycle step has started.
   @$pb.TagNumber(1)
-  $2.Timestamp get startTime => $_getN(0);
+  $0.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($2.Timestamp v) {
-    $_setField(1, v);
-  }
-
+  set startTime($0.Timestamp value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasStartTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearStartTime() => $_clearField(1);
   @$pb.TagNumber(1)
-  $2.Timestamp ensureStartTime() => $_ensure(0);
+  $0.Timestamp ensureStartTime() => $_ensure(0);
 
   /// The time the cycle step has ended.
   @$pb.TagNumber(2)
-  $2.Timestamp get endTime => $_getN(1);
+  $0.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($2.Timestamp v) {
-    $_setField(2, v);
-  }
-
+  set endTime($0.Timestamp value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndTime() => $_clearField(2);
   @$pb.TagNumber(2)
-  $2.Timestamp ensureEndTime() => $_ensure(1);
+  $0.Timestamp ensureEndTime() => $_ensure(1);
 
   /// Initializing replication step.
   @$pb.TagNumber(3)
   InitializingReplicationStep get initializingReplication => $_getN(2);
   @$pb.TagNumber(3)
-  set initializingReplication(InitializingReplicationStep v) {
-    $_setField(3, v);
-  }
-
+  set initializingReplication(InitializingReplicationStep value) =>
+      $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasInitializingReplication() => $_has(2);
   @$pb.TagNumber(3)
@@ -387,10 +334,7 @@ class CycleStep extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   ReplicatingStep get replicating => $_getN(3);
   @$pb.TagNumber(4)
-  set replicating(ReplicatingStep v) {
-    $_setField(4, v);
-  }
-
+  set replicating(ReplicatingStep value) => $_setField(4, value);
   @$pb.TagNumber(4)
   $core.bool hasReplicating() => $_has(3);
   @$pb.TagNumber(4)
@@ -402,10 +346,7 @@ class CycleStep extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   PostProcessingStep get postProcessing => $_getN(4);
   @$pb.TagNumber(5)
-  set postProcessing(PostProcessingStep v) {
-    $_setField(5, v);
-  }
-
+  set postProcessing(PostProcessingStep value) => $_setField(5, value);
   @$pb.TagNumber(5)
   $core.bool hasPostProcessing() => $_has(4);
   @$pb.TagNumber(5)
@@ -417,13 +358,15 @@ class CycleStep extends $pb.GeneratedMessage {
 /// InitializingReplicationStep contains specific step details.
 class InitializingReplicationStep extends $pb.GeneratedMessage {
   factory InitializingReplicationStep() => create();
-  InitializingReplicationStep._() : super();
-  factory InitializingReplicationStep.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory InitializingReplicationStep.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  InitializingReplicationStep._();
+
+  factory InitializingReplicationStep.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory InitializingReplicationStep.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'InitializingReplicationStep',
@@ -433,8 +376,7 @@ class InitializingReplicationStep extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  InitializingReplicationStep clone() =>
-      InitializingReplicationStep()..mergeFromMessage(this);
+  InitializingReplicationStep clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   InitializingReplicationStep copyWith(
           void Function(InitializingReplicationStep) updates) =>
@@ -442,14 +384,14 @@ class InitializingReplicationStep extends $pb.GeneratedMessage {
               (message) => updates(message as InitializingReplicationStep))
           as InitializingReplicationStep;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static InitializingReplicationStep create() =>
       InitializingReplicationStep._();
+  @$core.override
   InitializingReplicationStep createEmptyInstance() => create();
-  static $pb.PbList<InitializingReplicationStep> createRepeated() =>
-      $pb.PbList<InitializingReplicationStep>();
   @$core.pragma('dart2js:noInline')
   static InitializingReplicationStep getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<InitializingReplicationStep>(create);
@@ -464,30 +406,26 @@ class ReplicatingStep extends $pb.GeneratedMessage {
     $fixnum.Int64? lastTwoMinutesAverageBytesPerSecond,
     $fixnum.Int64? lastThirtyMinutesAverageBytesPerSecond,
   }) {
-    final $result = create();
-    if (totalBytes != null) {
-      $result.totalBytes = totalBytes;
-    }
-    if (replicatedBytes != null) {
-      $result.replicatedBytes = replicatedBytes;
-    }
-    if (lastTwoMinutesAverageBytesPerSecond != null) {
-      $result.lastTwoMinutesAverageBytesPerSecond =
+    final result = create();
+    if (totalBytes != null) result.totalBytes = totalBytes;
+    if (replicatedBytes != null) result.replicatedBytes = replicatedBytes;
+    if (lastTwoMinutesAverageBytesPerSecond != null)
+      result.lastTwoMinutesAverageBytesPerSecond =
           lastTwoMinutesAverageBytesPerSecond;
-    }
-    if (lastThirtyMinutesAverageBytesPerSecond != null) {
-      $result.lastThirtyMinutesAverageBytesPerSecond =
+    if (lastThirtyMinutesAverageBytesPerSecond != null)
+      result.lastThirtyMinutesAverageBytesPerSecond =
           lastThirtyMinutesAverageBytesPerSecond;
-    }
-    return $result;
+    return result;
   }
-  ReplicatingStep._() : super();
-  factory ReplicatingStep.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ReplicatingStep.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  ReplicatingStep._();
+
+  factory ReplicatingStep.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ReplicatingStep.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'ReplicatingStep',
@@ -501,19 +439,19 @@ class ReplicatingStep extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ReplicatingStep clone() => ReplicatingStep()..mergeFromMessage(this);
+  ReplicatingStep clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ReplicatingStep copyWith(void Function(ReplicatingStep) updates) =>
       super.copyWith((message) => updates(message as ReplicatingStep))
           as ReplicatingStep;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ReplicatingStep create() => ReplicatingStep._();
+  @$core.override
   ReplicatingStep createEmptyInstance() => create();
-  static $pb.PbList<ReplicatingStep> createRepeated() =>
-      $pb.PbList<ReplicatingStep>();
   @$core.pragma('dart2js:noInline')
   static ReplicatingStep getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ReplicatingStep>(create);
@@ -523,10 +461,7 @@ class ReplicatingStep extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $fixnum.Int64 get totalBytes => $_getI64(0);
   @$pb.TagNumber(1)
-  set totalBytes($fixnum.Int64 v) {
-    $_setInt64(0, v);
-  }
-
+  set totalBytes($fixnum.Int64 value) => $_setInt64(0, value);
   @$pb.TagNumber(1)
   $core.bool hasTotalBytes() => $_has(0);
   @$pb.TagNumber(1)
@@ -536,10 +471,7 @@ class ReplicatingStep extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $fixnum.Int64 get replicatedBytes => $_getI64(1);
   @$pb.TagNumber(2)
-  set replicatedBytes($fixnum.Int64 v) {
-    $_setInt64(1, v);
-  }
-
+  set replicatedBytes($fixnum.Int64 value) => $_setInt64(1, value);
   @$pb.TagNumber(2)
   $core.bool hasReplicatedBytes() => $_has(1);
   @$pb.TagNumber(2)
@@ -550,10 +482,8 @@ class ReplicatingStep extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $fixnum.Int64 get lastTwoMinutesAverageBytesPerSecond => $_getI64(2);
   @$pb.TagNumber(3)
-  set lastTwoMinutesAverageBytesPerSecond($fixnum.Int64 v) {
-    $_setInt64(2, v);
-  }
-
+  set lastTwoMinutesAverageBytesPerSecond($fixnum.Int64 value) =>
+      $_setInt64(2, value);
   @$pb.TagNumber(3)
   $core.bool hasLastTwoMinutesAverageBytesPerSecond() => $_has(2);
   @$pb.TagNumber(3)
@@ -564,10 +494,8 @@ class ReplicatingStep extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $fixnum.Int64 get lastThirtyMinutesAverageBytesPerSecond => $_getI64(3);
   @$pb.TagNumber(4)
-  set lastThirtyMinutesAverageBytesPerSecond($fixnum.Int64 v) {
-    $_setInt64(3, v);
-  }
-
+  set lastThirtyMinutesAverageBytesPerSecond($fixnum.Int64 value) =>
+      $_setInt64(3, value);
   @$pb.TagNumber(4)
   $core.bool hasLastThirtyMinutesAverageBytesPerSecond() => $_has(3);
   @$pb.TagNumber(4)
@@ -577,13 +505,15 @@ class ReplicatingStep extends $pb.GeneratedMessage {
 /// PostProcessingStep contains specific step details.
 class PostProcessingStep extends $pb.GeneratedMessage {
   factory PostProcessingStep() => create();
-  PostProcessingStep._() : super();
-  factory PostProcessingStep.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory PostProcessingStep.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  PostProcessingStep._();
+
+  factory PostProcessingStep.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory PostProcessingStep.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'PostProcessingStep',
@@ -593,19 +523,19 @@ class PostProcessingStep extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  PostProcessingStep clone() => PostProcessingStep()..mergeFromMessage(this);
+  PostProcessingStep clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   PostProcessingStep copyWith(void Function(PostProcessingStep) updates) =>
       super.copyWith((message) => updates(message as PostProcessingStep))
           as PostProcessingStep;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static PostProcessingStep create() => PostProcessingStep._();
+  @$core.override
   PostProcessingStep createEmptyInstance() => create();
-  static $pb.PbList<PostProcessingStep> createRepeated() =>
-      $pb.PbList<PostProcessingStep>();
   @$core.pragma('dart2js:noInline')
   static PostProcessingStep getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<PostProcessingStep>(create);
@@ -615,45 +545,45 @@ class PostProcessingStep extends $pb.GeneratedMessage {
 /// ReplicationSync contain information about the last replica sync to the cloud.
 class ReplicationSync extends $pb.GeneratedMessage {
   factory ReplicationSync({
-    $2.Timestamp? lastSyncTime,
+    $0.Timestamp? lastSyncTime,
   }) {
-    final $result = create();
-    if (lastSyncTime != null) {
-      $result.lastSyncTime = lastSyncTime;
-    }
-    return $result;
+    final result = create();
+    if (lastSyncTime != null) result.lastSyncTime = lastSyncTime;
+    return result;
   }
-  ReplicationSync._() : super();
-  factory ReplicationSync.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ReplicationSync.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  ReplicationSync._();
+
+  factory ReplicationSync.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ReplicationSync.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'ReplicationSync',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.vmmigration.v1'),
       createEmptyInstance: create)
-    ..aOM<$2.Timestamp>(1, _omitFieldNames ? '' : 'lastSyncTime',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$0.Timestamp>(1, _omitFieldNames ? '' : 'lastSyncTime',
+        subBuilder: $0.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ReplicationSync clone() => ReplicationSync()..mergeFromMessage(this);
+  ReplicationSync clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ReplicationSync copyWith(void Function(ReplicationSync) updates) =>
       super.copyWith((message) => updates(message as ReplicationSync))
           as ReplicationSync;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ReplicationSync create() => ReplicationSync._();
+  @$core.override
   ReplicationSync createEmptyInstance() => create();
-  static $pb.PbList<ReplicationSync> createRepeated() =>
-      $pb.PbList<ReplicationSync>();
   @$core.pragma('dart2js:noInline')
   static ReplicationSync getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ReplicationSync>(create);
@@ -662,18 +592,15 @@ class ReplicationSync extends $pb.GeneratedMessage {
   /// The most updated snapshot created time in the source that finished
   /// replication.
   @$pb.TagNumber(1)
-  $2.Timestamp get lastSyncTime => $_getN(0);
+  $0.Timestamp get lastSyncTime => $_getN(0);
   @$pb.TagNumber(1)
-  set lastSyncTime($2.Timestamp v) {
-    $_setField(1, v);
-  }
-
+  set lastSyncTime($0.Timestamp value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasLastSyncTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearLastSyncTime() => $_clearField(1);
   @$pb.TagNumber(1)
-  $2.Timestamp ensureLastSyncTime() => $_ensure(0);
+  $0.Timestamp ensureLastSyncTime() => $_ensure(0);
 }
 
 enum MigratingVm_TargetVmDefaults { computeEngineTargetDefaults, notSet }
@@ -688,93 +615,59 @@ class MigratingVm extends $pb.GeneratedMessage {
     $core.String? sourceVmId,
     $core.String? description,
     SchedulePolicy? policy,
-    $2.Timestamp? createTime,
-    $2.Timestamp? updateTime,
+    $0.Timestamp? createTime,
+    $0.Timestamp? updateTime,
     ReplicationSync? lastSync,
     ReplicationCycle? currentSyncInfo,
     $core.String? group,
     $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.Iterable<CloneJob>? recentCloneJobs,
     $core.String? displayName,
-    $9.Status? error,
+    $2.Status? error,
     $core.Iterable<CutoverJob>? recentCutoverJobs,
-    $2.Timestamp? stateTime,
+    $0.Timestamp? stateTime,
     MigratingVm_State? state,
     ComputeEngineTargetDefaults? computeEngineTargetDefaults,
     AwsSourceVmDetails? awsSourceVmDetails,
     ReplicationCycle? lastReplicationCycle,
     CutoverForecast? cutoverForecast,
   }) {
-    final $result = create();
-    if (name != null) {
-      $result.name = name;
-    }
-    if (sourceVmId != null) {
-      $result.sourceVmId = sourceVmId;
-    }
-    if (description != null) {
-      $result.description = description;
-    }
-    if (policy != null) {
-      $result.policy = policy;
-    }
-    if (createTime != null) {
-      $result.createTime = createTime;
-    }
-    if (updateTime != null) {
-      $result.updateTime = updateTime;
-    }
-    if (lastSync != null) {
-      $result.lastSync = lastSync;
-    }
-    if (currentSyncInfo != null) {
-      $result.currentSyncInfo = currentSyncInfo;
-    }
-    if (group != null) {
-      $result.group = group;
-    }
-    if (labels != null) {
-      $result.labels.addEntries(labels);
-    }
-    if (recentCloneJobs != null) {
-      $result.recentCloneJobs.addAll(recentCloneJobs);
-    }
-    if (displayName != null) {
-      $result.displayName = displayName;
-    }
-    if (error != null) {
-      $result.error = error;
-    }
-    if (recentCutoverJobs != null) {
-      $result.recentCutoverJobs.addAll(recentCutoverJobs);
-    }
-    if (stateTime != null) {
-      $result.stateTime = stateTime;
-    }
-    if (state != null) {
-      $result.state = state;
-    }
-    if (computeEngineTargetDefaults != null) {
-      $result.computeEngineTargetDefaults = computeEngineTargetDefaults;
-    }
-    if (awsSourceVmDetails != null) {
-      $result.awsSourceVmDetails = awsSourceVmDetails;
-    }
-    if (lastReplicationCycle != null) {
-      $result.lastReplicationCycle = lastReplicationCycle;
-    }
-    if (cutoverForecast != null) {
-      $result.cutoverForecast = cutoverForecast;
-    }
-    return $result;
+    final result = create();
+    if (name != null) result.name = name;
+    if (sourceVmId != null) result.sourceVmId = sourceVmId;
+    if (description != null) result.description = description;
+    if (policy != null) result.policy = policy;
+    if (createTime != null) result.createTime = createTime;
+    if (updateTime != null) result.updateTime = updateTime;
+    if (lastSync != null) result.lastSync = lastSync;
+    if (currentSyncInfo != null) result.currentSyncInfo = currentSyncInfo;
+    if (group != null) result.group = group;
+    if (labels != null) result.labels.addEntries(labels);
+    if (recentCloneJobs != null) result.recentCloneJobs.addAll(recentCloneJobs);
+    if (displayName != null) result.displayName = displayName;
+    if (error != null) result.error = error;
+    if (recentCutoverJobs != null)
+      result.recentCutoverJobs.addAll(recentCutoverJobs);
+    if (stateTime != null) result.stateTime = stateTime;
+    if (state != null) result.state = state;
+    if (computeEngineTargetDefaults != null)
+      result.computeEngineTargetDefaults = computeEngineTargetDefaults;
+    if (awsSourceVmDetails != null)
+      result.awsSourceVmDetails = awsSourceVmDetails;
+    if (lastReplicationCycle != null)
+      result.lastReplicationCycle = lastReplicationCycle;
+    if (cutoverForecast != null) result.cutoverForecast = cutoverForecast;
+    return result;
   }
-  MigratingVm._() : super();
-  factory MigratingVm.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory MigratingVm.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  MigratingVm._();
+
+  factory MigratingVm.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory MigratingVm.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static const $core.Map<$core.int, MigratingVm_TargetVmDefaults>
       _MigratingVm_TargetVmDefaultsByTag = {
@@ -798,10 +691,10 @@ class MigratingVm extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'description')
     ..aOM<SchedulePolicy>(8, _omitFieldNames ? '' : 'policy',
         subBuilder: SchedulePolicy.create)
-    ..aOM<$2.Timestamp>(9, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(10, _omitFieldNames ? '' : 'updateTime',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$0.Timestamp>(9, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(10, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $0.Timestamp.create)
     ..aOM<ReplicationSync>(11, _omitFieldNames ? '' : 'lastSync',
         subBuilder: ReplicationSync.create)
     ..aOM<ReplicationCycle>(13, _omitFieldNames ? '' : 'currentSyncInfo',
@@ -813,21 +706,16 @@ class MigratingVm extends $pb.GeneratedMessage {
         valueFieldType: $pb.PbFieldType.OS,
         packageName:
             const $pb.PackageName('google.events.cloud.vmmigration.v1'))
-    ..pc<CloneJob>(
-        17, _omitFieldNames ? '' : 'recentCloneJobs', $pb.PbFieldType.PM,
+    ..pPM<CloneJob>(17, _omitFieldNames ? '' : 'recentCloneJobs',
         subBuilder: CloneJob.create)
     ..aOS(18, _omitFieldNames ? '' : 'displayName')
-    ..aOM<$9.Status>(19, _omitFieldNames ? '' : 'error',
-        subBuilder: $9.Status.create)
-    ..pc<CutoverJob>(
-        20, _omitFieldNames ? '' : 'recentCutoverJobs', $pb.PbFieldType.PM,
+    ..aOM<$2.Status>(19, _omitFieldNames ? '' : 'error',
+        subBuilder: $2.Status.create)
+    ..pPM<CutoverJob>(20, _omitFieldNames ? '' : 'recentCutoverJobs',
         subBuilder: CutoverJob.create)
-    ..aOM<$2.Timestamp>(22, _omitFieldNames ? '' : 'stateTime',
-        subBuilder: $2.Timestamp.create)
-    ..e<MigratingVm_State>(
-        23, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
-        defaultOrMaker: MigratingVm_State.STATE_UNSPECIFIED,
-        valueOf: MigratingVm_State.valueOf,
+    ..aOM<$0.Timestamp>(22, _omitFieldNames ? '' : 'stateTime',
+        subBuilder: $0.Timestamp.create)
+    ..aE<MigratingVm_State>(23, _omitFieldNames ? '' : 'state',
         enumValues: MigratingVm_State.values)
     ..aOM<ComputeEngineTargetDefaults>(
         26, _omitFieldNames ? '' : 'computeEngineTargetDefaults',
@@ -841,39 +729,41 @@ class MigratingVm extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  MigratingVm clone() => MigratingVm()..mergeFromMessage(this);
+  MigratingVm clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MigratingVm copyWith(void Function(MigratingVm) updates) =>
       super.copyWith((message) => updates(message as MigratingVm))
           as MigratingVm;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static MigratingVm create() => MigratingVm._();
+  @$core.override
   MigratingVm createEmptyInstance() => create();
-  static $pb.PbList<MigratingVm> createRepeated() => $pb.PbList<MigratingVm>();
   @$core.pragma('dart2js:noInline')
   static MigratingVm getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<MigratingVm>(create);
   static MigratingVm? _defaultInstance;
 
+  @$pb.TagNumber(26)
   MigratingVm_TargetVmDefaults whichTargetVmDefaults() =>
       _MigratingVm_TargetVmDefaultsByTag[$_whichOneof(0)]!;
+  @$pb.TagNumber(26)
   void clearTargetVmDefaults() => $_clearField($_whichOneof(0));
 
+  @$pb.TagNumber(29)
   MigratingVm_SourceVmDetails whichSourceVmDetails() =>
       _MigratingVm_SourceVmDetailsByTag[$_whichOneof(1)]!;
+  @$pb.TagNumber(29)
   void clearSourceVmDetails() => $_clearField($_whichOneof(1));
 
   /// Output only. The identifier of the MigratingVm.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) {
-    $_setString(0, v);
-  }
-
+  set name($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -885,10 +775,7 @@ class MigratingVm extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get sourceVmId => $_getSZ(1);
   @$pb.TagNumber(2)
-  set sourceVmId($core.String v) {
-    $_setString(1, v);
-  }
-
+  set sourceVmId($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasSourceVmId() => $_has(1);
   @$pb.TagNumber(2)
@@ -898,10 +785,7 @@ class MigratingVm extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get description => $_getSZ(2);
   @$pb.TagNumber(3)
-  set description($core.String v) {
-    $_setString(2, v);
-  }
-
+  set description($core.String value) => $_setString(2, value);
   @$pb.TagNumber(3)
   $core.bool hasDescription() => $_has(2);
   @$pb.TagNumber(3)
@@ -911,10 +795,7 @@ class MigratingVm extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   SchedulePolicy get policy => $_getN(3);
   @$pb.TagNumber(8)
-  set policy(SchedulePolicy v) {
-    $_setField(8, v);
-  }
-
+  set policy(SchedulePolicy value) => $_setField(8, value);
   @$pb.TagNumber(8)
   $core.bool hasPolicy() => $_has(3);
   @$pb.TagNumber(8)
@@ -925,43 +806,34 @@ class MigratingVm extends $pb.GeneratedMessage {
   /// Output only. The time the migrating VM was created (this refers to this
   /// resource and not to the time it was installed in the source).
   @$pb.TagNumber(9)
-  $2.Timestamp get createTime => $_getN(4);
+  $0.Timestamp get createTime => $_getN(4);
   @$pb.TagNumber(9)
-  set createTime($2.Timestamp v) {
-    $_setField(9, v);
-  }
-
+  set createTime($0.Timestamp value) => $_setField(9, value);
   @$pb.TagNumber(9)
   $core.bool hasCreateTime() => $_has(4);
   @$pb.TagNumber(9)
   void clearCreateTime() => $_clearField(9);
   @$pb.TagNumber(9)
-  $2.Timestamp ensureCreateTime() => $_ensure(4);
+  $0.Timestamp ensureCreateTime() => $_ensure(4);
 
   /// Output only. The last time the migrating VM resource was updated.
   @$pb.TagNumber(10)
-  $2.Timestamp get updateTime => $_getN(5);
+  $0.Timestamp get updateTime => $_getN(5);
   @$pb.TagNumber(10)
-  set updateTime($2.Timestamp v) {
-    $_setField(10, v);
-  }
-
+  set updateTime($0.Timestamp value) => $_setField(10, value);
   @$pb.TagNumber(10)
   $core.bool hasUpdateTime() => $_has(5);
   @$pb.TagNumber(10)
   void clearUpdateTime() => $_clearField(10);
   @$pb.TagNumber(10)
-  $2.Timestamp ensureUpdateTime() => $_ensure(5);
+  $0.Timestamp ensureUpdateTime() => $_ensure(5);
 
   /// Output only. The most updated snapshot created time in the source that
   /// finished replication.
   @$pb.TagNumber(11)
   ReplicationSync get lastSync => $_getN(6);
   @$pb.TagNumber(11)
-  set lastSync(ReplicationSync v) {
-    $_setField(11, v);
-  }
-
+  set lastSync(ReplicationSync value) => $_setField(11, value);
   @$pb.TagNumber(11)
   $core.bool hasLastSync() => $_has(6);
   @$pb.TagNumber(11)
@@ -973,10 +845,7 @@ class MigratingVm extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   ReplicationCycle get currentSyncInfo => $_getN(7);
   @$pb.TagNumber(13)
-  set currentSyncInfo(ReplicationCycle v) {
-    $_setField(13, v);
-  }
-
+  set currentSyncInfo(ReplicationCycle value) => $_setField(13, value);
   @$pb.TagNumber(13)
   $core.bool hasCurrentSyncInfo() => $_has(7);
   @$pb.TagNumber(13)
@@ -990,10 +859,7 @@ class MigratingVm extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   $core.String get group => $_getSZ(8);
   @$pb.TagNumber(15)
-  set group($core.String v) {
-    $_setString(8, v);
-  }
-
+  set group($core.String value) => $_setString(8, value);
   @$pb.TagNumber(15)
   $core.bool hasGroup() => $_has(8);
   @$pb.TagNumber(15)
@@ -1015,10 +881,7 @@ class MigratingVm extends $pb.GeneratedMessage {
   @$pb.TagNumber(18)
   $core.String get displayName => $_getSZ(11);
   @$pb.TagNumber(18)
-  set displayName($core.String v) {
-    $_setString(11, v);
-  }
-
+  set displayName($core.String value) => $_setString(11, value);
   @$pb.TagNumber(18)
   $core.bool hasDisplayName() => $_has(11);
   @$pb.TagNumber(18)
@@ -1027,18 +890,15 @@ class MigratingVm extends $pb.GeneratedMessage {
   /// Output only. Provides details on the state of the Migrating VM in case of
   /// an error in replication.
   @$pb.TagNumber(19)
-  $9.Status get error => $_getN(12);
+  $2.Status get error => $_getN(12);
   @$pb.TagNumber(19)
-  set error($9.Status v) {
-    $_setField(19, v);
-  }
-
+  set error($2.Status value) => $_setField(19, value);
   @$pb.TagNumber(19)
   $core.bool hasError() => $_has(12);
   @$pb.TagNumber(19)
   void clearError() => $_clearField(19);
   @$pb.TagNumber(19)
-  $9.Status ensureError() => $_ensure(12);
+  $2.Status ensureError() => $_ensure(12);
 
   /// Output only. The recent cutover jobs performed on the migrating VM.
   /// This field holds the vm's last completed cutover job and the vm's
@@ -1050,27 +910,21 @@ class MigratingVm extends $pb.GeneratedMessage {
 
   /// Output only. The last time the migrating VM state was updated.
   @$pb.TagNumber(22)
-  $2.Timestamp get stateTime => $_getN(14);
+  $0.Timestamp get stateTime => $_getN(14);
   @$pb.TagNumber(22)
-  set stateTime($2.Timestamp v) {
-    $_setField(22, v);
-  }
-
+  set stateTime($0.Timestamp value) => $_setField(22, value);
   @$pb.TagNumber(22)
   $core.bool hasStateTime() => $_has(14);
   @$pb.TagNumber(22)
   void clearStateTime() => $_clearField(22);
   @$pb.TagNumber(22)
-  $2.Timestamp ensureStateTime() => $_ensure(14);
+  $0.Timestamp ensureStateTime() => $_ensure(14);
 
   /// Output only. State of the MigratingVm.
   @$pb.TagNumber(23)
   MigratingVm_State get state => $_getN(15);
   @$pb.TagNumber(23)
-  set state(MigratingVm_State v) {
-    $_setField(23, v);
-  }
-
+  set state(MigratingVm_State value) => $_setField(23, value);
   @$pb.TagNumber(23)
   $core.bool hasState() => $_has(15);
   @$pb.TagNumber(23)
@@ -1080,10 +934,8 @@ class MigratingVm extends $pb.GeneratedMessage {
   @$pb.TagNumber(26)
   ComputeEngineTargetDefaults get computeEngineTargetDefaults => $_getN(16);
   @$pb.TagNumber(26)
-  set computeEngineTargetDefaults(ComputeEngineTargetDefaults v) {
-    $_setField(26, v);
-  }
-
+  set computeEngineTargetDefaults(ComputeEngineTargetDefaults value) =>
+      $_setField(26, value);
   @$pb.TagNumber(26)
   $core.bool hasComputeEngineTargetDefaults() => $_has(16);
   @$pb.TagNumber(26)
@@ -1096,10 +948,7 @@ class MigratingVm extends $pb.GeneratedMessage {
   @$pb.TagNumber(29)
   AwsSourceVmDetails get awsSourceVmDetails => $_getN(17);
   @$pb.TagNumber(29)
-  set awsSourceVmDetails(AwsSourceVmDetails v) {
-    $_setField(29, v);
-  }
-
+  set awsSourceVmDetails(AwsSourceVmDetails value) => $_setField(29, value);
   @$pb.TagNumber(29)
   $core.bool hasAwsSourceVmDetails() => $_has(17);
   @$pb.TagNumber(29)
@@ -1113,10 +962,7 @@ class MigratingVm extends $pb.GeneratedMessage {
   @$pb.TagNumber(32)
   ReplicationCycle get lastReplicationCycle => $_getN(18);
   @$pb.TagNumber(32)
-  set lastReplicationCycle(ReplicationCycle v) {
-    $_setField(32, v);
-  }
-
+  set lastReplicationCycle(ReplicationCycle value) => $_setField(32, value);
   @$pb.TagNumber(32)
   $core.bool hasLastReplicationCycle() => $_has(18);
   @$pb.TagNumber(32)
@@ -1129,10 +975,7 @@ class MigratingVm extends $pb.GeneratedMessage {
   @$pb.TagNumber(33)
   CutoverForecast get cutoverForecast => $_getN(19);
   @$pb.TagNumber(33)
-  set cutoverForecast(CutoverForecast v) {
-    $_setField(33, v);
-  }
-
+  set cutoverForecast(CutoverForecast value) => $_setField(33, value);
   @$pb.TagNumber(33)
   $core.bool hasCutoverForecast() => $_has(19);
   @$pb.TagNumber(33)
@@ -1144,45 +987,46 @@ class MigratingVm extends $pb.GeneratedMessage {
 /// CutoverForecast holds information about future CutoverJobs of a MigratingVm.
 class CutoverForecast extends $pb.GeneratedMessage {
   factory CutoverForecast({
-    $0.Duration? estimatedCutoverJobDuration,
+    $1.Duration? estimatedCutoverJobDuration,
   }) {
-    final $result = create();
-    if (estimatedCutoverJobDuration != null) {
-      $result.estimatedCutoverJobDuration = estimatedCutoverJobDuration;
-    }
-    return $result;
+    final result = create();
+    if (estimatedCutoverJobDuration != null)
+      result.estimatedCutoverJobDuration = estimatedCutoverJobDuration;
+    return result;
   }
-  CutoverForecast._() : super();
-  factory CutoverForecast.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory CutoverForecast.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  CutoverForecast._();
+
+  factory CutoverForecast.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory CutoverForecast.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'CutoverForecast',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.vmmigration.v1'),
       createEmptyInstance: create)
-    ..aOM<$0.Duration>(1, _omitFieldNames ? '' : 'estimatedCutoverJobDuration',
-        subBuilder: $0.Duration.create)
+    ..aOM<$1.Duration>(1, _omitFieldNames ? '' : 'estimatedCutoverJobDuration',
+        subBuilder: $1.Duration.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  CutoverForecast clone() => CutoverForecast()..mergeFromMessage(this);
+  CutoverForecast clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CutoverForecast copyWith(void Function(CutoverForecast) updates) =>
       super.copyWith((message) => updates(message as CutoverForecast))
           as CutoverForecast;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CutoverForecast create() => CutoverForecast._();
+  @$core.override
   CutoverForecast createEmptyInstance() => create();
-  static $pb.PbList<CutoverForecast> createRepeated() =>
-      $pb.PbList<CutoverForecast>();
   @$core.pragma('dart2js:noInline')
   static CutoverForecast getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<CutoverForecast>(create);
@@ -1190,18 +1034,15 @@ class CutoverForecast extends $pb.GeneratedMessage {
 
   /// Output only. Estimation of the CutoverJob duration.
   @$pb.TagNumber(1)
-  $0.Duration get estimatedCutoverJobDuration => $_getN(0);
+  $1.Duration get estimatedCutoverJobDuration => $_getN(0);
   @$pb.TagNumber(1)
-  set estimatedCutoverJobDuration($0.Duration v) {
-    $_setField(1, v);
-  }
-
+  set estimatedCutoverJobDuration($1.Duration value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasEstimatedCutoverJobDuration() => $_has(0);
   @$pb.TagNumber(1)
   void clearEstimatedCutoverJobDuration() => $_clearField(1);
   @$pb.TagNumber(1)
-  $0.Duration ensureEstimatedCutoverJobDuration() => $_ensure(0);
+  $1.Duration ensureEstimatedCutoverJobDuration() => $_ensure(0);
 }
 
 enum CloneJob_TargetVmDetails { computeEngineTargetDetails, notSet }
@@ -1218,49 +1059,36 @@ enum CloneJob_TargetVmDetails { computeEngineTargetDetails, notSet }
 /// CloneJob being cancelled or upon failure to clone.
 class CloneJob extends $pb.GeneratedMessage {
   factory CloneJob({
-    $2.Timestamp? createTime,
+    $0.Timestamp? createTime,
     $core.String? name,
     CloneJob_State? state,
-    $2.Timestamp? stateTime,
-    $9.Status? error,
+    $0.Timestamp? stateTime,
+    $2.Status? error,
     ComputeEngineTargetDetails? computeEngineTargetDetails,
-    $2.Timestamp? endTime,
+    $0.Timestamp? endTime,
     $core.Iterable<CloneStep>? steps,
   }) {
-    final $result = create();
-    if (createTime != null) {
-      $result.createTime = createTime;
-    }
-    if (name != null) {
-      $result.name = name;
-    }
-    if (state != null) {
-      $result.state = state;
-    }
-    if (stateTime != null) {
-      $result.stateTime = stateTime;
-    }
-    if (error != null) {
-      $result.error = error;
-    }
-    if (computeEngineTargetDetails != null) {
-      $result.computeEngineTargetDetails = computeEngineTargetDetails;
-    }
-    if (endTime != null) {
-      $result.endTime = endTime;
-    }
-    if (steps != null) {
-      $result.steps.addAll(steps);
-    }
-    return $result;
+    final result = create();
+    if (createTime != null) result.createTime = createTime;
+    if (name != null) result.name = name;
+    if (state != null) result.state = state;
+    if (stateTime != null) result.stateTime = stateTime;
+    if (error != null) result.error = error;
+    if (computeEngineTargetDetails != null)
+      result.computeEngineTargetDetails = computeEngineTargetDetails;
+    if (endTime != null) result.endTime = endTime;
+    if (steps != null) result.steps.addAll(steps);
+    return result;
   }
-  CloneJob._() : super();
-  factory CloneJob.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory CloneJob.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  CloneJob._();
+
+  factory CloneJob.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory CloneJob.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static const $core.Map<$core.int, CloneJob_TargetVmDetails>
       _CloneJob_TargetVmDetailsByTag = {
@@ -1273,71 +1101,66 @@ class CloneJob extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.events.cloud.vmmigration.v1'),
       createEmptyInstance: create)
     ..oo(0, [20])
-    ..aOM<$2.Timestamp>(1, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$0.Timestamp>(1, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $0.Timestamp.create)
     ..aOS(3, _omitFieldNames ? '' : 'name')
-    ..e<CloneJob_State>(12, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
-        defaultOrMaker: CloneJob_State.STATE_UNSPECIFIED,
-        valueOf: CloneJob_State.valueOf,
+    ..aE<CloneJob_State>(12, _omitFieldNames ? '' : 'state',
         enumValues: CloneJob_State.values)
-    ..aOM<$2.Timestamp>(14, _omitFieldNames ? '' : 'stateTime',
-        subBuilder: $2.Timestamp.create)
-    ..aOM<$9.Status>(17, _omitFieldNames ? '' : 'error',
-        subBuilder: $9.Status.create)
+    ..aOM<$0.Timestamp>(14, _omitFieldNames ? '' : 'stateTime',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$2.Status>(17, _omitFieldNames ? '' : 'error',
+        subBuilder: $2.Status.create)
     ..aOM<ComputeEngineTargetDetails>(
         20, _omitFieldNames ? '' : 'computeEngineTargetDetails',
         subBuilder: ComputeEngineTargetDetails.create)
-    ..aOM<$2.Timestamp>(22, _omitFieldNames ? '' : 'endTime',
-        subBuilder: $2.Timestamp.create)
-    ..pc<CloneStep>(23, _omitFieldNames ? '' : 'steps', $pb.PbFieldType.PM,
+    ..aOM<$0.Timestamp>(22, _omitFieldNames ? '' : 'endTime',
+        subBuilder: $0.Timestamp.create)
+    ..pPM<CloneStep>(23, _omitFieldNames ? '' : 'steps',
         subBuilder: CloneStep.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  CloneJob clone() => CloneJob()..mergeFromMessage(this);
+  CloneJob clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CloneJob copyWith(void Function(CloneJob) updates) =>
       super.copyWith((message) => updates(message as CloneJob)) as CloneJob;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CloneJob create() => CloneJob._();
+  @$core.override
   CloneJob createEmptyInstance() => create();
-  static $pb.PbList<CloneJob> createRepeated() => $pb.PbList<CloneJob>();
   @$core.pragma('dart2js:noInline')
   static CloneJob getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CloneJob>(create);
   static CloneJob? _defaultInstance;
 
+  @$pb.TagNumber(20)
   CloneJob_TargetVmDetails whichTargetVmDetails() =>
       _CloneJob_TargetVmDetailsByTag[$_whichOneof(0)]!;
+  @$pb.TagNumber(20)
   void clearTargetVmDetails() => $_clearField($_whichOneof(0));
 
   /// Output only. The time the clone job was created (as an API call, not when
   /// it was actually created in the target).
   @$pb.TagNumber(1)
-  $2.Timestamp get createTime => $_getN(0);
+  $0.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
-  set createTime($2.Timestamp v) {
-    $_setField(1, v);
-  }
-
+  set createTime($0.Timestamp value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasCreateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreateTime() => $_clearField(1);
   @$pb.TagNumber(1)
-  $2.Timestamp ensureCreateTime() => $_ensure(0);
+  $0.Timestamp ensureCreateTime() => $_ensure(0);
 
   /// Output only. The name of the clone.
   @$pb.TagNumber(3)
   $core.String get name => $_getSZ(1);
   @$pb.TagNumber(3)
-  set name($core.String v) {
-    $_setString(1, v);
-  }
-
+  set name($core.String value) => $_setString(1, value);
   @$pb.TagNumber(3)
   $core.bool hasName() => $_has(1);
   @$pb.TagNumber(3)
@@ -1347,10 +1170,7 @@ class CloneJob extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   CloneJob_State get state => $_getN(2);
   @$pb.TagNumber(12)
-  set state(CloneJob_State v) {
-    $_setField(12, v);
-  }
-
+  set state(CloneJob_State value) => $_setField(12, value);
   @$pb.TagNumber(12)
   $core.bool hasState() => $_has(2);
   @$pb.TagNumber(12)
@@ -1358,43 +1178,35 @@ class CloneJob extends $pb.GeneratedMessage {
 
   /// Output only. The time the state was last updated.
   @$pb.TagNumber(14)
-  $2.Timestamp get stateTime => $_getN(3);
+  $0.Timestamp get stateTime => $_getN(3);
   @$pb.TagNumber(14)
-  set stateTime($2.Timestamp v) {
-    $_setField(14, v);
-  }
-
+  set stateTime($0.Timestamp value) => $_setField(14, value);
   @$pb.TagNumber(14)
   $core.bool hasStateTime() => $_has(3);
   @$pb.TagNumber(14)
   void clearStateTime() => $_clearField(14);
   @$pb.TagNumber(14)
-  $2.Timestamp ensureStateTime() => $_ensure(3);
+  $0.Timestamp ensureStateTime() => $_ensure(3);
 
   /// Output only. Provides details for the errors that led to the Clone Job's
   /// state.
   @$pb.TagNumber(17)
-  $9.Status get error => $_getN(4);
+  $2.Status get error => $_getN(4);
   @$pb.TagNumber(17)
-  set error($9.Status v) {
-    $_setField(17, v);
-  }
-
+  set error($2.Status value) => $_setField(17, value);
   @$pb.TagNumber(17)
   $core.bool hasError() => $_has(4);
   @$pb.TagNumber(17)
   void clearError() => $_clearField(17);
   @$pb.TagNumber(17)
-  $9.Status ensureError() => $_ensure(4);
+  $2.Status ensureError() => $_ensure(4);
 
   /// Output only. Details of the target VM in Compute Engine.
   @$pb.TagNumber(20)
   ComputeEngineTargetDetails get computeEngineTargetDetails => $_getN(5);
   @$pb.TagNumber(20)
-  set computeEngineTargetDetails(ComputeEngineTargetDetails v) {
-    $_setField(20, v);
-  }
-
+  set computeEngineTargetDetails(ComputeEngineTargetDetails value) =>
+      $_setField(20, value);
   @$pb.TagNumber(20)
   $core.bool hasComputeEngineTargetDetails() => $_has(5);
   @$pb.TagNumber(20)
@@ -1404,18 +1216,15 @@ class CloneJob extends $pb.GeneratedMessage {
 
   /// Output only. The time the clone job was ended.
   @$pb.TagNumber(22)
-  $2.Timestamp get endTime => $_getN(6);
+  $0.Timestamp get endTime => $_getN(6);
   @$pb.TagNumber(22)
-  set endTime($2.Timestamp v) {
-    $_setField(22, v);
-  }
-
+  set endTime($0.Timestamp value) => $_setField(22, value);
   @$pb.TagNumber(22)
   $core.bool hasEndTime() => $_has(6);
   @$pb.TagNumber(22)
   void clearEndTime() => $_clearField(22);
   @$pb.TagNumber(22)
-  $2.Timestamp ensureEndTime() => $_ensure(6);
+  $0.Timestamp ensureEndTime() => $_ensure(6);
 
   /// Output only. The clone steps list representing its progress.
   @$pb.TagNumber(23)
@@ -1432,37 +1241,30 @@ enum CloneStep_Step {
 /// CloneStep holds information about the clone step progress.
 class CloneStep extends $pb.GeneratedMessage {
   factory CloneStep({
-    $2.Timestamp? startTime,
-    $2.Timestamp? endTime,
+    $0.Timestamp? startTime,
+    $0.Timestamp? endTime,
     AdaptingOSStep? adaptingOs,
     PreparingVMDisksStep? preparingVmDisks,
     InstantiatingMigratedVMStep? instantiatingMigratedVm,
   }) {
-    final $result = create();
-    if (startTime != null) {
-      $result.startTime = startTime;
-    }
-    if (endTime != null) {
-      $result.endTime = endTime;
-    }
-    if (adaptingOs != null) {
-      $result.adaptingOs = adaptingOs;
-    }
-    if (preparingVmDisks != null) {
-      $result.preparingVmDisks = preparingVmDisks;
-    }
-    if (instantiatingMigratedVm != null) {
-      $result.instantiatingMigratedVm = instantiatingMigratedVm;
-    }
-    return $result;
+    final result = create();
+    if (startTime != null) result.startTime = startTime;
+    if (endTime != null) result.endTime = endTime;
+    if (adaptingOs != null) result.adaptingOs = adaptingOs;
+    if (preparingVmDisks != null) result.preparingVmDisks = preparingVmDisks;
+    if (instantiatingMigratedVm != null)
+      result.instantiatingMigratedVm = instantiatingMigratedVm;
+    return result;
   }
-  CloneStep._() : super();
-  factory CloneStep.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory CloneStep.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  CloneStep._();
+
+  factory CloneStep.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory CloneStep.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static const $core.Map<$core.int, CloneStep_Step> _CloneStep_StepByTag = {
     3: CloneStep_Step.adaptingOs,
@@ -1476,10 +1278,10 @@ class CloneStep extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.events.cloud.vmmigration.v1'),
       createEmptyInstance: create)
     ..oo(0, [3, 4, 5])
-    ..aOM<$2.Timestamp>(1, _omitFieldNames ? '' : 'startTime',
-        subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(2, _omitFieldNames ? '' : 'endTime',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$0.Timestamp>(1, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(2, _omitFieldNames ? '' : 'endTime',
+        subBuilder: $0.Timestamp.create)
     ..aOM<AdaptingOSStep>(3, _omitFieldNames ? '' : 'adaptingOs',
         subBuilder: AdaptingOSStep.create)
     ..aOM<PreparingVMDisksStep>(4, _omitFieldNames ? '' : 'preparingVmDisks',
@@ -1490,63 +1292,61 @@ class CloneStep extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  CloneStep clone() => CloneStep()..mergeFromMessage(this);
+  CloneStep clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CloneStep copyWith(void Function(CloneStep) updates) =>
       super.copyWith((message) => updates(message as CloneStep)) as CloneStep;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CloneStep create() => CloneStep._();
+  @$core.override
   CloneStep createEmptyInstance() => create();
-  static $pb.PbList<CloneStep> createRepeated() => $pb.PbList<CloneStep>();
   @$core.pragma('dart2js:noInline')
   static CloneStep getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CloneStep>(create);
   static CloneStep? _defaultInstance;
 
+  @$pb.TagNumber(3)
+  @$pb.TagNumber(4)
+  @$pb.TagNumber(5)
   CloneStep_Step whichStep() => _CloneStep_StepByTag[$_whichOneof(0)]!;
+  @$pb.TagNumber(3)
+  @$pb.TagNumber(4)
+  @$pb.TagNumber(5)
   void clearStep() => $_clearField($_whichOneof(0));
 
   /// The time the step has started.
   @$pb.TagNumber(1)
-  $2.Timestamp get startTime => $_getN(0);
+  $0.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($2.Timestamp v) {
-    $_setField(1, v);
-  }
-
+  set startTime($0.Timestamp value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasStartTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearStartTime() => $_clearField(1);
   @$pb.TagNumber(1)
-  $2.Timestamp ensureStartTime() => $_ensure(0);
+  $0.Timestamp ensureStartTime() => $_ensure(0);
 
   /// The time the step has ended.
   @$pb.TagNumber(2)
-  $2.Timestamp get endTime => $_getN(1);
+  $0.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($2.Timestamp v) {
-    $_setField(2, v);
-  }
-
+  set endTime($0.Timestamp value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndTime() => $_clearField(2);
   @$pb.TagNumber(2)
-  $2.Timestamp ensureEndTime() => $_ensure(1);
+  $0.Timestamp ensureEndTime() => $_ensure(1);
 
   /// Adapting OS step.
   @$pb.TagNumber(3)
   AdaptingOSStep get adaptingOs => $_getN(2);
   @$pb.TagNumber(3)
-  set adaptingOs(AdaptingOSStep v) {
-    $_setField(3, v);
-  }
-
+  set adaptingOs(AdaptingOSStep value) => $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasAdaptingOs() => $_has(2);
   @$pb.TagNumber(3)
@@ -1558,10 +1358,7 @@ class CloneStep extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   PreparingVMDisksStep get preparingVmDisks => $_getN(3);
   @$pb.TagNumber(4)
-  set preparingVmDisks(PreparingVMDisksStep v) {
-    $_setField(4, v);
-  }
-
+  set preparingVmDisks(PreparingVMDisksStep value) => $_setField(4, value);
   @$pb.TagNumber(4)
   $core.bool hasPreparingVmDisks() => $_has(3);
   @$pb.TagNumber(4)
@@ -1573,10 +1370,8 @@ class CloneStep extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   InstantiatingMigratedVMStep get instantiatingMigratedVm => $_getN(4);
   @$pb.TagNumber(5)
-  set instantiatingMigratedVm(InstantiatingMigratedVMStep v) {
-    $_setField(5, v);
-  }
-
+  set instantiatingMigratedVm(InstantiatingMigratedVMStep value) =>
+      $_setField(5, value);
   @$pb.TagNumber(5)
   $core.bool hasInstantiatingMigratedVm() => $_has(4);
   @$pb.TagNumber(5)
@@ -1588,13 +1383,15 @@ class CloneStep extends $pb.GeneratedMessage {
 /// AdaptingOSStep contains specific step details.
 class AdaptingOSStep extends $pb.GeneratedMessage {
   factory AdaptingOSStep() => create();
-  AdaptingOSStep._() : super();
-  factory AdaptingOSStep.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory AdaptingOSStep.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  AdaptingOSStep._();
+
+  factory AdaptingOSStep.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory AdaptingOSStep.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'AdaptingOSStep',
@@ -1604,19 +1401,19 @@ class AdaptingOSStep extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  AdaptingOSStep clone() => AdaptingOSStep()..mergeFromMessage(this);
+  AdaptingOSStep clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AdaptingOSStep copyWith(void Function(AdaptingOSStep) updates) =>
       super.copyWith((message) => updates(message as AdaptingOSStep))
           as AdaptingOSStep;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AdaptingOSStep create() => AdaptingOSStep._();
+  @$core.override
   AdaptingOSStep createEmptyInstance() => create();
-  static $pb.PbList<AdaptingOSStep> createRepeated() =>
-      $pb.PbList<AdaptingOSStep>();
   @$core.pragma('dart2js:noInline')
   static AdaptingOSStep getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<AdaptingOSStep>(create);
@@ -1626,13 +1423,15 @@ class AdaptingOSStep extends $pb.GeneratedMessage {
 /// PreparingVMDisksStep contains specific step details.
 class PreparingVMDisksStep extends $pb.GeneratedMessage {
   factory PreparingVMDisksStep() => create();
-  PreparingVMDisksStep._() : super();
-  factory PreparingVMDisksStep.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory PreparingVMDisksStep.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  PreparingVMDisksStep._();
+
+  factory PreparingVMDisksStep.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory PreparingVMDisksStep.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'PreparingVMDisksStep',
@@ -1642,20 +1441,19 @@ class PreparingVMDisksStep extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  PreparingVMDisksStep clone() =>
-      PreparingVMDisksStep()..mergeFromMessage(this);
+  PreparingVMDisksStep clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   PreparingVMDisksStep copyWith(void Function(PreparingVMDisksStep) updates) =>
       super.copyWith((message) => updates(message as PreparingVMDisksStep))
           as PreparingVMDisksStep;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static PreparingVMDisksStep create() => PreparingVMDisksStep._();
+  @$core.override
   PreparingVMDisksStep createEmptyInstance() => create();
-  static $pb.PbList<PreparingVMDisksStep> createRepeated() =>
-      $pb.PbList<PreparingVMDisksStep>();
   @$core.pragma('dart2js:noInline')
   static PreparingVMDisksStep getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<PreparingVMDisksStep>(create);
@@ -1665,13 +1463,15 @@ class PreparingVMDisksStep extends $pb.GeneratedMessage {
 /// InstantiatingMigratedVMStep contains specific step details.
 class InstantiatingMigratedVMStep extends $pb.GeneratedMessage {
   factory InstantiatingMigratedVMStep() => create();
-  InstantiatingMigratedVMStep._() : super();
-  factory InstantiatingMigratedVMStep.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory InstantiatingMigratedVMStep.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  InstantiatingMigratedVMStep._();
+
+  factory InstantiatingMigratedVMStep.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory InstantiatingMigratedVMStep.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'InstantiatingMigratedVMStep',
@@ -1681,8 +1481,7 @@ class InstantiatingMigratedVMStep extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  InstantiatingMigratedVMStep clone() =>
-      InstantiatingMigratedVMStep()..mergeFromMessage(this);
+  InstantiatingMigratedVMStep clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   InstantiatingMigratedVMStep copyWith(
           void Function(InstantiatingMigratedVMStep) updates) =>
@@ -1690,14 +1489,14 @@ class InstantiatingMigratedVMStep extends $pb.GeneratedMessage {
               (message) => updates(message as InstantiatingMigratedVMStep))
           as InstantiatingMigratedVMStep;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static InstantiatingMigratedVMStep create() =>
       InstantiatingMigratedVMStep._();
+  @$core.override
   InstantiatingMigratedVMStep createEmptyInstance() => create();
-  static $pb.PbList<InstantiatingMigratedVMStep> createRepeated() =>
-      $pb.PbList<InstantiatingMigratedVMStep>();
   @$core.pragma('dart2js:noInline')
   static InstantiatingMigratedVMStep getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<InstantiatingMigratedVMStep>(create);
@@ -1711,57 +1510,40 @@ enum CutoverJob_TargetVmDetails { computeEngineTargetDetails, notSet }
 /// clonning the VM using the replicated snapshot.
 class CutoverJob extends $pb.GeneratedMessage {
   factory CutoverJob({
-    $2.Timestamp? createTime,
+    $0.Timestamp? createTime,
     $core.String? name,
     CutoverJob_State? state,
-    $2.Timestamp? stateTime,
-    $9.Status? error,
+    $0.Timestamp? stateTime,
+    $2.Status? error,
     $core.String? stateMessage,
     $core.int? progressPercent,
     ComputeEngineTargetDetails? computeEngineTargetDetails,
-    $2.Timestamp? endTime,
+    $0.Timestamp? endTime,
     $core.Iterable<CutoverStep>? steps,
   }) {
-    final $result = create();
-    if (createTime != null) {
-      $result.createTime = createTime;
-    }
-    if (name != null) {
-      $result.name = name;
-    }
-    if (state != null) {
-      $result.state = state;
-    }
-    if (stateTime != null) {
-      $result.stateTime = stateTime;
-    }
-    if (error != null) {
-      $result.error = error;
-    }
-    if (stateMessage != null) {
-      $result.stateMessage = stateMessage;
-    }
-    if (progressPercent != null) {
-      $result.progressPercent = progressPercent;
-    }
-    if (computeEngineTargetDetails != null) {
-      $result.computeEngineTargetDetails = computeEngineTargetDetails;
-    }
-    if (endTime != null) {
-      $result.endTime = endTime;
-    }
-    if (steps != null) {
-      $result.steps.addAll(steps);
-    }
-    return $result;
+    final result = create();
+    if (createTime != null) result.createTime = createTime;
+    if (name != null) result.name = name;
+    if (state != null) result.state = state;
+    if (stateTime != null) result.stateTime = stateTime;
+    if (error != null) result.error = error;
+    if (stateMessage != null) result.stateMessage = stateMessage;
+    if (progressPercent != null) result.progressPercent = progressPercent;
+    if (computeEngineTargetDetails != null)
+      result.computeEngineTargetDetails = computeEngineTargetDetails;
+    if (endTime != null) result.endTime = endTime;
+    if (steps != null) result.steps.addAll(steps);
+    return result;
   }
-  CutoverJob._() : super();
-  factory CutoverJob.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory CutoverJob.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  CutoverJob._();
+
+  factory CutoverJob.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory CutoverJob.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static const $core.Map<$core.int, CutoverJob_TargetVmDetails>
       _CutoverJob_TargetVmDetailsByTag = {
@@ -1774,74 +1556,68 @@ class CutoverJob extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.events.cloud.vmmigration.v1'),
       createEmptyInstance: create)
     ..oo(0, [14])
-    ..aOM<$2.Timestamp>(1, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$0.Timestamp>(1, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $0.Timestamp.create)
     ..aOS(3, _omitFieldNames ? '' : 'name')
-    ..e<CutoverJob_State>(5, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
-        defaultOrMaker: CutoverJob_State.STATE_UNSPECIFIED,
-        valueOf: CutoverJob_State.valueOf,
+    ..aE<CutoverJob_State>(5, _omitFieldNames ? '' : 'state',
         enumValues: CutoverJob_State.values)
-    ..aOM<$2.Timestamp>(6, _omitFieldNames ? '' : 'stateTime',
-        subBuilder: $2.Timestamp.create)
-    ..aOM<$9.Status>(9, _omitFieldNames ? '' : 'error',
-        subBuilder: $9.Status.create)
+    ..aOM<$0.Timestamp>(6, _omitFieldNames ? '' : 'stateTime',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$2.Status>(9, _omitFieldNames ? '' : 'error',
+        subBuilder: $2.Status.create)
     ..aOS(10, _omitFieldNames ? '' : 'stateMessage')
-    ..a<$core.int>(
-        13, _omitFieldNames ? '' : 'progressPercent', $pb.PbFieldType.O3)
+    ..aI(13, _omitFieldNames ? '' : 'progressPercent')
     ..aOM<ComputeEngineTargetDetails>(
         14, _omitFieldNames ? '' : 'computeEngineTargetDetails',
         subBuilder: ComputeEngineTargetDetails.create)
-    ..aOM<$2.Timestamp>(16, _omitFieldNames ? '' : 'endTime',
-        subBuilder: $2.Timestamp.create)
-    ..pc<CutoverStep>(17, _omitFieldNames ? '' : 'steps', $pb.PbFieldType.PM,
+    ..aOM<$0.Timestamp>(16, _omitFieldNames ? '' : 'endTime',
+        subBuilder: $0.Timestamp.create)
+    ..pPM<CutoverStep>(17, _omitFieldNames ? '' : 'steps',
         subBuilder: CutoverStep.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  CutoverJob clone() => CutoverJob()..mergeFromMessage(this);
+  CutoverJob clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CutoverJob copyWith(void Function(CutoverJob) updates) =>
       super.copyWith((message) => updates(message as CutoverJob)) as CutoverJob;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CutoverJob create() => CutoverJob._();
+  @$core.override
   CutoverJob createEmptyInstance() => create();
-  static $pb.PbList<CutoverJob> createRepeated() => $pb.PbList<CutoverJob>();
   @$core.pragma('dart2js:noInline')
   static CutoverJob getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<CutoverJob>(create);
   static CutoverJob? _defaultInstance;
 
+  @$pb.TagNumber(14)
   CutoverJob_TargetVmDetails whichTargetVmDetails() =>
       _CutoverJob_TargetVmDetailsByTag[$_whichOneof(0)]!;
+  @$pb.TagNumber(14)
   void clearTargetVmDetails() => $_clearField($_whichOneof(0));
 
   /// Output only. The time the cutover job was created (as an API call, not when
   /// it was actually created in the target).
   @$pb.TagNumber(1)
-  $2.Timestamp get createTime => $_getN(0);
+  $0.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
-  set createTime($2.Timestamp v) {
-    $_setField(1, v);
-  }
-
+  set createTime($0.Timestamp value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasCreateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreateTime() => $_clearField(1);
   @$pb.TagNumber(1)
-  $2.Timestamp ensureCreateTime() => $_ensure(0);
+  $0.Timestamp ensureCreateTime() => $_ensure(0);
 
   /// Output only. The name of the cutover job.
   @$pb.TagNumber(3)
   $core.String get name => $_getSZ(1);
   @$pb.TagNumber(3)
-  set name($core.String v) {
-    $_setString(1, v);
-  }
-
+  set name($core.String value) => $_setString(1, value);
   @$pb.TagNumber(3)
   $core.bool hasName() => $_has(1);
   @$pb.TagNumber(3)
@@ -1851,10 +1627,7 @@ class CutoverJob extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   CutoverJob_State get state => $_getN(2);
   @$pb.TagNumber(5)
-  set state(CutoverJob_State v) {
-    $_setField(5, v);
-  }
-
+  set state(CutoverJob_State value) => $_setField(5, value);
   @$pb.TagNumber(5)
   $core.bool hasState() => $_has(2);
   @$pb.TagNumber(5)
@@ -1862,44 +1635,35 @@ class CutoverJob extends $pb.GeneratedMessage {
 
   /// Output only. The time the state was last updated.
   @$pb.TagNumber(6)
-  $2.Timestamp get stateTime => $_getN(3);
+  $0.Timestamp get stateTime => $_getN(3);
   @$pb.TagNumber(6)
-  set stateTime($2.Timestamp v) {
-    $_setField(6, v);
-  }
-
+  set stateTime($0.Timestamp value) => $_setField(6, value);
   @$pb.TagNumber(6)
   $core.bool hasStateTime() => $_has(3);
   @$pb.TagNumber(6)
   void clearStateTime() => $_clearField(6);
   @$pb.TagNumber(6)
-  $2.Timestamp ensureStateTime() => $_ensure(3);
+  $0.Timestamp ensureStateTime() => $_ensure(3);
 
   /// Output only. Provides details for the errors that led to the Cutover Job's
   /// state.
   @$pb.TagNumber(9)
-  $9.Status get error => $_getN(4);
+  $2.Status get error => $_getN(4);
   @$pb.TagNumber(9)
-  set error($9.Status v) {
-    $_setField(9, v);
-  }
-
+  set error($2.Status value) => $_setField(9, value);
   @$pb.TagNumber(9)
   $core.bool hasError() => $_has(4);
   @$pb.TagNumber(9)
   void clearError() => $_clearField(9);
   @$pb.TagNumber(9)
-  $9.Status ensureError() => $_ensure(4);
+  $2.Status ensureError() => $_ensure(4);
 
   /// Output only. A message providing possible extra details about the current
   /// state.
   @$pb.TagNumber(10)
   $core.String get stateMessage => $_getSZ(5);
   @$pb.TagNumber(10)
-  set stateMessage($core.String v) {
-    $_setString(5, v);
-  }
-
+  set stateMessage($core.String value) => $_setString(5, value);
   @$pb.TagNumber(10)
   $core.bool hasStateMessage() => $_has(5);
   @$pb.TagNumber(10)
@@ -1909,10 +1673,7 @@ class CutoverJob extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   $core.int get progressPercent => $_getIZ(6);
   @$pb.TagNumber(13)
-  set progressPercent($core.int v) {
-    $_setSignedInt32(6, v);
-  }
-
+  set progressPercent($core.int value) => $_setSignedInt32(6, value);
   @$pb.TagNumber(13)
   $core.bool hasProgressPercent() => $_has(6);
   @$pb.TagNumber(13)
@@ -1922,10 +1683,8 @@ class CutoverJob extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   ComputeEngineTargetDetails get computeEngineTargetDetails => $_getN(7);
   @$pb.TagNumber(14)
-  set computeEngineTargetDetails(ComputeEngineTargetDetails v) {
-    $_setField(14, v);
-  }
-
+  set computeEngineTargetDetails(ComputeEngineTargetDetails value) =>
+      $_setField(14, value);
   @$pb.TagNumber(14)
   $core.bool hasComputeEngineTargetDetails() => $_has(7);
   @$pb.TagNumber(14)
@@ -1935,18 +1694,15 @@ class CutoverJob extends $pb.GeneratedMessage {
 
   /// Output only. The time the cutover job had finished.
   @$pb.TagNumber(16)
-  $2.Timestamp get endTime => $_getN(8);
+  $0.Timestamp get endTime => $_getN(8);
   @$pb.TagNumber(16)
-  set endTime($2.Timestamp v) {
-    $_setField(16, v);
-  }
-
+  set endTime($0.Timestamp value) => $_setField(16, value);
   @$pb.TagNumber(16)
   $core.bool hasEndTime() => $_has(8);
   @$pb.TagNumber(16)
   void clearEndTime() => $_clearField(16);
   @$pb.TagNumber(16)
-  $2.Timestamp ensureEndTime() => $_ensure(8);
+  $0.Timestamp ensureEndTime() => $_ensure(8);
 
   /// Output only. The cutover steps list representing its progress.
   @$pb.TagNumber(17)
@@ -1965,45 +1721,36 @@ enum CutoverStep_Step {
 /// CutoverStep holds information about the cutover step progress.
 class CutoverStep extends $pb.GeneratedMessage {
   factory CutoverStep({
-    $2.Timestamp? startTime,
-    $2.Timestamp? endTime,
+    $0.Timestamp? startTime,
+    $0.Timestamp? endTime,
     ReplicationCycle? previousReplicationCycle,
     ShuttingDownSourceVMStep? shuttingDownSourceVm,
     ReplicationCycle? finalSync,
     PreparingVMDisksStep? preparingVmDisks,
     InstantiatingMigratedVMStep? instantiatingMigratedVm,
   }) {
-    final $result = create();
-    if (startTime != null) {
-      $result.startTime = startTime;
-    }
-    if (endTime != null) {
-      $result.endTime = endTime;
-    }
-    if (previousReplicationCycle != null) {
-      $result.previousReplicationCycle = previousReplicationCycle;
-    }
-    if (shuttingDownSourceVm != null) {
-      $result.shuttingDownSourceVm = shuttingDownSourceVm;
-    }
-    if (finalSync != null) {
-      $result.finalSync = finalSync;
-    }
-    if (preparingVmDisks != null) {
-      $result.preparingVmDisks = preparingVmDisks;
-    }
-    if (instantiatingMigratedVm != null) {
-      $result.instantiatingMigratedVm = instantiatingMigratedVm;
-    }
-    return $result;
+    final result = create();
+    if (startTime != null) result.startTime = startTime;
+    if (endTime != null) result.endTime = endTime;
+    if (previousReplicationCycle != null)
+      result.previousReplicationCycle = previousReplicationCycle;
+    if (shuttingDownSourceVm != null)
+      result.shuttingDownSourceVm = shuttingDownSourceVm;
+    if (finalSync != null) result.finalSync = finalSync;
+    if (preparingVmDisks != null) result.preparingVmDisks = preparingVmDisks;
+    if (instantiatingMigratedVm != null)
+      result.instantiatingMigratedVm = instantiatingMigratedVm;
+    return result;
   }
-  CutoverStep._() : super();
-  factory CutoverStep.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory CutoverStep.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  CutoverStep._();
+
+  factory CutoverStep.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory CutoverStep.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static const $core.Map<$core.int, CutoverStep_Step> _CutoverStep_StepByTag = {
     3: CutoverStep_Step.previousReplicationCycle,
@@ -2019,10 +1766,10 @@ class CutoverStep extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.events.cloud.vmmigration.v1'),
       createEmptyInstance: create)
     ..oo(0, [3, 4, 5, 6, 7])
-    ..aOM<$2.Timestamp>(1, _omitFieldNames ? '' : 'startTime',
-        subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(2, _omitFieldNames ? '' : 'endTime',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$0.Timestamp>(1, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(2, _omitFieldNames ? '' : 'endTime',
+        subBuilder: $0.Timestamp.create)
     ..aOM<ReplicationCycle>(
         3, _omitFieldNames ? '' : 'previousReplicationCycle',
         subBuilder: ReplicationCycle.create)
@@ -2039,64 +1786,66 @@ class CutoverStep extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  CutoverStep clone() => CutoverStep()..mergeFromMessage(this);
+  CutoverStep clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CutoverStep copyWith(void Function(CutoverStep) updates) =>
       super.copyWith((message) => updates(message as CutoverStep))
           as CutoverStep;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CutoverStep create() => CutoverStep._();
+  @$core.override
   CutoverStep createEmptyInstance() => create();
-  static $pb.PbList<CutoverStep> createRepeated() => $pb.PbList<CutoverStep>();
   @$core.pragma('dart2js:noInline')
   static CutoverStep getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<CutoverStep>(create);
   static CutoverStep? _defaultInstance;
 
+  @$pb.TagNumber(3)
+  @$pb.TagNumber(4)
+  @$pb.TagNumber(5)
+  @$pb.TagNumber(6)
+  @$pb.TagNumber(7)
   CutoverStep_Step whichStep() => _CutoverStep_StepByTag[$_whichOneof(0)]!;
+  @$pb.TagNumber(3)
+  @$pb.TagNumber(4)
+  @$pb.TagNumber(5)
+  @$pb.TagNumber(6)
+  @$pb.TagNumber(7)
   void clearStep() => $_clearField($_whichOneof(0));
 
   /// The time the step has started.
   @$pb.TagNumber(1)
-  $2.Timestamp get startTime => $_getN(0);
+  $0.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($2.Timestamp v) {
-    $_setField(1, v);
-  }
-
+  set startTime($0.Timestamp value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasStartTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearStartTime() => $_clearField(1);
   @$pb.TagNumber(1)
-  $2.Timestamp ensureStartTime() => $_ensure(0);
+  $0.Timestamp ensureStartTime() => $_ensure(0);
 
   /// The time the step has ended.
   @$pb.TagNumber(2)
-  $2.Timestamp get endTime => $_getN(1);
+  $0.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($2.Timestamp v) {
-    $_setField(2, v);
-  }
-
+  set endTime($0.Timestamp value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndTime() => $_clearField(2);
   @$pb.TagNumber(2)
-  $2.Timestamp ensureEndTime() => $_ensure(1);
+  $0.Timestamp ensureEndTime() => $_ensure(1);
 
   /// A replication cycle prior cutover step.
   @$pb.TagNumber(3)
   ReplicationCycle get previousReplicationCycle => $_getN(2);
   @$pb.TagNumber(3)
-  set previousReplicationCycle(ReplicationCycle v) {
-    $_setField(3, v);
-  }
-
+  set previousReplicationCycle(ReplicationCycle value) => $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasPreviousReplicationCycle() => $_has(2);
   @$pb.TagNumber(3)
@@ -2108,10 +1857,8 @@ class CutoverStep extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   ShuttingDownSourceVMStep get shuttingDownSourceVm => $_getN(3);
   @$pb.TagNumber(4)
-  set shuttingDownSourceVm(ShuttingDownSourceVMStep v) {
-    $_setField(4, v);
-  }
-
+  set shuttingDownSourceVm(ShuttingDownSourceVMStep value) =>
+      $_setField(4, value);
   @$pb.TagNumber(4)
   $core.bool hasShuttingDownSourceVm() => $_has(3);
   @$pb.TagNumber(4)
@@ -2123,10 +1870,7 @@ class CutoverStep extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   ReplicationCycle get finalSync => $_getN(4);
   @$pb.TagNumber(5)
-  set finalSync(ReplicationCycle v) {
-    $_setField(5, v);
-  }
-
+  set finalSync(ReplicationCycle value) => $_setField(5, value);
   @$pb.TagNumber(5)
   $core.bool hasFinalSync() => $_has(4);
   @$pb.TagNumber(5)
@@ -2138,10 +1882,7 @@ class CutoverStep extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   PreparingVMDisksStep get preparingVmDisks => $_getN(5);
   @$pb.TagNumber(6)
-  set preparingVmDisks(PreparingVMDisksStep v) {
-    $_setField(6, v);
-  }
-
+  set preparingVmDisks(PreparingVMDisksStep value) => $_setField(6, value);
   @$pb.TagNumber(6)
   $core.bool hasPreparingVmDisks() => $_has(5);
   @$pb.TagNumber(6)
@@ -2153,10 +1894,8 @@ class CutoverStep extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   InstantiatingMigratedVMStep get instantiatingMigratedVm => $_getN(6);
   @$pb.TagNumber(7)
-  set instantiatingMigratedVm(InstantiatingMigratedVMStep v) {
-    $_setField(7, v);
-  }
-
+  set instantiatingMigratedVm(InstantiatingMigratedVMStep value) =>
+      $_setField(7, value);
   @$pb.TagNumber(7)
   $core.bool hasInstantiatingMigratedVm() => $_has(6);
   @$pb.TagNumber(7)
@@ -2168,13 +1907,15 @@ class CutoverStep extends $pb.GeneratedMessage {
 /// ShuttingDownSourceVMStep contains specific step details.
 class ShuttingDownSourceVMStep extends $pb.GeneratedMessage {
   factory ShuttingDownSourceVMStep() => create();
-  ShuttingDownSourceVMStep._() : super();
-  factory ShuttingDownSourceVMStep.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ShuttingDownSourceVMStep.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  ShuttingDownSourceVMStep._();
+
+  factory ShuttingDownSourceVMStep.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ShuttingDownSourceVMStep.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'ShuttingDownSourceVMStep',
@@ -2184,21 +1925,20 @@ class ShuttingDownSourceVMStep extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ShuttingDownSourceVMStep clone() =>
-      ShuttingDownSourceVMStep()..mergeFromMessage(this);
+  ShuttingDownSourceVMStep clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ShuttingDownSourceVMStep copyWith(
           void Function(ShuttingDownSourceVMStep) updates) =>
       super.copyWith((message) => updates(message as ShuttingDownSourceVMStep))
           as ShuttingDownSourceVMStep;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ShuttingDownSourceVMStep create() => ShuttingDownSourceVMStep._();
+  @$core.override
   ShuttingDownSourceVMStep createEmptyInstance() => create();
-  static $pb.PbList<ShuttingDownSourceVMStep> createRepeated() =>
-      $pb.PbList<ShuttingDownSourceVMStep>();
   @$core.pragma('dart2js:noInline')
   static ShuttingDownSourceVMStep getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ShuttingDownSourceVMStep>(create);
@@ -2212,44 +1952,32 @@ enum Source_SourceDetails { vmware, aws, notSet }
 class Source extends $pb.GeneratedMessage {
   factory Source({
     $core.String? name,
-    $2.Timestamp? createTime,
-    $2.Timestamp? updateTime,
+    $0.Timestamp? createTime,
+    $0.Timestamp? updateTime,
     $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.String? description,
     VmwareSourceDetails? vmware,
     AwsSourceDetails? aws,
   }) {
-    final $result = create();
-    if (name != null) {
-      $result.name = name;
-    }
-    if (createTime != null) {
-      $result.createTime = createTime;
-    }
-    if (updateTime != null) {
-      $result.updateTime = updateTime;
-    }
-    if (labels != null) {
-      $result.labels.addEntries(labels);
-    }
-    if (description != null) {
-      $result.description = description;
-    }
-    if (vmware != null) {
-      $result.vmware = vmware;
-    }
-    if (aws != null) {
-      $result.aws = aws;
-    }
-    return $result;
+    final result = create();
+    if (name != null) result.name = name;
+    if (createTime != null) result.createTime = createTime;
+    if (updateTime != null) result.updateTime = updateTime;
+    if (labels != null) result.labels.addEntries(labels);
+    if (description != null) result.description = description;
+    if (vmware != null) result.vmware = vmware;
+    if (aws != null) result.aws = aws;
+    return result;
   }
-  Source._() : super();
-  factory Source.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Source.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  Source._();
+
+  factory Source.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory Source.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static const $core.Map<$core.int, Source_SourceDetails>
       _Source_SourceDetailsByTag = {
@@ -2264,10 +1992,10 @@ class Source extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..oo(0, [10, 12])
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$2.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(3, _omitFieldNames ? '' : 'updateTime',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$0.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(3, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $0.Timestamp.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels',
         entryClassName: 'Source.LabelsEntry',
         keyFieldType: $pb.PbFieldType.OS,
@@ -2282,34 +2010,36 @@ class Source extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  Source clone() => Source()..mergeFromMessage(this);
+  Source clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Source copyWith(void Function(Source) updates) =>
       super.copyWith((message) => updates(message as Source)) as Source;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Source create() => Source._();
+  @$core.override
   Source createEmptyInstance() => create();
-  static $pb.PbList<Source> createRepeated() => $pb.PbList<Source>();
   @$core.pragma('dart2js:noInline')
   static Source getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Source>(create);
   static Source? _defaultInstance;
 
+  @$pb.TagNumber(10)
+  @$pb.TagNumber(12)
   Source_SourceDetails whichSourceDetails() =>
       _Source_SourceDetailsByTag[$_whichOneof(0)]!;
+  @$pb.TagNumber(10)
+  @$pb.TagNumber(12)
   void clearSourceDetails() => $_clearField($_whichOneof(0));
 
   /// Output only. The Source name.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) {
-    $_setString(0, v);
-  }
-
+  set name($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -2317,33 +2047,27 @@ class Source extends $pb.GeneratedMessage {
 
   /// Output only. The create time timestamp.
   @$pb.TagNumber(2)
-  $2.Timestamp get createTime => $_getN(1);
+  $0.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($2.Timestamp v) {
-    $_setField(2, v);
-  }
-
+  set createTime($0.Timestamp value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => $_clearField(2);
   @$pb.TagNumber(2)
-  $2.Timestamp ensureCreateTime() => $_ensure(1);
+  $0.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. The update time timestamp.
   @$pb.TagNumber(3)
-  $2.Timestamp get updateTime => $_getN(2);
+  $0.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($2.Timestamp v) {
-    $_setField(3, v);
-  }
-
+  set updateTime($0.Timestamp value) => $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => $_clearField(3);
   @$pb.TagNumber(3)
-  $2.Timestamp ensureUpdateTime() => $_ensure(2);
+  $0.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// The labels of the source.
   @$pb.TagNumber(4)
@@ -2353,10 +2077,7 @@ class Source extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get description => $_getSZ(4);
   @$pb.TagNumber(6)
-  set description($core.String v) {
-    $_setString(4, v);
-  }
-
+  set description($core.String value) => $_setString(4, value);
   @$pb.TagNumber(6)
   $core.bool hasDescription() => $_has(4);
   @$pb.TagNumber(6)
@@ -2366,10 +2087,7 @@ class Source extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   VmwareSourceDetails get vmware => $_getN(5);
   @$pb.TagNumber(10)
-  set vmware(VmwareSourceDetails v) {
-    $_setField(10, v);
-  }
-
+  set vmware(VmwareSourceDetails value) => $_setField(10, value);
   @$pb.TagNumber(10)
   $core.bool hasVmware() => $_has(5);
   @$pb.TagNumber(10)
@@ -2381,10 +2099,7 @@ class Source extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   AwsSourceDetails get aws => $_getN(6);
   @$pb.TagNumber(12)
-  set aws(AwsSourceDetails v) {
-    $_setField(12, v);
-  }
-
+  set aws(AwsSourceDetails value) => $_setField(12, value);
   @$pb.TagNumber(12)
   $core.bool hasAws() => $_has(6);
   @$pb.TagNumber(12)
@@ -2402,28 +2117,23 @@ class VmwareSourceDetails extends $pb.GeneratedMessage {
     $core.String? thumbprint,
     $core.String? resolvedVcenterHost,
   }) {
-    final $result = create();
-    if (username != null) {
-      $result.username = username;
-    }
-    if (vcenterIp != null) {
-      $result.vcenterIp = vcenterIp;
-    }
-    if (thumbprint != null) {
-      $result.thumbprint = thumbprint;
-    }
-    if (resolvedVcenterHost != null) {
-      $result.resolvedVcenterHost = resolvedVcenterHost;
-    }
-    return $result;
+    final result = create();
+    if (username != null) result.username = username;
+    if (vcenterIp != null) result.vcenterIp = vcenterIp;
+    if (thumbprint != null) result.thumbprint = thumbprint;
+    if (resolvedVcenterHost != null)
+      result.resolvedVcenterHost = resolvedVcenterHost;
+    return result;
   }
-  VmwareSourceDetails._() : super();
-  factory VmwareSourceDetails.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory VmwareSourceDetails.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  VmwareSourceDetails._();
+
+  factory VmwareSourceDetails.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory VmwareSourceDetails.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'VmwareSourceDetails',
@@ -2437,19 +2147,19 @@ class VmwareSourceDetails extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  VmwareSourceDetails clone() => VmwareSourceDetails()..mergeFromMessage(this);
+  VmwareSourceDetails clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   VmwareSourceDetails copyWith(void Function(VmwareSourceDetails) updates) =>
       super.copyWith((message) => updates(message as VmwareSourceDetails))
           as VmwareSourceDetails;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static VmwareSourceDetails create() => VmwareSourceDetails._();
+  @$core.override
   VmwareSourceDetails createEmptyInstance() => create();
-  static $pb.PbList<VmwareSourceDetails> createRepeated() =>
-      $pb.PbList<VmwareSourceDetails>();
   @$core.pragma('dart2js:noInline')
   static VmwareSourceDetails getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<VmwareSourceDetails>(create);
@@ -2459,10 +2169,7 @@ class VmwareSourceDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get username => $_getSZ(0);
   @$pb.TagNumber(1)
-  set username($core.String v) {
-    $_setString(0, v);
-  }
-
+  set username($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasUsername() => $_has(0);
   @$pb.TagNumber(1)
@@ -2472,10 +2179,7 @@ class VmwareSourceDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get vcenterIp => $_getSZ(1);
   @$pb.TagNumber(3)
-  set vcenterIp($core.String v) {
-    $_setString(1, v);
-  }
-
+  set vcenterIp($core.String value) => $_setString(1, value);
   @$pb.TagNumber(3)
   $core.bool hasVcenterIp() => $_has(1);
   @$pb.TagNumber(3)
@@ -2485,10 +2189,7 @@ class VmwareSourceDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get thumbprint => $_getSZ(2);
   @$pb.TagNumber(4)
-  set thumbprint($core.String v) {
-    $_setString(2, v);
-  }
-
+  set thumbprint($core.String value) => $_setString(2, value);
   @$pb.TagNumber(4)
   $core.bool hasThumbprint() => $_has(2);
   @$pb.TagNumber(4)
@@ -2498,10 +2199,7 @@ class VmwareSourceDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get resolvedVcenterHost => $_getSZ(3);
   @$pb.TagNumber(5)
-  set resolvedVcenterHost($core.String v) {
-    $_setString(3, v);
-  }
-
+  set resolvedVcenterHost($core.String value) => $_setString(3, value);
   @$pb.TagNumber(5)
   $core.bool hasResolvedVcenterHost() => $_has(3);
   @$pb.TagNumber(5)
@@ -2513,20 +2211,20 @@ class AwsSourceDetails_AccessKeyCredentials extends $pb.GeneratedMessage {
   factory AwsSourceDetails_AccessKeyCredentials({
     $core.String? accessKeyId,
   }) {
-    final $result = create();
-    if (accessKeyId != null) {
-      $result.accessKeyId = accessKeyId;
-    }
-    return $result;
+    final result = create();
+    if (accessKeyId != null) result.accessKeyId = accessKeyId;
+    return result;
   }
-  AwsSourceDetails_AccessKeyCredentials._() : super();
+
+  AwsSourceDetails_AccessKeyCredentials._();
+
   factory AwsSourceDetails_AccessKeyCredentials.fromBuffer(
-          $core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory AwsSourceDetails_AccessKeyCredentials.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+          $core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory AwsSourceDetails_AccessKeyCredentials.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'AwsSourceDetails.AccessKeyCredentials',
@@ -2537,8 +2235,7 @@ class AwsSourceDetails_AccessKeyCredentials extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  AwsSourceDetails_AccessKeyCredentials clone() =>
-      AwsSourceDetails_AccessKeyCredentials()..mergeFromMessage(this);
+  AwsSourceDetails_AccessKeyCredentials clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AwsSourceDetails_AccessKeyCredentials copyWith(
           void Function(AwsSourceDetails_AccessKeyCredentials) updates) =>
@@ -2546,14 +2243,14 @@ class AwsSourceDetails_AccessKeyCredentials extends $pb.GeneratedMessage {
               updates(message as AwsSourceDetails_AccessKeyCredentials))
           as AwsSourceDetails_AccessKeyCredentials;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AwsSourceDetails_AccessKeyCredentials create() =>
       AwsSourceDetails_AccessKeyCredentials._();
+  @$core.override
   AwsSourceDetails_AccessKeyCredentials createEmptyInstance() => create();
-  static $pb.PbList<AwsSourceDetails_AccessKeyCredentials> createRepeated() =>
-      $pb.PbList<AwsSourceDetails_AccessKeyCredentials>();
   @$core.pragma('dart2js:noInline')
   static AwsSourceDetails_AccessKeyCredentials getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
@@ -2564,10 +2261,7 @@ class AwsSourceDetails_AccessKeyCredentials extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get accessKeyId => $_getSZ(0);
   @$pb.TagNumber(1)
-  set accessKeyId($core.String v) {
-    $_setString(0, v);
-  }
-
+  set accessKeyId($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasAccessKeyId() => $_has(0);
   @$pb.TagNumber(1)
@@ -2580,22 +2274,20 @@ class AwsSourceDetails_Tag extends $pb.GeneratedMessage {
     $core.String? key,
     $core.String? value,
   }) {
-    final $result = create();
-    if (key != null) {
-      $result.key = key;
-    }
-    if (value != null) {
-      $result.value = value;
-    }
-    return $result;
+    final result = create();
+    if (key != null) result.key = key;
+    if (value != null) result.value = value;
+    return result;
   }
-  AwsSourceDetails_Tag._() : super();
-  factory AwsSourceDetails_Tag.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory AwsSourceDetails_Tag.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  AwsSourceDetails_Tag._();
+
+  factory AwsSourceDetails_Tag.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory AwsSourceDetails_Tag.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'AwsSourceDetails.Tag',
@@ -2607,20 +2299,19 @@ class AwsSourceDetails_Tag extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  AwsSourceDetails_Tag clone() =>
-      AwsSourceDetails_Tag()..mergeFromMessage(this);
+  AwsSourceDetails_Tag clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AwsSourceDetails_Tag copyWith(void Function(AwsSourceDetails_Tag) updates) =>
       super.copyWith((message) => updates(message as AwsSourceDetails_Tag))
           as AwsSourceDetails_Tag;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AwsSourceDetails_Tag create() => AwsSourceDetails_Tag._();
+  @$core.override
   AwsSourceDetails_Tag createEmptyInstance() => create();
-  static $pb.PbList<AwsSourceDetails_Tag> createRepeated() =>
-      $pb.PbList<AwsSourceDetails_Tag>();
   @$core.pragma('dart2js:noInline')
   static AwsSourceDetails_Tag getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<AwsSourceDetails_Tag>(create);
@@ -2630,10 +2321,7 @@ class AwsSourceDetails_Tag extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get key => $_getSZ(0);
   @$pb.TagNumber(1)
-  set key($core.String v) {
-    $_setString(0, v);
-  }
-
+  set key($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasKey() => $_has(0);
   @$pb.TagNumber(1)
@@ -2643,10 +2331,7 @@ class AwsSourceDetails_Tag extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get value => $_getSZ(1);
   @$pb.TagNumber(2)
-  set value($core.String v) {
-    $_setString(1, v);
-  }
-
+  set value($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasValue() => $_has(1);
   @$pb.TagNumber(2)
@@ -2661,7 +2346,7 @@ class AwsSourceDetails extends $pb.GeneratedMessage {
   factory AwsSourceDetails({
     $core.String? awsRegion,
     AwsSourceDetails_State? state,
-    $9.Status? error,
+    $2.Status? error,
     $core.Iterable<$core.String>? inventorySecurityGroupNames,
     $core.Iterable<$core.MapEntry<$core.String, $core.String>>?
         migrationResourcesUserTags,
@@ -2669,40 +2354,29 @@ class AwsSourceDetails extends $pb.GeneratedMessage {
     $core.Iterable<AwsSourceDetails_Tag>? inventoryTagList,
     AwsSourceDetails_AccessKeyCredentials? accessKeyCreds,
   }) {
-    final $result = create();
-    if (awsRegion != null) {
-      $result.awsRegion = awsRegion;
-    }
-    if (state != null) {
-      $result.state = state;
-    }
-    if (error != null) {
-      $result.error = error;
-    }
-    if (inventorySecurityGroupNames != null) {
-      $result.inventorySecurityGroupNames.addAll(inventorySecurityGroupNames);
-    }
-    if (migrationResourcesUserTags != null) {
-      $result.migrationResourcesUserTags.addEntries(migrationResourcesUserTags);
-    }
-    if (publicIp != null) {
-      $result.publicIp = publicIp;
-    }
-    if (inventoryTagList != null) {
-      $result.inventoryTagList.addAll(inventoryTagList);
-    }
-    if (accessKeyCreds != null) {
-      $result.accessKeyCreds = accessKeyCreds;
-    }
-    return $result;
+    final result = create();
+    if (awsRegion != null) result.awsRegion = awsRegion;
+    if (state != null) result.state = state;
+    if (error != null) result.error = error;
+    if (inventorySecurityGroupNames != null)
+      result.inventorySecurityGroupNames.addAll(inventorySecurityGroupNames);
+    if (migrationResourcesUserTags != null)
+      result.migrationResourcesUserTags.addEntries(migrationResourcesUserTags);
+    if (publicIp != null) result.publicIp = publicIp;
+    if (inventoryTagList != null)
+      result.inventoryTagList.addAll(inventoryTagList);
+    if (accessKeyCreds != null) result.accessKeyCreds = accessKeyCreds;
+    return result;
   }
-  AwsSourceDetails._() : super();
-  factory AwsSourceDetails.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory AwsSourceDetails.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  AwsSourceDetails._();
+
+  factory AwsSourceDetails.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory AwsSourceDetails.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static const $core.Map<$core.int, AwsSourceDetails_CredentialsType>
       _AwsSourceDetails_CredentialsTypeByTag = {
@@ -2716,13 +2390,10 @@ class AwsSourceDetails extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..oo(0, [11])
     ..aOS(3, _omitFieldNames ? '' : 'awsRegion')
-    ..e<AwsSourceDetails_State>(
-        4, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
-        defaultOrMaker: AwsSourceDetails_State.STATE_UNSPECIFIED,
-        valueOf: AwsSourceDetails_State.valueOf,
+    ..aE<AwsSourceDetails_State>(4, _omitFieldNames ? '' : 'state',
         enumValues: AwsSourceDetails_State.values)
-    ..aOM<$9.Status>(5, _omitFieldNames ? '' : 'error',
-        subBuilder: $9.Status.create)
+    ..aOM<$2.Status>(5, _omitFieldNames ? '' : 'error',
+        subBuilder: $2.Status.create)
     ..pPS(7, _omitFieldNames ? '' : 'inventorySecurityGroupNames')
     ..m<$core.String, $core.String>(
         8, _omitFieldNames ? '' : 'migrationResourcesUserTags',
@@ -2732,8 +2403,7 @@ class AwsSourceDetails extends $pb.GeneratedMessage {
         packageName:
             const $pb.PackageName('google.events.cloud.vmmigration.v1'))
     ..aOS(9, _omitFieldNames ? '' : 'publicIp')
-    ..pc<AwsSourceDetails_Tag>(
-        10, _omitFieldNames ? '' : 'inventoryTagList', $pb.PbFieldType.PM,
+    ..pPM<AwsSourceDetails_Tag>(10, _omitFieldNames ? '' : 'inventoryTagList',
         subBuilder: AwsSourceDetails_Tag.create)
     ..aOM<AwsSourceDetails_AccessKeyCredentials>(
         11, _omitFieldNames ? '' : 'accessKeyCreds',
@@ -2741,36 +2411,35 @@ class AwsSourceDetails extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  AwsSourceDetails clone() => AwsSourceDetails()..mergeFromMessage(this);
+  AwsSourceDetails clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AwsSourceDetails copyWith(void Function(AwsSourceDetails) updates) =>
       super.copyWith((message) => updates(message as AwsSourceDetails))
           as AwsSourceDetails;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AwsSourceDetails create() => AwsSourceDetails._();
+  @$core.override
   AwsSourceDetails createEmptyInstance() => create();
-  static $pb.PbList<AwsSourceDetails> createRepeated() =>
-      $pb.PbList<AwsSourceDetails>();
   @$core.pragma('dart2js:noInline')
   static AwsSourceDetails getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<AwsSourceDetails>(create);
   static AwsSourceDetails? _defaultInstance;
 
+  @$pb.TagNumber(11)
   AwsSourceDetails_CredentialsType whichCredentialsType() =>
       _AwsSourceDetails_CredentialsTypeByTag[$_whichOneof(0)]!;
+  @$pb.TagNumber(11)
   void clearCredentialsType() => $_clearField($_whichOneof(0));
 
   /// Immutable. The AWS region that the source VMs will be migrated from.
   @$pb.TagNumber(3)
   $core.String get awsRegion => $_getSZ(0);
   @$pb.TagNumber(3)
-  set awsRegion($core.String v) {
-    $_setString(0, v);
-  }
-
+  set awsRegion($core.String value) => $_setString(0, value);
   @$pb.TagNumber(3)
   $core.bool hasAwsRegion() => $_has(0);
   @$pb.TagNumber(3)
@@ -2780,10 +2449,7 @@ class AwsSourceDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   AwsSourceDetails_State get state => $_getN(1);
   @$pb.TagNumber(4)
-  set state(AwsSourceDetails_State v) {
-    $_setField(4, v);
-  }
-
+  set state(AwsSourceDetails_State value) => $_setField(4, value);
   @$pb.TagNumber(4)
   $core.bool hasState() => $_has(1);
   @$pb.TagNumber(4)
@@ -2792,18 +2458,15 @@ class AwsSourceDetails extends $pb.GeneratedMessage {
   /// Output only. Provides details on the state of the Source in case of an
   /// error.
   @$pb.TagNumber(5)
-  $9.Status get error => $_getN(2);
+  $2.Status get error => $_getN(2);
   @$pb.TagNumber(5)
-  set error($9.Status v) {
-    $_setField(5, v);
-  }
-
+  set error($2.Status value) => $_setField(5, value);
   @$pb.TagNumber(5)
   $core.bool hasError() => $_has(2);
   @$pb.TagNumber(5)
   void clearError() => $_clearField(5);
   @$pb.TagNumber(5)
-  $9.Status ensureError() => $_ensure(2);
+  $2.Status ensureError() => $_ensure(2);
 
   /// AWS security group names to limit the scope of the source
   /// inventory.
@@ -2823,10 +2486,7 @@ class AwsSourceDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.String get publicIp => $_getSZ(5);
   @$pb.TagNumber(9)
-  set publicIp($core.String v) {
-    $_setString(5, v);
-  }
-
+  set publicIp($core.String value) => $_setString(5, value);
   @$pb.TagNumber(9)
   $core.bool hasPublicIp() => $_has(5);
   @$pb.TagNumber(9)
@@ -2840,10 +2500,8 @@ class AwsSourceDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   AwsSourceDetails_AccessKeyCredentials get accessKeyCreds => $_getN(7);
   @$pb.TagNumber(11)
-  set accessKeyCreds(AwsSourceDetails_AccessKeyCredentials v) {
-    $_setField(11, v);
-  }
-
+  set accessKeyCreds(AwsSourceDetails_AccessKeyCredentials value) =>
+      $_setField(11, value);
   @$pb.TagNumber(11)
   $core.bool hasAccessKeyCreds() => $_has(7);
   @$pb.TagNumber(11)
@@ -2858,96 +2516,69 @@ class AwsSourceDetails extends $pb.GeneratedMessage {
 /// migration data transfer.
 class DatacenterConnector extends $pb.GeneratedMessage {
   factory DatacenterConnector({
-    $2.Timestamp? createTime,
-    $2.Timestamp? updateTime,
+    $0.Timestamp? createTime,
+    $0.Timestamp? updateTime,
     $core.String? name,
     $core.String? serviceAccount,
     $core.String? version,
     DatacenterConnector_State? state,
-    $2.Timestamp? stateTime,
+    $0.Timestamp? stateTime,
     $core.String? bucket,
-    $9.Status? error,
+    $2.Status? error,
     $core.String? registrationId,
     $core.String? applianceInfrastructureVersion,
     $core.String? applianceSoftwareVersion,
     AvailableUpdates? availableVersions,
     UpgradeStatus? upgradeStatus,
   }) {
-    final $result = create();
-    if (createTime != null) {
-      $result.createTime = createTime;
-    }
-    if (updateTime != null) {
-      $result.updateTime = updateTime;
-    }
-    if (name != null) {
-      $result.name = name;
-    }
-    if (serviceAccount != null) {
-      $result.serviceAccount = serviceAccount;
-    }
-    if (version != null) {
-      $result.version = version;
-    }
-    if (state != null) {
-      $result.state = state;
-    }
-    if (stateTime != null) {
-      $result.stateTime = stateTime;
-    }
-    if (bucket != null) {
-      $result.bucket = bucket;
-    }
-    if (error != null) {
-      $result.error = error;
-    }
-    if (registrationId != null) {
-      $result.registrationId = registrationId;
-    }
-    if (applianceInfrastructureVersion != null) {
-      $result.applianceInfrastructureVersion = applianceInfrastructureVersion;
-    }
-    if (applianceSoftwareVersion != null) {
-      $result.applianceSoftwareVersion = applianceSoftwareVersion;
-    }
-    if (availableVersions != null) {
-      $result.availableVersions = availableVersions;
-    }
-    if (upgradeStatus != null) {
-      $result.upgradeStatus = upgradeStatus;
-    }
-    return $result;
+    final result = create();
+    if (createTime != null) result.createTime = createTime;
+    if (updateTime != null) result.updateTime = updateTime;
+    if (name != null) result.name = name;
+    if (serviceAccount != null) result.serviceAccount = serviceAccount;
+    if (version != null) result.version = version;
+    if (state != null) result.state = state;
+    if (stateTime != null) result.stateTime = stateTime;
+    if (bucket != null) result.bucket = bucket;
+    if (error != null) result.error = error;
+    if (registrationId != null) result.registrationId = registrationId;
+    if (applianceInfrastructureVersion != null)
+      result.applianceInfrastructureVersion = applianceInfrastructureVersion;
+    if (applianceSoftwareVersion != null)
+      result.applianceSoftwareVersion = applianceSoftwareVersion;
+    if (availableVersions != null) result.availableVersions = availableVersions;
+    if (upgradeStatus != null) result.upgradeStatus = upgradeStatus;
+    return result;
   }
-  DatacenterConnector._() : super();
-  factory DatacenterConnector.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory DatacenterConnector.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  DatacenterConnector._();
+
+  factory DatacenterConnector.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory DatacenterConnector.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'DatacenterConnector',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.vmmigration.v1'),
       createEmptyInstance: create)
-    ..aOM<$2.Timestamp>(1, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(2, _omitFieldNames ? '' : 'updateTime',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$0.Timestamp>(1, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(2, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $0.Timestamp.create)
     ..aOS(3, _omitFieldNames ? '' : 'name')
     ..aOS(5, _omitFieldNames ? '' : 'serviceAccount')
     ..aOS(6, _omitFieldNames ? '' : 'version')
-    ..e<DatacenterConnector_State>(
-        7, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
-        defaultOrMaker: DatacenterConnector_State.STATE_UNSPECIFIED,
-        valueOf: DatacenterConnector_State.valueOf,
+    ..aE<DatacenterConnector_State>(7, _omitFieldNames ? '' : 'state',
         enumValues: DatacenterConnector_State.values)
-    ..aOM<$2.Timestamp>(8, _omitFieldNames ? '' : 'stateTime',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$0.Timestamp>(8, _omitFieldNames ? '' : 'stateTime',
+        subBuilder: $0.Timestamp.create)
     ..aOS(10, _omitFieldNames ? '' : 'bucket')
-    ..aOM<$9.Status>(11, _omitFieldNames ? '' : 'error',
-        subBuilder: $9.Status.create)
+    ..aOM<$2.Status>(11, _omitFieldNames ? '' : 'error',
+        subBuilder: $2.Status.create)
     ..aOS(12, _omitFieldNames ? '' : 'registrationId')
     ..aOS(13, _omitFieldNames ? '' : 'applianceInfrastructureVersion')
     ..aOS(14, _omitFieldNames ? '' : 'applianceSoftwareVersion')
@@ -2958,19 +2589,19 @@ class DatacenterConnector extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  DatacenterConnector clone() => DatacenterConnector()..mergeFromMessage(this);
+  DatacenterConnector clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DatacenterConnector copyWith(void Function(DatacenterConnector) updates) =>
       super.copyWith((message) => updates(message as DatacenterConnector))
           as DatacenterConnector;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DatacenterConnector create() => DatacenterConnector._();
+  @$core.override
   DatacenterConnector createEmptyInstance() => create();
-  static $pb.PbList<DatacenterConnector> createRepeated() =>
-      $pb.PbList<DatacenterConnector>();
   @$core.pragma('dart2js:noInline')
   static DatacenterConnector getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<DatacenterConnector>(create);
@@ -2979,42 +2610,33 @@ class DatacenterConnector extends $pb.GeneratedMessage {
   /// Output only. The time the connector was created (as an API call, not when
   /// it was actually installed).
   @$pb.TagNumber(1)
-  $2.Timestamp get createTime => $_getN(0);
+  $0.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
-  set createTime($2.Timestamp v) {
-    $_setField(1, v);
-  }
-
+  set createTime($0.Timestamp value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasCreateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreateTime() => $_clearField(1);
   @$pb.TagNumber(1)
-  $2.Timestamp ensureCreateTime() => $_ensure(0);
+  $0.Timestamp ensureCreateTime() => $_ensure(0);
 
   /// Output only. The last time the connector was updated with an API call.
   @$pb.TagNumber(2)
-  $2.Timestamp get updateTime => $_getN(1);
+  $0.Timestamp get updateTime => $_getN(1);
   @$pb.TagNumber(2)
-  set updateTime($2.Timestamp v) {
-    $_setField(2, v);
-  }
-
+  set updateTime($0.Timestamp value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasUpdateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateTime() => $_clearField(2);
   @$pb.TagNumber(2)
-  $2.Timestamp ensureUpdateTime() => $_ensure(1);
+  $0.Timestamp ensureUpdateTime() => $_ensure(1);
 
   /// Output only. The connector's name.
   @$pb.TagNumber(3)
   $core.String get name => $_getSZ(2);
   @$pb.TagNumber(3)
-  set name($core.String v) {
-    $_setString(2, v);
-  }
-
+  set name($core.String value) => $_setString(2, value);
   @$pb.TagNumber(3)
   $core.bool hasName() => $_has(2);
   @$pb.TagNumber(3)
@@ -3025,10 +2647,7 @@ class DatacenterConnector extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get serviceAccount => $_getSZ(3);
   @$pb.TagNumber(5)
-  set serviceAccount($core.String v) {
-    $_setString(3, v);
-  }
-
+  set serviceAccount($core.String value) => $_setString(3, value);
   @$pb.TagNumber(5)
   $core.bool hasServiceAccount() => $_has(3);
   @$pb.TagNumber(5)
@@ -3039,10 +2658,7 @@ class DatacenterConnector extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get version => $_getSZ(4);
   @$pb.TagNumber(6)
-  set version($core.String v) {
-    $_setString(4, v);
-  }
-
+  set version($core.String value) => $_setString(4, value);
   @$pb.TagNumber(6)
   $core.bool hasVersion() => $_has(4);
   @$pb.TagNumber(6)
@@ -3053,10 +2669,7 @@ class DatacenterConnector extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   DatacenterConnector_State get state => $_getN(5);
   @$pb.TagNumber(7)
-  set state(DatacenterConnector_State v) {
-    $_setField(7, v);
-  }
-
+  set state(DatacenterConnector_State value) => $_setField(7, value);
   @$pb.TagNumber(7)
   $core.bool hasState() => $_has(5);
   @$pb.TagNumber(7)
@@ -3064,28 +2677,22 @@ class DatacenterConnector extends $pb.GeneratedMessage {
 
   /// Output only. The time the state was last set.
   @$pb.TagNumber(8)
-  $2.Timestamp get stateTime => $_getN(6);
+  $0.Timestamp get stateTime => $_getN(6);
   @$pb.TagNumber(8)
-  set stateTime($2.Timestamp v) {
-    $_setField(8, v);
-  }
-
+  set stateTime($0.Timestamp value) => $_setField(8, value);
   @$pb.TagNumber(8)
   $core.bool hasStateTime() => $_has(6);
   @$pb.TagNumber(8)
   void clearStateTime() => $_clearField(8);
   @$pb.TagNumber(8)
-  $2.Timestamp ensureStateTime() => $_ensure(6);
+  $0.Timestamp ensureStateTime() => $_ensure(6);
 
   /// Output only. The communication channel between the datacenter connector and
   /// Google Cloud.
   @$pb.TagNumber(10)
   $core.String get bucket => $_getSZ(7);
   @$pb.TagNumber(10)
-  set bucket($core.String v) {
-    $_setString(7, v);
-  }
-
+  set bucket($core.String value) => $_setString(7, value);
   @$pb.TagNumber(10)
   $core.bool hasBucket() => $_has(7);
   @$pb.TagNumber(10)
@@ -3094,18 +2701,15 @@ class DatacenterConnector extends $pb.GeneratedMessage {
   /// Output only. Provides details on the state of the Datacenter Connector in
   /// case of an error.
   @$pb.TagNumber(11)
-  $9.Status get error => $_getN(8);
+  $2.Status get error => $_getN(8);
   @$pb.TagNumber(11)
-  set error($9.Status v) {
-    $_setField(11, v);
-  }
-
+  set error($2.Status value) => $_setField(11, value);
   @$pb.TagNumber(11)
   $core.bool hasError() => $_has(8);
   @$pb.TagNumber(11)
   void clearError() => $_clearField(11);
   @$pb.TagNumber(11)
-  $9.Status ensureError() => $_ensure(8);
+  $2.Status ensureError() => $_ensure(8);
 
   /// Immutable. A unique key for this connector. This key is internal to the OVA
   /// connector and is supplied with its creation during the registration process
@@ -3113,10 +2717,7 @@ class DatacenterConnector extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.String get registrationId => $_getSZ(9);
   @$pb.TagNumber(12)
-  set registrationId($core.String v) {
-    $_setString(9, v);
-  }
-
+  set registrationId($core.String value) => $_setString(9, value);
   @$pb.TagNumber(12)
   $core.bool hasRegistrationId() => $_has(9);
   @$pb.TagNumber(12)
@@ -3128,10 +2729,8 @@ class DatacenterConnector extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   $core.String get applianceInfrastructureVersion => $_getSZ(10);
   @$pb.TagNumber(13)
-  set applianceInfrastructureVersion($core.String v) {
-    $_setString(10, v);
-  }
-
+  set applianceInfrastructureVersion($core.String value) =>
+      $_setString(10, value);
   @$pb.TagNumber(13)
   $core.bool hasApplianceInfrastructureVersion() => $_has(10);
   @$pb.TagNumber(13)
@@ -3143,10 +2742,7 @@ class DatacenterConnector extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   $core.String get applianceSoftwareVersion => $_getSZ(11);
   @$pb.TagNumber(14)
-  set applianceSoftwareVersion($core.String v) {
-    $_setString(11, v);
-  }
-
+  set applianceSoftwareVersion($core.String value) => $_setString(11, value);
   @$pb.TagNumber(14)
   $core.bool hasApplianceSoftwareVersion() => $_has(11);
   @$pb.TagNumber(14)
@@ -3156,10 +2752,7 @@ class DatacenterConnector extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   AvailableUpdates get availableVersions => $_getN(12);
   @$pb.TagNumber(15)
-  set availableVersions(AvailableUpdates v) {
-    $_setField(15, v);
-  }
-
+  set availableVersions(AvailableUpdates value) => $_setField(15, value);
   @$pb.TagNumber(15)
   $core.bool hasAvailableVersions() => $_has(12);
   @$pb.TagNumber(15)
@@ -3171,10 +2764,7 @@ class DatacenterConnector extends $pb.GeneratedMessage {
   @$pb.TagNumber(16)
   UpgradeStatus get upgradeStatus => $_getN(13);
   @$pb.TagNumber(16)
-  set upgradeStatus(UpgradeStatus v) {
-    $_setField(16, v);
-  }
-
+  set upgradeStatus(UpgradeStatus value) => $_setField(16, value);
   @$pb.TagNumber(16)
   $core.bool hasUpgradeStatus() => $_has(13);
   @$pb.TagNumber(16)
@@ -3188,35 +2778,27 @@ class UpgradeStatus extends $pb.GeneratedMessage {
   factory UpgradeStatus({
     $core.String? version,
     UpgradeStatus_State? state,
-    $9.Status? error,
-    $2.Timestamp? startTime,
+    $2.Status? error,
+    $0.Timestamp? startTime,
     $core.String? previousVersion,
   }) {
-    final $result = create();
-    if (version != null) {
-      $result.version = version;
-    }
-    if (state != null) {
-      $result.state = state;
-    }
-    if (error != null) {
-      $result.error = error;
-    }
-    if (startTime != null) {
-      $result.startTime = startTime;
-    }
-    if (previousVersion != null) {
-      $result.previousVersion = previousVersion;
-    }
-    return $result;
+    final result = create();
+    if (version != null) result.version = version;
+    if (state != null) result.state = state;
+    if (error != null) result.error = error;
+    if (startTime != null) result.startTime = startTime;
+    if (previousVersion != null) result.previousVersion = previousVersion;
+    return result;
   }
-  UpgradeStatus._() : super();
-  factory UpgradeStatus.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory UpgradeStatus.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  UpgradeStatus._();
+
+  factory UpgradeStatus.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory UpgradeStatus.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'UpgradeStatus',
@@ -3224,32 +2806,29 @@ class UpgradeStatus extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.events.cloud.vmmigration.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'version')
-    ..e<UpgradeStatus_State>(
-        2, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
-        defaultOrMaker: UpgradeStatus_State.STATE_UNSPECIFIED,
-        valueOf: UpgradeStatus_State.valueOf,
+    ..aE<UpgradeStatus_State>(2, _omitFieldNames ? '' : 'state',
         enumValues: UpgradeStatus_State.values)
-    ..aOM<$9.Status>(3, _omitFieldNames ? '' : 'error',
-        subBuilder: $9.Status.create)
-    ..aOM<$2.Timestamp>(4, _omitFieldNames ? '' : 'startTime',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$2.Status>(3, _omitFieldNames ? '' : 'error',
+        subBuilder: $2.Status.create)
+    ..aOM<$0.Timestamp>(4, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $0.Timestamp.create)
     ..aOS(5, _omitFieldNames ? '' : 'previousVersion')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  UpgradeStatus clone() => UpgradeStatus()..mergeFromMessage(this);
+  UpgradeStatus clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   UpgradeStatus copyWith(void Function(UpgradeStatus) updates) =>
       super.copyWith((message) => updates(message as UpgradeStatus))
           as UpgradeStatus;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static UpgradeStatus create() => UpgradeStatus._();
+  @$core.override
   UpgradeStatus createEmptyInstance() => create();
-  static $pb.PbList<UpgradeStatus> createRepeated() =>
-      $pb.PbList<UpgradeStatus>();
   @$core.pragma('dart2js:noInline')
   static UpgradeStatus getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<UpgradeStatus>(create);
@@ -3259,10 +2838,7 @@ class UpgradeStatus extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get version => $_getSZ(0);
   @$pb.TagNumber(1)
-  set version($core.String v) {
-    $_setString(0, v);
-  }
-
+  set version($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasVersion() => $_has(0);
   @$pb.TagNumber(1)
@@ -3272,10 +2848,7 @@ class UpgradeStatus extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   UpgradeStatus_State get state => $_getN(1);
   @$pb.TagNumber(2)
-  set state(UpgradeStatus_State v) {
-    $_setField(2, v);
-  }
-
+  set state(UpgradeStatus_State value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasState() => $_has(1);
   @$pb.TagNumber(2)
@@ -3283,42 +2856,33 @@ class UpgradeStatus extends $pb.GeneratedMessage {
 
   /// Provides details on the state of the upgrade operation in case of an error.
   @$pb.TagNumber(3)
-  $9.Status get error => $_getN(2);
+  $2.Status get error => $_getN(2);
   @$pb.TagNumber(3)
-  set error($9.Status v) {
-    $_setField(3, v);
-  }
-
+  set error($2.Status value) => $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasError() => $_has(2);
   @$pb.TagNumber(3)
   void clearError() => $_clearField(3);
   @$pb.TagNumber(3)
-  $9.Status ensureError() => $_ensure(2);
+  $2.Status ensureError() => $_ensure(2);
 
   /// The time the operation was started.
   @$pb.TagNumber(4)
-  $2.Timestamp get startTime => $_getN(3);
+  $0.Timestamp get startTime => $_getN(3);
   @$pb.TagNumber(4)
-  set startTime($2.Timestamp v) {
-    $_setField(4, v);
-  }
-
+  set startTime($0.Timestamp value) => $_setField(4, value);
   @$pb.TagNumber(4)
   $core.bool hasStartTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearStartTime() => $_clearField(4);
   @$pb.TagNumber(4)
-  $2.Timestamp ensureStartTime() => $_ensure(3);
+  $0.Timestamp ensureStartTime() => $_ensure(3);
 
   /// The version from which we upgraded.
   @$pb.TagNumber(5)
   $core.String get previousVersion => $_getSZ(4);
   @$pb.TagNumber(5)
-  set previousVersion($core.String v) {
-    $_setString(4, v);
-  }
-
+  set previousVersion($core.String value) => $_setString(4, value);
   @$pb.TagNumber(5)
   $core.bool hasPreviousVersion() => $_has(4);
   @$pb.TagNumber(5)
@@ -3331,22 +2895,21 @@ class AvailableUpdates extends $pb.GeneratedMessage {
     ApplianceVersion? newDeployableAppliance,
     ApplianceVersion? inPlaceUpdate,
   }) {
-    final $result = create();
-    if (newDeployableAppliance != null) {
-      $result.newDeployableAppliance = newDeployableAppliance;
-    }
-    if (inPlaceUpdate != null) {
-      $result.inPlaceUpdate = inPlaceUpdate;
-    }
-    return $result;
+    final result = create();
+    if (newDeployableAppliance != null)
+      result.newDeployableAppliance = newDeployableAppliance;
+    if (inPlaceUpdate != null) result.inPlaceUpdate = inPlaceUpdate;
+    return result;
   }
-  AvailableUpdates._() : super();
-  factory AvailableUpdates.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory AvailableUpdates.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  AvailableUpdates._();
+
+  factory AvailableUpdates.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory AvailableUpdates.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'AvailableUpdates',
@@ -3360,19 +2923,19 @@ class AvailableUpdates extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  AvailableUpdates clone() => AvailableUpdates()..mergeFromMessage(this);
+  AvailableUpdates clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AvailableUpdates copyWith(void Function(AvailableUpdates) updates) =>
       super.copyWith((message) => updates(message as AvailableUpdates))
           as AvailableUpdates;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AvailableUpdates create() => AvailableUpdates._();
+  @$core.override
   AvailableUpdates createEmptyInstance() => create();
-  static $pb.PbList<AvailableUpdates> createRepeated() =>
-      $pb.PbList<AvailableUpdates>();
   @$core.pragma('dart2js:noInline')
   static AvailableUpdates getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<AvailableUpdates>(create);
@@ -3384,10 +2947,7 @@ class AvailableUpdates extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   ApplianceVersion get newDeployableAppliance => $_getN(0);
   @$pb.TagNumber(1)
-  set newDeployableAppliance(ApplianceVersion v) {
-    $_setField(1, v);
-  }
-
+  set newDeployableAppliance(ApplianceVersion value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasNewDeployableAppliance() => $_has(0);
   @$pb.TagNumber(1)
@@ -3401,10 +2961,7 @@ class AvailableUpdates extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   ApplianceVersion get inPlaceUpdate => $_getN(1);
   @$pb.TagNumber(2)
-  set inPlaceUpdate(ApplianceVersion v) {
-    $_setField(2, v);
-  }
-
+  set inPlaceUpdate(ApplianceVersion value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasInPlaceUpdate() => $_has(1);
   @$pb.TagNumber(2)
@@ -3421,28 +2978,22 @@ class ApplianceVersion extends $pb.GeneratedMessage {
     $core.bool? critical,
     $core.String? releaseNotesUri,
   }) {
-    final $result = create();
-    if (version != null) {
-      $result.version = version;
-    }
-    if (uri != null) {
-      $result.uri = uri;
-    }
-    if (critical != null) {
-      $result.critical = critical;
-    }
-    if (releaseNotesUri != null) {
-      $result.releaseNotesUri = releaseNotesUri;
-    }
-    return $result;
+    final result = create();
+    if (version != null) result.version = version;
+    if (uri != null) result.uri = uri;
+    if (critical != null) result.critical = critical;
+    if (releaseNotesUri != null) result.releaseNotesUri = releaseNotesUri;
+    return result;
   }
-  ApplianceVersion._() : super();
-  factory ApplianceVersion.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ApplianceVersion.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  ApplianceVersion._();
+
+  factory ApplianceVersion.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ApplianceVersion.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'ApplianceVersion',
@@ -3456,19 +3007,19 @@ class ApplianceVersion extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ApplianceVersion clone() => ApplianceVersion()..mergeFromMessage(this);
+  ApplianceVersion clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ApplianceVersion copyWith(void Function(ApplianceVersion) updates) =>
       super.copyWith((message) => updates(message as ApplianceVersion))
           as ApplianceVersion;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ApplianceVersion create() => ApplianceVersion._();
+  @$core.override
   ApplianceVersion createEmptyInstance() => create();
-  static $pb.PbList<ApplianceVersion> createRepeated() =>
-      $pb.PbList<ApplianceVersion>();
   @$core.pragma('dart2js:noInline')
   static ApplianceVersion getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ApplianceVersion>(create);
@@ -3478,10 +3029,7 @@ class ApplianceVersion extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get version => $_getSZ(0);
   @$pb.TagNumber(1)
-  set version($core.String v) {
-    $_setString(0, v);
-  }
-
+  set version($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasVersion() => $_has(0);
   @$pb.TagNumber(1)
@@ -3491,10 +3039,7 @@ class ApplianceVersion extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get uri => $_getSZ(1);
   @$pb.TagNumber(2)
-  set uri($core.String v) {
-    $_setString(1, v);
-  }
-
+  set uri($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasUri() => $_has(1);
   @$pb.TagNumber(2)
@@ -3504,10 +3049,7 @@ class ApplianceVersion extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool get critical => $_getBF(2);
   @$pb.TagNumber(3)
-  set critical($core.bool v) {
-    $_setBool(2, v);
-  }
-
+  set critical($core.bool value) => $_setBool(2, value);
   @$pb.TagNumber(3)
   $core.bool hasCritical() => $_has(2);
   @$pb.TagNumber(3)
@@ -3517,10 +3059,7 @@ class ApplianceVersion extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get releaseNotesUri => $_getSZ(3);
   @$pb.TagNumber(4)
-  set releaseNotesUri($core.String v) {
-    $_setString(3, v);
-  }
-
+  set releaseNotesUri($core.String value) => $_setString(3, value);
   @$pb.TagNumber(4)
   $core.bool hasReleaseNotesUri() => $_has(3);
   @$pb.TagNumber(4)
@@ -3543,52 +3082,32 @@ class VmwareVmDetails extends $pb.GeneratedMessage {
     $fixnum.Int64? committedStorageMb,
     VmwareVmDetails_BootOption? bootOption,
   }) {
-    final $result = create();
-    if (vmId != null) {
-      $result.vmId = vmId;
-    }
-    if (datacenterId != null) {
-      $result.datacenterId = datacenterId;
-    }
-    if (datacenterDescription != null) {
-      $result.datacenterDescription = datacenterDescription;
-    }
-    if (uuid != null) {
-      $result.uuid = uuid;
-    }
-    if (displayName != null) {
-      $result.displayName = displayName;
-    }
-    if (powerState != null) {
-      $result.powerState = powerState;
-    }
-    if (cpuCount != null) {
-      $result.cpuCount = cpuCount;
-    }
-    if (memoryMb != null) {
-      $result.memoryMb = memoryMb;
-    }
-    if (diskCount != null) {
-      $result.diskCount = diskCount;
-    }
-    if (guestDescription != null) {
-      $result.guestDescription = guestDescription;
-    }
-    if (committedStorageMb != null) {
-      $result.committedStorageMb = committedStorageMb;
-    }
-    if (bootOption != null) {
-      $result.bootOption = bootOption;
-    }
-    return $result;
+    final result = create();
+    if (vmId != null) result.vmId = vmId;
+    if (datacenterId != null) result.datacenterId = datacenterId;
+    if (datacenterDescription != null)
+      result.datacenterDescription = datacenterDescription;
+    if (uuid != null) result.uuid = uuid;
+    if (displayName != null) result.displayName = displayName;
+    if (powerState != null) result.powerState = powerState;
+    if (cpuCount != null) result.cpuCount = cpuCount;
+    if (memoryMb != null) result.memoryMb = memoryMb;
+    if (diskCount != null) result.diskCount = diskCount;
+    if (guestDescription != null) result.guestDescription = guestDescription;
+    if (committedStorageMb != null)
+      result.committedStorageMb = committedStorageMb;
+    if (bootOption != null) result.bootOption = bootOption;
+    return result;
   }
-  VmwareVmDetails._() : super();
-  factory VmwareVmDetails.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory VmwareVmDetails.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  VmwareVmDetails._();
+
+  factory VmwareVmDetails.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory VmwareVmDetails.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'VmwareVmDetails',
@@ -3600,37 +3119,31 @@ class VmwareVmDetails extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'datacenterDescription')
     ..aOS(4, _omitFieldNames ? '' : 'uuid')
     ..aOS(5, _omitFieldNames ? '' : 'displayName')
-    ..e<VmwareVmDetails_PowerState>(
-        6, _omitFieldNames ? '' : 'powerState', $pb.PbFieldType.OE,
-        defaultOrMaker: VmwareVmDetails_PowerState.POWER_STATE_UNSPECIFIED,
-        valueOf: VmwareVmDetails_PowerState.valueOf,
+    ..aE<VmwareVmDetails_PowerState>(6, _omitFieldNames ? '' : 'powerState',
         enumValues: VmwareVmDetails_PowerState.values)
-    ..a<$core.int>(7, _omitFieldNames ? '' : 'cpuCount', $pb.PbFieldType.O3)
-    ..a<$core.int>(8, _omitFieldNames ? '' : 'memoryMb', $pb.PbFieldType.O3)
-    ..a<$core.int>(9, _omitFieldNames ? '' : 'diskCount', $pb.PbFieldType.O3)
+    ..aI(7, _omitFieldNames ? '' : 'cpuCount')
+    ..aI(8, _omitFieldNames ? '' : 'memoryMb')
+    ..aI(9, _omitFieldNames ? '' : 'diskCount')
     ..aOS(11, _omitFieldNames ? '' : 'guestDescription')
     ..aInt64(12, _omitFieldNames ? '' : 'committedStorageMb')
-    ..e<VmwareVmDetails_BootOption>(
-        13, _omitFieldNames ? '' : 'bootOption', $pb.PbFieldType.OE,
-        defaultOrMaker: VmwareVmDetails_BootOption.BOOT_OPTION_UNSPECIFIED,
-        valueOf: VmwareVmDetails_BootOption.valueOf,
+    ..aE<VmwareVmDetails_BootOption>(13, _omitFieldNames ? '' : 'bootOption',
         enumValues: VmwareVmDetails_BootOption.values)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  VmwareVmDetails clone() => VmwareVmDetails()..mergeFromMessage(this);
+  VmwareVmDetails clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   VmwareVmDetails copyWith(void Function(VmwareVmDetails) updates) =>
       super.copyWith((message) => updates(message as VmwareVmDetails))
           as VmwareVmDetails;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static VmwareVmDetails create() => VmwareVmDetails._();
+  @$core.override
   VmwareVmDetails createEmptyInstance() => create();
-  static $pb.PbList<VmwareVmDetails> createRepeated() =>
-      $pb.PbList<VmwareVmDetails>();
   @$core.pragma('dart2js:noInline')
   static VmwareVmDetails getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<VmwareVmDetails>(create);
@@ -3641,10 +3154,7 @@ class VmwareVmDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get vmId => $_getSZ(0);
   @$pb.TagNumber(1)
-  set vmId($core.String v) {
-    $_setString(0, v);
-  }
-
+  set vmId($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasVmId() => $_has(0);
   @$pb.TagNumber(1)
@@ -3654,10 +3164,7 @@ class VmwareVmDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get datacenterId => $_getSZ(1);
   @$pb.TagNumber(2)
-  set datacenterId($core.String v) {
-    $_setString(1, v);
-  }
-
+  set datacenterId($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasDatacenterId() => $_has(1);
   @$pb.TagNumber(2)
@@ -3667,10 +3174,7 @@ class VmwareVmDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get datacenterDescription => $_getSZ(2);
   @$pb.TagNumber(3)
-  set datacenterDescription($core.String v) {
-    $_setString(2, v);
-  }
-
+  set datacenterDescription($core.String value) => $_setString(2, value);
   @$pb.TagNumber(3)
   $core.bool hasDatacenterDescription() => $_has(2);
   @$pb.TagNumber(3)
@@ -3680,10 +3184,7 @@ class VmwareVmDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get uuid => $_getSZ(3);
   @$pb.TagNumber(4)
-  set uuid($core.String v) {
-    $_setString(3, v);
-  }
-
+  set uuid($core.String value) => $_setString(3, value);
   @$pb.TagNumber(4)
   $core.bool hasUuid() => $_has(3);
   @$pb.TagNumber(4)
@@ -3693,10 +3194,7 @@ class VmwareVmDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get displayName => $_getSZ(4);
   @$pb.TagNumber(5)
-  set displayName($core.String v) {
-    $_setString(4, v);
-  }
-
+  set displayName($core.String value) => $_setString(4, value);
   @$pb.TagNumber(5)
   $core.bool hasDisplayName() => $_has(4);
   @$pb.TagNumber(5)
@@ -3706,10 +3204,7 @@ class VmwareVmDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   VmwareVmDetails_PowerState get powerState => $_getN(5);
   @$pb.TagNumber(6)
-  set powerState(VmwareVmDetails_PowerState v) {
-    $_setField(6, v);
-  }
-
+  set powerState(VmwareVmDetails_PowerState value) => $_setField(6, value);
   @$pb.TagNumber(6)
   $core.bool hasPowerState() => $_has(5);
   @$pb.TagNumber(6)
@@ -3719,10 +3214,7 @@ class VmwareVmDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.int get cpuCount => $_getIZ(6);
   @$pb.TagNumber(7)
-  set cpuCount($core.int v) {
-    $_setSignedInt32(6, v);
-  }
-
+  set cpuCount($core.int value) => $_setSignedInt32(6, value);
   @$pb.TagNumber(7)
   $core.bool hasCpuCount() => $_has(6);
   @$pb.TagNumber(7)
@@ -3732,10 +3224,7 @@ class VmwareVmDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.int get memoryMb => $_getIZ(7);
   @$pb.TagNumber(8)
-  set memoryMb($core.int v) {
-    $_setSignedInt32(7, v);
-  }
-
+  set memoryMb($core.int value) => $_setSignedInt32(7, value);
   @$pb.TagNumber(8)
   $core.bool hasMemoryMb() => $_has(7);
   @$pb.TagNumber(8)
@@ -3745,10 +3234,7 @@ class VmwareVmDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.int get diskCount => $_getIZ(8);
   @$pb.TagNumber(9)
-  set diskCount($core.int v) {
-    $_setSignedInt32(8, v);
-  }
-
+  set diskCount($core.int value) => $_setSignedInt32(8, value);
   @$pb.TagNumber(9)
   $core.bool hasDiskCount() => $_has(8);
   @$pb.TagNumber(9)
@@ -3760,10 +3246,7 @@ class VmwareVmDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.String get guestDescription => $_getSZ(9);
   @$pb.TagNumber(11)
-  set guestDescription($core.String v) {
-    $_setString(9, v);
-  }
-
+  set guestDescription($core.String value) => $_setString(9, value);
   @$pb.TagNumber(11)
   $core.bool hasGuestDescription() => $_has(9);
   @$pb.TagNumber(11)
@@ -3773,10 +3256,7 @@ class VmwareVmDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $fixnum.Int64 get committedStorageMb => $_getI64(10);
   @$pb.TagNumber(12)
-  set committedStorageMb($fixnum.Int64 v) {
-    $_setInt64(10, v);
-  }
-
+  set committedStorageMb($fixnum.Int64 value) => $_setInt64(10, value);
   @$pb.TagNumber(12)
   $core.bool hasCommittedStorageMb() => $_has(10);
   @$pb.TagNumber(12)
@@ -3786,10 +3266,7 @@ class VmwareVmDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   VmwareVmDetails_BootOption get bootOption => $_getN(11);
   @$pb.TagNumber(13)
-  set bootOption(VmwareVmDetails_BootOption v) {
-    $_setField(13, v);
-  }
-
+  set bootOption(VmwareVmDetails_BootOption value) => $_setField(13, value);
   @$pb.TagNumber(13)
   $core.bool hasBootOption() => $_has(11);
   @$pb.TagNumber(13)
@@ -3803,54 +3280,36 @@ class UtilizationReport extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? displayName,
     UtilizationReport_State? state,
-    $2.Timestamp? stateTime,
-    $9.Status? error,
-    $2.Timestamp? createTime,
+    $0.Timestamp? stateTime,
+    $2.Status? error,
+    $0.Timestamp? createTime,
     UtilizationReport_TimeFrame? timeFrame,
-    $2.Timestamp? frameEndTime,
+    $0.Timestamp? frameEndTime,
     $core.int? vmCount,
     $core.Iterable<VmUtilizationInfo>? vms,
   }) {
-    final $result = create();
-    if (name != null) {
-      $result.name = name;
-    }
-    if (displayName != null) {
-      $result.displayName = displayName;
-    }
-    if (state != null) {
-      $result.state = state;
-    }
-    if (stateTime != null) {
-      $result.stateTime = stateTime;
-    }
-    if (error != null) {
-      $result.error = error;
-    }
-    if (createTime != null) {
-      $result.createTime = createTime;
-    }
-    if (timeFrame != null) {
-      $result.timeFrame = timeFrame;
-    }
-    if (frameEndTime != null) {
-      $result.frameEndTime = frameEndTime;
-    }
-    if (vmCount != null) {
-      $result.vmCount = vmCount;
-    }
-    if (vms != null) {
-      $result.vms.addAll(vms);
-    }
-    return $result;
+    final result = create();
+    if (name != null) result.name = name;
+    if (displayName != null) result.displayName = displayName;
+    if (state != null) result.state = state;
+    if (stateTime != null) result.stateTime = stateTime;
+    if (error != null) result.error = error;
+    if (createTime != null) result.createTime = createTime;
+    if (timeFrame != null) result.timeFrame = timeFrame;
+    if (frameEndTime != null) result.frameEndTime = frameEndTime;
+    if (vmCount != null) result.vmCount = vmCount;
+    if (vms != null) result.vms.addAll(vms);
+    return result;
   }
-  UtilizationReport._() : super();
-  factory UtilizationReport.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory UtilizationReport.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  UtilizationReport._();
+
+  factory UtilizationReport.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory UtilizationReport.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'UtilizationReport',
@@ -3859,44 +3318,37 @@ class UtilizationReport extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
-    ..e<UtilizationReport_State>(
-        3, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
-        defaultOrMaker: UtilizationReport_State.STATE_UNSPECIFIED,
-        valueOf: UtilizationReport_State.valueOf,
+    ..aE<UtilizationReport_State>(3, _omitFieldNames ? '' : 'state',
         enumValues: UtilizationReport_State.values)
-    ..aOM<$2.Timestamp>(4, _omitFieldNames ? '' : 'stateTime',
-        subBuilder: $2.Timestamp.create)
-    ..aOM<$9.Status>(5, _omitFieldNames ? '' : 'error',
-        subBuilder: $9.Status.create)
-    ..aOM<$2.Timestamp>(6, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $2.Timestamp.create)
-    ..e<UtilizationReport_TimeFrame>(
-        7, _omitFieldNames ? '' : 'timeFrame', $pb.PbFieldType.OE,
-        defaultOrMaker: UtilizationReport_TimeFrame.TIME_FRAME_UNSPECIFIED,
-        valueOf: UtilizationReport_TimeFrame.valueOf,
+    ..aOM<$0.Timestamp>(4, _omitFieldNames ? '' : 'stateTime',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$2.Status>(5, _omitFieldNames ? '' : 'error',
+        subBuilder: $2.Status.create)
+    ..aOM<$0.Timestamp>(6, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $0.Timestamp.create)
+    ..aE<UtilizationReport_TimeFrame>(7, _omitFieldNames ? '' : 'timeFrame',
         enumValues: UtilizationReport_TimeFrame.values)
-    ..aOM<$2.Timestamp>(8, _omitFieldNames ? '' : 'frameEndTime',
-        subBuilder: $2.Timestamp.create)
-    ..a<$core.int>(9, _omitFieldNames ? '' : 'vmCount', $pb.PbFieldType.O3)
-    ..pc<VmUtilizationInfo>(
-        10, _omitFieldNames ? '' : 'vms', $pb.PbFieldType.PM,
+    ..aOM<$0.Timestamp>(8, _omitFieldNames ? '' : 'frameEndTime',
+        subBuilder: $0.Timestamp.create)
+    ..aI(9, _omitFieldNames ? '' : 'vmCount')
+    ..pPM<VmUtilizationInfo>(10, _omitFieldNames ? '' : 'vms',
         subBuilder: VmUtilizationInfo.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  UtilizationReport clone() => UtilizationReport()..mergeFromMessage(this);
+  UtilizationReport clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   UtilizationReport copyWith(void Function(UtilizationReport) updates) =>
       super.copyWith((message) => updates(message as UtilizationReport))
           as UtilizationReport;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static UtilizationReport create() => UtilizationReport._();
+  @$core.override
   UtilizationReport createEmptyInstance() => create();
-  static $pb.PbList<UtilizationReport> createRepeated() =>
-      $pb.PbList<UtilizationReport>();
   @$core.pragma('dart2js:noInline')
   static UtilizationReport getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<UtilizationReport>(create);
@@ -3906,10 +3358,7 @@ class UtilizationReport extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) {
-    $_setString(0, v);
-  }
-
+  set name($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -3919,10 +3368,7 @@ class UtilizationReport extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get displayName => $_getSZ(1);
   @$pb.TagNumber(2)
-  set displayName($core.String v) {
-    $_setString(1, v);
-  }
-
+  set displayName($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasDisplayName() => $_has(1);
   @$pb.TagNumber(2)
@@ -3932,10 +3378,7 @@ class UtilizationReport extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   UtilizationReport_State get state => $_getN(2);
   @$pb.TagNumber(3)
-  set state(UtilizationReport_State v) {
-    $_setField(3, v);
-  }
-
+  set state(UtilizationReport_State value) => $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasState() => $_has(2);
   @$pb.TagNumber(3)
@@ -3943,59 +3386,47 @@ class UtilizationReport extends $pb.GeneratedMessage {
 
   /// Output only. The time the state was last set.
   @$pb.TagNumber(4)
-  $2.Timestamp get stateTime => $_getN(3);
+  $0.Timestamp get stateTime => $_getN(3);
   @$pb.TagNumber(4)
-  set stateTime($2.Timestamp v) {
-    $_setField(4, v);
-  }
-
+  set stateTime($0.Timestamp value) => $_setField(4, value);
   @$pb.TagNumber(4)
   $core.bool hasStateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearStateTime() => $_clearField(4);
   @$pb.TagNumber(4)
-  $2.Timestamp ensureStateTime() => $_ensure(3);
+  $0.Timestamp ensureStateTime() => $_ensure(3);
 
   /// Output only. Provides details on the state of the report in case of an
   /// error.
   @$pb.TagNumber(5)
-  $9.Status get error => $_getN(4);
+  $2.Status get error => $_getN(4);
   @$pb.TagNumber(5)
-  set error($9.Status v) {
-    $_setField(5, v);
-  }
-
+  set error($2.Status value) => $_setField(5, value);
   @$pb.TagNumber(5)
   $core.bool hasError() => $_has(4);
   @$pb.TagNumber(5)
   void clearError() => $_clearField(5);
   @$pb.TagNumber(5)
-  $9.Status ensureError() => $_ensure(4);
+  $2.Status ensureError() => $_ensure(4);
 
   /// Output only. The time the report was created (this refers to the time of
   /// the request, not the time the report creation completed).
   @$pb.TagNumber(6)
-  $2.Timestamp get createTime => $_getN(5);
+  $0.Timestamp get createTime => $_getN(5);
   @$pb.TagNumber(6)
-  set createTime($2.Timestamp v) {
-    $_setField(6, v);
-  }
-
+  set createTime($0.Timestamp value) => $_setField(6, value);
   @$pb.TagNumber(6)
   $core.bool hasCreateTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearCreateTime() => $_clearField(6);
   @$pb.TagNumber(6)
-  $2.Timestamp ensureCreateTime() => $_ensure(5);
+  $0.Timestamp ensureCreateTime() => $_ensure(5);
 
   /// Time frame of the report.
   @$pb.TagNumber(7)
   UtilizationReport_TimeFrame get timeFrame => $_getN(6);
   @$pb.TagNumber(7)
-  set timeFrame(UtilizationReport_TimeFrame v) {
-    $_setField(7, v);
-  }
-
+  set timeFrame(UtilizationReport_TimeFrame value) => $_setField(7, value);
   @$pb.TagNumber(7)
   $core.bool hasTimeFrame() => $_has(6);
   @$pb.TagNumber(7)
@@ -4006,27 +3437,21 @@ class UtilizationReport extends $pb.GeneratedMessage {
   /// is 2021/01/20 and the time frame is WEEK then the report covers the week
   /// between 2021/01/20 and 2021/01/14.
   @$pb.TagNumber(8)
-  $2.Timestamp get frameEndTime => $_getN(7);
+  $0.Timestamp get frameEndTime => $_getN(7);
   @$pb.TagNumber(8)
-  set frameEndTime($2.Timestamp v) {
-    $_setField(8, v);
-  }
-
+  set frameEndTime($0.Timestamp value) => $_setField(8, value);
   @$pb.TagNumber(8)
   $core.bool hasFrameEndTime() => $_has(7);
   @$pb.TagNumber(8)
   void clearFrameEndTime() => $_clearField(8);
   @$pb.TagNumber(8)
-  $2.Timestamp ensureFrameEndTime() => $_ensure(7);
+  $0.Timestamp ensureFrameEndTime() => $_ensure(7);
 
   /// Output only. Total number of VMs included in the report.
   @$pb.TagNumber(9)
   $core.int get vmCount => $_getIZ(8);
   @$pb.TagNumber(9)
-  set vmCount($core.int v) {
-    $_setSignedInt32(8, v);
-  }
-
+  set vmCount($core.int value) => $_setSignedInt32(8, value);
   @$pb.TagNumber(9)
   $core.bool hasVmCount() => $_has(8);
   @$pb.TagNumber(9)
@@ -4049,25 +3474,21 @@ class VmUtilizationInfo extends $pb.GeneratedMessage {
     VmUtilizationMetrics? utilization,
     $core.String? vmId,
   }) {
-    final $result = create();
-    if (vmwareVmDetails != null) {
-      $result.vmwareVmDetails = vmwareVmDetails;
-    }
-    if (utilization != null) {
-      $result.utilization = utilization;
-    }
-    if (vmId != null) {
-      $result.vmId = vmId;
-    }
-    return $result;
+    final result = create();
+    if (vmwareVmDetails != null) result.vmwareVmDetails = vmwareVmDetails;
+    if (utilization != null) result.utilization = utilization;
+    if (vmId != null) result.vmId = vmId;
+    return result;
   }
-  VmUtilizationInfo._() : super();
-  factory VmUtilizationInfo.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory VmUtilizationInfo.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  VmUtilizationInfo._();
+
+  factory VmUtilizationInfo.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory VmUtilizationInfo.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static const $core.Map<$core.int, VmUtilizationInfo_VmDetails>
       _VmUtilizationInfo_VmDetailsByTag = {
@@ -4088,36 +3509,35 @@ class VmUtilizationInfo extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  VmUtilizationInfo clone() => VmUtilizationInfo()..mergeFromMessage(this);
+  VmUtilizationInfo clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   VmUtilizationInfo copyWith(void Function(VmUtilizationInfo) updates) =>
       super.copyWith((message) => updates(message as VmUtilizationInfo))
           as VmUtilizationInfo;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static VmUtilizationInfo create() => VmUtilizationInfo._();
+  @$core.override
   VmUtilizationInfo createEmptyInstance() => create();
-  static $pb.PbList<VmUtilizationInfo> createRepeated() =>
-      $pb.PbList<VmUtilizationInfo>();
   @$core.pragma('dart2js:noInline')
   static VmUtilizationInfo getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<VmUtilizationInfo>(create);
   static VmUtilizationInfo? _defaultInstance;
 
+  @$pb.TagNumber(1)
   VmUtilizationInfo_VmDetails whichVmDetails() =>
       _VmUtilizationInfo_VmDetailsByTag[$_whichOneof(0)]!;
+  @$pb.TagNumber(1)
   void clearVmDetails() => $_clearField($_whichOneof(0));
 
   /// The description of the VM in a Source of type Vmware.
   @$pb.TagNumber(1)
   VmwareVmDetails get vmwareVmDetails => $_getN(0);
   @$pb.TagNumber(1)
-  set vmwareVmDetails(VmwareVmDetails v) {
-    $_setField(1, v);
-  }
-
+  set vmwareVmDetails(VmwareVmDetails value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasVmwareVmDetails() => $_has(0);
   @$pb.TagNumber(1)
@@ -4129,10 +3549,7 @@ class VmUtilizationInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   VmUtilizationMetrics get utilization => $_getN(1);
   @$pb.TagNumber(2)
-  set utilization(VmUtilizationMetrics v) {
-    $_setField(2, v);
-  }
-
+  set utilization(VmUtilizationMetrics value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasUtilization() => $_has(1);
   @$pb.TagNumber(2)
@@ -4144,10 +3561,7 @@ class VmUtilizationInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get vmId => $_getSZ(2);
   @$pb.TagNumber(3)
-  set vmId($core.String v) {
-    $_setString(2, v);
-  }
-
+  set vmId($core.String value) => $_setString(2, value);
   @$pb.TagNumber(3)
   $core.bool hasVmId() => $_has(2);
   @$pb.TagNumber(3)
@@ -4166,54 +3580,40 @@ class VmUtilizationMetrics extends $pb.GeneratedMessage {
     $fixnum.Int64? networkThroughputMaxKbps,
     $fixnum.Int64? networkThroughputAverageKbps,
   }) {
-    final $result = create();
-    if (cpuMaxPercent != null) {
-      $result.cpuMaxPercent = cpuMaxPercent;
-    }
-    if (cpuAveragePercent != null) {
-      $result.cpuAveragePercent = cpuAveragePercent;
-    }
-    if (memoryMaxPercent != null) {
-      $result.memoryMaxPercent = memoryMaxPercent;
-    }
-    if (memoryAveragePercent != null) {
-      $result.memoryAveragePercent = memoryAveragePercent;
-    }
-    if (diskIoRateMaxKbps != null) {
-      $result.diskIoRateMaxKbps = diskIoRateMaxKbps;
-    }
-    if (diskIoRateAverageKbps != null) {
-      $result.diskIoRateAverageKbps = diskIoRateAverageKbps;
-    }
-    if (networkThroughputMaxKbps != null) {
-      $result.networkThroughputMaxKbps = networkThroughputMaxKbps;
-    }
-    if (networkThroughputAverageKbps != null) {
-      $result.networkThroughputAverageKbps = networkThroughputAverageKbps;
-    }
-    return $result;
+    final result = create();
+    if (cpuMaxPercent != null) result.cpuMaxPercent = cpuMaxPercent;
+    if (cpuAveragePercent != null) result.cpuAveragePercent = cpuAveragePercent;
+    if (memoryMaxPercent != null) result.memoryMaxPercent = memoryMaxPercent;
+    if (memoryAveragePercent != null)
+      result.memoryAveragePercent = memoryAveragePercent;
+    if (diskIoRateMaxKbps != null) result.diskIoRateMaxKbps = diskIoRateMaxKbps;
+    if (diskIoRateAverageKbps != null)
+      result.diskIoRateAverageKbps = diskIoRateAverageKbps;
+    if (networkThroughputMaxKbps != null)
+      result.networkThroughputMaxKbps = networkThroughputMaxKbps;
+    if (networkThroughputAverageKbps != null)
+      result.networkThroughputAverageKbps = networkThroughputAverageKbps;
+    return result;
   }
-  VmUtilizationMetrics._() : super();
-  factory VmUtilizationMetrics.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory VmUtilizationMetrics.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  VmUtilizationMetrics._();
+
+  factory VmUtilizationMetrics.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory VmUtilizationMetrics.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'VmUtilizationMetrics',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.vmmigration.v1'),
       createEmptyInstance: create)
-    ..a<$core.int>(
-        9, _omitFieldNames ? '' : 'cpuMaxPercent', $pb.PbFieldType.O3)
-    ..a<$core.int>(
-        10, _omitFieldNames ? '' : 'cpuAveragePercent', $pb.PbFieldType.O3)
-    ..a<$core.int>(
-        11, _omitFieldNames ? '' : 'memoryMaxPercent', $pb.PbFieldType.O3)
-    ..a<$core.int>(
-        12, _omitFieldNames ? '' : 'memoryAveragePercent', $pb.PbFieldType.O3)
+    ..aI(9, _omitFieldNames ? '' : 'cpuMaxPercent')
+    ..aI(10, _omitFieldNames ? '' : 'cpuAveragePercent')
+    ..aI(11, _omitFieldNames ? '' : 'memoryMaxPercent')
+    ..aI(12, _omitFieldNames ? '' : 'memoryAveragePercent')
     ..aInt64(13, _omitFieldNames ? '' : 'diskIoRateMaxKbps')
     ..aInt64(14, _omitFieldNames ? '' : 'diskIoRateAverageKbps')
     ..aInt64(15, _omitFieldNames ? '' : 'networkThroughputMaxKbps')
@@ -4221,20 +3621,19 @@ class VmUtilizationMetrics extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  VmUtilizationMetrics clone() =>
-      VmUtilizationMetrics()..mergeFromMessage(this);
+  VmUtilizationMetrics clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   VmUtilizationMetrics copyWith(void Function(VmUtilizationMetrics) updates) =>
       super.copyWith((message) => updates(message as VmUtilizationMetrics))
           as VmUtilizationMetrics;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static VmUtilizationMetrics create() => VmUtilizationMetrics._();
+  @$core.override
   VmUtilizationMetrics createEmptyInstance() => create();
-  static $pb.PbList<VmUtilizationMetrics> createRepeated() =>
-      $pb.PbList<VmUtilizationMetrics>();
   @$core.pragma('dart2js:noInline')
   static VmUtilizationMetrics getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<VmUtilizationMetrics>(create);
@@ -4244,10 +3643,7 @@ class VmUtilizationMetrics extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.int get cpuMaxPercent => $_getIZ(0);
   @$pb.TagNumber(9)
-  set cpuMaxPercent($core.int v) {
-    $_setSignedInt32(0, v);
-  }
-
+  set cpuMaxPercent($core.int value) => $_setSignedInt32(0, value);
   @$pb.TagNumber(9)
   $core.bool hasCpuMaxPercent() => $_has(0);
   @$pb.TagNumber(9)
@@ -4257,10 +3653,7 @@ class VmUtilizationMetrics extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.int get cpuAveragePercent => $_getIZ(1);
   @$pb.TagNumber(10)
-  set cpuAveragePercent($core.int v) {
-    $_setSignedInt32(1, v);
-  }
-
+  set cpuAveragePercent($core.int value) => $_setSignedInt32(1, value);
   @$pb.TagNumber(10)
   $core.bool hasCpuAveragePercent() => $_has(1);
   @$pb.TagNumber(10)
@@ -4270,10 +3663,7 @@ class VmUtilizationMetrics extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.int get memoryMaxPercent => $_getIZ(2);
   @$pb.TagNumber(11)
-  set memoryMaxPercent($core.int v) {
-    $_setSignedInt32(2, v);
-  }
-
+  set memoryMaxPercent($core.int value) => $_setSignedInt32(2, value);
   @$pb.TagNumber(11)
   $core.bool hasMemoryMaxPercent() => $_has(2);
   @$pb.TagNumber(11)
@@ -4283,10 +3673,7 @@ class VmUtilizationMetrics extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.int get memoryAveragePercent => $_getIZ(3);
   @$pb.TagNumber(12)
-  set memoryAveragePercent($core.int v) {
-    $_setSignedInt32(3, v);
-  }
-
+  set memoryAveragePercent($core.int value) => $_setSignedInt32(3, value);
   @$pb.TagNumber(12)
   $core.bool hasMemoryAveragePercent() => $_has(3);
   @$pb.TagNumber(12)
@@ -4296,10 +3683,7 @@ class VmUtilizationMetrics extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   $fixnum.Int64 get diskIoRateMaxKbps => $_getI64(4);
   @$pb.TagNumber(13)
-  set diskIoRateMaxKbps($fixnum.Int64 v) {
-    $_setInt64(4, v);
-  }
-
+  set diskIoRateMaxKbps($fixnum.Int64 value) => $_setInt64(4, value);
   @$pb.TagNumber(13)
   $core.bool hasDiskIoRateMaxKbps() => $_has(4);
   @$pb.TagNumber(13)
@@ -4309,10 +3693,7 @@ class VmUtilizationMetrics extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   $fixnum.Int64 get diskIoRateAverageKbps => $_getI64(5);
   @$pb.TagNumber(14)
-  set diskIoRateAverageKbps($fixnum.Int64 v) {
-    $_setInt64(5, v);
-  }
-
+  set diskIoRateAverageKbps($fixnum.Int64 value) => $_setInt64(5, value);
   @$pb.TagNumber(14)
   $core.bool hasDiskIoRateAverageKbps() => $_has(5);
   @$pb.TagNumber(14)
@@ -4323,10 +3704,7 @@ class VmUtilizationMetrics extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   $fixnum.Int64 get networkThroughputMaxKbps => $_getI64(6);
   @$pb.TagNumber(15)
-  set networkThroughputMaxKbps($fixnum.Int64 v) {
-    $_setInt64(6, v);
-  }
-
+  set networkThroughputMaxKbps($fixnum.Int64 value) => $_setInt64(6, value);
   @$pb.TagNumber(15)
   $core.bool hasNetworkThroughputMaxKbps() => $_has(6);
   @$pb.TagNumber(15)
@@ -4337,10 +3715,7 @@ class VmUtilizationMetrics extends $pb.GeneratedMessage {
   @$pb.TagNumber(16)
   $fixnum.Int64 get networkThroughputAverageKbps => $_getI64(7);
   @$pb.TagNumber(16)
-  set networkThroughputAverageKbps($fixnum.Int64 v) {
-    $_setInt64(7, v);
-  }
-
+  set networkThroughputAverageKbps($fixnum.Int64 value) => $_setInt64(7, value);
   @$pb.TagNumber(16)
   $core.bool hasNetworkThroughputAverageKbps() => $_has(7);
   @$pb.TagNumber(16)
@@ -4370,70 +3745,38 @@ class ComputeEngineTargetDefaults extends $pb.GeneratedMessage {
     $core.Iterable<$core.String>? additionalLicenses,
     $core.String? hostname,
   }) {
-    final $result = create();
-    if (vmName != null) {
-      $result.vmName = vmName;
-    }
-    if (targetProject != null) {
-      $result.targetProject = targetProject;
-    }
-    if (zone != null) {
-      $result.zone = zone;
-    }
-    if (machineTypeSeries != null) {
-      $result.machineTypeSeries = machineTypeSeries;
-    }
-    if (machineType != null) {
-      $result.machineType = machineType;
-    }
-    if (networkTags != null) {
-      $result.networkTags.addAll(networkTags);
-    }
-    if (networkInterfaces != null) {
-      $result.networkInterfaces.addAll(networkInterfaces);
-    }
-    if (serviceAccount != null) {
-      $result.serviceAccount = serviceAccount;
-    }
-    if (diskType != null) {
-      $result.diskType = diskType;
-    }
-    if (labels != null) {
-      $result.labels.addEntries(labels);
-    }
-    if (licenseType != null) {
-      $result.licenseType = licenseType;
-    }
-    if (appliedLicense != null) {
-      $result.appliedLicense = appliedLicense;
-    }
-    if (computeScheduling != null) {
-      $result.computeScheduling = computeScheduling;
-    }
-    if (secureBoot != null) {
-      $result.secureBoot = secureBoot;
-    }
-    if (bootOption != null) {
-      $result.bootOption = bootOption;
-    }
-    if (metadata != null) {
-      $result.metadata.addEntries(metadata);
-    }
-    if (additionalLicenses != null) {
-      $result.additionalLicenses.addAll(additionalLicenses);
-    }
-    if (hostname != null) {
-      $result.hostname = hostname;
-    }
-    return $result;
+    final result = create();
+    if (vmName != null) result.vmName = vmName;
+    if (targetProject != null) result.targetProject = targetProject;
+    if (zone != null) result.zone = zone;
+    if (machineTypeSeries != null) result.machineTypeSeries = machineTypeSeries;
+    if (machineType != null) result.machineType = machineType;
+    if (networkTags != null) result.networkTags.addAll(networkTags);
+    if (networkInterfaces != null)
+      result.networkInterfaces.addAll(networkInterfaces);
+    if (serviceAccount != null) result.serviceAccount = serviceAccount;
+    if (diskType != null) result.diskType = diskType;
+    if (labels != null) result.labels.addEntries(labels);
+    if (licenseType != null) result.licenseType = licenseType;
+    if (appliedLicense != null) result.appliedLicense = appliedLicense;
+    if (computeScheduling != null) result.computeScheduling = computeScheduling;
+    if (secureBoot != null) result.secureBoot = secureBoot;
+    if (bootOption != null) result.bootOption = bootOption;
+    if (metadata != null) result.metadata.addEntries(metadata);
+    if (additionalLicenses != null)
+      result.additionalLicenses.addAll(additionalLicenses);
+    if (hostname != null) result.hostname = hostname;
+    return result;
   }
-  ComputeEngineTargetDefaults._() : super();
-  factory ComputeEngineTargetDefaults.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ComputeEngineTargetDefaults.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  ComputeEngineTargetDefaults._();
+
+  factory ComputeEngineTargetDefaults.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ComputeEngineTargetDefaults.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'ComputeEngineTargetDefaults',
@@ -4446,15 +3789,10 @@ class ComputeEngineTargetDefaults extends $pb.GeneratedMessage {
     ..aOS(4, _omitFieldNames ? '' : 'machineTypeSeries')
     ..aOS(5, _omitFieldNames ? '' : 'machineType')
     ..pPS(6, _omitFieldNames ? '' : 'networkTags')
-    ..pc<NetworkInterface>(
-        7, _omitFieldNames ? '' : 'networkInterfaces', $pb.PbFieldType.PM,
+    ..pPM<NetworkInterface>(7, _omitFieldNames ? '' : 'networkInterfaces',
         subBuilder: NetworkInterface.create)
     ..aOS(8, _omitFieldNames ? '' : 'serviceAccount')
-    ..e<ComputeEngineDiskType>(
-        9, _omitFieldNames ? '' : 'diskType', $pb.PbFieldType.OE,
-        defaultOrMaker:
-            ComputeEngineDiskType.COMPUTE_ENGINE_DISK_TYPE_UNSPECIFIED,
-        valueOf: ComputeEngineDiskType.valueOf,
+    ..aE<ComputeEngineDiskType>(9, _omitFieldNames ? '' : 'diskType',
         enumValues: ComputeEngineDiskType.values)
     ..m<$core.String, $core.String>(10, _omitFieldNames ? '' : 'labels',
         entryClassName: 'ComputeEngineTargetDefaults.LabelsEntry',
@@ -4462,22 +3800,14 @@ class ComputeEngineTargetDefaults extends $pb.GeneratedMessage {
         valueFieldType: $pb.PbFieldType.OS,
         packageName:
             const $pb.PackageName('google.events.cloud.vmmigration.v1'))
-    ..e<ComputeEngineLicenseType>(
-        11, _omitFieldNames ? '' : 'licenseType', $pb.PbFieldType.OE,
-        defaultOrMaker:
-            ComputeEngineLicenseType.COMPUTE_ENGINE_LICENSE_TYPE_DEFAULT,
-        valueOf: ComputeEngineLicenseType.valueOf,
+    ..aE<ComputeEngineLicenseType>(11, _omitFieldNames ? '' : 'licenseType',
         enumValues: ComputeEngineLicenseType.values)
     ..aOM<AppliedLicense>(12, _omitFieldNames ? '' : 'appliedLicense',
         subBuilder: AppliedLicense.create)
     ..aOM<ComputeScheduling>(13, _omitFieldNames ? '' : 'computeScheduling',
         subBuilder: ComputeScheduling.create)
     ..aOB(14, _omitFieldNames ? '' : 'secureBoot')
-    ..e<ComputeEngineBootOption>(
-        15, _omitFieldNames ? '' : 'bootOption', $pb.PbFieldType.OE,
-        defaultOrMaker:
-            ComputeEngineBootOption.COMPUTE_ENGINE_BOOT_OPTION_UNSPECIFIED,
-        valueOf: ComputeEngineBootOption.valueOf,
+    ..aE<ComputeEngineBootOption>(15, _omitFieldNames ? '' : 'bootOption',
         enumValues: ComputeEngineBootOption.values)
     ..m<$core.String, $core.String>(16, _omitFieldNames ? '' : 'metadata',
         entryClassName: 'ComputeEngineTargetDefaults.MetadataEntry',
@@ -4490,8 +3820,7 @@ class ComputeEngineTargetDefaults extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ComputeEngineTargetDefaults clone() =>
-      ComputeEngineTargetDefaults()..mergeFromMessage(this);
+  ComputeEngineTargetDefaults clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ComputeEngineTargetDefaults copyWith(
           void Function(ComputeEngineTargetDefaults) updates) =>
@@ -4499,14 +3828,14 @@ class ComputeEngineTargetDefaults extends $pb.GeneratedMessage {
               (message) => updates(message as ComputeEngineTargetDefaults))
           as ComputeEngineTargetDefaults;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ComputeEngineTargetDefaults create() =>
       ComputeEngineTargetDefaults._();
+  @$core.override
   ComputeEngineTargetDefaults createEmptyInstance() => create();
-  static $pb.PbList<ComputeEngineTargetDefaults> createRepeated() =>
-      $pb.PbList<ComputeEngineTargetDefaults>();
   @$core.pragma('dart2js:noInline')
   static ComputeEngineTargetDefaults getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ComputeEngineTargetDefaults>(create);
@@ -4516,10 +3845,7 @@ class ComputeEngineTargetDefaults extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get vmName => $_getSZ(0);
   @$pb.TagNumber(1)
-  set vmName($core.String v) {
-    $_setString(0, v);
-  }
-
+  set vmName($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasVmName() => $_has(0);
   @$pb.TagNumber(1)
@@ -4530,10 +3856,7 @@ class ComputeEngineTargetDefaults extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get targetProject => $_getSZ(1);
   @$pb.TagNumber(2)
-  set targetProject($core.String v) {
-    $_setString(1, v);
-  }
-
+  set targetProject($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasTargetProject() => $_has(1);
   @$pb.TagNumber(2)
@@ -4543,10 +3866,7 @@ class ComputeEngineTargetDefaults extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get zone => $_getSZ(2);
   @$pb.TagNumber(3)
-  set zone($core.String v) {
-    $_setString(2, v);
-  }
-
+  set zone($core.String value) => $_setString(2, value);
   @$pb.TagNumber(3)
   $core.bool hasZone() => $_has(2);
   @$pb.TagNumber(3)
@@ -4556,10 +3876,7 @@ class ComputeEngineTargetDefaults extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get machineTypeSeries => $_getSZ(3);
   @$pb.TagNumber(4)
-  set machineTypeSeries($core.String v) {
-    $_setString(3, v);
-  }
-
+  set machineTypeSeries($core.String value) => $_setString(3, value);
   @$pb.TagNumber(4)
   $core.bool hasMachineTypeSeries() => $_has(3);
   @$pb.TagNumber(4)
@@ -4569,10 +3886,7 @@ class ComputeEngineTargetDefaults extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get machineType => $_getSZ(4);
   @$pb.TagNumber(5)
-  set machineType($core.String v) {
-    $_setString(4, v);
-  }
-
+  set machineType($core.String value) => $_setString(4, value);
   @$pb.TagNumber(5)
   $core.bool hasMachineType() => $_has(4);
   @$pb.TagNumber(5)
@@ -4590,10 +3904,7 @@ class ComputeEngineTargetDefaults extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.String get serviceAccount => $_getSZ(7);
   @$pb.TagNumber(8)
-  set serviceAccount($core.String v) {
-    $_setString(7, v);
-  }
-
+  set serviceAccount($core.String value) => $_setString(7, value);
   @$pb.TagNumber(8)
   $core.bool hasServiceAccount() => $_has(7);
   @$pb.TagNumber(8)
@@ -4603,10 +3914,7 @@ class ComputeEngineTargetDefaults extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   ComputeEngineDiskType get diskType => $_getN(8);
   @$pb.TagNumber(9)
-  set diskType(ComputeEngineDiskType v) {
-    $_setField(9, v);
-  }
-
+  set diskType(ComputeEngineDiskType value) => $_setField(9, value);
   @$pb.TagNumber(9)
   $core.bool hasDiskType() => $_has(8);
   @$pb.TagNumber(9)
@@ -4620,10 +3928,7 @@ class ComputeEngineTargetDefaults extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   ComputeEngineLicenseType get licenseType => $_getN(10);
   @$pb.TagNumber(11)
-  set licenseType(ComputeEngineLicenseType v) {
-    $_setField(11, v);
-  }
-
+  set licenseType(ComputeEngineLicenseType value) => $_setField(11, value);
   @$pb.TagNumber(11)
   $core.bool hasLicenseType() => $_has(10);
   @$pb.TagNumber(11)
@@ -4633,10 +3938,7 @@ class ComputeEngineTargetDefaults extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   AppliedLicense get appliedLicense => $_getN(11);
   @$pb.TagNumber(12)
-  set appliedLicense(AppliedLicense v) {
-    $_setField(12, v);
-  }
-
+  set appliedLicense(AppliedLicense value) => $_setField(12, value);
   @$pb.TagNumber(12)
   $core.bool hasAppliedLicense() => $_has(11);
   @$pb.TagNumber(12)
@@ -4648,10 +3950,7 @@ class ComputeEngineTargetDefaults extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   ComputeScheduling get computeScheduling => $_getN(12);
   @$pb.TagNumber(13)
-  set computeScheduling(ComputeScheduling v) {
-    $_setField(13, v);
-  }
-
+  set computeScheduling(ComputeScheduling value) => $_setField(13, value);
   @$pb.TagNumber(13)
   $core.bool hasComputeScheduling() => $_has(12);
   @$pb.TagNumber(13)
@@ -4664,10 +3963,7 @@ class ComputeEngineTargetDefaults extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   $core.bool get secureBoot => $_getBF(13);
   @$pb.TagNumber(14)
-  set secureBoot($core.bool v) {
-    $_setBool(13, v);
-  }
-
+  set secureBoot($core.bool value) => $_setBool(13, value);
   @$pb.TagNumber(14)
   $core.bool hasSecureBoot() => $_has(13);
   @$pb.TagNumber(14)
@@ -4677,10 +3973,7 @@ class ComputeEngineTargetDefaults extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   ComputeEngineBootOption get bootOption => $_getN(14);
   @$pb.TagNumber(15)
-  set bootOption(ComputeEngineBootOption v) {
-    $_setField(15, v);
-  }
-
+  set bootOption(ComputeEngineBootOption value) => $_setField(15, value);
   @$pb.TagNumber(15)
   $core.bool hasBootOption() => $_has(14);
   @$pb.TagNumber(15)
@@ -4698,10 +3991,7 @@ class ComputeEngineTargetDefaults extends $pb.GeneratedMessage {
   @$pb.TagNumber(18)
   $core.String get hostname => $_getSZ(17);
   @$pb.TagNumber(18)
-  set hostname($core.String v) {
-    $_setString(17, v);
-  }
-
+  set hostname($core.String value) => $_setString(17, value);
   @$pb.TagNumber(18)
   $core.bool hasHostname() => $_has(17);
   @$pb.TagNumber(18)
@@ -4731,70 +4021,38 @@ class ComputeEngineTargetDetails extends $pb.GeneratedMessage {
     $core.Iterable<$core.String>? additionalLicenses,
     $core.String? hostname,
   }) {
-    final $result = create();
-    if (vmName != null) {
-      $result.vmName = vmName;
-    }
-    if (project != null) {
-      $result.project = project;
-    }
-    if (zone != null) {
-      $result.zone = zone;
-    }
-    if (machineTypeSeries != null) {
-      $result.machineTypeSeries = machineTypeSeries;
-    }
-    if (machineType != null) {
-      $result.machineType = machineType;
-    }
-    if (networkTags != null) {
-      $result.networkTags.addAll(networkTags);
-    }
-    if (networkInterfaces != null) {
-      $result.networkInterfaces.addAll(networkInterfaces);
-    }
-    if (serviceAccount != null) {
-      $result.serviceAccount = serviceAccount;
-    }
-    if (diskType != null) {
-      $result.diskType = diskType;
-    }
-    if (labels != null) {
-      $result.labels.addEntries(labels);
-    }
-    if (licenseType != null) {
-      $result.licenseType = licenseType;
-    }
-    if (appliedLicense != null) {
-      $result.appliedLicense = appliedLicense;
-    }
-    if (computeScheduling != null) {
-      $result.computeScheduling = computeScheduling;
-    }
-    if (secureBoot != null) {
-      $result.secureBoot = secureBoot;
-    }
-    if (bootOption != null) {
-      $result.bootOption = bootOption;
-    }
-    if (metadata != null) {
-      $result.metadata.addEntries(metadata);
-    }
-    if (additionalLicenses != null) {
-      $result.additionalLicenses.addAll(additionalLicenses);
-    }
-    if (hostname != null) {
-      $result.hostname = hostname;
-    }
-    return $result;
+    final result = create();
+    if (vmName != null) result.vmName = vmName;
+    if (project != null) result.project = project;
+    if (zone != null) result.zone = zone;
+    if (machineTypeSeries != null) result.machineTypeSeries = machineTypeSeries;
+    if (machineType != null) result.machineType = machineType;
+    if (networkTags != null) result.networkTags.addAll(networkTags);
+    if (networkInterfaces != null)
+      result.networkInterfaces.addAll(networkInterfaces);
+    if (serviceAccount != null) result.serviceAccount = serviceAccount;
+    if (diskType != null) result.diskType = diskType;
+    if (labels != null) result.labels.addEntries(labels);
+    if (licenseType != null) result.licenseType = licenseType;
+    if (appliedLicense != null) result.appliedLicense = appliedLicense;
+    if (computeScheduling != null) result.computeScheduling = computeScheduling;
+    if (secureBoot != null) result.secureBoot = secureBoot;
+    if (bootOption != null) result.bootOption = bootOption;
+    if (metadata != null) result.metadata.addEntries(metadata);
+    if (additionalLicenses != null)
+      result.additionalLicenses.addAll(additionalLicenses);
+    if (hostname != null) result.hostname = hostname;
+    return result;
   }
-  ComputeEngineTargetDetails._() : super();
-  factory ComputeEngineTargetDetails.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ComputeEngineTargetDetails.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  ComputeEngineTargetDetails._();
+
+  factory ComputeEngineTargetDetails.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ComputeEngineTargetDetails.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'ComputeEngineTargetDetails',
@@ -4807,15 +4065,10 @@ class ComputeEngineTargetDetails extends $pb.GeneratedMessage {
     ..aOS(4, _omitFieldNames ? '' : 'machineTypeSeries')
     ..aOS(5, _omitFieldNames ? '' : 'machineType')
     ..pPS(6, _omitFieldNames ? '' : 'networkTags')
-    ..pc<NetworkInterface>(
-        7, _omitFieldNames ? '' : 'networkInterfaces', $pb.PbFieldType.PM,
+    ..pPM<NetworkInterface>(7, _omitFieldNames ? '' : 'networkInterfaces',
         subBuilder: NetworkInterface.create)
     ..aOS(8, _omitFieldNames ? '' : 'serviceAccount')
-    ..e<ComputeEngineDiskType>(
-        9, _omitFieldNames ? '' : 'diskType', $pb.PbFieldType.OE,
-        defaultOrMaker:
-            ComputeEngineDiskType.COMPUTE_ENGINE_DISK_TYPE_UNSPECIFIED,
-        valueOf: ComputeEngineDiskType.valueOf,
+    ..aE<ComputeEngineDiskType>(9, _omitFieldNames ? '' : 'diskType',
         enumValues: ComputeEngineDiskType.values)
     ..m<$core.String, $core.String>(10, _omitFieldNames ? '' : 'labels',
         entryClassName: 'ComputeEngineTargetDetails.LabelsEntry',
@@ -4823,22 +4076,14 @@ class ComputeEngineTargetDetails extends $pb.GeneratedMessage {
         valueFieldType: $pb.PbFieldType.OS,
         packageName:
             const $pb.PackageName('google.events.cloud.vmmigration.v1'))
-    ..e<ComputeEngineLicenseType>(
-        11, _omitFieldNames ? '' : 'licenseType', $pb.PbFieldType.OE,
-        defaultOrMaker:
-            ComputeEngineLicenseType.COMPUTE_ENGINE_LICENSE_TYPE_DEFAULT,
-        valueOf: ComputeEngineLicenseType.valueOf,
+    ..aE<ComputeEngineLicenseType>(11, _omitFieldNames ? '' : 'licenseType',
         enumValues: ComputeEngineLicenseType.values)
     ..aOM<AppliedLicense>(12, _omitFieldNames ? '' : 'appliedLicense',
         subBuilder: AppliedLicense.create)
     ..aOM<ComputeScheduling>(13, _omitFieldNames ? '' : 'computeScheduling',
         subBuilder: ComputeScheduling.create)
     ..aOB(14, _omitFieldNames ? '' : 'secureBoot')
-    ..e<ComputeEngineBootOption>(
-        15, _omitFieldNames ? '' : 'bootOption', $pb.PbFieldType.OE,
-        defaultOrMaker:
-            ComputeEngineBootOption.COMPUTE_ENGINE_BOOT_OPTION_UNSPECIFIED,
-        valueOf: ComputeEngineBootOption.valueOf,
+    ..aE<ComputeEngineBootOption>(15, _omitFieldNames ? '' : 'bootOption',
         enumValues: ComputeEngineBootOption.values)
     ..m<$core.String, $core.String>(16, _omitFieldNames ? '' : 'metadata',
         entryClassName: 'ComputeEngineTargetDetails.MetadataEntry',
@@ -4851,8 +4096,7 @@ class ComputeEngineTargetDetails extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ComputeEngineTargetDetails clone() =>
-      ComputeEngineTargetDetails()..mergeFromMessage(this);
+  ComputeEngineTargetDetails clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ComputeEngineTargetDetails copyWith(
           void Function(ComputeEngineTargetDetails) updates) =>
@@ -4860,13 +4104,13 @@ class ComputeEngineTargetDetails extends $pb.GeneratedMessage {
               (message) => updates(message as ComputeEngineTargetDetails))
           as ComputeEngineTargetDetails;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ComputeEngineTargetDetails create() => ComputeEngineTargetDetails._();
+  @$core.override
   ComputeEngineTargetDetails createEmptyInstance() => create();
-  static $pb.PbList<ComputeEngineTargetDetails> createRepeated() =>
-      $pb.PbList<ComputeEngineTargetDetails>();
   @$core.pragma('dart2js:noInline')
   static ComputeEngineTargetDetails getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ComputeEngineTargetDetails>(create);
@@ -4876,10 +4120,7 @@ class ComputeEngineTargetDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get vmName => $_getSZ(0);
   @$pb.TagNumber(1)
-  set vmName($core.String v) {
-    $_setString(0, v);
-  }
-
+  set vmName($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasVmName() => $_has(0);
   @$pb.TagNumber(1)
@@ -4889,10 +4130,7 @@ class ComputeEngineTargetDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get project => $_getSZ(1);
   @$pb.TagNumber(2)
-  set project($core.String v) {
-    $_setString(1, v);
-  }
-
+  set project($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasProject() => $_has(1);
   @$pb.TagNumber(2)
@@ -4902,10 +4140,7 @@ class ComputeEngineTargetDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get zone => $_getSZ(2);
   @$pb.TagNumber(3)
-  set zone($core.String v) {
-    $_setString(2, v);
-  }
-
+  set zone($core.String value) => $_setString(2, value);
   @$pb.TagNumber(3)
   $core.bool hasZone() => $_has(2);
   @$pb.TagNumber(3)
@@ -4915,10 +4150,7 @@ class ComputeEngineTargetDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get machineTypeSeries => $_getSZ(3);
   @$pb.TagNumber(4)
-  set machineTypeSeries($core.String v) {
-    $_setString(3, v);
-  }
-
+  set machineTypeSeries($core.String value) => $_setString(3, value);
   @$pb.TagNumber(4)
   $core.bool hasMachineTypeSeries() => $_has(3);
   @$pb.TagNumber(4)
@@ -4928,10 +4160,7 @@ class ComputeEngineTargetDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get machineType => $_getSZ(4);
   @$pb.TagNumber(5)
-  set machineType($core.String v) {
-    $_setString(4, v);
-  }
-
+  set machineType($core.String value) => $_setString(4, value);
   @$pb.TagNumber(5)
   $core.bool hasMachineType() => $_has(4);
   @$pb.TagNumber(5)
@@ -4949,10 +4178,7 @@ class ComputeEngineTargetDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.String get serviceAccount => $_getSZ(7);
   @$pb.TagNumber(8)
-  set serviceAccount($core.String v) {
-    $_setString(7, v);
-  }
-
+  set serviceAccount($core.String value) => $_setString(7, value);
   @$pb.TagNumber(8)
   $core.bool hasServiceAccount() => $_has(7);
   @$pb.TagNumber(8)
@@ -4962,10 +4188,7 @@ class ComputeEngineTargetDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   ComputeEngineDiskType get diskType => $_getN(8);
   @$pb.TagNumber(9)
-  set diskType(ComputeEngineDiskType v) {
-    $_setField(9, v);
-  }
-
+  set diskType(ComputeEngineDiskType value) => $_setField(9, value);
   @$pb.TagNumber(9)
   $core.bool hasDiskType() => $_has(8);
   @$pb.TagNumber(9)
@@ -4979,10 +4202,7 @@ class ComputeEngineTargetDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   ComputeEngineLicenseType get licenseType => $_getN(10);
   @$pb.TagNumber(11)
-  set licenseType(ComputeEngineLicenseType v) {
-    $_setField(11, v);
-  }
-
+  set licenseType(ComputeEngineLicenseType value) => $_setField(11, value);
   @$pb.TagNumber(11)
   $core.bool hasLicenseType() => $_has(10);
   @$pb.TagNumber(11)
@@ -4992,10 +4212,7 @@ class ComputeEngineTargetDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   AppliedLicense get appliedLicense => $_getN(11);
   @$pb.TagNumber(12)
-  set appliedLicense(AppliedLicense v) {
-    $_setField(12, v);
-  }
-
+  set appliedLicense(AppliedLicense value) => $_setField(12, value);
   @$pb.TagNumber(12)
   $core.bool hasAppliedLicense() => $_has(11);
   @$pb.TagNumber(12)
@@ -5007,10 +4224,7 @@ class ComputeEngineTargetDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   ComputeScheduling get computeScheduling => $_getN(12);
   @$pb.TagNumber(13)
-  set computeScheduling(ComputeScheduling v) {
-    $_setField(13, v);
-  }
-
+  set computeScheduling(ComputeScheduling value) => $_setField(13, value);
   @$pb.TagNumber(13)
   $core.bool hasComputeScheduling() => $_has(12);
   @$pb.TagNumber(13)
@@ -5023,10 +4237,7 @@ class ComputeEngineTargetDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   $core.bool get secureBoot => $_getBF(13);
   @$pb.TagNumber(14)
-  set secureBoot($core.bool v) {
-    $_setBool(13, v);
-  }
-
+  set secureBoot($core.bool value) => $_setBool(13, value);
   @$pb.TagNumber(14)
   $core.bool hasSecureBoot() => $_has(13);
   @$pb.TagNumber(14)
@@ -5036,10 +4247,7 @@ class ComputeEngineTargetDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   ComputeEngineBootOption get bootOption => $_getN(14);
   @$pb.TagNumber(15)
-  set bootOption(ComputeEngineBootOption v) {
-    $_setField(15, v);
-  }
-
+  set bootOption(ComputeEngineBootOption value) => $_setField(15, value);
   @$pb.TagNumber(15)
   $core.bool hasBootOption() => $_has(14);
   @$pb.TagNumber(15)
@@ -5057,10 +4265,7 @@ class ComputeEngineTargetDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(18)
   $core.String get hostname => $_getSZ(17);
   @$pb.TagNumber(18)
-  set hostname($core.String v) {
-    $_setString(17, v);
-  }
-
+  set hostname($core.String value) => $_setString(17, value);
   @$pb.TagNumber(18)
   $core.bool hasHostname() => $_has(17);
   @$pb.TagNumber(18)
@@ -5075,28 +4280,22 @@ class NetworkInterface extends $pb.GeneratedMessage {
     $core.String? internalIp,
     $core.String? externalIp,
   }) {
-    final $result = create();
-    if (network != null) {
-      $result.network = network;
-    }
-    if (subnetwork != null) {
-      $result.subnetwork = subnetwork;
-    }
-    if (internalIp != null) {
-      $result.internalIp = internalIp;
-    }
-    if (externalIp != null) {
-      $result.externalIp = externalIp;
-    }
-    return $result;
+    final result = create();
+    if (network != null) result.network = network;
+    if (subnetwork != null) result.subnetwork = subnetwork;
+    if (internalIp != null) result.internalIp = internalIp;
+    if (externalIp != null) result.externalIp = externalIp;
+    return result;
   }
-  NetworkInterface._() : super();
-  factory NetworkInterface.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory NetworkInterface.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  NetworkInterface._();
+
+  factory NetworkInterface.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory NetworkInterface.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'NetworkInterface',
@@ -5110,19 +4309,19 @@ class NetworkInterface extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  NetworkInterface clone() => NetworkInterface()..mergeFromMessage(this);
+  NetworkInterface clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   NetworkInterface copyWith(void Function(NetworkInterface) updates) =>
       super.copyWith((message) => updates(message as NetworkInterface))
           as NetworkInterface;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static NetworkInterface create() => NetworkInterface._();
+  @$core.override
   NetworkInterface createEmptyInstance() => create();
-  static $pb.PbList<NetworkInterface> createRepeated() =>
-      $pb.PbList<NetworkInterface>();
   @$core.pragma('dart2js:noInline')
   static NetworkInterface getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<NetworkInterface>(create);
@@ -5132,10 +4331,7 @@ class NetworkInterface extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get network => $_getSZ(0);
   @$pb.TagNumber(1)
-  set network($core.String v) {
-    $_setString(0, v);
-  }
-
+  set network($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasNetwork() => $_has(0);
   @$pb.TagNumber(1)
@@ -5145,10 +4341,7 @@ class NetworkInterface extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get subnetwork => $_getSZ(1);
   @$pb.TagNumber(2)
-  set subnetwork($core.String v) {
-    $_setString(1, v);
-  }
-
+  set subnetwork($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasSubnetwork() => $_has(1);
   @$pb.TagNumber(2)
@@ -5160,10 +4353,7 @@ class NetworkInterface extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get internalIp => $_getSZ(2);
   @$pb.TagNumber(3)
-  set internalIp($core.String v) {
-    $_setString(2, v);
-  }
-
+  set internalIp($core.String value) => $_setString(2, value);
   @$pb.TagNumber(3)
   $core.bool hasInternalIp() => $_has(2);
   @$pb.TagNumber(3)
@@ -5173,10 +4363,7 @@ class NetworkInterface extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get externalIp => $_getSZ(3);
   @$pb.TagNumber(4)
-  set externalIp($core.String v) {
-    $_setString(3, v);
-  }
-
+  set externalIp($core.String value) => $_setString(3, value);
   @$pb.TagNumber(4)
   $core.bool hasExternalIp() => $_has(3);
   @$pb.TagNumber(4)
@@ -5189,50 +4376,45 @@ class AppliedLicense extends $pb.GeneratedMessage {
     AppliedLicense_Type? type,
     $core.String? osLicense,
   }) {
-    final $result = create();
-    if (type != null) {
-      $result.type = type;
-    }
-    if (osLicense != null) {
-      $result.osLicense = osLicense;
-    }
-    return $result;
+    final result = create();
+    if (type != null) result.type = type;
+    if (osLicense != null) result.osLicense = osLicense;
+    return result;
   }
-  AppliedLicense._() : super();
-  factory AppliedLicense.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory AppliedLicense.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  AppliedLicense._();
+
+  factory AppliedLicense.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory AppliedLicense.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'AppliedLicense',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.vmmigration.v1'),
       createEmptyInstance: create)
-    ..e<AppliedLicense_Type>(
-        1, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE,
-        defaultOrMaker: AppliedLicense_Type.TYPE_UNSPECIFIED,
-        valueOf: AppliedLicense_Type.valueOf,
+    ..aE<AppliedLicense_Type>(1, _omitFieldNames ? '' : 'type',
         enumValues: AppliedLicense_Type.values)
     ..aOS(2, _omitFieldNames ? '' : 'osLicense')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  AppliedLicense clone() => AppliedLicense()..mergeFromMessage(this);
+  AppliedLicense clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AppliedLicense copyWith(void Function(AppliedLicense) updates) =>
       super.copyWith((message) => updates(message as AppliedLicense))
           as AppliedLicense;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AppliedLicense create() => AppliedLicense._();
+  @$core.override
   AppliedLicense createEmptyInstance() => create();
-  static $pb.PbList<AppliedLicense> createRepeated() =>
-      $pb.PbList<AppliedLicense>();
   @$core.pragma('dart2js:noInline')
   static AppliedLicense getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<AppliedLicense>(create);
@@ -5242,10 +4424,7 @@ class AppliedLicense extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   AppliedLicense_Type get type => $_getN(0);
   @$pb.TagNumber(1)
-  set type(AppliedLicense_Type v) {
-    $_setField(1, v);
-  }
-
+  set type(AppliedLicense_Type value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasType() => $_has(0);
   @$pb.TagNumber(1)
@@ -5255,10 +4434,7 @@ class AppliedLicense extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get osLicense => $_getSZ(1);
   @$pb.TagNumber(2)
-  set osLicense($core.String v) {
-    $_setString(1, v);
-  }
-
+  set osLicense($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasOsLicense() => $_has(1);
   @$pb.TagNumber(2)
@@ -5274,25 +4450,21 @@ class SchedulingNodeAffinity extends $pb.GeneratedMessage {
     SchedulingNodeAffinity_Operator? operator,
     $core.Iterable<$core.String>? values,
   }) {
-    final $result = create();
-    if (key != null) {
-      $result.key = key;
-    }
-    if (operator != null) {
-      $result.operator = operator;
-    }
-    if (values != null) {
-      $result.values.addAll(values);
-    }
-    return $result;
+    final result = create();
+    if (key != null) result.key = key;
+    if (operator != null) result.operator = operator;
+    if (values != null) result.values.addAll(values);
+    return result;
   }
-  SchedulingNodeAffinity._() : super();
-  factory SchedulingNodeAffinity.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory SchedulingNodeAffinity.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  SchedulingNodeAffinity._();
+
+  factory SchedulingNodeAffinity.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory SchedulingNodeAffinity.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'SchedulingNodeAffinity',
@@ -5300,30 +4472,26 @@ class SchedulingNodeAffinity extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.events.cloud.vmmigration.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'key')
-    ..e<SchedulingNodeAffinity_Operator>(
-        2, _omitFieldNames ? '' : 'operator', $pb.PbFieldType.OE,
-        defaultOrMaker: SchedulingNodeAffinity_Operator.OPERATOR_UNSPECIFIED,
-        valueOf: SchedulingNodeAffinity_Operator.valueOf,
+    ..aE<SchedulingNodeAffinity_Operator>(2, _omitFieldNames ? '' : 'operator',
         enumValues: SchedulingNodeAffinity_Operator.values)
     ..pPS(3, _omitFieldNames ? '' : 'values')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  SchedulingNodeAffinity clone() =>
-      SchedulingNodeAffinity()..mergeFromMessage(this);
+  SchedulingNodeAffinity clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   SchedulingNodeAffinity copyWith(
           void Function(SchedulingNodeAffinity) updates) =>
       super.copyWith((message) => updates(message as SchedulingNodeAffinity))
           as SchedulingNodeAffinity;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SchedulingNodeAffinity create() => SchedulingNodeAffinity._();
+  @$core.override
   SchedulingNodeAffinity createEmptyInstance() => create();
-  static $pb.PbList<SchedulingNodeAffinity> createRepeated() =>
-      $pb.PbList<SchedulingNodeAffinity>();
   @$core.pragma('dart2js:noInline')
   static SchedulingNodeAffinity getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<SchedulingNodeAffinity>(create);
@@ -5333,10 +4501,7 @@ class SchedulingNodeAffinity extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get key => $_getSZ(0);
   @$pb.TagNumber(1)
-  set key($core.String v) {
-    $_setString(0, v);
-  }
-
+  set key($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasKey() => $_has(0);
   @$pb.TagNumber(1)
@@ -5347,10 +4512,7 @@ class SchedulingNodeAffinity extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   SchedulingNodeAffinity_Operator get operator => $_getN(1);
   @$pb.TagNumber(2)
-  set operator(SchedulingNodeAffinity_Operator v) {
-    $_setField(2, v);
-  }
-
+  set operator(SchedulingNodeAffinity_Operator value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasOperator() => $_has(1);
   @$pb.TagNumber(2)
@@ -5370,65 +4532,52 @@ class ComputeScheduling extends $pb.GeneratedMessage {
     $core.int? minNodeCpus,
     ComputeScheduling_RestartType? restartType,
   }) {
-    final $result = create();
-    if (onHostMaintenance != null) {
-      $result.onHostMaintenance = onHostMaintenance;
-    }
-    if (nodeAffinities != null) {
-      $result.nodeAffinities.addAll(nodeAffinities);
-    }
-    if (minNodeCpus != null) {
-      $result.minNodeCpus = minNodeCpus;
-    }
-    if (restartType != null) {
-      $result.restartType = restartType;
-    }
-    return $result;
+    final result = create();
+    if (onHostMaintenance != null) result.onHostMaintenance = onHostMaintenance;
+    if (nodeAffinities != null) result.nodeAffinities.addAll(nodeAffinities);
+    if (minNodeCpus != null) result.minNodeCpus = minNodeCpus;
+    if (restartType != null) result.restartType = restartType;
+    return result;
   }
-  ComputeScheduling._() : super();
-  factory ComputeScheduling.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ComputeScheduling.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  ComputeScheduling._();
+
+  factory ComputeScheduling.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ComputeScheduling.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'ComputeScheduling',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.vmmigration.v1'),
       createEmptyInstance: create)
-    ..e<ComputeScheduling_OnHostMaintenance>(
-        1, _omitFieldNames ? '' : 'onHostMaintenance', $pb.PbFieldType.OE,
-        defaultOrMaker:
-            ComputeScheduling_OnHostMaintenance.ON_HOST_MAINTENANCE_UNSPECIFIED,
-        valueOf: ComputeScheduling_OnHostMaintenance.valueOf,
+    ..aE<ComputeScheduling_OnHostMaintenance>(
+        1, _omitFieldNames ? '' : 'onHostMaintenance',
         enumValues: ComputeScheduling_OnHostMaintenance.values)
-    ..pc<SchedulingNodeAffinity>(
-        3, _omitFieldNames ? '' : 'nodeAffinities', $pb.PbFieldType.PM,
+    ..pPM<SchedulingNodeAffinity>(3, _omitFieldNames ? '' : 'nodeAffinities',
         subBuilder: SchedulingNodeAffinity.create)
-    ..a<$core.int>(4, _omitFieldNames ? '' : 'minNodeCpus', $pb.PbFieldType.O3)
-    ..e<ComputeScheduling_RestartType>(
-        5, _omitFieldNames ? '' : 'restartType', $pb.PbFieldType.OE,
-        defaultOrMaker: ComputeScheduling_RestartType.RESTART_TYPE_UNSPECIFIED,
-        valueOf: ComputeScheduling_RestartType.valueOf,
+    ..aI(4, _omitFieldNames ? '' : 'minNodeCpus')
+    ..aE<ComputeScheduling_RestartType>(5, _omitFieldNames ? '' : 'restartType',
         enumValues: ComputeScheduling_RestartType.values)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ComputeScheduling clone() => ComputeScheduling()..mergeFromMessage(this);
+  ComputeScheduling clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ComputeScheduling copyWith(void Function(ComputeScheduling) updates) =>
       super.copyWith((message) => updates(message as ComputeScheduling))
           as ComputeScheduling;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ComputeScheduling create() => ComputeScheduling._();
+  @$core.override
   ComputeScheduling createEmptyInstance() => create();
-  static $pb.PbList<ComputeScheduling> createRepeated() =>
-      $pb.PbList<ComputeScheduling>();
   @$core.pragma('dart2js:noInline')
   static ComputeScheduling getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ComputeScheduling>(create);
@@ -5439,10 +4588,8 @@ class ComputeScheduling extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   ComputeScheduling_OnHostMaintenance get onHostMaintenance => $_getN(0);
   @$pb.TagNumber(1)
-  set onHostMaintenance(ComputeScheduling_OnHostMaintenance v) {
-    $_setField(1, v);
-  }
-
+  set onHostMaintenance(ComputeScheduling_OnHostMaintenance value) =>
+      $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasOnHostMaintenance() => $_has(0);
   @$pb.TagNumber(1)
@@ -5459,10 +4606,7 @@ class ComputeScheduling extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.int get minNodeCpus => $_getIZ(2);
   @$pb.TagNumber(4)
-  set minNodeCpus($core.int v) {
-    $_setSignedInt32(2, v);
-  }
-
+  set minNodeCpus($core.int value) => $_setSignedInt32(2, value);
   @$pb.TagNumber(4)
   $core.bool hasMinNodeCpus() => $_has(2);
   @$pb.TagNumber(4)
@@ -5477,10 +4621,7 @@ class ComputeScheduling extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   ComputeScheduling_RestartType get restartType => $_getN(3);
   @$pb.TagNumber(5)
-  set restartType(ComputeScheduling_RestartType v) {
-    $_setField(5, v);
-  }
-
+  set restartType(ComputeScheduling_RestartType value) => $_setField(5, value);
   @$pb.TagNumber(5)
   $core.bool hasRestartType() => $_has(3);
   @$pb.TagNumber(5)
@@ -5490,50 +4631,48 @@ class ComputeScheduling extends $pb.GeneratedMessage {
 /// A policy for scheduling replications.
 class SchedulePolicy extends $pb.GeneratedMessage {
   factory SchedulePolicy({
-    $0.Duration? idleDuration,
+    $1.Duration? idleDuration,
     $core.bool? skipOsAdaptation,
   }) {
-    final $result = create();
-    if (idleDuration != null) {
-      $result.idleDuration = idleDuration;
-    }
-    if (skipOsAdaptation != null) {
-      $result.skipOsAdaptation = skipOsAdaptation;
-    }
-    return $result;
+    final result = create();
+    if (idleDuration != null) result.idleDuration = idleDuration;
+    if (skipOsAdaptation != null) result.skipOsAdaptation = skipOsAdaptation;
+    return result;
   }
-  SchedulePolicy._() : super();
-  factory SchedulePolicy.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory SchedulePolicy.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  SchedulePolicy._();
+
+  factory SchedulePolicy.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory SchedulePolicy.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'SchedulePolicy',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.vmmigration.v1'),
       createEmptyInstance: create)
-    ..aOM<$0.Duration>(1, _omitFieldNames ? '' : 'idleDuration',
-        subBuilder: $0.Duration.create)
+    ..aOM<$1.Duration>(1, _omitFieldNames ? '' : 'idleDuration',
+        subBuilder: $1.Duration.create)
     ..aOB(2, _omitFieldNames ? '' : 'skipOsAdaptation')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  SchedulePolicy clone() => SchedulePolicy()..mergeFromMessage(this);
+  SchedulePolicy clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   SchedulePolicy copyWith(void Function(SchedulePolicy) updates) =>
       super.copyWith((message) => updates(message as SchedulePolicy))
           as SchedulePolicy;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SchedulePolicy create() => SchedulePolicy._();
+  @$core.override
   SchedulePolicy createEmptyInstance() => create();
-  static $pb.PbList<SchedulePolicy> createRepeated() =>
-      $pb.PbList<SchedulePolicy>();
   @$core.pragma('dart2js:noInline')
   static SchedulePolicy getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<SchedulePolicy>(create);
@@ -5541,18 +4680,15 @@ class SchedulePolicy extends $pb.GeneratedMessage {
 
   /// The idle duration between replication stages.
   @$pb.TagNumber(1)
-  $0.Duration get idleDuration => $_getN(0);
+  $1.Duration get idleDuration => $_getN(0);
   @$pb.TagNumber(1)
-  set idleDuration($0.Duration v) {
-    $_setField(1, v);
-  }
-
+  set idleDuration($1.Duration value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasIdleDuration() => $_has(0);
   @$pb.TagNumber(1)
   void clearIdleDuration() => $_clearField(1);
   @$pb.TagNumber(1)
-  $0.Duration ensureIdleDuration() => $_ensure(0);
+  $1.Duration ensureIdleDuration() => $_ensure(0);
 
   /// A flag to indicate whether to skip OS adaptation during the replication
   /// sync. OS adaptation is a process where the VM's operating system undergoes
@@ -5560,10 +4696,7 @@ class SchedulePolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool get skipOsAdaptation => $_getBF(1);
   @$pb.TagNumber(2)
-  set skipOsAdaptation($core.bool v) {
-    $_setBool(1, v);
-  }
-
+  set skipOsAdaptation($core.bool value) => $_setBool(1, value);
   @$pb.TagNumber(2)
   $core.bool hasSkipOsAdaptation() => $_has(1);
   @$pb.TagNumber(2)
@@ -5577,34 +4710,26 @@ class TargetProject extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? project,
     $core.String? description,
-    $2.Timestamp? createTime,
-    $2.Timestamp? updateTime,
+    $0.Timestamp? createTime,
+    $0.Timestamp? updateTime,
   }) {
-    final $result = create();
-    if (name != null) {
-      $result.name = name;
-    }
-    if (project != null) {
-      $result.project = project;
-    }
-    if (description != null) {
-      $result.description = description;
-    }
-    if (createTime != null) {
-      $result.createTime = createTime;
-    }
-    if (updateTime != null) {
-      $result.updateTime = updateTime;
-    }
-    return $result;
+    final result = create();
+    if (name != null) result.name = name;
+    if (project != null) result.project = project;
+    if (description != null) result.description = description;
+    if (createTime != null) result.createTime = createTime;
+    if (updateTime != null) result.updateTime = updateTime;
+    return result;
   }
-  TargetProject._() : super();
-  factory TargetProject.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory TargetProject.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  TargetProject._();
+
+  factory TargetProject.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory TargetProject.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'TargetProject',
@@ -5614,26 +4739,26 @@ class TargetProject extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'project')
     ..aOS(3, _omitFieldNames ? '' : 'description')
-    ..aOM<$2.Timestamp>(4, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(5, _omitFieldNames ? '' : 'updateTime',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$0.Timestamp>(4, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(5, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $0.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  TargetProject clone() => TargetProject()..mergeFromMessage(this);
+  TargetProject clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TargetProject copyWith(void Function(TargetProject) updates) =>
       super.copyWith((message) => updates(message as TargetProject))
           as TargetProject;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static TargetProject create() => TargetProject._();
+  @$core.override
   TargetProject createEmptyInstance() => create();
-  static $pb.PbList<TargetProject> createRepeated() =>
-      $pb.PbList<TargetProject>();
   @$core.pragma('dart2js:noInline')
   static TargetProject getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<TargetProject>(create);
@@ -5643,10 +4768,7 @@ class TargetProject extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) {
-    $_setString(0, v);
-  }
-
+  set name($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -5656,10 +4778,7 @@ class TargetProject extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get project => $_getSZ(1);
   @$pb.TagNumber(2)
-  set project($core.String v) {
-    $_setString(1, v);
-  }
-
+  set project($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasProject() => $_has(1);
   @$pb.TagNumber(2)
@@ -5669,10 +4788,7 @@ class TargetProject extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get description => $_getSZ(2);
   @$pb.TagNumber(3)
-  set description($core.String v) {
-    $_setString(2, v);
-  }
-
+  set description($core.String value) => $_setString(2, value);
   @$pb.TagNumber(3)
   $core.bool hasDescription() => $_has(2);
   @$pb.TagNumber(3)
@@ -5681,33 +4797,27 @@ class TargetProject extends $pb.GeneratedMessage {
   /// Output only. The time this target project resource was created (not related
   /// to when the Compute Engine project it points to was created).
   @$pb.TagNumber(4)
-  $2.Timestamp get createTime => $_getN(3);
+  $0.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(4)
-  set createTime($2.Timestamp v) {
-    $_setField(4, v);
-  }
-
+  set createTime($0.Timestamp value) => $_setField(4, value);
   @$pb.TagNumber(4)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearCreateTime() => $_clearField(4);
   @$pb.TagNumber(4)
-  $2.Timestamp ensureCreateTime() => $_ensure(3);
+  $0.Timestamp ensureCreateTime() => $_ensure(3);
 
   /// Output only. The last time the target project resource was updated.
   @$pb.TagNumber(5)
-  $2.Timestamp get updateTime => $_getN(4);
+  $0.Timestamp get updateTime => $_getN(4);
   @$pb.TagNumber(5)
-  set updateTime($2.Timestamp v) {
-    $_setField(5, v);
-  }
-
+  set updateTime($0.Timestamp value) => $_setField(5, value);
   @$pb.TagNumber(5)
   $core.bool hasUpdateTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearUpdateTime() => $_clearField(5);
   @$pb.TagNumber(5)
-  $2.Timestamp ensureUpdateTime() => $_ensure(4);
+  $0.Timestamp ensureUpdateTime() => $_ensure(4);
 }
 
 /// Describes message for 'Group' resource. The Group is a collections of several
@@ -5715,36 +4825,28 @@ class TargetProject extends $pb.GeneratedMessage {
 class Group extends $pb.GeneratedMessage {
   factory Group({
     $core.String? name,
-    $2.Timestamp? createTime,
-    $2.Timestamp? updateTime,
+    $0.Timestamp? createTime,
+    $0.Timestamp? updateTime,
     $core.String? description,
     $core.String? displayName,
   }) {
-    final $result = create();
-    if (name != null) {
-      $result.name = name;
-    }
-    if (createTime != null) {
-      $result.createTime = createTime;
-    }
-    if (updateTime != null) {
-      $result.updateTime = updateTime;
-    }
-    if (description != null) {
-      $result.description = description;
-    }
-    if (displayName != null) {
-      $result.displayName = displayName;
-    }
-    return $result;
+    final result = create();
+    if (name != null) result.name = name;
+    if (createTime != null) result.createTime = createTime;
+    if (updateTime != null) result.updateTime = updateTime;
+    if (description != null) result.description = description;
+    if (displayName != null) result.displayName = displayName;
+    return result;
   }
-  Group._() : super();
-  factory Group.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Group.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  Group._();
+
+  factory Group.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory Group.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'Group',
@@ -5752,26 +4854,27 @@ class Group extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.events.cloud.vmmigration.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$2.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(3, _omitFieldNames ? '' : 'updateTime',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$0.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(3, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $0.Timestamp.create)
     ..aOS(4, _omitFieldNames ? '' : 'description')
     ..aOS(5, _omitFieldNames ? '' : 'displayName')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  Group clone() => Group()..mergeFromMessage(this);
+  Group clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Group copyWith(void Function(Group) updates) =>
       super.copyWith((message) => updates(message as Group)) as Group;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Group create() => Group._();
+  @$core.override
   Group createEmptyInstance() => create();
-  static $pb.PbList<Group> createRepeated() => $pb.PbList<Group>();
   @$core.pragma('dart2js:noInline')
   static Group getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Group>(create);
@@ -5781,10 +4884,7 @@ class Group extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) {
-    $_setString(0, v);
-  }
-
+  set name($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -5792,42 +4892,33 @@ class Group extends $pb.GeneratedMessage {
 
   /// Output only. The create time timestamp.
   @$pb.TagNumber(2)
-  $2.Timestamp get createTime => $_getN(1);
+  $0.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($2.Timestamp v) {
-    $_setField(2, v);
-  }
-
+  set createTime($0.Timestamp value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => $_clearField(2);
   @$pb.TagNumber(2)
-  $2.Timestamp ensureCreateTime() => $_ensure(1);
+  $0.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. The update time timestamp.
   @$pb.TagNumber(3)
-  $2.Timestamp get updateTime => $_getN(2);
+  $0.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($2.Timestamp v) {
-    $_setField(3, v);
-  }
-
+  set updateTime($0.Timestamp value) => $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => $_clearField(3);
   @$pb.TagNumber(3)
-  $2.Timestamp ensureUpdateTime() => $_ensure(2);
+  $0.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// User-provided description of the group.
   @$pb.TagNumber(4)
   $core.String get description => $_getSZ(3);
   @$pb.TagNumber(4)
-  set description($core.String v) {
-    $_setString(3, v);
-  }
-
+  set description($core.String value) => $_setString(3, value);
   @$pb.TagNumber(4)
   $core.bool hasDescription() => $_has(3);
   @$pb.TagNumber(4)
@@ -5837,10 +4928,7 @@ class Group extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get displayName => $_getSZ(4);
   @$pb.TagNumber(5)
-  set displayName($core.String v) {
-    $_setString(4, v);
-  }
-
+  set displayName($core.String value) => $_setString(4, value);
   @$pb.TagNumber(5)
   $core.bool hasDisplayName() => $_has(4);
   @$pb.TagNumber(5)
@@ -5853,72 +4941,60 @@ class Group extends $pb.GeneratedMessage {
 class MigrationWarning extends $pb.GeneratedMessage {
   factory MigrationWarning({
     MigrationWarning_WarningCode? code,
-    $50.LocalizedMessage? warningMessage,
-    $50.LocalizedMessage? actionItem,
-    $core.Iterable<$50.Help_Link>? helpLinks,
-    $2.Timestamp? warningTime,
+    $3.LocalizedMessage? warningMessage,
+    $3.LocalizedMessage? actionItem,
+    $core.Iterable<$3.Help_Link>? helpLinks,
+    $0.Timestamp? warningTime,
   }) {
-    final $result = create();
-    if (code != null) {
-      $result.code = code;
-    }
-    if (warningMessage != null) {
-      $result.warningMessage = warningMessage;
-    }
-    if (actionItem != null) {
-      $result.actionItem = actionItem;
-    }
-    if (helpLinks != null) {
-      $result.helpLinks.addAll(helpLinks);
-    }
-    if (warningTime != null) {
-      $result.warningTime = warningTime;
-    }
-    return $result;
+    final result = create();
+    if (code != null) result.code = code;
+    if (warningMessage != null) result.warningMessage = warningMessage;
+    if (actionItem != null) result.actionItem = actionItem;
+    if (helpLinks != null) result.helpLinks.addAll(helpLinks);
+    if (warningTime != null) result.warningTime = warningTime;
+    return result;
   }
-  MigrationWarning._() : super();
-  factory MigrationWarning.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory MigrationWarning.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  MigrationWarning._();
+
+  factory MigrationWarning.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory MigrationWarning.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'MigrationWarning',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.vmmigration.v1'),
       createEmptyInstance: create)
-    ..e<MigrationWarning_WarningCode>(
-        1, _omitFieldNames ? '' : 'code', $pb.PbFieldType.OE,
-        defaultOrMaker: MigrationWarning_WarningCode.WARNING_CODE_UNSPECIFIED,
-        valueOf: MigrationWarning_WarningCode.valueOf,
+    ..aE<MigrationWarning_WarningCode>(1, _omitFieldNames ? '' : 'code',
         enumValues: MigrationWarning_WarningCode.values)
-    ..aOM<$50.LocalizedMessage>(2, _omitFieldNames ? '' : 'warningMessage',
-        subBuilder: $50.LocalizedMessage.create)
-    ..aOM<$50.LocalizedMessage>(3, _omitFieldNames ? '' : 'actionItem',
-        subBuilder: $50.LocalizedMessage.create)
-    ..pc<$50.Help_Link>(
-        4, _omitFieldNames ? '' : 'helpLinks', $pb.PbFieldType.PM,
-        subBuilder: $50.Help_Link.create)
-    ..aOM<$2.Timestamp>(5, _omitFieldNames ? '' : 'warningTime',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$3.LocalizedMessage>(2, _omitFieldNames ? '' : 'warningMessage',
+        subBuilder: $3.LocalizedMessage.create)
+    ..aOM<$3.LocalizedMessage>(3, _omitFieldNames ? '' : 'actionItem',
+        subBuilder: $3.LocalizedMessage.create)
+    ..pPM<$3.Help_Link>(4, _omitFieldNames ? '' : 'helpLinks',
+        subBuilder: $3.Help_Link.create)
+    ..aOM<$0.Timestamp>(5, _omitFieldNames ? '' : 'warningTime',
+        subBuilder: $0.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  MigrationWarning clone() => MigrationWarning()..mergeFromMessage(this);
+  MigrationWarning clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MigrationWarning copyWith(void Function(MigrationWarning) updates) =>
       super.copyWith((message) => updates(message as MigrationWarning))
           as MigrationWarning;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static MigrationWarning create() => MigrationWarning._();
+  @$core.override
   MigrationWarning createEmptyInstance() => create();
-  static $pb.PbList<MigrationWarning> createRepeated() =>
-      $pb.PbList<MigrationWarning>();
   @$core.pragma('dart2js:noInline')
   static MigrationWarning getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<MigrationWarning>(create);
@@ -5928,10 +5004,7 @@ class MigrationWarning extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   MigrationWarning_WarningCode get code => $_getN(0);
   @$pb.TagNumber(1)
-  set code(MigrationWarning_WarningCode v) {
-    $_setField(1, v);
-  }
-
+  set code(MigrationWarning_WarningCode value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasCode() => $_has(0);
   @$pb.TagNumber(1)
@@ -5939,52 +5012,43 @@ class MigrationWarning extends $pb.GeneratedMessage {
 
   /// The localized warning message.
   @$pb.TagNumber(2)
-  $50.LocalizedMessage get warningMessage => $_getN(1);
+  $3.LocalizedMessage get warningMessage => $_getN(1);
   @$pb.TagNumber(2)
-  set warningMessage($50.LocalizedMessage v) {
-    $_setField(2, v);
-  }
-
+  set warningMessage($3.LocalizedMessage value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasWarningMessage() => $_has(1);
   @$pb.TagNumber(2)
   void clearWarningMessage() => $_clearField(2);
   @$pb.TagNumber(2)
-  $50.LocalizedMessage ensureWarningMessage() => $_ensure(1);
+  $3.LocalizedMessage ensureWarningMessage() => $_ensure(1);
 
   /// Suggested action for solving the warning.
   @$pb.TagNumber(3)
-  $50.LocalizedMessage get actionItem => $_getN(2);
+  $3.LocalizedMessage get actionItem => $_getN(2);
   @$pb.TagNumber(3)
-  set actionItem($50.LocalizedMessage v) {
-    $_setField(3, v);
-  }
-
+  set actionItem($3.LocalizedMessage value) => $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasActionItem() => $_has(2);
   @$pb.TagNumber(3)
   void clearActionItem() => $_clearField(3);
   @$pb.TagNumber(3)
-  $50.LocalizedMessage ensureActionItem() => $_ensure(2);
+  $3.LocalizedMessage ensureActionItem() => $_ensure(2);
 
   /// URL(s) pointing to additional information on handling the current warning.
   @$pb.TagNumber(4)
-  $pb.PbList<$50.Help_Link> get helpLinks => $_getList(3);
+  $pb.PbList<$3.Help_Link> get helpLinks => $_getList(3);
 
   /// The time the warning occurred.
   @$pb.TagNumber(5)
-  $2.Timestamp get warningTime => $_getN(4);
+  $0.Timestamp get warningTime => $_getN(4);
   @$pb.TagNumber(5)
-  set warningTime($2.Timestamp v) {
-    $_setField(5, v);
-  }
-
+  set warningTime($0.Timestamp value) => $_setField(5, value);
   @$pb.TagNumber(5)
   $core.bool hasWarningTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearWarningTime() => $_clearField(5);
   @$pb.TagNumber(5)
-  $2.Timestamp ensureWarningTime() => $_ensure(4);
+  $0.Timestamp ensureWarningTime() => $_ensure(4);
 }
 
 /// The details of an AWS instance disk.
@@ -5994,39 +5058,35 @@ class AwsSourceVmDetails_AwsDiskDetails extends $pb.GeneratedMessage {
     $core.String? volumeId,
     $fixnum.Int64? sizeGb,
   }) {
-    final $result = create();
-    if (diskNumber != null) {
-      $result.diskNumber = diskNumber;
-    }
-    if (volumeId != null) {
-      $result.volumeId = volumeId;
-    }
-    if (sizeGb != null) {
-      $result.sizeGb = sizeGb;
-    }
-    return $result;
+    final result = create();
+    if (diskNumber != null) result.diskNumber = diskNumber;
+    if (volumeId != null) result.volumeId = volumeId;
+    if (sizeGb != null) result.sizeGb = sizeGb;
+    return result;
   }
-  AwsSourceVmDetails_AwsDiskDetails._() : super();
-  factory AwsSourceVmDetails_AwsDiskDetails.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory AwsSourceVmDetails_AwsDiskDetails.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  AwsSourceVmDetails_AwsDiskDetails._();
+
+  factory AwsSourceVmDetails_AwsDiskDetails.fromBuffer(
+          $core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory AwsSourceVmDetails_AwsDiskDetails.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'AwsSourceVmDetails.AwsDiskDetails',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.vmmigration.v1'),
       createEmptyInstance: create)
-    ..a<$core.int>(1, _omitFieldNames ? '' : 'diskNumber', $pb.PbFieldType.O3)
+    ..aI(1, _omitFieldNames ? '' : 'diskNumber')
     ..aOS(2, _omitFieldNames ? '' : 'volumeId')
     ..aInt64(3, _omitFieldNames ? '' : 'sizeGb')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  AwsSourceVmDetails_AwsDiskDetails clone() =>
-      AwsSourceVmDetails_AwsDiskDetails()..mergeFromMessage(this);
+  AwsSourceVmDetails_AwsDiskDetails clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AwsSourceVmDetails_AwsDiskDetails copyWith(
           void Function(AwsSourceVmDetails_AwsDiskDetails) updates) =>
@@ -6034,14 +5094,14 @@ class AwsSourceVmDetails_AwsDiskDetails extends $pb.GeneratedMessage {
               updates(message as AwsSourceVmDetails_AwsDiskDetails))
           as AwsSourceVmDetails_AwsDiskDetails;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AwsSourceVmDetails_AwsDiskDetails create() =>
       AwsSourceVmDetails_AwsDiskDetails._();
+  @$core.override
   AwsSourceVmDetails_AwsDiskDetails createEmptyInstance() => create();
-  static $pb.PbList<AwsSourceVmDetails_AwsDiskDetails> createRepeated() =>
-      $pb.PbList<AwsSourceVmDetails_AwsDiskDetails>();
   @$core.pragma('dart2js:noInline')
   static AwsSourceVmDetails_AwsDiskDetails getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<AwsSourceVmDetails_AwsDiskDetails>(
@@ -6052,10 +5112,7 @@ class AwsSourceVmDetails_AwsDiskDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.int get diskNumber => $_getIZ(0);
   @$pb.TagNumber(1)
-  set diskNumber($core.int v) {
-    $_setSignedInt32(0, v);
-  }
-
+  set diskNumber($core.int value) => $_setSignedInt32(0, value);
   @$pb.TagNumber(1)
   $core.bool hasDiskNumber() => $_has(0);
   @$pb.TagNumber(1)
@@ -6065,10 +5122,7 @@ class AwsSourceVmDetails_AwsDiskDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get volumeId => $_getSZ(1);
   @$pb.TagNumber(2)
-  set volumeId($core.String v) {
-    $_setString(1, v);
-  }
-
+  set volumeId($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasVolumeId() => $_has(1);
   @$pb.TagNumber(2)
@@ -6078,10 +5132,7 @@ class AwsSourceVmDetails_AwsDiskDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $fixnum.Int64 get sizeGb => $_getI64(2);
   @$pb.TagNumber(3)
-  set sizeGb($fixnum.Int64 v) {
-    $_setInt64(2, v);
-  }
-
+  set sizeGb($fixnum.Int64 value) => $_setInt64(2, value);
   @$pb.TagNumber(3)
   $core.bool hasSizeGb() => $_has(2);
   @$pb.TagNumber(3)
@@ -6095,56 +5146,49 @@ class AwsSourceVmDetails extends $pb.GeneratedMessage {
     $fixnum.Int64? committedStorageBytes,
     $core.Iterable<AwsSourceVmDetails_AwsDiskDetails>? disks,
   }) {
-    final $result = create();
-    if (firmware != null) {
-      $result.firmware = firmware;
-    }
-    if (committedStorageBytes != null) {
-      $result.committedStorageBytes = committedStorageBytes;
-    }
-    if (disks != null) {
-      $result.disks.addAll(disks);
-    }
-    return $result;
+    final result = create();
+    if (firmware != null) result.firmware = firmware;
+    if (committedStorageBytes != null)
+      result.committedStorageBytes = committedStorageBytes;
+    if (disks != null) result.disks.addAll(disks);
+    return result;
   }
-  AwsSourceVmDetails._() : super();
-  factory AwsSourceVmDetails.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory AwsSourceVmDetails.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  AwsSourceVmDetails._();
+
+  factory AwsSourceVmDetails.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory AwsSourceVmDetails.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'AwsSourceVmDetails',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.vmmigration.v1'),
       createEmptyInstance: create)
-    ..e<AwsSourceVmDetails_Firmware>(
-        1, _omitFieldNames ? '' : 'firmware', $pb.PbFieldType.OE,
-        defaultOrMaker: AwsSourceVmDetails_Firmware.FIRMWARE_UNSPECIFIED,
-        valueOf: AwsSourceVmDetails_Firmware.valueOf,
+    ..aE<AwsSourceVmDetails_Firmware>(1, _omitFieldNames ? '' : 'firmware',
         enumValues: AwsSourceVmDetails_Firmware.values)
     ..aInt64(2, _omitFieldNames ? '' : 'committedStorageBytes')
-    ..pc<AwsSourceVmDetails_AwsDiskDetails>(
-        3, _omitFieldNames ? '' : 'disks', $pb.PbFieldType.PM,
+    ..pPM<AwsSourceVmDetails_AwsDiskDetails>(3, _omitFieldNames ? '' : 'disks',
         subBuilder: AwsSourceVmDetails_AwsDiskDetails.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  AwsSourceVmDetails clone() => AwsSourceVmDetails()..mergeFromMessage(this);
+  AwsSourceVmDetails clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AwsSourceVmDetails copyWith(void Function(AwsSourceVmDetails) updates) =>
       super.copyWith((message) => updates(message as AwsSourceVmDetails))
           as AwsSourceVmDetails;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AwsSourceVmDetails create() => AwsSourceVmDetails._();
+  @$core.override
   AwsSourceVmDetails createEmptyInstance() => create();
-  static $pb.PbList<AwsSourceVmDetails> createRepeated() =>
-      $pb.PbList<AwsSourceVmDetails>();
   @$core.pragma('dart2js:noInline')
   static AwsSourceVmDetails getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<AwsSourceVmDetails>(create);
@@ -6154,10 +5198,7 @@ class AwsSourceVmDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   AwsSourceVmDetails_Firmware get firmware => $_getN(0);
   @$pb.TagNumber(1)
-  set firmware(AwsSourceVmDetails_Firmware v) {
-    $_setField(1, v);
-  }
-
+  set firmware(AwsSourceVmDetails_Firmware value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasFirmware() => $_has(0);
   @$pb.TagNumber(1)
@@ -6167,10 +5208,7 @@ class AwsSourceVmDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $fixnum.Int64 get committedStorageBytes => $_getI64(1);
   @$pb.TagNumber(2)
-  set committedStorageBytes($fixnum.Int64 v) {
-    $_setInt64(1, v);
-  }
-
+  set committedStorageBytes($fixnum.Int64 value) => $_setInt64(1, value);
   @$pb.TagNumber(2)
   $core.bool hasCommittedStorageBytes() => $_has(1);
   @$pb.TagNumber(2)
@@ -6186,19 +5224,19 @@ class UtilizationReportEventData extends $pb.GeneratedMessage {
   factory UtilizationReportEventData({
     UtilizationReport? payload,
   }) {
-    final $result = create();
-    if (payload != null) {
-      $result.payload = payload;
-    }
-    return $result;
+    final result = create();
+    if (payload != null) result.payload = payload;
+    return result;
   }
-  UtilizationReportEventData._() : super();
-  factory UtilizationReportEventData.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory UtilizationReportEventData.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  UtilizationReportEventData._();
+
+  factory UtilizationReportEventData.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory UtilizationReportEventData.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'UtilizationReportEventData',
@@ -6210,8 +5248,7 @@ class UtilizationReportEventData extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  UtilizationReportEventData clone() =>
-      UtilizationReportEventData()..mergeFromMessage(this);
+  UtilizationReportEventData clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   UtilizationReportEventData copyWith(
           void Function(UtilizationReportEventData) updates) =>
@@ -6219,13 +5256,13 @@ class UtilizationReportEventData extends $pb.GeneratedMessage {
               (message) => updates(message as UtilizationReportEventData))
           as UtilizationReportEventData;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static UtilizationReportEventData create() => UtilizationReportEventData._();
+  @$core.override
   UtilizationReportEventData createEmptyInstance() => create();
-  static $pb.PbList<UtilizationReportEventData> createRepeated() =>
-      $pb.PbList<UtilizationReportEventData>();
   @$core.pragma('dart2js:noInline')
   static UtilizationReportEventData getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<UtilizationReportEventData>(create);
@@ -6235,10 +5272,7 @@ class UtilizationReportEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   UtilizationReport get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(UtilizationReport v) {
-    $_setField(1, v);
-  }
-
+  set payload(UtilizationReport value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -6252,19 +5286,19 @@ class GroupEventData extends $pb.GeneratedMessage {
   factory GroupEventData({
     Group? payload,
   }) {
-    final $result = create();
-    if (payload != null) {
-      $result.payload = payload;
-    }
-    return $result;
+    final result = create();
+    if (payload != null) result.payload = payload;
+    return result;
   }
-  GroupEventData._() : super();
-  factory GroupEventData.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory GroupEventData.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  GroupEventData._();
+
+  factory GroupEventData.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory GroupEventData.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'GroupEventData',
@@ -6275,19 +5309,19 @@ class GroupEventData extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  GroupEventData clone() => GroupEventData()..mergeFromMessage(this);
+  GroupEventData clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   GroupEventData copyWith(void Function(GroupEventData) updates) =>
       super.copyWith((message) => updates(message as GroupEventData))
           as GroupEventData;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GroupEventData create() => GroupEventData._();
+  @$core.override
   GroupEventData createEmptyInstance() => create();
-  static $pb.PbList<GroupEventData> createRepeated() =>
-      $pb.PbList<GroupEventData>();
   @$core.pragma('dart2js:noInline')
   static GroupEventData getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<GroupEventData>(create);
@@ -6297,10 +5331,7 @@ class GroupEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   Group get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(Group v) {
-    $_setField(1, v);
-  }
-
+  set payload(Group value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -6314,19 +5345,19 @@ class CloneJobEventData extends $pb.GeneratedMessage {
   factory CloneJobEventData({
     CloneJob? payload,
   }) {
-    final $result = create();
-    if (payload != null) {
-      $result.payload = payload;
-    }
-    return $result;
+    final result = create();
+    if (payload != null) result.payload = payload;
+    return result;
   }
-  CloneJobEventData._() : super();
-  factory CloneJobEventData.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory CloneJobEventData.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  CloneJobEventData._();
+
+  factory CloneJobEventData.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory CloneJobEventData.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'CloneJobEventData',
@@ -6338,19 +5369,19 @@ class CloneJobEventData extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  CloneJobEventData clone() => CloneJobEventData()..mergeFromMessage(this);
+  CloneJobEventData clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CloneJobEventData copyWith(void Function(CloneJobEventData) updates) =>
       super.copyWith((message) => updates(message as CloneJobEventData))
           as CloneJobEventData;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CloneJobEventData create() => CloneJobEventData._();
+  @$core.override
   CloneJobEventData createEmptyInstance() => create();
-  static $pb.PbList<CloneJobEventData> createRepeated() =>
-      $pb.PbList<CloneJobEventData>();
   @$core.pragma('dart2js:noInline')
   static CloneJobEventData getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<CloneJobEventData>(create);
@@ -6360,10 +5391,7 @@ class CloneJobEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   CloneJob get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(CloneJob v) {
-    $_setField(1, v);
-  }
-
+  set payload(CloneJob value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -6377,19 +5405,19 @@ class DatacenterConnectorEventData extends $pb.GeneratedMessage {
   factory DatacenterConnectorEventData({
     DatacenterConnector? payload,
   }) {
-    final $result = create();
-    if (payload != null) {
-      $result.payload = payload;
-    }
-    return $result;
+    final result = create();
+    if (payload != null) result.payload = payload;
+    return result;
   }
-  DatacenterConnectorEventData._() : super();
-  factory DatacenterConnectorEventData.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory DatacenterConnectorEventData.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  DatacenterConnectorEventData._();
+
+  factory DatacenterConnectorEventData.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory DatacenterConnectorEventData.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'DatacenterConnectorEventData',
@@ -6401,8 +5429,7 @@ class DatacenterConnectorEventData extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  DatacenterConnectorEventData clone() =>
-      DatacenterConnectorEventData()..mergeFromMessage(this);
+  DatacenterConnectorEventData clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DatacenterConnectorEventData copyWith(
           void Function(DatacenterConnectorEventData) updates) =>
@@ -6410,14 +5437,14 @@ class DatacenterConnectorEventData extends $pb.GeneratedMessage {
               (message) => updates(message as DatacenterConnectorEventData))
           as DatacenterConnectorEventData;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DatacenterConnectorEventData create() =>
       DatacenterConnectorEventData._();
+  @$core.override
   DatacenterConnectorEventData createEmptyInstance() => create();
-  static $pb.PbList<DatacenterConnectorEventData> createRepeated() =>
-      $pb.PbList<DatacenterConnectorEventData>();
   @$core.pragma('dart2js:noInline')
   static DatacenterConnectorEventData getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<DatacenterConnectorEventData>(create);
@@ -6427,10 +5454,7 @@ class DatacenterConnectorEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   DatacenterConnector get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(DatacenterConnector v) {
-    $_setField(1, v);
-  }
-
+  set payload(DatacenterConnector value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -6444,19 +5468,19 @@ class TargetProjectEventData extends $pb.GeneratedMessage {
   factory TargetProjectEventData({
     TargetProject? payload,
   }) {
-    final $result = create();
-    if (payload != null) {
-      $result.payload = payload;
-    }
-    return $result;
+    final result = create();
+    if (payload != null) result.payload = payload;
+    return result;
   }
-  TargetProjectEventData._() : super();
-  factory TargetProjectEventData.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory TargetProjectEventData.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  TargetProjectEventData._();
+
+  factory TargetProjectEventData.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory TargetProjectEventData.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'TargetProjectEventData',
@@ -6468,21 +5492,20 @@ class TargetProjectEventData extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  TargetProjectEventData clone() =>
-      TargetProjectEventData()..mergeFromMessage(this);
+  TargetProjectEventData clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TargetProjectEventData copyWith(
           void Function(TargetProjectEventData) updates) =>
       super.copyWith((message) => updates(message as TargetProjectEventData))
           as TargetProjectEventData;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static TargetProjectEventData create() => TargetProjectEventData._();
+  @$core.override
   TargetProjectEventData createEmptyInstance() => create();
-  static $pb.PbList<TargetProjectEventData> createRepeated() =>
-      $pb.PbList<TargetProjectEventData>();
   @$core.pragma('dart2js:noInline')
   static TargetProjectEventData getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<TargetProjectEventData>(create);
@@ -6492,10 +5515,7 @@ class TargetProjectEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   TargetProject get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(TargetProject v) {
-    $_setField(1, v);
-  }
-
+  set payload(TargetProject value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -6509,19 +5529,19 @@ class CutoverJobEventData extends $pb.GeneratedMessage {
   factory CutoverJobEventData({
     CutoverJob? payload,
   }) {
-    final $result = create();
-    if (payload != null) {
-      $result.payload = payload;
-    }
-    return $result;
+    final result = create();
+    if (payload != null) result.payload = payload;
+    return result;
   }
-  CutoverJobEventData._() : super();
-  factory CutoverJobEventData.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory CutoverJobEventData.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  CutoverJobEventData._();
+
+  factory CutoverJobEventData.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory CutoverJobEventData.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'CutoverJobEventData',
@@ -6533,19 +5553,19 @@ class CutoverJobEventData extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  CutoverJobEventData clone() => CutoverJobEventData()..mergeFromMessage(this);
+  CutoverJobEventData clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CutoverJobEventData copyWith(void Function(CutoverJobEventData) updates) =>
       super.copyWith((message) => updates(message as CutoverJobEventData))
           as CutoverJobEventData;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CutoverJobEventData create() => CutoverJobEventData._();
+  @$core.override
   CutoverJobEventData createEmptyInstance() => create();
-  static $pb.PbList<CutoverJobEventData> createRepeated() =>
-      $pb.PbList<CutoverJobEventData>();
   @$core.pragma('dart2js:noInline')
   static CutoverJobEventData getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<CutoverJobEventData>(create);
@@ -6555,10 +5575,7 @@ class CutoverJobEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   CutoverJob get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(CutoverJob v) {
-    $_setField(1, v);
-  }
-
+  set payload(CutoverJob value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -6572,19 +5589,19 @@ class SourceEventData extends $pb.GeneratedMessage {
   factory SourceEventData({
     Source? payload,
   }) {
-    final $result = create();
-    if (payload != null) {
-      $result.payload = payload;
-    }
-    return $result;
+    final result = create();
+    if (payload != null) result.payload = payload;
+    return result;
   }
-  SourceEventData._() : super();
-  factory SourceEventData.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory SourceEventData.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  SourceEventData._();
+
+  factory SourceEventData.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory SourceEventData.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'SourceEventData',
@@ -6596,19 +5613,19 @@ class SourceEventData extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  SourceEventData clone() => SourceEventData()..mergeFromMessage(this);
+  SourceEventData clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   SourceEventData copyWith(void Function(SourceEventData) updates) =>
       super.copyWith((message) => updates(message as SourceEventData))
           as SourceEventData;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SourceEventData create() => SourceEventData._();
+  @$core.override
   SourceEventData createEmptyInstance() => create();
-  static $pb.PbList<SourceEventData> createRepeated() =>
-      $pb.PbList<SourceEventData>();
   @$core.pragma('dart2js:noInline')
   static SourceEventData getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<SourceEventData>(create);
@@ -6618,10 +5635,7 @@ class SourceEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   Source get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(Source v) {
-    $_setField(1, v);
-  }
-
+  set payload(Source value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -6635,19 +5649,19 @@ class MigratingVmEventData extends $pb.GeneratedMessage {
   factory MigratingVmEventData({
     MigratingVm? payload,
   }) {
-    final $result = create();
-    if (payload != null) {
-      $result.payload = payload;
-    }
-    return $result;
+    final result = create();
+    if (payload != null) result.payload = payload;
+    return result;
   }
-  MigratingVmEventData._() : super();
-  factory MigratingVmEventData.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory MigratingVmEventData.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  MigratingVmEventData._();
+
+  factory MigratingVmEventData.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory MigratingVmEventData.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'MigratingVmEventData',
@@ -6659,20 +5673,19 @@ class MigratingVmEventData extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  MigratingVmEventData clone() =>
-      MigratingVmEventData()..mergeFromMessage(this);
+  MigratingVmEventData clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MigratingVmEventData copyWith(void Function(MigratingVmEventData) updates) =>
       super.copyWith((message) => updates(message as MigratingVmEventData))
           as MigratingVmEventData;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static MigratingVmEventData create() => MigratingVmEventData._();
+  @$core.override
   MigratingVmEventData createEmptyInstance() => create();
-  static $pb.PbList<MigratingVmEventData> createRepeated() =>
-      $pb.PbList<MigratingVmEventData>();
   @$core.pragma('dart2js:noInline')
   static MigratingVmEventData getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<MigratingVmEventData>(create);
@@ -6682,10 +5695,7 @@ class MigratingVmEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   MigratingVm get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(MigratingVm v) {
-    $_setField(1, v);
-  }
-
+  set payload(MigratingVm value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -6694,6 +5704,7 @@ class MigratingVmEventData extends $pb.GeneratedMessage {
   MigratingVm ensurePayload() => $_ensure(0);
 }
 
-const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames =
+const $core.bool _omitFieldNames =
+    $core.bool.fromEnvironment('protobuf.omit_field_names');
+const $core.bool _omitMessageNames =
     $core.bool.fromEnvironment('protobuf.omit_message_names');

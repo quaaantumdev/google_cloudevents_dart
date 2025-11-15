@@ -1,19 +1,20 @@
+// This is a generated file - do not edit.
 //
-//  Generated code. Do not modify.
-//  source: google/events/cloud/apigeeregistry/v1/data.proto
-//
+// Generated from google/events/cloud/apigeeregistry/v1/data.proto.
+
 // @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
-// ignore_for_file: constant_identifier_names, library_prefixes
-// ignore_for_file: non_constant_identifier_names, prefer_final_fields
-// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
+// ignore_for_file: constant_identifier_names
+// ignore_for_file: curly_braces_in_flow_control_structures
+// ignore_for_file: deprecated_member_use_from_same_package, library_prefixes
+// ignore_for_file: non_constant_identifier_names
 
 import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/timestamp.pb.dart' as $2;
+import '../../../../protobuf/timestamp.pb.dart' as $0;
 import 'data.pbenum.dart';
 
 export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
@@ -26,22 +27,20 @@ class Instance_Config extends $pb.GeneratedMessage {
     $core.String? location,
     $core.String? cmekKeyName,
   }) {
-    final $result = create();
-    if (location != null) {
-      $result.location = location;
-    }
-    if (cmekKeyName != null) {
-      $result.cmekKeyName = cmekKeyName;
-    }
-    return $result;
+    final result = create();
+    if (location != null) result.location = location;
+    if (cmekKeyName != null) result.cmekKeyName = cmekKeyName;
+    return result;
   }
-  Instance_Config._() : super();
-  factory Instance_Config.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Instance_Config.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  Instance_Config._();
+
+  factory Instance_Config.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory Instance_Config.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'Instance.Config',
@@ -53,19 +52,19 @@ class Instance_Config extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  Instance_Config clone() => Instance_Config()..mergeFromMessage(this);
+  Instance_Config clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Instance_Config copyWith(void Function(Instance_Config) updates) =>
       super.copyWith((message) => updates(message as Instance_Config))
           as Instance_Config;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Instance_Config create() => Instance_Config._();
+  @$core.override
   Instance_Config createEmptyInstance() => create();
-  static $pb.PbList<Instance_Config> createRepeated() =>
-      $pb.PbList<Instance_Config>();
   @$core.pragma('dart2js:noInline')
   static Instance_Config getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<Instance_Config>(create);
@@ -75,10 +74,7 @@ class Instance_Config extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get location => $_getSZ(0);
   @$pb.TagNumber(1)
-  set location($core.String v) {
-    $_setString(0, v);
-  }
-
+  set location($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasLocation() => $_has(0);
   @$pb.TagNumber(1)
@@ -91,10 +87,7 @@ class Instance_Config extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get cmekKeyName => $_getSZ(1);
   @$pb.TagNumber(2)
-  set cmekKeyName($core.String v) {
-    $_setString(1, v);
-  }
-
+  set cmekKeyName($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasCmekKeyName() => $_has(1);
   @$pb.TagNumber(2)
@@ -106,40 +99,30 @@ class Instance_Config extends $pb.GeneratedMessage {
 class Instance extends $pb.GeneratedMessage {
   factory Instance({
     $core.String? name,
-    $2.Timestamp? createTime,
-    $2.Timestamp? updateTime,
+    $0.Timestamp? createTime,
+    $0.Timestamp? updateTime,
     Instance_State? state,
     $core.String? stateMessage,
     Instance_Config? config,
   }) {
-    final $result = create();
-    if (name != null) {
-      $result.name = name;
-    }
-    if (createTime != null) {
-      $result.createTime = createTime;
-    }
-    if (updateTime != null) {
-      $result.updateTime = updateTime;
-    }
-    if (state != null) {
-      $result.state = state;
-    }
-    if (stateMessage != null) {
-      $result.stateMessage = stateMessage;
-    }
-    if (config != null) {
-      $result.config = config;
-    }
-    return $result;
+    final result = create();
+    if (name != null) result.name = name;
+    if (createTime != null) result.createTime = createTime;
+    if (updateTime != null) result.updateTime = updateTime;
+    if (state != null) result.state = state;
+    if (stateMessage != null) result.stateMessage = stateMessage;
+    if (config != null) result.config = config;
+    return result;
   }
-  Instance._() : super();
-  factory Instance.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Instance.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  Instance._();
+
+  factory Instance.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory Instance.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'Instance',
@@ -147,13 +130,11 @@ class Instance extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.events.cloud.apigeeregistry.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$2.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(3, _omitFieldNames ? '' : 'updateTime',
-        subBuilder: $2.Timestamp.create)
-    ..e<Instance_State>(4, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
-        defaultOrMaker: Instance_State.STATE_UNSPECIFIED,
-        valueOf: Instance_State.valueOf,
+    ..aOM<$0.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(3, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $0.Timestamp.create)
+    ..aE<Instance_State>(4, _omitFieldNames ? '' : 'state',
         enumValues: Instance_State.values)
     ..aOS(5, _omitFieldNames ? '' : 'stateMessage')
     ..aOM<Instance_Config>(6, _omitFieldNames ? '' : 'config',
@@ -161,17 +142,18 @@ class Instance extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  Instance clone() => Instance()..mergeFromMessage(this);
+  Instance clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Instance copyWith(void Function(Instance) updates) =>
       super.copyWith((message) => updates(message as Instance)) as Instance;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Instance create() => Instance._();
+  @$core.override
   Instance createEmptyInstance() => create();
-  static $pb.PbList<Instance> createRepeated() => $pb.PbList<Instance>();
   @$core.pragma('dart2js:noInline')
   static Instance getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Instance>(create);
@@ -182,10 +164,7 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) {
-    $_setString(0, v);
-  }
-
+  set name($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -193,42 +172,33 @@ class Instance extends $pb.GeneratedMessage {
 
   /// Output only. Creation timestamp.
   @$pb.TagNumber(2)
-  $2.Timestamp get createTime => $_getN(1);
+  $0.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($2.Timestamp v) {
-    $_setField(2, v);
-  }
-
+  set createTime($0.Timestamp value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => $_clearField(2);
   @$pb.TagNumber(2)
-  $2.Timestamp ensureCreateTime() => $_ensure(1);
+  $0.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. Last update timestamp.
   @$pb.TagNumber(3)
-  $2.Timestamp get updateTime => $_getN(2);
+  $0.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($2.Timestamp v) {
-    $_setField(3, v);
-  }
-
+  set updateTime($0.Timestamp value) => $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => $_clearField(3);
   @$pb.TagNumber(3)
-  $2.Timestamp ensureUpdateTime() => $_ensure(2);
+  $0.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Output only. The current state of the Instance.
   @$pb.TagNumber(4)
   Instance_State get state => $_getN(3);
   @$pb.TagNumber(4)
-  set state(Instance_State v) {
-    $_setField(4, v);
-  }
-
+  set state(Instance_State value) => $_setField(4, value);
   @$pb.TagNumber(4)
   $core.bool hasState() => $_has(3);
   @$pb.TagNumber(4)
@@ -238,10 +208,7 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get stateMessage => $_getSZ(4);
   @$pb.TagNumber(5)
-  set stateMessage($core.String v) {
-    $_setString(4, v);
-  }
-
+  set stateMessage($core.String value) => $_setString(4, value);
   @$pb.TagNumber(5)
   $core.bool hasStateMessage() => $_has(4);
   @$pb.TagNumber(5)
@@ -251,10 +218,7 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   Instance_Config get config => $_getN(5);
   @$pb.TagNumber(6)
-  set config(Instance_Config v) {
-    $_setField(6, v);
-  }
-
+  set config(Instance_Config value) => $_setField(6, value);
   @$pb.TagNumber(6)
   $core.bool hasConfig() => $_has(5);
   @$pb.TagNumber(6)
@@ -270,54 +234,38 @@ class Api extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? displayName,
     $core.String? description,
-    $2.Timestamp? createTime,
-    $2.Timestamp? updateTime,
+    $0.Timestamp? createTime,
+    $0.Timestamp? updateTime,
     $core.String? availability,
     $core.String? recommendedVersion,
     $core.String? recommendedDeployment,
     $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.Iterable<$core.MapEntry<$core.String, $core.String>>? annotations,
   }) {
-    final $result = create();
-    if (name != null) {
-      $result.name = name;
-    }
-    if (displayName != null) {
-      $result.displayName = displayName;
-    }
-    if (description != null) {
-      $result.description = description;
-    }
-    if (createTime != null) {
-      $result.createTime = createTime;
-    }
-    if (updateTime != null) {
-      $result.updateTime = updateTime;
-    }
-    if (availability != null) {
-      $result.availability = availability;
-    }
-    if (recommendedVersion != null) {
-      $result.recommendedVersion = recommendedVersion;
-    }
-    if (recommendedDeployment != null) {
-      $result.recommendedDeployment = recommendedDeployment;
-    }
-    if (labels != null) {
-      $result.labels.addEntries(labels);
-    }
-    if (annotations != null) {
-      $result.annotations.addEntries(annotations);
-    }
-    return $result;
+    final result = create();
+    if (name != null) result.name = name;
+    if (displayName != null) result.displayName = displayName;
+    if (description != null) result.description = description;
+    if (createTime != null) result.createTime = createTime;
+    if (updateTime != null) result.updateTime = updateTime;
+    if (availability != null) result.availability = availability;
+    if (recommendedVersion != null)
+      result.recommendedVersion = recommendedVersion;
+    if (recommendedDeployment != null)
+      result.recommendedDeployment = recommendedDeployment;
+    if (labels != null) result.labels.addEntries(labels);
+    if (annotations != null) result.annotations.addEntries(annotations);
+    return result;
   }
-  Api._() : super();
-  factory Api.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Api.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  Api._();
+
+  factory Api.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory Api.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'Api',
@@ -327,10 +275,10 @@ class Api extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
     ..aOS(3, _omitFieldNames ? '' : 'description')
-    ..aOM<$2.Timestamp>(4, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(5, _omitFieldNames ? '' : 'updateTime',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$0.Timestamp>(4, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(5, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $0.Timestamp.create)
     ..aOS(6, _omitFieldNames ? '' : 'availability')
     ..aOS(7, _omitFieldNames ? '' : 'recommendedVersion')
     ..aOS(8, _omitFieldNames ? '' : 'recommendedDeployment')
@@ -349,17 +297,18 @@ class Api extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  Api clone() => Api()..mergeFromMessage(this);
+  Api clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Api copyWith(void Function(Api) updates) =>
       super.copyWith((message) => updates(message as Api)) as Api;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Api create() => Api._();
+  @$core.override
   Api createEmptyInstance() => create();
-  static $pb.PbList<Api> createRepeated() => $pb.PbList<Api>();
   @$core.pragma('dart2js:noInline')
   static Api getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Api>(create);
@@ -369,10 +318,7 @@ class Api extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) {
-    $_setString(0, v);
-  }
-
+  set name($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -382,10 +328,7 @@ class Api extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get displayName => $_getSZ(1);
   @$pb.TagNumber(2)
-  set displayName($core.String v) {
-    $_setString(1, v);
-  }
-
+  set displayName($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasDisplayName() => $_has(1);
   @$pb.TagNumber(2)
@@ -395,10 +338,7 @@ class Api extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get description => $_getSZ(2);
   @$pb.TagNumber(3)
-  set description($core.String v) {
-    $_setString(2, v);
-  }
-
+  set description($core.String value) => $_setString(2, value);
   @$pb.TagNumber(3)
   $core.bool hasDescription() => $_has(2);
   @$pb.TagNumber(3)
@@ -406,33 +346,27 @@ class Api extends $pb.GeneratedMessage {
 
   /// Output only. Creation timestamp.
   @$pb.TagNumber(4)
-  $2.Timestamp get createTime => $_getN(3);
+  $0.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(4)
-  set createTime($2.Timestamp v) {
-    $_setField(4, v);
-  }
-
+  set createTime($0.Timestamp value) => $_setField(4, value);
   @$pb.TagNumber(4)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearCreateTime() => $_clearField(4);
   @$pb.TagNumber(4)
-  $2.Timestamp ensureCreateTime() => $_ensure(3);
+  $0.Timestamp ensureCreateTime() => $_ensure(3);
 
   /// Output only. Last update timestamp.
   @$pb.TagNumber(5)
-  $2.Timestamp get updateTime => $_getN(4);
+  $0.Timestamp get updateTime => $_getN(4);
   @$pb.TagNumber(5)
-  set updateTime($2.Timestamp v) {
-    $_setField(5, v);
-  }
-
+  set updateTime($0.Timestamp value) => $_setField(5, value);
   @$pb.TagNumber(5)
   $core.bool hasUpdateTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearUpdateTime() => $_clearField(5);
   @$pb.TagNumber(5)
-  $2.Timestamp ensureUpdateTime() => $_ensure(4);
+  $0.Timestamp ensureUpdateTime() => $_ensure(4);
 
   /// A user-definable description of the availability of this service.
   /// Format: free-form, but we expect single words that describe availability,
@@ -440,10 +374,7 @@ class Api extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get availability => $_getSZ(5);
   @$pb.TagNumber(6)
-  set availability($core.String v) {
-    $_setString(5, v);
-  }
-
+  set availability($core.String value) => $_setString(5, value);
   @$pb.TagNumber(6)
   $core.bool hasAvailability() => $_has(5);
   @$pb.TagNumber(6)
@@ -455,10 +386,7 @@ class Api extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get recommendedVersion => $_getSZ(6);
   @$pb.TagNumber(7)
-  set recommendedVersion($core.String v) {
-    $_setString(6, v);
-  }
-
+  set recommendedVersion($core.String value) => $_setString(6, value);
   @$pb.TagNumber(7)
   $core.bool hasRecommendedVersion() => $_has(6);
   @$pb.TagNumber(7)
@@ -470,10 +398,7 @@ class Api extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.String get recommendedDeployment => $_getSZ(7);
   @$pb.TagNumber(8)
-  set recommendedDeployment($core.String v) {
-    $_setString(7, v);
-  }
-
+  set recommendedDeployment($core.String value) => $_setString(7, value);
   @$pb.TagNumber(8)
   $core.bool hasRecommendedDeployment() => $_has(7);
   @$pb.TagNumber(8)
@@ -510,46 +435,32 @@ class ApiVersion extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? displayName,
     $core.String? description,
-    $2.Timestamp? createTime,
-    $2.Timestamp? updateTime,
+    $0.Timestamp? createTime,
+    $0.Timestamp? updateTime,
     $core.String? state,
     $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.Iterable<$core.MapEntry<$core.String, $core.String>>? annotations,
   }) {
-    final $result = create();
-    if (name != null) {
-      $result.name = name;
-    }
-    if (displayName != null) {
-      $result.displayName = displayName;
-    }
-    if (description != null) {
-      $result.description = description;
-    }
-    if (createTime != null) {
-      $result.createTime = createTime;
-    }
-    if (updateTime != null) {
-      $result.updateTime = updateTime;
-    }
-    if (state != null) {
-      $result.state = state;
-    }
-    if (labels != null) {
-      $result.labels.addEntries(labels);
-    }
-    if (annotations != null) {
-      $result.annotations.addEntries(annotations);
-    }
-    return $result;
+    final result = create();
+    if (name != null) result.name = name;
+    if (displayName != null) result.displayName = displayName;
+    if (description != null) result.description = description;
+    if (createTime != null) result.createTime = createTime;
+    if (updateTime != null) result.updateTime = updateTime;
+    if (state != null) result.state = state;
+    if (labels != null) result.labels.addEntries(labels);
+    if (annotations != null) result.annotations.addEntries(annotations);
+    return result;
   }
-  ApiVersion._() : super();
-  factory ApiVersion.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ApiVersion.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  ApiVersion._();
+
+  factory ApiVersion.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ApiVersion.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'ApiVersion',
@@ -559,10 +470,10 @@ class ApiVersion extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
     ..aOS(3, _omitFieldNames ? '' : 'description')
-    ..aOM<$2.Timestamp>(4, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(5, _omitFieldNames ? '' : 'updateTime',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$0.Timestamp>(4, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(5, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $0.Timestamp.create)
     ..aOS(6, _omitFieldNames ? '' : 'state')
     ..m<$core.String, $core.String>(7, _omitFieldNames ? '' : 'labels',
         entryClassName: 'ApiVersion.LabelsEntry',
@@ -579,17 +490,18 @@ class ApiVersion extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ApiVersion clone() => ApiVersion()..mergeFromMessage(this);
+  ApiVersion clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ApiVersion copyWith(void Function(ApiVersion) updates) =>
       super.copyWith((message) => updates(message as ApiVersion)) as ApiVersion;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ApiVersion create() => ApiVersion._();
+  @$core.override
   ApiVersion createEmptyInstance() => create();
-  static $pb.PbList<ApiVersion> createRepeated() => $pb.PbList<ApiVersion>();
   @$core.pragma('dart2js:noInline')
   static ApiVersion getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ApiVersion>(create);
@@ -599,10 +511,7 @@ class ApiVersion extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) {
-    $_setString(0, v);
-  }
-
+  set name($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -612,10 +521,7 @@ class ApiVersion extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get displayName => $_getSZ(1);
   @$pb.TagNumber(2)
-  set displayName($core.String v) {
-    $_setString(1, v);
-  }
-
+  set displayName($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasDisplayName() => $_has(1);
   @$pb.TagNumber(2)
@@ -625,10 +531,7 @@ class ApiVersion extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get description => $_getSZ(2);
   @$pb.TagNumber(3)
-  set description($core.String v) {
-    $_setString(2, v);
-  }
-
+  set description($core.String value) => $_setString(2, value);
   @$pb.TagNumber(3)
   $core.bool hasDescription() => $_has(2);
   @$pb.TagNumber(3)
@@ -636,33 +539,27 @@ class ApiVersion extends $pb.GeneratedMessage {
 
   /// Output only. Creation timestamp.
   @$pb.TagNumber(4)
-  $2.Timestamp get createTime => $_getN(3);
+  $0.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(4)
-  set createTime($2.Timestamp v) {
-    $_setField(4, v);
-  }
-
+  set createTime($0.Timestamp value) => $_setField(4, value);
   @$pb.TagNumber(4)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearCreateTime() => $_clearField(4);
   @$pb.TagNumber(4)
-  $2.Timestamp ensureCreateTime() => $_ensure(3);
+  $0.Timestamp ensureCreateTime() => $_ensure(3);
 
   /// Output only. Last update timestamp.
   @$pb.TagNumber(5)
-  $2.Timestamp get updateTime => $_getN(4);
+  $0.Timestamp get updateTime => $_getN(4);
   @$pb.TagNumber(5)
-  set updateTime($2.Timestamp v) {
-    $_setField(5, v);
-  }
-
+  set updateTime($0.Timestamp value) => $_setField(5, value);
   @$pb.TagNumber(5)
   $core.bool hasUpdateTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearUpdateTime() => $_clearField(5);
   @$pb.TagNumber(5)
-  $2.Timestamp ensureUpdateTime() => $_ensure(4);
+  $0.Timestamp ensureUpdateTime() => $_ensure(4);
 
   /// A user-definable description of the lifecycle phase of this API version.
   /// Format: free-form, but we expect single words that describe API maturity,
@@ -671,10 +568,7 @@ class ApiVersion extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get state => $_getSZ(5);
   @$pb.TagNumber(6)
-  set state($core.String v) {
-    $_setString(5, v);
-  }
-
+  set state($core.String value) => $_setString(5, value);
   @$pb.TagNumber(6)
   $core.bool hasState() => $_has(5);
   @$pb.TagNumber(6)
@@ -718,9 +612,9 @@ class ApiSpec extends $pb.GeneratedMessage {
     $core.String? filename,
     $core.String? description,
     $core.String? revisionId,
-    $2.Timestamp? createTime,
-    $2.Timestamp? revisionCreateTime,
-    $2.Timestamp? revisionUpdateTime,
+    $0.Timestamp? createTime,
+    $0.Timestamp? revisionCreateTime,
+    $0.Timestamp? revisionUpdateTime,
     $core.String? mimeType,
     $core.int? sizeBytes,
     $core.String? hash,
@@ -728,55 +622,33 @@ class ApiSpec extends $pb.GeneratedMessage {
     $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.Iterable<$core.MapEntry<$core.String, $core.String>>? annotations,
   }) {
-    final $result = create();
-    if (name != null) {
-      $result.name = name;
-    }
-    if (filename != null) {
-      $result.filename = filename;
-    }
-    if (description != null) {
-      $result.description = description;
-    }
-    if (revisionId != null) {
-      $result.revisionId = revisionId;
-    }
-    if (createTime != null) {
-      $result.createTime = createTime;
-    }
-    if (revisionCreateTime != null) {
-      $result.revisionCreateTime = revisionCreateTime;
-    }
-    if (revisionUpdateTime != null) {
-      $result.revisionUpdateTime = revisionUpdateTime;
-    }
-    if (mimeType != null) {
-      $result.mimeType = mimeType;
-    }
-    if (sizeBytes != null) {
-      $result.sizeBytes = sizeBytes;
-    }
-    if (hash != null) {
-      $result.hash = hash;
-    }
-    if (sourceUri != null) {
-      $result.sourceUri = sourceUri;
-    }
-    if (labels != null) {
-      $result.labels.addEntries(labels);
-    }
-    if (annotations != null) {
-      $result.annotations.addEntries(annotations);
-    }
-    return $result;
+    final result = create();
+    if (name != null) result.name = name;
+    if (filename != null) result.filename = filename;
+    if (description != null) result.description = description;
+    if (revisionId != null) result.revisionId = revisionId;
+    if (createTime != null) result.createTime = createTime;
+    if (revisionCreateTime != null)
+      result.revisionCreateTime = revisionCreateTime;
+    if (revisionUpdateTime != null)
+      result.revisionUpdateTime = revisionUpdateTime;
+    if (mimeType != null) result.mimeType = mimeType;
+    if (sizeBytes != null) result.sizeBytes = sizeBytes;
+    if (hash != null) result.hash = hash;
+    if (sourceUri != null) result.sourceUri = sourceUri;
+    if (labels != null) result.labels.addEntries(labels);
+    if (annotations != null) result.annotations.addEntries(annotations);
+    return result;
   }
-  ApiSpec._() : super();
-  factory ApiSpec.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ApiSpec.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  ApiSpec._();
+
+  factory ApiSpec.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ApiSpec.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'ApiSpec',
@@ -787,14 +659,14 @@ class ApiSpec extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'filename')
     ..aOS(3, _omitFieldNames ? '' : 'description')
     ..aOS(4, _omitFieldNames ? '' : 'revisionId')
-    ..aOM<$2.Timestamp>(5, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(6, _omitFieldNames ? '' : 'revisionCreateTime',
-        subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(7, _omitFieldNames ? '' : 'revisionUpdateTime',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$0.Timestamp>(5, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(6, _omitFieldNames ? '' : 'revisionCreateTime',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(7, _omitFieldNames ? '' : 'revisionUpdateTime',
+        subBuilder: $0.Timestamp.create)
     ..aOS(8, _omitFieldNames ? '' : 'mimeType')
-    ..a<$core.int>(9, _omitFieldNames ? '' : 'sizeBytes', $pb.PbFieldType.O3)
+    ..aI(9, _omitFieldNames ? '' : 'sizeBytes')
     ..aOS(10, _omitFieldNames ? '' : 'hash')
     ..aOS(11, _omitFieldNames ? '' : 'sourceUri')
     ..m<$core.String, $core.String>(14, _omitFieldNames ? '' : 'labels',
@@ -812,17 +684,18 @@ class ApiSpec extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ApiSpec clone() => ApiSpec()..mergeFromMessage(this);
+  ApiSpec clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ApiSpec copyWith(void Function(ApiSpec) updates) =>
       super.copyWith((message) => updates(message as ApiSpec)) as ApiSpec;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ApiSpec create() => ApiSpec._();
+  @$core.override
   ApiSpec createEmptyInstance() => create();
-  static $pb.PbList<ApiSpec> createRepeated() => $pb.PbList<ApiSpec>();
   @$core.pragma('dart2js:noInline')
   static ApiSpec getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ApiSpec>(create);
@@ -832,10 +705,7 @@ class ApiSpec extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) {
-    $_setString(0, v);
-  }
-
+  set name($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -845,10 +715,7 @@ class ApiSpec extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get filename => $_getSZ(1);
   @$pb.TagNumber(2)
-  set filename($core.String v) {
-    $_setString(1, v);
-  }
-
+  set filename($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasFilename() => $_has(1);
   @$pb.TagNumber(2)
@@ -858,10 +725,7 @@ class ApiSpec extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get description => $_getSZ(2);
   @$pb.TagNumber(3)
-  set description($core.String v) {
-    $_setString(2, v);
-  }
-
+  set description($core.String value) => $_setString(2, value);
   @$pb.TagNumber(3)
   $core.bool hasDescription() => $_has(2);
   @$pb.TagNumber(3)
@@ -873,10 +737,7 @@ class ApiSpec extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get revisionId => $_getSZ(3);
   @$pb.TagNumber(4)
-  set revisionId($core.String v) {
-    $_setString(3, v);
-  }
-
+  set revisionId($core.String value) => $_setString(3, value);
   @$pb.TagNumber(4)
   $core.bool hasRevisionId() => $_has(3);
   @$pb.TagNumber(4)
@@ -884,50 +745,41 @@ class ApiSpec extends $pb.GeneratedMessage {
 
   /// Output only. Creation timestamp; when the spec resource was created.
   @$pb.TagNumber(5)
-  $2.Timestamp get createTime => $_getN(4);
+  $0.Timestamp get createTime => $_getN(4);
   @$pb.TagNumber(5)
-  set createTime($2.Timestamp v) {
-    $_setField(5, v);
-  }
-
+  set createTime($0.Timestamp value) => $_setField(5, value);
   @$pb.TagNumber(5)
   $core.bool hasCreateTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearCreateTime() => $_clearField(5);
   @$pb.TagNumber(5)
-  $2.Timestamp ensureCreateTime() => $_ensure(4);
+  $0.Timestamp ensureCreateTime() => $_ensure(4);
 
   /// Output only. Revision creation timestamp; when the represented revision was
   /// created.
   @$pb.TagNumber(6)
-  $2.Timestamp get revisionCreateTime => $_getN(5);
+  $0.Timestamp get revisionCreateTime => $_getN(5);
   @$pb.TagNumber(6)
-  set revisionCreateTime($2.Timestamp v) {
-    $_setField(6, v);
-  }
-
+  set revisionCreateTime($0.Timestamp value) => $_setField(6, value);
   @$pb.TagNumber(6)
   $core.bool hasRevisionCreateTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearRevisionCreateTime() => $_clearField(6);
   @$pb.TagNumber(6)
-  $2.Timestamp ensureRevisionCreateTime() => $_ensure(5);
+  $0.Timestamp ensureRevisionCreateTime() => $_ensure(5);
 
   /// Output only. Last update timestamp: when the represented revision was last
   /// modified.
   @$pb.TagNumber(7)
-  $2.Timestamp get revisionUpdateTime => $_getN(6);
+  $0.Timestamp get revisionUpdateTime => $_getN(6);
   @$pb.TagNumber(7)
-  set revisionUpdateTime($2.Timestamp v) {
-    $_setField(7, v);
-  }
-
+  set revisionUpdateTime($0.Timestamp value) => $_setField(7, value);
   @$pb.TagNumber(7)
   $core.bool hasRevisionUpdateTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearRevisionUpdateTime() => $_clearField(7);
   @$pb.TagNumber(7)
-  $2.Timestamp ensureRevisionUpdateTime() => $_ensure(6);
+  $0.Timestamp ensureRevisionUpdateTime() => $_ensure(6);
 
   /// A style (format) descriptor for this spec that is specified as a Media Type
   /// (https://en.wikipedia.org/wiki/Media_type). Possible values include
@@ -940,10 +792,7 @@ class ApiSpec extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.String get mimeType => $_getSZ(7);
   @$pb.TagNumber(8)
-  set mimeType($core.String v) {
-    $_setString(7, v);
-  }
-
+  set mimeType($core.String value) => $_setString(7, value);
   @$pb.TagNumber(8)
   $core.bool hasMimeType() => $_has(7);
   @$pb.TagNumber(8)
@@ -954,10 +803,7 @@ class ApiSpec extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.int get sizeBytes => $_getIZ(8);
   @$pb.TagNumber(9)
-  set sizeBytes($core.int v) {
-    $_setSignedInt32(8, v);
-  }
-
+  set sizeBytes($core.int value) => $_setSignedInt32(8, value);
   @$pb.TagNumber(9)
   $core.bool hasSizeBytes() => $_has(8);
   @$pb.TagNumber(9)
@@ -968,10 +814,7 @@ class ApiSpec extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.String get hash => $_getSZ(9);
   @$pb.TagNumber(10)
-  set hash($core.String v) {
-    $_setString(9, v);
-  }
-
+  set hash($core.String value) => $_setString(9, value);
   @$pb.TagNumber(10)
   $core.bool hasHash() => $_has(9);
   @$pb.TagNumber(10)
@@ -984,10 +827,7 @@ class ApiSpec extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.String get sourceUri => $_getSZ(10);
   @$pb.TagNumber(11)
-  set sourceUri($core.String v) {
-    $_setString(10, v);
-  }
-
+  set sourceUri($core.String value) => $_setString(10, value);
   @$pb.TagNumber(11)
   $core.bool hasSourceUri() => $_has(10);
   @$pb.TagNumber(11)
@@ -1028,9 +868,9 @@ class ApiDeployment extends $pb.GeneratedMessage {
     $core.String? displayName,
     $core.String? description,
     $core.String? revisionId,
-    $2.Timestamp? createTime,
-    $2.Timestamp? revisionCreateTime,
-    $2.Timestamp? revisionUpdateTime,
+    $0.Timestamp? createTime,
+    $0.Timestamp? revisionCreateTime,
+    $0.Timestamp? revisionUpdateTime,
     $core.String? apiSpecRevision,
     $core.String? endpointUri,
     $core.String? externalChannelUri,
@@ -1039,58 +879,35 @@ class ApiDeployment extends $pb.GeneratedMessage {
     $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.Iterable<$core.MapEntry<$core.String, $core.String>>? annotations,
   }) {
-    final $result = create();
-    if (name != null) {
-      $result.name = name;
-    }
-    if (displayName != null) {
-      $result.displayName = displayName;
-    }
-    if (description != null) {
-      $result.description = description;
-    }
-    if (revisionId != null) {
-      $result.revisionId = revisionId;
-    }
-    if (createTime != null) {
-      $result.createTime = createTime;
-    }
-    if (revisionCreateTime != null) {
-      $result.revisionCreateTime = revisionCreateTime;
-    }
-    if (revisionUpdateTime != null) {
-      $result.revisionUpdateTime = revisionUpdateTime;
-    }
-    if (apiSpecRevision != null) {
-      $result.apiSpecRevision = apiSpecRevision;
-    }
-    if (endpointUri != null) {
-      $result.endpointUri = endpointUri;
-    }
-    if (externalChannelUri != null) {
-      $result.externalChannelUri = externalChannelUri;
-    }
-    if (intendedAudience != null) {
-      $result.intendedAudience = intendedAudience;
-    }
-    if (accessGuidance != null) {
-      $result.accessGuidance = accessGuidance;
-    }
-    if (labels != null) {
-      $result.labels.addEntries(labels);
-    }
-    if (annotations != null) {
-      $result.annotations.addEntries(annotations);
-    }
-    return $result;
+    final result = create();
+    if (name != null) result.name = name;
+    if (displayName != null) result.displayName = displayName;
+    if (description != null) result.description = description;
+    if (revisionId != null) result.revisionId = revisionId;
+    if (createTime != null) result.createTime = createTime;
+    if (revisionCreateTime != null)
+      result.revisionCreateTime = revisionCreateTime;
+    if (revisionUpdateTime != null)
+      result.revisionUpdateTime = revisionUpdateTime;
+    if (apiSpecRevision != null) result.apiSpecRevision = apiSpecRevision;
+    if (endpointUri != null) result.endpointUri = endpointUri;
+    if (externalChannelUri != null)
+      result.externalChannelUri = externalChannelUri;
+    if (intendedAudience != null) result.intendedAudience = intendedAudience;
+    if (accessGuidance != null) result.accessGuidance = accessGuidance;
+    if (labels != null) result.labels.addEntries(labels);
+    if (annotations != null) result.annotations.addEntries(annotations);
+    return result;
   }
-  ApiDeployment._() : super();
-  factory ApiDeployment.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ApiDeployment.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  ApiDeployment._();
+
+  factory ApiDeployment.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ApiDeployment.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'ApiDeployment',
@@ -1101,12 +918,12 @@ class ApiDeployment extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
     ..aOS(3, _omitFieldNames ? '' : 'description')
     ..aOS(4, _omitFieldNames ? '' : 'revisionId')
-    ..aOM<$2.Timestamp>(5, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(6, _omitFieldNames ? '' : 'revisionCreateTime',
-        subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(7, _omitFieldNames ? '' : 'revisionUpdateTime',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$0.Timestamp>(5, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(6, _omitFieldNames ? '' : 'revisionCreateTime',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(7, _omitFieldNames ? '' : 'revisionUpdateTime',
+        subBuilder: $0.Timestamp.create)
     ..aOS(8, _omitFieldNames ? '' : 'apiSpecRevision')
     ..aOS(9, _omitFieldNames ? '' : 'endpointUri')
     ..aOS(10, _omitFieldNames ? '' : 'externalChannelUri')
@@ -1127,19 +944,19 @@ class ApiDeployment extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ApiDeployment clone() => ApiDeployment()..mergeFromMessage(this);
+  ApiDeployment clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ApiDeployment copyWith(void Function(ApiDeployment) updates) =>
       super.copyWith((message) => updates(message as ApiDeployment))
           as ApiDeployment;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ApiDeployment create() => ApiDeployment._();
+  @$core.override
   ApiDeployment createEmptyInstance() => create();
-  static $pb.PbList<ApiDeployment> createRepeated() =>
-      $pb.PbList<ApiDeployment>();
   @$core.pragma('dart2js:noInline')
   static ApiDeployment getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ApiDeployment>(create);
@@ -1149,10 +966,7 @@ class ApiDeployment extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) {
-    $_setString(0, v);
-  }
-
+  set name($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -1162,10 +976,7 @@ class ApiDeployment extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get displayName => $_getSZ(1);
   @$pb.TagNumber(2)
-  set displayName($core.String v) {
-    $_setString(1, v);
-  }
-
+  set displayName($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasDisplayName() => $_has(1);
   @$pb.TagNumber(2)
@@ -1175,10 +986,7 @@ class ApiDeployment extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get description => $_getSZ(2);
   @$pb.TagNumber(3)
-  set description($core.String v) {
-    $_setString(2, v);
-  }
-
+  set description($core.String value) => $_setString(2, value);
   @$pb.TagNumber(3)
   $core.bool hasDescription() => $_has(2);
   @$pb.TagNumber(3)
@@ -1190,10 +998,7 @@ class ApiDeployment extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get revisionId => $_getSZ(3);
   @$pb.TagNumber(4)
-  set revisionId($core.String v) {
-    $_setString(3, v);
-  }
-
+  set revisionId($core.String value) => $_setString(3, value);
   @$pb.TagNumber(4)
   $core.bool hasRevisionId() => $_has(3);
   @$pb.TagNumber(4)
@@ -1201,50 +1006,41 @@ class ApiDeployment extends $pb.GeneratedMessage {
 
   /// Output only. Creation timestamp; when the deployment resource was created.
   @$pb.TagNumber(5)
-  $2.Timestamp get createTime => $_getN(4);
+  $0.Timestamp get createTime => $_getN(4);
   @$pb.TagNumber(5)
-  set createTime($2.Timestamp v) {
-    $_setField(5, v);
-  }
-
+  set createTime($0.Timestamp value) => $_setField(5, value);
   @$pb.TagNumber(5)
   $core.bool hasCreateTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearCreateTime() => $_clearField(5);
   @$pb.TagNumber(5)
-  $2.Timestamp ensureCreateTime() => $_ensure(4);
+  $0.Timestamp ensureCreateTime() => $_ensure(4);
 
   /// Output only. Revision creation timestamp; when the represented revision was
   /// created.
   @$pb.TagNumber(6)
-  $2.Timestamp get revisionCreateTime => $_getN(5);
+  $0.Timestamp get revisionCreateTime => $_getN(5);
   @$pb.TagNumber(6)
-  set revisionCreateTime($2.Timestamp v) {
-    $_setField(6, v);
-  }
-
+  set revisionCreateTime($0.Timestamp value) => $_setField(6, value);
   @$pb.TagNumber(6)
   $core.bool hasRevisionCreateTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearRevisionCreateTime() => $_clearField(6);
   @$pb.TagNumber(6)
-  $2.Timestamp ensureRevisionCreateTime() => $_ensure(5);
+  $0.Timestamp ensureRevisionCreateTime() => $_ensure(5);
 
   /// Output only. Last update timestamp: when the represented revision was last
   /// modified.
   @$pb.TagNumber(7)
-  $2.Timestamp get revisionUpdateTime => $_getN(6);
+  $0.Timestamp get revisionUpdateTime => $_getN(6);
   @$pb.TagNumber(7)
-  set revisionUpdateTime($2.Timestamp v) {
-    $_setField(7, v);
-  }
-
+  set revisionUpdateTime($0.Timestamp value) => $_setField(7, value);
   @$pb.TagNumber(7)
   $core.bool hasRevisionUpdateTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearRevisionUpdateTime() => $_clearField(7);
   @$pb.TagNumber(7)
-  $2.Timestamp ensureRevisionUpdateTime() => $_ensure(6);
+  $0.Timestamp ensureRevisionUpdateTime() => $_ensure(6);
 
   /// The full resource name (including revision ID) of the spec of the API being
   /// served by the deployment. Changes to this value will update the revision.
@@ -1252,10 +1048,7 @@ class ApiDeployment extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.String get apiSpecRevision => $_getSZ(7);
   @$pb.TagNumber(8)
-  set apiSpecRevision($core.String v) {
-    $_setString(7, v);
-  }
-
+  set apiSpecRevision($core.String value) => $_setString(7, value);
   @$pb.TagNumber(8)
   $core.bool hasApiSpecRevision() => $_has(7);
   @$pb.TagNumber(8)
@@ -1266,10 +1059,7 @@ class ApiDeployment extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.String get endpointUri => $_getSZ(8);
   @$pb.TagNumber(9)
-  set endpointUri($core.String v) {
-    $_setString(8, v);
-  }
-
+  set endpointUri($core.String value) => $_setString(8, value);
   @$pb.TagNumber(9)
   $core.bool hasEndpointUri() => $_has(8);
   @$pb.TagNumber(9)
@@ -1280,10 +1070,7 @@ class ApiDeployment extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.String get externalChannelUri => $_getSZ(9);
   @$pb.TagNumber(10)
-  set externalChannelUri($core.String v) {
-    $_setString(9, v);
-  }
-
+  set externalChannelUri($core.String value) => $_setString(9, value);
   @$pb.TagNumber(10)
   $core.bool hasExternalChannelUri() => $_has(9);
   @$pb.TagNumber(10)
@@ -1294,10 +1081,7 @@ class ApiDeployment extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.String get intendedAudience => $_getSZ(10);
   @$pb.TagNumber(11)
-  set intendedAudience($core.String v) {
-    $_setString(10, v);
-  }
-
+  set intendedAudience($core.String value) => $_setString(10, value);
   @$pb.TagNumber(11)
   $core.bool hasIntendedAudience() => $_has(10);
   @$pb.TagNumber(11)
@@ -1308,10 +1092,7 @@ class ApiDeployment extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.String get accessGuidance => $_getSZ(11);
   @$pb.TagNumber(12)
-  set accessGuidance($core.String v) {
-    $_setString(11, v);
-  }
-
+  set accessGuidance($core.String value) => $_setString(11, value);
   @$pb.TagNumber(12)
   $core.bool hasAccessGuidance() => $_has(11);
   @$pb.TagNumber(12)
@@ -1346,19 +1127,19 @@ class ApiVersionEventData extends $pb.GeneratedMessage {
   factory ApiVersionEventData({
     ApiVersion? payload,
   }) {
-    final $result = create();
-    if (payload != null) {
-      $result.payload = payload;
-    }
-    return $result;
+    final result = create();
+    if (payload != null) result.payload = payload;
+    return result;
   }
-  ApiVersionEventData._() : super();
-  factory ApiVersionEventData.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ApiVersionEventData.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  ApiVersionEventData._();
+
+  factory ApiVersionEventData.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ApiVersionEventData.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'ApiVersionEventData',
@@ -1370,19 +1151,19 @@ class ApiVersionEventData extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ApiVersionEventData clone() => ApiVersionEventData()..mergeFromMessage(this);
+  ApiVersionEventData clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ApiVersionEventData copyWith(void Function(ApiVersionEventData) updates) =>
       super.copyWith((message) => updates(message as ApiVersionEventData))
           as ApiVersionEventData;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ApiVersionEventData create() => ApiVersionEventData._();
+  @$core.override
   ApiVersionEventData createEmptyInstance() => create();
-  static $pb.PbList<ApiVersionEventData> createRepeated() =>
-      $pb.PbList<ApiVersionEventData>();
   @$core.pragma('dart2js:noInline')
   static ApiVersionEventData getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ApiVersionEventData>(create);
@@ -1392,10 +1173,7 @@ class ApiVersionEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   ApiVersion get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(ApiVersion v) {
-    $_setField(1, v);
-  }
-
+  set payload(ApiVersion value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -1409,19 +1187,19 @@ class InstanceEventData extends $pb.GeneratedMessage {
   factory InstanceEventData({
     Instance? payload,
   }) {
-    final $result = create();
-    if (payload != null) {
-      $result.payload = payload;
-    }
-    return $result;
+    final result = create();
+    if (payload != null) result.payload = payload;
+    return result;
   }
-  InstanceEventData._() : super();
-  factory InstanceEventData.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory InstanceEventData.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  InstanceEventData._();
+
+  factory InstanceEventData.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory InstanceEventData.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'InstanceEventData',
@@ -1433,19 +1211,19 @@ class InstanceEventData extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  InstanceEventData clone() => InstanceEventData()..mergeFromMessage(this);
+  InstanceEventData clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   InstanceEventData copyWith(void Function(InstanceEventData) updates) =>
       super.copyWith((message) => updates(message as InstanceEventData))
           as InstanceEventData;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static InstanceEventData create() => InstanceEventData._();
+  @$core.override
   InstanceEventData createEmptyInstance() => create();
-  static $pb.PbList<InstanceEventData> createRepeated() =>
-      $pb.PbList<InstanceEventData>();
   @$core.pragma('dart2js:noInline')
   static InstanceEventData getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<InstanceEventData>(create);
@@ -1455,10 +1233,7 @@ class InstanceEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   Instance get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(Instance v) {
-    $_setField(1, v);
-  }
-
+  set payload(Instance value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -1472,19 +1247,19 @@ class ApiSpecEventData extends $pb.GeneratedMessage {
   factory ApiSpecEventData({
     ApiSpec? payload,
   }) {
-    final $result = create();
-    if (payload != null) {
-      $result.payload = payload;
-    }
-    return $result;
+    final result = create();
+    if (payload != null) result.payload = payload;
+    return result;
   }
-  ApiSpecEventData._() : super();
-  factory ApiSpecEventData.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ApiSpecEventData.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  ApiSpecEventData._();
+
+  factory ApiSpecEventData.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ApiSpecEventData.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'ApiSpecEventData',
@@ -1496,19 +1271,19 @@ class ApiSpecEventData extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ApiSpecEventData clone() => ApiSpecEventData()..mergeFromMessage(this);
+  ApiSpecEventData clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ApiSpecEventData copyWith(void Function(ApiSpecEventData) updates) =>
       super.copyWith((message) => updates(message as ApiSpecEventData))
           as ApiSpecEventData;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ApiSpecEventData create() => ApiSpecEventData._();
+  @$core.override
   ApiSpecEventData createEmptyInstance() => create();
-  static $pb.PbList<ApiSpecEventData> createRepeated() =>
-      $pb.PbList<ApiSpecEventData>();
   @$core.pragma('dart2js:noInline')
   static ApiSpecEventData getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ApiSpecEventData>(create);
@@ -1518,10 +1293,7 @@ class ApiSpecEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   ApiSpec get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(ApiSpec v) {
-    $_setField(1, v);
-  }
-
+  set payload(ApiSpec value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -1535,19 +1307,19 @@ class ApiDeploymentEventData extends $pb.GeneratedMessage {
   factory ApiDeploymentEventData({
     ApiDeployment? payload,
   }) {
-    final $result = create();
-    if (payload != null) {
-      $result.payload = payload;
-    }
-    return $result;
+    final result = create();
+    if (payload != null) result.payload = payload;
+    return result;
   }
-  ApiDeploymentEventData._() : super();
-  factory ApiDeploymentEventData.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ApiDeploymentEventData.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  ApiDeploymentEventData._();
+
+  factory ApiDeploymentEventData.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ApiDeploymentEventData.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'ApiDeploymentEventData',
@@ -1559,21 +1331,20 @@ class ApiDeploymentEventData extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ApiDeploymentEventData clone() =>
-      ApiDeploymentEventData()..mergeFromMessage(this);
+  ApiDeploymentEventData clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ApiDeploymentEventData copyWith(
           void Function(ApiDeploymentEventData) updates) =>
       super.copyWith((message) => updates(message as ApiDeploymentEventData))
           as ApiDeploymentEventData;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ApiDeploymentEventData create() => ApiDeploymentEventData._();
+  @$core.override
   ApiDeploymentEventData createEmptyInstance() => create();
-  static $pb.PbList<ApiDeploymentEventData> createRepeated() =>
-      $pb.PbList<ApiDeploymentEventData>();
   @$core.pragma('dart2js:noInline')
   static ApiDeploymentEventData getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ApiDeploymentEventData>(create);
@@ -1583,10 +1354,7 @@ class ApiDeploymentEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   ApiDeployment get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(ApiDeployment v) {
-    $_setField(1, v);
-  }
-
+  set payload(ApiDeployment value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -1600,19 +1368,19 @@ class ApiEventData extends $pb.GeneratedMessage {
   factory ApiEventData({
     Api? payload,
   }) {
-    final $result = create();
-    if (payload != null) {
-      $result.payload = payload;
-    }
-    return $result;
+    final result = create();
+    if (payload != null) result.payload = payload;
+    return result;
   }
-  ApiEventData._() : super();
-  factory ApiEventData.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ApiEventData.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  ApiEventData._();
+
+  factory ApiEventData.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ApiEventData.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'ApiEventData',
@@ -1623,19 +1391,19 @@ class ApiEventData extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ApiEventData clone() => ApiEventData()..mergeFromMessage(this);
+  ApiEventData clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ApiEventData copyWith(void Function(ApiEventData) updates) =>
       super.copyWith((message) => updates(message as ApiEventData))
           as ApiEventData;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ApiEventData create() => ApiEventData._();
+  @$core.override
   ApiEventData createEmptyInstance() => create();
-  static $pb.PbList<ApiEventData> createRepeated() =>
-      $pb.PbList<ApiEventData>();
   @$core.pragma('dart2js:noInline')
   static ApiEventData getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ApiEventData>(create);
@@ -1645,10 +1413,7 @@ class ApiEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   Api get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(Api v) {
-    $_setField(1, v);
-  }
-
+  set payload(Api value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -1657,6 +1422,7 @@ class ApiEventData extends $pb.GeneratedMessage {
   Api ensurePayload() => $_ensure(0);
 }
 
-const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames =
+const $core.bool _omitFieldNames =
+    $core.bool.fromEnvironment('protobuf.omit_field_names');
+const $core.bool _omitMessageNames =
     $core.bool.fromEnvironment('protobuf.omit_message_names');

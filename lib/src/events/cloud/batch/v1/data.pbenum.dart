@@ -1,13 +1,14 @@
+// This is a generated file - do not edit.
 //
-//  Generated code. Do not modify.
-//  source: google/events/cloud/batch/v1/data.proto
-//
+// Generated from google/events/cloud/batch/v1/data.proto.
+
 // @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
-// ignore_for_file: constant_identifier_names, library_prefixes
-// ignore_for_file: non_constant_identifier_names, prefer_final_fields
-// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
+// ignore_for_file: constant_identifier_names
+// ignore_for_file: curly_braces_in_flow_control_structures
+// ignore_for_file: deprecated_member_use_from_same_package, library_prefixes
+// ignore_for_file: non_constant_identifier_names
 
 import 'dart:core' as $core;
 
@@ -58,7 +59,7 @@ class TaskStatus_State extends $pb.ProtobufEnum {
   static TaskStatus_State? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const TaskStatus_State._(super.v, super.n);
+  const TaskStatus_State._(super.value, super.name);
 }
 
 /// Action on task failures based on different conditions.
@@ -87,7 +88,7 @@ class LifecyclePolicy_Action extends $pb.ProtobufEnum {
   static LifecyclePolicy_Action? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const LifecyclePolicy_Action._(super.v, super.n);
+  const LifecyclePolicy_Action._(super.value, super.name);
 }
 
 /// The destination (if any) for logs.
@@ -117,7 +118,7 @@ class LogsPolicy_Destination extends $pb.ProtobufEnum {
   static LogsPolicy_Destination? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const LogsPolicy_Destination._(super.v, super.n);
+  const LogsPolicy_Destination._(super.value, super.name);
 }
 
 /// Valid Job states.
@@ -169,7 +170,7 @@ class JobStatus_State extends $pb.ProtobufEnum {
   static JobStatus_State? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const JobStatus_State._(super.v, super.n);
+  const JobStatus_State._(super.value, super.name);
 }
 
 /// The message type.
@@ -197,7 +198,7 @@ class JobNotification_Type extends $pb.ProtobufEnum {
   static JobNotification_Type? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const JobNotification_Type._(super.v, super.n);
+  const JobNotification_Type._(super.value, super.name);
 }
 
 /// Compute Engine VM instance provisioning model.
@@ -238,7 +239,7 @@ class AllocationPolicy_ProvisioningModel extends $pb.ProtobufEnum {
   static AllocationPolicy_ProvisioningModel? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const AllocationPolicy_ProvisioningModel._(super.v, super.n);
+  const AllocationPolicy_ProvisioningModel._(super.value, super.name);
 }
 
 /// How Tasks in the TaskGroup should be scheduled relative to each other.
@@ -272,7 +273,8 @@ class TaskGroup_SchedulingPolicy extends $pb.ProtobufEnum {
   static TaskGroup_SchedulingPolicy? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const TaskGroup_SchedulingPolicy._(super.v, super.n);
+  const TaskGroup_SchedulingPolicy._(super.value, super.name);
 }
 
-const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');
+const $core.bool _omitEnumNames =
+    $core.bool.fromEnvironment('protobuf.omit_enum_names');

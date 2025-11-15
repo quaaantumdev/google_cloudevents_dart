@@ -1,13 +1,14 @@
+// This is a generated file - do not edit.
 //
-//  Generated code. Do not modify.
-//  source: google/events/cloud/networkconnectivity/v1/data.proto
-//
+// Generated from google/events/cloud/networkconnectivity/v1/data.proto.
+
 // @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
-// ignore_for_file: constant_identifier_names, library_prefixes
-// ignore_for_file: non_constant_identifier_names, prefer_final_fields
-// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
+// ignore_for_file: constant_identifier_names
+// ignore_for_file: curly_braces_in_flow_control_structures
+// ignore_for_file: deprecated_member_use_from_same_package, library_prefixes
+// ignore_for_file: non_constant_identifier_names
 
 import 'dart:core' as $core;
 
@@ -33,7 +34,7 @@ class Infrastructure extends $pb.ProtobufEnum {
   static Infrastructure? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Infrastructure._(super.v, super.n);
+  const Infrastructure._(super.value, super.name);
 }
 
 /// The error type indicates whether a connection error is consumer facing,
@@ -68,7 +69,7 @@ class ConnectionErrorType extends $pb.ProtobufEnum {
   static ConnectionErrorType? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const ConnectionErrorType._(super.v, super.n);
+  const ConnectionErrorType._(super.value, super.name);
 }
 
 /// The State enum represents the lifecycle stage of a Network Connectivity
@@ -103,7 +104,7 @@ class State extends $pb.ProtobufEnum {
   static State? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const State._(super.v, super.n);
+  const State._(super.value, super.name);
 }
 
 /// PSC Consumer Config State.
@@ -140,7 +141,7 @@ class ServiceConnectionMap_ConsumerPscConfig_State extends $pb.ProtobufEnum {
           $core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const ServiceConnectionMap_ConsumerPscConfig_State._(super.v, super.n);
+  const ServiceConnectionMap_ConsumerPscConfig_State._(super.value, super.name);
 }
 
 /// The state of the PSC connection.
@@ -187,7 +188,8 @@ class ServiceConnectionMap_ConsumerPscConnection_State
           $core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const ServiceConnectionMap_ConsumerPscConnection_State._(super.v, super.n);
+  const ServiceConnectionMap_ConsumerPscConnection_State._(
+      super.value, super.name);
 }
 
 /// The state of the PSC connection.
@@ -228,7 +230,8 @@ class ServiceConnectionPolicy_State extends $pb.ProtobufEnum {
   static ServiceConnectionPolicy_State? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const ServiceConnectionPolicy_State._(super.v, super.n);
+  const ServiceConnectionPolicy_State._(super.value, super.name);
 }
 
-const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');
+const $core.bool _omitEnumNames =
+    $core.bool.fromEnvironment('protobuf.omit_enum_names');

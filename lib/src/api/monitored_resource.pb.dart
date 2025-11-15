@@ -1,13 +1,14 @@
+// This is a generated file - do not edit.
 //
-//  Generated code. Do not modify.
-//  source: google/api/monitored_resource.proto
-//
+// Generated from google/api/monitored_resource.proto.
+
 // @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
-// ignore_for_file: constant_identifier_names, library_prefixes
-// ignore_for_file: non_constant_identifier_names, prefer_final_fields
-// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
+// ignore_for_file: constant_identifier_names
+// ignore_for_file: curly_braces_in_flow_control_structures
+// ignore_for_file: deprecated_member_use_from_same_package, library_prefixes
+// ignore_for_file: non_constant_identifier_names
 
 import 'dart:core' as $core;
 
@@ -22,22 +23,20 @@ class MonitoredResource extends $pb.GeneratedMessage {
     $core.String? type,
     $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
   }) {
-    final $result = create();
-    if (type != null) {
-      $result.type = type;
-    }
-    if (labels != null) {
-      $result.labels.addEntries(labels);
-    }
-    return $result;
+    final result = create();
+    if (type != null) result.type = type;
+    if (labels != null) result.labels.addEntries(labels);
+    return result;
   }
-  MonitoredResource._() : super();
-  factory MonitoredResource.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory MonitoredResource.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  MonitoredResource._();
+
+  factory MonitoredResource.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory MonitoredResource.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'MonitoredResource',
@@ -52,19 +51,19 @@ class MonitoredResource extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  MonitoredResource clone() => MonitoredResource()..mergeFromMessage(this);
+  MonitoredResource clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MonitoredResource copyWith(void Function(MonitoredResource) updates) =>
       super.copyWith((message) => updates(message as MonitoredResource))
           as MonitoredResource;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static MonitoredResource create() => MonitoredResource._();
+  @$core.override
   MonitoredResource createEmptyInstance() => create();
-  static $pb.PbList<MonitoredResource> createRepeated() =>
-      $pb.PbList<MonitoredResource>();
   @$core.pragma('dart2js:noInline')
   static MonitoredResource getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<MonitoredResource>(create);
@@ -75,10 +74,7 @@ class MonitoredResource extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get type => $_getSZ(0);
   @$pb.TagNumber(1)
-  set type($core.String v) {
-    $_setString(0, v);
-  }
-
+  set type($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasType() => $_has(0);
   @$pb.TagNumber(1)
@@ -91,6 +87,7 @@ class MonitoredResource extends $pb.GeneratedMessage {
   $pb.PbMap<$core.String, $core.String> get labels => $_getMap(1);
 }
 
-const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames =
+const $core.bool _omitFieldNames =
+    $core.bool.fromEnvironment('protobuf.omit_field_names');
+const $core.bool _omitMessageNames =
     $core.bool.fromEnvironment('protobuf.omit_message_names');

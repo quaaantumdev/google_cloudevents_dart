@@ -1,19 +1,20 @@
+// This is a generated file - do not edit.
 //
-//  Generated code. Do not modify.
-//  source: google/events/cloud/beyondcorp/appgateways/v1/data.proto
-//
+// Generated from google/events/cloud/beyondcorp/appgateways/v1/data.proto.
+
 // @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
-// ignore_for_file: constant_identifier_names, library_prefixes
-// ignore_for_file: non_constant_identifier_names, prefer_final_fields
-// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
+// ignore_for_file: constant_identifier_names
+// ignore_for_file: curly_braces_in_flow_control_structures
+// ignore_for_file: deprecated_member_use_from_same_package, library_prefixes
+// ignore_for_file: non_constant_identifier_names
 
 import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../../protobuf/timestamp.pb.dart' as $2;
+import '../../../../../protobuf/timestamp.pb.dart' as $0;
 import 'data.pbenum.dart';
 
 export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
@@ -26,22 +27,20 @@ class AppGateway_AllocatedConnection extends $pb.GeneratedMessage {
     $core.String? pscUri,
     $core.int? ingressPort,
   }) {
-    final $result = create();
-    if (pscUri != null) {
-      $result.pscUri = pscUri;
-    }
-    if (ingressPort != null) {
-      $result.ingressPort = ingressPort;
-    }
-    return $result;
+    final result = create();
+    if (pscUri != null) result.pscUri = pscUri;
+    if (ingressPort != null) result.ingressPort = ingressPort;
+    return result;
   }
-  AppGateway_AllocatedConnection._() : super();
-  factory AppGateway_AllocatedConnection.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory AppGateway_AllocatedConnection.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  AppGateway_AllocatedConnection._();
+
+  factory AppGateway_AllocatedConnection.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory AppGateway_AllocatedConnection.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'AppGateway.AllocatedConnection',
@@ -50,12 +49,11 @@ class AppGateway_AllocatedConnection extends $pb.GeneratedMessage {
           : 'google.events.cloud.beyondcorp.appgateways.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'pscUri')
-    ..a<$core.int>(2, _omitFieldNames ? '' : 'ingressPort', $pb.PbFieldType.O3)
+    ..aI(2, _omitFieldNames ? '' : 'ingressPort')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  AppGateway_AllocatedConnection clone() =>
-      AppGateway_AllocatedConnection()..mergeFromMessage(this);
+  AppGateway_AllocatedConnection clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AppGateway_AllocatedConnection copyWith(
           void Function(AppGateway_AllocatedConnection) updates) =>
@@ -63,14 +61,14 @@ class AppGateway_AllocatedConnection extends $pb.GeneratedMessage {
               (message) => updates(message as AppGateway_AllocatedConnection))
           as AppGateway_AllocatedConnection;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AppGateway_AllocatedConnection create() =>
       AppGateway_AllocatedConnection._();
+  @$core.override
   AppGateway_AllocatedConnection createEmptyInstance() => create();
-  static $pb.PbList<AppGateway_AllocatedConnection> createRepeated() =>
-      $pb.PbList<AppGateway_AllocatedConnection>();
   @$core.pragma('dart2js:noInline')
   static AppGateway_AllocatedConnection getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<AppGateway_AllocatedConnection>(create);
@@ -80,10 +78,7 @@ class AppGateway_AllocatedConnection extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get pscUri => $_getSZ(0);
   @$pb.TagNumber(1)
-  set pscUri($core.String v) {
-    $_setString(0, v);
-  }
-
+  set pscUri($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasPscUri() => $_has(0);
   @$pb.TagNumber(1)
@@ -93,10 +88,7 @@ class AppGateway_AllocatedConnection extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get ingressPort => $_getIZ(1);
   @$pb.TagNumber(2)
-  set ingressPort($core.int v) {
-    $_setSignedInt32(1, v);
-  }
-
+  set ingressPort($core.int value) => $_setSignedInt32(1, value);
   @$pb.TagNumber(2)
   $core.bool hasIngressPort() => $_has(1);
   @$pb.TagNumber(2)
@@ -110,8 +102,8 @@ class AppGateway_AllocatedConnection extends $pb.GeneratedMessage {
 class AppGateway extends $pb.GeneratedMessage {
   factory AppGateway({
     $core.String? name,
-    $2.Timestamp? createTime,
-    $2.Timestamp? updateTime,
+    $0.Timestamp? createTime,
+    $0.Timestamp? updateTime,
     $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.String? displayName,
     $core.String? uid,
@@ -121,49 +113,30 @@ class AppGateway extends $pb.GeneratedMessage {
     $core.Iterable<AppGateway_AllocatedConnection>? allocatedConnections,
     AppGateway_HostType? hostType,
   }) {
-    final $result = create();
-    if (name != null) {
-      $result.name = name;
-    }
-    if (createTime != null) {
-      $result.createTime = createTime;
-    }
-    if (updateTime != null) {
-      $result.updateTime = updateTime;
-    }
-    if (labels != null) {
-      $result.labels.addEntries(labels);
-    }
-    if (displayName != null) {
-      $result.displayName = displayName;
-    }
-    if (uid != null) {
-      $result.uid = uid;
-    }
-    if (type != null) {
-      $result.type = type;
-    }
-    if (state != null) {
-      $result.state = state;
-    }
-    if (uri != null) {
-      $result.uri = uri;
-    }
-    if (allocatedConnections != null) {
-      $result.allocatedConnections.addAll(allocatedConnections);
-    }
-    if (hostType != null) {
-      $result.hostType = hostType;
-    }
-    return $result;
+    final result = create();
+    if (name != null) result.name = name;
+    if (createTime != null) result.createTime = createTime;
+    if (updateTime != null) result.updateTime = updateTime;
+    if (labels != null) result.labels.addEntries(labels);
+    if (displayName != null) result.displayName = displayName;
+    if (uid != null) result.uid = uid;
+    if (type != null) result.type = type;
+    if (state != null) result.state = state;
+    if (uri != null) result.uri = uri;
+    if (allocatedConnections != null)
+      result.allocatedConnections.addAll(allocatedConnections);
+    if (hostType != null) result.hostType = hostType;
+    return result;
   }
-  AppGateway._() : super();
-  factory AppGateway.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory AppGateway.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  AppGateway._();
+
+  factory AppGateway.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory AppGateway.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'AppGateway',
@@ -172,10 +145,10 @@ class AppGateway extends $pb.GeneratedMessage {
           : 'google.events.cloud.beyondcorp.appgateways.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$2.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(3, _omitFieldNames ? '' : 'updateTime',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$0.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(3, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $0.Timestamp.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels',
         entryClassName: 'AppGateway.LabelsEntry',
         keyFieldType: $pb.PbFieldType.OS,
@@ -184,37 +157,31 @@ class AppGateway extends $pb.GeneratedMessage {
             'google.events.cloud.beyondcorp.appgateways.v1'))
     ..aOS(5, _omitFieldNames ? '' : 'displayName')
     ..aOS(6, _omitFieldNames ? '' : 'uid')
-    ..e<AppGateway_Type>(7, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE,
-        defaultOrMaker: AppGateway_Type.TYPE_UNSPECIFIED,
-        valueOf: AppGateway_Type.valueOf,
+    ..aE<AppGateway_Type>(7, _omitFieldNames ? '' : 'type',
         enumValues: AppGateway_Type.values)
-    ..e<AppGateway_State>(8, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
-        defaultOrMaker: AppGateway_State.STATE_UNSPECIFIED,
-        valueOf: AppGateway_State.valueOf,
+    ..aE<AppGateway_State>(8, _omitFieldNames ? '' : 'state',
         enumValues: AppGateway_State.values)
     ..aOS(9, _omitFieldNames ? '' : 'uri')
-    ..pc<AppGateway_AllocatedConnection>(
-        10, _omitFieldNames ? '' : 'allocatedConnections', $pb.PbFieldType.PM,
+    ..pPM<AppGateway_AllocatedConnection>(
+        10, _omitFieldNames ? '' : 'allocatedConnections',
         subBuilder: AppGateway_AllocatedConnection.create)
-    ..e<AppGateway_HostType>(
-        11, _omitFieldNames ? '' : 'hostType', $pb.PbFieldType.OE,
-        defaultOrMaker: AppGateway_HostType.HOST_TYPE_UNSPECIFIED,
-        valueOf: AppGateway_HostType.valueOf,
+    ..aE<AppGateway_HostType>(11, _omitFieldNames ? '' : 'hostType',
         enumValues: AppGateway_HostType.values)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  AppGateway clone() => AppGateway()..mergeFromMessage(this);
+  AppGateway clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AppGateway copyWith(void Function(AppGateway) updates) =>
       super.copyWith((message) => updates(message as AppGateway)) as AppGateway;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AppGateway create() => AppGateway._();
+  @$core.override
   AppGateway createEmptyInstance() => create();
-  static $pb.PbList<AppGateway> createRepeated() => $pb.PbList<AppGateway>();
   @$core.pragma('dart2js:noInline')
   static AppGateway getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<AppGateway>(create);
@@ -225,10 +192,7 @@ class AppGateway extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) {
-    $_setString(0, v);
-  }
-
+  set name($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -236,33 +200,27 @@ class AppGateway extends $pb.GeneratedMessage {
 
   /// Output only. Timestamp when the resource was created.
   @$pb.TagNumber(2)
-  $2.Timestamp get createTime => $_getN(1);
+  $0.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($2.Timestamp v) {
-    $_setField(2, v);
-  }
-
+  set createTime($0.Timestamp value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => $_clearField(2);
   @$pb.TagNumber(2)
-  $2.Timestamp ensureCreateTime() => $_ensure(1);
+  $0.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. Timestamp when the resource was last modified.
   @$pb.TagNumber(3)
-  $2.Timestamp get updateTime => $_getN(2);
+  $0.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($2.Timestamp v) {
-    $_setField(3, v);
-  }
-
+  set updateTime($0.Timestamp value) => $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => $_clearField(3);
   @$pb.TagNumber(3)
-  $2.Timestamp ensureUpdateTime() => $_ensure(2);
+  $0.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Optional. Resource labels to represent user provided metadata.
   @$pb.TagNumber(4)
@@ -273,10 +231,7 @@ class AppGateway extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get displayName => $_getSZ(4);
   @$pb.TagNumber(5)
-  set displayName($core.String v) {
-    $_setString(4, v);
-  }
-
+  set displayName($core.String value) => $_setString(4, value);
   @$pb.TagNumber(5)
   $core.bool hasDisplayName() => $_has(4);
   @$pb.TagNumber(5)
@@ -287,10 +242,7 @@ class AppGateway extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get uid => $_getSZ(5);
   @$pb.TagNumber(6)
-  set uid($core.String v) {
-    $_setString(5, v);
-  }
-
+  set uid($core.String value) => $_setString(5, value);
   @$pb.TagNumber(6)
   $core.bool hasUid() => $_has(5);
   @$pb.TagNumber(6)
@@ -300,10 +252,7 @@ class AppGateway extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   AppGateway_Type get type => $_getN(6);
   @$pb.TagNumber(7)
-  set type(AppGateway_Type v) {
-    $_setField(7, v);
-  }
-
+  set type(AppGateway_Type value) => $_setField(7, value);
   @$pb.TagNumber(7)
   $core.bool hasType() => $_has(6);
   @$pb.TagNumber(7)
@@ -313,10 +262,7 @@ class AppGateway extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   AppGateway_State get state => $_getN(7);
   @$pb.TagNumber(8)
-  set state(AppGateway_State v) {
-    $_setField(8, v);
-  }
-
+  set state(AppGateway_State value) => $_setField(8, value);
   @$pb.TagNumber(8)
   $core.bool hasState() => $_has(7);
   @$pb.TagNumber(8)
@@ -326,10 +272,7 @@ class AppGateway extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.String get uri => $_getSZ(8);
   @$pb.TagNumber(9)
-  set uri($core.String v) {
-    $_setString(8, v);
-  }
-
+  set uri($core.String value) => $_setString(8, value);
   @$pb.TagNumber(9)
   $core.bool hasUri() => $_has(8);
   @$pb.TagNumber(9)
@@ -344,10 +287,7 @@ class AppGateway extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   AppGateway_HostType get hostType => $_getN(10);
   @$pb.TagNumber(11)
-  set hostType(AppGateway_HostType v) {
-    $_setField(11, v);
-  }
-
+  set hostType(AppGateway_HostType value) => $_setField(11, value);
   @$pb.TagNumber(11)
   $core.bool hasHostType() => $_has(10);
   @$pb.TagNumber(11)
@@ -359,19 +299,19 @@ class AppGatewayEventData extends $pb.GeneratedMessage {
   factory AppGatewayEventData({
     AppGateway? payload,
   }) {
-    final $result = create();
-    if (payload != null) {
-      $result.payload = payload;
-    }
-    return $result;
+    final result = create();
+    if (payload != null) result.payload = payload;
+    return result;
   }
-  AppGatewayEventData._() : super();
-  factory AppGatewayEventData.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory AppGatewayEventData.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  AppGatewayEventData._();
+
+  factory AppGatewayEventData.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory AppGatewayEventData.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'AppGatewayEventData',
@@ -384,19 +324,19 @@ class AppGatewayEventData extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  AppGatewayEventData clone() => AppGatewayEventData()..mergeFromMessage(this);
+  AppGatewayEventData clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AppGatewayEventData copyWith(void Function(AppGatewayEventData) updates) =>
       super.copyWith((message) => updates(message as AppGatewayEventData))
           as AppGatewayEventData;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AppGatewayEventData create() => AppGatewayEventData._();
+  @$core.override
   AppGatewayEventData createEmptyInstance() => create();
-  static $pb.PbList<AppGatewayEventData> createRepeated() =>
-      $pb.PbList<AppGatewayEventData>();
   @$core.pragma('dart2js:noInline')
   static AppGatewayEventData getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<AppGatewayEventData>(create);
@@ -406,10 +346,7 @@ class AppGatewayEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   AppGateway get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(AppGateway v) {
-    $_setField(1, v);
-  }
-
+  set payload(AppGateway value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -418,6 +355,7 @@ class AppGatewayEventData extends $pb.GeneratedMessage {
   AppGateway ensurePayload() => $_ensure(0);
 }
 
-const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames =
+const $core.bool _omitFieldNames =
+    $core.bool.fromEnvironment('protobuf.omit_field_names');
+const $core.bool _omitMessageNames =
     $core.bool.fromEnvironment('protobuf.omit_message_names');

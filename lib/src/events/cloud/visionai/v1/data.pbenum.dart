@@ -1,13 +1,14 @@
+// This is a generated file - do not edit.
 //
-//  Generated code. Do not modify.
-//  source: google/events/cloud/visionai/v1/data.proto
-//
+// Generated from google/events/cloud/visionai/v1/data.proto.
+
 // @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
-// ignore_for_file: constant_identifier_names, library_prefixes
-// ignore_for_file: non_constant_identifier_names, prefer_final_fields
-// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
+// ignore_for_file: constant_identifier_names
+// ignore_for_file: curly_braces_in_flow_control_structures
+// ignore_for_file: deprecated_member_use_from_same_package, library_prefixes
+// ignore_for_file: non_constant_identifier_names
 
 import 'dart:core' as $core;
 
@@ -46,7 +47,7 @@ class StreamAnnotationType extends $pb.ProtobufEnum {
   static StreamAnnotationType? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const StreamAnnotationType._(super.v, super.n);
+  const StreamAnnotationType._(super.value, super.name);
 }
 
 /// RunMode represents the mode to launch the Process on.
@@ -75,7 +76,7 @@ class RunMode extends $pb.ProtobufEnum {
   static RunMode? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const RunMode._(super.v, super.n);
+  const RunMode._(super.value, super.name);
 }
 
 /// All the supported model types in Vision AI App Platform.
@@ -133,7 +134,7 @@ class ModelType extends $pb.ProtobufEnum {
   static ModelType? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const ModelType._(super.v, super.n);
+  const ModelType._(super.value, super.name);
 }
 
 /// Represents a hardware accelerator type.
@@ -191,7 +192,7 @@ class AcceleratorType extends $pb.ProtobufEnum {
   static AcceleratorType? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const AcceleratorType._(super.v, super.n);
+  const AcceleratorType._(super.value, super.name);
 }
 
 /// All supported data types.
@@ -221,7 +222,7 @@ class DataType extends $pb.ProtobufEnum {
   static DataType? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const DataType._(super.v, super.n);
+  const DataType._(super.value, super.name);
 }
 
 /// The current state of the cluster.
@@ -261,7 +262,7 @@ class Cluster_State extends $pb.ProtobufEnum {
   static Cluster_State? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Cluster_State._(super.v, super.n);
+  const Cluster_State._(super.value, super.name);
 }
 
 /// State represents the running status of the Process.
@@ -306,7 +307,7 @@ class RunStatus_State extends $pb.ProtobufEnum {
   static RunStatus_State? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const RunStatus_State._(super.v, super.n);
+  const RunStatus_State._(super.value, super.name);
 }
 
 /// State of the Application
@@ -374,7 +375,7 @@ class Application_State extends $pb.ProtobufEnum {
   static Application_State? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Application_State._(super.v, super.n);
+  const Application_State._(super.value, super.name);
 }
 
 /// Billing mode of the Application
@@ -404,7 +405,7 @@ class Application_BillingMode extends $pb.ProtobufEnum {
   static Application_BillingMode? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Application_BillingMode._(super.v, super.n);
+  const Application_BillingMode._(super.value, super.name);
 }
 
 /// Type
@@ -449,7 +450,7 @@ class Processor_ProcessorType extends $pb.ProtobufEnum {
   static Processor_ProcessorType? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Processor_ProcessorType._(super.v, super.n);
+  const Processor_ProcessorType._(super.value, super.name);
 }
 
 class Processor_ProcessorState extends $pb.ProtobufEnum {
@@ -488,7 +489,7 @@ class Processor_ProcessorState extends $pb.ProtobufEnum {
   static Processor_ProcessorState? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Processor_ProcessorState._(super.v, super.n);
+  const Processor_ProcessorState._(super.value, super.name);
 }
 
 /// Source type of the imported custom processor.
@@ -526,7 +527,7 @@ class CustomProcessorSourceInfo_SourceType extends $pb.ProtobufEnum {
   static CustomProcessorSourceInfo_SourceType? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const CustomProcessorSourceInfo_SourceType._(super.v, super.n);
+  const CustomProcessorSourceInfo_SourceType._(super.value, super.name);
 }
 
 /// Type of Person Blur
@@ -557,7 +558,7 @@ class PersonBlurConfig_PersonBlurType extends $pb.ProtobufEnum {
   static PersonBlurConfig_PersonBlurType? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const PersonBlurConfig_PersonBlurType._(super.v, super.n);
+  const PersonBlurConfig_PersonBlurType._(super.value, super.name);
 }
 
 /// Clock that will be used for joining streams.
@@ -586,7 +587,8 @@ class Event_Clock extends $pb.ProtobufEnum {
   static Event_Clock? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Event_Clock._(super.v, super.n);
+  const Event_Clock._(super.value, super.name);
 }
 
-const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');
+const $core.bool _omitEnumNames =
+    $core.bool.fromEnvironment('protobuf.omit_enum_names');

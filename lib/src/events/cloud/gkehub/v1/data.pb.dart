@@ -1,19 +1,20 @@
+// This is a generated file - do not edit.
 //
-//  Generated code. Do not modify.
-//  source: google/events/cloud/gkehub/v1/data.proto
-//
+// Generated from google/events/cloud/gkehub/v1/data.proto.
+
 // @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
-// ignore_for_file: constant_identifier_names, library_prefixes
-// ignore_for_file: non_constant_identifier_names, prefer_final_fields
-// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
+// ignore_for_file: constant_identifier_names
+// ignore_for_file: curly_braces_in_flow_control_structures
+// ignore_for_file: deprecated_member_use_from_same_package, library_prefixes
+// ignore_for_file: non_constant_identifier_names
 
 import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/timestamp.pb.dart' as $2;
+import '../../../../protobuf/timestamp.pb.dart' as $0;
 import 'data.pbenum.dart';
 
 export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
@@ -29,49 +30,34 @@ class Feature extends $pb.GeneratedMessage {
     CommonFeatureState? state,
     $core.Iterable<$core.MapEntry<$core.String, MembershipFeatureState>>?
         membershipStates,
-    $2.Timestamp? createTime,
-    $2.Timestamp? updateTime,
-    $2.Timestamp? deleteTime,
+    $0.Timestamp? createTime,
+    $0.Timestamp? updateTime,
+    $0.Timestamp? deleteTime,
     $core.Iterable<$core.MapEntry<$core.String, ScopeFeatureState>>?
         scopeStates,
   }) {
-    final $result = create();
-    if (name != null) {
-      $result.name = name;
-    }
-    if (labels != null) {
-      $result.labels.addEntries(labels);
-    }
-    if (resourceState != null) {
-      $result.resourceState = resourceState;
-    }
-    if (state != null) {
-      $result.state = state;
-    }
-    if (membershipStates != null) {
-      $result.membershipStates.addEntries(membershipStates);
-    }
-    if (createTime != null) {
-      $result.createTime = createTime;
-    }
-    if (updateTime != null) {
-      $result.updateTime = updateTime;
-    }
-    if (deleteTime != null) {
-      $result.deleteTime = deleteTime;
-    }
-    if (scopeStates != null) {
-      $result.scopeStates.addEntries(scopeStates);
-    }
-    return $result;
+    final result = create();
+    if (name != null) result.name = name;
+    if (labels != null) result.labels.addEntries(labels);
+    if (resourceState != null) result.resourceState = resourceState;
+    if (state != null) result.state = state;
+    if (membershipStates != null)
+      result.membershipStates.addEntries(membershipStates);
+    if (createTime != null) result.createTime = createTime;
+    if (updateTime != null) result.updateTime = updateTime;
+    if (deleteTime != null) result.deleteTime = deleteTime;
+    if (scopeStates != null) result.scopeStates.addEntries(scopeStates);
+    return result;
   }
-  Feature._() : super();
-  factory Feature.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Feature.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  Feature._();
+
+  factory Feature.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory Feature.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'Feature',
@@ -96,12 +82,12 @@ class Feature extends $pb.GeneratedMessage {
         valueCreator: MembershipFeatureState.create,
         valueDefaultOrMaker: MembershipFeatureState.getDefault,
         packageName: const $pb.PackageName('google.events.cloud.gkehub.v1'))
-    ..aOM<$2.Timestamp>(8, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(9, _omitFieldNames ? '' : 'updateTime',
-        subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(10, _omitFieldNames ? '' : 'deleteTime',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$0.Timestamp>(8, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(9, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(10, _omitFieldNames ? '' : 'deleteTime',
+        subBuilder: $0.Timestamp.create)
     ..m<$core.String, ScopeFeatureState>(
         13, _omitFieldNames ? '' : 'scopeStates',
         entryClassName: 'Feature.ScopeStatesEntry',
@@ -113,17 +99,18 @@ class Feature extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  Feature clone() => Feature()..mergeFromMessage(this);
+  Feature clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Feature copyWith(void Function(Feature) updates) =>
       super.copyWith((message) => updates(message as Feature)) as Feature;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Feature create() => Feature._();
+  @$core.override
   Feature createEmptyInstance() => create();
-  static $pb.PbList<Feature> createRepeated() => $pb.PbList<Feature>();
   @$core.pragma('dart2js:noInline')
   static Feature getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Feature>(create);
@@ -134,10 +121,7 @@ class Feature extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) {
-    $_setString(0, v);
-  }
-
+  set name($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -151,10 +135,7 @@ class Feature extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   FeatureResourceState get resourceState => $_getN(2);
   @$pb.TagNumber(3)
-  set resourceState(FeatureResourceState v) {
-    $_setField(3, v);
-  }
-
+  set resourceState(FeatureResourceState value) => $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasResourceState() => $_has(2);
   @$pb.TagNumber(3)
@@ -166,10 +147,7 @@ class Feature extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   CommonFeatureState get state => $_getN(3);
   @$pb.TagNumber(6)
-  set state(CommonFeatureState v) {
-    $_setField(6, v);
-  }
-
+  set state(CommonFeatureState value) => $_setField(6, value);
   @$pb.TagNumber(6)
   $core.bool hasState() => $_has(3);
   @$pb.TagNumber(6)
@@ -193,48 +171,39 @@ class Feature extends $pb.GeneratedMessage {
 
   /// Output only. When the Feature resource was created.
   @$pb.TagNumber(8)
-  $2.Timestamp get createTime => $_getN(5);
+  $0.Timestamp get createTime => $_getN(5);
   @$pb.TagNumber(8)
-  set createTime($2.Timestamp v) {
-    $_setField(8, v);
-  }
-
+  set createTime($0.Timestamp value) => $_setField(8, value);
   @$pb.TagNumber(8)
   $core.bool hasCreateTime() => $_has(5);
   @$pb.TagNumber(8)
   void clearCreateTime() => $_clearField(8);
   @$pb.TagNumber(8)
-  $2.Timestamp ensureCreateTime() => $_ensure(5);
+  $0.Timestamp ensureCreateTime() => $_ensure(5);
 
   /// Output only. When the Feature resource was last updated.
   @$pb.TagNumber(9)
-  $2.Timestamp get updateTime => $_getN(6);
+  $0.Timestamp get updateTime => $_getN(6);
   @$pb.TagNumber(9)
-  set updateTime($2.Timestamp v) {
-    $_setField(9, v);
-  }
-
+  set updateTime($0.Timestamp value) => $_setField(9, value);
   @$pb.TagNumber(9)
   $core.bool hasUpdateTime() => $_has(6);
   @$pb.TagNumber(9)
   void clearUpdateTime() => $_clearField(9);
   @$pb.TagNumber(9)
-  $2.Timestamp ensureUpdateTime() => $_ensure(6);
+  $0.Timestamp ensureUpdateTime() => $_ensure(6);
 
   /// Output only. When the Feature resource was deleted.
   @$pb.TagNumber(10)
-  $2.Timestamp get deleteTime => $_getN(7);
+  $0.Timestamp get deleteTime => $_getN(7);
   @$pb.TagNumber(10)
-  set deleteTime($2.Timestamp v) {
-    $_setField(10, v);
-  }
-
+  set deleteTime($0.Timestamp value) => $_setField(10, value);
   @$pb.TagNumber(10)
   $core.bool hasDeleteTime() => $_has(7);
   @$pb.TagNumber(10)
   void clearDeleteTime() => $_clearField(10);
   @$pb.TagNumber(10)
-  $2.Timestamp ensureDeleteTime() => $_ensure(7);
+  $0.Timestamp ensureDeleteTime() => $_ensure(7);
 
   /// Output only. Scope-specific Feature status. If this Feature does
   /// report any per-Scope status, this field may be unused.
@@ -256,47 +225,43 @@ class FeatureResourceState extends $pb.GeneratedMessage {
   factory FeatureResourceState({
     FeatureResourceState_State? state,
   }) {
-    final $result = create();
-    if (state != null) {
-      $result.state = state;
-    }
-    return $result;
+    final result = create();
+    if (state != null) result.state = state;
+    return result;
   }
-  FeatureResourceState._() : super();
-  factory FeatureResourceState.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory FeatureResourceState.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  FeatureResourceState._();
+
+  factory FeatureResourceState.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory FeatureResourceState.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'FeatureResourceState',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.gkehub.v1'),
       createEmptyInstance: create)
-    ..e<FeatureResourceState_State>(
-        1, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
-        defaultOrMaker: FeatureResourceState_State.STATE_UNSPECIFIED,
-        valueOf: FeatureResourceState_State.valueOf,
+    ..aE<FeatureResourceState_State>(1, _omitFieldNames ? '' : 'state',
         enumValues: FeatureResourceState_State.values)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  FeatureResourceState clone() =>
-      FeatureResourceState()..mergeFromMessage(this);
+  FeatureResourceState clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   FeatureResourceState copyWith(void Function(FeatureResourceState) updates) =>
       super.copyWith((message) => updates(message as FeatureResourceState))
           as FeatureResourceState;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static FeatureResourceState create() => FeatureResourceState._();
+  @$core.override
   FeatureResourceState createEmptyInstance() => create();
-  static $pb.PbList<FeatureResourceState> createRepeated() =>
-      $pb.PbList<FeatureResourceState>();
   @$core.pragma('dart2js:noInline')
   static FeatureResourceState getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<FeatureResourceState>(create);
@@ -306,10 +271,7 @@ class FeatureResourceState extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   FeatureResourceState_State get state => $_getN(0);
   @$pb.TagNumber(1)
-  set state(FeatureResourceState_State v) {
-    $_setField(1, v);
-  }
-
+  set state(FeatureResourceState_State value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasState() => $_has(0);
   @$pb.TagNumber(1)
@@ -323,56 +285,50 @@ class FeatureState extends $pb.GeneratedMessage {
   factory FeatureState({
     FeatureState_Code? code,
     $core.String? description,
-    $2.Timestamp? updateTime,
+    $0.Timestamp? updateTime,
   }) {
-    final $result = create();
-    if (code != null) {
-      $result.code = code;
-    }
-    if (description != null) {
-      $result.description = description;
-    }
-    if (updateTime != null) {
-      $result.updateTime = updateTime;
-    }
-    return $result;
+    final result = create();
+    if (code != null) result.code = code;
+    if (description != null) result.description = description;
+    if (updateTime != null) result.updateTime = updateTime;
+    return result;
   }
-  FeatureState._() : super();
-  factory FeatureState.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory FeatureState.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  FeatureState._();
+
+  factory FeatureState.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory FeatureState.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'FeatureState',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.gkehub.v1'),
       createEmptyInstance: create)
-    ..e<FeatureState_Code>(1, _omitFieldNames ? '' : 'code', $pb.PbFieldType.OE,
-        defaultOrMaker: FeatureState_Code.CODE_UNSPECIFIED,
-        valueOf: FeatureState_Code.valueOf,
+    ..aE<FeatureState_Code>(1, _omitFieldNames ? '' : 'code',
         enumValues: FeatureState_Code.values)
     ..aOS(2, _omitFieldNames ? '' : 'description')
-    ..aOM<$2.Timestamp>(3, _omitFieldNames ? '' : 'updateTime',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$0.Timestamp>(3, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $0.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  FeatureState clone() => FeatureState()..mergeFromMessage(this);
+  FeatureState clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   FeatureState copyWith(void Function(FeatureState) updates) =>
       super.copyWith((message) => updates(message as FeatureState))
           as FeatureState;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static FeatureState create() => FeatureState._();
+  @$core.override
   FeatureState createEmptyInstance() => create();
-  static $pb.PbList<FeatureState> createRepeated() =>
-      $pb.PbList<FeatureState>();
   @$core.pragma('dart2js:noInline')
   static FeatureState getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<FeatureState>(create);
@@ -382,10 +338,7 @@ class FeatureState extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   FeatureState_Code get code => $_getN(0);
   @$pb.TagNumber(1)
-  set code(FeatureState_Code v) {
-    $_setField(1, v);
-  }
-
+  set code(FeatureState_Code value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasCode() => $_has(0);
   @$pb.TagNumber(1)
@@ -395,10 +348,7 @@ class FeatureState extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get description => $_getSZ(1);
   @$pb.TagNumber(2)
-  set description($core.String v) {
-    $_setString(1, v);
-  }
-
+  set description($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasDescription() => $_has(1);
   @$pb.TagNumber(2)
@@ -406,18 +356,15 @@ class FeatureState extends $pb.GeneratedMessage {
 
   /// The time this status and any related Feature-specific details were updated.
   @$pb.TagNumber(3)
-  $2.Timestamp get updateTime => $_getN(2);
+  $0.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($2.Timestamp v) {
-    $_setField(3, v);
-  }
-
+  set updateTime($0.Timestamp value) => $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => $_clearField(3);
   @$pb.TagNumber(3)
-  $2.Timestamp ensureUpdateTime() => $_ensure(2);
+  $0.Timestamp ensureUpdateTime() => $_ensure(2);
 }
 
 /// CommonFeatureState contains Hub-wide Feature status information.
@@ -425,19 +372,19 @@ class CommonFeatureState extends $pb.GeneratedMessage {
   factory CommonFeatureState({
     FeatureState? state,
   }) {
-    final $result = create();
-    if (state != null) {
-      $result.state = state;
-    }
-    return $result;
+    final result = create();
+    if (state != null) result.state = state;
+    return result;
   }
-  CommonFeatureState._() : super();
-  factory CommonFeatureState.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory CommonFeatureState.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  CommonFeatureState._();
+
+  factory CommonFeatureState.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory CommonFeatureState.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'CommonFeatureState',
@@ -449,19 +396,19 @@ class CommonFeatureState extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  CommonFeatureState clone() => CommonFeatureState()..mergeFromMessage(this);
+  CommonFeatureState clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CommonFeatureState copyWith(void Function(CommonFeatureState) updates) =>
       super.copyWith((message) => updates(message as CommonFeatureState))
           as CommonFeatureState;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CommonFeatureState create() => CommonFeatureState._();
+  @$core.override
   CommonFeatureState createEmptyInstance() => create();
-  static $pb.PbList<CommonFeatureState> createRepeated() =>
-      $pb.PbList<CommonFeatureState>();
   @$core.pragma('dart2js:noInline')
   static CommonFeatureState getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<CommonFeatureState>(create);
@@ -471,10 +418,7 @@ class CommonFeatureState extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   FeatureState get state => $_getN(0);
   @$pb.TagNumber(1)
-  set state(FeatureState v) {
-    $_setField(1, v);
-  }
-
+  set state(FeatureState value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasState() => $_has(0);
   @$pb.TagNumber(1)
@@ -488,19 +432,19 @@ class ScopeFeatureState extends $pb.GeneratedMessage {
   factory ScopeFeatureState({
     FeatureState? state,
   }) {
-    final $result = create();
-    if (state != null) {
-      $result.state = state;
-    }
-    return $result;
+    final result = create();
+    if (state != null) result.state = state;
+    return result;
   }
-  ScopeFeatureState._() : super();
-  factory ScopeFeatureState.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ScopeFeatureState.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  ScopeFeatureState._();
+
+  factory ScopeFeatureState.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ScopeFeatureState.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'ScopeFeatureState',
@@ -512,19 +456,19 @@ class ScopeFeatureState extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ScopeFeatureState clone() => ScopeFeatureState()..mergeFromMessage(this);
+  ScopeFeatureState clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ScopeFeatureState copyWith(void Function(ScopeFeatureState) updates) =>
       super.copyWith((message) => updates(message as ScopeFeatureState))
           as ScopeFeatureState;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ScopeFeatureState create() => ScopeFeatureState._();
+  @$core.override
   ScopeFeatureState createEmptyInstance() => create();
-  static $pb.PbList<ScopeFeatureState> createRepeated() =>
-      $pb.PbList<ScopeFeatureState>();
   @$core.pragma('dart2js:noInline')
   static ScopeFeatureState getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ScopeFeatureState>(create);
@@ -534,10 +478,7 @@ class ScopeFeatureState extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   FeatureState get state => $_getN(0);
   @$pb.TagNumber(1)
-  set state(FeatureState v) {
-    $_setField(1, v);
-  }
-
+  set state(FeatureState value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasState() => $_has(0);
   @$pb.TagNumber(1)
@@ -552,19 +493,19 @@ class MembershipFeatureState extends $pb.GeneratedMessage {
   factory MembershipFeatureState({
     FeatureState? state,
   }) {
-    final $result = create();
-    if (state != null) {
-      $result.state = state;
-    }
-    return $result;
+    final result = create();
+    if (state != null) result.state = state;
+    return result;
   }
-  MembershipFeatureState._() : super();
-  factory MembershipFeatureState.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory MembershipFeatureState.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  MembershipFeatureState._();
+
+  factory MembershipFeatureState.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory MembershipFeatureState.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'MembershipFeatureState',
@@ -576,21 +517,20 @@ class MembershipFeatureState extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  MembershipFeatureState clone() =>
-      MembershipFeatureState()..mergeFromMessage(this);
+  MembershipFeatureState clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MembershipFeatureState copyWith(
           void Function(MembershipFeatureState) updates) =>
       super.copyWith((message) => updates(message as MembershipFeatureState))
           as MembershipFeatureState;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static MembershipFeatureState create() => MembershipFeatureState._();
+  @$core.override
   MembershipFeatureState createEmptyInstance() => create();
-  static $pb.PbList<MembershipFeatureState> createRepeated() =>
-      $pb.PbList<MembershipFeatureState>();
   @$core.pragma('dart2js:noInline')
   static MembershipFeatureState getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<MembershipFeatureState>(create);
@@ -600,10 +540,7 @@ class MembershipFeatureState extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   FeatureState get state => $_getN(0);
   @$pb.TagNumber(1)
-  set state(FeatureState v) {
-    $_setField(1, v);
-  }
-
+  set state(FeatureState value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasState() => $_has(0);
   @$pb.TagNumber(1)
@@ -617,39 +554,29 @@ class Scope extends $pb.GeneratedMessage {
   factory Scope({
     $core.String? name,
     $core.String? uid,
-    $2.Timestamp? createTime,
-    $2.Timestamp? updateTime,
-    $2.Timestamp? deleteTime,
+    $0.Timestamp? createTime,
+    $0.Timestamp? updateTime,
+    $0.Timestamp? deleteTime,
     ScopeLifecycleState? state,
   }) {
-    final $result = create();
-    if (name != null) {
-      $result.name = name;
-    }
-    if (uid != null) {
-      $result.uid = uid;
-    }
-    if (createTime != null) {
-      $result.createTime = createTime;
-    }
-    if (updateTime != null) {
-      $result.updateTime = updateTime;
-    }
-    if (deleteTime != null) {
-      $result.deleteTime = deleteTime;
-    }
-    if (state != null) {
-      $result.state = state;
-    }
-    return $result;
+    final result = create();
+    if (name != null) result.name = name;
+    if (uid != null) result.uid = uid;
+    if (createTime != null) result.createTime = createTime;
+    if (updateTime != null) result.updateTime = updateTime;
+    if (deleteTime != null) result.deleteTime = deleteTime;
+    if (state != null) result.state = state;
+    return result;
   }
-  Scope._() : super();
-  factory Scope.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Scope.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  Scope._();
+
+  factory Scope.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory Scope.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'Scope',
@@ -658,28 +585,29 @@ class Scope extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'uid')
-    ..aOM<$2.Timestamp>(3, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(4, _omitFieldNames ? '' : 'updateTime',
-        subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(5, _omitFieldNames ? '' : 'deleteTime',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$0.Timestamp>(3, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(4, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(5, _omitFieldNames ? '' : 'deleteTime',
+        subBuilder: $0.Timestamp.create)
     ..aOM<ScopeLifecycleState>(6, _omitFieldNames ? '' : 'state',
         subBuilder: ScopeLifecycleState.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  Scope clone() => Scope()..mergeFromMessage(this);
+  Scope clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Scope copyWith(void Function(Scope) updates) =>
       super.copyWith((message) => updates(message as Scope)) as Scope;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Scope create() => Scope._();
+  @$core.override
   Scope createEmptyInstance() => create();
-  static $pb.PbList<Scope> createRepeated() => $pb.PbList<Scope>();
   @$core.pragma('dart2js:noInline')
   static Scope getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Scope>(create);
@@ -690,10 +618,7 @@ class Scope extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) {
-    $_setString(0, v);
-  }
-
+  set name($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -705,10 +630,7 @@ class Scope extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get uid => $_getSZ(1);
   @$pb.TagNumber(2)
-  set uid($core.String v) {
-    $_setString(1, v);
-  }
-
+  set uid($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasUid() => $_has(1);
   @$pb.TagNumber(2)
@@ -716,57 +638,45 @@ class Scope extends $pb.GeneratedMessage {
 
   /// Output only. When the scope was created.
   @$pb.TagNumber(3)
-  $2.Timestamp get createTime => $_getN(2);
+  $0.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($2.Timestamp v) {
-    $_setField(3, v);
-  }
-
+  set createTime($0.Timestamp value) => $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => $_clearField(3);
   @$pb.TagNumber(3)
-  $2.Timestamp ensureCreateTime() => $_ensure(2);
+  $0.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// Output only. When the scope was last updated.
   @$pb.TagNumber(4)
-  $2.Timestamp get updateTime => $_getN(3);
+  $0.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(4)
-  set updateTime($2.Timestamp v) {
-    $_setField(4, v);
-  }
-
+  set updateTime($0.Timestamp value) => $_setField(4, value);
   @$pb.TagNumber(4)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateTime() => $_clearField(4);
   @$pb.TagNumber(4)
-  $2.Timestamp ensureUpdateTime() => $_ensure(3);
+  $0.Timestamp ensureUpdateTime() => $_ensure(3);
 
   /// Output only. When the scope was deleted.
   @$pb.TagNumber(5)
-  $2.Timestamp get deleteTime => $_getN(4);
+  $0.Timestamp get deleteTime => $_getN(4);
   @$pb.TagNumber(5)
-  set deleteTime($2.Timestamp v) {
-    $_setField(5, v);
-  }
-
+  set deleteTime($0.Timestamp value) => $_setField(5, value);
   @$pb.TagNumber(5)
   $core.bool hasDeleteTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearDeleteTime() => $_clearField(5);
   @$pb.TagNumber(5)
-  $2.Timestamp ensureDeleteTime() => $_ensure(4);
+  $0.Timestamp ensureDeleteTime() => $_ensure(4);
 
   /// Output only. State of the scope resource.
   @$pb.TagNumber(6)
   ScopeLifecycleState get state => $_getN(5);
   @$pb.TagNumber(6)
-  set state(ScopeLifecycleState v) {
-    $_setField(6, v);
-  }
-
+  set state(ScopeLifecycleState value) => $_setField(6, value);
   @$pb.TagNumber(6)
   $core.bool hasState() => $_has(5);
   @$pb.TagNumber(6)
@@ -780,46 +690,43 @@ class ScopeLifecycleState extends $pb.GeneratedMessage {
   factory ScopeLifecycleState({
     ScopeLifecycleState_Code? code,
   }) {
-    final $result = create();
-    if (code != null) {
-      $result.code = code;
-    }
-    return $result;
+    final result = create();
+    if (code != null) result.code = code;
+    return result;
   }
-  ScopeLifecycleState._() : super();
-  factory ScopeLifecycleState.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ScopeLifecycleState.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  ScopeLifecycleState._();
+
+  factory ScopeLifecycleState.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ScopeLifecycleState.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'ScopeLifecycleState',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.gkehub.v1'),
       createEmptyInstance: create)
-    ..e<ScopeLifecycleState_Code>(
-        1, _omitFieldNames ? '' : 'code', $pb.PbFieldType.OE,
-        defaultOrMaker: ScopeLifecycleState_Code.CODE_UNSPECIFIED,
-        valueOf: ScopeLifecycleState_Code.valueOf,
+    ..aE<ScopeLifecycleState_Code>(1, _omitFieldNames ? '' : 'code',
         enumValues: ScopeLifecycleState_Code.values)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ScopeLifecycleState clone() => ScopeLifecycleState()..mergeFromMessage(this);
+  ScopeLifecycleState clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ScopeLifecycleState copyWith(void Function(ScopeLifecycleState) updates) =>
       super.copyWith((message) => updates(message as ScopeLifecycleState))
           as ScopeLifecycleState;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ScopeLifecycleState create() => ScopeLifecycleState._();
+  @$core.override
   ScopeLifecycleState createEmptyInstance() => create();
-  static $pb.PbList<ScopeLifecycleState> createRepeated() =>
-      $pb.PbList<ScopeLifecycleState>();
   @$core.pragma('dart2js:noInline')
   static ScopeLifecycleState getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ScopeLifecycleState>(create);
@@ -829,10 +736,7 @@ class ScopeLifecycleState extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   ScopeLifecycleState_Code get code => $_getN(0);
   @$pb.TagNumber(1)
-  set code(ScopeLifecycleState_Code v) {
-    $_setField(1, v);
-  }
-
+  set code(ScopeLifecycleState_Code value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasCode() => $_has(0);
   @$pb.TagNumber(1)
@@ -850,45 +754,31 @@ class MembershipBinding extends $pb.GeneratedMessage {
     $core.String? uid,
     $core.String? scope,
     $core.bool? fleet,
-    $2.Timestamp? createTime,
-    $2.Timestamp? updateTime,
-    $2.Timestamp? deleteTime,
+    $0.Timestamp? createTime,
+    $0.Timestamp? updateTime,
+    $0.Timestamp? deleteTime,
     MembershipBindingLifecycleState? state,
   }) {
-    final $result = create();
-    if (name != null) {
-      $result.name = name;
-    }
-    if (uid != null) {
-      $result.uid = uid;
-    }
-    if (scope != null) {
-      $result.scope = scope;
-    }
-    if (fleet != null) {
-      $result.fleet = fleet;
-    }
-    if (createTime != null) {
-      $result.createTime = createTime;
-    }
-    if (updateTime != null) {
-      $result.updateTime = updateTime;
-    }
-    if (deleteTime != null) {
-      $result.deleteTime = deleteTime;
-    }
-    if (state != null) {
-      $result.state = state;
-    }
-    return $result;
+    final result = create();
+    if (name != null) result.name = name;
+    if (uid != null) result.uid = uid;
+    if (scope != null) result.scope = scope;
+    if (fleet != null) result.fleet = fleet;
+    if (createTime != null) result.createTime = createTime;
+    if (updateTime != null) result.updateTime = updateTime;
+    if (deleteTime != null) result.deleteTime = deleteTime;
+    if (state != null) result.state = state;
+    return result;
   }
-  MembershipBinding._() : super();
-  factory MembershipBinding.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory MembershipBinding.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  MembershipBinding._();
+
+  factory MembershipBinding.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory MembershipBinding.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static const $core.Map<$core.int, MembershipBinding_Target>
       _MembershipBinding_TargetByTag = {
@@ -906,37 +796,41 @@ class MembershipBinding extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'uid')
     ..aOS(3, _omitFieldNames ? '' : 'scope')
     ..aOB(4, _omitFieldNames ? '' : 'fleet')
-    ..aOM<$2.Timestamp>(5, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(6, _omitFieldNames ? '' : 'updateTime',
-        subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(7, _omitFieldNames ? '' : 'deleteTime',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$0.Timestamp>(5, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(6, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(7, _omitFieldNames ? '' : 'deleteTime',
+        subBuilder: $0.Timestamp.create)
     ..aOM<MembershipBindingLifecycleState>(8, _omitFieldNames ? '' : 'state',
         subBuilder: MembershipBindingLifecycleState.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  MembershipBinding clone() => MembershipBinding()..mergeFromMessage(this);
+  MembershipBinding clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MembershipBinding copyWith(void Function(MembershipBinding) updates) =>
       super.copyWith((message) => updates(message as MembershipBinding))
           as MembershipBinding;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static MembershipBinding create() => MembershipBinding._();
+  @$core.override
   MembershipBinding createEmptyInstance() => create();
-  static $pb.PbList<MembershipBinding> createRepeated() =>
-      $pb.PbList<MembershipBinding>();
   @$core.pragma('dart2js:noInline')
   static MembershipBinding getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<MembershipBinding>(create);
   static MembershipBinding? _defaultInstance;
 
+  @$pb.TagNumber(3)
+  @$pb.TagNumber(4)
   MembershipBinding_Target whichTarget() =>
       _MembershipBinding_TargetByTag[$_whichOneof(0)]!;
+  @$pb.TagNumber(3)
+  @$pb.TagNumber(4)
   void clearTarget() => $_clearField($_whichOneof(0));
 
   /// The resource name for the membershipbinding itself
@@ -944,10 +838,7 @@ class MembershipBinding extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) {
-    $_setString(0, v);
-  }
-
+  set name($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -960,10 +851,7 @@ class MembershipBinding extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get uid => $_getSZ(1);
   @$pb.TagNumber(2)
-  set uid($core.String v) {
-    $_setString(1, v);
-  }
-
+  set uid($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasUid() => $_has(1);
   @$pb.TagNumber(2)
@@ -974,10 +862,7 @@ class MembershipBinding extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get scope => $_getSZ(2);
   @$pb.TagNumber(3)
-  set scope($core.String v) {
-    $_setString(2, v);
-  }
-
+  set scope($core.String value) => $_setString(2, value);
   @$pb.TagNumber(3)
   $core.bool hasScope() => $_has(2);
   @$pb.TagNumber(3)
@@ -988,10 +873,7 @@ class MembershipBinding extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool get fleet => $_getBF(3);
   @$pb.TagNumber(4)
-  set fleet($core.bool v) {
-    $_setBool(3, v);
-  }
-
+  set fleet($core.bool value) => $_setBool(3, value);
   @$pb.TagNumber(4)
   $core.bool hasFleet() => $_has(3);
   @$pb.TagNumber(4)
@@ -999,57 +881,45 @@ class MembershipBinding extends $pb.GeneratedMessage {
 
   /// Output only. When the membership binding was created.
   @$pb.TagNumber(5)
-  $2.Timestamp get createTime => $_getN(4);
+  $0.Timestamp get createTime => $_getN(4);
   @$pb.TagNumber(5)
-  set createTime($2.Timestamp v) {
-    $_setField(5, v);
-  }
-
+  set createTime($0.Timestamp value) => $_setField(5, value);
   @$pb.TagNumber(5)
   $core.bool hasCreateTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearCreateTime() => $_clearField(5);
   @$pb.TagNumber(5)
-  $2.Timestamp ensureCreateTime() => $_ensure(4);
+  $0.Timestamp ensureCreateTime() => $_ensure(4);
 
   /// Output only. When the membership binding was last updated.
   @$pb.TagNumber(6)
-  $2.Timestamp get updateTime => $_getN(5);
+  $0.Timestamp get updateTime => $_getN(5);
   @$pb.TagNumber(6)
-  set updateTime($2.Timestamp v) {
-    $_setField(6, v);
-  }
-
+  set updateTime($0.Timestamp value) => $_setField(6, value);
   @$pb.TagNumber(6)
   $core.bool hasUpdateTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearUpdateTime() => $_clearField(6);
   @$pb.TagNumber(6)
-  $2.Timestamp ensureUpdateTime() => $_ensure(5);
+  $0.Timestamp ensureUpdateTime() => $_ensure(5);
 
   /// Output only. When the membership binding was deleted.
   @$pb.TagNumber(7)
-  $2.Timestamp get deleteTime => $_getN(6);
+  $0.Timestamp get deleteTime => $_getN(6);
   @$pb.TagNumber(7)
-  set deleteTime($2.Timestamp v) {
-    $_setField(7, v);
-  }
-
+  set deleteTime($0.Timestamp value) => $_setField(7, value);
   @$pb.TagNumber(7)
   $core.bool hasDeleteTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearDeleteTime() => $_clearField(7);
   @$pb.TagNumber(7)
-  $2.Timestamp ensureDeleteTime() => $_ensure(6);
+  $0.Timestamp ensureDeleteTime() => $_ensure(6);
 
   /// Output only. State of the membership binding resource.
   @$pb.TagNumber(8)
   MembershipBindingLifecycleState get state => $_getN(7);
   @$pb.TagNumber(8)
-  set state(MembershipBindingLifecycleState v) {
-    $_setField(8, v);
-  }
-
+  set state(MembershipBindingLifecycleState value) => $_setField(8, value);
   @$pb.TagNumber(8)
   $core.bool hasState() => $_has(7);
   @$pb.TagNumber(8)
@@ -1063,35 +933,31 @@ class MembershipBindingLifecycleState extends $pb.GeneratedMessage {
   factory MembershipBindingLifecycleState({
     MembershipBindingLifecycleState_Code? code,
   }) {
-    final $result = create();
-    if (code != null) {
-      $result.code = code;
-    }
-    return $result;
+    final result = create();
+    if (code != null) result.code = code;
+    return result;
   }
-  MembershipBindingLifecycleState._() : super();
-  factory MembershipBindingLifecycleState.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory MembershipBindingLifecycleState.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  MembershipBindingLifecycleState._();
+
+  factory MembershipBindingLifecycleState.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory MembershipBindingLifecycleState.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'MembershipBindingLifecycleState',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.gkehub.v1'),
       createEmptyInstance: create)
-    ..e<MembershipBindingLifecycleState_Code>(
-        1, _omitFieldNames ? '' : 'code', $pb.PbFieldType.OE,
-        defaultOrMaker: MembershipBindingLifecycleState_Code.CODE_UNSPECIFIED,
-        valueOf: MembershipBindingLifecycleState_Code.valueOf,
+    ..aE<MembershipBindingLifecycleState_Code>(1, _omitFieldNames ? '' : 'code',
         enumValues: MembershipBindingLifecycleState_Code.values)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  MembershipBindingLifecycleState clone() =>
-      MembershipBindingLifecycleState()..mergeFromMessage(this);
+  MembershipBindingLifecycleState clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MembershipBindingLifecycleState copyWith(
           void Function(MembershipBindingLifecycleState) updates) =>
@@ -1099,14 +965,14 @@ class MembershipBindingLifecycleState extends $pb.GeneratedMessage {
               (message) => updates(message as MembershipBindingLifecycleState))
           as MembershipBindingLifecycleState;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static MembershipBindingLifecycleState create() =>
       MembershipBindingLifecycleState._();
+  @$core.override
   MembershipBindingLifecycleState createEmptyInstance() => create();
-  static $pb.PbList<MembershipBindingLifecycleState> createRepeated() =>
-      $pb.PbList<MembershipBindingLifecycleState>();
   @$core.pragma('dart2js:noInline')
   static MembershipBindingLifecycleState getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<MembershipBindingLifecycleState>(
@@ -1117,10 +983,7 @@ class MembershipBindingLifecycleState extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   MembershipBindingLifecycleState_Code get code => $_getN(0);
   @$pb.TagNumber(1)
-  set code(MembershipBindingLifecycleState_Code v) {
-    $_setField(1, v);
-  }
-
+  set code(MembershipBindingLifecycleState_Code value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasCode() => $_has(0);
   @$pb.TagNumber(1)
@@ -1137,60 +1000,39 @@ class Membership extends $pb.GeneratedMessage {
     $core.String? description,
     MembershipEndpoint? endpoint,
     MembershipState? state,
-    $2.Timestamp? createTime,
-    $2.Timestamp? updateTime,
-    $2.Timestamp? deleteTime,
+    $0.Timestamp? createTime,
+    $0.Timestamp? updateTime,
+    $0.Timestamp? deleteTime,
     $core.String? externalId,
-    $2.Timestamp? lastConnectionTime,
+    $0.Timestamp? lastConnectionTime,
     $core.String? uniqueId,
     Authority? authority,
   }) {
-    final $result = create();
-    if (name != null) {
-      $result.name = name;
-    }
-    if (labels != null) {
-      $result.labels.addEntries(labels);
-    }
-    if (description != null) {
-      $result.description = description;
-    }
-    if (endpoint != null) {
-      $result.endpoint = endpoint;
-    }
-    if (state != null) {
-      $result.state = state;
-    }
-    if (createTime != null) {
-      $result.createTime = createTime;
-    }
-    if (updateTime != null) {
-      $result.updateTime = updateTime;
-    }
-    if (deleteTime != null) {
-      $result.deleteTime = deleteTime;
-    }
-    if (externalId != null) {
-      $result.externalId = externalId;
-    }
-    if (lastConnectionTime != null) {
-      $result.lastConnectionTime = lastConnectionTime;
-    }
-    if (uniqueId != null) {
-      $result.uniqueId = uniqueId;
-    }
-    if (authority != null) {
-      $result.authority = authority;
-    }
-    return $result;
+    final result = create();
+    if (name != null) result.name = name;
+    if (labels != null) result.labels.addEntries(labels);
+    if (description != null) result.description = description;
+    if (endpoint != null) result.endpoint = endpoint;
+    if (state != null) result.state = state;
+    if (createTime != null) result.createTime = createTime;
+    if (updateTime != null) result.updateTime = updateTime;
+    if (deleteTime != null) result.deleteTime = deleteTime;
+    if (externalId != null) result.externalId = externalId;
+    if (lastConnectionTime != null)
+      result.lastConnectionTime = lastConnectionTime;
+    if (uniqueId != null) result.uniqueId = uniqueId;
+    if (authority != null) result.authority = authority;
+    return result;
   }
-  Membership._() : super();
-  factory Membership.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Membership.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  Membership._();
+
+  factory Membership.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory Membership.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static const $core.Map<$core.int, Membership_Type> _Membership_TypeByTag = {
     4: Membership_Type.endpoint,
@@ -1213,38 +1055,41 @@ class Membership extends $pb.GeneratedMessage {
         subBuilder: MembershipEndpoint.create)
     ..aOM<MembershipState>(5, _omitFieldNames ? '' : 'state',
         subBuilder: MembershipState.create)
-    ..aOM<$2.Timestamp>(6, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(7, _omitFieldNames ? '' : 'updateTime',
-        subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(8, _omitFieldNames ? '' : 'deleteTime',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$0.Timestamp>(6, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(7, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(8, _omitFieldNames ? '' : 'deleteTime',
+        subBuilder: $0.Timestamp.create)
     ..aOS(9, _omitFieldNames ? '' : 'externalId')
-    ..aOM<$2.Timestamp>(10, _omitFieldNames ? '' : 'lastConnectionTime',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$0.Timestamp>(10, _omitFieldNames ? '' : 'lastConnectionTime',
+        subBuilder: $0.Timestamp.create)
     ..aOS(11, _omitFieldNames ? '' : 'uniqueId')
     ..aOM<Authority>(12, _omitFieldNames ? '' : 'authority',
         subBuilder: Authority.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  Membership clone() => Membership()..mergeFromMessage(this);
+  Membership clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Membership copyWith(void Function(Membership) updates) =>
       super.copyWith((message) => updates(message as Membership)) as Membership;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Membership create() => Membership._();
+  @$core.override
   Membership createEmptyInstance() => create();
-  static $pb.PbList<Membership> createRepeated() => $pb.PbList<Membership>();
   @$core.pragma('dart2js:noInline')
   static Membership getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<Membership>(create);
   static Membership? _defaultInstance;
 
+  @$pb.TagNumber(4)
   Membership_Type whichType() => _Membership_TypeByTag[$_whichOneof(0)]!;
+  @$pb.TagNumber(4)
   void clearType() => $_clearField($_whichOneof(0));
 
   /// Output only. The full, unique name of this Membership resource in the
@@ -1262,10 +1107,7 @@ class Membership extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) {
-    $_setString(0, v);
-  }
-
+  set name($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -1282,10 +1124,7 @@ class Membership extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get description => $_getSZ(2);
   @$pb.TagNumber(3)
-  set description($core.String v) {
-    $_setString(2, v);
-  }
-
+  set description($core.String value) => $_setString(2, value);
   @$pb.TagNumber(3)
   $core.bool hasDescription() => $_has(2);
   @$pb.TagNumber(3)
@@ -1295,10 +1134,7 @@ class Membership extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   MembershipEndpoint get endpoint => $_getN(3);
   @$pb.TagNumber(4)
-  set endpoint(MembershipEndpoint v) {
-    $_setField(4, v);
-  }
-
+  set endpoint(MembershipEndpoint value) => $_setField(4, value);
   @$pb.TagNumber(4)
   $core.bool hasEndpoint() => $_has(3);
   @$pb.TagNumber(4)
@@ -1310,10 +1146,7 @@ class Membership extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   MembershipState get state => $_getN(4);
   @$pb.TagNumber(5)
-  set state(MembershipState v) {
-    $_setField(5, v);
-  }
-
+  set state(MembershipState value) => $_setField(5, value);
   @$pb.TagNumber(5)
   $core.bool hasState() => $_has(4);
   @$pb.TagNumber(5)
@@ -1323,48 +1156,39 @@ class Membership extends $pb.GeneratedMessage {
 
   /// Output only. When the Membership was created.
   @$pb.TagNumber(6)
-  $2.Timestamp get createTime => $_getN(5);
+  $0.Timestamp get createTime => $_getN(5);
   @$pb.TagNumber(6)
-  set createTime($2.Timestamp v) {
-    $_setField(6, v);
-  }
-
+  set createTime($0.Timestamp value) => $_setField(6, value);
   @$pb.TagNumber(6)
   $core.bool hasCreateTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearCreateTime() => $_clearField(6);
   @$pb.TagNumber(6)
-  $2.Timestamp ensureCreateTime() => $_ensure(5);
+  $0.Timestamp ensureCreateTime() => $_ensure(5);
 
   /// Output only. When the Membership was last updated.
   @$pb.TagNumber(7)
-  $2.Timestamp get updateTime => $_getN(6);
+  $0.Timestamp get updateTime => $_getN(6);
   @$pb.TagNumber(7)
-  set updateTime($2.Timestamp v) {
-    $_setField(7, v);
-  }
-
+  set updateTime($0.Timestamp value) => $_setField(7, value);
   @$pb.TagNumber(7)
   $core.bool hasUpdateTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearUpdateTime() => $_clearField(7);
   @$pb.TagNumber(7)
-  $2.Timestamp ensureUpdateTime() => $_ensure(6);
+  $0.Timestamp ensureUpdateTime() => $_ensure(6);
 
   /// Output only. When the Membership was deleted.
   @$pb.TagNumber(8)
-  $2.Timestamp get deleteTime => $_getN(7);
+  $0.Timestamp get deleteTime => $_getN(7);
   @$pb.TagNumber(8)
-  set deleteTime($2.Timestamp v) {
-    $_setField(8, v);
-  }
-
+  set deleteTime($0.Timestamp value) => $_setField(8, value);
   @$pb.TagNumber(8)
   $core.bool hasDeleteTime() => $_has(7);
   @$pb.TagNumber(8)
   void clearDeleteTime() => $_clearField(8);
   @$pb.TagNumber(8)
-  $2.Timestamp ensureDeleteTime() => $_ensure(7);
+  $0.Timestamp ensureDeleteTime() => $_ensure(7);
 
   /// Optional. An externally-generated and managed ID for this Membership. This
   /// ID may be modified after creation, but this is not recommended.
@@ -1376,10 +1200,7 @@ class Membership extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.String get externalId => $_getSZ(8);
   @$pb.TagNumber(9)
-  set externalId($core.String v) {
-    $_setString(8, v);
-  }
-
+  set externalId($core.String value) => $_setString(8, value);
   @$pb.TagNumber(9)
   $core.bool hasExternalId() => $_has(8);
   @$pb.TagNumber(9)
@@ -1391,18 +1212,15 @@ class Membership extends $pb.GeneratedMessage {
   /// Connect, or that have never connected successfully, this field will be
   /// unset.
   @$pb.TagNumber(10)
-  $2.Timestamp get lastConnectionTime => $_getN(9);
+  $0.Timestamp get lastConnectionTime => $_getN(9);
   @$pb.TagNumber(10)
-  set lastConnectionTime($2.Timestamp v) {
-    $_setField(10, v);
-  }
-
+  set lastConnectionTime($0.Timestamp value) => $_setField(10, value);
   @$pb.TagNumber(10)
   $core.bool hasLastConnectionTime() => $_has(9);
   @$pb.TagNumber(10)
   void clearLastConnectionTime() => $_clearField(10);
   @$pb.TagNumber(10)
-  $2.Timestamp ensureLastConnectionTime() => $_ensure(9);
+  $0.Timestamp ensureLastConnectionTime() => $_ensure(9);
 
   /// Output only. Google-generated UUID for this resource. This is unique across
   /// all Membership resources. If a Membership resource is deleted and another
@@ -1410,10 +1228,7 @@ class Membership extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.String get uniqueId => $_getSZ(10);
   @$pb.TagNumber(11)
-  set uniqueId($core.String v) {
-    $_setString(10, v);
-  }
-
+  set uniqueId($core.String value) => $_setString(10, value);
   @$pb.TagNumber(11)
   $core.bool hasUniqueId() => $_has(10);
   @$pb.TagNumber(11)
@@ -1425,10 +1240,7 @@ class Membership extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   Authority get authority => $_getN(11);
   @$pb.TagNumber(12)
-  set authority(Authority v) {
-    $_setField(12, v);
-  }
-
+  set authority(Authority value) => $_setField(12, value);
   @$pb.TagNumber(12)
   $core.bool hasAuthority() => $_has(11);
   @$pb.TagNumber(12)
@@ -1459,40 +1271,28 @@ class MembershipEndpoint extends $pb.GeneratedMessage {
     ApplianceCluster? applianceCluster,
     $core.bool? googleManaged,
   }) {
-    final $result = create();
-    if (gkeCluster != null) {
-      $result.gkeCluster = gkeCluster;
-    }
-    if (kubernetesMetadata != null) {
-      $result.kubernetesMetadata = kubernetesMetadata;
-    }
-    if (kubernetesResource != null) {
-      $result.kubernetesResource = kubernetesResource;
-    }
-    if (onPremCluster != null) {
-      $result.onPremCluster = onPremCluster;
-    }
-    if (multiCloudCluster != null) {
-      $result.multiCloudCluster = multiCloudCluster;
-    }
-    if (edgeCluster != null) {
-      $result.edgeCluster = edgeCluster;
-    }
-    if (applianceCluster != null) {
-      $result.applianceCluster = applianceCluster;
-    }
-    if (googleManaged != null) {
-      $result.googleManaged = googleManaged;
-    }
-    return $result;
+    final result = create();
+    if (gkeCluster != null) result.gkeCluster = gkeCluster;
+    if (kubernetesMetadata != null)
+      result.kubernetesMetadata = kubernetesMetadata;
+    if (kubernetesResource != null)
+      result.kubernetesResource = kubernetesResource;
+    if (onPremCluster != null) result.onPremCluster = onPremCluster;
+    if (multiCloudCluster != null) result.multiCloudCluster = multiCloudCluster;
+    if (edgeCluster != null) result.edgeCluster = edgeCluster;
+    if (applianceCluster != null) result.applianceCluster = applianceCluster;
+    if (googleManaged != null) result.googleManaged = googleManaged;
+    return result;
   }
-  MembershipEndpoint._() : super();
-  factory MembershipEndpoint.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory MembershipEndpoint.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  MembershipEndpoint._();
+
+  factory MembershipEndpoint.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory MembershipEndpoint.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static const $core.Map<$core.int, MembershipEndpoint_Type>
       _MembershipEndpoint_TypeByTag = {
@@ -1527,36 +1327,43 @@ class MembershipEndpoint extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  MembershipEndpoint clone() => MembershipEndpoint()..mergeFromMessage(this);
+  MembershipEndpoint clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MembershipEndpoint copyWith(void Function(MembershipEndpoint) updates) =>
       super.copyWith((message) => updates(message as MembershipEndpoint))
           as MembershipEndpoint;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static MembershipEndpoint create() => MembershipEndpoint._();
+  @$core.override
   MembershipEndpoint createEmptyInstance() => create();
-  static $pb.PbList<MembershipEndpoint> createRepeated() =>
-      $pb.PbList<MembershipEndpoint>();
   @$core.pragma('dart2js:noInline')
   static MembershipEndpoint getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<MembershipEndpoint>(create);
   static MembershipEndpoint? _defaultInstance;
 
+  @$pb.TagNumber(1)
+  @$pb.TagNumber(4)
+  @$pb.TagNumber(5)
+  @$pb.TagNumber(6)
+  @$pb.TagNumber(7)
   MembershipEndpoint_Type whichType() =>
       _MembershipEndpoint_TypeByTag[$_whichOneof(0)]!;
+  @$pb.TagNumber(1)
+  @$pb.TagNumber(4)
+  @$pb.TagNumber(5)
+  @$pb.TagNumber(6)
+  @$pb.TagNumber(7)
   void clearType() => $_clearField($_whichOneof(0));
 
   /// Optional. Specific information for a GKE-on-GCP cluster.
   @$pb.TagNumber(1)
   GkeCluster get gkeCluster => $_getN(0);
   @$pb.TagNumber(1)
-  set gkeCluster(GkeCluster v) {
-    $_setField(1, v);
-  }
-
+  set gkeCluster(GkeCluster value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasGkeCluster() => $_has(0);
   @$pb.TagNumber(1)
@@ -1568,10 +1375,7 @@ class MembershipEndpoint extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   KubernetesMetadata get kubernetesMetadata => $_getN(1);
   @$pb.TagNumber(2)
-  set kubernetesMetadata(KubernetesMetadata v) {
-    $_setField(2, v);
-  }
-
+  set kubernetesMetadata(KubernetesMetadata value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasKubernetesMetadata() => $_has(1);
   @$pb.TagNumber(2)
@@ -1590,10 +1394,7 @@ class MembershipEndpoint extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   KubernetesResource get kubernetesResource => $_getN(2);
   @$pb.TagNumber(3)
-  set kubernetesResource(KubernetesResource v) {
-    $_setField(3, v);
-  }
-
+  set kubernetesResource(KubernetesResource value) => $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasKubernetesResource() => $_has(2);
   @$pb.TagNumber(3)
@@ -1607,10 +1408,7 @@ class MembershipEndpoint extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   OnPremCluster get onPremCluster => $_getN(3);
   @$pb.TagNumber(4)
-  set onPremCluster(OnPremCluster v) {
-    $_setField(4, v);
-  }
-
+  set onPremCluster(OnPremCluster value) => $_setField(4, value);
   @$pb.TagNumber(4)
   $core.bool hasOnPremCluster() => $_has(3);
   @$pb.TagNumber(4)
@@ -1622,10 +1420,7 @@ class MembershipEndpoint extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   MultiCloudCluster get multiCloudCluster => $_getN(4);
   @$pb.TagNumber(5)
-  set multiCloudCluster(MultiCloudCluster v) {
-    $_setField(5, v);
-  }
-
+  set multiCloudCluster(MultiCloudCluster value) => $_setField(5, value);
   @$pb.TagNumber(5)
   $core.bool hasMultiCloudCluster() => $_has(4);
   @$pb.TagNumber(5)
@@ -1637,10 +1432,7 @@ class MembershipEndpoint extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   EdgeCluster get edgeCluster => $_getN(5);
   @$pb.TagNumber(6)
-  set edgeCluster(EdgeCluster v) {
-    $_setField(6, v);
-  }
-
+  set edgeCluster(EdgeCluster value) => $_setField(6, value);
   @$pb.TagNumber(6)
   $core.bool hasEdgeCluster() => $_has(5);
   @$pb.TagNumber(6)
@@ -1652,10 +1444,7 @@ class MembershipEndpoint extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   ApplianceCluster get applianceCluster => $_getN(6);
   @$pb.TagNumber(7)
-  set applianceCluster(ApplianceCluster v) {
-    $_setField(7, v);
-  }
-
+  set applianceCluster(ApplianceCluster value) => $_setField(7, value);
   @$pb.TagNumber(7)
   $core.bool hasApplianceCluster() => $_has(6);
   @$pb.TagNumber(7)
@@ -1668,10 +1457,7 @@ class MembershipEndpoint extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.bool get googleManaged => $_getBF(7);
   @$pb.TagNumber(8)
-  set googleManaged($core.bool v) {
-    $_setBool(7, v);
-  }
-
+  set googleManaged($core.bool value) => $_setBool(7, value);
   @$pb.TagNumber(8)
   $core.bool hasGoogleManaged() => $_has(7);
   @$pb.TagNumber(8)
@@ -1687,55 +1473,51 @@ class KubernetesResource extends $pb.GeneratedMessage {
     $core.Iterable<ResourceManifest>? connectResources,
     ResourceOptions? resourceOptions,
   }) {
-    final $result = create();
-    if (membershipResources != null) {
-      $result.membershipResources.addAll(membershipResources);
-    }
-    if (connectResources != null) {
-      $result.connectResources.addAll(connectResources);
-    }
-    if (resourceOptions != null) {
-      $result.resourceOptions = resourceOptions;
-    }
-    return $result;
+    final result = create();
+    if (membershipResources != null)
+      result.membershipResources.addAll(membershipResources);
+    if (connectResources != null)
+      result.connectResources.addAll(connectResources);
+    if (resourceOptions != null) result.resourceOptions = resourceOptions;
+    return result;
   }
-  KubernetesResource._() : super();
-  factory KubernetesResource.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory KubernetesResource.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  KubernetesResource._();
+
+  factory KubernetesResource.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory KubernetesResource.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'KubernetesResource',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.gkehub.v1'),
       createEmptyInstance: create)
-    ..pc<ResourceManifest>(
-        2, _omitFieldNames ? '' : 'membershipResources', $pb.PbFieldType.PM,
+    ..pPM<ResourceManifest>(2, _omitFieldNames ? '' : 'membershipResources',
         subBuilder: ResourceManifest.create)
-    ..pc<ResourceManifest>(
-        3, _omitFieldNames ? '' : 'connectResources', $pb.PbFieldType.PM,
+    ..pPM<ResourceManifest>(3, _omitFieldNames ? '' : 'connectResources',
         subBuilder: ResourceManifest.create)
     ..aOM<ResourceOptions>(4, _omitFieldNames ? '' : 'resourceOptions',
         subBuilder: ResourceOptions.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  KubernetesResource clone() => KubernetesResource()..mergeFromMessage(this);
+  KubernetesResource clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   KubernetesResource copyWith(void Function(KubernetesResource) updates) =>
       super.copyWith((message) => updates(message as KubernetesResource))
           as KubernetesResource;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static KubernetesResource create() => KubernetesResource._();
+  @$core.override
   KubernetesResource createEmptyInstance() => create();
-  static $pb.PbList<KubernetesResource> createRepeated() =>
-      $pb.PbList<KubernetesResource>();
   @$core.pragma('dart2js:noInline')
   static KubernetesResource getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<KubernetesResource>(create);
@@ -1766,10 +1548,7 @@ class KubernetesResource extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   ResourceOptions get resourceOptions => $_getN(2);
   @$pb.TagNumber(4)
-  set resourceOptions(ResourceOptions v) {
-    $_setField(4, v);
-  }
-
+  set resourceOptions(ResourceOptions value) => $_setField(4, value);
   @$pb.TagNumber(4)
   $core.bool hasResourceOptions() => $_has(2);
   @$pb.TagNumber(4)
@@ -1785,25 +1564,21 @@ class ResourceOptions extends $pb.GeneratedMessage {
     $core.bool? v1beta1Crd,
     $core.String? k8sVersion,
   }) {
-    final $result = create();
-    if (connectVersion != null) {
-      $result.connectVersion = connectVersion;
-    }
-    if (v1beta1Crd != null) {
-      $result.v1beta1Crd = v1beta1Crd;
-    }
-    if (k8sVersion != null) {
-      $result.k8sVersion = k8sVersion;
-    }
-    return $result;
+    final result = create();
+    if (connectVersion != null) result.connectVersion = connectVersion;
+    if (v1beta1Crd != null) result.v1beta1Crd = v1beta1Crd;
+    if (k8sVersion != null) result.k8sVersion = k8sVersion;
+    return result;
   }
-  ResourceOptions._() : super();
-  factory ResourceOptions.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ResourceOptions.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  ResourceOptions._();
+
+  factory ResourceOptions.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ResourceOptions.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'ResourceOptions',
@@ -1816,19 +1591,19 @@ class ResourceOptions extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ResourceOptions clone() => ResourceOptions()..mergeFromMessage(this);
+  ResourceOptions clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ResourceOptions copyWith(void Function(ResourceOptions) updates) =>
       super.copyWith((message) => updates(message as ResourceOptions))
           as ResourceOptions;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ResourceOptions create() => ResourceOptions._();
+  @$core.override
   ResourceOptions createEmptyInstance() => create();
-  static $pb.PbList<ResourceOptions> createRepeated() =>
-      $pb.PbList<ResourceOptions>();
   @$core.pragma('dart2js:noInline')
   static ResourceOptions getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ResourceOptions>(create);
@@ -1840,10 +1615,7 @@ class ResourceOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get connectVersion => $_getSZ(0);
   @$pb.TagNumber(1)
-  set connectVersion($core.String v) {
-    $_setString(0, v);
-  }
-
+  set connectVersion($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasConnectVersion() => $_has(0);
   @$pb.TagNumber(1)
@@ -1856,10 +1628,7 @@ class ResourceOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool get v1beta1Crd => $_getBF(1);
   @$pb.TagNumber(2)
-  set v1beta1Crd($core.bool v) {
-    $_setBool(1, v);
-  }
-
+  set v1beta1Crd($core.bool value) => $_setBool(1, value);
   @$pb.TagNumber(2)
   $core.bool hasV1beta1Crd() => $_has(1);
   @$pb.TagNumber(2)
@@ -1871,10 +1640,7 @@ class ResourceOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get k8sVersion => $_getSZ(2);
   @$pb.TagNumber(3)
-  set k8sVersion($core.String v) {
-    $_setString(2, v);
-  }
-
+  set k8sVersion($core.String value) => $_setString(2, value);
   @$pb.TagNumber(3)
   $core.bool hasK8sVersion() => $_has(2);
   @$pb.TagNumber(3)
@@ -1888,22 +1654,20 @@ class ResourceManifest extends $pb.GeneratedMessage {
     $core.String? manifest,
     $core.bool? clusterScoped,
   }) {
-    final $result = create();
-    if (manifest != null) {
-      $result.manifest = manifest;
-    }
-    if (clusterScoped != null) {
-      $result.clusterScoped = clusterScoped;
-    }
-    return $result;
+    final result = create();
+    if (manifest != null) result.manifest = manifest;
+    if (clusterScoped != null) result.clusterScoped = clusterScoped;
+    return result;
   }
-  ResourceManifest._() : super();
-  factory ResourceManifest.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ResourceManifest.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  ResourceManifest._();
+
+  factory ResourceManifest.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ResourceManifest.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'ResourceManifest',
@@ -1915,19 +1679,19 @@ class ResourceManifest extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ResourceManifest clone() => ResourceManifest()..mergeFromMessage(this);
+  ResourceManifest clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ResourceManifest copyWith(void Function(ResourceManifest) updates) =>
       super.copyWith((message) => updates(message as ResourceManifest))
           as ResourceManifest;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ResourceManifest create() => ResourceManifest._();
+  @$core.override
   ResourceManifest createEmptyInstance() => create();
-  static $pb.PbList<ResourceManifest> createRepeated() =>
-      $pb.PbList<ResourceManifest>();
   @$core.pragma('dart2js:noInline')
   static ResourceManifest getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ResourceManifest>(create);
@@ -1937,10 +1701,7 @@ class ResourceManifest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get manifest => $_getSZ(0);
   @$pb.TagNumber(1)
-  set manifest($core.String v) {
-    $_setString(0, v);
-  }
-
+  set manifest($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasManifest() => $_has(0);
   @$pb.TagNumber(1)
@@ -1954,10 +1715,7 @@ class ResourceManifest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool get clusterScoped => $_getBF(1);
   @$pb.TagNumber(2)
-  set clusterScoped($core.bool v) {
-    $_setBool(1, v);
-  }
-
+  set clusterScoped($core.bool value) => $_setBool(1, value);
   @$pb.TagNumber(2)
   $core.bool hasClusterScoped() => $_has(1);
   @$pb.TagNumber(2)
@@ -1970,22 +1728,20 @@ class GkeCluster extends $pb.GeneratedMessage {
     $core.String? resourceLink,
     $core.bool? clusterMissing,
   }) {
-    final $result = create();
-    if (resourceLink != null) {
-      $result.resourceLink = resourceLink;
-    }
-    if (clusterMissing != null) {
-      $result.clusterMissing = clusterMissing;
-    }
-    return $result;
+    final result = create();
+    if (resourceLink != null) result.resourceLink = resourceLink;
+    if (clusterMissing != null) result.clusterMissing = clusterMissing;
+    return result;
   }
-  GkeCluster._() : super();
-  factory GkeCluster.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory GkeCluster.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  GkeCluster._();
+
+  factory GkeCluster.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory GkeCluster.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'GkeCluster',
@@ -1997,17 +1753,18 @@ class GkeCluster extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  GkeCluster clone() => GkeCluster()..mergeFromMessage(this);
+  GkeCluster clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   GkeCluster copyWith(void Function(GkeCluster) updates) =>
       super.copyWith((message) => updates(message as GkeCluster)) as GkeCluster;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GkeCluster create() => GkeCluster._();
+  @$core.override
   GkeCluster createEmptyInstance() => create();
-  static $pb.PbList<GkeCluster> createRepeated() => $pb.PbList<GkeCluster>();
   @$core.pragma('dart2js:noInline')
   static GkeCluster getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<GkeCluster>(create);
@@ -2021,10 +1778,7 @@ class GkeCluster extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get resourceLink => $_getSZ(0);
   @$pb.TagNumber(1)
-  set resourceLink($core.String v) {
-    $_setString(0, v);
-  }
-
+  set resourceLink($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasResourceLink() => $_has(0);
   @$pb.TagNumber(1)
@@ -2035,10 +1789,7 @@ class GkeCluster extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool get clusterMissing => $_getBF(1);
   @$pb.TagNumber(2)
-  set clusterMissing($core.bool v) {
-    $_setBool(1, v);
-  }
-
+  set clusterMissing($core.bool value) => $_setBool(1, value);
   @$pb.TagNumber(2)
   $core.bool hasClusterMissing() => $_has(1);
   @$pb.TagNumber(2)
@@ -2053,28 +1804,22 @@ class OnPremCluster extends $pb.GeneratedMessage {
     $core.bool? adminCluster,
     OnPremCluster_ClusterType? clusterType,
   }) {
-    final $result = create();
-    if (resourceLink != null) {
-      $result.resourceLink = resourceLink;
-    }
-    if (clusterMissing != null) {
-      $result.clusterMissing = clusterMissing;
-    }
-    if (adminCluster != null) {
-      $result.adminCluster = adminCluster;
-    }
-    if (clusterType != null) {
-      $result.clusterType = clusterType;
-    }
-    return $result;
+    final result = create();
+    if (resourceLink != null) result.resourceLink = resourceLink;
+    if (clusterMissing != null) result.clusterMissing = clusterMissing;
+    if (adminCluster != null) result.adminCluster = adminCluster;
+    if (clusterType != null) result.clusterType = clusterType;
+    return result;
   }
-  OnPremCluster._() : super();
-  factory OnPremCluster.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory OnPremCluster.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  OnPremCluster._();
+
+  factory OnPremCluster.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory OnPremCluster.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'OnPremCluster',
@@ -2084,27 +1829,24 @@ class OnPremCluster extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'resourceLink')
     ..aOB(2, _omitFieldNames ? '' : 'clusterMissing')
     ..aOB(3, _omitFieldNames ? '' : 'adminCluster')
-    ..e<OnPremCluster_ClusterType>(
-        4, _omitFieldNames ? '' : 'clusterType', $pb.PbFieldType.OE,
-        defaultOrMaker: OnPremCluster_ClusterType.CLUSTERTYPE_UNSPECIFIED,
-        valueOf: OnPremCluster_ClusterType.valueOf,
+    ..aE<OnPremCluster_ClusterType>(4, _omitFieldNames ? '' : 'clusterType',
         enumValues: OnPremCluster_ClusterType.values)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  OnPremCluster clone() => OnPremCluster()..mergeFromMessage(this);
+  OnPremCluster clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   OnPremCluster copyWith(void Function(OnPremCluster) updates) =>
       super.copyWith((message) => updates(message as OnPremCluster))
           as OnPremCluster;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static OnPremCluster create() => OnPremCluster._();
+  @$core.override
   OnPremCluster createEmptyInstance() => create();
-  static $pb.PbList<OnPremCluster> createRepeated() =>
-      $pb.PbList<OnPremCluster>();
   @$core.pragma('dart2js:noInline')
   static OnPremCluster getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<OnPremCluster>(create);
@@ -2118,10 +1860,7 @@ class OnPremCluster extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get resourceLink => $_getSZ(0);
   @$pb.TagNumber(1)
-  set resourceLink($core.String v) {
-    $_setString(0, v);
-  }
-
+  set resourceLink($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasResourceLink() => $_has(0);
   @$pb.TagNumber(1)
@@ -2133,10 +1872,7 @@ class OnPremCluster extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool get clusterMissing => $_getBF(1);
   @$pb.TagNumber(2)
-  set clusterMissing($core.bool v) {
-    $_setBool(1, v);
-  }
-
+  set clusterMissing($core.bool value) => $_setBool(1, value);
   @$pb.TagNumber(2)
   $core.bool hasClusterMissing() => $_has(1);
   @$pb.TagNumber(2)
@@ -2146,10 +1882,7 @@ class OnPremCluster extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool get adminCluster => $_getBF(2);
   @$pb.TagNumber(3)
-  set adminCluster($core.bool v) {
-    $_setBool(2, v);
-  }
-
+  set adminCluster($core.bool value) => $_setBool(2, value);
   @$pb.TagNumber(3)
   $core.bool hasAdminCluster() => $_has(2);
   @$pb.TagNumber(3)
@@ -2159,10 +1892,7 @@ class OnPremCluster extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   OnPremCluster_ClusterType get clusterType => $_getN(3);
   @$pb.TagNumber(4)
-  set clusterType(OnPremCluster_ClusterType v) {
-    $_setField(4, v);
-  }
-
+  set clusterType(OnPremCluster_ClusterType value) => $_setField(4, value);
   @$pb.TagNumber(4)
   $core.bool hasClusterType() => $_has(3);
   @$pb.TagNumber(4)
@@ -2175,22 +1905,20 @@ class MultiCloudCluster extends $pb.GeneratedMessage {
     $core.String? resourceLink,
     $core.bool? clusterMissing,
   }) {
-    final $result = create();
-    if (resourceLink != null) {
-      $result.resourceLink = resourceLink;
-    }
-    if (clusterMissing != null) {
-      $result.clusterMissing = clusterMissing;
-    }
-    return $result;
+    final result = create();
+    if (resourceLink != null) result.resourceLink = resourceLink;
+    if (clusterMissing != null) result.clusterMissing = clusterMissing;
+    return result;
   }
-  MultiCloudCluster._() : super();
-  factory MultiCloudCluster.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory MultiCloudCluster.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  MultiCloudCluster._();
+
+  factory MultiCloudCluster.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory MultiCloudCluster.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'MultiCloudCluster',
@@ -2202,19 +1930,19 @@ class MultiCloudCluster extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  MultiCloudCluster clone() => MultiCloudCluster()..mergeFromMessage(this);
+  MultiCloudCluster clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MultiCloudCluster copyWith(void Function(MultiCloudCluster) updates) =>
       super.copyWith((message) => updates(message as MultiCloudCluster))
           as MultiCloudCluster;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static MultiCloudCluster create() => MultiCloudCluster._();
+  @$core.override
   MultiCloudCluster createEmptyInstance() => create();
-  static $pb.PbList<MultiCloudCluster> createRepeated() =>
-      $pb.PbList<MultiCloudCluster>();
   @$core.pragma('dart2js:noInline')
   static MultiCloudCluster getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<MultiCloudCluster>(create);
@@ -2229,10 +1957,7 @@ class MultiCloudCluster extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get resourceLink => $_getSZ(0);
   @$pb.TagNumber(1)
-  set resourceLink($core.String v) {
-    $_setString(0, v);
-  }
-
+  set resourceLink($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasResourceLink() => $_has(0);
   @$pb.TagNumber(1)
@@ -2244,10 +1969,7 @@ class MultiCloudCluster extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool get clusterMissing => $_getBF(1);
   @$pb.TagNumber(2)
-  set clusterMissing($core.bool v) {
-    $_setBool(1, v);
-  }
-
+  set clusterMissing($core.bool value) => $_setBool(1, value);
   @$pb.TagNumber(2)
   $core.bool hasClusterMissing() => $_has(1);
   @$pb.TagNumber(2)
@@ -2259,19 +1981,19 @@ class EdgeCluster extends $pb.GeneratedMessage {
   factory EdgeCluster({
     $core.String? resourceLink,
   }) {
-    final $result = create();
-    if (resourceLink != null) {
-      $result.resourceLink = resourceLink;
-    }
-    return $result;
+    final result = create();
+    if (resourceLink != null) result.resourceLink = resourceLink;
+    return result;
   }
-  EdgeCluster._() : super();
-  factory EdgeCluster.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory EdgeCluster.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  EdgeCluster._();
+
+  factory EdgeCluster.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory EdgeCluster.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'EdgeCluster',
@@ -2282,18 +2004,19 @@ class EdgeCluster extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  EdgeCluster clone() => EdgeCluster()..mergeFromMessage(this);
+  EdgeCluster clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   EdgeCluster copyWith(void Function(EdgeCluster) updates) =>
       super.copyWith((message) => updates(message as EdgeCluster))
           as EdgeCluster;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static EdgeCluster create() => EdgeCluster._();
+  @$core.override
   EdgeCluster createEmptyInstance() => create();
-  static $pb.PbList<EdgeCluster> createRepeated() => $pb.PbList<EdgeCluster>();
   @$core.pragma('dart2js:noInline')
   static EdgeCluster getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<EdgeCluster>(create);
@@ -2306,10 +2029,7 @@ class EdgeCluster extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get resourceLink => $_getSZ(0);
   @$pb.TagNumber(1)
-  set resourceLink($core.String v) {
-    $_setString(0, v);
-  }
-
+  set resourceLink($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasResourceLink() => $_has(0);
   @$pb.TagNumber(1)
@@ -2322,19 +2042,19 @@ class ApplianceCluster extends $pb.GeneratedMessage {
   factory ApplianceCluster({
     $core.String? resourceLink,
   }) {
-    final $result = create();
-    if (resourceLink != null) {
-      $result.resourceLink = resourceLink;
-    }
-    return $result;
+    final result = create();
+    if (resourceLink != null) result.resourceLink = resourceLink;
+    return result;
   }
-  ApplianceCluster._() : super();
-  factory ApplianceCluster.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ApplianceCluster.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  ApplianceCluster._();
+
+  factory ApplianceCluster.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ApplianceCluster.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'ApplianceCluster',
@@ -2345,19 +2065,19 @@ class ApplianceCluster extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ApplianceCluster clone() => ApplianceCluster()..mergeFromMessage(this);
+  ApplianceCluster clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ApplianceCluster copyWith(void Function(ApplianceCluster) updates) =>
       super.copyWith((message) => updates(message as ApplianceCluster))
           as ApplianceCluster;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ApplianceCluster create() => ApplianceCluster._();
+  @$core.override
   ApplianceCluster createEmptyInstance() => create();
-  static $pb.PbList<ApplianceCluster> createRepeated() =>
-      $pb.PbList<ApplianceCluster>();
   @$core.pragma('dart2js:noInline')
   static ApplianceCluster getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ApplianceCluster>(create);
@@ -2370,10 +2090,7 @@ class ApplianceCluster extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get resourceLink => $_getSZ(0);
   @$pb.TagNumber(1)
-  set resourceLink($core.String v) {
-    $_setString(0, v);
-  }
-
+  set resourceLink($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasResourceLink() => $_has(0);
   @$pb.TagNumber(1)
@@ -2389,36 +2106,27 @@ class KubernetesMetadata extends $pb.GeneratedMessage {
     $core.int? nodeCount,
     $core.int? vcpuCount,
     $core.int? memoryMb,
-    $2.Timestamp? updateTime,
+    $0.Timestamp? updateTime,
   }) {
-    final $result = create();
-    if (kubernetesApiServerVersion != null) {
-      $result.kubernetesApiServerVersion = kubernetesApiServerVersion;
-    }
-    if (nodeProviderId != null) {
-      $result.nodeProviderId = nodeProviderId;
-    }
-    if (nodeCount != null) {
-      $result.nodeCount = nodeCount;
-    }
-    if (vcpuCount != null) {
-      $result.vcpuCount = vcpuCount;
-    }
-    if (memoryMb != null) {
-      $result.memoryMb = memoryMb;
-    }
-    if (updateTime != null) {
-      $result.updateTime = updateTime;
-    }
-    return $result;
+    final result = create();
+    if (kubernetesApiServerVersion != null)
+      result.kubernetesApiServerVersion = kubernetesApiServerVersion;
+    if (nodeProviderId != null) result.nodeProviderId = nodeProviderId;
+    if (nodeCount != null) result.nodeCount = nodeCount;
+    if (vcpuCount != null) result.vcpuCount = vcpuCount;
+    if (memoryMb != null) result.memoryMb = memoryMb;
+    if (updateTime != null) result.updateTime = updateTime;
+    return result;
   }
-  KubernetesMetadata._() : super();
-  factory KubernetesMetadata.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory KubernetesMetadata.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  KubernetesMetadata._();
+
+  factory KubernetesMetadata.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory KubernetesMetadata.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'KubernetesMetadata',
@@ -2427,27 +2135,27 @@ class KubernetesMetadata extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'kubernetesApiServerVersion')
     ..aOS(2, _omitFieldNames ? '' : 'nodeProviderId')
-    ..a<$core.int>(3, _omitFieldNames ? '' : 'nodeCount', $pb.PbFieldType.O3)
-    ..a<$core.int>(4, _omitFieldNames ? '' : 'vcpuCount', $pb.PbFieldType.O3)
-    ..a<$core.int>(5, _omitFieldNames ? '' : 'memoryMb', $pb.PbFieldType.O3)
-    ..aOM<$2.Timestamp>(100, _omitFieldNames ? '' : 'updateTime',
-        subBuilder: $2.Timestamp.create)
+    ..aI(3, _omitFieldNames ? '' : 'nodeCount')
+    ..aI(4, _omitFieldNames ? '' : 'vcpuCount')
+    ..aI(5, _omitFieldNames ? '' : 'memoryMb')
+    ..aOM<$0.Timestamp>(100, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $0.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  KubernetesMetadata clone() => KubernetesMetadata()..mergeFromMessage(this);
+  KubernetesMetadata clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   KubernetesMetadata copyWith(void Function(KubernetesMetadata) updates) =>
       super.copyWith((message) => updates(message as KubernetesMetadata))
           as KubernetesMetadata;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static KubernetesMetadata create() => KubernetesMetadata._();
+  @$core.override
   KubernetesMetadata createEmptyInstance() => create();
-  static $pb.PbList<KubernetesMetadata> createRepeated() =>
-      $pb.PbList<KubernetesMetadata>();
   @$core.pragma('dart2js:noInline')
   static KubernetesMetadata getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<KubernetesMetadata>(create);
@@ -2458,10 +2166,7 @@ class KubernetesMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get kubernetesApiServerVersion => $_getSZ(0);
   @$pb.TagNumber(1)
-  set kubernetesApiServerVersion($core.String v) {
-    $_setString(0, v);
-  }
-
+  set kubernetesApiServerVersion($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasKubernetesApiServerVersion() => $_has(0);
   @$pb.TagNumber(1)
@@ -2474,10 +2179,7 @@ class KubernetesMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get nodeProviderId => $_getSZ(1);
   @$pb.TagNumber(2)
-  set nodeProviderId($core.String v) {
-    $_setString(1, v);
-  }
-
+  set nodeProviderId($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasNodeProviderId() => $_has(1);
   @$pb.TagNumber(2)
@@ -2487,10 +2189,7 @@ class KubernetesMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.int get nodeCount => $_getIZ(2);
   @$pb.TagNumber(3)
-  set nodeCount($core.int v) {
-    $_setSignedInt32(2, v);
-  }
-
+  set nodeCount($core.int value) => $_setSignedInt32(2, value);
   @$pb.TagNumber(3)
   $core.bool hasNodeCount() => $_has(2);
   @$pb.TagNumber(3)
@@ -2500,10 +2199,7 @@ class KubernetesMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.int get vcpuCount => $_getIZ(3);
   @$pb.TagNumber(4)
-  set vcpuCount($core.int v) {
-    $_setSignedInt32(3, v);
-  }
-
+  set vcpuCount($core.int value) => $_setSignedInt32(3, value);
   @$pb.TagNumber(4)
   $core.bool hasVcpuCount() => $_has(3);
   @$pb.TagNumber(4)
@@ -2514,10 +2210,7 @@ class KubernetesMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.int get memoryMb => $_getIZ(4);
   @$pb.TagNumber(5)
-  set memoryMb($core.int v) {
-    $_setSignedInt32(4, v);
-  }
-
+  set memoryMb($core.int value) => $_setSignedInt32(4, value);
   @$pb.TagNumber(5)
   $core.bool hasMemoryMb() => $_has(4);
   @$pb.TagNumber(5)
@@ -2527,18 +2220,15 @@ class KubernetesMetadata extends $pb.GeneratedMessage {
   /// update_time is different from the Membership-level update_time since
   /// EndpointDetails are updated internally for API consumers.
   @$pb.TagNumber(100)
-  $2.Timestamp get updateTime => $_getN(5);
+  $0.Timestamp get updateTime => $_getN(5);
   @$pb.TagNumber(100)
-  set updateTime($2.Timestamp v) {
-    $_setField(100, v);
-  }
-
+  set updateTime($0.Timestamp value) => $_setField(100, value);
   @$pb.TagNumber(100)
   $core.bool hasUpdateTime() => $_has(5);
   @$pb.TagNumber(100)
   void clearUpdateTime() => $_clearField(100);
   @$pb.TagNumber(100)
-  $2.Timestamp ensureUpdateTime() => $_ensure(5);
+  $0.Timestamp ensureUpdateTime() => $_ensure(5);
 }
 
 /// MembershipState describes the state of a Membership resource.
@@ -2546,46 +2236,43 @@ class MembershipState extends $pb.GeneratedMessage {
   factory MembershipState({
     MembershipState_Code? code,
   }) {
-    final $result = create();
-    if (code != null) {
-      $result.code = code;
-    }
-    return $result;
+    final result = create();
+    if (code != null) result.code = code;
+    return result;
   }
-  MembershipState._() : super();
-  factory MembershipState.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory MembershipState.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  MembershipState._();
+
+  factory MembershipState.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory MembershipState.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'MembershipState',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.gkehub.v1'),
       createEmptyInstance: create)
-    ..e<MembershipState_Code>(
-        1, _omitFieldNames ? '' : 'code', $pb.PbFieldType.OE,
-        defaultOrMaker: MembershipState_Code.CODE_UNSPECIFIED,
-        valueOf: MembershipState_Code.valueOf,
+    ..aE<MembershipState_Code>(1, _omitFieldNames ? '' : 'code',
         enumValues: MembershipState_Code.values)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  MembershipState clone() => MembershipState()..mergeFromMessage(this);
+  MembershipState clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MembershipState copyWith(void Function(MembershipState) updates) =>
       super.copyWith((message) => updates(message as MembershipState))
           as MembershipState;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static MembershipState create() => MembershipState._();
+  @$core.override
   MembershipState createEmptyInstance() => create();
-  static $pb.PbList<MembershipState> createRepeated() =>
-      $pb.PbList<MembershipState>();
   @$core.pragma('dart2js:noInline')
   static MembershipState getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<MembershipState>(create);
@@ -2595,10 +2282,7 @@ class MembershipState extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   MembershipState_Code get code => $_getN(0);
   @$pb.TagNumber(1)
-  set code(MembershipState_Code v) {
-    $_setField(1, v);
-  }
-
+  set code(MembershipState_Code value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasCode() => $_has(0);
   @$pb.TagNumber(1)
@@ -2615,28 +2299,23 @@ class Authority extends $pb.GeneratedMessage {
     $core.String? identityProvider,
     $core.List<$core.int>? oidcJwks,
   }) {
-    final $result = create();
-    if (issuer != null) {
-      $result.issuer = issuer;
-    }
-    if (workloadIdentityPool != null) {
-      $result.workloadIdentityPool = workloadIdentityPool;
-    }
-    if (identityProvider != null) {
-      $result.identityProvider = identityProvider;
-    }
-    if (oidcJwks != null) {
-      $result.oidcJwks = oidcJwks;
-    }
-    return $result;
+    final result = create();
+    if (issuer != null) result.issuer = issuer;
+    if (workloadIdentityPool != null)
+      result.workloadIdentityPool = workloadIdentityPool;
+    if (identityProvider != null) result.identityProvider = identityProvider;
+    if (oidcJwks != null) result.oidcJwks = oidcJwks;
+    return result;
   }
-  Authority._() : super();
-  factory Authority.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Authority.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  Authority._();
+
+  factory Authority.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory Authority.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'Authority',
@@ -2651,17 +2330,18 @@ class Authority extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  Authority clone() => Authority()..mergeFromMessage(this);
+  Authority clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Authority copyWith(void Function(Authority) updates) =>
       super.copyWith((message) => updates(message as Authority)) as Authority;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Authority create() => Authority._();
+  @$core.override
   Authority createEmptyInstance() => create();
-  static $pb.PbList<Authority> createRepeated() => $pb.PbList<Authority>();
   @$core.pragma('dart2js:noInline')
   static Authority getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Authority>(create);
@@ -2680,10 +2360,7 @@ class Authority extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get issuer => $_getSZ(0);
   @$pb.TagNumber(1)
-  set issuer($core.String v) {
-    $_setString(0, v);
-  }
-
+  set issuer($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasIssuer() => $_has(0);
   @$pb.TagNumber(1)
@@ -2699,10 +2376,7 @@ class Authority extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get workloadIdentityPool => $_getSZ(1);
   @$pb.TagNumber(2)
-  set workloadIdentityPool($core.String v) {
-    $_setString(1, v);
-  }
-
+  set workloadIdentityPool($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasWorkloadIdentityPool() => $_has(1);
   @$pb.TagNumber(2)
@@ -2713,10 +2387,7 @@ class Authority extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get identityProvider => $_getSZ(2);
   @$pb.TagNumber(3)
-  set identityProvider($core.String v) {
-    $_setString(2, v);
-  }
-
+  set identityProvider($core.String value) => $_setString(2, value);
   @$pb.TagNumber(3)
   $core.bool hasIdentityProvider() => $_has(2);
   @$pb.TagNumber(3)
@@ -2730,10 +2401,7 @@ class Authority extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.List<$core.int> get oidcJwks => $_getN(3);
   @$pb.TagNumber(4)
-  set oidcJwks($core.List<$core.int> v) {
-    $_setBytes(3, v);
-  }
-
+  set oidcJwks($core.List<$core.int> value) => $_setBytes(3, value);
   @$pb.TagNumber(4)
   $core.bool hasOidcJwks() => $_has(3);
   @$pb.TagNumber(4)
@@ -2745,19 +2413,19 @@ class ScopeEventData extends $pb.GeneratedMessage {
   factory ScopeEventData({
     Scope? payload,
   }) {
-    final $result = create();
-    if (payload != null) {
-      $result.payload = payload;
-    }
-    return $result;
+    final result = create();
+    if (payload != null) result.payload = payload;
+    return result;
   }
-  ScopeEventData._() : super();
-  factory ScopeEventData.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ScopeEventData.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  ScopeEventData._();
+
+  factory ScopeEventData.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ScopeEventData.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'ScopeEventData',
@@ -2768,19 +2436,19 @@ class ScopeEventData extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ScopeEventData clone() => ScopeEventData()..mergeFromMessage(this);
+  ScopeEventData clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ScopeEventData copyWith(void Function(ScopeEventData) updates) =>
       super.copyWith((message) => updates(message as ScopeEventData))
           as ScopeEventData;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ScopeEventData create() => ScopeEventData._();
+  @$core.override
   ScopeEventData createEmptyInstance() => create();
-  static $pb.PbList<ScopeEventData> createRepeated() =>
-      $pb.PbList<ScopeEventData>();
   @$core.pragma('dart2js:noInline')
   static ScopeEventData getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ScopeEventData>(create);
@@ -2790,10 +2458,7 @@ class ScopeEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   Scope get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(Scope v) {
-    $_setField(1, v);
-  }
-
+  set payload(Scope value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -2807,19 +2472,19 @@ class MembershipEventData extends $pb.GeneratedMessage {
   factory MembershipEventData({
     Membership? payload,
   }) {
-    final $result = create();
-    if (payload != null) {
-      $result.payload = payload;
-    }
-    return $result;
+    final result = create();
+    if (payload != null) result.payload = payload;
+    return result;
   }
-  MembershipEventData._() : super();
-  factory MembershipEventData.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory MembershipEventData.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  MembershipEventData._();
+
+  factory MembershipEventData.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory MembershipEventData.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'MembershipEventData',
@@ -2831,19 +2496,19 @@ class MembershipEventData extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  MembershipEventData clone() => MembershipEventData()..mergeFromMessage(this);
+  MembershipEventData clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MembershipEventData copyWith(void Function(MembershipEventData) updates) =>
       super.copyWith((message) => updates(message as MembershipEventData))
           as MembershipEventData;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static MembershipEventData create() => MembershipEventData._();
+  @$core.override
   MembershipEventData createEmptyInstance() => create();
-  static $pb.PbList<MembershipEventData> createRepeated() =>
-      $pb.PbList<MembershipEventData>();
   @$core.pragma('dart2js:noInline')
   static MembershipEventData getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<MembershipEventData>(create);
@@ -2853,10 +2518,7 @@ class MembershipEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   Membership get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(Membership v) {
-    $_setField(1, v);
-  }
-
+  set payload(Membership value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -2870,19 +2532,19 @@ class FeatureEventData extends $pb.GeneratedMessage {
   factory FeatureEventData({
     Feature? payload,
   }) {
-    final $result = create();
-    if (payload != null) {
-      $result.payload = payload;
-    }
-    return $result;
+    final result = create();
+    if (payload != null) result.payload = payload;
+    return result;
   }
-  FeatureEventData._() : super();
-  factory FeatureEventData.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory FeatureEventData.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  FeatureEventData._();
+
+  factory FeatureEventData.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory FeatureEventData.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'FeatureEventData',
@@ -2894,19 +2556,19 @@ class FeatureEventData extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  FeatureEventData clone() => FeatureEventData()..mergeFromMessage(this);
+  FeatureEventData clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   FeatureEventData copyWith(void Function(FeatureEventData) updates) =>
       super.copyWith((message) => updates(message as FeatureEventData))
           as FeatureEventData;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static FeatureEventData create() => FeatureEventData._();
+  @$core.override
   FeatureEventData createEmptyInstance() => create();
-  static $pb.PbList<FeatureEventData> createRepeated() =>
-      $pb.PbList<FeatureEventData>();
   @$core.pragma('dart2js:noInline')
   static FeatureEventData getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<FeatureEventData>(create);
@@ -2916,10 +2578,7 @@ class FeatureEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   Feature get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(Feature v) {
-    $_setField(1, v);
-  }
-
+  set payload(Feature value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -2933,19 +2592,19 @@ class MembershipBindingEventData extends $pb.GeneratedMessage {
   factory MembershipBindingEventData({
     MembershipBinding? payload,
   }) {
-    final $result = create();
-    if (payload != null) {
-      $result.payload = payload;
-    }
-    return $result;
+    final result = create();
+    if (payload != null) result.payload = payload;
+    return result;
   }
-  MembershipBindingEventData._() : super();
-  factory MembershipBindingEventData.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory MembershipBindingEventData.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  MembershipBindingEventData._();
+
+  factory MembershipBindingEventData.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory MembershipBindingEventData.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'MembershipBindingEventData',
@@ -2957,8 +2616,7 @@ class MembershipBindingEventData extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  MembershipBindingEventData clone() =>
-      MembershipBindingEventData()..mergeFromMessage(this);
+  MembershipBindingEventData clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MembershipBindingEventData copyWith(
           void Function(MembershipBindingEventData) updates) =>
@@ -2966,13 +2624,13 @@ class MembershipBindingEventData extends $pb.GeneratedMessage {
               (message) => updates(message as MembershipBindingEventData))
           as MembershipBindingEventData;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static MembershipBindingEventData create() => MembershipBindingEventData._();
+  @$core.override
   MembershipBindingEventData createEmptyInstance() => create();
-  static $pb.PbList<MembershipBindingEventData> createRepeated() =>
-      $pb.PbList<MembershipBindingEventData>();
   @$core.pragma('dart2js:noInline')
   static MembershipBindingEventData getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<MembershipBindingEventData>(create);
@@ -2982,10 +2640,7 @@ class MembershipBindingEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   MembershipBinding get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(MembershipBinding v) {
-    $_setField(1, v);
-  }
-
+  set payload(MembershipBinding value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -2994,6 +2649,7 @@ class MembershipBindingEventData extends $pb.GeneratedMessage {
   MembershipBinding ensurePayload() => $_ensure(0);
 }
 
-const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames =
+const $core.bool _omitFieldNames =
+    $core.bool.fromEnvironment('protobuf.omit_field_names');
+const $core.bool _omitMessageNames =
     $core.bool.fromEnvironment('protobuf.omit_message_names');

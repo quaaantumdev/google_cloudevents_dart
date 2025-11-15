@@ -1,21 +1,22 @@
+// This is a generated file - do not edit.
 //
-//  Generated code. Do not modify.
-//  source: google/events/cloud/metastore/v1/data.proto
-//
+// Generated from google/events/cloud/metastore/v1/data.proto.
+
 // @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
-// ignore_for_file: constant_identifier_names, library_prefixes
-// ignore_for_file: non_constant_identifier_names, prefer_final_fields
-// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
+// ignore_for_file: constant_identifier_names
+// ignore_for_file: curly_braces_in_flow_control_structures
+// ignore_for_file: deprecated_member_use_from_same_package, library_prefixes
+// ignore_for_file: non_constant_identifier_names
 
 import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/timestamp.pb.dart' as $2;
-import '../../../../protobuf/wrappers.pb.dart' as $21;
-import '../../../../type/dayofweek.pbenum.dart' as $3;
+import '../../../../protobuf/timestamp.pb.dart' as $0;
+import '../../../../protobuf/wrappers.pb.dart' as $1;
+import '../../../../type/dayofweek.pbenum.dart' as $2;
 import 'data.pbenum.dart';
 
 export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
@@ -26,8 +27,8 @@ export 'data.pbenum.dart';
 class Federation extends $pb.GeneratedMessage {
   factory Federation({
     $core.String? name,
-    $2.Timestamp? createTime,
-    $2.Timestamp? updateTime,
+    $0.Timestamp? createTime,
+    $0.Timestamp? updateTime,
     $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.String? version,
     $core.Iterable<$core.MapEntry<$core.int, BackendMetastore>>?
@@ -37,46 +38,29 @@ class Federation extends $pb.GeneratedMessage {
     $core.String? stateMessage,
     $core.String? uid,
   }) {
-    final $result = create();
-    if (name != null) {
-      $result.name = name;
-    }
-    if (createTime != null) {
-      $result.createTime = createTime;
-    }
-    if (updateTime != null) {
-      $result.updateTime = updateTime;
-    }
-    if (labels != null) {
-      $result.labels.addEntries(labels);
-    }
-    if (version != null) {
-      $result.version = version;
-    }
-    if (backendMetastores != null) {
-      $result.backendMetastores.addEntries(backendMetastores);
-    }
-    if (endpointUri != null) {
-      $result.endpointUri = endpointUri;
-    }
-    if (state != null) {
-      $result.state = state;
-    }
-    if (stateMessage != null) {
-      $result.stateMessage = stateMessage;
-    }
-    if (uid != null) {
-      $result.uid = uid;
-    }
-    return $result;
+    final result = create();
+    if (name != null) result.name = name;
+    if (createTime != null) result.createTime = createTime;
+    if (updateTime != null) result.updateTime = updateTime;
+    if (labels != null) result.labels.addEntries(labels);
+    if (version != null) result.version = version;
+    if (backendMetastores != null)
+      result.backendMetastores.addEntries(backendMetastores);
+    if (endpointUri != null) result.endpointUri = endpointUri;
+    if (state != null) result.state = state;
+    if (stateMessage != null) result.stateMessage = stateMessage;
+    if (uid != null) result.uid = uid;
+    return result;
   }
-  Federation._() : super();
-  factory Federation.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Federation.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  Federation._();
+
+  factory Federation.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory Federation.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'Federation',
@@ -84,10 +68,10 @@ class Federation extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.events.cloud.metastore.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$2.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(3, _omitFieldNames ? '' : 'updateTime',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$0.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(3, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $0.Timestamp.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels',
         entryClassName: 'Federation.LabelsEntry',
         keyFieldType: $pb.PbFieldType.OS,
@@ -103,26 +87,25 @@ class Federation extends $pb.GeneratedMessage {
         valueDefaultOrMaker: BackendMetastore.getDefault,
         packageName: const $pb.PackageName('google.events.cloud.metastore.v1'))
     ..aOS(7, _omitFieldNames ? '' : 'endpointUri')
-    ..e<Federation_State>(8, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
-        defaultOrMaker: Federation_State.STATE_UNSPECIFIED,
-        valueOf: Federation_State.valueOf,
+    ..aE<Federation_State>(8, _omitFieldNames ? '' : 'state',
         enumValues: Federation_State.values)
     ..aOS(9, _omitFieldNames ? '' : 'stateMessage')
     ..aOS(10, _omitFieldNames ? '' : 'uid')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  Federation clone() => Federation()..mergeFromMessage(this);
+  Federation clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Federation copyWith(void Function(Federation) updates) =>
       super.copyWith((message) => updates(message as Federation)) as Federation;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Federation create() => Federation._();
+  @$core.override
   Federation createEmptyInstance() => create();
-  static $pb.PbList<Federation> createRepeated() => $pb.PbList<Federation>();
   @$core.pragma('dart2js:noInline')
   static Federation getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<Federation>(create);
@@ -134,10 +117,7 @@ class Federation extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) {
-    $_setString(0, v);
-  }
-
+  set name($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -145,33 +125,27 @@ class Federation extends $pb.GeneratedMessage {
 
   /// Output only. The time when the metastore federation was created.
   @$pb.TagNumber(2)
-  $2.Timestamp get createTime => $_getN(1);
+  $0.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($2.Timestamp v) {
-    $_setField(2, v);
-  }
-
+  set createTime($0.Timestamp value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => $_clearField(2);
   @$pb.TagNumber(2)
-  $2.Timestamp ensureCreateTime() => $_ensure(1);
+  $0.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. The time when the metastore federation was last updated.
   @$pb.TagNumber(3)
-  $2.Timestamp get updateTime => $_getN(2);
+  $0.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($2.Timestamp v) {
-    $_setField(3, v);
-  }
-
+  set updateTime($0.Timestamp value) => $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => $_clearField(3);
   @$pb.TagNumber(3)
-  $2.Timestamp ensureUpdateTime() => $_ensure(2);
+  $0.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// User-defined labels for the metastore federation.
   @$pb.TagNumber(4)
@@ -182,10 +156,7 @@ class Federation extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get version => $_getSZ(4);
   @$pb.TagNumber(5)
-  set version($core.String v) {
-    $_setString(4, v);
-  }
-
+  set version($core.String value) => $_setString(4, value);
   @$pb.TagNumber(5)
   $core.bool hasVersion() => $_has(4);
   @$pb.TagNumber(5)
@@ -204,10 +175,7 @@ class Federation extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get endpointUri => $_getSZ(6);
   @$pb.TagNumber(7)
-  set endpointUri($core.String v) {
-    $_setString(6, v);
-  }
-
+  set endpointUri($core.String value) => $_setString(6, value);
   @$pb.TagNumber(7)
   $core.bool hasEndpointUri() => $_has(6);
   @$pb.TagNumber(7)
@@ -217,10 +185,7 @@ class Federation extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   Federation_State get state => $_getN(7);
   @$pb.TagNumber(8)
-  set state(Federation_State v) {
-    $_setField(8, v);
-  }
-
+  set state(Federation_State value) => $_setField(8, value);
   @$pb.TagNumber(8)
   $core.bool hasState() => $_has(7);
   @$pb.TagNumber(8)
@@ -231,10 +196,7 @@ class Federation extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.String get stateMessage => $_getSZ(8);
   @$pb.TagNumber(9)
-  set stateMessage($core.String v) {
-    $_setString(8, v);
-  }
-
+  set stateMessage($core.String value) => $_setString(8, value);
   @$pb.TagNumber(9)
   $core.bool hasStateMessage() => $_has(8);
   @$pb.TagNumber(9)
@@ -245,10 +207,7 @@ class Federation extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.String get uid => $_getSZ(9);
   @$pb.TagNumber(10)
-  set uid($core.String v) {
-    $_setString(9, v);
-  }
-
+  set uid($core.String value) => $_setString(9, value);
   @$pb.TagNumber(10)
   $core.bool hasUid() => $_has(9);
   @$pb.TagNumber(10)
@@ -261,22 +220,20 @@ class BackendMetastore extends $pb.GeneratedMessage {
     $core.String? name,
     BackendMetastore_MetastoreType? metastoreType,
   }) {
-    final $result = create();
-    if (name != null) {
-      $result.name = name;
-    }
-    if (metastoreType != null) {
-      $result.metastoreType = metastoreType;
-    }
-    return $result;
+    final result = create();
+    if (name != null) result.name = name;
+    if (metastoreType != null) result.metastoreType = metastoreType;
+    return result;
   }
-  BackendMetastore._() : super();
-  factory BackendMetastore.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory BackendMetastore.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  BackendMetastore._();
+
+  factory BackendMetastore.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory BackendMetastore.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'BackendMetastore',
@@ -284,28 +241,25 @@ class BackendMetastore extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.events.cloud.metastore.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..e<BackendMetastore_MetastoreType>(
-        2, _omitFieldNames ? '' : 'metastoreType', $pb.PbFieldType.OE,
-        defaultOrMaker:
-            BackendMetastore_MetastoreType.METASTORE_TYPE_UNSPECIFIED,
-        valueOf: BackendMetastore_MetastoreType.valueOf,
+    ..aE<BackendMetastore_MetastoreType>(
+        2, _omitFieldNames ? '' : 'metastoreType',
         enumValues: BackendMetastore_MetastoreType.values)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  BackendMetastore clone() => BackendMetastore()..mergeFromMessage(this);
+  BackendMetastore clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   BackendMetastore copyWith(void Function(BackendMetastore) updates) =>
       super.copyWith((message) => updates(message as BackendMetastore))
           as BackendMetastore;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static BackendMetastore create() => BackendMetastore._();
+  @$core.override
   BackendMetastore createEmptyInstance() => create();
-  static $pb.PbList<BackendMetastore> createRepeated() =>
-      $pb.PbList<BackendMetastore>();
   @$core.pragma('dart2js:noInline')
   static BackendMetastore getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<BackendMetastore>(create);
@@ -322,10 +276,7 @@ class BackendMetastore extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) {
-    $_setString(0, v);
-  }
-
+  set name($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -335,10 +286,8 @@ class BackendMetastore extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   BackendMetastore_MetastoreType get metastoreType => $_getN(1);
   @$pb.TagNumber(2)
-  set metastoreType(BackendMetastore_MetastoreType v) {
-    $_setField(2, v);
-  }
-
+  set metastoreType(BackendMetastore_MetastoreType value) =>
+      $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasMetastoreType() => $_has(1);
   @$pb.TagNumber(2)
@@ -351,8 +300,8 @@ enum Service_MetastoreConfig { hiveMetastoreConfig, notSet }
 class Service extends $pb.GeneratedMessage {
   factory Service({
     $core.String? name,
-    $2.Timestamp? createTime,
-    $2.Timestamp? updateTime,
+    $0.Timestamp? createTime,
+    $0.Timestamp? updateTime,
     $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     HiveMetastoreConfig? hiveMetastoreConfig,
     $core.String? network,
@@ -372,79 +321,41 @@ class Service extends $pb.GeneratedMessage {
     TelemetryConfig? telemetryConfig,
     ScalingConfig? scalingConfig,
   }) {
-    final $result = create();
-    if (name != null) {
-      $result.name = name;
-    }
-    if (createTime != null) {
-      $result.createTime = createTime;
-    }
-    if (updateTime != null) {
-      $result.updateTime = updateTime;
-    }
-    if (labels != null) {
-      $result.labels.addEntries(labels);
-    }
-    if (hiveMetastoreConfig != null) {
-      $result.hiveMetastoreConfig = hiveMetastoreConfig;
-    }
-    if (network != null) {
-      $result.network = network;
-    }
-    if (endpointUri != null) {
-      $result.endpointUri = endpointUri;
-    }
-    if (port != null) {
-      $result.port = port;
-    }
-    if (state != null) {
-      $result.state = state;
-    }
-    if (stateMessage != null) {
-      $result.stateMessage = stateMessage;
-    }
-    if (artifactGcsUri != null) {
-      $result.artifactGcsUri = artifactGcsUri;
-    }
-    if (tier != null) {
-      $result.tier = tier;
-    }
-    if (maintenanceWindow != null) {
-      $result.maintenanceWindow = maintenanceWindow;
-    }
-    if (uid != null) {
-      $result.uid = uid;
-    }
-    if (metadataManagementActivity != null) {
-      $result.metadataManagementActivity = metadataManagementActivity;
-    }
-    if (releaseChannel != null) {
-      $result.releaseChannel = releaseChannel;
-    }
-    if (encryptionConfig != null) {
-      $result.encryptionConfig = encryptionConfig;
-    }
-    if (networkConfig != null) {
-      $result.networkConfig = networkConfig;
-    }
-    if (databaseType != null) {
-      $result.databaseType = databaseType;
-    }
-    if (telemetryConfig != null) {
-      $result.telemetryConfig = telemetryConfig;
-    }
-    if (scalingConfig != null) {
-      $result.scalingConfig = scalingConfig;
-    }
-    return $result;
+    final result = create();
+    if (name != null) result.name = name;
+    if (createTime != null) result.createTime = createTime;
+    if (updateTime != null) result.updateTime = updateTime;
+    if (labels != null) result.labels.addEntries(labels);
+    if (hiveMetastoreConfig != null)
+      result.hiveMetastoreConfig = hiveMetastoreConfig;
+    if (network != null) result.network = network;
+    if (endpointUri != null) result.endpointUri = endpointUri;
+    if (port != null) result.port = port;
+    if (state != null) result.state = state;
+    if (stateMessage != null) result.stateMessage = stateMessage;
+    if (artifactGcsUri != null) result.artifactGcsUri = artifactGcsUri;
+    if (tier != null) result.tier = tier;
+    if (maintenanceWindow != null) result.maintenanceWindow = maintenanceWindow;
+    if (uid != null) result.uid = uid;
+    if (metadataManagementActivity != null)
+      result.metadataManagementActivity = metadataManagementActivity;
+    if (releaseChannel != null) result.releaseChannel = releaseChannel;
+    if (encryptionConfig != null) result.encryptionConfig = encryptionConfig;
+    if (networkConfig != null) result.networkConfig = networkConfig;
+    if (databaseType != null) result.databaseType = databaseType;
+    if (telemetryConfig != null) result.telemetryConfig = telemetryConfig;
+    if (scalingConfig != null) result.scalingConfig = scalingConfig;
+    return result;
   }
-  Service._() : super();
-  factory Service.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Service.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  Service._();
+
+  factory Service.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory Service.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static const $core.Map<$core.int, Service_MetastoreConfig>
       _Service_MetastoreConfigByTag = {
@@ -458,10 +369,10 @@ class Service extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..oo(0, [5])
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$2.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(3, _omitFieldNames ? '' : 'updateTime',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$0.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(3, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $0.Timestamp.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels',
         entryClassName: 'Service.LabelsEntry',
         keyFieldType: $pb.PbFieldType.OS,
@@ -471,16 +382,12 @@ class Service extends $pb.GeneratedMessage {
         subBuilder: HiveMetastoreConfig.create)
     ..aOS(7, _omitFieldNames ? '' : 'network')
     ..aOS(8, _omitFieldNames ? '' : 'endpointUri')
-    ..a<$core.int>(9, _omitFieldNames ? '' : 'port', $pb.PbFieldType.O3)
-    ..e<Service_State>(10, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
-        defaultOrMaker: Service_State.STATE_UNSPECIFIED,
-        valueOf: Service_State.valueOf,
+    ..aI(9, _omitFieldNames ? '' : 'port')
+    ..aE<Service_State>(10, _omitFieldNames ? '' : 'state',
         enumValues: Service_State.values)
     ..aOS(11, _omitFieldNames ? '' : 'stateMessage')
     ..aOS(12, _omitFieldNames ? '' : 'artifactGcsUri')
-    ..e<Service_Tier>(13, _omitFieldNames ? '' : 'tier', $pb.PbFieldType.OE,
-        defaultOrMaker: Service_Tier.TIER_UNSPECIFIED,
-        valueOf: Service_Tier.valueOf,
+    ..aE<Service_Tier>(13, _omitFieldNames ? '' : 'tier',
         enumValues: Service_Tier.values)
     ..aOM<MaintenanceWindow>(15, _omitFieldNames ? '' : 'maintenanceWindow',
         subBuilder: MaintenanceWindow.create)
@@ -488,19 +395,13 @@ class Service extends $pb.GeneratedMessage {
     ..aOM<MetadataManagementActivity>(
         17, _omitFieldNames ? '' : 'metadataManagementActivity',
         subBuilder: MetadataManagementActivity.create)
-    ..e<Service_ReleaseChannel>(
-        19, _omitFieldNames ? '' : 'releaseChannel', $pb.PbFieldType.OE,
-        defaultOrMaker: Service_ReleaseChannel.RELEASE_CHANNEL_UNSPECIFIED,
-        valueOf: Service_ReleaseChannel.valueOf,
+    ..aE<Service_ReleaseChannel>(19, _omitFieldNames ? '' : 'releaseChannel',
         enumValues: Service_ReleaseChannel.values)
     ..aOM<EncryptionConfig>(20, _omitFieldNames ? '' : 'encryptionConfig',
         subBuilder: EncryptionConfig.create)
     ..aOM<NetworkConfig>(21, _omitFieldNames ? '' : 'networkConfig',
         subBuilder: NetworkConfig.create)
-    ..e<Service_DatabaseType>(
-        22, _omitFieldNames ? '' : 'databaseType', $pb.PbFieldType.OE,
-        defaultOrMaker: Service_DatabaseType.DATABASE_TYPE_UNSPECIFIED,
-        valueOf: Service_DatabaseType.valueOf,
+    ..aE<Service_DatabaseType>(22, _omitFieldNames ? '' : 'databaseType',
         enumValues: Service_DatabaseType.values)
     ..aOM<TelemetryConfig>(23, _omitFieldNames ? '' : 'telemetryConfig',
         subBuilder: TelemetryConfig.create)
@@ -509,24 +410,27 @@ class Service extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  Service clone() => Service()..mergeFromMessage(this);
+  Service clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Service copyWith(void Function(Service) updates) =>
       super.copyWith((message) => updates(message as Service)) as Service;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Service create() => Service._();
+  @$core.override
   Service createEmptyInstance() => create();
-  static $pb.PbList<Service> createRepeated() => $pb.PbList<Service>();
   @$core.pragma('dart2js:noInline')
   static Service getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Service>(create);
   static Service? _defaultInstance;
 
+  @$pb.TagNumber(5)
   Service_MetastoreConfig whichMetastoreConfig() =>
       _Service_MetastoreConfigByTag[$_whichOneof(0)]!;
+  @$pb.TagNumber(5)
   void clearMetastoreConfig() => $_clearField($_whichOneof(0));
 
   /// Immutable. The relative resource name of the metastore service, in the
@@ -536,10 +440,7 @@ class Service extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) {
-    $_setString(0, v);
-  }
-
+  set name($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -547,33 +448,27 @@ class Service extends $pb.GeneratedMessage {
 
   /// Output only. The time when the metastore service was created.
   @$pb.TagNumber(2)
-  $2.Timestamp get createTime => $_getN(1);
+  $0.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($2.Timestamp v) {
-    $_setField(2, v);
-  }
-
+  set createTime($0.Timestamp value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => $_clearField(2);
   @$pb.TagNumber(2)
-  $2.Timestamp ensureCreateTime() => $_ensure(1);
+  $0.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. The time when the metastore service was last updated.
   @$pb.TagNumber(3)
-  $2.Timestamp get updateTime => $_getN(2);
+  $0.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($2.Timestamp v) {
-    $_setField(3, v);
-  }
-
+  set updateTime($0.Timestamp value) => $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => $_clearField(3);
   @$pb.TagNumber(3)
-  $2.Timestamp ensureUpdateTime() => $_ensure(2);
+  $0.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// User-defined labels for the metastore service.
   @$pb.TagNumber(4)
@@ -584,10 +479,7 @@ class Service extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   HiveMetastoreConfig get hiveMetastoreConfig => $_getN(4);
   @$pb.TagNumber(5)
-  set hiveMetastoreConfig(HiveMetastoreConfig v) {
-    $_setField(5, v);
-  }
-
+  set hiveMetastoreConfig(HiveMetastoreConfig value) => $_setField(5, value);
   @$pb.TagNumber(5)
   $core.bool hasHiveMetastoreConfig() => $_has(4);
   @$pb.TagNumber(5)
@@ -602,10 +494,7 @@ class Service extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get network => $_getSZ(5);
   @$pb.TagNumber(7)
-  set network($core.String v) {
-    $_setString(5, v);
-  }
-
+  set network($core.String value) => $_setString(5, value);
   @$pb.TagNumber(7)
   $core.bool hasNetwork() => $_has(5);
   @$pb.TagNumber(7)
@@ -615,10 +504,7 @@ class Service extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.String get endpointUri => $_getSZ(6);
   @$pb.TagNumber(8)
-  set endpointUri($core.String v) {
-    $_setString(6, v);
-  }
-
+  set endpointUri($core.String value) => $_setString(6, value);
   @$pb.TagNumber(8)
   $core.bool hasEndpointUri() => $_has(6);
   @$pb.TagNumber(8)
@@ -628,10 +514,7 @@ class Service extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.int get port => $_getIZ(7);
   @$pb.TagNumber(9)
-  set port($core.int v) {
-    $_setSignedInt32(7, v);
-  }
-
+  set port($core.int value) => $_setSignedInt32(7, value);
   @$pb.TagNumber(9)
   $core.bool hasPort() => $_has(7);
   @$pb.TagNumber(9)
@@ -641,10 +524,7 @@ class Service extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   Service_State get state => $_getN(8);
   @$pb.TagNumber(10)
-  set state(Service_State v) {
-    $_setField(10, v);
-  }
-
+  set state(Service_State value) => $_setField(10, value);
   @$pb.TagNumber(10)
   $core.bool hasState() => $_has(8);
   @$pb.TagNumber(10)
@@ -655,10 +535,7 @@ class Service extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.String get stateMessage => $_getSZ(9);
   @$pb.TagNumber(11)
-  set stateMessage($core.String v) {
-    $_setString(9, v);
-  }
-
+  set stateMessage($core.String value) => $_setString(9, value);
   @$pb.TagNumber(11)
   $core.bool hasStateMessage() => $_has(9);
   @$pb.TagNumber(11)
@@ -669,10 +546,7 @@ class Service extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.String get artifactGcsUri => $_getSZ(10);
   @$pb.TagNumber(12)
-  set artifactGcsUri($core.String v) {
-    $_setString(10, v);
-  }
-
+  set artifactGcsUri($core.String value) => $_setString(10, value);
   @$pb.TagNumber(12)
   $core.bool hasArtifactGcsUri() => $_has(10);
   @$pb.TagNumber(12)
@@ -682,10 +556,7 @@ class Service extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   Service_Tier get tier => $_getN(11);
   @$pb.TagNumber(13)
-  set tier(Service_Tier v) {
-    $_setField(13, v);
-  }
-
+  set tier(Service_Tier value) => $_setField(13, value);
   @$pb.TagNumber(13)
   $core.bool hasTier() => $_has(11);
   @$pb.TagNumber(13)
@@ -698,10 +569,7 @@ class Service extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   MaintenanceWindow get maintenanceWindow => $_getN(12);
   @$pb.TagNumber(15)
-  set maintenanceWindow(MaintenanceWindow v) {
-    $_setField(15, v);
-  }
-
+  set maintenanceWindow(MaintenanceWindow value) => $_setField(15, value);
   @$pb.TagNumber(15)
   $core.bool hasMaintenanceWindow() => $_has(12);
   @$pb.TagNumber(15)
@@ -714,10 +582,7 @@ class Service extends $pb.GeneratedMessage {
   @$pb.TagNumber(16)
   $core.String get uid => $_getSZ(13);
   @$pb.TagNumber(16)
-  set uid($core.String v) {
-    $_setString(13, v);
-  }
-
+  set uid($core.String value) => $_setString(13, value);
   @$pb.TagNumber(16)
   $core.bool hasUid() => $_has(13);
   @$pb.TagNumber(16)
@@ -727,10 +592,8 @@ class Service extends $pb.GeneratedMessage {
   @$pb.TagNumber(17)
   MetadataManagementActivity get metadataManagementActivity => $_getN(14);
   @$pb.TagNumber(17)
-  set metadataManagementActivity(MetadataManagementActivity v) {
-    $_setField(17, v);
-  }
-
+  set metadataManagementActivity(MetadataManagementActivity value) =>
+      $_setField(17, value);
   @$pb.TagNumber(17)
   $core.bool hasMetadataManagementActivity() => $_has(14);
   @$pb.TagNumber(17)
@@ -743,10 +606,7 @@ class Service extends $pb.GeneratedMessage {
   @$pb.TagNumber(19)
   Service_ReleaseChannel get releaseChannel => $_getN(15);
   @$pb.TagNumber(19)
-  set releaseChannel(Service_ReleaseChannel v) {
-    $_setField(19, v);
-  }
-
+  set releaseChannel(Service_ReleaseChannel value) => $_setField(19, value);
   @$pb.TagNumber(19)
   $core.bool hasReleaseChannel() => $_has(15);
   @$pb.TagNumber(19)
@@ -757,10 +617,7 @@ class Service extends $pb.GeneratedMessage {
   @$pb.TagNumber(20)
   EncryptionConfig get encryptionConfig => $_getN(16);
   @$pb.TagNumber(20)
-  set encryptionConfig(EncryptionConfig v) {
-    $_setField(20, v);
-  }
-
+  set encryptionConfig(EncryptionConfig value) => $_setField(20, value);
   @$pb.TagNumber(20)
   $core.bool hasEncryptionConfig() => $_has(16);
   @$pb.TagNumber(20)
@@ -773,10 +630,7 @@ class Service extends $pb.GeneratedMessage {
   @$pb.TagNumber(21)
   NetworkConfig get networkConfig => $_getN(17);
   @$pb.TagNumber(21)
-  set networkConfig(NetworkConfig v) {
-    $_setField(21, v);
-  }
-
+  set networkConfig(NetworkConfig value) => $_setField(21, value);
   @$pb.TagNumber(21)
   $core.bool hasNetworkConfig() => $_has(17);
   @$pb.TagNumber(21)
@@ -788,10 +642,7 @@ class Service extends $pb.GeneratedMessage {
   @$pb.TagNumber(22)
   Service_DatabaseType get databaseType => $_getN(18);
   @$pb.TagNumber(22)
-  set databaseType(Service_DatabaseType v) {
-    $_setField(22, v);
-  }
-
+  set databaseType(Service_DatabaseType value) => $_setField(22, value);
   @$pb.TagNumber(22)
   $core.bool hasDatabaseType() => $_has(18);
   @$pb.TagNumber(22)
@@ -802,10 +653,7 @@ class Service extends $pb.GeneratedMessage {
   @$pb.TagNumber(23)
   TelemetryConfig get telemetryConfig => $_getN(19);
   @$pb.TagNumber(23)
-  set telemetryConfig(TelemetryConfig v) {
-    $_setField(23, v);
-  }
-
+  set telemetryConfig(TelemetryConfig value) => $_setField(23, value);
   @$pb.TagNumber(23)
   $core.bool hasTelemetryConfig() => $_has(19);
   @$pb.TagNumber(23)
@@ -817,10 +665,7 @@ class Service extends $pb.GeneratedMessage {
   @$pb.TagNumber(24)
   ScalingConfig get scalingConfig => $_getN(20);
   @$pb.TagNumber(24)
-  set scalingConfig(ScalingConfig v) {
-    $_setField(24, v);
-  }
-
+  set scalingConfig(ScalingConfig value) => $_setField(24, value);
   @$pb.TagNumber(24)
   $core.bool hasScalingConfig() => $_has(20);
   @$pb.TagNumber(24)
@@ -833,53 +678,49 @@ class Service extends $pb.GeneratedMessage {
 /// may perform system maintenance operation to the service.
 class MaintenanceWindow extends $pb.GeneratedMessage {
   factory MaintenanceWindow({
-    $21.Int32Value? hourOfDay,
-    $3.DayOfWeek? dayOfWeek,
+    $1.Int32Value? hourOfDay,
+    $2.DayOfWeek? dayOfWeek,
   }) {
-    final $result = create();
-    if (hourOfDay != null) {
-      $result.hourOfDay = hourOfDay;
-    }
-    if (dayOfWeek != null) {
-      $result.dayOfWeek = dayOfWeek;
-    }
-    return $result;
+    final result = create();
+    if (hourOfDay != null) result.hourOfDay = hourOfDay;
+    if (dayOfWeek != null) result.dayOfWeek = dayOfWeek;
+    return result;
   }
-  MaintenanceWindow._() : super();
-  factory MaintenanceWindow.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory MaintenanceWindow.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  MaintenanceWindow._();
+
+  factory MaintenanceWindow.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory MaintenanceWindow.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'MaintenanceWindow',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.metastore.v1'),
       createEmptyInstance: create)
-    ..aOM<$21.Int32Value>(1, _omitFieldNames ? '' : 'hourOfDay',
-        subBuilder: $21.Int32Value.create)
-    ..e<$3.DayOfWeek>(2, _omitFieldNames ? '' : 'dayOfWeek', $pb.PbFieldType.OE,
-        defaultOrMaker: $3.DayOfWeek.DAY_OF_WEEK_UNSPECIFIED,
-        valueOf: $3.DayOfWeek.valueOf,
-        enumValues: $3.DayOfWeek.values)
+    ..aOM<$1.Int32Value>(1, _omitFieldNames ? '' : 'hourOfDay',
+        subBuilder: $1.Int32Value.create)
+    ..aE<$2.DayOfWeek>(2, _omitFieldNames ? '' : 'dayOfWeek',
+        enumValues: $2.DayOfWeek.values)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  MaintenanceWindow clone() => MaintenanceWindow()..mergeFromMessage(this);
+  MaintenanceWindow clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MaintenanceWindow copyWith(void Function(MaintenanceWindow) updates) =>
       super.copyWith((message) => updates(message as MaintenanceWindow))
           as MaintenanceWindow;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static MaintenanceWindow create() => MaintenanceWindow._();
+  @$core.override
   MaintenanceWindow createEmptyInstance() => create();
-  static $pb.PbList<MaintenanceWindow> createRepeated() =>
-      $pb.PbList<MaintenanceWindow>();
   @$core.pragma('dart2js:noInline')
   static MaintenanceWindow getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<MaintenanceWindow>(create);
@@ -887,27 +728,21 @@ class MaintenanceWindow extends $pb.GeneratedMessage {
 
   /// The hour of day (0-23) when the window starts.
   @$pb.TagNumber(1)
-  $21.Int32Value get hourOfDay => $_getN(0);
+  $1.Int32Value get hourOfDay => $_getN(0);
   @$pb.TagNumber(1)
-  set hourOfDay($21.Int32Value v) {
-    $_setField(1, v);
-  }
-
+  set hourOfDay($1.Int32Value value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasHourOfDay() => $_has(0);
   @$pb.TagNumber(1)
   void clearHourOfDay() => $_clearField(1);
   @$pb.TagNumber(1)
-  $21.Int32Value ensureHourOfDay() => $_ensure(0);
+  $1.Int32Value ensureHourOfDay() => $_ensure(0);
 
   /// The day of week, when the window starts.
   @$pb.TagNumber(2)
-  $3.DayOfWeek get dayOfWeek => $_getN(1);
+  $2.DayOfWeek get dayOfWeek => $_getN(1);
   @$pb.TagNumber(2)
-  set dayOfWeek($3.DayOfWeek v) {
-    $_setField(2, v);
-  }
-
+  set dayOfWeek($2.DayOfWeek value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasDayOfWeek() => $_has(1);
   @$pb.TagNumber(2)
@@ -924,28 +759,24 @@ class HiveMetastoreConfig extends $pb.GeneratedMessage {
     $core.Iterable<$core.MapEntry<$core.String, AuxiliaryVersionConfig>>?
         auxiliaryVersions,
   }) {
-    final $result = create();
-    if (version != null) {
-      $result.version = version;
-    }
-    if (configOverrides != null) {
-      $result.configOverrides.addEntries(configOverrides);
-    }
-    if (kerberosConfig != null) {
-      $result.kerberosConfig = kerberosConfig;
-    }
-    if (auxiliaryVersions != null) {
-      $result.auxiliaryVersions.addEntries(auxiliaryVersions);
-    }
-    return $result;
+    final result = create();
+    if (version != null) result.version = version;
+    if (configOverrides != null)
+      result.configOverrides.addEntries(configOverrides);
+    if (kerberosConfig != null) result.kerberosConfig = kerberosConfig;
+    if (auxiliaryVersions != null)
+      result.auxiliaryVersions.addEntries(auxiliaryVersions);
+    return result;
   }
-  HiveMetastoreConfig._() : super();
-  factory HiveMetastoreConfig.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory HiveMetastoreConfig.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  HiveMetastoreConfig._();
+
+  factory HiveMetastoreConfig.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory HiveMetastoreConfig.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'HiveMetastoreConfig',
@@ -971,19 +802,19 @@ class HiveMetastoreConfig extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  HiveMetastoreConfig clone() => HiveMetastoreConfig()..mergeFromMessage(this);
+  HiveMetastoreConfig clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HiveMetastoreConfig copyWith(void Function(HiveMetastoreConfig) updates) =>
       super.copyWith((message) => updates(message as HiveMetastoreConfig))
           as HiveMetastoreConfig;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static HiveMetastoreConfig create() => HiveMetastoreConfig._();
+  @$core.override
   HiveMetastoreConfig createEmptyInstance() => create();
-  static $pb.PbList<HiveMetastoreConfig> createRepeated() =>
-      $pb.PbList<HiveMetastoreConfig>();
   @$core.pragma('dart2js:noInline')
   static HiveMetastoreConfig getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<HiveMetastoreConfig>(create);
@@ -993,10 +824,7 @@ class HiveMetastoreConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get version => $_getSZ(0);
   @$pb.TagNumber(1)
-  set version($core.String v) {
-    $_setString(0, v);
-  }
-
+  set version($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasVersion() => $_has(0);
   @$pb.TagNumber(1)
@@ -1018,10 +846,7 @@ class HiveMetastoreConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   KerberosConfig get kerberosConfig => $_getN(2);
   @$pb.TagNumber(3)
-  set kerberosConfig(KerberosConfig v) {
-    $_setField(3, v);
-  }
-
+  set kerberosConfig(KerberosConfig value) => $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasKerberosConfig() => $_has(2);
   @$pb.TagNumber(3)
@@ -1049,25 +874,21 @@ class KerberosConfig extends $pb.GeneratedMessage {
     $core.String? principal,
     $core.String? krb5ConfigGcsUri,
   }) {
-    final $result = create();
-    if (keytab != null) {
-      $result.keytab = keytab;
-    }
-    if (principal != null) {
-      $result.principal = principal;
-    }
-    if (krb5ConfigGcsUri != null) {
-      $result.krb5ConfigGcsUri = krb5ConfigGcsUri;
-    }
-    return $result;
+    final result = create();
+    if (keytab != null) result.keytab = keytab;
+    if (principal != null) result.principal = principal;
+    if (krb5ConfigGcsUri != null) result.krb5ConfigGcsUri = krb5ConfigGcsUri;
+    return result;
   }
-  KerberosConfig._() : super();
-  factory KerberosConfig.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory KerberosConfig.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  KerberosConfig._();
+
+  factory KerberosConfig.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory KerberosConfig.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'KerberosConfig',
@@ -1080,19 +901,19 @@ class KerberosConfig extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  KerberosConfig clone() => KerberosConfig()..mergeFromMessage(this);
+  KerberosConfig clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   KerberosConfig copyWith(void Function(KerberosConfig) updates) =>
       super.copyWith((message) => updates(message as KerberosConfig))
           as KerberosConfig;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static KerberosConfig create() => KerberosConfig._();
+  @$core.override
   KerberosConfig createEmptyInstance() => create();
-  static $pb.PbList<KerberosConfig> createRepeated() =>
-      $pb.PbList<KerberosConfig>();
   @$core.pragma('dart2js:noInline')
   static KerberosConfig getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<KerberosConfig>(create);
@@ -1103,10 +924,7 @@ class KerberosConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   Secret get keytab => $_getN(0);
   @$pb.TagNumber(1)
-  set keytab(Secret v) {
-    $_setField(1, v);
-  }
-
+  set keytab(Secret value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasKeytab() => $_has(0);
   @$pb.TagNumber(1)
@@ -1120,10 +938,7 @@ class KerberosConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get principal => $_getSZ(1);
   @$pb.TagNumber(2)
-  set principal($core.String v) {
-    $_setString(1, v);
-  }
-
+  set principal($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasPrincipal() => $_has(1);
   @$pb.TagNumber(2)
@@ -1135,10 +950,7 @@ class KerberosConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get krb5ConfigGcsUri => $_getSZ(2);
   @$pb.TagNumber(3)
-  set krb5ConfigGcsUri($core.String v) {
-    $_setString(2, v);
-  }
-
+  set krb5ConfigGcsUri($core.String value) => $_setString(2, value);
   @$pb.TagNumber(3)
   $core.bool hasKrb5ConfigGcsUri() => $_has(2);
   @$pb.TagNumber(3)
@@ -1152,19 +964,19 @@ class Secret extends $pb.GeneratedMessage {
   factory Secret({
     $core.String? cloudSecret,
   }) {
-    final $result = create();
-    if (cloudSecret != null) {
-      $result.cloudSecret = cloudSecret;
-    }
-    return $result;
+    final result = create();
+    if (cloudSecret != null) result.cloudSecret = cloudSecret;
+    return result;
   }
-  Secret._() : super();
-  factory Secret.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Secret.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  Secret._();
+
+  factory Secret.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory Secret.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static const $core.Map<$core.int, Secret_Value> _Secret_ValueByTag = {
     2: Secret_Value.cloudSecret,
@@ -1180,23 +992,26 @@ class Secret extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  Secret clone() => Secret()..mergeFromMessage(this);
+  Secret clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Secret copyWith(void Function(Secret) updates) =>
       super.copyWith((message) => updates(message as Secret)) as Secret;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Secret create() => Secret._();
+  @$core.override
   Secret createEmptyInstance() => create();
-  static $pb.PbList<Secret> createRepeated() => $pb.PbList<Secret>();
   @$core.pragma('dart2js:noInline')
   static Secret getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Secret>(create);
   static Secret? _defaultInstance;
 
+  @$pb.TagNumber(2)
   Secret_Value whichValue() => _Secret_ValueByTag[$_whichOneof(0)]!;
+  @$pb.TagNumber(2)
   void clearValue() => $_clearField($_whichOneof(0));
 
   /// The relative resource name of a Secret Manager secret version, in the
@@ -1206,10 +1021,7 @@ class Secret extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get cloudSecret => $_getSZ(0);
   @$pb.TagNumber(2)
-  set cloudSecret($core.String v) {
-    $_setString(0, v);
-  }
-
+  set cloudSecret($core.String value) => $_setString(0, value);
   @$pb.TagNumber(2)
   $core.bool hasCloudSecret() => $_has(0);
   @$pb.TagNumber(2)
@@ -1221,19 +1033,19 @@ class EncryptionConfig extends $pb.GeneratedMessage {
   factory EncryptionConfig({
     $core.String? kmsKey,
   }) {
-    final $result = create();
-    if (kmsKey != null) {
-      $result.kmsKey = kmsKey;
-    }
-    return $result;
+    final result = create();
+    if (kmsKey != null) result.kmsKey = kmsKey;
+    return result;
   }
-  EncryptionConfig._() : super();
-  factory EncryptionConfig.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory EncryptionConfig.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  EncryptionConfig._();
+
+  factory EncryptionConfig.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory EncryptionConfig.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'EncryptionConfig',
@@ -1244,19 +1056,19 @@ class EncryptionConfig extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  EncryptionConfig clone() => EncryptionConfig()..mergeFromMessage(this);
+  EncryptionConfig clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   EncryptionConfig copyWith(void Function(EncryptionConfig) updates) =>
       super.copyWith((message) => updates(message as EncryptionConfig))
           as EncryptionConfig;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static EncryptionConfig create() => EncryptionConfig._();
+  @$core.override
   EncryptionConfig createEmptyInstance() => create();
-  static $pb.PbList<EncryptionConfig> createRepeated() =>
-      $pb.PbList<EncryptionConfig>();
   @$core.pragma('dart2js:noInline')
   static EncryptionConfig getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<EncryptionConfig>(create);
@@ -1269,10 +1081,7 @@ class EncryptionConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get kmsKey => $_getSZ(0);
   @$pb.TagNumber(1)
-  set kmsKey($core.String v) {
-    $_setString(0, v);
-  }
-
+  set kmsKey($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasKmsKey() => $_has(0);
   @$pb.TagNumber(1)
@@ -1286,25 +1095,22 @@ class AuxiliaryVersionConfig extends $pb.GeneratedMessage {
     $core.Iterable<$core.MapEntry<$core.String, $core.String>>? configOverrides,
     NetworkConfig? networkConfig,
   }) {
-    final $result = create();
-    if (version != null) {
-      $result.version = version;
-    }
-    if (configOverrides != null) {
-      $result.configOverrides.addEntries(configOverrides);
-    }
-    if (networkConfig != null) {
-      $result.networkConfig = networkConfig;
-    }
-    return $result;
+    final result = create();
+    if (version != null) result.version = version;
+    if (configOverrides != null)
+      result.configOverrides.addEntries(configOverrides);
+    if (networkConfig != null) result.networkConfig = networkConfig;
+    return result;
   }
-  AuxiliaryVersionConfig._() : super();
-  factory AuxiliaryVersionConfig.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory AuxiliaryVersionConfig.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  AuxiliaryVersionConfig._();
+
+  factory AuxiliaryVersionConfig.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory AuxiliaryVersionConfig.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'AuxiliaryVersionConfig',
@@ -1322,21 +1128,20 @@ class AuxiliaryVersionConfig extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  AuxiliaryVersionConfig clone() =>
-      AuxiliaryVersionConfig()..mergeFromMessage(this);
+  AuxiliaryVersionConfig clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AuxiliaryVersionConfig copyWith(
           void Function(AuxiliaryVersionConfig) updates) =>
       super.copyWith((message) => updates(message as AuxiliaryVersionConfig))
           as AuxiliaryVersionConfig;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AuxiliaryVersionConfig create() => AuxiliaryVersionConfig._();
+  @$core.override
   AuxiliaryVersionConfig createEmptyInstance() => create();
-  static $pb.PbList<AuxiliaryVersionConfig> createRepeated() =>
-      $pb.PbList<AuxiliaryVersionConfig>();
   @$core.pragma('dart2js:noInline')
   static AuxiliaryVersionConfig getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<AuxiliaryVersionConfig>(create);
@@ -1347,10 +1152,7 @@ class AuxiliaryVersionConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get version => $_getSZ(0);
   @$pb.TagNumber(1)
-  set version($core.String v) {
-    $_setString(0, v);
-  }
-
+  set version($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasVersion() => $_has(0);
   @$pb.TagNumber(1)
@@ -1369,10 +1171,7 @@ class AuxiliaryVersionConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   NetworkConfig get networkConfig => $_getN(2);
   @$pb.TagNumber(3)
-  set networkConfig(NetworkConfig v) {
-    $_setField(3, v);
-  }
-
+  set networkConfig(NetworkConfig value) => $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasNetworkConfig() => $_has(2);
   @$pb.TagNumber(3)
@@ -1389,22 +1188,20 @@ class NetworkConfig_Consumer extends $pb.GeneratedMessage {
     $core.String? subnetwork,
     $core.String? endpointUri,
   }) {
-    final $result = create();
-    if (subnetwork != null) {
-      $result.subnetwork = subnetwork;
-    }
-    if (endpointUri != null) {
-      $result.endpointUri = endpointUri;
-    }
-    return $result;
+    final result = create();
+    if (subnetwork != null) result.subnetwork = subnetwork;
+    if (endpointUri != null) result.endpointUri = endpointUri;
+    return result;
   }
-  NetworkConfig_Consumer._() : super();
-  factory NetworkConfig_Consumer.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory NetworkConfig_Consumer.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  NetworkConfig_Consumer._();
+
+  factory NetworkConfig_Consumer.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory NetworkConfig_Consumer.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static const $core.Map<$core.int, NetworkConfig_Consumer_VpcResource>
       _NetworkConfig_Consumer_VpcResourceByTag = {
@@ -1422,28 +1219,29 @@ class NetworkConfig_Consumer extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  NetworkConfig_Consumer clone() =>
-      NetworkConfig_Consumer()..mergeFromMessage(this);
+  NetworkConfig_Consumer clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   NetworkConfig_Consumer copyWith(
           void Function(NetworkConfig_Consumer) updates) =>
       super.copyWith((message) => updates(message as NetworkConfig_Consumer))
           as NetworkConfig_Consumer;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static NetworkConfig_Consumer create() => NetworkConfig_Consumer._();
+  @$core.override
   NetworkConfig_Consumer createEmptyInstance() => create();
-  static $pb.PbList<NetworkConfig_Consumer> createRepeated() =>
-      $pb.PbList<NetworkConfig_Consumer>();
   @$core.pragma('dart2js:noInline')
   static NetworkConfig_Consumer getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<NetworkConfig_Consumer>(create);
   static NetworkConfig_Consumer? _defaultInstance;
 
+  @$pb.TagNumber(1)
   NetworkConfig_Consumer_VpcResource whichVpcResource() =>
       _NetworkConfig_Consumer_VpcResourceByTag[$_whichOneof(0)]!;
+  @$pb.TagNumber(1)
   void clearVpcResource() => $_clearField($_whichOneof(0));
 
   /// Immutable. The subnetwork of the customer project from which an IP
@@ -1457,10 +1255,7 @@ class NetworkConfig_Consumer extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get subnetwork => $_getSZ(0);
   @$pb.TagNumber(1)
-  set subnetwork($core.String v) {
-    $_setString(0, v);
-  }
-
+  set subnetwork($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasSubnetwork() => $_has(0);
   @$pb.TagNumber(1)
@@ -1471,10 +1266,7 @@ class NetworkConfig_Consumer extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get endpointUri => $_getSZ(1);
   @$pb.TagNumber(3)
-  set endpointUri($core.String v) {
-    $_setString(1, v);
-  }
-
+  set endpointUri($core.String value) => $_setString(1, value);
   @$pb.TagNumber(3)
   $core.bool hasEndpointUri() => $_has(1);
   @$pb.TagNumber(3)
@@ -1486,44 +1278,43 @@ class NetworkConfig extends $pb.GeneratedMessage {
   factory NetworkConfig({
     $core.Iterable<NetworkConfig_Consumer>? consumers,
   }) {
-    final $result = create();
-    if (consumers != null) {
-      $result.consumers.addAll(consumers);
-    }
-    return $result;
+    final result = create();
+    if (consumers != null) result.consumers.addAll(consumers);
+    return result;
   }
-  NetworkConfig._() : super();
-  factory NetworkConfig.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory NetworkConfig.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  NetworkConfig._();
+
+  factory NetworkConfig.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory NetworkConfig.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'NetworkConfig',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.metastore.v1'),
       createEmptyInstance: create)
-    ..pc<NetworkConfig_Consumer>(
-        1, _omitFieldNames ? '' : 'consumers', $pb.PbFieldType.PM,
+    ..pPM<NetworkConfig_Consumer>(1, _omitFieldNames ? '' : 'consumers',
         subBuilder: NetworkConfig_Consumer.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  NetworkConfig clone() => NetworkConfig()..mergeFromMessage(this);
+  NetworkConfig clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   NetworkConfig copyWith(void Function(NetworkConfig) updates) =>
       super.copyWith((message) => updates(message as NetworkConfig))
           as NetworkConfig;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static NetworkConfig create() => NetworkConfig._();
+  @$core.override
   NetworkConfig createEmptyInstance() => create();
-  static $pb.PbList<NetworkConfig> createRepeated() =>
-      $pb.PbList<NetworkConfig>();
   @$core.pragma('dart2js:noInline')
   static NetworkConfig getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<NetworkConfig>(create);
@@ -1540,46 +1331,43 @@ class TelemetryConfig extends $pb.GeneratedMessage {
   factory TelemetryConfig({
     TelemetryConfig_LogFormat? logFormat,
   }) {
-    final $result = create();
-    if (logFormat != null) {
-      $result.logFormat = logFormat;
-    }
-    return $result;
+    final result = create();
+    if (logFormat != null) result.logFormat = logFormat;
+    return result;
   }
-  TelemetryConfig._() : super();
-  factory TelemetryConfig.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory TelemetryConfig.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  TelemetryConfig._();
+
+  factory TelemetryConfig.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory TelemetryConfig.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'TelemetryConfig',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.metastore.v1'),
       createEmptyInstance: create)
-    ..e<TelemetryConfig_LogFormat>(
-        1, _omitFieldNames ? '' : 'logFormat', $pb.PbFieldType.OE,
-        defaultOrMaker: TelemetryConfig_LogFormat.LOG_FORMAT_UNSPECIFIED,
-        valueOf: TelemetryConfig_LogFormat.valueOf,
+    ..aE<TelemetryConfig_LogFormat>(1, _omitFieldNames ? '' : 'logFormat',
         enumValues: TelemetryConfig_LogFormat.values)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  TelemetryConfig clone() => TelemetryConfig()..mergeFromMessage(this);
+  TelemetryConfig clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TelemetryConfig copyWith(void Function(TelemetryConfig) updates) =>
       super.copyWith((message) => updates(message as TelemetryConfig))
           as TelemetryConfig;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static TelemetryConfig create() => TelemetryConfig._();
+  @$core.override
   TelemetryConfig createEmptyInstance() => create();
-  static $pb.PbList<TelemetryConfig> createRepeated() =>
-      $pb.PbList<TelemetryConfig>();
   @$core.pragma('dart2js:noInline')
   static TelemetryConfig getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<TelemetryConfig>(create);
@@ -1589,10 +1377,7 @@ class TelemetryConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   TelemetryConfig_LogFormat get logFormat => $_getN(0);
   @$pb.TagNumber(1)
-  set logFormat(TelemetryConfig_LogFormat v) {
-    $_setField(1, v);
-  }
-
+  set logFormat(TelemetryConfig_LogFormat value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasLogFormat() => $_has(0);
   @$pb.TagNumber(1)
@@ -1605,38 +1390,34 @@ class MetadataManagementActivity extends $pb.GeneratedMessage {
     $core.Iterable<MetadataExport>? metadataExports,
     $core.Iterable<Restore>? restores,
   }) {
-    final $result = create();
-    if (metadataExports != null) {
-      $result.metadataExports.addAll(metadataExports);
-    }
-    if (restores != null) {
-      $result.restores.addAll(restores);
-    }
-    return $result;
+    final result = create();
+    if (metadataExports != null) result.metadataExports.addAll(metadataExports);
+    if (restores != null) result.restores.addAll(restores);
+    return result;
   }
-  MetadataManagementActivity._() : super();
-  factory MetadataManagementActivity.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory MetadataManagementActivity.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  MetadataManagementActivity._();
+
+  factory MetadataManagementActivity.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory MetadataManagementActivity.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'MetadataManagementActivity',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.metastore.v1'),
       createEmptyInstance: create)
-    ..pc<MetadataExport>(
-        1, _omitFieldNames ? '' : 'metadataExports', $pb.PbFieldType.PM,
+    ..pPM<MetadataExport>(1, _omitFieldNames ? '' : 'metadataExports',
         subBuilder: MetadataExport.create)
-    ..pc<Restore>(2, _omitFieldNames ? '' : 'restores', $pb.PbFieldType.PM,
+    ..pPM<Restore>(2, _omitFieldNames ? '' : 'restores',
         subBuilder: Restore.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  MetadataManagementActivity clone() =>
-      MetadataManagementActivity()..mergeFromMessage(this);
+  MetadataManagementActivity clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MetadataManagementActivity copyWith(
           void Function(MetadataManagementActivity) updates) =>
@@ -1644,13 +1425,13 @@ class MetadataManagementActivity extends $pb.GeneratedMessage {
               (message) => updates(message as MetadataManagementActivity))
           as MetadataManagementActivity;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static MetadataManagementActivity create() => MetadataManagementActivity._();
+  @$core.override
   MetadataManagementActivity createEmptyInstance() => create();
-  static $pb.PbList<MetadataManagementActivity> createRepeated() =>
-      $pb.PbList<MetadataManagementActivity>();
   @$core.pragma('dart2js:noInline')
   static MetadataManagementActivity getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<MetadataManagementActivity>(create);
@@ -1674,52 +1455,39 @@ class MetadataImport_DatabaseDump extends $pb.GeneratedMessage {
     $core.String? sourceDatabase,
     DatabaseDumpSpec_Type? type,
   }) {
-    final $result = create();
-    if (databaseType != null) {
-      $result.databaseType = databaseType;
-    }
-    if (gcsUri != null) {
-      $result.gcsUri = gcsUri;
-    }
-    if (sourceDatabase != null) {
-      $result.sourceDatabase = sourceDatabase;
-    }
-    if (type != null) {
-      $result.type = type;
-    }
-    return $result;
+    final result = create();
+    if (databaseType != null) result.databaseType = databaseType;
+    if (gcsUri != null) result.gcsUri = gcsUri;
+    if (sourceDatabase != null) result.sourceDatabase = sourceDatabase;
+    if (type != null) result.type = type;
+    return result;
   }
-  MetadataImport_DatabaseDump._() : super();
-  factory MetadataImport_DatabaseDump.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory MetadataImport_DatabaseDump.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  MetadataImport_DatabaseDump._();
+
+  factory MetadataImport_DatabaseDump.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory MetadataImport_DatabaseDump.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'MetadataImport.DatabaseDump',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.metastore.v1'),
       createEmptyInstance: create)
-    ..e<MetadataImport_DatabaseDump_DatabaseType>(
-        1, _omitFieldNames ? '' : 'databaseType', $pb.PbFieldType.OE,
-        defaultOrMaker:
-            MetadataImport_DatabaseDump_DatabaseType.DATABASE_TYPE_UNSPECIFIED,
-        valueOf: MetadataImport_DatabaseDump_DatabaseType.valueOf,
+    ..aE<MetadataImport_DatabaseDump_DatabaseType>(
+        1, _omitFieldNames ? '' : 'databaseType',
         enumValues: MetadataImport_DatabaseDump_DatabaseType.values)
     ..aOS(2, _omitFieldNames ? '' : 'gcsUri')
     ..aOS(3, _omitFieldNames ? '' : 'sourceDatabase')
-    ..e<DatabaseDumpSpec_Type>(
-        4, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE,
-        defaultOrMaker: DatabaseDumpSpec_Type.TYPE_UNSPECIFIED,
-        valueOf: DatabaseDumpSpec_Type.valueOf,
+    ..aE<DatabaseDumpSpec_Type>(4, _omitFieldNames ? '' : 'type',
         enumValues: DatabaseDumpSpec_Type.values)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  MetadataImport_DatabaseDump clone() =>
-      MetadataImport_DatabaseDump()..mergeFromMessage(this);
+  MetadataImport_DatabaseDump clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MetadataImport_DatabaseDump copyWith(
           void Function(MetadataImport_DatabaseDump) updates) =>
@@ -1727,14 +1495,14 @@ class MetadataImport_DatabaseDump extends $pb.GeneratedMessage {
               (message) => updates(message as MetadataImport_DatabaseDump))
           as MetadataImport_DatabaseDump;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static MetadataImport_DatabaseDump create() =>
       MetadataImport_DatabaseDump._();
+  @$core.override
   MetadataImport_DatabaseDump createEmptyInstance() => create();
-  static $pb.PbList<MetadataImport_DatabaseDump> createRepeated() =>
-      $pb.PbList<MetadataImport_DatabaseDump>();
   @$core.pragma('dart2js:noInline')
   static MetadataImport_DatabaseDump getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<MetadataImport_DatabaseDump>(create);
@@ -1744,10 +1512,8 @@ class MetadataImport_DatabaseDump extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   MetadataImport_DatabaseDump_DatabaseType get databaseType => $_getN(0);
   @$pb.TagNumber(1)
-  set databaseType(MetadataImport_DatabaseDump_DatabaseType v) {
-    $_setField(1, v);
-  }
-
+  set databaseType(MetadataImport_DatabaseDump_DatabaseType value) =>
+      $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasDatabaseType() => $_has(0);
   @$pb.TagNumber(1)
@@ -1758,10 +1524,7 @@ class MetadataImport_DatabaseDump extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get gcsUri => $_getSZ(1);
   @$pb.TagNumber(2)
-  set gcsUri($core.String v) {
-    $_setString(1, v);
-  }
-
+  set gcsUri($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasGcsUri() => $_has(1);
   @$pb.TagNumber(2)
@@ -1771,10 +1534,7 @@ class MetadataImport_DatabaseDump extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get sourceDatabase => $_getSZ(2);
   @$pb.TagNumber(3)
-  set sourceDatabase($core.String v) {
-    $_setString(2, v);
-  }
-
+  set sourceDatabase($core.String value) => $_setString(2, value);
   @$pb.TagNumber(3)
   $core.bool hasSourceDatabase() => $_has(2);
   @$pb.TagNumber(3)
@@ -1785,10 +1545,7 @@ class MetadataImport_DatabaseDump extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   DatabaseDumpSpec_Type get type => $_getN(3);
   @$pb.TagNumber(4)
-  set type(DatabaseDumpSpec_Type v) {
-    $_setField(4, v);
-  }
-
+  set type(DatabaseDumpSpec_Type value) => $_setField(4, value);
   @$pb.TagNumber(4)
   $core.bool hasType() => $_has(3);
   @$pb.TagNumber(4)
@@ -1802,43 +1559,31 @@ class MetadataImport extends $pb.GeneratedMessage {
   factory MetadataImport({
     $core.String? name,
     $core.String? description,
-    $2.Timestamp? createTime,
-    $2.Timestamp? updateTime,
+    $0.Timestamp? createTime,
+    $0.Timestamp? updateTime,
     MetadataImport_State? state,
     MetadataImport_DatabaseDump? databaseDump,
-    $2.Timestamp? endTime,
+    $0.Timestamp? endTime,
   }) {
-    final $result = create();
-    if (name != null) {
-      $result.name = name;
-    }
-    if (description != null) {
-      $result.description = description;
-    }
-    if (createTime != null) {
-      $result.createTime = createTime;
-    }
-    if (updateTime != null) {
-      $result.updateTime = updateTime;
-    }
-    if (state != null) {
-      $result.state = state;
-    }
-    if (databaseDump != null) {
-      $result.databaseDump = databaseDump;
-    }
-    if (endTime != null) {
-      $result.endTime = endTime;
-    }
-    return $result;
+    final result = create();
+    if (name != null) result.name = name;
+    if (description != null) result.description = description;
+    if (createTime != null) result.createTime = createTime;
+    if (updateTime != null) result.updateTime = updateTime;
+    if (state != null) result.state = state;
+    if (databaseDump != null) result.databaseDump = databaseDump;
+    if (endTime != null) result.endTime = endTime;
+    return result;
   }
-  MetadataImport._() : super();
-  factory MetadataImport.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory MetadataImport.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  MetadataImport._();
+
+  factory MetadataImport.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory MetadataImport.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static const $core.Map<$core.int, MetadataImport_Metadata>
       _MetadataImport_MetadataByTag = {
@@ -1853,42 +1598,41 @@ class MetadataImport extends $pb.GeneratedMessage {
     ..oo(0, [6])
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'description')
-    ..aOM<$2.Timestamp>(3, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(4, _omitFieldNames ? '' : 'updateTime',
-        subBuilder: $2.Timestamp.create)
-    ..e<MetadataImport_State>(
-        5, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
-        defaultOrMaker: MetadataImport_State.STATE_UNSPECIFIED,
-        valueOf: MetadataImport_State.valueOf,
+    ..aOM<$0.Timestamp>(3, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(4, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $0.Timestamp.create)
+    ..aE<MetadataImport_State>(5, _omitFieldNames ? '' : 'state',
         enumValues: MetadataImport_State.values)
     ..aOM<MetadataImport_DatabaseDump>(6, _omitFieldNames ? '' : 'databaseDump',
         subBuilder: MetadataImport_DatabaseDump.create)
-    ..aOM<$2.Timestamp>(7, _omitFieldNames ? '' : 'endTime',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$0.Timestamp>(7, _omitFieldNames ? '' : 'endTime',
+        subBuilder: $0.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  MetadataImport clone() => MetadataImport()..mergeFromMessage(this);
+  MetadataImport clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MetadataImport copyWith(void Function(MetadataImport) updates) =>
       super.copyWith((message) => updates(message as MetadataImport))
           as MetadataImport;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static MetadataImport create() => MetadataImport._();
+  @$core.override
   MetadataImport createEmptyInstance() => create();
-  static $pb.PbList<MetadataImport> createRepeated() =>
-      $pb.PbList<MetadataImport>();
   @$core.pragma('dart2js:noInline')
   static MetadataImport getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<MetadataImport>(create);
   static MetadataImport? _defaultInstance;
 
+  @$pb.TagNumber(6)
   MetadataImport_Metadata whichMetadata() =>
       _MetadataImport_MetadataByTag[$_whichOneof(0)]!;
+  @$pb.TagNumber(6)
   void clearMetadata() => $_clearField($_whichOneof(0));
 
   /// Immutable. The relative resource name of the metadata import, of the form:
@@ -1897,10 +1641,7 @@ class MetadataImport extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) {
-    $_setString(0, v);
-  }
-
+  set name($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -1910,10 +1651,7 @@ class MetadataImport extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get description => $_getSZ(1);
   @$pb.TagNumber(2)
-  set description($core.String v) {
-    $_setString(1, v);
-  }
-
+  set description($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasDescription() => $_has(1);
   @$pb.TagNumber(2)
@@ -1921,42 +1659,33 @@ class MetadataImport extends $pb.GeneratedMessage {
 
   /// Output only. The time when the metadata import was started.
   @$pb.TagNumber(3)
-  $2.Timestamp get createTime => $_getN(2);
+  $0.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($2.Timestamp v) {
-    $_setField(3, v);
-  }
-
+  set createTime($0.Timestamp value) => $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => $_clearField(3);
   @$pb.TagNumber(3)
-  $2.Timestamp ensureCreateTime() => $_ensure(2);
+  $0.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// Output only. The time when the metadata import was last updated.
   @$pb.TagNumber(4)
-  $2.Timestamp get updateTime => $_getN(3);
+  $0.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(4)
-  set updateTime($2.Timestamp v) {
-    $_setField(4, v);
-  }
-
+  set updateTime($0.Timestamp value) => $_setField(4, value);
   @$pb.TagNumber(4)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateTime() => $_clearField(4);
   @$pb.TagNumber(4)
-  $2.Timestamp ensureUpdateTime() => $_ensure(3);
+  $0.Timestamp ensureUpdateTime() => $_ensure(3);
 
   /// Output only. The current state of the metadata import.
   @$pb.TagNumber(5)
   MetadataImport_State get state => $_getN(4);
   @$pb.TagNumber(5)
-  set state(MetadataImport_State v) {
-    $_setField(5, v);
-  }
-
+  set state(MetadataImport_State value) => $_setField(5, value);
   @$pb.TagNumber(5)
   $core.bool hasState() => $_has(4);
   @$pb.TagNumber(5)
@@ -1966,10 +1695,7 @@ class MetadataImport extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   MetadataImport_DatabaseDump get databaseDump => $_getN(5);
   @$pb.TagNumber(6)
-  set databaseDump(MetadataImport_DatabaseDump v) {
-    $_setField(6, v);
-  }
-
+  set databaseDump(MetadataImport_DatabaseDump value) => $_setField(6, value);
   @$pb.TagNumber(6)
   $core.bool hasDatabaseDump() => $_has(5);
   @$pb.TagNumber(6)
@@ -1979,18 +1705,15 @@ class MetadataImport extends $pb.GeneratedMessage {
 
   /// Output only. The time when the metadata import finished.
   @$pb.TagNumber(7)
-  $2.Timestamp get endTime => $_getN(6);
+  $0.Timestamp get endTime => $_getN(6);
   @$pb.TagNumber(7)
-  set endTime($2.Timestamp v) {
-    $_setField(7, v);
-  }
-
+  set endTime($0.Timestamp value) => $_setField(7, value);
   @$pb.TagNumber(7)
   $core.bool hasEndTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearEndTime() => $_clearField(7);
   @$pb.TagNumber(7)
-  $2.Timestamp ensureEndTime() => $_ensure(6);
+  $0.Timestamp ensureEndTime() => $_ensure(6);
 }
 
 enum MetadataExport_Destination { destinationGcsUri, notSet }
@@ -1998,37 +1721,29 @@ enum MetadataExport_Destination { destinationGcsUri, notSet }
 /// The details of a metadata export operation.
 class MetadataExport extends $pb.GeneratedMessage {
   factory MetadataExport({
-    $2.Timestamp? startTime,
-    $2.Timestamp? endTime,
+    $0.Timestamp? startTime,
+    $0.Timestamp? endTime,
     MetadataExport_State? state,
     $core.String? destinationGcsUri,
     DatabaseDumpSpec_Type? databaseDumpType,
   }) {
-    final $result = create();
-    if (startTime != null) {
-      $result.startTime = startTime;
-    }
-    if (endTime != null) {
-      $result.endTime = endTime;
-    }
-    if (state != null) {
-      $result.state = state;
-    }
-    if (destinationGcsUri != null) {
-      $result.destinationGcsUri = destinationGcsUri;
-    }
-    if (databaseDumpType != null) {
-      $result.databaseDumpType = databaseDumpType;
-    }
-    return $result;
+    final result = create();
+    if (startTime != null) result.startTime = startTime;
+    if (endTime != null) result.endTime = endTime;
+    if (state != null) result.state = state;
+    if (destinationGcsUri != null) result.destinationGcsUri = destinationGcsUri;
+    if (databaseDumpType != null) result.databaseDumpType = databaseDumpType;
+    return result;
   }
-  MetadataExport._() : super();
-  factory MetadataExport.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory MetadataExport.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  MetadataExport._();
+
+  factory MetadataExport.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory MetadataExport.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static const $core.Map<$core.int, MetadataExport_Destination>
       _MetadataExport_DestinationByTag = {
@@ -2041,84 +1756,71 @@ class MetadataExport extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.events.cloud.metastore.v1'),
       createEmptyInstance: create)
     ..oo(0, [4])
-    ..aOM<$2.Timestamp>(1, _omitFieldNames ? '' : 'startTime',
-        subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(2, _omitFieldNames ? '' : 'endTime',
-        subBuilder: $2.Timestamp.create)
-    ..e<MetadataExport_State>(
-        3, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
-        defaultOrMaker: MetadataExport_State.STATE_UNSPECIFIED,
-        valueOf: MetadataExport_State.valueOf,
+    ..aOM<$0.Timestamp>(1, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(2, _omitFieldNames ? '' : 'endTime',
+        subBuilder: $0.Timestamp.create)
+    ..aE<MetadataExport_State>(3, _omitFieldNames ? '' : 'state',
         enumValues: MetadataExport_State.values)
     ..aOS(4, _omitFieldNames ? '' : 'destinationGcsUri')
-    ..e<DatabaseDumpSpec_Type>(
-        5, _omitFieldNames ? '' : 'databaseDumpType', $pb.PbFieldType.OE,
-        defaultOrMaker: DatabaseDumpSpec_Type.TYPE_UNSPECIFIED,
-        valueOf: DatabaseDumpSpec_Type.valueOf,
+    ..aE<DatabaseDumpSpec_Type>(5, _omitFieldNames ? '' : 'databaseDumpType',
         enumValues: DatabaseDumpSpec_Type.values)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  MetadataExport clone() => MetadataExport()..mergeFromMessage(this);
+  MetadataExport clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MetadataExport copyWith(void Function(MetadataExport) updates) =>
       super.copyWith((message) => updates(message as MetadataExport))
           as MetadataExport;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static MetadataExport create() => MetadataExport._();
+  @$core.override
   MetadataExport createEmptyInstance() => create();
-  static $pb.PbList<MetadataExport> createRepeated() =>
-      $pb.PbList<MetadataExport>();
   @$core.pragma('dart2js:noInline')
   static MetadataExport getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<MetadataExport>(create);
   static MetadataExport? _defaultInstance;
 
+  @$pb.TagNumber(4)
   MetadataExport_Destination whichDestination() =>
       _MetadataExport_DestinationByTag[$_whichOneof(0)]!;
+  @$pb.TagNumber(4)
   void clearDestination() => $_clearField($_whichOneof(0));
 
   /// Output only. The time when the export started.
   @$pb.TagNumber(1)
-  $2.Timestamp get startTime => $_getN(0);
+  $0.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($2.Timestamp v) {
-    $_setField(1, v);
-  }
-
+  set startTime($0.Timestamp value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasStartTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearStartTime() => $_clearField(1);
   @$pb.TagNumber(1)
-  $2.Timestamp ensureStartTime() => $_ensure(0);
+  $0.Timestamp ensureStartTime() => $_ensure(0);
 
   /// Output only. The time when the export ended.
   @$pb.TagNumber(2)
-  $2.Timestamp get endTime => $_getN(1);
+  $0.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($2.Timestamp v) {
-    $_setField(2, v);
-  }
-
+  set endTime($0.Timestamp value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndTime() => $_clearField(2);
   @$pb.TagNumber(2)
-  $2.Timestamp ensureEndTime() => $_ensure(1);
+  $0.Timestamp ensureEndTime() => $_ensure(1);
 
   /// Output only. The current state of the export.
   @$pb.TagNumber(3)
   MetadataExport_State get state => $_getN(2);
   @$pb.TagNumber(3)
-  set state(MetadataExport_State v) {
-    $_setField(3, v);
-  }
-
+  set state(MetadataExport_State value) => $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasState() => $_has(2);
   @$pb.TagNumber(3)
@@ -2131,10 +1833,7 @@ class MetadataExport extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get destinationGcsUri => $_getSZ(3);
   @$pb.TagNumber(4)
-  set destinationGcsUri($core.String v) {
-    $_setString(3, v);
-  }
-
+  set destinationGcsUri($core.String value) => $_setString(3, value);
   @$pb.TagNumber(4)
   $core.bool hasDestinationGcsUri() => $_has(3);
   @$pb.TagNumber(4)
@@ -2144,10 +1843,7 @@ class MetadataExport extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   DatabaseDumpSpec_Type get databaseDumpType => $_getN(4);
   @$pb.TagNumber(5)
-  set databaseDumpType(DatabaseDumpSpec_Type v) {
-    $_setField(5, v);
-  }
-
+  set databaseDumpType(DatabaseDumpSpec_Type value) => $_setField(5, value);
   @$pb.TagNumber(5)
   $core.bool hasDatabaseDumpType() => $_has(4);
   @$pb.TagNumber(5)
@@ -2158,44 +1854,33 @@ class MetadataExport extends $pb.GeneratedMessage {
 class Backup extends $pb.GeneratedMessage {
   factory Backup({
     $core.String? name,
-    $2.Timestamp? createTime,
-    $2.Timestamp? endTime,
+    $0.Timestamp? createTime,
+    $0.Timestamp? endTime,
     Backup_State? state,
     Service? serviceRevision,
     $core.String? description,
     $core.Iterable<$core.String>? restoringServices,
   }) {
-    final $result = create();
-    if (name != null) {
-      $result.name = name;
-    }
-    if (createTime != null) {
-      $result.createTime = createTime;
-    }
-    if (endTime != null) {
-      $result.endTime = endTime;
-    }
-    if (state != null) {
-      $result.state = state;
-    }
-    if (serviceRevision != null) {
-      $result.serviceRevision = serviceRevision;
-    }
-    if (description != null) {
-      $result.description = description;
-    }
-    if (restoringServices != null) {
-      $result.restoringServices.addAll(restoringServices);
-    }
-    return $result;
+    final result = create();
+    if (name != null) result.name = name;
+    if (createTime != null) result.createTime = createTime;
+    if (endTime != null) result.endTime = endTime;
+    if (state != null) result.state = state;
+    if (serviceRevision != null) result.serviceRevision = serviceRevision;
+    if (description != null) result.description = description;
+    if (restoringServices != null)
+      result.restoringServices.addAll(restoringServices);
+    return result;
   }
-  Backup._() : super();
-  factory Backup.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Backup.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  Backup._();
+
+  factory Backup.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory Backup.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'Backup',
@@ -2203,13 +1888,11 @@ class Backup extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.events.cloud.metastore.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$2.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(3, _omitFieldNames ? '' : 'endTime',
-        subBuilder: $2.Timestamp.create)
-    ..e<Backup_State>(4, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
-        defaultOrMaker: Backup_State.STATE_UNSPECIFIED,
-        valueOf: Backup_State.valueOf,
+    ..aOM<$0.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(3, _omitFieldNames ? '' : 'endTime',
+        subBuilder: $0.Timestamp.create)
+    ..aE<Backup_State>(4, _omitFieldNames ? '' : 'state',
         enumValues: Backup_State.values)
     ..aOM<Service>(5, _omitFieldNames ? '' : 'serviceRevision',
         subBuilder: Service.create)
@@ -2218,17 +1901,18 @@ class Backup extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  Backup clone() => Backup()..mergeFromMessage(this);
+  Backup clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Backup copyWith(void Function(Backup) updates) =>
       super.copyWith((message) => updates(message as Backup)) as Backup;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Backup create() => Backup._();
+  @$core.override
   Backup createEmptyInstance() => create();
-  static $pb.PbList<Backup> createRepeated() => $pb.PbList<Backup>();
   @$core.pragma('dart2js:noInline')
   static Backup getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Backup>(create);
@@ -2240,10 +1924,7 @@ class Backup extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) {
-    $_setString(0, v);
-  }
-
+  set name($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -2251,42 +1932,33 @@ class Backup extends $pb.GeneratedMessage {
 
   /// Output only. The time when the backup was started.
   @$pb.TagNumber(2)
-  $2.Timestamp get createTime => $_getN(1);
+  $0.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($2.Timestamp v) {
-    $_setField(2, v);
-  }
-
+  set createTime($0.Timestamp value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => $_clearField(2);
   @$pb.TagNumber(2)
-  $2.Timestamp ensureCreateTime() => $_ensure(1);
+  $0.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. The time when the backup finished creating.
   @$pb.TagNumber(3)
-  $2.Timestamp get endTime => $_getN(2);
+  $0.Timestamp get endTime => $_getN(2);
   @$pb.TagNumber(3)
-  set endTime($2.Timestamp v) {
-    $_setField(3, v);
-  }
-
+  set endTime($0.Timestamp value) => $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasEndTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearEndTime() => $_clearField(3);
   @$pb.TagNumber(3)
-  $2.Timestamp ensureEndTime() => $_ensure(2);
+  $0.Timestamp ensureEndTime() => $_ensure(2);
 
   /// Output only. The current state of the backup.
   @$pb.TagNumber(4)
   Backup_State get state => $_getN(3);
   @$pb.TagNumber(4)
-  set state(Backup_State v) {
-    $_setField(4, v);
-  }
-
+  set state(Backup_State value) => $_setField(4, value);
   @$pb.TagNumber(4)
   $core.bool hasState() => $_has(3);
   @$pb.TagNumber(4)
@@ -2296,10 +1968,7 @@ class Backup extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   Service get serviceRevision => $_getN(4);
   @$pb.TagNumber(5)
-  set serviceRevision(Service v) {
-    $_setField(5, v);
-  }
-
+  set serviceRevision(Service value) => $_setField(5, value);
   @$pb.TagNumber(5)
   $core.bool hasServiceRevision() => $_has(4);
   @$pb.TagNumber(5)
@@ -2311,10 +1980,7 @@ class Backup extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get description => $_getSZ(5);
   @$pb.TagNumber(6)
-  set description($core.String v) {
-    $_setString(5, v);
-  }
-
+  set description($core.String value) => $_setString(5, value);
   @$pb.TagNumber(6)
   $core.bool hasDescription() => $_has(5);
   @$pb.TagNumber(6)
@@ -2328,76 +1994,62 @@ class Backup extends $pb.GeneratedMessage {
 /// The details of a metadata restore operation.
 class Restore extends $pb.GeneratedMessage {
   factory Restore({
-    $2.Timestamp? startTime,
-    $2.Timestamp? endTime,
+    $0.Timestamp? startTime,
+    $0.Timestamp? endTime,
     Restore_State? state,
     $core.String? backup,
     Restore_RestoreType? type,
     $core.String? details,
   }) {
-    final $result = create();
-    if (startTime != null) {
-      $result.startTime = startTime;
-    }
-    if (endTime != null) {
-      $result.endTime = endTime;
-    }
-    if (state != null) {
-      $result.state = state;
-    }
-    if (backup != null) {
-      $result.backup = backup;
-    }
-    if (type != null) {
-      $result.type = type;
-    }
-    if (details != null) {
-      $result.details = details;
-    }
-    return $result;
+    final result = create();
+    if (startTime != null) result.startTime = startTime;
+    if (endTime != null) result.endTime = endTime;
+    if (state != null) result.state = state;
+    if (backup != null) result.backup = backup;
+    if (type != null) result.type = type;
+    if (details != null) result.details = details;
+    return result;
   }
-  Restore._() : super();
-  factory Restore.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Restore.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  Restore._();
+
+  factory Restore.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory Restore.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'Restore',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.metastore.v1'),
       createEmptyInstance: create)
-    ..aOM<$2.Timestamp>(1, _omitFieldNames ? '' : 'startTime',
-        subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(2, _omitFieldNames ? '' : 'endTime',
-        subBuilder: $2.Timestamp.create)
-    ..e<Restore_State>(3, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
-        defaultOrMaker: Restore_State.STATE_UNSPECIFIED,
-        valueOf: Restore_State.valueOf,
+    ..aOM<$0.Timestamp>(1, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(2, _omitFieldNames ? '' : 'endTime',
+        subBuilder: $0.Timestamp.create)
+    ..aE<Restore_State>(3, _omitFieldNames ? '' : 'state',
         enumValues: Restore_State.values)
     ..aOS(4, _omitFieldNames ? '' : 'backup')
-    ..e<Restore_RestoreType>(
-        5, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE,
-        defaultOrMaker: Restore_RestoreType.RESTORE_TYPE_UNSPECIFIED,
-        valueOf: Restore_RestoreType.valueOf,
+    ..aE<Restore_RestoreType>(5, _omitFieldNames ? '' : 'type',
         enumValues: Restore_RestoreType.values)
     ..aOS(6, _omitFieldNames ? '' : 'details')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  Restore clone() => Restore()..mergeFromMessage(this);
+  Restore clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Restore copyWith(void Function(Restore) updates) =>
       super.copyWith((message) => updates(message as Restore)) as Restore;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Restore create() => Restore._();
+  @$core.override
   Restore createEmptyInstance() => create();
-  static $pb.PbList<Restore> createRepeated() => $pb.PbList<Restore>();
   @$core.pragma('dart2js:noInline')
   static Restore getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Restore>(create);
@@ -2405,42 +2057,33 @@ class Restore extends $pb.GeneratedMessage {
 
   /// Output only. The time when the restore started.
   @$pb.TagNumber(1)
-  $2.Timestamp get startTime => $_getN(0);
+  $0.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($2.Timestamp v) {
-    $_setField(1, v);
-  }
-
+  set startTime($0.Timestamp value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasStartTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearStartTime() => $_clearField(1);
   @$pb.TagNumber(1)
-  $2.Timestamp ensureStartTime() => $_ensure(0);
+  $0.Timestamp ensureStartTime() => $_ensure(0);
 
   /// Output only. The time when the restore ended.
   @$pb.TagNumber(2)
-  $2.Timestamp get endTime => $_getN(1);
+  $0.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($2.Timestamp v) {
-    $_setField(2, v);
-  }
-
+  set endTime($0.Timestamp value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndTime() => $_clearField(2);
   @$pb.TagNumber(2)
-  $2.Timestamp ensureEndTime() => $_ensure(1);
+  $0.Timestamp ensureEndTime() => $_ensure(1);
 
   /// Output only. The current state of the restore.
   @$pb.TagNumber(3)
   Restore_State get state => $_getN(2);
   @$pb.TagNumber(3)
-  set state(Restore_State v) {
-    $_setField(3, v);
-  }
-
+  set state(Restore_State value) => $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasState() => $_has(2);
   @$pb.TagNumber(3)
@@ -2453,10 +2096,7 @@ class Restore extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get backup => $_getSZ(3);
   @$pb.TagNumber(4)
-  set backup($core.String v) {
-    $_setString(3, v);
-  }
-
+  set backup($core.String value) => $_setString(3, value);
   @$pb.TagNumber(4)
   $core.bool hasBackup() => $_has(3);
   @$pb.TagNumber(4)
@@ -2466,10 +2106,7 @@ class Restore extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   Restore_RestoreType get type => $_getN(4);
   @$pb.TagNumber(5)
-  set type(Restore_RestoreType v) {
-    $_setField(5, v);
-  }
-
+  set type(Restore_RestoreType value) => $_setField(5, value);
   @$pb.TagNumber(5)
   $core.bool hasType() => $_has(4);
   @$pb.TagNumber(5)
@@ -2480,10 +2117,7 @@ class Restore extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get details => $_getSZ(5);
   @$pb.TagNumber(6)
-  set details($core.String v) {
-    $_setString(5, v);
-  }
-
+  set details($core.String value) => $_setString(5, value);
   @$pb.TagNumber(6)
   $core.bool hasDetails() => $_has(5);
   @$pb.TagNumber(6)
@@ -2498,22 +2132,20 @@ class ScalingConfig extends $pb.GeneratedMessage {
     ScalingConfig_InstanceSize? instanceSize,
     $core.double? scalingFactor,
   }) {
-    final $result = create();
-    if (instanceSize != null) {
-      $result.instanceSize = instanceSize;
-    }
-    if (scalingFactor != null) {
-      $result.scalingFactor = scalingFactor;
-    }
-    return $result;
+    final result = create();
+    if (instanceSize != null) result.instanceSize = instanceSize;
+    if (scalingFactor != null) result.scalingFactor = scalingFactor;
+    return result;
   }
-  ScalingConfig._() : super();
-  factory ScalingConfig.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ScalingConfig.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  ScalingConfig._();
+
+  factory ScalingConfig.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ScalingConfig.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static const $core.Map<$core.int, ScalingConfig_ScalingModel>
       _ScalingConfig_ScalingModelByTag = {
@@ -2527,36 +2159,37 @@ class ScalingConfig extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.events.cloud.metastore.v1'),
       createEmptyInstance: create)
     ..oo(0, [1, 2])
-    ..e<ScalingConfig_InstanceSize>(
-        1, _omitFieldNames ? '' : 'instanceSize', $pb.PbFieldType.OE,
-        defaultOrMaker: ScalingConfig_InstanceSize.INSTANCE_SIZE_UNSPECIFIED,
-        valueOf: ScalingConfig_InstanceSize.valueOf,
+    ..aE<ScalingConfig_InstanceSize>(1, _omitFieldNames ? '' : 'instanceSize',
         enumValues: ScalingConfig_InstanceSize.values)
-    ..a<$core.double>(
-        2, _omitFieldNames ? '' : 'scalingFactor', $pb.PbFieldType.OF)
+    ..aD(2, _omitFieldNames ? '' : 'scalingFactor',
+        fieldType: $pb.PbFieldType.OF)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ScalingConfig clone() => ScalingConfig()..mergeFromMessage(this);
+  ScalingConfig clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ScalingConfig copyWith(void Function(ScalingConfig) updates) =>
       super.copyWith((message) => updates(message as ScalingConfig))
           as ScalingConfig;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ScalingConfig create() => ScalingConfig._();
+  @$core.override
   ScalingConfig createEmptyInstance() => create();
-  static $pb.PbList<ScalingConfig> createRepeated() =>
-      $pb.PbList<ScalingConfig>();
   @$core.pragma('dart2js:noInline')
   static ScalingConfig getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ScalingConfig>(create);
   static ScalingConfig? _defaultInstance;
 
+  @$pb.TagNumber(1)
+  @$pb.TagNumber(2)
   ScalingConfig_ScalingModel whichScalingModel() =>
       _ScalingConfig_ScalingModelByTag[$_whichOneof(0)]!;
+  @$pb.TagNumber(1)
+  @$pb.TagNumber(2)
   void clearScalingModel() => $_clearField($_whichOneof(0));
 
   /// An enum of readable instance sizes, with each instance size mapping to a
@@ -2564,10 +2197,7 @@ class ScalingConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   ScalingConfig_InstanceSize get instanceSize => $_getN(0);
   @$pb.TagNumber(1)
-  set instanceSize(ScalingConfig_InstanceSize v) {
-    $_setField(1, v);
-  }
-
+  set instanceSize(ScalingConfig_InstanceSize value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasInstanceSize() => $_has(0);
   @$pb.TagNumber(1)
@@ -2578,10 +2208,7 @@ class ScalingConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.double get scalingFactor => $_getN(1);
   @$pb.TagNumber(2)
-  set scalingFactor($core.double v) {
-    $_setFloat(1, v);
-  }
-
+  set scalingFactor($core.double value) => $_setFloat(1, value);
   @$pb.TagNumber(2)
   $core.bool hasScalingFactor() => $_has(1);
   @$pb.TagNumber(2)
@@ -2591,13 +2218,15 @@ class ScalingConfig extends $pb.GeneratedMessage {
 /// The specification of database dump to import from or export to.
 class DatabaseDumpSpec extends $pb.GeneratedMessage {
   factory DatabaseDumpSpec() => create();
-  DatabaseDumpSpec._() : super();
-  factory DatabaseDumpSpec.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory DatabaseDumpSpec.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  DatabaseDumpSpec._();
+
+  factory DatabaseDumpSpec.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory DatabaseDumpSpec.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'DatabaseDumpSpec',
@@ -2607,19 +2236,19 @@ class DatabaseDumpSpec extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  DatabaseDumpSpec clone() => DatabaseDumpSpec()..mergeFromMessage(this);
+  DatabaseDumpSpec clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DatabaseDumpSpec copyWith(void Function(DatabaseDumpSpec) updates) =>
       super.copyWith((message) => updates(message as DatabaseDumpSpec))
           as DatabaseDumpSpec;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DatabaseDumpSpec create() => DatabaseDumpSpec._();
+  @$core.override
   DatabaseDumpSpec createEmptyInstance() => create();
-  static $pb.PbList<DatabaseDumpSpec> createRepeated() =>
-      $pb.PbList<DatabaseDumpSpec>();
   @$core.pragma('dart2js:noInline')
   static DatabaseDumpSpec getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<DatabaseDumpSpec>(create);
@@ -2631,19 +2260,19 @@ class MetadataImportEventData extends $pb.GeneratedMessage {
   factory MetadataImportEventData({
     MetadataImport? payload,
   }) {
-    final $result = create();
-    if (payload != null) {
-      $result.payload = payload;
-    }
-    return $result;
+    final result = create();
+    if (payload != null) result.payload = payload;
+    return result;
   }
-  MetadataImportEventData._() : super();
-  factory MetadataImportEventData.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory MetadataImportEventData.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  MetadataImportEventData._();
+
+  factory MetadataImportEventData.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory MetadataImportEventData.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'MetadataImportEventData',
@@ -2655,21 +2284,20 @@ class MetadataImportEventData extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  MetadataImportEventData clone() =>
-      MetadataImportEventData()..mergeFromMessage(this);
+  MetadataImportEventData clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MetadataImportEventData copyWith(
           void Function(MetadataImportEventData) updates) =>
       super.copyWith((message) => updates(message as MetadataImportEventData))
           as MetadataImportEventData;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static MetadataImportEventData create() => MetadataImportEventData._();
+  @$core.override
   MetadataImportEventData createEmptyInstance() => create();
-  static $pb.PbList<MetadataImportEventData> createRepeated() =>
-      $pb.PbList<MetadataImportEventData>();
   @$core.pragma('dart2js:noInline')
   static MetadataImportEventData getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<MetadataImportEventData>(create);
@@ -2679,10 +2307,7 @@ class MetadataImportEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   MetadataImport get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(MetadataImport v) {
-    $_setField(1, v);
-  }
-
+  set payload(MetadataImport value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -2696,19 +2321,19 @@ class FederationEventData extends $pb.GeneratedMessage {
   factory FederationEventData({
     Federation? payload,
   }) {
-    final $result = create();
-    if (payload != null) {
-      $result.payload = payload;
-    }
-    return $result;
+    final result = create();
+    if (payload != null) result.payload = payload;
+    return result;
   }
-  FederationEventData._() : super();
-  factory FederationEventData.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory FederationEventData.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  FederationEventData._();
+
+  factory FederationEventData.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory FederationEventData.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'FederationEventData',
@@ -2720,19 +2345,19 @@ class FederationEventData extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  FederationEventData clone() => FederationEventData()..mergeFromMessage(this);
+  FederationEventData clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   FederationEventData copyWith(void Function(FederationEventData) updates) =>
       super.copyWith((message) => updates(message as FederationEventData))
           as FederationEventData;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static FederationEventData create() => FederationEventData._();
+  @$core.override
   FederationEventData createEmptyInstance() => create();
-  static $pb.PbList<FederationEventData> createRepeated() =>
-      $pb.PbList<FederationEventData>();
   @$core.pragma('dart2js:noInline')
   static FederationEventData getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<FederationEventData>(create);
@@ -2742,10 +2367,7 @@ class FederationEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   Federation get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(Federation v) {
-    $_setField(1, v);
-  }
-
+  set payload(Federation value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -2759,19 +2381,19 @@ class BackupEventData extends $pb.GeneratedMessage {
   factory BackupEventData({
     Backup? payload,
   }) {
-    final $result = create();
-    if (payload != null) {
-      $result.payload = payload;
-    }
-    return $result;
+    final result = create();
+    if (payload != null) result.payload = payload;
+    return result;
   }
-  BackupEventData._() : super();
-  factory BackupEventData.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory BackupEventData.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  BackupEventData._();
+
+  factory BackupEventData.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory BackupEventData.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'BackupEventData',
@@ -2783,19 +2405,19 @@ class BackupEventData extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  BackupEventData clone() => BackupEventData()..mergeFromMessage(this);
+  BackupEventData clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   BackupEventData copyWith(void Function(BackupEventData) updates) =>
       super.copyWith((message) => updates(message as BackupEventData))
           as BackupEventData;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static BackupEventData create() => BackupEventData._();
+  @$core.override
   BackupEventData createEmptyInstance() => create();
-  static $pb.PbList<BackupEventData> createRepeated() =>
-      $pb.PbList<BackupEventData>();
   @$core.pragma('dart2js:noInline')
   static BackupEventData getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<BackupEventData>(create);
@@ -2805,10 +2427,7 @@ class BackupEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   Backup get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(Backup v) {
-    $_setField(1, v);
-  }
-
+  set payload(Backup value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -2822,19 +2441,19 @@ class ServiceEventData extends $pb.GeneratedMessage {
   factory ServiceEventData({
     Service? payload,
   }) {
-    final $result = create();
-    if (payload != null) {
-      $result.payload = payload;
-    }
-    return $result;
+    final result = create();
+    if (payload != null) result.payload = payload;
+    return result;
   }
-  ServiceEventData._() : super();
-  factory ServiceEventData.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ServiceEventData.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  ServiceEventData._();
+
+  factory ServiceEventData.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ServiceEventData.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'ServiceEventData',
@@ -2846,19 +2465,19 @@ class ServiceEventData extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ServiceEventData clone() => ServiceEventData()..mergeFromMessage(this);
+  ServiceEventData clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceEventData copyWith(void Function(ServiceEventData) updates) =>
       super.copyWith((message) => updates(message as ServiceEventData))
           as ServiceEventData;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ServiceEventData create() => ServiceEventData._();
+  @$core.override
   ServiceEventData createEmptyInstance() => create();
-  static $pb.PbList<ServiceEventData> createRepeated() =>
-      $pb.PbList<ServiceEventData>();
   @$core.pragma('dart2js:noInline')
   static ServiceEventData getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ServiceEventData>(create);
@@ -2868,10 +2487,7 @@ class ServiceEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   Service get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(Service v) {
-    $_setField(1, v);
-  }
-
+  set payload(Service value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -2880,6 +2496,7 @@ class ServiceEventData extends $pb.GeneratedMessage {
   Service ensurePayload() => $_ensure(0);
 }
 
-const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames =
+const $core.bool _omitFieldNames =
+    $core.bool.fromEnvironment('protobuf.omit_field_names');
+const $core.bool _omitMessageNames =
     $core.bool.fromEnvironment('protobuf.omit_message_names');

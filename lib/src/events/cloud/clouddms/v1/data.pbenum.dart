@@ -1,13 +1,14 @@
+// This is a generated file - do not edit.
 //
-//  Generated code. Do not modify.
-//  source: google/events/cloud/clouddms/v1/data.proto
-//
+// Generated from google/events/cloud/clouddms/v1/data.proto.
+
 // @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
-// ignore_for_file: constant_identifier_names, library_prefixes
-// ignore_for_file: non_constant_identifier_names, prefer_final_fields
-// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
+// ignore_for_file: constant_identifier_names
+// ignore_for_file: curly_braces_in_flow_control_structures
+// ignore_for_file: deprecated_member_use_from_same_package, library_prefixes
+// ignore_for_file: non_constant_identifier_names
 
 import 'dart:core' as $core;
 
@@ -39,7 +40,7 @@ class NetworkArchitecture extends $pb.ProtobufEnum {
   static NetworkArchitecture? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const NetworkArchitecture._(super.v, super.n);
+  const NetworkArchitecture._(super.value, super.name);
 }
 
 /// The database engine types.
@@ -67,7 +68,7 @@ class DatabaseEngine extends $pb.ProtobufEnum {
   static DatabaseEngine? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const DatabaseEngine._(super.v, super.n);
+  const DatabaseEngine._(super.value, super.name);
 }
 
 /// The database providers.
@@ -106,7 +107,7 @@ class DatabaseProvider extends $pb.ProtobufEnum {
   static DatabaseProvider? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const DatabaseProvider._(super.v, super.n);
+  const DatabaseProvider._(super.value, super.name);
 }
 
 /// Specifies The kind of ssl configuration used.
@@ -135,7 +136,7 @@ class SslConfig_SslType extends $pb.ProtobufEnum {
   static SslConfig_SslType? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const SslConfig_SslType._(super.v, super.n);
+  const SslConfig_SslType._(super.value, super.name);
 }
 
 /// Specifies when the instance should be activated.
@@ -166,7 +167,7 @@ class CloudSqlSettings_SqlActivationPolicy extends $pb.ProtobufEnum {
   static CloudSqlSettings_SqlActivationPolicy? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const CloudSqlSettings_SqlActivationPolicy._(super.v, super.n);
+  const CloudSqlSettings_SqlActivationPolicy._(super.value, super.name);
 }
 
 /// The storage options for Cloud SQL databases.
@@ -196,7 +197,7 @@ class CloudSqlSettings_SqlDataDiskType extends $pb.ProtobufEnum {
   static CloudSqlSettings_SqlDataDiskType? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const CloudSqlSettings_SqlDataDiskType._(super.v, super.n);
+  const CloudSqlSettings_SqlDataDiskType._(super.value, super.name);
 }
 
 /// The database engine type and version.
@@ -270,7 +271,7 @@ class CloudSqlSettings_SqlDatabaseVersion extends $pb.ProtobufEnum {
   static CloudSqlSettings_SqlDatabaseVersion? valueOf($core.int value) =>
       _byValue[value];
 
-  const CloudSqlSettings_SqlDatabaseVersion._(super.v, super.n);
+  const CloudSqlSettings_SqlDatabaseVersion._(super.value, super.name);
 }
 
 /// The availability type of the given Cloud SQL instance.
@@ -302,7 +303,7 @@ class CloudSqlSettings_SqlAvailabilityType extends $pb.ProtobufEnum {
   static CloudSqlSettings_SqlAvailabilityType? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const CloudSqlSettings_SqlAvailabilityType._(super.v, super.n);
+  const CloudSqlSettings_SqlAvailabilityType._(super.value, super.name);
 }
 
 /// The current migration job states.
@@ -395,7 +396,7 @@ class MigrationJob_State extends $pb.ProtobufEnum {
   static MigrationJob_State? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const MigrationJob_State._(super.v, super.n);
+  const MigrationJob_State._(super.value, super.name);
 }
 
 /// The current migration job phase.
@@ -439,7 +440,7 @@ class MigrationJob_Phase extends $pb.ProtobufEnum {
   static MigrationJob_Phase? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const MigrationJob_Phase._(super.v, super.n);
+  const MigrationJob_Phase._(super.value, super.name);
 }
 
 /// The type of migration job (one-time or continuous).
@@ -467,7 +468,7 @@ class MigrationJob_Type extends $pb.ProtobufEnum {
   static MigrationJob_Type? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const MigrationJob_Type._(super.v, super.n);
+  const MigrationJob_Type._(super.value, super.name);
 }
 
 /// The current connection profile state (e.g. DRAFT, READY, or FAILED).
@@ -521,7 +522,8 @@ class ConnectionProfile_State extends $pb.ProtobufEnum {
   static ConnectionProfile_State? valueOf($core.int value) =>
       value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const ConnectionProfile_State._(super.v, super.n);
+  const ConnectionProfile_State._(super.value, super.name);
 }
 
-const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');
+const $core.bool _omitEnumNames =
+    $core.bool.fromEnvironment('protobuf.omit_enum_names');

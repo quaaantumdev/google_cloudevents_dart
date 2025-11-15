@@ -1,66 +1,66 @@
+// This is a generated file - do not edit.
 //
-//  Generated code. Do not modify.
-//  source: google/events/cloud/speech/v1/events.proto
-//
+// Generated from google/events/cloud/speech/v1/events.proto.
+
 // @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
-// ignore_for_file: constant_identifier_names, library_prefixes
-// ignore_for_file: non_constant_identifier_names, prefer_final_fields
-// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
+// ignore_for_file: constant_identifier_names
+// ignore_for_file: curly_braces_in_flow_control_structures
+// ignore_for_file: deprecated_member_use_from_same_package, library_prefixes
+// ignore_for_file: non_constant_identifier_names
 
 import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'data.pb.dart' as $46;
+import 'data.pb.dart' as $0;
 
 export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
 /// The CloudEvent raised when a PhraseSet is created.
 class PhraseSetCreatedEvent extends $pb.GeneratedMessage {
   factory PhraseSetCreatedEvent({
-    $46.PhraseSetEventData? data,
+    $0.PhraseSetEventData? data,
   }) {
-    final $result = create();
-    if (data != null) {
-      $result.data = data;
-    }
-    return $result;
+    final result = create();
+    if (data != null) result.data = data;
+    return result;
   }
-  PhraseSetCreatedEvent._() : super();
-  factory PhraseSetCreatedEvent.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory PhraseSetCreatedEvent.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  PhraseSetCreatedEvent._();
+
+  factory PhraseSetCreatedEvent.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory PhraseSetCreatedEvent.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'PhraseSetCreatedEvent',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.speech.v1'),
       createEmptyInstance: create)
-    ..aOM<$46.PhraseSetEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $46.PhraseSetEventData.create)
+    ..aOM<$0.PhraseSetEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $0.PhraseSetEventData.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  PhraseSetCreatedEvent clone() =>
-      PhraseSetCreatedEvent()..mergeFromMessage(this);
+  PhraseSetCreatedEvent clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   PhraseSetCreatedEvent copyWith(
           void Function(PhraseSetCreatedEvent) updates) =>
       super.copyWith((message) => updates(message as PhraseSetCreatedEvent))
           as PhraseSetCreatedEvent;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static PhraseSetCreatedEvent create() => PhraseSetCreatedEvent._();
+  @$core.override
   PhraseSetCreatedEvent createEmptyInstance() => create();
-  static $pb.PbList<PhraseSetCreatedEvent> createRepeated() =>
-      $pb.PbList<PhraseSetCreatedEvent>();
   @$core.pragma('dart2js:noInline')
   static PhraseSetCreatedEvent getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<PhraseSetCreatedEvent>(create);
@@ -68,64 +68,60 @@ class PhraseSetCreatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $46.PhraseSetEventData get data => $_getN(0);
+  $0.PhraseSetEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($46.PhraseSetEventData v) {
-    $_setField(1, v);
-  }
-
+  set data($0.PhraseSetEventData value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
   void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $46.PhraseSetEventData ensureData() => $_ensure(0);
+  $0.PhraseSetEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a PhraseSet is updated.
 class PhraseSetUpdatedEvent extends $pb.GeneratedMessage {
   factory PhraseSetUpdatedEvent({
-    $46.PhraseSetEventData? data,
+    $0.PhraseSetEventData? data,
   }) {
-    final $result = create();
-    if (data != null) {
-      $result.data = data;
-    }
-    return $result;
+    final result = create();
+    if (data != null) result.data = data;
+    return result;
   }
-  PhraseSetUpdatedEvent._() : super();
-  factory PhraseSetUpdatedEvent.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory PhraseSetUpdatedEvent.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  PhraseSetUpdatedEvent._();
+
+  factory PhraseSetUpdatedEvent.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory PhraseSetUpdatedEvent.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'PhraseSetUpdatedEvent',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.speech.v1'),
       createEmptyInstance: create)
-    ..aOM<$46.PhraseSetEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $46.PhraseSetEventData.create)
+    ..aOM<$0.PhraseSetEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $0.PhraseSetEventData.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  PhraseSetUpdatedEvent clone() =>
-      PhraseSetUpdatedEvent()..mergeFromMessage(this);
+  PhraseSetUpdatedEvent clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   PhraseSetUpdatedEvent copyWith(
           void Function(PhraseSetUpdatedEvent) updates) =>
       super.copyWith((message) => updates(message as PhraseSetUpdatedEvent))
           as PhraseSetUpdatedEvent;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static PhraseSetUpdatedEvent create() => PhraseSetUpdatedEvent._();
+  @$core.override
   PhraseSetUpdatedEvent createEmptyInstance() => create();
-  static $pb.PbList<PhraseSetUpdatedEvent> createRepeated() =>
-      $pb.PbList<PhraseSetUpdatedEvent>();
   @$core.pragma('dart2js:noInline')
   static PhraseSetUpdatedEvent getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<PhraseSetUpdatedEvent>(create);
@@ -133,64 +129,60 @@ class PhraseSetUpdatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $46.PhraseSetEventData get data => $_getN(0);
+  $0.PhraseSetEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($46.PhraseSetEventData v) {
-    $_setField(1, v);
-  }
-
+  set data($0.PhraseSetEventData value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
   void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $46.PhraseSetEventData ensureData() => $_ensure(0);
+  $0.PhraseSetEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a PhraseSet is deleted.
 class PhraseSetDeletedEvent extends $pb.GeneratedMessage {
   factory PhraseSetDeletedEvent({
-    $46.PhraseSetEventData? data,
+    $0.PhraseSetEventData? data,
   }) {
-    final $result = create();
-    if (data != null) {
-      $result.data = data;
-    }
-    return $result;
+    final result = create();
+    if (data != null) result.data = data;
+    return result;
   }
-  PhraseSetDeletedEvent._() : super();
-  factory PhraseSetDeletedEvent.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory PhraseSetDeletedEvent.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  PhraseSetDeletedEvent._();
+
+  factory PhraseSetDeletedEvent.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory PhraseSetDeletedEvent.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'PhraseSetDeletedEvent',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.speech.v1'),
       createEmptyInstance: create)
-    ..aOM<$46.PhraseSetEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $46.PhraseSetEventData.create)
+    ..aOM<$0.PhraseSetEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $0.PhraseSetEventData.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  PhraseSetDeletedEvent clone() =>
-      PhraseSetDeletedEvent()..mergeFromMessage(this);
+  PhraseSetDeletedEvent clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   PhraseSetDeletedEvent copyWith(
           void Function(PhraseSetDeletedEvent) updates) =>
       super.copyWith((message) => updates(message as PhraseSetDeletedEvent))
           as PhraseSetDeletedEvent;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static PhraseSetDeletedEvent create() => PhraseSetDeletedEvent._();
+  @$core.override
   PhraseSetDeletedEvent createEmptyInstance() => create();
-  static $pb.PbList<PhraseSetDeletedEvent> createRepeated() =>
-      $pb.PbList<PhraseSetDeletedEvent>();
   @$core.pragma('dart2js:noInline')
   static PhraseSetDeletedEvent getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<PhraseSetDeletedEvent>(create);
@@ -198,64 +190,60 @@ class PhraseSetDeletedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $46.PhraseSetEventData get data => $_getN(0);
+  $0.PhraseSetEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($46.PhraseSetEventData v) {
-    $_setField(1, v);
-  }
-
+  set data($0.PhraseSetEventData value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
   void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $46.PhraseSetEventData ensureData() => $_ensure(0);
+  $0.PhraseSetEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a CustomClass is created.
 class CustomClassCreatedEvent extends $pb.GeneratedMessage {
   factory CustomClassCreatedEvent({
-    $46.CustomClassEventData? data,
+    $0.CustomClassEventData? data,
   }) {
-    final $result = create();
-    if (data != null) {
-      $result.data = data;
-    }
-    return $result;
+    final result = create();
+    if (data != null) result.data = data;
+    return result;
   }
-  CustomClassCreatedEvent._() : super();
-  factory CustomClassCreatedEvent.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory CustomClassCreatedEvent.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  CustomClassCreatedEvent._();
+
+  factory CustomClassCreatedEvent.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory CustomClassCreatedEvent.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'CustomClassCreatedEvent',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.speech.v1'),
       createEmptyInstance: create)
-    ..aOM<$46.CustomClassEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $46.CustomClassEventData.create)
+    ..aOM<$0.CustomClassEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $0.CustomClassEventData.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  CustomClassCreatedEvent clone() =>
-      CustomClassCreatedEvent()..mergeFromMessage(this);
+  CustomClassCreatedEvent clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CustomClassCreatedEvent copyWith(
           void Function(CustomClassCreatedEvent) updates) =>
       super.copyWith((message) => updates(message as CustomClassCreatedEvent))
           as CustomClassCreatedEvent;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CustomClassCreatedEvent create() => CustomClassCreatedEvent._();
+  @$core.override
   CustomClassCreatedEvent createEmptyInstance() => create();
-  static $pb.PbList<CustomClassCreatedEvent> createRepeated() =>
-      $pb.PbList<CustomClassCreatedEvent>();
   @$core.pragma('dart2js:noInline')
   static CustomClassCreatedEvent getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<CustomClassCreatedEvent>(create);
@@ -263,64 +251,60 @@ class CustomClassCreatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $46.CustomClassEventData get data => $_getN(0);
+  $0.CustomClassEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($46.CustomClassEventData v) {
-    $_setField(1, v);
-  }
-
+  set data($0.CustomClassEventData value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
   void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $46.CustomClassEventData ensureData() => $_ensure(0);
+  $0.CustomClassEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a CustomClass is updated.
 class CustomClassUpdatedEvent extends $pb.GeneratedMessage {
   factory CustomClassUpdatedEvent({
-    $46.CustomClassEventData? data,
+    $0.CustomClassEventData? data,
   }) {
-    final $result = create();
-    if (data != null) {
-      $result.data = data;
-    }
-    return $result;
+    final result = create();
+    if (data != null) result.data = data;
+    return result;
   }
-  CustomClassUpdatedEvent._() : super();
-  factory CustomClassUpdatedEvent.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory CustomClassUpdatedEvent.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  CustomClassUpdatedEvent._();
+
+  factory CustomClassUpdatedEvent.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory CustomClassUpdatedEvent.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'CustomClassUpdatedEvent',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.speech.v1'),
       createEmptyInstance: create)
-    ..aOM<$46.CustomClassEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $46.CustomClassEventData.create)
+    ..aOM<$0.CustomClassEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $0.CustomClassEventData.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  CustomClassUpdatedEvent clone() =>
-      CustomClassUpdatedEvent()..mergeFromMessage(this);
+  CustomClassUpdatedEvent clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CustomClassUpdatedEvent copyWith(
           void Function(CustomClassUpdatedEvent) updates) =>
       super.copyWith((message) => updates(message as CustomClassUpdatedEvent))
           as CustomClassUpdatedEvent;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CustomClassUpdatedEvent create() => CustomClassUpdatedEvent._();
+  @$core.override
   CustomClassUpdatedEvent createEmptyInstance() => create();
-  static $pb.PbList<CustomClassUpdatedEvent> createRepeated() =>
-      $pb.PbList<CustomClassUpdatedEvent>();
   @$core.pragma('dart2js:noInline')
   static CustomClassUpdatedEvent getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<CustomClassUpdatedEvent>(create);
@@ -328,64 +312,60 @@ class CustomClassUpdatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $46.CustomClassEventData get data => $_getN(0);
+  $0.CustomClassEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($46.CustomClassEventData v) {
-    $_setField(1, v);
-  }
-
+  set data($0.CustomClassEventData value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
   void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $46.CustomClassEventData ensureData() => $_ensure(0);
+  $0.CustomClassEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a CustomClass is deleted.
 class CustomClassDeletedEvent extends $pb.GeneratedMessage {
   factory CustomClassDeletedEvent({
-    $46.CustomClassEventData? data,
+    $0.CustomClassEventData? data,
   }) {
-    final $result = create();
-    if (data != null) {
-      $result.data = data;
-    }
-    return $result;
+    final result = create();
+    if (data != null) result.data = data;
+    return result;
   }
-  CustomClassDeletedEvent._() : super();
-  factory CustomClassDeletedEvent.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory CustomClassDeletedEvent.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  CustomClassDeletedEvent._();
+
+  factory CustomClassDeletedEvent.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory CustomClassDeletedEvent.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'CustomClassDeletedEvent',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.speech.v1'),
       createEmptyInstance: create)
-    ..aOM<$46.CustomClassEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $46.CustomClassEventData.create)
+    ..aOM<$0.CustomClassEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $0.CustomClassEventData.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  CustomClassDeletedEvent clone() =>
-      CustomClassDeletedEvent()..mergeFromMessage(this);
+  CustomClassDeletedEvent clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CustomClassDeletedEvent copyWith(
           void Function(CustomClassDeletedEvent) updates) =>
       super.copyWith((message) => updates(message as CustomClassDeletedEvent))
           as CustomClassDeletedEvent;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CustomClassDeletedEvent create() => CustomClassDeletedEvent._();
+  @$core.override
   CustomClassDeletedEvent createEmptyInstance() => create();
-  static $pb.PbList<CustomClassDeletedEvent> createRepeated() =>
-      $pb.PbList<CustomClassDeletedEvent>();
   @$core.pragma('dart2js:noInline')
   static CustomClassDeletedEvent getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<CustomClassDeletedEvent>(create);
@@ -393,20 +373,18 @@ class CustomClassDeletedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $46.CustomClassEventData get data => $_getN(0);
+  $0.CustomClassEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($46.CustomClassEventData v) {
-    $_setField(1, v);
-  }
-
+  set data($0.CustomClassEventData value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
   void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $46.CustomClassEventData ensureData() => $_ensure(0);
+  $0.CustomClassEventData ensureData() => $_ensure(0);
 }
 
-const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames =
+const $core.bool _omitFieldNames =
+    $core.bool.fromEnvironment('protobuf.omit_field_names');
+const $core.bool _omitMessageNames =
     $core.bool.fromEnvironment('protobuf.omit_message_names');

@@ -1,13 +1,14 @@
+// This is a generated file - do not edit.
 //
-//  Generated code. Do not modify.
-//  source: google/type/expr.proto
-//
+// Generated from google/type/expr.proto.
+
 // @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
-// ignore_for_file: constant_identifier_names, library_prefixes
-// ignore_for_file: non_constant_identifier_names, prefer_final_fields
-// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
+// ignore_for_file: constant_identifier_names
+// ignore_for_file: curly_braces_in_flow_control_structures
+// ignore_for_file: deprecated_member_use_from_same_package, library_prefixes
+// ignore_for_file: non_constant_identifier_names
 
 import 'dart:core' as $core;
 
@@ -27,28 +28,22 @@ class Expr extends $pb.GeneratedMessage {
     $core.String? description,
     $core.String? location,
   }) {
-    final $result = create();
-    if (expression != null) {
-      $result.expression = expression;
-    }
-    if (title != null) {
-      $result.title = title;
-    }
-    if (description != null) {
-      $result.description = description;
-    }
-    if (location != null) {
-      $result.location = location;
-    }
-    return $result;
+    final result = create();
+    if (expression != null) result.expression = expression;
+    if (title != null) result.title = title;
+    if (description != null) result.description = description;
+    if (location != null) result.location = location;
+    return result;
   }
-  Expr._() : super();
-  factory Expr.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Expr.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  Expr._();
+
+  factory Expr.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory Expr.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'Expr',
@@ -61,17 +56,18 @@ class Expr extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  Expr clone() => Expr()..mergeFromMessage(this);
+  Expr clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Expr copyWith(void Function(Expr) updates) =>
       super.copyWith((message) => updates(message as Expr)) as Expr;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Expr create() => Expr._();
+  @$core.override
   Expr createEmptyInstance() => create();
-  static $pb.PbList<Expr> createRepeated() => $pb.PbList<Expr>();
   @$core.pragma('dart2js:noInline')
   static Expr getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Expr>(create);
@@ -85,10 +81,7 @@ class Expr extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get expression => $_getSZ(0);
   @$pb.TagNumber(1)
-  set expression($core.String v) {
-    $_setString(0, v);
-  }
-
+  set expression($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasExpression() => $_has(0);
   @$pb.TagNumber(1)
@@ -100,10 +93,7 @@ class Expr extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get title => $_getSZ(1);
   @$pb.TagNumber(2)
-  set title($core.String v) {
-    $_setString(1, v);
-  }
-
+  set title($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasTitle() => $_has(1);
   @$pb.TagNumber(2)
@@ -114,10 +104,7 @@ class Expr extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get description => $_getSZ(2);
   @$pb.TagNumber(3)
-  set description($core.String v) {
-    $_setString(2, v);
-  }
-
+  set description($core.String value) => $_setString(2, value);
   @$pb.TagNumber(3)
   $core.bool hasDescription() => $_has(2);
   @$pb.TagNumber(3)
@@ -128,16 +115,14 @@ class Expr extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get location => $_getSZ(3);
   @$pb.TagNumber(4)
-  set location($core.String v) {
-    $_setString(3, v);
-  }
-
+  set location($core.String value) => $_setString(3, value);
   @$pb.TagNumber(4)
   $core.bool hasLocation() => $_has(3);
   @$pb.TagNumber(4)
   void clearLocation() => $_clearField(4);
 }
 
-const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames =
+const $core.bool _omitFieldNames =
+    $core.bool.fromEnvironment('protobuf.omit_field_names');
+const $core.bool _omitMessageNames =
     $core.bool.fromEnvironment('protobuf.omit_message_names');

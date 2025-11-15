@@ -1,13 +1,14 @@
+// This is a generated file - do not edit.
 //
-//  Generated code. Do not modify.
-//  source: google/events/cloud/speech/v1/data.proto
-//
+// Generated from google/events/cloud/speech/v1/data.proto.
+
 // @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
-// ignore_for_file: constant_identifier_names, library_prefixes
-// ignore_for_file: non_constant_identifier_names, prefer_final_fields
-// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
+// ignore_for_file: constant_identifier_names
+// ignore_for_file: curly_braces_in_flow_control_structures
+// ignore_for_file: deprecated_member_use_from_same_package, library_prefixes
+// ignore_for_file: non_constant_identifier_names
 
 import 'dart:core' as $core;
 
@@ -38,7 +39,7 @@ class CustomClass_State extends $pb.ProtobufEnum {
       $pb.ProtobufEnum.initByValue(values);
   static CustomClass_State? valueOf($core.int value) => _byValue[value];
 
-  const CustomClass_State._(super.v, super.n);
+  const CustomClass_State._(super.value, super.name);
 }
 
 /// Set of states that define the lifecycle of a CustomClass.
@@ -66,7 +67,8 @@ class PhraseSet_State extends $pb.ProtobufEnum {
       $pb.ProtobufEnum.initByValue(values);
   static PhraseSet_State? valueOf($core.int value) => _byValue[value];
 
-  const PhraseSet_State._(super.v, super.n);
+  const PhraseSet_State._(super.value, super.name);
 }
 
-const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');
+const $core.bool _omitEnumNames =
+    $core.bool.fromEnvironment('protobuf.omit_enum_names');

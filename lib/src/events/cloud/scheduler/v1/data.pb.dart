@@ -1,21 +1,22 @@
+// This is a generated file - do not edit.
 //
-//  Generated code. Do not modify.
-//  source: google/events/cloud/scheduler/v1/data.proto
-//
+// Generated from google/events/cloud/scheduler/v1/data.proto.
+
 // @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
-// ignore_for_file: constant_identifier_names, library_prefixes
-// ignore_for_file: non_constant_identifier_names, prefer_final_fields
-// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
+// ignore_for_file: constant_identifier_names
+// ignore_for_file: curly_braces_in_flow_control_structures
+// ignore_for_file: deprecated_member_use_from_same_package, library_prefixes
+// ignore_for_file: non_constant_identifier_names
 
 import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/duration.pb.dart' as $0;
-import '../../../../protobuf/timestamp.pb.dart' as $2;
-import '../../../../rpc/status.pb.dart' as $9;
+import '../../../../protobuf/duration.pb.dart' as $2;
+import '../../../../protobuf/timestamp.pb.dart' as $0;
+import '../../../../rpc/status.pb.dart' as $1;
 import 'data.pbenum.dart';
 
 export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
@@ -27,19 +28,19 @@ class SchedulerJobData extends $pb.GeneratedMessage {
   factory SchedulerJobData({
     $core.List<$core.int>? customData,
   }) {
-    final $result = create();
-    if (customData != null) {
-      $result.customData = customData;
-    }
-    return $result;
+    final result = create();
+    if (customData != null) result.customData = customData;
+    return result;
   }
-  SchedulerJobData._() : super();
-  factory SchedulerJobData.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory SchedulerJobData.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  SchedulerJobData._();
+
+  factory SchedulerJobData.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory SchedulerJobData.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'SchedulerJobData',
@@ -51,19 +52,19 @@ class SchedulerJobData extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  SchedulerJobData clone() => SchedulerJobData()..mergeFromMessage(this);
+  SchedulerJobData clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   SchedulerJobData copyWith(void Function(SchedulerJobData) updates) =>
       super.copyWith((message) => updates(message as SchedulerJobData))
           as SchedulerJobData;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SchedulerJobData create() => SchedulerJobData._();
+  @$core.override
   SchedulerJobData createEmptyInstance() => create();
-  static $pb.PbList<SchedulerJobData> createRepeated() =>
-      $pb.PbList<SchedulerJobData>();
   @$core.pragma('dart2js:noInline')
   static SchedulerJobData getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<SchedulerJobData>(create);
@@ -73,10 +74,7 @@ class SchedulerJobData extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.List<$core.int> get customData => $_getN(0);
   @$pb.TagNumber(1)
-  set customData($core.List<$core.int> v) {
-    $_setBytes(0, v);
-  }
-
+  set customData($core.List<$core.int> value) => $_setBytes(0, value);
   @$pb.TagNumber(1)
   $core.bool hasCustomData() => $_has(0);
   @$pb.TagNumber(1)
@@ -101,34 +99,24 @@ class HttpTarget extends $pb.GeneratedMessage {
     OAuthToken? oauthToken,
     OidcToken? oidcToken,
   }) {
-    final $result = create();
-    if (uri != null) {
-      $result.uri = uri;
-    }
-    if (httpMethod != null) {
-      $result.httpMethod = httpMethod;
-    }
-    if (headers != null) {
-      $result.headers.addEntries(headers);
-    }
-    if (body != null) {
-      $result.body = body;
-    }
-    if (oauthToken != null) {
-      $result.oauthToken = oauthToken;
-    }
-    if (oidcToken != null) {
-      $result.oidcToken = oidcToken;
-    }
-    return $result;
+    final result = create();
+    if (uri != null) result.uri = uri;
+    if (httpMethod != null) result.httpMethod = httpMethod;
+    if (headers != null) result.headers.addEntries(headers);
+    if (body != null) result.body = body;
+    if (oauthToken != null) result.oauthToken = oauthToken;
+    if (oidcToken != null) result.oidcToken = oidcToken;
+    return result;
   }
-  HttpTarget._() : super();
-  factory HttpTarget.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory HttpTarget.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  HttpTarget._();
+
+  factory HttpTarget.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory HttpTarget.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static const $core.Map<$core.int, HttpTarget_AuthorizationHeader>
       _HttpTarget_AuthorizationHeaderByTag = {
@@ -143,9 +131,7 @@ class HttpTarget extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..oo(0, [5, 6])
     ..aOS(1, _omitFieldNames ? '' : 'uri')
-    ..e<HttpMethod>(2, _omitFieldNames ? '' : 'httpMethod', $pb.PbFieldType.OE,
-        defaultOrMaker: HttpMethod.HTTP_METHOD_UNSPECIFIED,
-        valueOf: HttpMethod.valueOf,
+    ..aE<HttpMethod>(2, _omitFieldNames ? '' : 'httpMethod',
         enumValues: HttpMethod.values)
     ..m<$core.String, $core.String>(3, _omitFieldNames ? '' : 'headers',
         entryClassName: 'HttpTarget.HeadersEntry',
@@ -161,24 +147,29 @@ class HttpTarget extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  HttpTarget clone() => HttpTarget()..mergeFromMessage(this);
+  HttpTarget clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HttpTarget copyWith(void Function(HttpTarget) updates) =>
       super.copyWith((message) => updates(message as HttpTarget)) as HttpTarget;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static HttpTarget create() => HttpTarget._();
+  @$core.override
   HttpTarget createEmptyInstance() => create();
-  static $pb.PbList<HttpTarget> createRepeated() => $pb.PbList<HttpTarget>();
   @$core.pragma('dart2js:noInline')
   static HttpTarget getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<HttpTarget>(create);
   static HttpTarget? _defaultInstance;
 
+  @$pb.TagNumber(5)
+  @$pb.TagNumber(6)
   HttpTarget_AuthorizationHeader whichAuthorizationHeader() =>
       _HttpTarget_AuthorizationHeaderByTag[$_whichOneof(0)]!;
+  @$pb.TagNumber(5)
+  @$pb.TagNumber(6)
   void clearAuthorizationHeader() => $_clearField($_whichOneof(0));
 
   /// Required. The full URI path that the request will be sent to. This string
@@ -190,10 +181,7 @@ class HttpTarget extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get uri => $_getSZ(0);
   @$pb.TagNumber(1)
-  set uri($core.String v) {
-    $_setString(0, v);
-  }
-
+  set uri($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasUri() => $_has(0);
   @$pb.TagNumber(1)
@@ -203,10 +191,7 @@ class HttpTarget extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   HttpMethod get httpMethod => $_getN(1);
   @$pb.TagNumber(2)
-  set httpMethod(HttpMethod v) {
-    $_setField(2, v);
-  }
-
+  set httpMethod(HttpMethod value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasHttpMethod() => $_has(1);
   @$pb.TagNumber(2)
@@ -256,10 +241,7 @@ class HttpTarget extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.List<$core.int> get body => $_getN(3);
   @$pb.TagNumber(4)
-  set body($core.List<$core.int> v) {
-    $_setBytes(3, v);
-  }
-
+  set body($core.List<$core.int> value) => $_setBytes(3, value);
   @$pb.TagNumber(4)
   $core.bool hasBody() => $_has(3);
   @$pb.TagNumber(4)
@@ -275,10 +257,7 @@ class HttpTarget extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   OAuthToken get oauthToken => $_getN(4);
   @$pb.TagNumber(5)
-  set oauthToken(OAuthToken v) {
-    $_setField(5, v);
-  }
-
+  set oauthToken(OAuthToken value) => $_setField(5, value);
   @$pb.TagNumber(5)
   $core.bool hasOauthToken() => $_has(4);
   @$pb.TagNumber(5)
@@ -297,10 +276,7 @@ class HttpTarget extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   OidcToken get oidcToken => $_getN(5);
   @$pb.TagNumber(6)
-  set oidcToken(OidcToken v) {
-    $_setField(6, v);
-  }
-
+  set oidcToken(OidcToken value) => $_setField(6, value);
   @$pb.TagNumber(6)
   $core.bool hasOidcToken() => $_has(5);
   @$pb.TagNumber(6)
@@ -327,40 +303,30 @@ class AppEngineHttpTarget extends $pb.GeneratedMessage {
     $core.Iterable<$core.MapEntry<$core.String, $core.String>>? headers,
     $core.List<$core.int>? body,
   }) {
-    final $result = create();
-    if (httpMethod != null) {
-      $result.httpMethod = httpMethod;
-    }
-    if (appEngineRouting != null) {
-      $result.appEngineRouting = appEngineRouting;
-    }
-    if (relativeUri != null) {
-      $result.relativeUri = relativeUri;
-    }
-    if (headers != null) {
-      $result.headers.addEntries(headers);
-    }
-    if (body != null) {
-      $result.body = body;
-    }
-    return $result;
+    final result = create();
+    if (httpMethod != null) result.httpMethod = httpMethod;
+    if (appEngineRouting != null) result.appEngineRouting = appEngineRouting;
+    if (relativeUri != null) result.relativeUri = relativeUri;
+    if (headers != null) result.headers.addEntries(headers);
+    if (body != null) result.body = body;
+    return result;
   }
-  AppEngineHttpTarget._() : super();
-  factory AppEngineHttpTarget.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory AppEngineHttpTarget.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  AppEngineHttpTarget._();
+
+  factory AppEngineHttpTarget.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory AppEngineHttpTarget.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'AppEngineHttpTarget',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.scheduler.v1'),
       createEmptyInstance: create)
-    ..e<HttpMethod>(1, _omitFieldNames ? '' : 'httpMethod', $pb.PbFieldType.OE,
-        defaultOrMaker: HttpMethod.HTTP_METHOD_UNSPECIFIED,
-        valueOf: HttpMethod.valueOf,
+    ..aE<HttpMethod>(1, _omitFieldNames ? '' : 'httpMethod',
         enumValues: HttpMethod.values)
     ..aOM<AppEngineRouting>(2, _omitFieldNames ? '' : 'appEngineRouting',
         subBuilder: AppEngineRouting.create)
@@ -375,19 +341,19 @@ class AppEngineHttpTarget extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  AppEngineHttpTarget clone() => AppEngineHttpTarget()..mergeFromMessage(this);
+  AppEngineHttpTarget clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AppEngineHttpTarget copyWith(void Function(AppEngineHttpTarget) updates) =>
       super.copyWith((message) => updates(message as AppEngineHttpTarget))
           as AppEngineHttpTarget;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AppEngineHttpTarget create() => AppEngineHttpTarget._();
+  @$core.override
   AppEngineHttpTarget createEmptyInstance() => create();
-  static $pb.PbList<AppEngineHttpTarget> createRepeated() =>
-      $pb.PbList<AppEngineHttpTarget>();
   @$core.pragma('dart2js:noInline')
   static AppEngineHttpTarget getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<AppEngineHttpTarget>(create);
@@ -398,10 +364,7 @@ class AppEngineHttpTarget extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   HttpMethod get httpMethod => $_getN(0);
   @$pb.TagNumber(1)
-  set httpMethod(HttpMethod v) {
-    $_setField(1, v);
-  }
-
+  set httpMethod(HttpMethod value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasHttpMethod() => $_has(0);
   @$pb.TagNumber(1)
@@ -411,10 +374,7 @@ class AppEngineHttpTarget extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   AppEngineRouting get appEngineRouting => $_getN(1);
   @$pb.TagNumber(2)
-  set appEngineRouting(AppEngineRouting v) {
-    $_setField(2, v);
-  }
-
+  set appEngineRouting(AppEngineRouting value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasAppEngineRouting() => $_has(1);
   @$pb.TagNumber(2)
@@ -431,10 +391,7 @@ class AppEngineHttpTarget extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get relativeUri => $_getSZ(2);
   @$pb.TagNumber(3)
-  set relativeUri($core.String v) {
-    $_setString(2, v);
-  }
-
+  set relativeUri($core.String value) => $_setString(2, value);
   @$pb.TagNumber(3)
   $core.bool hasRelativeUri() => $_has(2);
   @$pb.TagNumber(3)
@@ -487,10 +444,7 @@ class AppEngineHttpTarget extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.List<$core.int> get body => $_getN(4);
   @$pb.TagNumber(5)
-  set body($core.List<$core.int> v) {
-    $_setBytes(4, v);
-  }
-
+  set body($core.List<$core.int> value) => $_setBytes(4, value);
   @$pb.TagNumber(5)
   $core.bool hasBody() => $_has(4);
   @$pb.TagNumber(5)
@@ -505,25 +459,21 @@ class PubsubTarget extends $pb.GeneratedMessage {
     $core.List<$core.int>? data,
     $core.Iterable<$core.MapEntry<$core.String, $core.String>>? attributes,
   }) {
-    final $result = create();
-    if (topicName != null) {
-      $result.topicName = topicName;
-    }
-    if (data != null) {
-      $result.data = data;
-    }
-    if (attributes != null) {
-      $result.attributes.addEntries(attributes);
-    }
-    return $result;
+    final result = create();
+    if (topicName != null) result.topicName = topicName;
+    if (data != null) result.data = data;
+    if (attributes != null) result.attributes.addEntries(attributes);
+    return result;
   }
-  PubsubTarget._() : super();
-  factory PubsubTarget.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory PubsubTarget.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  PubsubTarget._();
+
+  factory PubsubTarget.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory PubsubTarget.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'PubsubTarget',
@@ -541,19 +491,19 @@ class PubsubTarget extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  PubsubTarget clone() => PubsubTarget()..mergeFromMessage(this);
+  PubsubTarget clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   PubsubTarget copyWith(void Function(PubsubTarget) updates) =>
       super.copyWith((message) => updates(message as PubsubTarget))
           as PubsubTarget;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static PubsubTarget create() => PubsubTarget._();
+  @$core.override
   PubsubTarget createEmptyInstance() => create();
-  static $pb.PbList<PubsubTarget> createRepeated() =>
-      $pb.PbList<PubsubTarget>();
   @$core.pragma('dart2js:noInline')
   static PubsubTarget getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<PubsubTarget>(create);
@@ -569,10 +519,7 @@ class PubsubTarget extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get topicName => $_getSZ(0);
   @$pb.TagNumber(1)
-  set topicName($core.String v) {
-    $_setString(0, v);
-  }
-
+  set topicName($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasTopicName() => $_has(0);
   @$pb.TagNumber(1)
@@ -585,10 +532,7 @@ class PubsubTarget extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.List<$core.int> get data => $_getN(1);
   @$pb.TagNumber(3)
-  set data($core.List<$core.int> v) {
-    $_setBytes(1, v);
-  }
-
+  set data($core.List<$core.int> value) => $_setBytes(1, value);
   @$pb.TagNumber(3)
   $core.bool hasData() => $_has(1);
   @$pb.TagNumber(3)
@@ -620,28 +564,22 @@ class AppEngineRouting extends $pb.GeneratedMessage {
     $core.String? instance,
     $core.String? host,
   }) {
-    final $result = create();
-    if (service != null) {
-      $result.service = service;
-    }
-    if (version != null) {
-      $result.version = version;
-    }
-    if (instance != null) {
-      $result.instance = instance;
-    }
-    if (host != null) {
-      $result.host = host;
-    }
-    return $result;
+    final result = create();
+    if (service != null) result.service = service;
+    if (version != null) result.version = version;
+    if (instance != null) result.instance = instance;
+    if (host != null) result.host = host;
+    return result;
   }
-  AppEngineRouting._() : super();
-  factory AppEngineRouting.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory AppEngineRouting.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  AppEngineRouting._();
+
+  factory AppEngineRouting.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory AppEngineRouting.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'AppEngineRouting',
@@ -655,19 +593,19 @@ class AppEngineRouting extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  AppEngineRouting clone() => AppEngineRouting()..mergeFromMessage(this);
+  AppEngineRouting clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AppEngineRouting copyWith(void Function(AppEngineRouting) updates) =>
       super.copyWith((message) => updates(message as AppEngineRouting))
           as AppEngineRouting;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AppEngineRouting create() => AppEngineRouting._();
+  @$core.override
   AppEngineRouting createEmptyInstance() => create();
-  static $pb.PbList<AppEngineRouting> createRepeated() =>
-      $pb.PbList<AppEngineRouting>();
   @$core.pragma('dart2js:noInline')
   static AppEngineRouting getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<AppEngineRouting>(create);
@@ -680,10 +618,7 @@ class AppEngineRouting extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get service => $_getSZ(0);
   @$pb.TagNumber(1)
-  set service($core.String v) {
-    $_setString(0, v);
-  }
-
+  set service($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasService() => $_has(0);
   @$pb.TagNumber(1)
@@ -696,10 +631,7 @@ class AppEngineRouting extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get version => $_getSZ(1);
   @$pb.TagNumber(2)
-  set version($core.String v) {
-    $_setString(1, v);
-  }
-
+  set version($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasVersion() => $_has(1);
   @$pb.TagNumber(2)
@@ -721,10 +653,7 @@ class AppEngineRouting extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get instance => $_getSZ(2);
   @$pb.TagNumber(3)
-  set instance($core.String v) {
-    $_setString(2, v);
-  }
-
+  set instance($core.String value) => $_setString(2, value);
   @$pb.TagNumber(3)
   $core.bool hasInstance() => $_has(2);
   @$pb.TagNumber(3)
@@ -796,10 +725,7 @@ class AppEngineRouting extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get host => $_getSZ(3);
   @$pb.TagNumber(4)
-  set host($core.String v) {
-    $_setString(3, v);
-  }
-
+  set host($core.String value) => $_setString(3, value);
   @$pb.TagNumber(4)
   $core.bool hasHost() => $_has(3);
   @$pb.TagNumber(4)
@@ -815,22 +741,21 @@ class OAuthToken extends $pb.GeneratedMessage {
     $core.String? serviceAccountEmail,
     $core.String? scope,
   }) {
-    final $result = create();
-    if (serviceAccountEmail != null) {
-      $result.serviceAccountEmail = serviceAccountEmail;
-    }
-    if (scope != null) {
-      $result.scope = scope;
-    }
-    return $result;
+    final result = create();
+    if (serviceAccountEmail != null)
+      result.serviceAccountEmail = serviceAccountEmail;
+    if (scope != null) result.scope = scope;
+    return result;
   }
-  OAuthToken._() : super();
-  factory OAuthToken.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory OAuthToken.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  OAuthToken._();
+
+  factory OAuthToken.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory OAuthToken.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'OAuthToken',
@@ -842,17 +767,18 @@ class OAuthToken extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  OAuthToken clone() => OAuthToken()..mergeFromMessage(this);
+  OAuthToken clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   OAuthToken copyWith(void Function(OAuthToken) updates) =>
       super.copyWith((message) => updates(message as OAuthToken)) as OAuthToken;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static OAuthToken create() => OAuthToken._();
+  @$core.override
   OAuthToken createEmptyInstance() => create();
-  static $pb.PbList<OAuthToken> createRepeated() => $pb.PbList<OAuthToken>();
   @$core.pragma('dart2js:noInline')
   static OAuthToken getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<OAuthToken>(create);
@@ -865,10 +791,7 @@ class OAuthToken extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get serviceAccountEmail => $_getSZ(0);
   @$pb.TagNumber(1)
-  set serviceAccountEmail($core.String v) {
-    $_setString(0, v);
-  }
-
+  set serviceAccountEmail($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasServiceAccountEmail() => $_has(0);
   @$pb.TagNumber(1)
@@ -880,10 +803,7 @@ class OAuthToken extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get scope => $_getSZ(1);
   @$pb.TagNumber(2)
-  set scope($core.String v) {
-    $_setString(1, v);
-  }
-
+  set scope($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasScope() => $_has(1);
   @$pb.TagNumber(2)
@@ -901,22 +821,21 @@ class OidcToken extends $pb.GeneratedMessage {
     $core.String? serviceAccountEmail,
     $core.String? audience,
   }) {
-    final $result = create();
-    if (serviceAccountEmail != null) {
-      $result.serviceAccountEmail = serviceAccountEmail;
-    }
-    if (audience != null) {
-      $result.audience = audience;
-    }
-    return $result;
+    final result = create();
+    if (serviceAccountEmail != null)
+      result.serviceAccountEmail = serviceAccountEmail;
+    if (audience != null) result.audience = audience;
+    return result;
   }
-  OidcToken._() : super();
-  factory OidcToken.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory OidcToken.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  OidcToken._();
+
+  factory OidcToken.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory OidcToken.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'OidcToken',
@@ -928,17 +847,18 @@ class OidcToken extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  OidcToken clone() => OidcToken()..mergeFromMessage(this);
+  OidcToken clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   OidcToken copyWith(void Function(OidcToken) updates) =>
       super.copyWith((message) => updates(message as OidcToken)) as OidcToken;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static OidcToken create() => OidcToken._();
+  @$core.override
   OidcToken createEmptyInstance() => create();
-  static $pb.PbList<OidcToken> createRepeated() => $pb.PbList<OidcToken>();
   @$core.pragma('dart2js:noInline')
   static OidcToken getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<OidcToken>(create);
@@ -951,10 +871,7 @@ class OidcToken extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get serviceAccountEmail => $_getSZ(0);
   @$pb.TagNumber(1)
-  set serviceAccountEmail($core.String v) {
-    $_setString(0, v);
-  }
-
+  set serviceAccountEmail($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasServiceAccountEmail() => $_has(0);
   @$pb.TagNumber(1)
@@ -965,10 +882,7 @@ class OidcToken extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get audience => $_getSZ(1);
   @$pb.TagNumber(2)
-  set audience($core.String v) {
-    $_setString(1, v);
-  }
-
+  set audience($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasAudience() => $_has(1);
   @$pb.TagNumber(2)
@@ -986,68 +900,43 @@ class Job extends $pb.GeneratedMessage {
     PubsubTarget? pubsubTarget,
     AppEngineHttpTarget? appEngineHttpTarget,
     HttpTarget? httpTarget,
-    $2.Timestamp? userUpdateTime,
+    $0.Timestamp? userUpdateTime,
     Job_State? state,
-    $9.Status? status,
-    $2.Timestamp? scheduleTime,
-    $2.Timestamp? lastAttemptTime,
+    $1.Status? status,
+    $0.Timestamp? scheduleTime,
+    $0.Timestamp? lastAttemptTime,
     RetryConfig? retryConfig,
     $core.String? schedule,
     $core.String? timeZone,
-    $0.Duration? attemptDeadline,
+    $2.Duration? attemptDeadline,
   }) {
-    final $result = create();
-    if (name != null) {
-      $result.name = name;
-    }
-    if (description != null) {
-      $result.description = description;
-    }
-    if (pubsubTarget != null) {
-      $result.pubsubTarget = pubsubTarget;
-    }
-    if (appEngineHttpTarget != null) {
-      $result.appEngineHttpTarget = appEngineHttpTarget;
-    }
-    if (httpTarget != null) {
-      $result.httpTarget = httpTarget;
-    }
-    if (userUpdateTime != null) {
-      $result.userUpdateTime = userUpdateTime;
-    }
-    if (state != null) {
-      $result.state = state;
-    }
-    if (status != null) {
-      $result.status = status;
-    }
-    if (scheduleTime != null) {
-      $result.scheduleTime = scheduleTime;
-    }
-    if (lastAttemptTime != null) {
-      $result.lastAttemptTime = lastAttemptTime;
-    }
-    if (retryConfig != null) {
-      $result.retryConfig = retryConfig;
-    }
-    if (schedule != null) {
-      $result.schedule = schedule;
-    }
-    if (timeZone != null) {
-      $result.timeZone = timeZone;
-    }
-    if (attemptDeadline != null) {
-      $result.attemptDeadline = attemptDeadline;
-    }
-    return $result;
+    final result = create();
+    if (name != null) result.name = name;
+    if (description != null) result.description = description;
+    if (pubsubTarget != null) result.pubsubTarget = pubsubTarget;
+    if (appEngineHttpTarget != null)
+      result.appEngineHttpTarget = appEngineHttpTarget;
+    if (httpTarget != null) result.httpTarget = httpTarget;
+    if (userUpdateTime != null) result.userUpdateTime = userUpdateTime;
+    if (state != null) result.state = state;
+    if (status != null) result.status = status;
+    if (scheduleTime != null) result.scheduleTime = scheduleTime;
+    if (lastAttemptTime != null) result.lastAttemptTime = lastAttemptTime;
+    if (retryConfig != null) result.retryConfig = retryConfig;
+    if (schedule != null) result.schedule = schedule;
+    if (timeZone != null) result.timeZone = timeZone;
+    if (attemptDeadline != null) result.attemptDeadline = attemptDeadline;
+    return result;
   }
-  Job._() : super();
-  factory Job.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Job.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  Job._();
+
+  factory Job.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory Job.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static const $core.Map<$core.int, Job_Target> _Job_TargetByTag = {
     4: Job_Target.pubsubTarget,
@@ -1069,44 +958,49 @@ class Job extends $pb.GeneratedMessage {
         subBuilder: AppEngineHttpTarget.create)
     ..aOM<HttpTarget>(6, _omitFieldNames ? '' : 'httpTarget',
         subBuilder: HttpTarget.create)
-    ..aOM<$2.Timestamp>(9, _omitFieldNames ? '' : 'userUpdateTime',
-        subBuilder: $2.Timestamp.create)
-    ..e<Job_State>(10, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
-        defaultOrMaker: Job_State.STATE_UNSPECIFIED,
-        valueOf: Job_State.valueOf,
+    ..aOM<$0.Timestamp>(9, _omitFieldNames ? '' : 'userUpdateTime',
+        subBuilder: $0.Timestamp.create)
+    ..aE<Job_State>(10, _omitFieldNames ? '' : 'state',
         enumValues: Job_State.values)
-    ..aOM<$9.Status>(11, _omitFieldNames ? '' : 'status',
-        subBuilder: $9.Status.create)
-    ..aOM<$2.Timestamp>(17, _omitFieldNames ? '' : 'scheduleTime',
-        subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(18, _omitFieldNames ? '' : 'lastAttemptTime',
-        subBuilder: $2.Timestamp.create)
+    ..aOM<$1.Status>(11, _omitFieldNames ? '' : 'status',
+        subBuilder: $1.Status.create)
+    ..aOM<$0.Timestamp>(17, _omitFieldNames ? '' : 'scheduleTime',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(18, _omitFieldNames ? '' : 'lastAttemptTime',
+        subBuilder: $0.Timestamp.create)
     ..aOM<RetryConfig>(19, _omitFieldNames ? '' : 'retryConfig',
         subBuilder: RetryConfig.create)
     ..aOS(20, _omitFieldNames ? '' : 'schedule')
     ..aOS(21, _omitFieldNames ? '' : 'timeZone')
-    ..aOM<$0.Duration>(22, _omitFieldNames ? '' : 'attemptDeadline',
-        subBuilder: $0.Duration.create)
+    ..aOM<$2.Duration>(22, _omitFieldNames ? '' : 'attemptDeadline',
+        subBuilder: $2.Duration.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  Job clone() => Job()..mergeFromMessage(this);
+  Job clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Job copyWith(void Function(Job) updates) =>
       super.copyWith((message) => updates(message as Job)) as Job;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Job create() => Job._();
+  @$core.override
   Job createEmptyInstance() => create();
-  static $pb.PbList<Job> createRepeated() => $pb.PbList<Job>();
   @$core.pragma('dart2js:noInline')
   static Job getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Job>(create);
   static Job? _defaultInstance;
 
+  @$pb.TagNumber(4)
+  @$pb.TagNumber(5)
+  @$pb.TagNumber(6)
   Job_Target whichTarget() => _Job_TargetByTag[$_whichOneof(0)]!;
+  @$pb.TagNumber(4)
+  @$pb.TagNumber(5)
+  @$pb.TagNumber(6)
   void clearTarget() => $_clearField($_whichOneof(0));
 
   /// Optionally caller-specified in
@@ -1130,10 +1024,7 @@ class Job extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) {
-    $_setString(0, v);
-  }
-
+  set name($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -1148,10 +1039,7 @@ class Job extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get description => $_getSZ(1);
   @$pb.TagNumber(2)
-  set description($core.String v) {
-    $_setString(1, v);
-  }
-
+  set description($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasDescription() => $_has(1);
   @$pb.TagNumber(2)
@@ -1161,10 +1049,7 @@ class Job extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   PubsubTarget get pubsubTarget => $_getN(2);
   @$pb.TagNumber(4)
-  set pubsubTarget(PubsubTarget v) {
-    $_setField(4, v);
-  }
-
+  set pubsubTarget(PubsubTarget value) => $_setField(4, value);
   @$pb.TagNumber(4)
   $core.bool hasPubsubTarget() => $_has(2);
   @$pb.TagNumber(4)
@@ -1176,10 +1061,7 @@ class Job extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   AppEngineHttpTarget get appEngineHttpTarget => $_getN(3);
   @$pb.TagNumber(5)
-  set appEngineHttpTarget(AppEngineHttpTarget v) {
-    $_setField(5, v);
-  }
-
+  set appEngineHttpTarget(AppEngineHttpTarget value) => $_setField(5, value);
   @$pb.TagNumber(5)
   $core.bool hasAppEngineHttpTarget() => $_has(3);
   @$pb.TagNumber(5)
@@ -1191,10 +1073,7 @@ class Job extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   HttpTarget get httpTarget => $_getN(4);
   @$pb.TagNumber(6)
-  set httpTarget(HttpTarget v) {
-    $_setField(6, v);
-  }
-
+  set httpTarget(HttpTarget value) => $_setField(6, value);
   @$pb.TagNumber(6)
   $core.bool hasHttpTarget() => $_has(4);
   @$pb.TagNumber(6)
@@ -1204,27 +1083,21 @@ class Job extends $pb.GeneratedMessage {
 
   /// Output only. The creation time of the job.
   @$pb.TagNumber(9)
-  $2.Timestamp get userUpdateTime => $_getN(5);
+  $0.Timestamp get userUpdateTime => $_getN(5);
   @$pb.TagNumber(9)
-  set userUpdateTime($2.Timestamp v) {
-    $_setField(9, v);
-  }
-
+  set userUpdateTime($0.Timestamp value) => $_setField(9, value);
   @$pb.TagNumber(9)
   $core.bool hasUserUpdateTime() => $_has(5);
   @$pb.TagNumber(9)
   void clearUserUpdateTime() => $_clearField(9);
   @$pb.TagNumber(9)
-  $2.Timestamp ensureUserUpdateTime() => $_ensure(5);
+  $0.Timestamp ensureUserUpdateTime() => $_ensure(5);
 
   /// Output only. State of the job.
   @$pb.TagNumber(10)
   Job_State get state => $_getN(6);
   @$pb.TagNumber(10)
-  set state(Job_State v) {
-    $_setField(10, v);
-  }
-
+  set state(Job_State value) => $_setField(10, value);
   @$pb.TagNumber(10)
   $core.bool hasState() => $_has(6);
   @$pb.TagNumber(10)
@@ -1232,59 +1105,47 @@ class Job extends $pb.GeneratedMessage {
 
   /// Output only. The response from the target for the last attempted execution.
   @$pb.TagNumber(11)
-  $9.Status get status => $_getN(7);
+  $1.Status get status => $_getN(7);
   @$pb.TagNumber(11)
-  set status($9.Status v) {
-    $_setField(11, v);
-  }
-
+  set status($1.Status value) => $_setField(11, value);
   @$pb.TagNumber(11)
   $core.bool hasStatus() => $_has(7);
   @$pb.TagNumber(11)
   void clearStatus() => $_clearField(11);
   @$pb.TagNumber(11)
-  $9.Status ensureStatus() => $_ensure(7);
+  $1.Status ensureStatus() => $_ensure(7);
 
   /// Output only. The next time the job is scheduled. Note that this may be a
   /// retry of a previously failed attempt or the next execution time
   /// according to the schedule.
   @$pb.TagNumber(17)
-  $2.Timestamp get scheduleTime => $_getN(8);
+  $0.Timestamp get scheduleTime => $_getN(8);
   @$pb.TagNumber(17)
-  set scheduleTime($2.Timestamp v) {
-    $_setField(17, v);
-  }
-
+  set scheduleTime($0.Timestamp value) => $_setField(17, value);
   @$pb.TagNumber(17)
   $core.bool hasScheduleTime() => $_has(8);
   @$pb.TagNumber(17)
   void clearScheduleTime() => $_clearField(17);
   @$pb.TagNumber(17)
-  $2.Timestamp ensureScheduleTime() => $_ensure(8);
+  $0.Timestamp ensureScheduleTime() => $_ensure(8);
 
   /// Output only. The time the last job attempt started.
   @$pb.TagNumber(18)
-  $2.Timestamp get lastAttemptTime => $_getN(9);
+  $0.Timestamp get lastAttemptTime => $_getN(9);
   @$pb.TagNumber(18)
-  set lastAttemptTime($2.Timestamp v) {
-    $_setField(18, v);
-  }
-
+  set lastAttemptTime($0.Timestamp value) => $_setField(18, value);
   @$pb.TagNumber(18)
   $core.bool hasLastAttemptTime() => $_has(9);
   @$pb.TagNumber(18)
   void clearLastAttemptTime() => $_clearField(18);
   @$pb.TagNumber(18)
-  $2.Timestamp ensureLastAttemptTime() => $_ensure(9);
+  $0.Timestamp ensureLastAttemptTime() => $_ensure(9);
 
   /// Settings that determine the retry behavior.
   @$pb.TagNumber(19)
   RetryConfig get retryConfig => $_getN(10);
   @$pb.TagNumber(19)
-  set retryConfig(RetryConfig v) {
-    $_setField(19, v);
-  }
-
+  set retryConfig(RetryConfig value) => $_setField(19, value);
   @$pb.TagNumber(19)
   $core.bool hasRetryConfig() => $_has(10);
   @$pb.TagNumber(19)
@@ -1323,10 +1184,7 @@ class Job extends $pb.GeneratedMessage {
   @$pb.TagNumber(20)
   $core.String get schedule => $_getSZ(11);
   @$pb.TagNumber(20)
-  set schedule($core.String v) {
-    $_setString(11, v);
-  }
-
+  set schedule($core.String value) => $_setString(11, value);
   @$pb.TagNumber(20)
   $core.bool hasSchedule() => $_has(11);
   @$pb.TagNumber(20)
@@ -1345,10 +1203,7 @@ class Job extends $pb.GeneratedMessage {
   @$pb.TagNumber(21)
   $core.String get timeZone => $_getSZ(12);
   @$pb.TagNumber(21)
-  set timeZone($core.String v) {
-    $_setString(12, v);
-  }
-
+  set timeZone($core.String value) => $_setString(12, value);
   @$pb.TagNumber(21)
   $core.bool hasTimeZone() => $_has(12);
   @$pb.TagNumber(21)
@@ -1377,18 +1232,15 @@ class Job extends $pb.GeneratedMessage {
   /// * For [Pub/Sub targets][google.cloud.scheduler.v1.Job.pubsub_target], this
   /// field is ignored.
   @$pb.TagNumber(22)
-  $0.Duration get attemptDeadline => $_getN(13);
+  $2.Duration get attemptDeadline => $_getN(13);
   @$pb.TagNumber(22)
-  set attemptDeadline($0.Duration v) {
-    $_setField(22, v);
-  }
-
+  set attemptDeadline($2.Duration value) => $_setField(22, value);
   @$pb.TagNumber(22)
   $core.bool hasAttemptDeadline() => $_has(13);
   @$pb.TagNumber(22)
   void clearAttemptDeadline() => $_clearField(22);
   @$pb.TagNumber(22)
-  $0.Duration ensureAttemptDeadline() => $_ensure(13);
+  $2.Duration ensureAttemptDeadline() => $_ensure(13);
 }
 
 /// Settings that determine the retry behavior.
@@ -1400,65 +1252,60 @@ class Job extends $pb.GeneratedMessage {
 class RetryConfig extends $pb.GeneratedMessage {
   factory RetryConfig({
     $core.int? retryCount,
-    $0.Duration? maxRetryDuration,
-    $0.Duration? minBackoffDuration,
-    $0.Duration? maxBackoffDuration,
+    $2.Duration? maxRetryDuration,
+    $2.Duration? minBackoffDuration,
+    $2.Duration? maxBackoffDuration,
     $core.int? maxDoublings,
   }) {
-    final $result = create();
-    if (retryCount != null) {
-      $result.retryCount = retryCount;
-    }
-    if (maxRetryDuration != null) {
-      $result.maxRetryDuration = maxRetryDuration;
-    }
-    if (minBackoffDuration != null) {
-      $result.minBackoffDuration = minBackoffDuration;
-    }
-    if (maxBackoffDuration != null) {
-      $result.maxBackoffDuration = maxBackoffDuration;
-    }
-    if (maxDoublings != null) {
-      $result.maxDoublings = maxDoublings;
-    }
-    return $result;
+    final result = create();
+    if (retryCount != null) result.retryCount = retryCount;
+    if (maxRetryDuration != null) result.maxRetryDuration = maxRetryDuration;
+    if (minBackoffDuration != null)
+      result.minBackoffDuration = minBackoffDuration;
+    if (maxBackoffDuration != null)
+      result.maxBackoffDuration = maxBackoffDuration;
+    if (maxDoublings != null) result.maxDoublings = maxDoublings;
+    return result;
   }
-  RetryConfig._() : super();
-  factory RetryConfig.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory RetryConfig.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  RetryConfig._();
+
+  factory RetryConfig.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory RetryConfig.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'RetryConfig',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.scheduler.v1'),
       createEmptyInstance: create)
-    ..a<$core.int>(1, _omitFieldNames ? '' : 'retryCount', $pb.PbFieldType.O3)
-    ..aOM<$0.Duration>(2, _omitFieldNames ? '' : 'maxRetryDuration',
-        subBuilder: $0.Duration.create)
-    ..aOM<$0.Duration>(3, _omitFieldNames ? '' : 'minBackoffDuration',
-        subBuilder: $0.Duration.create)
-    ..aOM<$0.Duration>(4, _omitFieldNames ? '' : 'maxBackoffDuration',
-        subBuilder: $0.Duration.create)
-    ..a<$core.int>(5, _omitFieldNames ? '' : 'maxDoublings', $pb.PbFieldType.O3)
+    ..aI(1, _omitFieldNames ? '' : 'retryCount')
+    ..aOM<$2.Duration>(2, _omitFieldNames ? '' : 'maxRetryDuration',
+        subBuilder: $2.Duration.create)
+    ..aOM<$2.Duration>(3, _omitFieldNames ? '' : 'minBackoffDuration',
+        subBuilder: $2.Duration.create)
+    ..aOM<$2.Duration>(4, _omitFieldNames ? '' : 'maxBackoffDuration',
+        subBuilder: $2.Duration.create)
+    ..aI(5, _omitFieldNames ? '' : 'maxDoublings')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  RetryConfig clone() => RetryConfig()..mergeFromMessage(this);
+  RetryConfig clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   RetryConfig copyWith(void Function(RetryConfig) updates) =>
       super.copyWith((message) => updates(message as RetryConfig))
           as RetryConfig;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static RetryConfig create() => RetryConfig._();
+  @$core.override
   RetryConfig createEmptyInstance() => create();
-  static $pb.PbList<RetryConfig> createRepeated() => $pb.PbList<RetryConfig>();
   @$core.pragma('dart2js:noInline')
   static RetryConfig getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<RetryConfig>(create);
@@ -1484,10 +1331,7 @@ class RetryConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.int get retryCount => $_getIZ(0);
   @$pb.TagNumber(1)
-  set retryCount($core.int v) {
-    $_setSignedInt32(0, v);
-  }
-
+  set retryCount($core.int value) => $_setSignedInt32(0, value);
   @$pb.TagNumber(1)
   $core.bool hasRetryCount() => $_has(0);
   @$pb.TagNumber(1)
@@ -1501,54 +1345,45 @@ class RetryConfig extends $pb.GeneratedMessage {
   /// The default value for max_retry_duration is zero, which means retry
   /// duration is unlimited.
   @$pb.TagNumber(2)
-  $0.Duration get maxRetryDuration => $_getN(1);
+  $2.Duration get maxRetryDuration => $_getN(1);
   @$pb.TagNumber(2)
-  set maxRetryDuration($0.Duration v) {
-    $_setField(2, v);
-  }
-
+  set maxRetryDuration($2.Duration value) => $_setField(2, value);
   @$pb.TagNumber(2)
   $core.bool hasMaxRetryDuration() => $_has(1);
   @$pb.TagNumber(2)
   void clearMaxRetryDuration() => $_clearField(2);
   @$pb.TagNumber(2)
-  $0.Duration ensureMaxRetryDuration() => $_ensure(1);
+  $2.Duration ensureMaxRetryDuration() => $_ensure(1);
 
   /// The minimum amount of time to wait before retrying a job after
   /// it fails.
   ///
   /// The default value of this field is 5 seconds.
   @$pb.TagNumber(3)
-  $0.Duration get minBackoffDuration => $_getN(2);
+  $2.Duration get minBackoffDuration => $_getN(2);
   @$pb.TagNumber(3)
-  set minBackoffDuration($0.Duration v) {
-    $_setField(3, v);
-  }
-
+  set minBackoffDuration($2.Duration value) => $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasMinBackoffDuration() => $_has(2);
   @$pb.TagNumber(3)
   void clearMinBackoffDuration() => $_clearField(3);
   @$pb.TagNumber(3)
-  $0.Duration ensureMinBackoffDuration() => $_ensure(2);
+  $2.Duration ensureMinBackoffDuration() => $_ensure(2);
 
   /// The maximum amount of time to wait before retrying a job after
   /// it fails.
   ///
   /// The default value of this field is 1 hour.
   @$pb.TagNumber(4)
-  $0.Duration get maxBackoffDuration => $_getN(3);
+  $2.Duration get maxBackoffDuration => $_getN(3);
   @$pb.TagNumber(4)
-  set maxBackoffDuration($0.Duration v) {
-    $_setField(4, v);
-  }
-
+  set maxBackoffDuration($2.Duration value) => $_setField(4, value);
   @$pb.TagNumber(4)
   $core.bool hasMaxBackoffDuration() => $_has(3);
   @$pb.TagNumber(4)
   void clearMaxBackoffDuration() => $_clearField(4);
   @$pb.TagNumber(4)
-  $0.Duration ensureMaxBackoffDuration() => $_ensure(3);
+  $2.Duration ensureMaxBackoffDuration() => $_ensure(3);
 
   /// The time between retries will double `max_doublings` times.
   ///
@@ -1577,10 +1412,7 @@ class RetryConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.int get maxDoublings => $_getIZ(4);
   @$pb.TagNumber(5)
-  set maxDoublings($core.int v) {
-    $_setSignedInt32(4, v);
-  }
-
+  set maxDoublings($core.int value) => $_setSignedInt32(4, value);
   @$pb.TagNumber(5)
   $core.bool hasMaxDoublings() => $_has(4);
   @$pb.TagNumber(5)
@@ -1592,19 +1424,19 @@ class JobEventData extends $pb.GeneratedMessage {
   factory JobEventData({
     Job? payload,
   }) {
-    final $result = create();
-    if (payload != null) {
-      $result.payload = payload;
-    }
-    return $result;
+    final result = create();
+    if (payload != null) result.payload = payload;
+    return result;
   }
-  JobEventData._() : super();
-  factory JobEventData.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory JobEventData.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  JobEventData._();
+
+  factory JobEventData.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory JobEventData.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'JobEventData',
@@ -1615,19 +1447,19 @@ class JobEventData extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  JobEventData clone() => JobEventData()..mergeFromMessage(this);
+  JobEventData clone() => deepCopy();
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   JobEventData copyWith(void Function(JobEventData) updates) =>
       super.copyWith((message) => updates(message as JobEventData))
           as JobEventData;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static JobEventData create() => JobEventData._();
+  @$core.override
   JobEventData createEmptyInstance() => create();
-  static $pb.PbList<JobEventData> createRepeated() =>
-      $pb.PbList<JobEventData>();
   @$core.pragma('dart2js:noInline')
   static JobEventData getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<JobEventData>(create);
@@ -1637,10 +1469,7 @@ class JobEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   Job get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(Job v) {
-    $_setField(1, v);
-  }
-
+  set payload(Job value) => $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -1649,6 +1478,7 @@ class JobEventData extends $pb.GeneratedMessage {
   Job ensurePayload() => $_ensure(0);
 }
 
-const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames =
+const $core.bool _omitFieldNames =
+    $core.bool.fromEnvironment('protobuf.omit_field_names');
+const $core.bool _omitMessageNames =
     $core.bool.fromEnvironment('protobuf.omit_message_names');
